@@ -15,3 +15,4 @@ LeetCode
 1401 | [Circle and Rectangle Overlapping](https://leetcode.com/problems/circle-and-rectangle-overlapping) | [JavaScript](/solution/1401.%20Circle%20and%20Rectangle%20Overlapping/README.md) | Medium
 1404 | [Number of Steps to Reduce a Number in Binary Representation to One](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one) | [JavaScript](/solution/1404.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20in%20Binary%20Representation%20to%20One/README.md) | Medium
 1410 | [HTML Entity Parser](https://leetcode.com/problems/html-entity-parser) | [JavaScript](/solution/1410.%20HTML%20Entity%20Parser/README.md) | Medium
+1414 | [Find the Minimum Number of Fibonacci Numbers Whose Sum Is K](https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k) | [JavaScript](/solution/1414.%20Find%20the%20Minimum%20Number%20of%20Fibonacci%20Numbers%20Whose%20Sum%20Is%20K/README.md) | Medium

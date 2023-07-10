@@ -47,7 +47,7 @@
 ## Solutions
 
 **Solution: `String.replace`**
-- Time complexity: <em>O(1)</em>
+- Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
 <p>&nbsp;</p>
