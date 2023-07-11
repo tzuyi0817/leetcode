@@ -50,7 +50,7 @@
 
 ## Solutions
 
-**Solution: `Iteration`**
+**Solution: `Backtracking`**
 - Time complexity: <em>O(n*k)</em>
 - Space complexity: <em>O(1)</em>
 
