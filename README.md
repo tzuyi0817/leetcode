@@ -20,3 +20,4 @@ LeetCode
 1418 | [Display Table of Food Orders in a Restaurant](https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant) | [JavaScript](/solution/1418.%20Display%20Table%20of%20Food%20Orders%20in%20a%20Restaurant/README.md) | Medium
 1419 | [Minimum Number of Frogs Croaking](https://leetcode.com/problems/minimum-number-of-frogs-croaking) | [JavaScript](/solution/1419.%20Minimum%20Number%20of%20Frogs%20Croaking/README.md) | Medium
 1423 | [Maximum Points You Can Obtain from Cards](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards) | [JavaScript](/solution/1423.%20Maximum%20Points%20You%20Can%20Obtain%20from%20Cards/README.md) | Medium
+1424 | [Diagonal Traverse II](https://leetcode.com/problems/diagonal-traverse-ii) | [JavaScript](/solution/1424.%20Diagonal%20Traverse%20II/README.md) | Medium

@@ -46,7 +46,7 @@
 
 ## Solutions
 
-**Solution: `Counting`**
+**Solution: `Sliding Window`**
 - Time complexity: <em>O(k)</em>
 - Space complexity: <em>O(1)</em>
 
