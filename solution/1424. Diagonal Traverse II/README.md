@@ -32,7 +32,7 @@
 
 ## Solutions
 
-**Solution: `Counting`**
+**Solution: `Array`**
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 

@@ -21,3 +21,4 @@ LeetCode
 1419 | [Minimum Number of Frogs Croaking](https://leetcode.com/problems/minimum-number-of-frogs-croaking) | [JavaScript](/solution/1419.%20Minimum%20Number%20of%20Frogs%20Croaking/README.md) | Medium
 1423 | [Maximum Points You Can Obtain from Cards](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards) | [JavaScript](/solution/1423.%20Maximum%20Points%20You%20Can%20Obtain%20from%20Cards/README.md) | Medium
 1424 | [Diagonal Traverse II](https://leetcode.com/problems/diagonal-traverse-ii) | [JavaScript](/solution/1424.%20Diagonal%20Traverse%20II/README.md) | Medium
+1432 | [Max Difference You Can Get From Changing an Integer](https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer) | [JavaScript](/solution/1432.%20Max%20Difference%20You%20Can%20Get%20From%20Changing%20an%20Integer/README.md) | Medium
