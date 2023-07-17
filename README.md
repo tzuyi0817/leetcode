@@ -22,3 +22,4 @@ LeetCode
 1423 | [Maximum Points You Can Obtain from Cards](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards) | [JavaScript](/solution/1423.%20Maximum%20Points%20You%20Can%20Obtain%20from%20Cards/README.md) | Medium
 1424 | [Diagonal Traverse II](https://leetcode.com/problems/diagonal-traverse-ii) | [JavaScript](/solution/1424.%20Diagonal%20Traverse%20II/README.md) | Medium
 1432 | [Max Difference You Can Get From Changing an Integer](https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer) | [JavaScript](/solution/1432.%20Max%20Difference%20You%20Can%20Get%20From%20Changing%20an%20Integer/README.md) | Medium
+1433 | [Check If a String Can Break Another String](https://leetcode.com/problems/check-if-a-string-can-break-another-string) | [JavaScript](/solution/1433.%20Check%20If%20a%20String%20Can%20Break%20Another%20String/README.md) | Medium
