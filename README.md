@@ -28,3 +28,4 @@ LeetCode
 1443 | [Minimum Time to Collect All Apples in a Tree](https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree) | [JavaScript](/solution/1443.%20Minimum%20Time%20to%20Collect%20All%20Apples%20in%20a%20Tree/README.md) | Medium
 1447 | [Simplified Fractions](https://leetcode.com/problems/simplified-fractions) | [JavaScript](/solution/1447.%20Simplified%20Fractions/README.md) | Medium
 1448 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree) | [JavaScript](/solution/1448.%20Count%20Good%20Nodes%20in%20Binary%20Tree/README.md) | Medium
+1451 | [Rearrange Words in a Sentence](https://leetcode.com/problems/rearrange-words-in-a-sentence) | [JavaScript](/solution/1451.%20Rearrange%20Words%20in%20a%20Sentence/README.md) | Medium
