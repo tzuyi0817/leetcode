@@ -29,3 +29,4 @@ LeetCode
 1447 | [Simplified Fractions](https://leetcode.com/problems/simplified-fractions) | [JavaScript](/solution/1447.%20Simplified%20Fractions/README.md) | Medium
 1448 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree) | [JavaScript](/solution/1448.%20Count%20Good%20Nodes%20in%20Binary%20Tree/README.md) | Medium
 1451 | [Rearrange Words in a Sentence](https://leetcode.com/problems/rearrange-words-in-a-sentence) | [JavaScript](/solution/1451.%20Rearrange%20Words%20in%20a%20Sentence/README.md) | Medium
+1452 | [People Whose List of Favorite Companies Is Not a Subset of Another List](https://leetcode.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list) | [JavaScript](/solution/1452.%20People%20Whose%20List%20of%20Favorite%20Companies%20Is%20Not%20a%20Subset%20of%20Another%20List/README.md) | Medium
