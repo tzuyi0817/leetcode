@@ -38,8 +38,8 @@
 ## Solutions
 
 **Solution: `Math`**
-- Time complexity: <em>O(n*2*logn)</em>
-- Space complexity: <em>O(n*2)</em>
+- Time complexity: <em>O(n^2*logn)</em>
+- Space complexity: <em>O(n^2)</em>
 
 <p>&nbsp;</p>
 

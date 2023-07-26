@@ -45,7 +45,7 @@
 ## Solutions
 
 **Solution: `Prefix Sum`**
-- Time complexity: <em>O(n*2)</em>
+- Time complexity: <em>O(n^2)</em>
 - Space complexity: <em>O(1)</em>
 
 <p>&nbsp;</p>
