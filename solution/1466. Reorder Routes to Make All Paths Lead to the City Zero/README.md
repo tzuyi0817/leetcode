@@ -77,9 +77,9 @@ var minReorder = function(n, connections) {
     }, new Map());
 
     const getReorderCount = (route, parent) => {
-        const currnetConnections = connectionMap.get(route);
+        const currentConnections = connectionMap.get(route);
 
-        return currnetConnections.reduce((count, connection) => {
+        return currentConnections.reduce((count, connection) => {
             if (parent === connection) return count;
             const isReorder = routesSet.has(`${route}_${connection}`);
 
