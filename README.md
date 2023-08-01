@@ -38,3 +38,4 @@ LeetCode
 1466 | [Reorder Routes to Make All Paths Lead to the City Zero](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero) | [JavaScript](/solution/1466.%20Reorder%20Routes%20to%20Make%20All%20Paths%20Lead%20to%20the%20City%20Zero/README.md) | Medium
 1471 | [The k Strongest Values in an Array](https://leetcode.com/problems/the-k-strongest-values-in-an-array) | [JavaScript](/solution/1471.%20The%20k%20Strongest%20Values%20in%20an%20Array/README.md) | Medium
 1472 | [Design Browser History](https://leetcode.com/problems/design-browser-history) | [JavaScript](/solution/1472.%20Design%20Browser%20History/README.md) | Medium
+1476 | [Subrectangle Queries](https://leetcode.com/problems/subrectangle-queries) | [JavaScript](/solution/1476.%20Subrectangle%20Queries/README.md) | Medium
