@@ -39,3 +39,4 @@ LeetCode
 1471 | [The k Strongest Values in an Array](https://leetcode.com/problems/the-k-strongest-values-in-an-array) | [JavaScript](/solution/1471.%20The%20k%20Strongest%20Values%20in%20an%20Array/README.md) | Medium
 1472 | [Design Browser History](https://leetcode.com/problems/design-browser-history) | [JavaScript](/solution/1472.%20Design%20Browser%20History/README.md) | Medium
 1476 | [Subrectangle Queries](https://leetcode.com/problems/subrectangle-queries) | [JavaScript](/solution/1476.%20Subrectangle%20Queries/README.md) | Medium
+1477 | [Find Two Non-overlapping Sub-arrays Each With Target Sum](https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum) | [JavaScript](/solution/1477.%20Find%20Two%20Non-overlapping%20Sub-arrays%20Each%20With%20Target%20Sum/README.md) | Medium
