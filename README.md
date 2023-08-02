@@ -40,3 +40,4 @@ LeetCode
 1472 | [Design Browser History](https://leetcode.com/problems/design-browser-history) | [JavaScript](/solution/1472.%20Design%20Browser%20History/README.md) | Medium
 1476 | [Subrectangle Queries](https://leetcode.com/problems/subrectangle-queries) | [JavaScript](/solution/1476.%20Subrectangle%20Queries/README.md) | Medium
 1477 | [Find Two Non-overlapping Sub-arrays Each With Target Sum](https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum) | [JavaScript](/solution/1477.%20Find%20Two%20Non-overlapping%20Sub-arrays%20Each%20With%20Target%20Sum/README.md) | Medium
+1481 | [Least Number of Unique Integers after K Removals](https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals) | [JavaScript](/solution/1481.%20Least%20Number%20of%20Unique%20Integers%20after%20K%20Removals/README.md) | Medium
