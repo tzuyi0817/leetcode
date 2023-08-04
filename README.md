@@ -43,3 +43,4 @@ LeetCode
 1481 | [Least Number of Unique Integers after K Removals](https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals) | [JavaScript](/solution/1481.%20Least%20Number%20of%20Unique%20Integers%20after%20K%20Removals/README.md) | Medium
 1482 | [Minimum Number of Days to Make m Bouquets](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets) | [JavaScript](/solution/1482.%20Minimum%20Number%20of%20Days%20to%20Make%20m%20Bouquets/README.md) | Medium
 1487 | [Making File Names Unique](https://leetcode.com/problems/making-file-names-unique) | [JavaScript](/solution/1487.%20Making%20File%20Names%20Unique/README.md) | Medium
+1488 | [Avoid Flood in The City](https://leetcode.com/problems/avoid-flood-in-the-city) | [JavaScript](/solution/1488.%20Avoid%20Flood%20in%20The%20City/README.md) | Medium
