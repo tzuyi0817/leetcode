@@ -42,3 +42,4 @@ LeetCode
 1477 | [Find Two Non-overlapping Sub-arrays Each With Target Sum](https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum) | [JavaScript](/solution/1477.%20Find%20Two%20Non-overlapping%20Sub-arrays%20Each%20With%20Target%20Sum/README.md) | Medium
 1481 | [Least Number of Unique Integers after K Removals](https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals) | [JavaScript](/solution/1481.%20Least%20Number%20of%20Unique%20Integers%20after%20K%20Removals/README.md) | Medium
 1482 | [Minimum Number of Days to Make m Bouquets](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets) | [JavaScript](/solution/1482.%20Minimum%20Number%20of%20Days%20to%20Make%20m%20Bouquets/README.md) | Medium
+1487 | [Making File Names Unique](https://leetcode.com/problems/making-file-names-unique) | [JavaScript](/solution/1487.%20Making%20File%20Names%20Unique/README.md) | Medium
