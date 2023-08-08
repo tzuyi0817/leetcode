@@ -46,3 +46,4 @@ LeetCode
 1488 | [Avoid Flood in The City](https://leetcode.com/problems/avoid-flood-in-the-city) | [JavaScript](/solution/1488.%20Avoid%20Flood%20in%20The%20City/README.md) | Medium
 1492 | [The kth Factor of n](https://leetcode.com/problems/the-kth-factor-of-n) | [JavaScript](/solution/1492.%20The%20kth%20Factor%20of%20n/README.md) | Medium
 1493 | [Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element) | [JavaScript](/solution/1493.%20Longest%20Subarray%20of%201's%20After%20Deleting%20One%20Element/README.md) | Medium
+1497 | [Check If Array Pairs Are Divisible by k](https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k) | [JavaScript](/solution/1497.%20Check%20If%20Array%20Pairs%20Are%20Divisible%20by%20k/README.md) | Medium
