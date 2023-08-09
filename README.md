@@ -49,3 +49,4 @@
 1497 | [Check If Array Pairs Are Divisible by k](https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k) | [JavaScript](/solution/1497.%20Check%20If%20Array%20Pairs%20Are%20Divisible%20by%20k/README.md) | Medium
 1498 | [Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition) | [JavaScript](/solution/1498.%20Number%20of%20Subsequences%20That%20Satisfy%20the%20Given%20Sum%20Condition/README.md) | Medium
 1503 | [Last Moment Before All Ants Fall Out of a Plank](https://leetcode.com/problems/last-moment-before-all-ants-fall-out-of-a-plank) | [JavaScript](/solution/1503.%20Last%20Moment%20Before%20All%20Ants%20Fall%20Out%20of%20a%20Plank/README.md) | Medium
+1504 | [Count Submatrices With All Ones](https://leetcode.com/problems/count-submatrices-with-all-ones) | [JavaScript](/solution/1504.%20Count%20Submatrices%20With%20All%20Ones/README.md) | Medium
