@@ -50,3 +50,4 @@
 1498 | [Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition) | [JavaScript](/solution/1498.%20Number%20of%20Subsequences%20That%20Satisfy%20the%20Given%20Sum%20Condition/README.md) | Medium
 1503 | [Last Moment Before All Ants Fall Out of a Plank](https://leetcode.com/problems/last-moment-before-all-ants-fall-out-of-a-plank) | [JavaScript](/solution/1503.%20Last%20Moment%20Before%20All%20Ants%20Fall%20Out%20of%20a%20Plank/README.md) | Medium
 1504 | [Count Submatrices With All Ones](https://leetcode.com/problems/count-submatrices-with-all-ones) | [JavaScript](/solution/1504.%20Count%20Submatrices%20With%20All%20Ones/README.md) | Medium
+1508 | [Range Sum of Sorted Subarray Sums](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums) | [JavaScript](/solution/1508.%20Range%20Sum%20of%20Sorted%20Subarray%20Sums/README.md) | Medium
