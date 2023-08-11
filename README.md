@@ -52,3 +52,4 @@
 1504 | [Count Submatrices With All Ones](https://leetcode.com/problems/count-submatrices-with-all-ones) | [JavaScript](/solution/1504.%20Count%20Submatrices%20With%20All%20Ones/README.md) | Medium
 1508 | [Range Sum of Sorted Subarray Sums](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums) | [JavaScript](/solution/1508.%20Range%20Sum%20of%20Sorted%20Subarray%20Sums/README.md) | Medium
 1509 | [Minimum Difference Between Largest and Smallest Value in Three Moves](https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves) | [JavaScript](/solution/1509.%20Minimum%20Difference%20Between%20Largest%20and%20Smallest%20Value%20in%20Three%20Moves/README.md) | Medium
+1513 | [Number of Substrings With Only 1s](https://leetcode.com/problems/number-of-substrings-with-only-1s) | [JavaScript](/solution/1513.%20Number%20of%20Substrings%20With%20Only%201s/README.md) | Medium
