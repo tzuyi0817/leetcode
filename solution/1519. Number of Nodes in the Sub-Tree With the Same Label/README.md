@@ -53,7 +53,7 @@ The sub-tree of node 0 contains nodes 0, 1, 2 and 3, all with label 'b', thus th
 
 ## Solutions
 
-**Solution: **`Depth-First Search`**
+**Solution: `Depth-First Search`**
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
