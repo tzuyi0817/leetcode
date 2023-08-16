@@ -56,3 +56,4 @@
 1514 | [Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability) | [JavaScript](/solution/1514.%20Path%20with%20Maximum%20Probability/README.md) | Medium
 1519 | [Number of Nodes in the Sub-Tree With the Same Label](https://leetcode.com/problems/number-of-nodes-in-the-sub-tree-with-the-same-label) | [JavaScript](/solution/1519.%20Number%20of%20Nodes%20in%20the%20Sub-Tree%20With%20the%20Same%20Label/README.md) | Medium
 1524 | [Number of Sub-arrays With Odd Sum](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum) | [JavaScript](/solution/1524.%20Number%20of%20Sub-arrays%20With%20Odd%20Sum/README.md) | Medium
+1525 | [Number of Good Ways to Split a String](https://leetcode.com/problems/number-of-good-ways-to-split-a-string) | [JavaScript](/solution/1525.%20Number%20of%20Good%20Ways%20to%20Split%20a%20String/README.md) | Medium
