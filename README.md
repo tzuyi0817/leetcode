@@ -58,3 +58,4 @@
 1524 | [Number of Sub-arrays With Odd Sum](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum) | [JavaScript](/solution/1524.%20Number%20of%20Sub-arrays%20With%20Odd%20Sum/README.md) | Medium
 1525 | [Number of Good Ways to Split a String](https://leetcode.com/problems/number-of-good-ways-to-split-a-string) | [JavaScript](/solution/1525.%20Number%20of%20Good%20Ways%20to%20Split%20a%20String/README.md) | Medium
 1529 | [Minimum Suffix Flips](https://leetcode.com/problems/minimum-suffix-flips) | [JavaScript](/solution/1529.%20Minimum%20Suffix%20Flips/README.md) | Medium
+1530 | [Number of Good Leaf Nodes Pairs](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs) | [JavaScript](/solution/1530.%20Number%20of%20Good%20Leaf%20Nodes%20Pairs/README.md) | Medium
