@@ -60,3 +60,4 @@
 1529 | [Minimum Suffix Flips](https://leetcode.com/problems/minimum-suffix-flips) | [JavaScript](/solution/1529.%20Minimum%20Suffix%20Flips/README.md) | Medium
 1530 | [Number of Good Leaf Nodes Pairs](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs) | [JavaScript](/solution/1530.%20Number%20of%20Good%20Leaf%20Nodes%20Pairs/README.md) | Medium
 1535 | [Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game) | [JavaScript](/solution/1535.%20Find%20the%20Winner%20of%20an%20Array%20Game/README.md) | Medium
+1536 | [Minimum Swaps to Arrange a Binary Grid](https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid) | [JavaScript](/solution/1536.%20Minimum%20Swaps%20to%20Arrange%20a%20Binary%20Grid/README.md) | Medium
