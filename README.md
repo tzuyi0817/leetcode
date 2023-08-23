@@ -64,3 +64,4 @@
 1540 | [Can Convert String in K Moves](https://leetcode.com/problems/can-convert-string-in-k-moves) | [JavaScript](/solution/1540.%20Can%20Convert%20String%20in%20K%20Moves/README.md) | Medium
 1541 | [Minimum Insertions to Balance a Parentheses String](https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string) | [JavaScript](/solution/1541.%20Minimum%20Insertions%20to%20Balance%20a%20Parentheses%20String/README.md) | Medium
 1545 | [Find Kth Bit in Nth Binary String](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string) | [JavaScript](/solution/1545.%20Find%20Kth%20Bit%20in%20Nth%20Binary%20String/README.md) | Medium
+1546 | [Maximum Number of Non-Overlapping Subarrays With Sum Equals Target](https://leetcode.com/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target) | [JavaScript](/solution/1546.%20Maximum%20Number%20of%20Non-Overlapping%20Subarrays%20With%20Sum%20Equals%20Target/README.md) | Medium
