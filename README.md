@@ -68,3 +68,4 @@
 1551 | [Minimum Operations to Make Array Equal](https://leetcode.com/problems/minimum-operations-to-make-array-equal) | [JavaScript](/solution/1551.%20Minimum%20Operations%20to%20Make%20Array%20Equal/README.md) | Medium
 1552 | [Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls) | [JavaScript](/solution/1552.%20Magnetic%20Force%20Between%20Two%20Balls/README.md) | Medium
 1557 | [Minimum Number of Vertices to Reach All Nodes](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes) | [JavaScript](/solution/1557.%20Minimum%20Number%20of%20Vertices%20to%20Reach%20All%20Nodes/README.md) | Medium
+1558 | [Minimum Numbers of Function Calls to Make Target Array](https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array) | [JavaScript](/solution/1558.%20Minimum%20Numbers%20of%20Function%20Calls%20to%20Make%20Target%20Array/README.md) | Medium
