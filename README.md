@@ -71,3 +71,4 @@
 1558 | [Minimum Numbers of Function Calls to Make Target Array](https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array) | [JavaScript](/solution/1558.%20Minimum%20Numbers%20of%20Function%20Calls%20to%20Make%20Target%20Array/README.md) | Medium
 1559 | [Detect Cycles in 2D Grid](https://leetcode.com/problems/detect-cycles-in-2d-grid) | [JavaScript](/solution/1559.%20Detect%20Cycles%20in%202D%20Grid/README.md) | Medium
 1561 | [Maximum Number of Coins You Can Get](https://leetcode.com/problems/maximum-number-of-coins-you-can-get) | [JavaScript](/solution/1561.%20Maximum%20Number%20of%20Coins%20You%20Can%20Get/README.md) | Medium
+1562 | [Find Latest Group of Size M](https://leetcode.com/problems/find-latest-group-of-size-m) | [JavaScript](/solution/1562.%20Find%20Latest%20Group%20of%20Size%20M/README.md) | Medium
