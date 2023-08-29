@@ -70,3 +70,4 @@
 1557 | [Minimum Number of Vertices to Reach All Nodes](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes) | [JavaScript](/solution/1557.%20Minimum%20Number%20of%20Vertices%20to%20Reach%20All%20Nodes/README.md) | Medium
 1558 | [Minimum Numbers of Function Calls to Make Target Array](https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array) | [JavaScript](/solution/1558.%20Minimum%20Numbers%20of%20Function%20Calls%20to%20Make%20Target%20Array/README.md) | Medium
 1559 | [Detect Cycles in 2D Grid](https://leetcode.com/problems/detect-cycles-in-2d-grid) | [JavaScript](/solution/1559.%20Detect%20Cycles%20in%202D%20Grid/README.md) | Medium
+1561 | [Maximum Number of Coins You Can Get](https://leetcode.com/problems/maximum-number-of-coins-you-can-get) | [JavaScript](/solution/1561.%20Maximum%20Number%20of%20Coins%20You%20Can%20Get/README.md) | Medium
