@@ -73,3 +73,4 @@
 1561 | [Maximum Number of Coins You Can Get](https://leetcode.com/problems/maximum-number-of-coins-you-can-get) | [JavaScript](/solution/1561.%20Maximum%20Number%20of%20Coins%20You%20Can%20Get/README.md) | Medium
 1562 | [Find Latest Group of Size M](https://leetcode.com/problems/find-latest-group-of-size-m) | [JavaScript](/solution/1562.%20Find%20Latest%20Group%20of%20Size%20M/README.md) | Medium
 1567 | [Maximum Length of Subarray With Positive Product](https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product) | [JavaScript](/solution/1567.%20Maximum%20Length%20of%20Subarray%20With%20Positive%20Product/README.md) | Medium
+1573 | [Number of Ways to Split a String](https://leetcode.com/problems/number-of-ways-to-split-a-string) | [JavaScript](/solution/1573.%20Number%20of%20Ways%20to%20Split%20a%20String/README.md) | Medium
