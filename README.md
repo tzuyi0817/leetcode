@@ -79,3 +79,4 @@
 1578 | [Minimum Time to Make Rope Colorful](https://leetcode.com/problems/minimum-time-to-make-rope-colorful) | [JavaScript](/solution/1578.%20Minimum%20Time%20to%20Make%20Rope%20Colorful/README.md) | Medium
 1583 | [Count Unhappy Friends](https://leetcode.com/problems/count-unhappy-friends) | [JavaScript](/solution/1583.%20Count%20Unhappy%20Friends/README.md) | Medium
 1584 | [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points) | [JavaScript](/solution/1584.%20Min%20Cost%20to%20Connect%20All%20Points/README.md) | Medium
+1589 | [Maximum Sum Obtained of Any Permutation](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation) | [JavaScript](/solution/1589.%20Maximum%20Sum%20Obtained%20of%20Any%20Permutation/README.md) | Medium
