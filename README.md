@@ -80,3 +80,4 @@
 1583 | [Count Unhappy Friends](https://leetcode.com/problems/count-unhappy-friends) | [JavaScript](/solution/1583.%20Count%20Unhappy%20Friends/README.md) | Medium
 1584 | [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points) | [JavaScript](/solution/1584.%20Min%20Cost%20to%20Connect%20All%20Points/README.md) | Medium
 1589 | [Maximum Sum Obtained of Any Permutation](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation) | [JavaScript](/solution/1589.%20Maximum%20Sum%20Obtained%20of%20Any%20Permutation/README.md) | Medium
+1590 | [Make Sum Divisible by P](https://leetcode.com/problems/make-sum-divisible-by-p) | [JavaScript](/solution/1590.%20Make%20Sum%20Divisible%20by%20P/README.md) | Medium
