@@ -83,3 +83,4 @@
 1590 | [Make Sum Divisible by P](https://leetcode.com/problems/make-sum-divisible-by-p) | [JavaScript](/solution/1590.%20Make%20Sum%20Divisible%20by%20P/README.md) | Medium
 1593 | [Split a String Into the Max Number of Unique Substrings](https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-substrings) | [JavaScript](/solution/1593.%20Split%20a%20String%20Into%20the%20Max%20Number%20of%20Unique%20Substrings/README.md) | Medium
 1594 | [Maximum Non Negative Product in a Matrix](https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix) | [JavaScript](/solution/1594.%20Maximum%20Non%20Negative%20Product%20in%20a%20Matrix/README.md) | Medium
+1599 | [Maximum Profit of Operating a Centennial Wheel](https://leetcode.com/problems/maximum-profit-of-operating-a-centennial-wheel) | [JavaScript](/solution/1599.%20Maximum%20Profit%20of%20Operating%20a%20Centennial%20Wheel/README.md) | Medium
