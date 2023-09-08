@@ -76,7 +76,7 @@ t.getInheritanceOrder(); // return ["king", "andy", "matthew", "alex", "asha", "
 
 **Solution: `Depth-First Search + Hash Table`**
 - Time complexity: <em>O(n)</em>
-- Space complexity: <em>O(1)</em>
+- Space complexity: <em>O(n)</em>
 
 <p>&nbsp;</p>
 

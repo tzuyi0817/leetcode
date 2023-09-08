@@ -85,3 +85,4 @@
 1594 | [Maximum Non Negative Product in a Matrix](https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix) | [JavaScript](/solution/1594.%20Maximum%20Non%20Negative%20Product%20in%20a%20Matrix/README.md) | Medium
 1599 | [Maximum Profit of Operating a Centennial Wheel](https://leetcode.com/problems/maximum-profit-of-operating-a-centennial-wheel) | [JavaScript](/solution/1599.%20Maximum%20Profit%20of%20Operating%20a%20Centennial%20Wheel/README.md) | Medium
 1600 | [Throne Inheritance](https://leetcode.com/problems/throne-inheritance) | [JavaScript](/solution/1600.%20Throne%20Inheritance/README.md) | Medium
+1604 | [Alert Using Same Key-Card Three or More Times in a One Hour Period](https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period) | [JavaScript](/solution/1604.%20Alert%20Using%20Same%20Key-Card%20Three%20or%20More%20Times%20in%20a%20One%20Hour%20Period/README.md) | Medium
