@@ -86,3 +86,4 @@
 1599 | [Maximum Profit of Operating a Centennial Wheel](https://leetcode.com/problems/maximum-profit-of-operating-a-centennial-wheel) | [JavaScript](/solution/1599.%20Maximum%20Profit%20of%20Operating%20a%20Centennial%20Wheel/README.md) | Medium
 1600 | [Throne Inheritance](https://leetcode.com/problems/throne-inheritance) | [JavaScript](/solution/1600.%20Throne%20Inheritance/README.md) | Medium
 1604 | [Alert Using Same Key-Card Three or More Times in a One Hour Period](https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period) | [JavaScript](/solution/1604.%20Alert%20Using%20Same%20Key-Card%20Three%20or%20More%20Times%20in%20a%20One%20Hour%20Period/README.md) | Medium
+1605 | [Find Valid Matrix Given Row and Column Sums](https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums) | [JavaScript](/solution/1605.%20Find%20Valid%20Matrix%20Given%20Row%20and%20Column%20Sums/README.md) | Medium
