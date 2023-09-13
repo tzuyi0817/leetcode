@@ -89,3 +89,4 @@
 1605 | [Find Valid Matrix Given Row and Column Sums](https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums) | [JavaScript](/solution/1605.%20Find%20Valid%20Matrix%20Given%20Row%20and%20Column%20Sums/README.md) | Medium
 1609 | [Even Odd Tree](https://leetcode.com/problems/even-odd-tree) | [JavaScript](/solution/1609.%20Even%20Odd%20Tree/README.md) | Medium
 1615 | [Maximal Network Rank](https://leetcode.com/problems/maximal-network-rank) | [JavaScript](/solution/1615.%20Maximal%20Network%20Rank/README.md) | Medium
+1616 | [Split Two Strings to Make Palindrome](https://leetcode.com/problems/split-two-strings-to-make-palindrome) | [JavaScript](/solution/1616.%20Split%20Two%20Strings%20to%20Make%20Palindrome/README.md) | Medium
