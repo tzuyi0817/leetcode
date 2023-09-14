@@ -90,3 +90,4 @@
 1609 | [Even Odd Tree](https://leetcode.com/problems/even-odd-tree) | [JavaScript](/solution/1609.%20Even%20Odd%20Tree/README.md) | Medium
 1615 | [Maximal Network Rank](https://leetcode.com/problems/maximal-network-rank) | [JavaScript](/solution/1615.%20Maximal%20Network%20Rank/README.md) | Medium
 1616 | [Split Two Strings to Make Palindrome](https://leetcode.com/problems/split-two-strings-to-make-palindrome) | [JavaScript](/solution/1616.%20Split%20Two%20Strings%20to%20Make%20Palindrome/README.md) | Medium
+1620 | [Coordinate With Maximum Network Quality](https://leetcode.com/problems/coordinate-with-maximum-network-quality) | [JavaScript](/solution/1620.%20Coordinate%20With%20Maximum%20Network%20Quality/README.md) | Medium
