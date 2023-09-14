@@ -91,3 +91,4 @@
 1615 | [Maximal Network Rank](https://leetcode.com/problems/maximal-network-rank) | [JavaScript](/solution/1615.%20Maximal%20Network%20Rank/README.md) | Medium
 1616 | [Split Two Strings to Make Palindrome](https://leetcode.com/problems/split-two-strings-to-make-palindrome) | [JavaScript](/solution/1616.%20Split%20Two%20Strings%20to%20Make%20Palindrome/README.md) | Medium
 1620 | [Coordinate With Maximum Network Quality](https://leetcode.com/problems/coordinate-with-maximum-network-quality) | [JavaScript](/solution/1620.%20Coordinate%20With%20Maximum%20Network%20Quality/README.md) | Medium
+1621 | [Number of Sets of K Non-Overlapping Line Segments](https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments) | [JavaScript](/solution/1621.%20Number%20of%20Sets%20of%20K%20Non-Overlapping%20Line%20Segments/README.md) | Medium
