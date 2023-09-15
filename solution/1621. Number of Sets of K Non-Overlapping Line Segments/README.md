@@ -42,7 +42,7 @@ The image above shows the 5 different ways {(0,2),(2,3)}, {(0,1),(1,3)}, {(0,1),
 
 ## Solutions
 
-**Solution: `Dynamic Programming`**
+**Solution: `Combinatorics`**
 - Time complexity: <em>O((n+k−1)(k∗2))</em>
 - Space complexity: <em>O((n+k−1)(k∗2))</em>
 
