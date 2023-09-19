@@ -94,3 +94,4 @@
 1621 | [Number of Sets of K Non-Overlapping Line Segments](https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments) | [JavaScript](/solution/1621.%20Number%20of%20Sets%20of%20K%20Non-Overlapping%20Line%20Segments/README.md) | Medium
 1625 | [Lexicographically Smallest String After Applying Operations](https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations) | [JavaScript](/solution/1625.%20Lexicographically%20Smallest%20String%20After%20Applying%20Operations/README.md) | Medium
 1626 | [Best Team With No Conflicts](https://leetcode.com/problems/best-team-with-no-conflicts) | [JavaScript](/solution/1626.%20Best%20Team%20With%20No%20Conflicts/README.md) | Medium
+1630 | [Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays) | [JavaScript](/solution/1630.%20Arithmetic%20Subarrays/README.md) | Medium
