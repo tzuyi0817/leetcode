@@ -95,3 +95,4 @@
 1625 | [Lexicographically Smallest String After Applying Operations](https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations) | [JavaScript](/solution/1625.%20Lexicographically%20Smallest%20String%20After%20Applying%20Operations/README.md) | Medium
 1626 | [Best Team With No Conflicts](https://leetcode.com/problems/best-team-with-no-conflicts) | [JavaScript](/solution/1626.%20Best%20Team%20With%20No%20Conflicts/README.md) | Medium
 1630 | [Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays) | [JavaScript](/solution/1630.%20Arithmetic%20Subarrays/README.md) | Medium
+1631 | [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort) | [JavaScript](/solution/1631.%20Path%20With%20Minimum%20Effort/README.md) | Medium
