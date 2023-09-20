@@ -96,3 +96,4 @@
 1626 | [Best Team With No Conflicts](https://leetcode.com/problems/best-team-with-no-conflicts) | [JavaScript](/solution/1626.%20Best%20Team%20With%20No%20Conflicts/README.md) | Medium
 1630 | [Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays) | [JavaScript](/solution/1630.%20Arithmetic%20Subarrays/README.md) | Medium
 1631 | [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort) | [JavaScript](/solution/1631.%20Path%20With%20Minimum%20Effort/README.md) | Medium
+1637 | [Widest Vertical Area Between Two Points Containing No Points](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points) | [JavaScript](/solution/1637.%20Widest%20Vertical%20Area%20Between%20Two%20Points%20Containing%20No%20Points/README.md) | Medium
