@@ -98,3 +98,4 @@
 1631 | [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort) | [JavaScript](/solution/1631.%20Path%20With%20Minimum%20Effort/README.md) | Medium
 1637 | [Widest Vertical Area Between Two Points Containing No Points](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points) | [JavaScript](/solution/1637.%20Widest%20Vertical%20Area%20Between%20Two%20Points%20Containing%20No%20Points/README.md) | Medium
 1638 | [Count Substrings That Differ by One Character](https://leetcode.com/problems/count-substrings-that-differ-by-one-character) | [JavaScript](/solution/1638.%20Count%20Substrings%20That%20Differ%20by%20One%20Character/README.md) | Medium
+1641 | [Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings) | [JavaScript](/solution/1641.%20Count%20Sorted%20Vowel%20Strings/README.md) | Medium
