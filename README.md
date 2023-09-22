@@ -100,3 +100,4 @@
 1638 | [Count Substrings That Differ by One Character](https://leetcode.com/problems/count-substrings-that-differ-by-one-character) | [JavaScript](/solution/1638.%20Count%20Substrings%20That%20Differ%20by%20One%20Character/README.md) | Medium
 1641 | [Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings) | [JavaScript](/solution/1641.%20Count%20Sorted%20Vowel%20Strings/README.md) | Medium
 1642 | [Furthest Building You Can Reach](https://leetcode.com/problems/furthest-building-you-can-reach) | [JavaScript](/solution/1642.%20Furthest%20Building%20You%20Can%20Reach/README.md) | Medium
+1647 | [Minimum Deletions to Make Character Frequencies Unique](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique) | [JavaScript](/solution/1647.%20Minimum%20Deletions%20to%20Make%20Character%20Frequencies%20Unique/README.md) | Medium
