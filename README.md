@@ -103,3 +103,4 @@
 1647 | [Minimum Deletions to Make Character Frequencies Unique](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique) | [JavaScript](/solution/1647.%20Minimum%20Deletions%20to%20Make%20Character%20Frequencies%20Unique/README.md) | Medium
 1648 | [Sell Diminishing-Valued Colored Balls](https://leetcode.com/problems/sell-diminishing-valued-colored-balls) | [JavaScript](/solution/1648.%20Sell%20Diminishing-Valued%20Colored%20Balls/README.md) | Medium
 1653 | [Minimum Deletions to Make String Balanced](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced) | [JavaScript](/solution/1653.%20Minimum%20Deletions%20to%20Make%20String%20Balanced/README.md) | Medium
+1654 | [Minimum Jumps to Reach Home](https://leetcode.com/problems/minimum-jumps-to-reach-home) | [JavaScript](/solution/1654.%20Minimum%20Jumps%20to%20Reach%20Home/README.md) | Medium
