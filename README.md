@@ -104,3 +104,4 @@
 1648 | [Sell Diminishing-Valued Colored Balls](https://leetcode.com/problems/sell-diminishing-valued-colored-balls) | [JavaScript](/solution/1648.%20Sell%20Diminishing-Valued%20Colored%20Balls/README.md) | Medium
 1653 | [Minimum Deletions to Make String Balanced](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced) | [JavaScript](/solution/1653.%20Minimum%20Deletions%20to%20Make%20String%20Balanced/README.md) | Medium
 1654 | [Minimum Jumps to Reach Home](https://leetcode.com/problems/minimum-jumps-to-reach-home) | [JavaScript](/solution/1654.%20Minimum%20Jumps%20to%20Reach%20Home/README.md) | Medium
+1657 | [Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close) | [JavaScript](/solution/1657.%20Determine%20if%20Two%20Strings%20Are%20Close/README.md) | Medium
