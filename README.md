@@ -106,3 +106,4 @@
 1654 | [Minimum Jumps to Reach Home](https://leetcode.com/problems/minimum-jumps-to-reach-home) | [JavaScript](/solution/1654.%20Minimum%20Jumps%20to%20Reach%20Home/README.md) | Medium
 1657 | [Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close) | [JavaScript](/solution/1657.%20Determine%20if%20Two%20Strings%20Are%20Close/README.md) | Medium
 1658 | [Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero) | [JavaScript](/solution/1658.%20Minimum%20Operations%20to%20Reduce%20X%20to%20Zero/README.md) | Medium
+1663 | [Smallest String With A Given Numeric Value](https://leetcode.com/problems/smallest-string-with-a-given-numeric-value) | [JavaScript](/solution/1663.%20Smallest%20String%20With%20A%20Given%20Numeric%20Value/README.md) | Medium
