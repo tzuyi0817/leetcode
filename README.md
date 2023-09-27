@@ -107,3 +107,4 @@
 1657 | [Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close) | [JavaScript](/solution/1657.%20Determine%20if%20Two%20Strings%20Are%20Close/README.md) | Medium
 1658 | [Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero) | [JavaScript](/solution/1658.%20Minimum%20Operations%20to%20Reduce%20X%20to%20Zero/README.md) | Medium
 1663 | [Smallest String With A Given Numeric Value](https://leetcode.com/problems/smallest-string-with-a-given-numeric-value) | [JavaScript](/solution/1663.%20Smallest%20String%20With%20A%20Given%20Numeric%20Value/README.md) | Medium
+1664 | [Ways to Make a Fair Array](https://leetcode.com/problems/ways-to-make-a-fair-array) | [JavaScript](/solution/1664.%20Ways%20to%20Make%20a%20Fair%20Array/README.md) | Medium

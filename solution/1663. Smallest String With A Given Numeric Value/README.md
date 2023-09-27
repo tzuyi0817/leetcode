@@ -37,7 +37,7 @@
 
 ## Solutions
 
-**Solution: `Prefix Sum`**
+**Solution: `Greedy`**
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
