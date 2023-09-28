@@ -109,3 +109,4 @@
 1663 | [Smallest String With A Given Numeric Value](https://leetcode.com/problems/smallest-string-with-a-given-numeric-value) | [JavaScript](/solution/1663.%20Smallest%20String%20With%20A%20Given%20Numeric%20Value/README.md) | Medium
 1664 | [Ways to Make a Fair Array](https://leetcode.com/problems/ways-to-make-a-fair-array) | [JavaScript](/solution/1664.%20Ways%20to%20Make%20a%20Fair%20Array/README.md) | Medium
 1669 | [Merge In Between Linked Lists](https://leetcode.com/problems/merge-in-between-linked-lists) | [JavaScript](/solution/1669.%20Merge%20In%20Between%20Linked%20Lists/README.md) | Medium
+1670 | [Design Front Middle Back Queue](https://leetcode.com/problems/design-front-middle-back-queue) | [JavaScript](/solution/1670.%20Design%20Front%20Middle%20Back%20Queue/README.md) | Medium
