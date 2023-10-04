@@ -113,3 +113,4 @@
 1673 | [Find the Most Competitive Subsequence](https://leetcode.com/problems/find-the-most-competitive-subsequence) | [JavaScript](/solution/1673.%20Find%20the%20Most%20Competitive%20Subsequence/README.md) | Medium
 1674 | [Minimum Moves to Make Array Complementary](https://leetcode.com/problems/minimum-moves-to-make-array-complementary) | [JavaScript](/solution/1674.%20Minimum%20Moves%20to%20Make%20Array%20Complementary/README.md) | Medium
 1679 | [Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs) | [JavaScript](/solution/1679.%20Max%20Number%20of%20K-Sum%20Pairs/README.md) | Medium
+1680 | [Concatenation of Consecutive Binary Numbers](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers) | [JavaScript](/solution/1680.%20Concatenation%20of%20Consecutive%20Binary%20Numbers/README.md) | Medium
