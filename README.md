@@ -115,3 +115,4 @@
 1679 | [Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs) | [JavaScript](/solution/1679.%20Max%20Number%20of%20K-Sum%20Pairs/README.md) | Medium
 1680 | [Concatenation of Consecutive Binary Numbers](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers) | [JavaScript](/solution/1680.%20Concatenation%20of%20Consecutive%20Binary%20Numbers/README.md) | Medium
 1685 | [Sum of Absolute Differences in a Sorted Array](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array) | [JavaScript](/solution/1685.%20Sum%20of%20Absolute%20Differences%20in%20a%20Sorted%20Array/README.md) | Medium
+1686 | [Stone Game VI](https://leetcode.com/problems/stone-game-vi) | [JavaScript](/solution/1686.%20Stone%20Game%20VI/README.md) | Medium
