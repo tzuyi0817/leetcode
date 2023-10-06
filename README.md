@@ -117,3 +117,4 @@
 1685 | [Sum of Absolute Differences in a Sorted Array](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array) | [JavaScript](/solution/1685.%20Sum%20of%20Absolute%20Differences%20in%20a%20Sorted%20Array/README.md) | Medium
 1686 | [Stone Game VI](https://leetcode.com/problems/stone-game-vi) | [JavaScript](/solution/1686.%20Stone%20Game%20VI/README.md) | Medium
 1689 | [Partitioning Into Minimum Number Of Deci-Binary Numbers](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers) | [JavaScript](/solution/1689.%20Partitioning%20Into%20Minimum%20Number%20Of%20Deci-Binary%20Numbers/README.md) | Medium
+1690 | [Stone Game VII](https://leetcode.com/problems/stone-game-vii) | [JavaScript](/solution/1690.%20Stone%20Game%20VII/README.md) | Medium
