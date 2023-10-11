@@ -119,3 +119,4 @@
 1689 | [Partitioning Into Minimum Number Of Deci-Binary Numbers](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers) | [JavaScript](/solution/1689.%20Partitioning%20Into%20Minimum%20Number%20Of%20Deci-Binary%20Numbers/README.md) | Medium
 1690 | [Stone Game VII](https://leetcode.com/problems/stone-game-vii) | [JavaScript](/solution/1690.%20Stone%20Game%20VII/README.md) | Medium
 1695 | [Maximum Erasure Value](https://leetcode.com/problems/maximum-erasure-value) | [JavaScript](/solution/1695.%20Maximum%20Erasure%20Value/README.md) | Medium
+1696 | [Jump Game VI](https://leetcode.com/problems/jump-game-vi) | [JavaScript](/solution/1696.%20Jump%20Game%20VI/README.md) | Medium
