@@ -120,3 +120,4 @@
 1690 | [Stone Game VII](https://leetcode.com/problems/stone-game-vii) | [JavaScript](/solution/1690.%20Stone%20Game%20VII/README.md) | Medium
 1695 | [Maximum Erasure Value](https://leetcode.com/problems/maximum-erasure-value) | [JavaScript](/solution/1695.%20Maximum%20Erasure%20Value/README.md) | Medium
 1696 | [Jump Game VI](https://leetcode.com/problems/jump-game-vi) | [JavaScript](/solution/1696.%20Jump%20Game%20VI/README.md) | Medium
+1701 | [Average Waiting Time](https://leetcode.com/problems/average-waiting-time) | [JavaScript](/solution/1701.%20Average%20Waiting%20Time/README.md) | Medium
