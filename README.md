@@ -123,4 +123,6 @@
 1701 | [Average Waiting Time](https://leetcode.com/problems/average-waiting-time) | [JavaScript](/solution/1701.%20Average%20Waiting%20Time/README.md) | Medium
 1702 | [Maximum Binary String After Change](https://leetcode.com/problems/maximum-binary-string-after-change) | [JavaScript](/solution/1702.%20Maximum%20Binary%20String%20After%20Change/README.md) | Medium
 1705 | [Maximum Number of Eaten Apples](https://leetcode.com/problems/maximum-number-of-eaten-apples) | [JavaScript](/solution/1705.%20Maximum%20Number%20of%20Eaten%20Apples/README.md) | Medium
+1706 | [Where Will the Ball Fall](https://leetcode.com/problems/where-will-the-ball-fall) | [JavaScript](/solution/1706.%20Where%20Will%20the%20Ball%20Fall/README.md) | Medium
+
 
