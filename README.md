@@ -121,3 +121,5 @@
 1695 | [Maximum Erasure Value](https://leetcode.com/problems/maximum-erasure-value) | [JavaScript](/solution/1695.%20Maximum%20Erasure%20Value/README.md) | Medium
 1696 | [Jump Game VI](https://leetcode.com/problems/jump-game-vi) | [JavaScript](/solution/1696.%20Jump%20Game%20VI/README.md) | Medium
 1701 | [Average Waiting Time](https://leetcode.com/problems/average-waiting-time) | [JavaScript](/solution/1701.%20Average%20Waiting%20Time/README.md) | Medium
+1702 | [Maximum Binary String After Change](https://leetcode.com/problems/maximum-binary-string-after-change) | [JavaScript](/solution/1702.%20Maximum%20Binary%20String%20After%20Change/README.md) | Medium
+
