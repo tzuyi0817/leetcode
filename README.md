@@ -124,5 +124,4 @@
 1702 | [Maximum Binary String After Change](https://leetcode.com/problems/maximum-binary-string-after-change) | [JavaScript](/solution/1702.%20Maximum%20Binary%20String%20After%20Change/README.md) | Medium
 1705 | [Maximum Number of Eaten Apples](https://leetcode.com/problems/maximum-number-of-eaten-apples) | [JavaScript](/solution/1705.%20Maximum%20Number%20of%20Eaten%20Apples/README.md) | Medium
 1706 | [Where Will the Ball Fall](https://leetcode.com/problems/where-will-the-ball-fall) | [JavaScript](/solution/1706.%20Where%20Will%20the%20Ball%20Fall/README.md) | Medium
-
-
+1711 | [Count Good Meals](https://leetcode.com/problems/count-good-meals) | [JavaScript](/solution/1711.%20Count%20Good%20Meals/README.md) | Medium
