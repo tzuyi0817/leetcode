@@ -125,3 +125,4 @@
 1705 | [Maximum Number of Eaten Apples](https://leetcode.com/problems/maximum-number-of-eaten-apples) | [JavaScript](/solution/1705.%20Maximum%20Number%20of%20Eaten%20Apples/README.md) | Medium
 1706 | [Where Will the Ball Fall](https://leetcode.com/problems/where-will-the-ball-fall) | [JavaScript](/solution/1706.%20Where%20Will%20the%20Ball%20Fall/README.md) | Medium
 1711 | [Count Good Meals](https://leetcode.com/problems/count-good-meals) | [JavaScript](/solution/1711.%20Count%20Good%20Meals/README.md) | Medium
+1712 | [Ways to Split Array Into Three Subarrays](https://leetcode.com/problems/ways-to-split-array-into-three-subarrays) | [JavaScript](/solution/1712.%20Ways%20to%20Split%20Array%20Into%20Three%20Subarrays/README.md) | Medium
