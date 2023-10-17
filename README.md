@@ -126,3 +126,4 @@
 1706 | [Where Will the Ball Fall](https://leetcode.com/problems/where-will-the-ball-fall) | [JavaScript](/solution/1706.%20Where%20Will%20the%20Ball%20Fall/README.md) | Medium
 1711 | [Count Good Meals](https://leetcode.com/problems/count-good-meals) | [JavaScript](/solution/1711.%20Count%20Good%20Meals/README.md) | Medium
 1712 | [Ways to Split Array Into Three Subarrays](https://leetcode.com/problems/ways-to-split-array-into-three-subarrays) | [JavaScript](/solution/1712.%20Ways%20to%20Split%20Array%20Into%20Three%20Subarrays/README.md) | Medium
+1717 | [Maximum Score From Removing Substrings](https://leetcode.com/problems/maximum-score-from-removing-substrings) | [JavaScript](/solution/1717.%20Maximum%20Score%20From%20Removing%20Substrings/README.md) | Medium
