@@ -127,3 +127,4 @@
 1711 | [Count Good Meals](https://leetcode.com/problems/count-good-meals) | [JavaScript](/solution/1711.%20Count%20Good%20Meals/README.md) | Medium
 1712 | [Ways to Split Array Into Three Subarrays](https://leetcode.com/problems/ways-to-split-array-into-three-subarrays) | [JavaScript](/solution/1712.%20Ways%20to%20Split%20Array%20Into%20Three%20Subarrays/README.md) | Medium
 1717 | [Maximum Score From Removing Substrings](https://leetcode.com/problems/maximum-score-from-removing-substrings) | [JavaScript](/solution/1717.%20Maximum%20Score%20From%20Removing%20Substrings/README.md) | Medium
+1718 | [Construct the Lexicographically Largest Valid Sequence](https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence) | [JavaScript](/solution/1718.%20Construct%20the%20Lexicographically%20Largest%20Valid%20Sequence/README.md) | Medium
