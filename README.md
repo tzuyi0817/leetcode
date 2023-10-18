@@ -129,3 +129,4 @@
 1717 | [Maximum Score From Removing Substrings](https://leetcode.com/problems/maximum-score-from-removing-substrings) | [JavaScript](/solution/1717.%20Maximum%20Score%20From%20Removing%20Substrings/README.md) | Medium
 1718 | [Construct the Lexicographically Largest Valid Sequence](https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence) | [JavaScript](/solution/1718.%20Construct%20the%20Lexicographically%20Largest%20Valid%20Sequence/README.md) | Medium
 1721 | [Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list) | [JavaScript](/solution/1721.%20Swapping%20Nodes%20in%20a%20Linked%20List/README.md) | Medium
+1722 | [Minimize Hamming Distance After Swap Operations](https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations) | [JavaScript](/solution/1722.%20Minimize%20Hamming%20Distance%20After%20Swap%20Operations/README.md) | Medium
