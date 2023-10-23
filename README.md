@@ -132,3 +132,4 @@
 1722 | [Minimize Hamming Distance After Swap Operations](https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations) | [JavaScript](/solution/1722.%20Minimize%20Hamming%20Distance%20After%20Swap%20Operations/README.md) | Medium
 1726 | [Tuple with Same Product](https://leetcode.com/problems/tuple-with-same-product) | [JavaScript](/solution/1726.%20Tuple%20with%20Same%20Product/README.md) | Medium
 1727 | [Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements) | [JavaScript](/solution/1727.%20Largest%20Submatrix%20With%20Rearrangements/README.md) | Medium
+1733 | [Minimum Number of People to Teach](https://leetcode.com/problems/minimum-number-of-people-to-teach) | [JavaScript](/solution/1733.%20Minimum%20Number%20of%20People%20to%20Teach/README.md) | Medium
