@@ -134,3 +134,4 @@
 1727 | [Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements) | [JavaScript](/solution/1727.%20Largest%20Submatrix%20With%20Rearrangements/README.md) | Medium
 1733 | [Minimum Number of People to Teach](https://leetcode.com/problems/minimum-number-of-people-to-teach) | [JavaScript](/solution/1733.%20Minimum%20Number%20of%20People%20to%20Teach/README.md) | Medium
 1734 | [Decode XORed Permutation](https://leetcode.com/problems/decode-xored-permutation) | [JavaScript](/solution/1734.%20Decode%20XORed%20Permutation/README.md) | Medium
+1737 | [Change Minimum Characters to Satisfy One of Three Conditions](https://leetcode.com/problems/change-minimum-characters-to-satisfy-one-of-three-conditions) | [JavaScript](/solution/1737.%20Change%20Minimum%20Characters%20to%20Satisfy%20One%20of%20Three%20Conditions/README.md) | Medium

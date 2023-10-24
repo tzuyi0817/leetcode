@@ -38,7 +38,7 @@
 
 **Solution: `Bit Manipulation`**
 - Time complexity: <em>O(n)</em>
-- Space complexity: <em>O(1)</em>
+- Space complexity: <em>O(n)</em>
 
 <p>&nbsp;</p>
 
