@@ -136,3 +136,4 @@
 1734 | [Decode XORed Permutation](https://leetcode.com/problems/decode-xored-permutation) | [JavaScript](/solution/1734.%20Decode%20XORed%20Permutation/README.md) | Medium
 1737 | [Change Minimum Characters to Satisfy One of Three Conditions](https://leetcode.com/problems/change-minimum-characters-to-satisfy-one-of-three-conditions) | [JavaScript](/solution/1737.%20Change%20Minimum%20Characters%20to%20Satisfy%20One%20of%20Three%20Conditions/README.md) | Medium
 1738 | [Find Kth Largest XOR Coordinate Value](https://leetcode.com/problems/find-kth-largest-xor-coordinate-value) | [JavaScript](/solution/1738.%20Find%20Kth%20Largest%20XOR%20Coordinate%20Value/README.md) | Medium
+1743 | [Restore the Array From Adjacent Pairs](https://leetcode.com/problems/restore-the-array-from-adjacent-pairs) | [JavaScript](/solution/1743.%20Restore%20the%20Array%20From%20Adjacent%20Pairs/README.md) | Medium
