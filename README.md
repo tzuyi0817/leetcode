@@ -138,3 +138,4 @@
 1738 | [Find Kth Largest XOR Coordinate Value](https://leetcode.com/problems/find-kth-largest-xor-coordinate-value) | [JavaScript](/solution/1738.%20Find%20Kth%20Largest%20XOR%20Coordinate%20Value/README.md) | Medium
 1743 | [Restore the Array From Adjacent Pairs](https://leetcode.com/problems/restore-the-array-from-adjacent-pairs) | [JavaScript](/solution/1743.%20Restore%20the%20Array%20From%20Adjacent%20Pairs/README.md) | Medium
 1744 | [Can You Eat Your Favorite Candy on Your Favorite Day?](https://leetcode.com/problems/can-you-eat-your-favorite-candy-on-your-favorite-day) | [JavaScript](/solution/1744.%20Can%20You%20Eat%20Your%20Favorite%20Candy%20on%20Your%20Favorite%20Day/README.md) | Medium
+1749 | [Maximum Absolute Sum of Any Subarray](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray) | [JavaScript](/solution/1749.%20Maximum%20Absolute%20Sum%20of%20Any%20Subarray/README.md) | Medium
