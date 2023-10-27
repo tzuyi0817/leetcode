@@ -140,3 +140,4 @@
 1744 | [Can You Eat Your Favorite Candy on Your Favorite Day?](https://leetcode.com/problems/can-you-eat-your-favorite-candy-on-your-favorite-day) | [JavaScript](/solution/1744.%20Can%20You%20Eat%20Your%20Favorite%20Candy%20on%20Your%20Favorite%20Day/README.md) | Medium
 1749 | [Maximum Absolute Sum of Any Subarray](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray) | [JavaScript](/solution/1749.%20Maximum%20Absolute%20Sum%20of%20Any%20Subarray/README.md) | Medium
 1750 | [Minimum Length of String After Deleting Similar Ends](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends) | [JavaScript](/solution/1750.%20Minimum%20Length%20of%20String%20After%20Deleting%20Similar%20Ends/README.md) | Medium
+1753 | [Maximum Score From Removing Stones](https://leetcode.com/problems/maximum-score-from-removing-stones) | [JavaScript](/solution/1753.%20Maximum%20Score%20From%20Removing%20Stones/README.md) | Medium
