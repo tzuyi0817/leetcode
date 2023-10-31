@@ -142,3 +142,4 @@
 1750 | [Minimum Length of String After Deleting Similar Ends](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends) | [JavaScript](/solution/1750.%20Minimum%20Length%20of%20String%20After%20Deleting%20Similar%20Ends/README.md) | Medium
 1753 | [Maximum Score From Removing Stones](https://leetcode.com/problems/maximum-score-from-removing-stones) | [JavaScript](/solution/1753.%20Maximum%20Score%20From%20Removing%20Stones/README.md) | Medium
 1754 | [Largest Merge Of Two Strings](https://leetcode.com/problems/largest-merge-of-two-strings) | [JavaScript](/solution/1754.%20Largest%20Merge%20Of%20Two%20Strings/README.md) | Medium
+1759 | [Count Number of Homogenous Substrings](https://leetcode.com/problems/count-number-of-homogenous-substrings) | [JavaScript](/solution/1759.%20Count%20Number%20of%20Homogenous%20Substrings/README.md) | Medium
