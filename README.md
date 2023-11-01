@@ -145,3 +145,4 @@
 1759 | [Count Number of Homogenous Substrings](https://leetcode.com/problems/count-number-of-homogenous-substrings) | [JavaScript](/solution/1759.%20Count%20Number%20of%20Homogenous%20Substrings/README.md) | Medium
 1760 | [Minimum Limit of Balls in a Bag](https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag) | [JavaScript](/solution/1760.%20Minimum%20Limit%20of%20Balls%20in%20a%20Bag/README.md) | Medium
 1764 | [Form Array by Concatenating Subarrays of Another Array](https://leetcode.com/problems/form-array-by-concatenating-subarrays-of-another-array) | [JavaScript](/solution/1764.%20Form%20Array%20by%20Concatenating%20Subarrays%20of%20Another%20Array/README.md) | Medium
+1765 | [Map of Highest Peak](https://leetcode.com/problems/map-of-highest-peak) | [JavaScript](/solution/1765.%20Map%20of%20Highest%20Peak/README.md) | Medium
