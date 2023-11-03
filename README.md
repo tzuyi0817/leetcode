@@ -149,3 +149,4 @@
 1769 | [Minimum Number of Operations to Move All Balls to Each Box](https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box) | [JavaScript](/solution/1769.%20Minimum%20Number%20of%20Operations%20to%20Move%20All%20Balls%20to%20Each%20Box/README.md) | Medium
 1774 | [Closest Dessert Cost](https://leetcode.com/problems/closest-dessert-cost) | [JavaScript](/solution/1774.%20Closest%20Dessert%20Cost/README.md) | Medium
 1775 | [Equal Sum Arrays With Minimum Number of Operations](https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations) | [JavaScript](/solution/1775.%20Equal%20Sum%20Arrays%20With%20Minimum%20Number%20of%20Operations/README.md) | Medium
+1780 | [Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three) | [JavaScript](/solution/1780.%20Check%20if%20Number%20is%20a%20Sum%20of%20Powers%20of%20Three/README.md) | Medium
