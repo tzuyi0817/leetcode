@@ -147,3 +147,4 @@
 1764 | [Form Array by Concatenating Subarrays of Another Array](https://leetcode.com/problems/form-array-by-concatenating-subarrays-of-another-array) | [JavaScript](/solution/1764.%20Form%20Array%20by%20Concatenating%20Subarrays%20of%20Another%20Array/README.md) | Medium
 1765 | [Map of Highest Peak](https://leetcode.com/problems/map-of-highest-peak) | [JavaScript](/solution/1765.%20Map%20of%20Highest%20Peak/README.md) | Medium
 1769 | [Minimum Number of Operations to Move All Balls to Each Box](https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box) | [JavaScript](/solution/1769.%20Minimum%20Number%20of%20Operations%20to%20Move%20All%20Balls%20to%20Each%20Box/README.md) | Medium
+1774 | [Closest Dessert Cost](https://leetcode.com/problems/closest-dessert-cost) | [JavaScript](/solution/1774.%20Closest%20Dessert%20Cost/README.md) | Medium
