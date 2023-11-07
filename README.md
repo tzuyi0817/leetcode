@@ -150,3 +150,4 @@
 1774 | [Closest Dessert Cost](https://leetcode.com/problems/closest-dessert-cost) | [JavaScript](/solution/1774.%20Closest%20Dessert%20Cost/README.md) | Medium
 1775 | [Equal Sum Arrays With Minimum Number of Operations](https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations) | [JavaScript](/solution/1775.%20Equal%20Sum%20Arrays%20With%20Minimum%20Number%20of%20Operations/README.md) | Medium
 1780 | [Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three) | [JavaScript](/solution/1780.%20Check%20if%20Number%20is%20a%20Sum%20of%20Powers%20of%20Three/README.md) | Medium
+1781 | [Sum of Beauty of All Substrings](https://leetcode.com/problems/sum-of-beauty-of-all-substrings) | [JavaScript](/solution/1781.%20Sum%20of%20Beauty%20of%20All%20Substrings/README.md) | Medium
