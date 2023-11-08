@@ -153,3 +153,4 @@
 1781 | [Sum of Beauty of All Substrings](https://leetcode.com/problems/sum-of-beauty-of-all-substrings) | [JavaScript](/solution/1781.%20Sum%20of%20Beauty%20of%20All%20Substrings/README.md) | Medium
 1785 | [Minimum Elements to Add to Form a Given Sum](https://leetcode.com/problems/minimum-elements-to-add-to-form-a-given-sum) | [JavaScript](/solution/1785.%20Minimum%20Elements%20to%20Add%20to%20Form%20a%20Given%20Sum/README.md) | Medium
 1786 | [Number of Restricted Paths From First to Last Node](https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node) | [JavaScript](/solution/1786.%20Number%20of%20Restricted%20Paths%20From%20First%20to%20Last%20Node/README.md) | Medium
+1792 | [Maximum Average Pass Ratio](https://leetcode.com/problems/maximum-average-pass-ratio) | [JavaScript](/solution/1792.%20Maximum%20Average%20Pass%20Ratio/README.md) | Medium
