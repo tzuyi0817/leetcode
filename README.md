@@ -155,3 +155,4 @@
 1786 | [Number of Restricted Paths From First to Last Node](https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node) | [JavaScript](/solution/1786.%20Number%20of%20Restricted%20Paths%20From%20First%20to%20Last%20Node/README.md) | Medium
 1792 | [Maximum Average Pass Ratio](https://leetcode.com/problems/maximum-average-pass-ratio) | [JavaScript](/solution/1792.%20Maximum%20Average%20Pass%20Ratio/README.md) | Medium
 1797 | [Design Authentication Manager](https://leetcode.com/problems/design-authentication-manager) | [JavaScript](/solution/1797.%20Design%20Authentication%20Manager/README.md) | Medium
+1798 | [Maximum Number of Consecutive Values You Can Make](https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make) | [JavaScript](/solution/1798.%20Maximum%20Number%20of%20Consecutive%20Values%20You%20Can%20Make/README.md) | Medium
