@@ -157,3 +157,4 @@
 1797 | [Design Authentication Manager](https://leetcode.com/problems/design-authentication-manager) | [JavaScript](/solution/1797.%20Design%20Authentication%20Manager/README.md) | Medium
 1798 | [Maximum Number of Consecutive Values You Can Make](https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make) | [JavaScript](/solution/1798.%20Maximum%20Number%20of%20Consecutive%20Values%20You%20Can%20Make/README.md) | Medium
 1801 | [Number of Orders in the Backlog](https://leetcode.com/problems/number-of-orders-in-the-backlog) | [JavaScript](/solution/1801.%20Number%20of%20Orders%20in%20the%20Backlog/README.md) | Medium
+1802 | [Maximum Value at a Given Index in a Bounded Array](https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array) | [JavaScript](/solution/1802.%20Maximum%20Value%20at%20a%20Given%20Index%20in%20a%20Bounded%20Array/README.md) | Medium
