@@ -159,3 +159,4 @@
 1801 | [Number of Orders in the Backlog](https://leetcode.com/problems/number-of-orders-in-the-backlog) | [JavaScript](/solution/1801.%20Number%20of%20Orders%20in%20the%20Backlog/README.md) | Medium
 1802 | [Maximum Value at a Given Index in a Bounded Array](https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array) | [JavaScript](/solution/1802.%20Maximum%20Value%20at%20a%20Given%20Index%20in%20a%20Bounded%20Array/README.md) | Medium
 1806 | [Minimum Number of Operations to Reinitialize a Permutation](https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation) | [JavaScript](/solution/1806.%20Minimum%20Number%20of%20Operations%20to%20Reinitialize%20a%20Permutation/README.md) | Medium
+1807 | [Evaluate the Bracket Pairs of a String](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string) | [JavaScript](/solution/1807.%20Evaluate%20the%20Bracket%20Pairs%20of%20a%20String/README.md) | Medium
