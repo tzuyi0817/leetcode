@@ -161,3 +161,4 @@
 1806 | [Minimum Number of Operations to Reinitialize a Permutation](https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation) | [JavaScript](/solution/1806.%20Minimum%20Number%20of%20Operations%20to%20Reinitialize%20a%20Permutation/README.md) | Medium
 1807 | [Evaluate the Bracket Pairs of a String](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string) | [JavaScript](/solution/1807.%20Evaluate%20the%20Bracket%20Pairs%20of%20a%20String/README.md) | Medium
 1813 | [Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii) | [JavaScript](/solution/1813.%20Sentence%20Similarity%20III/README.md) | Medium
+1814 | [Count Nice Pairs in an Array](https://leetcode.com/problems/count-nice-pairs-in-an-array) | [JavaScript](/solution/1814.%20Count%20Nice%20Pairs%20in%20an%20Array/README.md) | Medium
