@@ -165,3 +165,4 @@
 1817 | [Finding the Users Active Minutes](https://leetcode.com/problems/finding-the-users-active-minutes) | [JavaScript](/solution/1817.%20Finding%20the%20Users%20Active%20Minutes/README.md) | Medium
 1818 | [Minimum Absolute Sum Difference](https://leetcode.com/problems/minimum-absolute-sum-difference) | [JavaScript](/solution/1818.%20Minimum%20Absolute%20Sum%20Difference/README.md) | Medium
 1823 | [Find the Winner of the Circular Game](https://leetcode.com/problems/find-the-winner-of-the-circular-game) | [JavaScript](/solution/1823.%20Find%20the%20Winner%20of%20the%20Circular%20Game/README.md) | Medium
+1824 | [Minimum Sideway Jumps](https://leetcode.com/problems/minimum-sideway-jumps) | [JavaScript](/solution/1824.%20Minimum%20Sideway%20Jumps/README.md) | Medium
