@@ -166,3 +166,4 @@
 1818 | [Minimum Absolute Sum Difference](https://leetcode.com/problems/minimum-absolute-sum-difference) | [JavaScript](/solution/1818.%20Minimum%20Absolute%20Sum%20Difference/README.md) | Medium
 1823 | [Find the Winner of the Circular Game](https://leetcode.com/problems/find-the-winner-of-the-circular-game) | [JavaScript](/solution/1823.%20Find%20the%20Winner%20of%20the%20Circular%20Game/README.md) | Medium
 1824 | [Minimum Sideway Jumps](https://leetcode.com/problems/minimum-sideway-jumps) | [JavaScript](/solution/1824.%20Minimum%20Sideway%20Jumps/README.md) | Medium
+1828 | [Queries on Number of Points Inside a Circle](https://leetcode.com/problems/queries-on-number-of-points-inside-a-circle) | [JavaScript](/solution/1828.%20Queries%20on%20Number%20of%20Points%20Inside%20a%20Circle/README.md) | Medium
