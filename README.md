@@ -169,3 +169,4 @@
 1828 | [Queries on Number of Points Inside a Circle](https://leetcode.com/problems/queries-on-number-of-points-inside-a-circle) | [JavaScript](/solution/1828.%20Queries%20on%20Number%20of%20Points%20Inside%20a%20Circle/README.md) | Medium
 1829 | [Maximum XOR for Each Query](https://leetcode.com/problems/maximum-xor-for-each-query) | [JavaScript](/solution/1829.%20Maximum%20XOR%20for%20Each%20Query/README.md) | Medium
 1833 | [Maximum Ice Cream Bars](https://leetcode.com/problems/maximum-ice-cream-bars) | [JavaScript](/solution/1833.%20Maximum%20Ice%20Cream%20Bars/README.md) | Medium
+1834 | [Single-Threaded CPU](https://leetcode.com/problems/single-threaded-cpu) | [JavaScript](/solution/1834.%20Single-Threaded%20CPU/README.md) | Medium
