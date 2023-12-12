@@ -170,3 +170,4 @@
 1829 | [Maximum XOR for Each Query](https://leetcode.com/problems/maximum-xor-for-each-query) | [JavaScript](/solution/1829.%20Maximum%20XOR%20for%20Each%20Query/README.md) | Medium
 1833 | [Maximum Ice Cream Bars](https://leetcode.com/problems/maximum-ice-cream-bars) | [JavaScript](/solution/1833.%20Maximum%20Ice%20Cream%20Bars/README.md) | Medium
 1834 | [Single-Threaded CPU](https://leetcode.com/problems/single-threaded-cpu) | [JavaScript](/solution/1834.%20Single-Threaded%20CPU/README.md) | Medium
+1838 | [Frequency of the Most Frequent Element](https://leetcode.com/problems/frequency-of-the-most-frequent-element) | [JavaScript](/solution/1838.%20Frequency%20of%20the%20Most%20Frequent%20Element/README.md) | Medium
