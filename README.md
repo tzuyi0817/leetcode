@@ -173,3 +173,4 @@
 1838 | [Frequency of the Most Frequent Element](https://leetcode.com/problems/frequency-of-the-most-frequent-element) | [JavaScript](/solution/1838.%20Frequency%20of%20the%20Most%20Frequent%20Element/README.md) | Medium
 1839 | [Longest Substring Of All Vowels in Order](https://leetcode.com/problems/longest-substring-of-all-vowels-in-order) | [JavaScript](/solution/1839.%20Longest%20Substring%20Of%20All%20Vowels%20in%20Order/README.md) | Medium
 1845 | [Seat Reservation Manager](https://leetcode.com/problems/seat-reservation-manager) | [JavaScript](/solution/1845.%20Seat%20Reservation%20Manager/README.md) | Medium
+1846 | [Maximum Element After Decreasing and Rearranging](https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging) | [JavaScript](/solution/1846.%20Maximum%20Element%20After%20Decreasing%20and%20Rearranging/README.md) | Medium
