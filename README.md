@@ -175,3 +175,4 @@
 1845 | [Seat Reservation Manager](https://leetcode.com/problems/seat-reservation-manager) | [JavaScript](/solution/1845.%20Seat%20Reservation%20Manager/README.md) | Medium
 1846 | [Maximum Element After Decreasing and Rearranging](https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging) | [JavaScript](/solution/1846.%20Maximum%20Element%20After%20Decreasing%20and%20Rearranging/README.md) | Medium
 1849 | [Splitting a String Into Descending Consecutive Values](https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values) | [JavaScript](/solution/1849.%20Splitting%20a%20String%20Into%20Descending%20Consecutive%20Values/README.md) | Medium
+1850 | [Minimum Adjacent Swaps to Reach the Kth Smallest Number](https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number) | [JavaScript](/solution/1850.%20Minimum%20Adjacent%20Swaps%20to%20Reach%20the%20Kth%20Smallest%20Number/README.md) | Medium
