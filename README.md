@@ -177,3 +177,4 @@
 1849 | [Splitting a String Into Descending Consecutive Values](https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values) | [JavaScript](/solution/1849.%20Splitting%20a%20String%20Into%20Descending%20Consecutive%20Values/README.md) | Medium
 1850 | [Minimum Adjacent Swaps to Reach the Kth Smallest Number](https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number) | [JavaScript](/solution/1850.%20Minimum%20Adjacent%20Swaps%20to%20Reach%20the%20Kth%20Smallest%20Number/README.md) | Medium
 1855 | [Maximum Distance Between a Pair of Values](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values) | [JavaScript](/solution/1855.%20Maximum%20Distance%20Between%20a%20Pair%20of%20Values/README.md) | Medium
+1856 | [Maximum Subarray Min-Product](https://leetcode.com/problems/maximum-subarray-min-product) | [JavaScript](/solution/1856.%20Maximum%20Subarray%20Min-Product/README.md) | Medium
