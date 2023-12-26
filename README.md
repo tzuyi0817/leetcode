@@ -179,3 +179,4 @@
 1855 | [Maximum Distance Between a Pair of Values](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values) | [JavaScript](/solution/1855.%20Maximum%20Distance%20Between%20a%20Pair%20of%20Values/README.md) | Medium
 1856 | [Maximum Subarray Min-Product](https://leetcode.com/problems/maximum-subarray-min-product) | [JavaScript](/solution/1856.%20Maximum%20Subarray%20Min-Product/README.md) | Medium
 1860 | [Incremental Memory Leak](https://leetcode.com/problems/incremental-memory-leak) | [JavaScript](/solution/1860.%20Incremental%20Memory%20Leak/README.md) | Medium
+1861 | [Rotating the Box](https://leetcode.com/problems/rotating-the-box) | [JavaScript](/solution/1861.%20Rotating%20the%20Box/README.md) | Medium
