@@ -181,3 +181,4 @@
 1860 | [Incremental Memory Leak](https://leetcode.com/problems/incremental-memory-leak) | [JavaScript](/solution/1860.%20Incremental%20Memory%20Leak/README.md) | Medium
 1861 | [Rotating the Box](https://leetcode.com/problems/rotating-the-box) | [JavaScript](/solution/1861.%20Rotating%20the%20Box/README.md) | Medium
 1864 | [Minimum Number of Swaps to Make the Binary String Alternating](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating) | [JavaScript](/solution/1864.%20Minimum%20Number%20of%20Swaps%20to%20Make%20the%20Binary%20String%20Alternating/README.md) | Medium
+1865 | [Finding Pairs With a Certain Sum](https://leetcode.com/problems/finding-pairs-with-a-certain-sum) | [JavaScript](/solution/1865.%20Finding%20Pairs%20With%20a%20Certain%20Sum/README.md) | Medium
