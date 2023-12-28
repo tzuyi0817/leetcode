@@ -183,3 +183,4 @@
 1864 | [Minimum Number of Swaps to Make the Binary String Alternating](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating) | [JavaScript](/solution/1864.%20Minimum%20Number%20of%20Swaps%20to%20Make%20the%20Binary%20String%20Alternating/README.md) | Medium
 1865 | [Finding Pairs With a Certain Sum](https://leetcode.com/problems/finding-pairs-with-a-certain-sum) | [JavaScript](/solution/1865.%20Finding%20Pairs%20With%20a%20Certain%20Sum/README.md) | Medium
 1870 | [Minimum Speed to Arrive on Time](https://leetcode.com/problems/minimum-speed-to-arrive-on-time) | [JavaScript](/solution/1870.%20Minimum%20Speed%20to%20Arrive%20on%20Time/README.md) | Medium
+1871 | [Jump Game VII](https://leetcode.com/problems/jump-game-vii) | [JavaScript](/solution/1871.%20Jump%20Game%20VII/README.md) | Medium
