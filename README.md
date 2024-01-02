@@ -185,3 +185,4 @@
 1870 | [Minimum Speed to Arrive on Time](https://leetcode.com/problems/minimum-speed-to-arrive-on-time) | [JavaScript](/solution/1870.%20Minimum%20Speed%20to%20Arrive%20on%20Time/README.md) | Medium
 1871 | [Jump Game VII](https://leetcode.com/problems/jump-game-vii) | [JavaScript](/solution/1871.%20Jump%20Game%20VII/README.md) | Medium
 1877 | [Minimize Maximum Pair Sum in Array](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array) | [JavaScript](/solution/1877.%20Minimize%20Maximum%20Pair%20Sum%20in%20Array/README.md) | Medium
+1878 | [Get Biggest Three Rhombus Sums in a Grid](https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid) | [JavaScript](/solution/1878.%20Get%20Biggest%20Three%20Rhombus%20Sums%20in%20a%20Grid/README.md) | Medium
