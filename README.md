@@ -187,3 +187,4 @@
 1877 | [Minimize Maximum Pair Sum in Array](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array) | [JavaScript](/solution/1877.%20Minimize%20Maximum%20Pair%20Sum%20in%20Array/README.md) | Medium
 1878 | [Get Biggest Three Rhombus Sums in a Grid](https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid) | [JavaScript](/solution/1878.%20Get%20Biggest%20Three%20Rhombus%20Sums%20in%20a%20Grid/README.md) | Medium
 1881 | [Maximum Value after Insertion](https://leetcode.com/problems/maximum-value-after-insertion) | [JavaScript](/solution/1881.%20Maximum%20Value%20after%20Insertion/README.md) | Medium
+1882 | [Process Tasks Using Servers](https://leetcode.com/problems/process-tasks-using-servers) | [JavaScript](/solution/1882.%20Process%20Tasks%20Using%20Servers/README.md) | Medium
