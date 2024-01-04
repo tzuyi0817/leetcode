@@ -190,3 +190,4 @@
 1882 | [Process Tasks Using Servers](https://leetcode.com/problems/process-tasks-using-servers) | [JavaScript](/solution/1882.%20Process%20Tasks%20Using%20Servers/README.md) | Medium
 1884 | [Egg Drop With 2 Eggs and N Floors](https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors) | [JavaScript](/solution/1884.%20Egg%20Drop%20With%202%20Eggs%20and%20N%20Floors/README.md) | Medium
 1887 | [Reduction Operations to Make the Array Elements Equal](https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal) | [JavaScript](/solution/1887.%20Reduction%20Operations%20to%20Make%20the%20Array%20Elements%20Equal/README.md) | Medium
+1888 | [Minimum Number of Flips to Make the Binary String Alternating](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating) | [JavaScript](/solution/1888.%20Minimum%20Number%20of%20Flips%20to%20Make%20the%20Binary%20String%20Alternating/README.md) | Medium
