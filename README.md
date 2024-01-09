@@ -193,3 +193,4 @@
 1888 | [Minimum Number of Flips to Make the Binary String Alternating](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating) | [JavaScript](/solution/1888.%20Minimum%20Number%20of%20Flips%20to%20Make%20the%20Binary%20String%20Alternating/README.md) | Medium
 1894 | [Find the Student that Will Replace the Chalk](https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk) | [JavaScript](/solution/1894.%20Find%20the%20Student%20that%20Will%20Replace%20the%20Chalk/README.md) | Medium
 1895 | [Largest Magic Square](https://leetcode.com/problems/largest-magic-square) | [JavaScript](/solution/1895.%20Largest%20Magic%20Square/README.md) | Medium
+1898 | [Maximum Number of Removable Characters](https://leetcode.com/problems/maximum-number-of-removable-characters) | [JavaScript](/solution/1898.%20Maximum%20Number%20of%20Removable%20Characters/README.md) | Medium
