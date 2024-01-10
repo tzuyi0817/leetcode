@@ -195,3 +195,4 @@
 1895 | [Largest Magic Square](https://leetcode.com/problems/largest-magic-square) | [JavaScript](/solution/1895.%20Largest%20Magic%20Square/README.md) | Medium
 1898 | [Maximum Number of Removable Characters](https://leetcode.com/problems/maximum-number-of-removable-characters) | [JavaScript](/solution/1898.%20Maximum%20Number%20of%20Removable%20Characters/README.md) | Medium
 1899 | [Merge Triplets to Form Target Triplet](https://leetcode.com/problems/merge-triplets-to-form-target-triplet) | [JavaScript](/solution/1899.%20Merge%20Triplets%20to%20Form%20Target%20Triplet/README.md) | Medium
+1901 | [Find a Peak Element II](https://leetcode.com/problems/find-a-peak-element-ii) | [JavaScript](/solution/1901.%20Find%20a%20Peak%20Element%20II/README.md) | Medium
