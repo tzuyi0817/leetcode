@@ -199,3 +199,4 @@
 1904 | [The Number of Full Rounds You Have Played](https://leetcode.com/problems/the-number-of-full-rounds-you-have-played) | [JavaScript](/solution/1904.%20The%20Number%20of%20Full%20Rounds%20You%20Have%20Played/README.md) | Medium
 1905 | [Count Sub Islands](https://leetcode.com/problems/count-sub-islands) | [JavaScript](/solution/1905.%20Count%20Sub%20Islands/README.md) | Medium
 1906 | [Minimum Absolute Difference Queries](https://leetcode.com/problems/minimum-absolute-difference-queries) | [JavaScript](/solution/1906.%20Minimum%20Absolute%20Difference%20Queries/README.md) | Medium
+1910 | [Remove All Occurrences of a Substring](https://leetcode.com/problems/remove-all-occurrences-of-a-substring) | [JavaScript](/solution/1910.%20Remove%20All%20Occurrences%20of%20a%20Substring/README.md) | Medium
