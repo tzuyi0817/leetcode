@@ -202,3 +202,4 @@
 1910 | [Remove All Occurrences of a Substring](https://leetcode.com/problems/remove-all-occurrences-of-a-substring) | [JavaScript](/solution/1910.%20Remove%20All%20Occurrences%20of%20a%20Substring/README.md) | Medium
 1911 | [Maximum Alternating Subsequence Sum](https://leetcode.com/problems/maximum-alternating-subsequence-sum) | [JavaScript](/solution/1911.%20Maximum%20Alternating%20Subsequence%20Sum/README.md) | Medium
 1914 | [Cyclically Rotating a Grid](https://leetcode.com/problems/cyclically-rotating-a-grid) | [JavaScript](/solution/1914.%20Cyclically%20Rotating%20a%20Grid/README.md) | Medium
+1915 | [Number of Wonderful Substrings](https://leetcode.com/problems/number-of-wonderful-substrings) | [JavaScript](/solution/1915.%20Number%20of%20Wonderful%20Substrings/README.md) | Medium
