@@ -204,3 +204,4 @@
 1914 | [Cyclically Rotating a Grid](https://leetcode.com/problems/cyclically-rotating-a-grid) | [JavaScript](/solution/1914.%20Cyclically%20Rotating%20a%20Grid/README.md) | Medium
 1915 | [Number of Wonderful Substrings](https://leetcode.com/problems/number-of-wonderful-substrings) | [JavaScript](/solution/1915.%20Number%20of%20Wonderful%20Substrings/README.md) | Medium
 1921 | [Eliminate Maximum Number of Monsters](https://leetcode.com/problems/eliminate-maximum-number-of-monsters) | [JavaScript](/solution/1921.%20Eliminate%20Maximum%20Number%20of%20Monsters/README.md) | Medium
+1922 | [Count Good Numbers](https://leetcode.com/problems/count-good-numbers) | [JavaScript](/solution/1922.%20Count%20Good%20Numbers/README.md) | Medium
