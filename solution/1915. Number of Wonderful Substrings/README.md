@@ -88,7 +88,6 @@ var wonderfulSubstrings = function(word) {
         result += counts[current];
 
         for (let index = 0; index < CHARS; index++) {
-            console.log(current ^ 1 << index)
             result += counts[current ^ 1 << index];
         }
         counts[current] += 1;
