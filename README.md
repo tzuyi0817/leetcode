@@ -205,3 +205,4 @@
 1915 | [Number of Wonderful Substrings](https://leetcode.com/problems/number-of-wonderful-substrings) | [JavaScript](/solution/1915.%20Number%20of%20Wonderful%20Substrings/README.md) | Medium
 1921 | [Eliminate Maximum Number of Monsters](https://leetcode.com/problems/eliminate-maximum-number-of-monsters) | [JavaScript](/solution/1921.%20Eliminate%20Maximum%20Number%20of%20Monsters/README.md) | Medium
 1922 | [Count Good Numbers](https://leetcode.com/problems/count-good-numbers) | [JavaScript](/solution/1922.%20Count%20Good%20Numbers/README.md) | Medium
+1926 | [Nearest Exit from Entrance in Maze](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze) | [JavaScript](/solution/1926.%20Nearest%20Exit%20from%20Entrance%20in%20Maze/README.md) | Medium
