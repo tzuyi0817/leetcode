@@ -206,3 +206,4 @@
 1921 | [Eliminate Maximum Number of Monsters](https://leetcode.com/problems/eliminate-maximum-number-of-monsters) | [JavaScript](/solution/1921.%20Eliminate%20Maximum%20Number%20of%20Monsters/README.md) | Medium
 1922 | [Count Good Numbers](https://leetcode.com/problems/count-good-numbers) | [JavaScript](/solution/1922.%20Count%20Good%20Numbers/README.md) | Medium
 1926 | [Nearest Exit from Entrance in Maze](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze) | [JavaScript](/solution/1926.%20Nearest%20Exit%20from%20Entrance%20in%20Maze/README.md) | Medium
+1927 | [Sum Game](https://leetcode.com/problems/sum-game) | [JavaScript](/solution/1927.%20Sum%20Game/README.md) | Medium
