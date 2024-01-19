@@ -207,3 +207,4 @@
 1922 | [Count Good Numbers](https://leetcode.com/problems/count-good-numbers) | [JavaScript](/solution/1922.%20Count%20Good%20Numbers/README.md) | Medium
 1926 | [Nearest Exit from Entrance in Maze](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze) | [JavaScript](/solution/1926.%20Nearest%20Exit%20from%20Entrance%20in%20Maze/README.md) | Medium
 1927 | [Sum Game](https://leetcode.com/problems/sum-game) | [JavaScript](/solution/1927.%20Sum%20Game/README.md) | Medium
+1930 | [Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences) | [JavaScript](/solution/1930.%20Unique%20Length-3%20Palindromic%20Subsequences/README.md) | Medium
