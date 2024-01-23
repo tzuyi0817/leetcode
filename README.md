@@ -210,3 +210,4 @@
 1930 | [Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences) | [JavaScript](/solution/1930.%20Unique%20Length-3%20Palindromic%20Subsequences/README.md) | Medium
 1937 | [Add Minimum Number of Rungs](https://leetcode.com/problems/add-minimum-number-of-rungs) | [JavaScript](/solution/1936.%20Add%20Minimum%20Number%20of%20Rungs/README.md) | Medium
 1936 | [Maximum Number of Points with Cost](https://leetcode.com/problems/maximum-number-of-points-with-cost) | [JavaScript](/solution/1937.%20Maximum%20Number%20of%20Points%20with%20Cost/README.md) | Medium
+1942 | [The Number of the Smallest Unoccupied Chair](https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair) | [JavaScript](/solution/1942.%20The%20Number%20of%20the%20Smallest%20Unoccupied%20Chair/README.md) | Medium
