@@ -53,7 +53,7 @@ The ladder will now have rungs at [<u>1</u>,3,4,6,7].
 ## Solutions
 
 **Solution: `Math`**
-- Time complexity: <em>O(n6)</em>
+- Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
 <p>&nbsp;</p>
