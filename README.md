@@ -212,3 +212,4 @@
 1936 | [Maximum Number of Points with Cost](https://leetcode.com/problems/maximum-number-of-points-with-cost) | [JavaScript](/solution/1937.%20Maximum%20Number%20of%20Points%20with%20Cost/README.md) | Medium
 1942 | [The Number of the Smallest Unoccupied Chair](https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair) | [JavaScript](/solution/1942.%20The%20Number%20of%20the%20Smallest%20Unoccupied%20Chair/README.md) | Medium
 1943 | [Describe the Painting](https://leetcode.com/problems/describe-the-painting) | [JavaScript](/solution/1943.%20Describe%20the%20Painting/README.md) | Medium
+1946 | [Largest Number After Mutating Substring](https://leetcode.com/problems/largest-number-after-mutating-substring) | [JavaScript](/solution/1946.%20Largest%20Number%20After%20Mutating%20Substring/README.md) | Medium
