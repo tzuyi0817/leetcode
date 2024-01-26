@@ -216,3 +216,4 @@
 1947 | [Maximum Compatibility Score Sum](https://leetcode.com/problems/maximum-compatibility-score-sum) | [JavaScript](/solution/1947.%20Maximum%20Compatibility%20Score%20Sum/README.md) | Medium
 1953 | [Maximum Number of Weeks for Which You Can Work](https://leetcode.com/problems/maximum-number-of-weeks-for-which-you-can-work) | [JavaScript](/solution/1953.%20Maximum%20Number%20of%20Weeks%20for%20Which%20You%20Can%20Work/README.md) | Medium
 1954 | [Minimum Garden Perimeter to Collect Enough Apples](https://leetcode.com/problems/minimum-garden-perimeter-to-collect-enough-apples) | [JavaScript](/solution/1954.%20Minimum%20Garden%20Perimeter%20to%20Collect%20Enough%20Apples/README.md) | Medium
+1958 | [Check if Move is Legal](https://leetcode.com/problems/check-if-move-is-legal) | [JavaScript](/solution/1958.%20Check%20if%20Move%20is%20Legal/README.md) | Medium
