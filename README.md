@@ -218,3 +218,4 @@
 1954 | [Minimum Garden Perimeter to Collect Enough Apples](https://leetcode.com/problems/minimum-garden-perimeter-to-collect-enough-apples) | [JavaScript](/solution/1954.%20Minimum%20Garden%20Perimeter%20to%20Collect%20Enough%20Apples/README.md) | Medium
 1958 | [Check if Move is Legal](https://leetcode.com/problems/check-if-move-is-legal) | [JavaScript](/solution/1958.%20Check%20if%20Move%20is%20Legal/README.md) | Medium
 1959 | [Minimum Total Space Wasted With K Resizing Operations](https://leetcode.com/problems/minimum-total-space-wasted-with-k-resizing-operations) | [JavaScript](/solution/1959.%20Minimum%20Total%20Space%20Wasted%20With%20K%20Resizing%20Operations/README.md) | Medium
+1962 | [Remove Stones to Minimize the Total](https://leetcode.com/problems/remove-stones-to-minimize-the-total) | [JavaScript](/solution/1962.%20Remove%20Stones%20to%20Minimize%20the%20Total/README.md) | Medium
