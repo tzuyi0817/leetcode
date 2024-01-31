@@ -219,3 +219,4 @@
 1958 | [Check if Move is Legal](https://leetcode.com/problems/check-if-move-is-legal) | [JavaScript](/solution/1958.%20Check%20if%20Move%20is%20Legal/README.md) | Medium
 1959 | [Minimum Total Space Wasted With K Resizing Operations](https://leetcode.com/problems/minimum-total-space-wasted-with-k-resizing-operations) | [JavaScript](/solution/1959.%20Minimum%20Total%20Space%20Wasted%20With%20K%20Resizing%20Operations/README.md) | Medium
 1962 | [Remove Stones to Minimize the Total](https://leetcode.com/problems/remove-stones-to-minimize-the-total) | [JavaScript](/solution/1962.%20Remove%20Stones%20to%20Minimize%20the%20Total/README.md) | Medium
+1963 | [Minimum Number of Swaps to Make the String Balanced](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced) | [JavaScript](/solution/1963.%20Minimum%20Number%20of%20Swaps%20to%20Make%20the%20String%20Balanced/README.md) | Medium
