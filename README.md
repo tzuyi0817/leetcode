@@ -222,3 +222,4 @@
 1963 | [Minimum Number of Swaps to Make the String Balanced](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced) | [JavaScript](/solution/1963.%20Minimum%20Number%20of%20Swaps%20to%20Make%20the%20String%20Balanced/README.md) | Medium
 1968 | [Array With Elements Not Equal to Average of Neighbors](https://leetcode.com/problems/array-with-elements-not-equal-to-average-of-neighbors) | [JavaScript](/solution/1968.%20Array%20With%20Elements%20Not%20Equal%20to%20Average%20of%20Neighbors/README.md) | Medium
 1969 | [Minimum Non-Zero Product of the Array Elements](https://leetcode.com/problems/minimum-non-zero-product-of-the-array-elements) | [JavaScript](/solution/1969.%20Minimum%20Non-Zero%20Product%20of%20the%20Array%20Elements/README.md) | Medium
+1975 | [Maximum Matrix Sum](https://leetcode.com/problems/maximum-matrix-sum) | [JavaScript](/solution/1975.%20Maximum%20Matrix%20Sum/README.md) | Medium
