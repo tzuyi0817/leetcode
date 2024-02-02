@@ -223,3 +223,4 @@
 1968 | [Array With Elements Not Equal to Average of Neighbors](https://leetcode.com/problems/array-with-elements-not-equal-to-average-of-neighbors) | [JavaScript](/solution/1968.%20Array%20With%20Elements%20Not%20Equal%20to%20Average%20of%20Neighbors/README.md) | Medium
 1969 | [Minimum Non-Zero Product of the Array Elements](https://leetcode.com/problems/minimum-non-zero-product-of-the-array-elements) | [JavaScript](/solution/1969.%20Minimum%20Non-Zero%20Product%20of%20the%20Array%20Elements/README.md) | Medium
 1975 | [Maximum Matrix Sum](https://leetcode.com/problems/maximum-matrix-sum) | [JavaScript](/solution/1975.%20Maximum%20Matrix%20Sum/README.md) | Medium
+1976 | [Number of Ways to Arrive at Destination](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination) | [JavaScript](/solution/1976.%20Number%20of%20Ways%20to%20Arrive%20at%20Destination/README.md) | Medium
