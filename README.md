@@ -225,4 +225,5 @@
 1975 | [Maximum Matrix Sum](https://leetcode.com/problems/maximum-matrix-sum) | [JavaScript](/solution/1975.%20Maximum%20Matrix%20Sum/README.md) | Medium
 1976 | [Number of Ways to Arrive at Destination](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination) | [JavaScript](/solution/1976.%20Number%20of%20Ways%20to%20Arrive%20at%20Destination/README.md) | Medium
 1980 | [Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string) | [JavaScript](/solution/1980.%20Find%20Unique%20Binary%20String/README.md) | Medium
-1980 | [Minimize the Difference Between Target and Chosen Elements](https://leetcode.com/problems/minimize-the-difference-between-target-and-chosen-elements) | [JavaScript](/solution/1981.%20Minimize%20the%20Difference%20Between%20Target%20and%20Chosen%20Elements/README.md) | Medium
+1981 | [Minimize the Difference Between Target and Chosen Elements](https://leetcode.com/problems/minimize-the-difference-between-target-and-chosen-elements) | [JavaScript](/solution/1981.%20Minimize%20the%20Difference%20Between%20Target%20and%20Chosen%20Elements/README.md) | Medium
+1985 | [Find the Kth Largest Integer in the Array](https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array) | [JavaScript](/solution/1985.%20Find%20the%20Kth%20Largest%20Integer%20in%20the%20Array/README.md) | Medium
