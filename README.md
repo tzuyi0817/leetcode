@@ -229,3 +229,4 @@
 1985 | [Find the Kth Largest Integer in the Array](https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array) | [JavaScript](/solution/1985.%20Find%20the%20Kth%20Largest%20Integer%20in%20the%20Array/README.md) | Medium
 1986 | [Minimum Number of Work Sessions to Finish the Tasks](https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks) | [JavaScript](/solution/1986.%20Minimum%20Number%20of%20Work%20Sessions%20to%20Finish%20the%20Tasks/README.md) | Medium
 1992 | [Find All Groups of Farmland](https://leetcode.com/problems/find-all-groups-of-farmland) | [JavaScript](/solution/1992.%20Find%20All%20Groups%20of%20Farmland/README.md) | Medium
+1993 | [Operations on Tree](https://leetcode.com/problems/operations-on-tree) | [JavaScript](/solution/1993.%20Operations%20on%20Tree/README.md) | Medium
