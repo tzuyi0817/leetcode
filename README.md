@@ -232,3 +232,4 @@
 1993 | [Operations on Tree](https://leetcode.com/problems/operations-on-tree) | [JavaScript](/solution/1993.%20Operations%20on%20Tree/README.md) | Medium
 1996 | [The Number of Weak Characters in the Game](https://leetcode.com/problems/the-number-of-weak-characters-in-the-game) | [JavaScript](/solution/1996.%20The%20Number%20of%20Weak%20Characters%20in%20the%20Game/README.md) | Medium
 1997 | [First Day Where You Have Been in All the Rooms](https://leetcode.com/problems/first-day-where-you-have-been-in-all-the-rooms) | [JavaScript](/solution/1997.%20First%20Day%20Where%20You%20Have%20Been%20in%20All%20the%20Rooms/README.md) | Medium
+2001 | [Number of Pairs of Interchangeable Rectangles](https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles) | [JavaScript](/solution/2001.%20Number%20of%20Pairs%20of%20Interchangeable%20Rectangles/README.md) | Medium
