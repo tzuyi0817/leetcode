@@ -236,3 +236,4 @@
 2002 | [Maximum Product of the Length of Two Palindromic Subsequences](https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences) | [JavaScript](/solution/2002.%20Maximum%20Product%20of%20the%20Length%20of%20Two%20Palindromic%20Subsequences/README.md) | Medium
 2007 | [Find Original Array From Doubled Array](https://leetcode.com/problems/find-original-array-from-doubled-array) | [JavaScript](/solution/2007.%20Find%20Original%20Array%20From%20Doubled%20Array/README.md) | Medium
 2008 | [Maximum Earnings From Taxi](https://leetcode.com/problems/maximum-earnings-from-taxi) | [JavaScript](/solution/2008.%20Maximum%20Earnings%20From%20Taxi/README.md) | Medium
+2012 | [Sum of Beauty in the Array](https://leetcode.com/problems/sum-of-beauty-in-the-array) | [JavaScript](/solution/2012.%20Sum%20of%20Beauty%20in%20the%20Array/README.md) | Medium
