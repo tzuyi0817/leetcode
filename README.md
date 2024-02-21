@@ -237,3 +237,4 @@
 2007 | [Find Original Array From Doubled Array](https://leetcode.com/problems/find-original-array-from-doubled-array) | [JavaScript](/solution/2007.%20Find%20Original%20Array%20From%20Doubled%20Array/README.md) | Medium
 2008 | [Maximum Earnings From Taxi](https://leetcode.com/problems/maximum-earnings-from-taxi) | [JavaScript](/solution/2008.%20Maximum%20Earnings%20From%20Taxi/README.md) | Medium
 2012 | [Sum of Beauty in the Array](https://leetcode.com/problems/sum-of-beauty-in-the-array) | [JavaScript](/solution/2012.%20Sum%20of%20Beauty%20in%20the%20Array/README.md) | Medium
+2013 | [Detect Squares](https://leetcode.com/problems/detect-squares) | [JavaScript](/solution/2013.%20Detect%20Squares/README.md) | Medium
