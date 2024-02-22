@@ -24,12 +24,12 @@ var placeWordInCrossword = function(board, word) {
             const leftCell = board[row][col - 1];
             const rightCell = board[row][col + 1];
             const aboveCell = board[row - 1]?.[col];
-            const bellowCell = board[row + 1]?.[col];
+            const belowCell = board[row + 1]?.[col];
 
             if (isCorner(leftCell) && isCanPlaced(row, col, 1, 0)) return true;
             if (isCorner(rightCell) && isCanPlaced(row, col, -1, 0)) return true;
             if (isCorner(aboveCell) && isCanPlaced(row, col, 0, 1)) return true;
-            if (isCorner(bellowCell) && isCanPlaced(row, col, 0, -1)) return true;
+            if (isCorner(belowCell) && isCanPlaced(row, col, 0, -1)) return true;
         }
     }
     return false;

@@ -240,3 +240,4 @@
 2013 | [Detect Squares](https://leetcode.com/problems/detect-squares) | [JavaScript](/solution/2013.%20Detect%20Squares/README.md) | Medium
 2017 | [Grid Game](https://leetcode.com/problems/grid-game) | [JavaScript](/solution/2017.%20Grid%20Game/README.md) | Medium
 2018 | [Check if Word Can Be Placed In Crossword](https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword) | [JavaScript](/solution/2018.%20Check%20if%20Word%20Can%20Be%20Placed%20In%20Crossword/README.md) | Medium
+2023 | [Number of Pairs of Strings With Concatenation Equal to Target](https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target) | [JavaScript](/solution/2023.%20Number%20of%20Pairs%20of%20Strings%20With%20Concatenation%20Equal%20to%20Target/README.md) | Medium
