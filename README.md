@@ -239,3 +239,4 @@
 2012 | [Sum of Beauty in the Array](https://leetcode.com/problems/sum-of-beauty-in-the-array) | [JavaScript](/solution/2012.%20Sum%20of%20Beauty%20in%20the%20Array/README.md) | Medium
 2013 | [Detect Squares](https://leetcode.com/problems/detect-squares) | [JavaScript](/solution/2013.%20Detect%20Squares/README.md) | Medium
 2017 | [Grid Game](https://leetcode.com/problems/grid-game) | [JavaScript](/solution/2017.%20Grid%20Game/README.md) | Medium
+2018 | [Check if Word Can Be Placed In Crossword](https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword) | [JavaScript](/solution/2018.%20Check%20if%20Word%20Can%20Be%20Placed%20In%20Crossword/README.md) | Medium
