@@ -243,3 +243,4 @@
 2023 | [Number of Pairs of Strings With Concatenation Equal to Target](https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target) | [JavaScript](/solution/2023.%20Number%20of%20Pairs%20of%20Strings%20With%20Concatenation%20Equal%20to%20Target/README.md) | Medium
 2024 | [Maximize the Confusion of an Exam](https://leetcode.com/problems/maximize-the-confusion-of-an-exam) | [JavaScript](/solution/2024.%20Maximize%20the%20Confusion%20of%20an%20Exam/README.md) | Medium
 2028 | [Find Missing Observations](https://leetcode.com/problems/find-missing-observations) | [JavaScript](/solution/2028.%20Find%20Missing%20Observations/README.md) | Medium
+2029 | [Stone Game IX](https://leetcode.com/problems/stone-game-ix) | [JavaScript](/solution/2029.%20Stone%20Game%20IX/README.md) | Medium
