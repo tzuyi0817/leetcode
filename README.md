@@ -244,3 +244,4 @@
 2024 | [Maximize the Confusion of an Exam](https://leetcode.com/problems/maximize-the-confusion-of-an-exam) | [JavaScript](/solution/2024.%20Maximize%20the%20Confusion%20of%20an%20Exam/README.md) | Medium
 2028 | [Find Missing Observations](https://leetcode.com/problems/find-missing-observations) | [JavaScript](/solution/2028.%20Find%20Missing%20Observations/README.md) | Medium
 2029 | [Stone Game IX](https://leetcode.com/problems/stone-game-ix) | [JavaScript](/solution/2029.%20Stone%20Game%20IX/README.md) | Medium
+2033 | [Minimum Operations to Make a Uni-Value Grid](https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid) | [JavaScript](/solution/2033.%20Minimum%20Operations%20to%20Make%20a%20Uni-Value%20Grid/README.md) | Medium
