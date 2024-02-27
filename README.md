@@ -246,3 +246,4 @@
 2029 | [Stone Game IX](https://leetcode.com/problems/stone-game-ix) | [JavaScript](/solution/2029.%20Stone%20Game%20IX/README.md) | Medium
 2033 | [Minimum Operations to Make a Uni-Value Grid](https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid) | [JavaScript](/solution/2033.%20Minimum%20Operations%20to%20Make%20a%20Uni-Value%20Grid/README.md) | Medium
 2034 | [Stock Price Fluctuation](https://leetcode.com/problems/stock-price-fluctuation) | [JavaScript](/solution/2034.%20Stock%20Price%20Fluctuation/README.md) | Medium
+2037 | [Minimum Number of Moves to Seat Everyone](https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone) | [JavaScript](/solution/2037.%20Minimum%20Number%20of%20Moves%20to%20Seat%20Everyone/README.md) | Easy
