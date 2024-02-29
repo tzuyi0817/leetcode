@@ -248,3 +248,4 @@
 2034 | [Stock Price Fluctuation](https://leetcode.com/problems/stock-price-fluctuation) | [JavaScript](/solution/2034.%20Stock%20Price%20Fluctuation/README.md) | Medium
 2037 | [Minimum Number of Moves to Seat Everyone](https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone) | [JavaScript](/solution/2037.%20Minimum%20Number%20of%20Moves%20to%20Seat%20Everyone/README.md) | Easy
 2038 | [Remove Colored Pieces if Both Neighbors are the Same Color](https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color) | [JavaScript](/solution/2038.%20Remove%20Colored%20Pieces%20if%20Both%20Neighbors%20are%20the%20Same%20Color/README.md) | Medium
+2039 | [The Time When the Network Becomes Idle](https://leetcode.com/problems/the-time-when-the-network-becomes-idle) | [JavaScript](/solution/2039.%20The%20Time%20When%20the%20Network%20Becomes%20Idle/README.md) | Medium
