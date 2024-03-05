@@ -249,3 +249,4 @@
 2037 | [Minimum Number of Moves to Seat Everyone](https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone) | [JavaScript](/solution/2037.%20Minimum%20Number%20of%20Moves%20to%20Seat%20Everyone/README.md) | Easy
 2038 | [Remove Colored Pieces if Both Neighbors are the Same Color](https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color) | [JavaScript](/solution/2038.%20Remove%20Colored%20Pieces%20if%20Both%20Neighbors%20are%20the%20Same%20Color/README.md) | Medium
 2039 | [The Time When the Network Becomes Idle](https://leetcode.com/problems/the-time-when-the-network-becomes-idle) | [JavaScript](/solution/2039.%20The%20Time%20When%20the%20Network%20Becomes%20Idle/README.md) | Medium
+2042 | [Check if Numbers Are Ascending in a Sentence](https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence) | [JavaScript](/solution/2042.%20Check%20if%20Numbers%20Are%20Ascending%20in%20a%20Sentence/README.md) | Easy
