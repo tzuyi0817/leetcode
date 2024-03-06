@@ -252,3 +252,4 @@
 2042 | [Check if Numbers Are Ascending in a Sentence](https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence) | [JavaScript](/solution/2042.%20Check%20if%20Numbers%20Are%20Ascending%20in%20a%20Sentence/README.md) | Easy
 2043 | [Simple Bank System](https://leetcode.com/problems/simple-bank-system) | [JavaScript](/solution/2043.%20Simple%20Bank%20System/README.md) | Medium
 2044 | [Count Number of Maximum Bitwise-OR Subsets](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets) | [JavaScript](/solution/2044.%20Count%20Number%20of%20Maximum%20Bitwise-OR%20Subsets/README.md) | Medium
+2047 | [Number of Valid Words in a Sentence](https://leetcode.com/problems/number-of-valid-words-in-a-sentence) | [JavaScript](/solution/2047.%20Number%20of%20Valid%20Words%20in%20a%20Sentence/README.md) | Easy
