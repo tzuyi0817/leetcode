@@ -254,3 +254,4 @@
 2044 | [Count Number of Maximum Bitwise-OR Subsets](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets) | [JavaScript](/solution/2044.%20Count%20Number%20of%20Maximum%20Bitwise-OR%20Subsets/README.md) | Medium
 2047 | [Number of Valid Words in a Sentence](https://leetcode.com/problems/number-of-valid-words-in-a-sentence) | [JavaScript](/solution/2047.%20Number%20of%20Valid%20Words%20in%20a%20Sentence/README.md) | Easy
 2048 | [Next Greater Numerically Balanced Number](https://leetcode.com/problems/next-greater-numerically-balanced-number) | [JavaScript](/solution/2048.%20Next%20Greater%20Numerically%20Balanced%20Number/README.md) | Medium
+2049 | [Count Nodes With the Highest Score](https://leetcode.com/problems/count-nodes-with-the-highest-score) | [JavaScript](/solution/2049.%20Count%20Nodes%20With%20the%20Highest%20Score/README.md) | Medium
