@@ -258,3 +258,4 @@
 2053 | [Kth Distinct String in an Array](https://leetcode.com/problems/kth-distinct-string-in-an-array) | [JavaScript](/solution/2053.%20Kth%20Distinct%20String%20in%20an%20Array/README.md) | Easy
 2054 | [Two Best Non-Overlapping Events](https://leetcode.com/problems/two-best-non-overlapping-events) | [JavaScript](/solution/2054.%20Two%20Best%20Non-Overlapping%20Events/README.md) | Medium
 2055 | [Plates Between Candles](https://leetcode.com/problems/plates-between-candles) | [JavaScript](/solution/2055.%20Plates%20Between%20Candles/README.md) | Medium
+2057 | [Smallest Index With Equal Value](https://leetcode.com/problems/smallest-index-with-equal-value) | [JavaScript](/solution/2057.%20Smallest%20Index%20With%20Equal%20Value/README.md) | Easy
