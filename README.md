@@ -260,3 +260,4 @@
 2055 | [Plates Between Candles](https://leetcode.com/problems/plates-between-candles) | [JavaScript](/solution/2055.%20Plates%20Between%20Candles/README.md) | Medium
 2057 | [Smallest Index With Equal Value](https://leetcode.com/problems/smallest-index-with-equal-value) | [JavaScript](/solution/2057.%20Smallest%20Index%20With%20Equal%20Value/README.md) | Easy
 2058 | [Find the Minimum and Maximum Number of Nodes Between Critical Points](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points) | [JavaScript](/solution/2058.%20Find%20the%20Minimum%20and%20Maximum%20Number%20of%20Nodes%20Between%20Critical%20Points/README.md) | Medium
+2059 | [Minimum Operations to Convert Number](https://leetcode.com/problems/minimum-operations-to-convert-number) | [JavaScript](/solution/2059.%20Minimum%20Operations%20to%20Convert%20Number/README.md) | Medium
