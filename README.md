@@ -262,3 +262,4 @@
 2058 | [Find the Minimum and Maximum Number of Nodes Between Critical Points](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points) | [JavaScript](/solution/2058.%20Find%20the%20Minimum%20and%20Maximum%20Number%20of%20Nodes%20Between%20Critical%20Points/README.md) | Medium
 2059 | [Minimum Operations to Convert Number](https://leetcode.com/problems/minimum-operations-to-convert-number) | [JavaScript](/solution/2059.%20Minimum%20Operations%20to%20Convert%20Number/README.md) | Medium
 2062 | [Count Vowel Substrings of a String](https://leetcode.com/problems/count-vowel-substrings-of-a-string) | [JavaScript](/solution/2062.%20Count%20Vowel%20Substrings%20of%20a%20String/README.md) | Easy
+2063 | [Vowels of All Substrings](https://leetcode.com/problems/vowels-of-all-substrings) | [JavaScript](/solution/2063.%20Vowels%20of%20All%20Substrings/README.md) | Medium
