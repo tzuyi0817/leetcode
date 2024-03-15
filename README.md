@@ -264,3 +264,4 @@
 2062 | [Count Vowel Substrings of a String](https://leetcode.com/problems/count-vowel-substrings-of-a-string) | [JavaScript](/solution/2062.%20Count%20Vowel%20Substrings%20of%20a%20String/README.md) | Easy
 2063 | [Vowels of All Substrings](https://leetcode.com/problems/vowels-of-all-substrings) | [JavaScript](/solution/2063.%20Vowels%20of%20All%20Substrings/README.md) | Medium
 2064 | [Minimized Maximum of Products Distributed to Any Store](https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store) | [JavaScript](/solution/2064.%20Minimized%20Maximum%20of%20Products%20Distributed%20to%20Any%20Store/README.md) | Medium
+2068 | [Check Whether Two Strings are Almost Equivalent](https://leetcode.com/problems/check-whether-two-strings-are-almost-equivalent) | [JavaScript](/solution/2068.%20Check%20Whether%20Two%20Strings%20are%20Almost%20Equivalent/README.md) | Easy
