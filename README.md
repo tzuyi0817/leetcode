@@ -263,3 +263,4 @@
 2059 | [Minimum Operations to Convert Number](https://leetcode.com/problems/minimum-operations-to-convert-number) | [JavaScript](/solution/2059.%20Minimum%20Operations%20to%20Convert%20Number/README.md) | Medium
 2062 | [Count Vowel Substrings of a String](https://leetcode.com/problems/count-vowel-substrings-of-a-string) | [JavaScript](/solution/2062.%20Count%20Vowel%20Substrings%20of%20a%20String/README.md) | Easy
 2063 | [Vowels of All Substrings](https://leetcode.com/problems/vowels-of-all-substrings) | [JavaScript](/solution/2063.%20Vowels%20of%20All%20Substrings/README.md) | Medium
+2064 | [Minimized Maximum of Products Distributed to Any Store](https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store) | [JavaScript](/solution/2064.%20Minimized%20Maximum%20of%20Products%20Distributed%20to%20Any%20Store/README.md) | Medium
