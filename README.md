@@ -265,3 +265,4 @@
 2063 | [Vowels of All Substrings](https://leetcode.com/problems/vowels-of-all-substrings) | [JavaScript](/solution/2063.%20Vowels%20of%20All%20Substrings/README.md) | Medium
 2064 | [Minimized Maximum of Products Distributed to Any Store](https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store) | [JavaScript](/solution/2064.%20Minimized%20Maximum%20of%20Products%20Distributed%20to%20Any%20Store/README.md) | Medium
 2068 | [Check Whether Two Strings are Almost Equivalent](https://leetcode.com/problems/check-whether-two-strings-are-almost-equivalent) | [JavaScript](/solution/2068.%20Check%20Whether%20Two%20Strings%20are%20Almost%20Equivalent/README.md) | Easy
+2069 | [Walking Robot Simulation II](https://leetcode.com/problems/walking-robot-simulation-ii) | [JavaScript](/solution/2069.%20Walking%20Robot%20Simulation%20II/README.md) | Medium
