@@ -268,3 +268,4 @@
 2069 | [Walking Robot Simulation II](https://leetcode.com/problems/walking-robot-simulation-ii) | [JavaScript](/solution/2069.%20Walking%20Robot%20Simulation%20II/README.md) | Medium
 2070 | [Most Beautiful Item for Each Query](https://leetcode.com/problems/most-beautiful-item-for-each-query) | [JavaScript](/solution/2070.%20Most%20Beautiful%20Item%20for%20Each%20Query/README.md) | Medium
 2073 | [Time Needed to Buy Tickets](https://leetcode.com/problems/time-needed-to-buy-tickets) | [JavaScript](/solution/2073.%20Time%20Needed%20to%20Buy%20Tickets/README.md) | Easy
+2074 | [Reverse Nodes in Even Length Groups](https://leetcode.com/problems/reverse-nodes-in-even-length-groups) | [JavaScript](/solution/2074.%20Reverse%20Nodes%20in%20Even%20Length%20Groups/README.md) | Medium
