@@ -16,7 +16,7 @@ var decodeCiphertext = function(encodedText, rows) {
             const char = encodedText[encodeIndex];
 
             if (!char) return result.trimEnd();
-            result += encodedText[encodeIndex];
+            result += char;
             slant += 1;
         }
     }
