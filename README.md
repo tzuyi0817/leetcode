@@ -269,3 +269,4 @@
 2070 | [Most Beautiful Item for Each Query](https://leetcode.com/problems/most-beautiful-item-for-each-query) | [JavaScript](/solution/2070.%20Most%20Beautiful%20Item%20for%20Each%20Query/README.md) | Medium
 2073 | [Time Needed to Buy Tickets](https://leetcode.com/problems/time-needed-to-buy-tickets) | [JavaScript](/solution/2073.%20Time%20Needed%20to%20Buy%20Tickets/README.md) | Easy
 2074 | [Reverse Nodes in Even Length Groups](https://leetcode.com/problems/reverse-nodes-in-even-length-groups) | [JavaScript](/solution/2074.%20Reverse%20Nodes%20in%20Even%20Length%20Groups/README.md) | Medium
+2075 | [Decode the Slanted Ciphertex](https://leetcode.com/problems/decode-the-slanted-ciphertext) | [JavaScript](/solution/2075.%20Decode%20the%20Slanted%20Ciphertext/README.md) | Medium
