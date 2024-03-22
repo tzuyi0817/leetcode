@@ -271,4 +271,5 @@
 2074 | [Reverse Nodes in Even Length Groups](https://leetcode.com/problems/reverse-nodes-in-even-length-groups) | [JavaScript](/solution/2074.%20Reverse%20Nodes%20in%20Even%20Length%20Groups/README.md) | Medium
 2075 | [Decode the Slanted Ciphertex](https://leetcode.com/problems/decode-the-slanted-ciphertext) | [JavaScript](/solution/2075.%20Decode%20the%20Slanted%20Ciphertext/README.md) | Medium
 2078 | [Two Furthest Houses With Different Colors](https://leetcode.com/problems/two-furthest-houses-with-different-colors) | [JavaScript](/solution/2078.%20Two%20Furthest%20Houses%20With%20Different%20Colors/README.md) | Easy
-2079 | [Watering Plants](https://leetcode.com/problems/two-furthest-houses-with-different-colors) | [JavaScript](/solution/2079.%20Watering%20Plants/README.md) | Medium
+2079 | [Watering Plants](https://leetcode.com/problems/watering-plants) | [JavaScript](/solution/2079.%20Watering%20Plants/README.md) | Medium
+2080 | [Range Frequency Queries](https://leetcode.com/problems/range-frequency-queries) | [JavaScript](/solution/2080.%20Range%20Frequency%20Queries/README.md) | Medium

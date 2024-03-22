@@ -1,4 +1,4 @@
-# [2079. Watering Plants](https://leetcode.com/problems/two-furthest-houses-with-different-colors)
+# [2079. Watering Plants](https://leetcode.com/problems/watering-plants)
 
 ## Description
 
