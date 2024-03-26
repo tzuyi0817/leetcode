@@ -273,3 +273,4 @@
 2078 | [Two Furthest Houses With Different Colors](https://leetcode.com/problems/two-furthest-houses-with-different-colors) | [JavaScript](/solution/2078.%20Two%20Furthest%20Houses%20With%20Different%20Colors/README.md) | Easy
 2079 | [Watering Plants](https://leetcode.com/problems/watering-plants) | [JavaScript](/solution/2079.%20Watering%20Plants/README.md) | Medium
 2080 | [Range Frequency Queries](https://leetcode.com/problems/range-frequency-queries) | [JavaScript](/solution/2080.%20Range%20Frequency%20Queries/README.md) | Medium
+2085 | [Count Common Words With One Occurrence](https://leetcode.com/problems/count-common-words-with-one-occurrence) | [JavaScript](/solution/2085.%20Count%20Common%20Words%20With%20One%20Occurrence/README.md) | Easy
