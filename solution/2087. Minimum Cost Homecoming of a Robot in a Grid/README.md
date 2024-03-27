@@ -69,17 +69,15 @@ The total cost is 3 + 2 + 6 + 7 = 18</pre>
  * @return {number}
  */
 var minCost = function(startPos, homePos, rowCosts, colCosts) {
-    const m = rowCosts.length;
-    const n = colCosts.length;
     const [homeRow, homeCol] = homePos;
-    let [startRow, startCol] = startPos;
+    let [row, col] = startPos;
     let result = 0;
 
-    while (startRow !== homeRow) {
-        result += startRow > homeRow ? rowCosts[--startRow] : rowCosts[++startRow];
+    while (row !== homeRow) {
+        result += row > homeRow ? rowCosts[--row] : rowCosts[++row];
     }
-    while (startCol !== homeCol) {
-        result += startCol > homeCol ? colCosts[--startCol] : colCosts[++startCol];
+    while (col !== homeCol) {
+        result += col > homeCol ? colCosts[--col] : colCosts[++col];
     }
     return result;
 };
