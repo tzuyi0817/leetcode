@@ -275,3 +275,4 @@
 2080 | [Range Frequency Queries](https://leetcode.com/problems/range-frequency-queries) | [JavaScript](/solution/2080.%20Range%20Frequency%20Queries/README.md) | Medium
 2085 | [Count Common Words With One Occurrence](https://leetcode.com/problems/count-common-words-with-one-occurrence) | [JavaScript](/solution/2085.%20Count%20Common%20Words%20With%20One%20Occurrence/README.md) | Easy
 2086 | [Minimum Number of Food Buckets to Feed the Hamsters](https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters) | [JavaScript](/solution/2086.%20Minimum%20Number%20of%20Food%20Buckets%20to%20Feed%20the%20Hamsters/README.md) | Medium
+2087 | [Minimum Cost Homecoming of a Robot in a Grid](https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid) | [JavaScript](/solution/2087.%20Minimum%20Cost%20Homecoming%20of%20a%20Robot%20in%20a%20Grid/README.md) | Medium
