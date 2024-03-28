@@ -278,3 +278,4 @@
 2087 | [Minimum Cost Homecoming of a Robot in a Grid](https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid) | [JavaScript](/solution/2087.%20Minimum%20Cost%20Homecoming%20of%20a%20Robot%20in%20a%20Grid/README.md) | Medium
 2089 | [Find Target Indices After Sorting Array](https://leetcode.com/problems/find-target-indices-after-sorting-array) | [JavaScript](/solution/2089.%20Find%20Target%20Indices%20After%20Sorting%20Array/README.md) | Easy
 2090 | [K Radius Subarray Averages](https://leetcode.com/problems/k-radius-subarray-averages) | [JavaScript](/solution/2090.%20K%20Radius%20Subarray%20Averages/README.md) | Medium
+2091 | [Removing Minimum and Maximum From Array](https://leetcode.com/problems/removing-minimum-and-maximum-from-array) | [JavaScript](/solution/2091.%20Removing%20Minimum%20and%20Maximum%20From%20Array/README.md) | Medium
