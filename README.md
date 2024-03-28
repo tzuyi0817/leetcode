@@ -277,3 +277,4 @@
 2086 | [Minimum Number of Food Buckets to Feed the Hamsters](https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters) | [JavaScript](/solution/2086.%20Minimum%20Number%20of%20Food%20Buckets%20to%20Feed%20the%20Hamsters/README.md) | Medium
 2087 | [Minimum Cost Homecoming of a Robot in a Grid](https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid) | [JavaScript](/solution/2087.%20Minimum%20Cost%20Homecoming%20of%20a%20Robot%20in%20a%20Grid/README.md) | Medium
 2089 | [Find Target Indices After Sorting Array](https://leetcode.com/problems/find-target-indices-after-sorting-array) | [JavaScript](/solution/2089.%20Find%20Target%20Indices%20After%20Sorting%20Array/README.md) | Easy
+2090 | [K Radius Subarray Averages](https://leetcode.com/problems/k-radius-subarray-averages) | [JavaScript](/solution/2090.%20K%20Radius%20Subarray%20Averages/README.md) | Medium
