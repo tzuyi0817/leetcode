@@ -280,3 +280,4 @@
 2090 | [K Radius Subarray Averages](https://leetcode.com/problems/k-radius-subarray-averages) | [JavaScript](/solution/2090.%20K%20Radius%20Subarray%20Averages/README.md) | Medium
 2091 | [Removing Minimum and Maximum From Array](https://leetcode.com/problems/removing-minimum-and-maximum-from-array) | [JavaScript](/solution/2091.%20Removing%20Minimum%20and%20Maximum%20From%20Array/README.md) | Medium
 2094 | [Finding 3-Digit Even Numbers](https://leetcode.com/problems/finding-3-digit-even-numbers) | [JavaScript](/solution/2094.%20Finding%203-Digit%20Even%20Numbers/README.md) | Easy
+2095 | [Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list) | [JavaScript](/solution/2095.%20Delete%20the%20Middle%20Node%20of%20a%20Linked%20List/README.md) | Medium
