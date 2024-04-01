@@ -282,3 +282,4 @@
 2094 | [Finding 3-Digit Even Numbers](https://leetcode.com/problems/finding-3-digit-even-numbers) | [JavaScript](/solution/2094.%20Finding%203-Digit%20Even%20Numbers/README.md) | Easy
 2095 | [Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list) | [JavaScript](/solution/2095.%20Delete%20the%20Middle%20Node%20of%20a%20Linked%20List/README.md) | Medium
 2096 | [Step-By-Step Directions From a Binary Tree Node to Another](https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another) | [JavaScript](/solution/2096.%20Step-By-Step%20Directions%20From%20a%20Binary%20Tree%20Node%20to%20Another/README.md) | Medium
+2099 | [Find Subsequence of Length K With the Largest Sum](https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum) | [JavaScript](/solution/2099.%20Find%20Subsequence%20of%20Length%20K%20With%20the%20Largest%20Sum/README.md) | Easy
