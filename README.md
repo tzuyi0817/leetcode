@@ -286,3 +286,4 @@
 2100 | [Find Good Days to Rob the Bank](https://leetcode.com/problems/find-good-days-to-rob-the-bank) | [JavaScript](/solution/2100.%20Find%20Good%20Days%20to%20Rob%20the%20Bank/README.md) | Medium
 2101 | [Detonate the Maximum Bombs](https://leetcode.com/problems/detonate-the-maximum-bombs) | [JavaScript](/solution/2101.%20Detonate%20the%20Maximum%20Bombs/README.md) | Medium
 2103 | [Rings and Rods](https://leetcode.com/problems/rings-and-rods) | [JavaScript](/solution/2103.%20Rings%20and%20Rods/README.md) | Easy
+2104 | [Sum of Subarray Ranges](https://leetcode.com/problems/sum-of-subarray-ranges) | [JavaScript](/solution/2104.%20Sum%20of%20Subarray%20Ranges/README.md) | Medium
