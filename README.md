@@ -285,3 +285,4 @@
 2099 | [Find Subsequence of Length K With the Largest Sum](https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum) | [JavaScript](/solution/2099.%20Find%20Subsequence%20of%20Length%20K%20With%20the%20Largest%20Sum/README.md) | Easy
 2100 | [Find Good Days to Rob the Bank](https://leetcode.com/problems/find-good-days-to-rob-the-bank) | [JavaScript](/solution/2100.%20Find%20Good%20Days%20to%20Rob%20the%20Bank/README.md) | Medium
 2101 | [Detonate the Maximum Bombs](https://leetcode.com/problems/detonate-the-maximum-bombs) | [JavaScript](/solution/2101.%20Detonate%20the%20Maximum%20Bombs/README.md) | Medium
+2103 | [Rings and Rods](https://leetcode.com/problems/rings-and-rods) | [JavaScript](/solution/2103.%20Rings%20and%20Rods/README.md) | Easy
