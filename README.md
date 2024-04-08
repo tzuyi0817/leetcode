@@ -120,6 +120,7 @@
 1690 | [Stone Game VII](https://leetcode.com/problems/stone-game-vii) | [JavaScript](/solution/1690.%20Stone%20Game%20VII/README.md) | Medium
 1695 | [Maximum Erasure Value](https://leetcode.com/problems/maximum-erasure-value) | [JavaScript](/solution/1695.%20Maximum%20Erasure%20Value/README.md) | Medium
 1696 | [Jump Game VI](https://leetcode.com/problems/jump-game-vi) | [JavaScript](/solution/1696.%20Jump%20Game%20VI/README.md) | Medium
+1700 | [Number of Students Unable to Eat Lunch](https://leetcode.com/problems/number-of-students-unable-to-eat-lunch) | [JavaScript](/solution/1700.%20Number%20of%20Students%20Unable%20to%20Eat%20Lunch/README.md) | Easy
 1701 | [Average Waiting Time](https://leetcode.com/problems/average-waiting-time) | [JavaScript](/solution/1701.%20Average%20Waiting%20Time/README.md) | Medium
 1702 | [Maximum Binary String After Change](https://leetcode.com/problems/maximum-binary-string-after-change) | [JavaScript](/solution/1702.%20Maximum%20Binary%20String%20After%20Change/README.md) | Medium
 1705 | [Maximum Number of Eaten Apples](https://leetcode.com/problems/maximum-number-of-eaten-apples) | [JavaScript](/solution/1705.%20Maximum%20Number%20of%20Eaten%20Apples/README.md) | Medium
