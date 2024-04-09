@@ -288,3 +288,4 @@
 2101 | [Detonate the Maximum Bombs](https://leetcode.com/problems/detonate-the-maximum-bombs) | [JavaScript](/solution/2101.%20Detonate%20the%20Maximum%20Bombs/README.md) | Medium
 2103 | [Rings and Rods](https://leetcode.com/problems/rings-and-rods) | [JavaScript](/solution/2103.%20Rings%20and%20Rods/README.md) | Easy
 2104 | [Sum of Subarray Ranges](https://leetcode.com/problems/sum-of-subarray-ranges) | [JavaScript](/solution/2104.%20Sum%20of%20Subarray%20Ranges/README.md) | Medium
+2105 | [Watering Plants II](https://leetcode.com/problems/watering-plants-ii) | [JavaScript](/solution/2105.%20Watering%20Plants%20II/README.md) | Medium
