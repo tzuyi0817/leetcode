@@ -67,7 +67,7 @@ var firstPalindrome = function(words) {
             right -= 1;
         }
         return true;
-    }
+    };
 
     for (const word of words) {
         if (isPalindrome(word)) return word;
