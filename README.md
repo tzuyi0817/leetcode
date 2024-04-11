@@ -6,6 +6,7 @@
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [JavaScript](/solution/42.%20Trapping%20Rain%20Water/README.md) | Hard
 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [JavaScript](/solution/76.%20Minimum%20Window%20Substring/README.md) | Hard
 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | [JavaScript](/solution/297.%20Serialize%20and%20Deserialize%20Binary%20Tree/README.md) | Hard
 950 | [Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order) | [JavaScript](/solution/950.%20Reveal%20Cards%20In%20Increasing%20Order/README.md) | Medium
