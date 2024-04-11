@@ -10,6 +10,7 @@
 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [JavaScript](/solution/76.%20Minimum%20Window%20Substring/README.md) | Hard
 295 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream) | [JavaScript](/solution/295.%20Find%20Median%20from%20Data%20Stream/README.md) | Hard
 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | [JavaScript](/solution/297.%20Serialize%20and%20Deserialize%20Binary%20Tree/README.md) | Hard
+402 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits) | [JavaScript](/solution/402.%20Remove%20K%20Digits/README.md) | Medium
 950 | [Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order) | [JavaScript](/solution/950.%20Reveal%20Cards%20In%20Increasing%20Order/README.md) | Medium
 1376 | [Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees) | [JavaScript](/solution/1376.%20Time%20Needed%20to%20Inform%20All%20Employees/README.md) | Medium
 1386 | [Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation) | [JavaScript](/solution/1386.%20Cinema%20Seat%20Allocation/README.md) | Medium
