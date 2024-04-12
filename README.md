@@ -9,6 +9,7 @@
 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [JavaScript](/solution/42.%20Trapping%20Rain%20Water/README.md) | Hard
 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [JavaScript](/solution/76.%20Minimum%20Window%20Substring/README.md) | Hard
 127 | [Word Ladder](https://leetcode.com/problems/word-ladder) | [JavaScript](/solution/127.%20Word%20Ladder/README.md) | Hard
+224 | [Basic Calculator](https://leetcode.com/problems/basic-calculator) | [JavaScript](/solution/224.%20Basic%20Calculator/README.md) | Hard
 295 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream) | [JavaScript](/solution/295.%20Find%20Median%20from%20Data%20Stream/README.md) | Hard
 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | [JavaScript](/solution/297.%20Serialize%20and%20Deserialize%20Binary%20Tree/README.md) | Hard
 402 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits) | [JavaScript](/solution/402.%20Remove%20K%20Digits/README.md) | Medium
