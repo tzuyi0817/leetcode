@@ -14,6 +14,7 @@
 84 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) | [JavaScript](/solution/84.%20Largest%20Rectangle%20in%20Histogram/README.md) | Hard
 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | [JavaScript](/solution/124.%20Binary%20Tree%20Maximum%20Path%20Sum/README.md) | Hard
 127 | [Word Ladder](https://leetcode.com/problems/word-ladder) | [JavaScript](/solution/127.%20Word%20Ladder/README.md) | Hard
+200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | [JavaScript](/solution/200.%20Number%20of%20Islands/README.md) | Medium
 224 | [Basic Calculator](https://leetcode.com/problems/basic-calculator) | [JavaScript](/solution/224.%20Basic%20Calculator/README.md) | Hard
 295 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream) | [JavaScript](/solution/295.%20Find%20Median%20from%20Data%20Stream/README.md) | Hard
 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | [JavaScript](/solution/297.%20Serialize%20and%20Deserialize%20Binary%20Tree/README.md) | Hard
