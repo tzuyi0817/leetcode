@@ -42,7 +42,7 @@
 
 ## Solutions
 
-**Solution: `Depth-First Search + Dynamic Programming`**
+**Solution: `Depth-First Search + Memoization`**
 - Time complexity: <em>O(mn)</em>
 - Space complexity: <em>O(mn)</em>
 
