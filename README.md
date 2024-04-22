@@ -309,3 +309,4 @@
 2104 | [Sum of Subarray Ranges](https://leetcode.com/problems/sum-of-subarray-ranges) | [JavaScript](/solution/2104.%20Sum%20of%20Subarray%20Ranges/README.md) | Medium
 2105 | [Watering Plants II](https://leetcode.com/problems/watering-plants-ii) | [JavaScript](/solution/2105.%20Watering%20Plants%20II/README.md) | Medium
 2108 | [Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array) | [JavaScript](/solution/2108.%20Find%20First%20Palindromic%20String%20in%20the%20Array/README.md) | Easy
+3123 | [Find Edges in Shortest Paths](https://leetcode.com/problems/find-edges-in-shortest-paths) | [JavaScript](/solution/3123.%20Find%20Edges%20in%20Shortest%20Paths/README.md) | Hard
