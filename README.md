@@ -21,6 +21,7 @@
 329 | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix) | [JavaScript](/solution/329.%20Longest%20Increasing%20Path%20in%20a%20Matrix/README.md) | Hard
 402 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits) | [JavaScript](/solution/402.%20Remove%20K%20Digits/README.md) | Medium
 623 | [Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree) | [JavaScript](/solution/623.%20Add%20One%20Row%20to%20Tree/README.md) | Medium
+752 | [Open the Lock](https://leetcode.com/problems/open-the-lock) | [JavaScript](/solution/752.%20Open%20the%20Lock/README.md) | Medium
 895 | [Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack) | [JavaScript](/solution/895.%20Maximum%20Frequency%20Stack/README.md) | Hard
 950 | [Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order) | [JavaScript](/solution/950.%20Reveal%20Cards%20In%20Increasing%20Order/README.md) | Medium
 1235 | [Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling) | [JavaScript](/solution/1235.%20Maximum%20Profit%20in%20Job%20Scheduling/README.md) | Hard
