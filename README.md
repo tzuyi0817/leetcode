@@ -29,6 +29,7 @@
 815 | [Bus Routes](https://leetcode.com/problems/bus-routes) | [JavaScript](/solution/815.%20Bus%20Routes/README.md) | Hard
 895 | [Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack) | [JavaScript](/solution/895.%20Maximum%20Frequency%20Stack/README.md) | Hard
 950 | [Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order) | [JavaScript](/solution/950.%20Reveal%20Cards%20In%20Increasing%20Order/README.md) | Medium
+1137 | [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number) | [JavaScript](/solution/1137.%20N-th%20Tribonacci%20Number/README.md) | Easy
 1235 | [Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling) | [JavaScript](/solution/1235.%20Maximum%20Profit%20in%20Job%20Scheduling/README.md) | Hard
 1376 | [Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees) | [JavaScript](/solution/1376.%20Time%20Needed%20to%20Inform%20All%20Employees/README.md) | Medium
 1386 | [Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation) | [JavaScript](/solution/1386.%20Cinema%20Seat%20Allocation/README.md) | Medium
