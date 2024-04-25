@@ -8,6 +8,7 @@
 |---| ----- | -------- | ---------- |
 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) | [JavaScript](/solution/4.%20Median%20of%20Two%20Sorted%20Arrays/README.md) | Hard
 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | [JavaScript](/solution/23.%20Merge%20k%20Sorted%20Lists/README.md) | Hard
+25 | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group) | [JavaScript](/solution/25.%20Reverse%20Nodes%20in%20k-Group/README.md) | Hard
 32 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses) | [JavaScript](/solution/32.%20Longest%20Valid%20Parentheses/README.md) | Hard
 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [JavaScript](/solution/42.%20Trapping%20Rain%20Water/README.md) | Hard
 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [JavaScript](/solution/76.%20Minimum%20Window%20Substring/README.md) | Hard
