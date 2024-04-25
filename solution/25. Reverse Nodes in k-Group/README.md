@@ -38,7 +38,7 @@
 
 ## Solutions
 
-**Solution: `Recursion`**
+**Solution: `Iteration`**
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
