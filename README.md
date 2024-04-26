@@ -13,6 +13,7 @@
 37 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver) | [JavaScript](/solution/37.%20Sudoku%20Solver/README.md) | Hard
 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive) | [JavaScript](/solution/41.%20First%20Missing%20Positive/README.md) | Hard
 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [JavaScript](/solution/42.%20Trapping%20Rain%20Water/README.md) | Hard
+51 | [N-Queens](https://leetcode.com/problems/n-queens) | [JavaScript](/solution/51.%20N-Queens/README.md) | Hard
 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [JavaScript](/solution/76.%20Minimum%20Window%20Substring/README.md) | Hard
 84 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) | [JavaScript](/solution/84.%20Largest%20Rectangle%20in%20Histogram/README.md) | Hard
 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | [JavaScript](/solution/124.%20Binary%20Tree%20Maximum%20Path%20Sum/README.md) | Hard
