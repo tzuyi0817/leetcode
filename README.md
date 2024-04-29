@@ -321,4 +321,5 @@
 2105 | [Watering Plants II](https://leetcode.com/problems/watering-plants-ii) | [JavaScript](/solution/2105.%20Watering%20Plants%20II/README.md) | Medium
 2108 | [Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array) | [JavaScript](/solution/2108.%20Find%20First%20Palindromic%20String%20in%20the%20Array/README.md) | Easy
 2370 | [Longest Ideal Subsequence](https://leetcode.com/problems/longest-ideal-subsequence) | [JavaScript](/solution/2370.%20Longest%20Ideal%20Subsequence/README.md) | Medium
+2997 | [Minimum Number of Operations to Make Array XOR Equal to K](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k) | [JavaScript](/solution/2997.%20Minimum%20Number%20of%20Operations%20to%20Make%20Array%20XOR%20Equal%20to%20K/README.md) | Medium
 3123 | [Find Edges in Shortest Paths](https://leetcode.com/problems/find-edges-in-shortest-paths) | [JavaScript](/solution/3123.%20Find%20Edges%20in%20Shortest%20Paths/README.md) | Hard
