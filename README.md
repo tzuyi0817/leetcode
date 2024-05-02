@@ -29,6 +29,7 @@
 336 | [Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs) | [JavaScript](/solution/336.%20Palindrome%20Pairs/README.md) | Hard
 402 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits) | [JavaScript](/solution/402.%20Remove%20K%20Digits/README.md) | Medium
 623 | [Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree) | [JavaScript](/solution/623.%20Add%20One%20Row%20to%20Tree/README.md) | Medium
+632 | [Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists) | [JavaScript](/solution/632.%20Smallest%20Range%20Covering%20Elements%20from%20K%20Lists/README.md) | Hard
 752 | [Open the Lock](https://leetcode.com/problems/open-the-lock) | [JavaScript](/solution/752.%20Open%20the%20Lock/README.md) | Medium
 815 | [Bus Routes](https://leetcode.com/problems/bus-routes) | [JavaScript](/solution/815.%20Bus%20Routes/README.md) | Hard
 895 | [Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack) | [JavaScript](/solution/895.%20Maximum%20Frequency%20Stack/README.md) | Hard
