@@ -10,6 +10,7 @@
 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) | [JavaScript](/solution/10.%20Regular%20Expression%20Matching/README.md) | Hard
 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | [JavaScript](/solution/23.%20Merge%20k%20Sorted%20Lists/README.md) | Hard
 25 | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group) | [JavaScript](/solution/25.%20Reverse%20Nodes%20in%20k-Group/README.md) | Hard
+30 | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words) | [JavaScript](/solution/30.%20Substring%20with%20Concatenation%20of%20All%20Words/README.md) | Hard
 32 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses) | [JavaScript](/solution/32.%20Longest%20Valid%20Parentheses/README.md) | Hard
 37 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver) | [JavaScript](/solution/37.%20Sudoku%20Solver/README.md) | Hard
 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive) | [JavaScript](/solution/41.%20First%20Missing%20Positive/README.md) | Hard
