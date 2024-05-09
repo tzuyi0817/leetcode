@@ -23,6 +23,7 @@
 68 | [Text Justification](https://leetcode.com/problems/text-justification) | [JavaScript](/solution/68.%20Text%20Justification/README.md) | Hard
 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [JavaScript](/solution/76.%20Minimum%20Window%20Substring/README.md) | Hard
 84 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) | [JavaScript](/solution/84.%20Largest%20Rectangle%20in%20Histogram/README.md) | Hard
+87 | [Scramble String](https://leetcode.com/problems/scramble-string) | [JavaScript](/solution/87.%20Scramble%20String/README.md) | Hard
 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | [JavaScript](/solution/124.%20Binary%20Tree%20Maximum%20Path%20Sum/README.md) | Hard
 127 | [Word Ladder](https://leetcode.com/problems/word-ladder) | [JavaScript](/solution/127.%20Word%20Ladder/README.md) | Hard
 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | [JavaScript](/solution/200.%20Number%20of%20Islands/README.md) | Medium
