@@ -336,3 +336,4 @@
 2370 | [Longest Ideal Subsequence](https://leetcode.com/problems/longest-ideal-subsequence) | [JavaScript](/solution/2370.%20Longest%20Ideal%20Subsequence/README.md) | Medium
 2997 | [Minimum Number of Operations to Make Array XOR Equal to K](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k) | [JavaScript](/solution/2997.%20Minimum%20Number%20of%20Operations%20to%20Make%20Array%20XOR%20Equal%20to%20K/README.md) | Medium
 3123 | [Find Edges in Shortest Paths](https://leetcode.com/problems/find-edges-in-shortest-paths) | [JavaScript](/solution/3123.%20Find%20Edges%20in%20Shortest%20Paths/README.md) | Hard
+3148 | [Maximum Difference Score in a Grid](https://leetcode.com/problems/maximum-difference-score-in-a-grid) | [JavaScript](/solution/3148.%20Maximum%20Difference%20Score%20in%20a%20Grid/README.md) | Medium
