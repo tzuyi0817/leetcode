@@ -29,6 +29,7 @@
 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | [JavaScript](/solution/124.%20Binary%20Tree%20Maximum%20Path%20Sum/README.md) | Hard
 126 | [Word Ladder II](https://leetcode.com/problems/word-ladder-ii) | [JavaScript](/solution/126.%20Word%20Ladder%20II/README.md) | Hard
 127 | [Word Ladder](https://leetcode.com/problems/word-ladder) | [JavaScript](/solution/127.%20Word%20Ladder/README.md) | Hard
+132 | [Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii) | [JavaScript](/solution/132.%20Palindrome%20Partitioning%20II/README.md) | Hard
 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | [JavaScript](/solution/200.%20Number%20of%20Islands/README.md) | Medium
 212 | [Word Search II](https://leetcode.com/problems/word-search-ii) | [JavaScript](/solution/212.%20Word%20Search%20II/README.md) | Hard
 224 | [Basic Calculator](https://leetcode.com/problems/basic-calculator) | [JavaScript](/solution/224.%20Basic%20Calculator/README.md) | Hard
