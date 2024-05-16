@@ -33,6 +33,7 @@
 135 | [Candy](https://leetcode.com/problems/candy) | [JavaScript](/solution/135.%20Candy/README.md) | Hard
 140 | [Word Break II](https://leetcode.com/problems/word-break-ii) | [JavaScript](/solution/140.%20Word%20Break%20II/README.md) | Hard
 149 | [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line) | [JavaScript](/solution/149.%20Max%20Points%20on%20a%20Line/README.md) | Hard
+154 | [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii) | [JavaScript](/solution/154.%20Find%20Minimum%20in%20Rotated%20Sorted%20Array%20II/README.md) | Hard
 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | [JavaScript](/solution/200.%20Number%20of%20Islands/README.md) | Medium
 212 | [Word Search II](https://leetcode.com/problems/word-search-ii) | [JavaScript](/solution/212.%20Word%20Search%20II/README.md) | Hard
 224 | [Basic Calculator](https://leetcode.com/problems/basic-calculator) | [JavaScript](/solution/224.%20Basic%20Calculator/README.md) | Hard
