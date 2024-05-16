@@ -341,6 +341,7 @@
 2104 | [Sum of Subarray Ranges](https://leetcode.com/problems/sum-of-subarray-ranges) | [JavaScript](/solution/2104.%20Sum%20of%20Subarray%20Ranges/README.md) | Medium
 2105 | [Watering Plants II](https://leetcode.com/problems/watering-plants-ii) | [JavaScript](/solution/2105.%20Watering%20Plants%20II/README.md) | Medium
 2108 | [Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array) | [JavaScript](/solution/2108.%20Find%20First%20Palindromic%20String%20in%20the%20Array/README.md) | Easy
+2331 | [Evaluate Boolean Binary Tree](https://leetcode.com/problems/evaluate-boolean-binary-tree) | [JavaScript](/solution/2331.%20Evaluate%20Boolean%20Binary%20Tree/README.md) | Easy
 2370 | [Longest Ideal Subsequence](https://leetcode.com/problems/longest-ideal-subsequence) | [JavaScript](/solution/2370.%20Longest%20Ideal%20Subsequence/README.md) | Medium
 2812 | [Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid) | [JavaScript](/solution/2812.%20Find%20the%20Safest%20Path%20in%20a%20Grid/README.md) | Medium
 2997 | [Minimum Number of Operations to Make Array XOR Equal to K](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k) | [JavaScript](/solution/2997.%20Minimum%20Number%20of%20Operations%20to%20Make%20Array%20XOR%20Equal%20to%20K/README.md) | Medium
