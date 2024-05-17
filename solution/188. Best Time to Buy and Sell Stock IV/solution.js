@@ -24,7 +24,7 @@ var maxProfit = function(k, prices) {
     for (const price of prices) {
         for (let times = 1; times <= k; times++) {
             sell[times] = Math.max(sell[times], hold[times] + price);
-            hold[times] = Math.max(hold[times], sell[times - 1] - price)
+            hold[times] = Math.max(hold[times], sell[times - 1] - price);
         }
     }
     return sell[k];
