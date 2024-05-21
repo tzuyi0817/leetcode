@@ -41,6 +41,7 @@
 214 | [Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome) | [JavaScript](/solution/214.%20Shortest%20Palindrome/README.md) | Hard
 218 | [The Skyline Problem](https://leetcode.com/problems/the-skyline-problem) | [JavaScript](/solution/218.%20The%20Skyline%20Problem/README.md) | Hard
 224 | [Basic Calculator](https://leetcode.com/problems/basic-calculator) | [JavaScript](/solution/224.%20Basic%20Calculator/README.md) | Hard
+233 | [Number of Digit One](https://leetcode.com/problems/number-of-digit-one) | [JavaScript](/solution/233.%20Number%20of%20Digit%20One/README.md) | Hard
 239 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | [JavaScript](/solution/239.%20Sliding%20Window%20Maximum/README.md) | Hard
 295 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream) | [JavaScript](/solution/295.%20Find%20Median%20from%20Data%20Stream/README.md) | Hard
 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | [JavaScript](/solution/297.%20Serialize%20and%20Deserialize%20Binary%20Tree/README.md) | Hard
