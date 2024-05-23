@@ -49,6 +49,7 @@
 282 | [Expression Add Operators](https://leetcode.com/problems/expression-add-operators) | [JavaScript](/solution/282.%20Expression%20Add%20Operators/README.md) | Hard
 295 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream) | [JavaScript](/solution/295.%20Find%20Median%20from%20Data%20Stream/README.md) | Hard
 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | [JavaScript](/solution/297.%20Serialize%20and%20Deserialize%20Binary%20Tree/README.md) | Hard
+301 | [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses) | [JavaScript](/solution/301.%20Remove%20Invalid%20Parentheses/README.md) | Hard
 310 | [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees) | [JavaScript](/solution/310.%20Minimum%20Height%20Trees/README.md) | Medium
 329 | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix) | [JavaScript](/solution/329.%20Longest%20Increasing%20Path%20in%20a%20Matrix/README.md) | Hard
 336 | [Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs) | [JavaScript](/solution/336.%20Palindrome%20Pairs/README.md) | Hard
