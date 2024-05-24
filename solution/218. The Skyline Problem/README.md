@@ -49,7 +49,7 @@ Figure B shows the skyline formed by those buildings. The red points in figure B
 
 ## Solutions
 
-**Solution: `Binary Indexed Tree`**
+**Solution: `Binary Search`**
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(n)</em>
 
