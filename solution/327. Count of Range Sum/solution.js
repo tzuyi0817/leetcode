@@ -24,7 +24,7 @@ var countRangeSum = function(nums, lower, upper) {
 
             sortedPrefixSum[mid] >= value ? right = mid - 1 : left = mid + 1;
         }
-        return left + 1;
+        return left;
     };
 
     const updateBit = (index) => {
@@ -48,10 +48,10 @@ var countRangeSum = function(nums, lower, upper) {
 
     for (const sum of prefixSum) {
         const leftIndex = getIndex(sum - upper);
-        const rightIndex = getIndex(sum - lower + 1) - 1;
+        const rightIndex = getIndex(sum - lower + 1);
 
-        result += queryBit(rightIndex) - queryBit(leftIndex - 1);
-        updateBit(getIndex(sum));
+        result += queryBit(rightIndex) - queryBit(leftIndex);
+        updateBit(getIndex(sum) + 1);
     }
     return result;
 };
