@@ -54,6 +54,7 @@
 312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons) | [JavaScript](/solution/312.%20Burst%20Balloons/README.md) | Hard
 315 | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self) | [JavaScript](/solution/315.%20Count%20of%20Smaller%20Numbers%20After%20Self/README.md) | Hard
 321 | [Create Maximum Number](https://leetcode.com/problems/create-maximum-number) | [JavaScript](/solution/321.%20Create%20Maximum%20Number/README.md) | Hard
+327 | [Count of Range Sum](https://leetcode.com/problems/count-of-range-sum) | [JavaScript](/solution/327.%20Count%20of%20Range%20Sum/README.md) | Hard
 329 | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix) | [JavaScript](/solution/329.%20Longest%20Increasing%20Path%20in%20a%20Matrix/README.md) | Hard
 336 | [Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs) | [JavaScript](/solution/336.%20Palindrome%20Pairs/README.md) | Hard
 402 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits) | [JavaScript](/solution/402.%20Remove%20K%20Digits/README.md) | Medium
