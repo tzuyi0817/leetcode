@@ -57,6 +57,7 @@
 327 | [Count of Range Sum](https://leetcode.com/problems/count-of-range-sum) | [JavaScript](/solution/327.%20Count%20of%20Range%20Sum/README.md) | Hard
 329 | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix) | [JavaScript](/solution/329.%20Longest%20Increasing%20Path%20in%20a%20Matrix/README.md) | Hard
 330 | [Patching Array](https://leetcode.com/problems/patching-array) | [JavaScript](/solution/330.%20Patching%20Array/README.md) | Hard
+332 | [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary) | [JavaScript](/solution/332.%20Reconstruct%20Itinerary/README.md) | Hard
 336 | [Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs) | [JavaScript](/solution/336.%20Palindrome%20Pairs/README.md) | Hard
 402 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits) | [JavaScript](/solution/402.%20Remove%20K%20Digits/README.md) | Medium
 623 | [Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree) | [JavaScript](/solution/623.%20Add%20One%20Row%20to%20Tree/README.md) | Medium
