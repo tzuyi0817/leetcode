@@ -75,7 +75,7 @@ var isSelfCrossing = function(distance) {
 
         return three >= one && two === four && five >= three - one;
     };
-        const situation3 = (index) => {
+    const situation3 = (index) => {
         if (index < 5) return false;
         const one = distance[index - 5];
         const two = distance[index - 4];

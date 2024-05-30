@@ -60,6 +60,7 @@
 332 | [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary) | [JavaScript](/solution/332.%20Reconstruct%20Itinerary/README.md) | Hard
 335 | [Self Crossing](https://leetcode.com/problems/self-crossing) | [JavaScript](/solution/335.%20Self%20Crossing/README.md) | Hard
 336 | [Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs) | [JavaScript](/solution/336.%20Palindrome%20Pairs/README.md) | Hard
+352 | [Data Stream as Disjoint Intervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals) | [JavaScript](/solution/352.%20Data%20Stream%20as%20Disjoint%20Intervals/README.md) | Hard
 402 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits) | [JavaScript](/solution/402.%20Remove%20K%20Digits/README.md) | Medium
 623 | [Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree) | [JavaScript](/solution/623.%20Add%20One%20Row%20to%20Tree/README.md) | Medium
 632 | [Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists) | [JavaScript](/solution/632.%20Smallest%20Range%20Covering%20Elements%20from%20K%20Lists/README.md) | Hard
