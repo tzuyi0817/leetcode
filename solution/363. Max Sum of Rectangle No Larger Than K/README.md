@@ -41,7 +41,7 @@
 
 **Solution: `Prefix Sum`**
 - Time complexity: <em>O(m<sup>2</sup>n<sup>2</sup>)</em>
-- Space complexity: <em>O(max(m,n))</em>
+- Space complexity: <em>O(m)</em>
 
 <p>&nbsp;</p>
 
