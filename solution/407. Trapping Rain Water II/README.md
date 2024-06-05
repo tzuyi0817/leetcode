@@ -36,8 +36,8 @@ The total volume of water trapped is 4.
 ## Solutions
 
 **Solution: `Breadth-First Search + Priority Queue`**
-- Time complexity: <em>O(n<sup>2</sup>)</em>
-- Space complexity: <em>O(n<sup>2</sup>)</em>
+- Time complexity: <em>O(mnlogmn)</em>
+- Space complexity: <em>O(mn)</em>
 
 <p>&nbsp;</p>
 
