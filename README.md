@@ -76,6 +76,7 @@
 440 | [K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order) | [JavaScript](/solution/440.%20K-th%20Smallest%20in%20Lexicographical%20Order/README.md) | Hard
 623 | [Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree) | [JavaScript](/solution/623.%20Add%20One%20Row%20to%20Tree/README.md) | Medium
 632 | [Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists) | [JavaScript](/solution/632.%20Smallest%20Range%20Covering%20Elements%20from%20K%20Lists/README.md) | Hard
+648 | [Replace Words](https://leetcode.com/problems/replace-words) | [JavaScript](/solution/648.%20Replace%20Words/README.md) | Hard
 752 | [Open the Lock](https://leetcode.com/problems/open-the-lock) | [JavaScript](/solution/752.%20Open%20the%20Lock/README.md) | Medium
 815 | [Bus Routes](https://leetcode.com/problems/bus-routes) | [JavaScript](/solution/815.%20Bus%20Routes/README.md) | Hard
 846 | [Hand of Straights](https://leetcode.com/problems/hand-of-straights) | [JavaScript](/solution/846.%20Hand%20of%20Straights/README.md) | Medium
