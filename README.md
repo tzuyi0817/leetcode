@@ -74,6 +74,7 @@
 420 | [Strong Password Checker](https://leetcode.com/problems/strong-password-checker) | [JavaScript](/solution/420.%20Strong%20Password%20Checker/README.md) | Hard
 432 | [All O`one Data Structure](https://leetcode.com/problems/all-oone-data-structure) | [JavaScript](/solution/432.%20All%20O`one%20Data%20Structure/README.md) | Hard
 440 | [K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order) | [JavaScript](/solution/440.%20K-th%20Smallest%20in%20Lexicographical%20Order/README.md) | Hard
+523 | [Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum) | [JavaScript](/solution/523.%20Continuous%20Subarray%20Sum/README.md) | Medium
 623 | [Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree) | [JavaScript](/solution/623.%20Add%20One%20Row%20to%20Tree/README.md) | Medium
 632 | [Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists) | [JavaScript](/solution/632.%20Smallest%20Range%20Covering%20Elements%20from%20K%20Lists/README.md) | Hard
 648 | [Replace Words](https://leetcode.com/problems/replace-words) | [JavaScript](/solution/648.%20Replace%20Words/README.md) | Medium
