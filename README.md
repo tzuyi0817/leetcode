@@ -76,6 +76,7 @@
 440 | [K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order) | [JavaScript](/solution/440.%20K-th%20Smallest%20in%20Lexicographical%20Order/README.md) | Hard
 446 | [Arithmetic Slices II - Subsequence](https://leetcode.com/problems/arithmetic-slices-ii-subsequence) | [JavaScript](/solution/446.%20Arithmetic%20Slices%20II%20-%20Subsequence/README.md) | Hard
 458 | [Poor Pigs](https://leetcode.com/problems/poor-pigs) | [JavaScript](/solution/458.%20Poor%20Pigs/README.md) | Hard
+460 | [LFU Cache](https://leetcode.com/problems/lfu-cache) | [JavaScript](/solution/460.%20LFU%20Cache/README.md) | Hard
 523 | [Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum) | [JavaScript](/solution/523.%20Continuous%20Subarray%20Sum/README.md) | Medium
 623 | [Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree) | [JavaScript](/solution/623.%20Add%20One%20Row%20to%20Tree/README.md) | Medium
 632 | [Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists) | [JavaScript](/solution/632.%20Smallest%20Range%20Covering%20Elements%20from%20K%20Lists/README.md) | Hard
