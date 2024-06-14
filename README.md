@@ -82,6 +82,7 @@
 472 | [Concatenated Words](https://leetcode.com/problems/concatenated-words) | [JavaScript](/solution/472.%20Concatenated%20Words/README.md) | Hard
 479 | [Largest Palindrome Product](https://leetcode.com/problems/largest-palindrome-product) | [JavaScript](/solution/479.%20Largest%20Palindrome%20Product/README.md) | Hard
 480 | [Sliding Window Median](https://leetcode.com/problems/sliding-window-median) | [JavaScript](/solution/480.%20Sliding%20Window%20Median/README.md) | Hard
+483 | [Smallest Good Base](https://leetcode.com/problems/smallest-good-base) | [JavaScript](/solution/483.%20Smallest%20Good%20Base/README.md) | Hard
 523 | [Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum) | [JavaScript](/solution/523.%20Continuous%20Subarray%20Sum/README.md) | Medium
 623 | [Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree) | [JavaScript](/solution/623.%20Add%20One%20Row%20to%20Tree/README.md) | Medium
 632 | [Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists) | [JavaScript](/solution/632.%20Smallest%20Range%20Covering%20Elements%20from%20K%20Lists/README.md) | Hard
