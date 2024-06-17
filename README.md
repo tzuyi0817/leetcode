@@ -86,6 +86,7 @@
 523 | [Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum) | [JavaScript](/solution/523.%20Continuous%20Subarray%20Sum/README.md) | Medium
 623 | [Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree) | [JavaScript](/solution/623.%20Add%20One%20Row%20to%20Tree/README.md) | Medium
 632 | [Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists) | [JavaScript](/solution/632.%20Smallest%20Range%20Covering%20Elements%20from%20K%20Lists/README.md) | Hard
+633 | [Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers) | [JavaScript](/solution/633.%20Sum%20of%20Square%20Numbers/README.md) | Medium
 648 | [Replace Words](https://leetcode.com/problems/replace-words) | [JavaScript](/solution/648.%20Replace%20Words/README.md) | Medium
 752 | [Open the Lock](https://leetcode.com/problems/open-the-lock) | [JavaScript](/solution/752.%20Open%20the%20Lock/README.md) | Medium
 815 | [Bus Routes](https://leetcode.com/problems/bus-routes) | [JavaScript](/solution/815.%20Bus%20Routes/README.md) | Hard
