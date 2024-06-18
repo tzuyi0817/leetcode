@@ -92,6 +92,7 @@
 648 | [Replace Words](https://leetcode.com/problems/replace-words) | [JavaScript](/solution/648.%20Replace%20Words/README.md) | Medium
 752 | [Open the Lock](https://leetcode.com/problems/open-the-lock) | [JavaScript](/solution/752.%20Open%20the%20Lock/README.md) | Medium
 815 | [Bus Routes](https://leetcode.com/problems/bus-routes) | [JavaScript](/solution/815.%20Bus%20Routes/README.md) | Hard
+826 | [Most Profit Assigning Work](https://leetcode.com/problems/most-profit-assigning-work) | [JavaScript](/solution/826.%20Most%20Profit%20Assigning%20Work/README.md) | Medium
 846 | [Hand of Straights](https://leetcode.com/problems/hand-of-straights) | [JavaScript](/solution/846.%20Hand%20of%20Straights/README.md) | Medium
 861 | [Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix) | [JavaScript](/solution/861.%20Score%20After%20Flipping%20Matrix/README.md) | Medium
 881 | [Boats to Save People](https://leetcode.com/problems/boats-to-save-people) | [JavaScript](/solution/881.%20Boats%20to%20Save%20People/README.md) | Medium
