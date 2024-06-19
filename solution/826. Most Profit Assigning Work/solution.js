@@ -19,7 +19,7 @@ var maxProfitAssignment = function(difficulty, profit, worker) {
 
     for (const ability of worker) {
         while (index < n && ability >= difficulty[index]) {
-            const income =  difficultyMap.get(difficulty[index]);
+            const income = difficultyMap.get(difficulty[index]);
 
             maxIncome = Math.max(income, maxIncome);
             index += 1;
