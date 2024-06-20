@@ -89,6 +89,7 @@
 514 | [Freedom Trail](https://leetcode.com/problems/freedom-trail) | [JavaScript](/solution/514.%20Freedom%20Trail/README.md) | Hard
 517 | [Super Washing Machines](https://leetcode.com/problems/super-washing-machines) | [JavaScript](/solution/517.%20Super%20Washing%20Machines/README.md) | Hard
 523 | [Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum) | [JavaScript](/solution/523.%20Continuous%20Subarray%20Sum/README.md) | Medium
+546 | [Remove Boxes](https://leetcode.com/problems/remove-boxes) | [JavaScript](/solution/546.%20Remove%20Boxes/README.md) | Hard
 623 | [Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree) | [JavaScript](/solution/623.%20Add%20One%20Row%20to%20Tree/README.md) | Medium
 632 | [Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists) | [JavaScript](/solution/632.%20Smallest%20Range%20Covering%20Elements%20from%20K%20Lists/README.md) | Hard
 633 | [Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers) | [JavaScript](/solution/633.%20Sum%20of%20Square%20Numbers/README.md) | Medium
