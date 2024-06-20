@@ -5,29 +5,33 @@
  * @return {number}
  */
 var minDays = function(bloomDay, m, k) {
-    if (bloomDay.length < m * k) return -1;
-    let left = 1;
-    let right = Math.max(...bloomDay);
-    const makeBouquetCount = (day) => {
-        let result = currnetFlowers = 0;
+    const n = bloomDay.length;
+    
+    if (m * k > n) return -1;
 
-        for (let index = 0; index < bloomDay.length; index++) {
-            if (day < bloomDay[index]) {
-                currnetFlowers = 0;
-                continue; 
+    const getBouquets = (day) => {
+        let result = flowers = 0;
+
+        for (const bloom of bloomDay) {
+            if (bloom > day) {
+                flowers = 0;
+                continue;
             }
-            currnetFlowers += 1;
-            if (currnetFlowers !== k) continue;
+            flowers += 1;
+            if (flowers !== k) continue;
+            flowers = 0;
             result += 1;
-            currnetFlowers = 0;
         }
         return result;
     };
 
+    let left = 1;
+    let right = Math.max(...bloomDay);
+
     while (left < right) {
         const mid = Math.floor((left + right) / 2);
 
-        makeBouquetCount(mid) < m ? left = mid + 1 : right = mid;
+        getBouquets(mid) >= m ? right = mid : left = mid + 1;
     }
     return left;
 };
