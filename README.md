@@ -107,6 +107,7 @@
 950 | [Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order) | [JavaScript](/solution/950.%20Reveal%20Cards%20In%20Increasing%20Order/README.md) | Medium
 974 | [Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k) | [JavaScript](/solution/974.%20Subarray%20Sums%20Divisible%20by%20K/README.md) | Medium
 1002 | [Find Common Characters](https://leetcode.com/problems/find-common-characters) | [JavaScript](/solution/1002.%20Find%20Common%20Characters/README.md) | Easy
+1052 | [Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner) | [JavaScript](/solution/1052.%20Grumpy%20Bookstore%20Owner/README.md) | Medium
 1122 | [Relative Sort Array](https://leetcode.com/problems/relative-sort-array) | [JavaScript](/solution/1122.%20Relative%20Sort%20Array/README.md) | Easy
 1137 | [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number) | [JavaScript](/solution/1137.%20N-th%20Tribonacci%20Number/README.md) | Easy
 1208 | [Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget) | [JavaScript](/solution/1208.%20Get%20Equal%20Substrings%20Within%20Budget/README.md) | Medium
