@@ -93,7 +93,7 @@ var checkRecord = function(n) {
         late[index] = sumTimes(lastPresent, lastAbsent, present[index - 2], absent[index - 2]);
         if (index === 3) continue;
 
-        absent[index] = sumTimes(absent[index - 1], absent[index - 2], absent[index - 3]);
+        absent[index] = sumTimes(lastAbsent, absent[index - 2], absent[index - 3]);
     }
     return sumTimes(present[n], late[n], absent[n]);
 };
