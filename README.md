@@ -106,6 +106,7 @@
 945 | [Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique) | [JavaScript](/solution/945.%20Minimum%20Increment%20to%20Make%20Array%20Unique/README.md) | Medium
 950 | [Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order) | [JavaScript](/solution/950.%20Reveal%20Cards%20In%20Increasing%20Order/README.md) | Medium
 974 | [Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k) | [JavaScript](/solution/974.%20Subarray%20Sums%20Divisible%20by%20K/README.md) | Medium
+995 | [Minimum Number of K Consecutive Bit Flips](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips) | [JavaScript](/solution/995.%20Minimum%20Number%20of%20K%20Consecutive%20Bit%20Flips/README.md) | Hard
 1002 | [Find Common Characters](https://leetcode.com/problems/find-common-characters) | [JavaScript](/solution/1002.%20Find%20Common%20Characters/README.md) | Easy
 1052 | [Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner) | [JavaScript](/solution/1052.%20Grumpy%20Bookstore%20Owner/README.md) | Medium
 1122 | [Relative Sort Array](https://leetcode.com/problems/relative-sort-array) | [JavaScript](/solution/1122.%20Relative%20Sort%20Array/README.md) | Easy
