@@ -122,6 +122,7 @@
 1289 | [Minimum Falling Path Sum II](https://leetcode.com/problems/minimum-falling-path-sum-ii) | [JavaScript](/solution/1289.%20Minimum%20Falling%20Path%20Sum%20II/README.md) | Hard
 1325 | [Delete Leaves With a Given Value](https://leetcode.com/problems/delete-leaves-with-a-given-value) | [JavaScript](/solution/1325.%20Delete%20Leaves%20With%20a%20Given%20Value/README.md) | Medium
 1376 | [Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees) | [JavaScript](/solution/1376.%20Time%20Needed%20to%20Inform%20All%20Employees/README.md) | Medium
+1382 | [Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree) | [JavaScript](/solution/1382.%20Balance%20a%20Binary%20Search%20Tree/README.md) | Medium
 1386 | [Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation) | [JavaScript](/solution/1386.%20Cinema%20Seat%20Allocation/README.md) | Medium
 1387 | [Sort Integers by The Power Value](https://leetcode.com/problems/sort-integers-by-the-power-value/) | [JavaScript](/solution/1387.%20Sort%20Integers%20by%20The%20Power%20Value/README.md) | Medium
 1391 | [Check if There is a Valid Path in a Grid](https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid) | [JavaScript](/solution/1391.%20Check%20if%20There%20is%20a%20Valid%20Path%20in%20a%20Grid/README.md) | Medium
