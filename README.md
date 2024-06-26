@@ -94,6 +94,7 @@
 564 | [Find the Closest Palindrome](https://leetcode.com/problems/find-the-closest-palindrome) | [JavaScript](/solution/564.%20Find%20the%20Closest%20Palindrome/README.md) | Hard
 587 | [Erect the Fence](https://leetcode.com/problems/erect-the-fence) | [JavaScript](/solution/587.%20Erect%20the%20Fence/README.md) | Hard
 591 | [Tag Validator](https://leetcode.com/problems/tag-validator) | [JavaScript](/solution/591.%20Tag%20Validator/README.md) | Hard
+600 | [Non-negative Integers without Consecutive Ones](https://leetcode.com/problems/non-negative-integers-without-consecutive-ones) | [JavaScript](/solution/600.%20Non-negative%20Integers%20without%20Consecutive%20Ones/README.md) | Hard
 623 | [Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree) | [JavaScript](/solution/623.%20Add%20One%20Row%20to%20Tree/README.md) | Medium
 632 | [Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists) | [JavaScript](/solution/632.%20Smallest%20Range%20Covering%20Elements%20from%20K%20Lists/README.md) | Hard
 633 | [Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers) | [JavaScript](/solution/633.%20Sum%20of%20Square%20Numbers/README.md) | Medium
