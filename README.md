@@ -273,6 +273,7 @@
 1781 | [Sum of Beauty of All Substrings](https://leetcode.com/problems/sum-of-beauty-of-all-substrings) | [JavaScript](/solution/1781.%20Sum%20of%20Beauty%20of%20All%20Substrings/README.md) | Medium
 1785 | [Minimum Elements to Add to Form a Given Sum](https://leetcode.com/problems/minimum-elements-to-add-to-form-a-given-sum) | [JavaScript](/solution/1785.%20Minimum%20Elements%20to%20Add%20to%20Form%20a%20Given%20Sum/README.md) | Medium
 1786 | [Number of Restricted Paths From First to Last Node](https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node) | [JavaScript](/solution/1786.%20Number%20of%20Restricted%20Paths%20From%20First%20to%20Last%20Node/README.md) | Medium
+1791 | [Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph) | [JavaScript](/solution/1791.%20Find%20Center%20of%20Star%20Graph/README.md) | Easy
 1792 | [Maximum Average Pass Ratio](https://leetcode.com/problems/maximum-average-pass-ratio) | [JavaScript](/solution/1792.%20Maximum%20Average%20Pass%20Ratio/README.md) | Medium
 1797 | [Design Authentication Manager](https://leetcode.com/problems/design-authentication-manager) | [JavaScript](/solution/1797.%20Design%20Authentication%20Manager/README.md) | Medium
 1798 | [Maximum Number of Consecutive Values You Can Make](https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make) | [JavaScript](/solution/1798.%20Maximum%20Number%20of%20Consecutive%20Values%20You%20Can%20Make/README.md) | Medium
