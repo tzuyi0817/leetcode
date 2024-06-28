@@ -103,6 +103,7 @@
 639 | [Decode Ways II](https://leetcode.com/problems/decode-ways-ii) | [JavaScript](/solution/639.%20Decode%20Ways%20II/README.md) | Hard
 648 | [Replace Words](https://leetcode.com/problems/replace-words) | [JavaScript](/solution/648.%20Replace%20Words/README.md) | Medium
 664 | [Strange Printer](https://leetcode.com/problems/strange-printer) | [JavaScript](/solution/664.%20Strange%20Printer/README.md) | Hard
+668 | [Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table) | [JavaScript](/solution/668.%20Kth%20Smallest%20Number%20in%20Multiplication%20Table/README.md) | Hard
 752 | [Open the Lock](https://leetcode.com/problems/open-the-lock) | [JavaScript](/solution/752.%20Open%20the%20Lock/README.md) | Medium
 815 | [Bus Routes](https://leetcode.com/problems/bus-routes) | [JavaScript](/solution/815.%20Bus%20Routes/README.md) | Hard
 826 | [Most Profit Assigning Work](https://leetcode.com/problems/most-profit-assigning-work) | [JavaScript](/solution/826.%20Most%20Profit%20Assigning%20Work/README.md) | Medium
