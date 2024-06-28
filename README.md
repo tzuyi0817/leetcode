@@ -413,6 +413,7 @@
 2104 | [Sum of Subarray Ranges](https://leetcode.com/problems/sum-of-subarray-ranges) | [JavaScript](/solution/2104.%20Sum%20of%20Subarray%20Ranges/README.md) | Medium
 2105 | [Watering Plants II](https://leetcode.com/problems/watering-plants-ii) | [JavaScript](/solution/2105.%20Watering%20Plants%20II/README.md) | Medium
 2108 | [Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array) | [JavaScript](/solution/2108.%20Find%20First%20Palindromic%20String%20in%20the%20Array/README.md) | Easy
+2285 | [Maximum Total Importance of Roads](https://leetcode.com/problems/maximum-total-importance-of-roads) | [JavaScript](/solution/2285.%20Maximum%20Total%20Importance%20of%20Roads/README.md) | Medium
 2331 | [Evaluate Boolean Binary Tree](https://leetcode.com/problems/evaluate-boolean-binary-tree) | [JavaScript](/solution/2331.%20Evaluate%20Boolean%20Binary%20Tree/README.md) | Easy
 2370 | [Longest Ideal Subsequence](https://leetcode.com/problems/longest-ideal-subsequence) | [JavaScript](/solution/2370.%20Longest%20Ideal%20Subsequence/README.md) | Medium
 2486 | [Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence) | [JavaScript](/solution/2486.%20Append%20Characters%20to%20String%20to%20Make%20Subsequence/README.md) | Medium
