@@ -56,7 +56,7 @@ It can be shown that we cannot obtain a greater total importance than 20.
 ## Solutions
 
 **Solution: `Greedy`**
-- Time complexity: <em>O(nlongn)</em>
+- Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(n)</em>
 
 <p>&nbsp;</p>
