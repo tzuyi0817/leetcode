@@ -53,7 +53,7 @@
 
 ## Solutions
 
-**Solution: `Backtracing`**
+**Solution: `Backtracking`**
 - Time complexity: <em>O(2<sup>n</sup>)</em>
 - Space complexity: <em>O(2<sup>n</sup>)</em>
 
