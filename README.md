@@ -108,6 +108,7 @@
 675 | [Cut Off Trees for Golf Event](https://leetcode.com/problems/cut-off-trees-for-golf-event) | [JavaScript](/solution/675.%20Cut%20Off%20Trees%20for%20Golf%20Event/README.md) | Hard
 679 | [24 Game](https://leetcode.com/problems/24-game) | [JavaScript](/solution/679.%2024%20Game/README.md) | Hard
 685 | [Redundant Connection II](https://leetcode.com/problems/redundant-connection-ii) | [JavaScript](/solution/685.%20Redundant%20Connection%20II/README.md) | Hard
+689 | [Maximum Sum of 3 Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays) | [JavaScript](/solution/689.%20Maximum%20Sum%20of%203%20Non-Overlapping%20Subarrays/README.md) | Hard
 752 | [Open the Lock](https://leetcode.com/problems/open-the-lock) | [JavaScript](/solution/752.%20Open%20the%20Lock/README.md) | Medium
 815 | [Bus Routes](https://leetcode.com/problems/bus-routes) | [JavaScript](/solution/815.%20Bus%20Routes/README.md) | Hard
 826 | [Most Profit Assigning Work](https://leetcode.com/problems/most-profit-assigning-work) | [JavaScript](/solution/826.%20Most%20Profit%20Assigning%20Work/README.md) | Medium
