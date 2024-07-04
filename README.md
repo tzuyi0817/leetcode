@@ -110,6 +110,7 @@
 685 | [Redundant Connection II](https://leetcode.com/problems/redundant-connection-ii) | [JavaScript](/solution/685.%20Redundant%20Connection%20II/README.md) | Hard
 689 | [Maximum Sum of 3 Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays) | [JavaScript](/solution/689.%20Maximum%20Sum%20of%203%20Non-Overlapping%20Subarrays/README.md) | Hard
 691 | [Stickers to Spell Word](https://leetcode.com/problems/stickers-to-spell-word) | [JavaScript](/solution/691.%20Stickers%20to%20Spell%20Word/README.md) | Hard
+699 | [Falling Squares](https://leetcode.com/problems/falling-squares) | [JavaScript](/solution/699.%20Falling%20Squares/README.md) | Hard
 752 | [Open the Lock](https://leetcode.com/problems/open-the-lock) | [JavaScript](/solution/752.%20Open%20the%20Lock/README.md) | Medium
 815 | [Bus Routes](https://leetcode.com/problems/bus-routes) | [JavaScript](/solution/815.%20Bus%20Routes/README.md) | Hard
 826 | [Most Profit Assigning Work](https://leetcode.com/problems/most-profit-assigning-work) | [JavaScript](/solution/826.%20Most%20Profit%20Assigning%20Work/README.md) | Medium
