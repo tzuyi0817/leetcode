@@ -104,7 +104,7 @@ var countOfAtoms = function(formula) {
             index += 1;
             multiple += formula[index];
         }
-        return { multiple: multiple || 1, index };
+        return { multiple, index };
     };
 
     for (let index = 0; index < n; index++) {
@@ -122,11 +122,13 @@ var countOfAtoms = function(formula) {
             const atomMap = stack.pop();
             const { multiple, index: currentIndex } = getMultiple(index);
 
-            for (const [atom, count] of atomMap) {
-                atomMap.set(atom, count * multiple);
+            if (multiple) {
+                for (const [atom, count] of atomMap) {
+                    atomMap.set(atom, count * multiple);
+                }
+                index = currentIndex;
             }
             mergeAtomMap(atomMap);
-            index = currentIndex;
         }
         else if (/[A-Z]/.test(char)) {
             combineAtom(currentAtom, currentCount);
