@@ -118,6 +118,7 @@
 730 | [Count Different Palindromic Subsequences](https://leetcode.com/problems/count-different-palindromic-subsequences) | [JavaScript](/solution/730.%20Count%20Different%20Palindromic%20Subsequences/README.md) | Hard
 732 | [My Calendar III](https://leetcode.com/problems/my-calendar-iii) | [JavaScript](/solution/732.%20My%20Calendar%20III/README.md) | Hard
 736 | [Parse Lisp Expression](https://leetcode.com/problems/parse-lisp-expression) | [JavaScript](/solution/736.%20Parse%20Lisp%20Expression/README.md) | Hard
+741 | [Cherry Pickup](https://leetcode.com/problems/cherry-pickup) | [JavaScript](/solution/741.%20Cherry%20Pickup/README.md) | Hard
 752 | [Open the Lock](https://leetcode.com/problems/open-the-lock) | [JavaScript](/solution/752.%20Open%20the%20Lock/README.md) | Medium
 815 | [Bus Routes](https://leetcode.com/problems/bus-routes) | [JavaScript](/solution/815.%20Bus%20Routes/README.md) | Hard
 826 | [Most Profit Assigning Work](https://leetcode.com/problems/most-profit-assigning-work) | [JavaScript](/solution/826.%20Most%20Profit%20Assigning%20Work/README.md) | Medium
