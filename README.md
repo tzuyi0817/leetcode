@@ -135,6 +135,7 @@
 1052 | [Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner) | [JavaScript](/solution/1052.%20Grumpy%20Bookstore%20Owner/README.md) | Medium
 1122 | [Relative Sort Array](https://leetcode.com/problems/relative-sort-array) | [JavaScript](/solution/1122.%20Relative%20Sort%20Array/README.md) | Easy
 1137 | [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number) | [JavaScript](/solution/1137.%20N-th%20Tribonacci%20Number/README.md) | Easy
+1190 | [Reverse Substrings Between Each Pair of Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses) | [JavaScript](/solution/1190.%20Reverse%20Substrings%20Between%20Each%20Pair%20of%20Parentheses/README.md) | Medium
 1208 | [Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget) | [JavaScript](/solution/1208.%20Get%20Equal%20Substrings%20Within%20Budget/README.md) | Medium
 1219 | [Path with Maximum Gold](https://leetcode.com/problems/path-with-maximum-gold) | [JavaScript](/solution/1219.%20Path%20with%20Maximum%20Gold/README.md) | Medium
 1235 | [Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling) | [JavaScript](/solution/1235.%20Maximum%20Profit%20in%20Job%20Scheduling/README.md) | Hard
