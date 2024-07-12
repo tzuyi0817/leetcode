@@ -51,9 +51,9 @@ Total score = 5 + 4 + 5 + 5 = 19.</pre>
 
 ## Solutions
 
-**Solution: `Stack + Greedy`**
+**Solution: `Greedy`**
 - Time complexity: <em>O(n)</em>
-- Space complexity: <em>O(n)</em>
+- Space complexity: <em>O(1)</em>
 
 <p>&nbsp;</p>
 
@@ -67,30 +67,27 @@ Total score = 5 + 4 + 5 + 5 = 19.</pre>
  * @return {number}
  */
 var maximumGain = function(s, x, y) {
-    const maxScoreStack = [];
-    const minScoreStack = [];
-    const [maxScore, minScore] = x > y ? [x, y] : [y, x];
-    const [firstStr, secondStr] = x > y ? ['a', 'b'] : ['b' , 'a'];
-    let result = 0;
+    const getScore = (type, pointX, pointY) => {
+        const [firstChar, secondChar] = type;
+        let result = firstCount = secondCount = 0;
 
-    for (const str of s) {
-        if (str === secondStr && maxScoreStack.length && maxScoreStack.at(-1) === firstStr) {
-            result += maxScore;
-            maxScoreStack.pop();
-            continue;
+        for (const char of s) {
+            if (char === firstChar) firstCount += 1;
+            else if (char === secondChar) {
+                if (firstCount) {
+                    firstCount -= 1;
+                    result += pointX;
+                    continue;
+                }
+                secondCount += 1;
+            } else {
+                result += Math.min(firstCount, secondCount) * pointY;
+                firstCount = secondCount = 0;
+            }
         }
-        maxScoreStack.push(str);
-    }
-    while (maxScoreStack.length) {
-        const str = maxScoreStack.pop();
+        return result + Math.min(firstCount, secondCount) * pointY;
+    };
 
-        if (str === secondStr && minScoreStack.length && minScoreStack.at(-1) === firstStr) {
-            result += minScore;
-            minScoreStack.pop();
-            continue;
-        }
-        minScoreStack.push(str);
-    }
-    return result;
+    return Math.max(getScore('ab', x, y), getScore('ba', y, x));
 };
 ```
