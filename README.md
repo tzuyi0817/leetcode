@@ -122,6 +122,7 @@
 745 | [Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search) | [JavaScript](/solution/745.%20Prefix%20and%20Suffix%20Search/README.md) | Hard
 749 | [Contain Virus](https://leetcode.com/problems/contain-virus) | [JavaScript](/solution/749.%20Contain%20Virus/README.md) | Hard
 752 | [Open the Lock](https://leetcode.com/problems/open-the-lock) | [JavaScript](/solution/752.%20Open%20the%20Lock/README.md) | Medium
+753 | [Cracking the Safe](https://leetcode.com/problems/cracking-the-safe) | [JavaScript](/solution/753.%20Cracking%20the%20Safe/README.md) | Hard
 815 | [Bus Routes](https://leetcode.com/problems/bus-routes) | [JavaScript](/solution/815.%20Bus%20Routes/README.md) | Hard
 826 | [Most Profit Assigning Work](https://leetcode.com/problems/most-profit-assigning-work) | [JavaScript](/solution/826.%20Most%20Profit%20Assigning%20Work/README.md) | Medium
 846 | [Hand of Straights](https://leetcode.com/problems/hand-of-straights) | [JavaScript](/solution/846.%20Hand%20of%20Straights/README.md) | Medium
