@@ -70,36 +70,23 @@
  * @return {string}
  */
 var getDirections = function(root, startValue, destValue) {
-    let LCA = startNode = endNode = null;
-
-    function dfsLCA(node = root) {
-        if (!node) return false;
-        const { val: value, left, right } = node;
-        const isStartNode = value === startValue;
-
-        if (isStartNode || value === destValue) {
-            isStartNode ? startNode = node : endNode = node;
-            return true;  
-        }
-        const isFindedLeft = dfsLCA(left);
-        const isFindedRight = dfsLCA(right);
-
-        if (isFindedLeft && isFindedRight) LCA = node;
-        return isFindedLeft || isFindedRight;
-    }
-    function stepNode(node, target, isFromParent = false, dir = '') {
+    const getStepPath = (node, target, path = '') => {
         if (!node) return '';
-        const { val: value, left, right } = node;
+        if (node.val === target) return path;
 
-        if (value === target) return dir;
-        const leftValue = stepNode(left, target, isFromParent, isFromParent ? 'U' : 'L');
-        const rightValue = stepNode(right, target, isFromParent, isFromParent ? 'U' : 'R');
-        const direction = leftValue || rightValue ? dir : '';
+        const { left, right } = node;
+        const leftPath = getStepPath(left, target, `${path}L`);
 
-        return direction + leftValue + rightValue;
-    }
+        if (leftPath) return leftPath;
+        return getStepPath(right, target, `${path}R`);
+    };
 
-    dfsLCA();
-    return stepNode(LCA ?? endNode, startValue, true) + stepNode(LCA ?? startNode, destValue);
+    const startPath = getStepPath(root, startValue);
+    const endPath = getStepPath(root, destValue);
+    let start = 0;
+
+    while (startPath[start] === endPath[start]) start += 1;
+
+    return 'U'.repeat(startPath.length - start) + endPath.slice(start);
 };
 ```
