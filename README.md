@@ -124,6 +124,7 @@
 752 | [Open the Lock](https://leetcode.com/problems/open-the-lock) | [JavaScript](/solution/752.%20Open%20the%20Lock/README.md) | Medium
 753 | [Cracking the Safe](https://leetcode.com/problems/cracking-the-safe) | [JavaScript](/solution/753.%20Cracking%20the%20Safe/README.md) | Hard
 757 | [Set Intersection Size At Least Two](https://leetcode.com/problems/set-intersection-size-at-least-two) | [JavaScript](/solution/757.%20Set%20Intersection%20Size%20At%20Least%20Two/README.md) | Hard
+761 | [Special Binary String](https://leetcode.com/problems/special-binary-string) | [JavaScript](/solution/761.%20Special%20Binary%20String/README.md) | Hard
 815 | [Bus Routes](https://leetcode.com/problems/bus-routes) | [JavaScript](/solution/815.%20Bus%20Routes/README.md) | Hard
 826 | [Most Profit Assigning Work](https://leetcode.com/problems/most-profit-assigning-work) | [JavaScript](/solution/826.%20Most%20Profit%20Assigning%20Work/README.md) | Medium
 846 | [Hand of Straights](https://leetcode.com/problems/hand-of-straights) | [JavaScript](/solution/846.%20Hand%20of%20Straights/README.md) | Medium
