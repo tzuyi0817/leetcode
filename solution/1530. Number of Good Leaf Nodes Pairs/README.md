@@ -66,21 +66,22 @@
  */
 var countPairs = function(root, distance) {
     let result = 0;
-    const dfsTreeNode = (node = root) => {
+
+    const getDistances = (node) => {
         const distances = Array(distance + 1).fill(0);
+
         if (!node) return distances;
-        const { left, right } = node;
-        if (!left && !right) {
-            distances[0] = 1;
+        if (!node.left && !node.right) {
+            distances[1] = 1;
             return distances;
         }
-        const leftDistances = dfsTreeNode(left);
-        const rightDistances = dfsTreeNode(right);
+        const leftDistances = getDistances(node.left);
+        const rightDistances = getDistances(node.right);
 
-        for (let l = 0; l < distance; l++) {
-            for (let r = 0; r < distance; r++) {
-                if (l + r + 2 > distance) continue;
-                result += leftDistances[l] * rightDistances[r];
+        for (let left = 1; left <= distance; left++) {
+            for (let right = 1; right <= distance; right++) {
+                if (left + right > distance) continue;
+                result += leftDistances[left] * rightDistances[right];
             }
         }
         for (let index = 1; index <= distance; index++) {
@@ -89,7 +90,7 @@ var countPairs = function(root, distance) {
         return distances;
     };
 
-    dfsTreeNode();
+    getDistances(root);
     return result;
 };
 ```
