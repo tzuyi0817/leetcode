@@ -129,6 +129,7 @@
 768 | [Max Chunks To Make Sorted II](https://leetcode.com/problems/max-chunks-to-make-sorted-ii) | [JavaScript](/solution/768.%20Max%20Chunks%20To%20Make%20Sorted%20II/README.md) | Hard
 773 | [Sliding Puzzle](https://leetcode.com/problems/sliding-puzzle) | [JavaScript](/solution/773.%20Sliding%20Puzzle/README.md) | Hard
 778 | [Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water) | [JavaScript](/solution/778.%20Swim%20in%20Rising%20Water/README.md) | Hard
+780 | [Reaching Points](https://leetcode.com/problems/reaching-points) | [JavaScript](/solution/780.%20Reaching%20Points/README.md) | Hard
 815 | [Bus Routes](https://leetcode.com/problems/bus-routes) | [JavaScript](/solution/815.%20Bus%20Routes/README.md) | Hard
 826 | [Most Profit Assigning Work](https://leetcode.com/problems/most-profit-assigning-work) | [JavaScript](/solution/826.%20Most%20Profit%20Assigning%20Work/README.md) | Medium
 846 | [Hand of Straights](https://leetcode.com/problems/hand-of-straights) | [JavaScript](/solution/846.%20Hand%20of%20Straights/README.md) | Medium
