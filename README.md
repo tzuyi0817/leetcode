@@ -448,6 +448,7 @@
 2285 | [Maximum Total Importance of Roads](https://leetcode.com/problems/maximum-total-importance-of-roads) | [JavaScript](/solution/2285.%20Maximum%20Total%20Importance%20of%20Roads/README.md) | Medium
 2331 | [Evaluate Boolean Binary Tree](https://leetcode.com/problems/evaluate-boolean-binary-tree) | [JavaScript](/solution/2331.%20Evaluate%20Boolean%20Binary%20Tree/README.md) | Easy
 2370 | [Longest Ideal Subsequence](https://leetcode.com/problems/longest-ideal-subsequence) | [JavaScript](/solution/2370.%20Longest%20Ideal%20Subsequence/README.md) | Medium
+2418 | [Sort the People](https://leetcode.com/problems/sort-the-people) | [JavaScript](/solution/2418.%20Sort%20the%20People/README.md) | Easy
 2486 | [Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence) | [JavaScript](/solution/2486.%20Append%20Characters%20to%20String%20to%20Make%20Subsequence/README.md) | Medium
 2582 | [Pass the Pillow](https://leetcode.com/problems/pass-the-pillow) | [JavaScript](/solution/2582.%20Pass%20the%20Pillow/README.md) | Easy
 2597 | [The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets) | [JavaScript](/solution/2597.%20The%20Number%20of%20Beautiful%20Subsets/README.md) | Medium
