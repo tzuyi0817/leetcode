@@ -157,6 +157,7 @@
 1235 | [Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling) | [JavaScript](/solution/1235.%20Maximum%20Profit%20in%20Job%20Scheduling/README.md) | Hard
 1289 | [Minimum Falling Path Sum II](https://leetcode.com/problems/minimum-falling-path-sum-ii) | [JavaScript](/solution/1289.%20Minimum%20Falling%20Path%20Sum%20II/README.md) | Hard
 1325 | [Delete Leaves With a Given Value](https://leetcode.com/problems/delete-leaves-with-a-given-value) | [JavaScript](/solution/1325.%20Delete%20Leaves%20With%20a%20Given%20Value/README.md) | Medium
+1334 | [Find the City With the Smallest Number of Neighbors at a Threshold Distance](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) | [JavaScript](/solution/1334.%20Find%20the%20City%20With%20the%20Smallest%20Number%20of%20Neighbors%20at%20a%20Threshold%20Distance/README.md) | Medium
 1376 | [Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees) | [JavaScript](/solution/1376.%20Time%20Needed%20to%20Inform%20All%20Employees/README.md) | Medium
 1380 | [Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix) | [JavaScript](/solution/1380.%20Lucky%20Numbers%20in%20a%20Matrix/README.md) | Easy
 1382 | [Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree) | [JavaScript](/solution/1382.%20Balance%20a%20Binary%20Search%20Tree/README.md) | Medium
