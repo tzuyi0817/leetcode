@@ -28,7 +28,7 @@ var numTeams = function(rating) {
 var numTeams = function(rating) {
     const n = rating.length;
     const sortedRating = [...rating].sort((a, b) => a - b);
-    let bit = Array(n + 2).fill(0);
+    const bit = Array(n + 2).fill(0);
 
     const getIndex = (value) => {
         let left = 0;

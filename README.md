@@ -134,6 +134,7 @@
 793 | [Preimage Size of Factorial Zeroes Function](https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function) | [JavaScript](/solution/793.%20Preimage%20Size%20of%20Factorial%20Zeroes%20Function/README.md) | Hard
 798 | [Smallest Rotation with Highest Score](https://leetcode.com/problems/smallest-rotation-with-highest-score) | [JavaScript](/solution/798.%20Smallest%20Rotation%20with%20Highest%20Score/README.md) | Hard
 801 | [Minimum Swaps To Make Sequences Increasing](https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing) | [JavaScript](/solution/801.%20Minimum%20Swaps%20To%20Make%20Sequences%20Increasing/README.md) | Hard
+803 | [Bricks Falling When Hit](https://leetcode.com/problems/bricks-falling-when-hit) | [JavaScript](/solution/803.%20Bricks%20Falling%20When%20Hit/README.md) | Hard
 815 | [Bus Routes](https://leetcode.com/problems/bus-routes) | [JavaScript](/solution/815.%20Bus%20Routes/README.md) | Hard
 826 | [Most Profit Assigning Work](https://leetcode.com/problems/most-profit-assigning-work) | [JavaScript](/solution/826.%20Most%20Profit%20Assigning%20Work/README.md) | Medium
 846 | [Hand of Straights](https://leetcode.com/problems/hand-of-straights) | [JavaScript](/solution/846.%20Hand%20of%20Straights/README.md) | Medium
