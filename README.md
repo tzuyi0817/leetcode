@@ -138,6 +138,7 @@
 805 | [Split Array With Same Average](https://leetcode.com/problems/split-array-with-same-average) | [JavaScript](/solution/805.%20Split%20Array%20With%20Same%20Average/README.md) | Hard
 810 | [Chalkboard XOR Game](https://leetcode.com/problems/chalkboard-xor-game) | [JavaScript](/solution/810.%20Chalkboard%20XOR%20Game/README.md) | Hard
 815 | [Bus Routes](https://leetcode.com/problems/bus-routes) | [JavaScript](/solution/815.%20Bus%20Routes/README.md) | Hard
+818 | [Race Car](https://leetcode.com/problems/race-car) | [JavaScript](/solution/818.%20Race%20Car/README.md) | Hard
 826 | [Most Profit Assigning Work](https://leetcode.com/problems/most-profit-assigning-work) | [JavaScript](/solution/826.%20Most%20Profit%20Assigning%20Work/README.md) | Medium
 846 | [Hand of Straights](https://leetcode.com/problems/hand-of-straights) | [JavaScript](/solution/846.%20Hand%20of%20Straights/README.md) | Medium
 861 | [Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix) | [JavaScript](/solution/861.%20Score%20After%20Flipping%20Matrix/README.md) | Medium
