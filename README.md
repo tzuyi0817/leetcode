@@ -141,6 +141,7 @@
 818 | [Race Car](https://leetcode.com/problems/race-car) | [JavaScript](/solution/818.%20Race%20Car/README.md) | Hard
 826 | [Most Profit Assigning Work](https://leetcode.com/problems/most-profit-assigning-work) | [JavaScript](/solution/826.%20Most%20Profit%20Assigning%20Work/README.md) | Medium
 827 | [Making A Large Island](https://leetcode.com/problems/making-a-large-island) | [JavaScript](/solution/827.%20Making%20A%20Large%20Island/README.md) | Hard
+828 | [Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string) | [JavaScript](/solution/828.%20Count%20Unique%20Characters%20of%20All%20Substrings%20of%20a%20Given%20String/README.md) | Hard
 846 | [Hand of Straights](https://leetcode.com/problems/hand-of-straights) | [JavaScript](/solution/846.%20Hand%20of%20Straights/README.md) | Medium
 861 | [Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix) | [JavaScript](/solution/861.%20Score%20After%20Flipping%20Matrix/README.md) | Medium
 881 | [Boats to Save People](https://leetcode.com/problems/boats-to-save-people) | [JavaScript](/solution/881.%20Boats%20to%20Save%20People/README.md) | Medium
