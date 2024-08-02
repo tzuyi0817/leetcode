@@ -458,6 +458,7 @@
 2104 | [Sum of Subarray Ranges](https://leetcode.com/problems/sum-of-subarray-ranges) | [JavaScript](/solution/2104.%20Sum%20of%20Subarray%20Ranges/README.md) | Medium
 2105 | [Watering Plants II](https://leetcode.com/problems/watering-plants-ii) | [JavaScript](/solution/2105.%20Watering%20Plants%20II/README.md) | Medium
 2108 | [Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array) | [JavaScript](/solution/2108.%20Find%20First%20Palindromic%20String%20in%20the%20Array/README.md) | Easy
+2134 | [Minimum Swaps to Group All 1's Together II](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii) | [JavaScript](/solution/2134.%20Minimum%20Swaps%20to%20Group%20All%201's%20Together%20II/README.md) | Medium
 2181 | [Merge Nodes in Between Zeros](https://leetcode.com/problems/merge-nodes-in-between-zeros) | [JavaScript](/solution/2181.%20Merge%20Nodes%20in%20Between%20Zeros/README.md) | Medium
 2191 | [Sort the Jumbled Numbers](https://leetcode.com/problems/sort-the-jumbled-numbers) | [JavaScript](/solution/2191.%20Sort%20the%20Jumbled%20Numbers/README.md) | Medium
 2196 | [Create Binary Tree From Descriptions](https://leetcode.com/problems/create-binary-tree-from-descriptions) | [JavaScript](/solution/2196.%20Create%20Binary%20Tree%20From%20Descriptions/README.md) | Medium
