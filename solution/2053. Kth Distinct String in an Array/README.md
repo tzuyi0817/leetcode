@@ -50,7 +50,7 @@ The only distinct string is "b". Since there are fewer than 3 distinct strings, 
 
 ## Solutions
 
-**Solution: `Hash Table`**
+**Solution: `Hash Map`**
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -65,19 +65,17 @@ The only distinct string is "b". Since there are fewer than 3 distinct strings, 
  * @return {string}
  */
 var kthDistinct = function(arr, k) {
-    const countMap = arr.reduce((map, char) => {
-        const count = map.get(char) ?? 0;
+    const wordsMap = new Map();
+    let current = 0;
 
-        return map.set(char, count + 1);
-    }, new Map());
+    for (const word of arr) {
+        const count = wordsMap.get(word) ?? 0;
 
-    for (let index = 0; index < arr.length; index++) {
-        const char = arr[index];
-        const count = countMap.get(char);
-
-        if (count > 1) continue;
-        k -= 1;
-        if (k === 0) return char;
+        wordsMap.set(word, count + 1);
+    }
+    for (const [word, count] of wordsMap) {
+        if (count === 1) current += 1;
+        if (current === k) return word;
     }
     return '';
 };
