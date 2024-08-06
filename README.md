@@ -474,5 +474,6 @@
 2678 | [Number of Senior Citizens](https://leetcode.com/problems/number-of-senior-citizens) | [JavaScript](/solution/2678.%20Number%20of%20Senior%20Citizens/README.md) | Easy
 2812 | [Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid) | [JavaScript](/solution/2812.%20Find%20the%20Safest%20Path%20in%20a%20Grid/README.md) | Medium
 2997 | [Minimum Number of Operations to Make Array XOR Equal to K](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k) | [JavaScript](/solution/2997.%20Minimum%20Number%20of%20Operations%20to%20Make%20Array%20XOR%20Equal%20to%20K/README.md) | Medium
+3016 | [Minimum Number of Pushes to Type Word II](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii) | [JavaScript](/solution/3016.%20Minimum%20Number%20of%20Pushes%20to%20Type%20Word%20II/README.md) | Medium
 3123 | [Find Edges in Shortest Paths](https://leetcode.com/problems/find-edges-in-shortest-paths) | [JavaScript](/solution/3123.%20Find%20Edges%20in%20Shortest%20Paths/README.md) | Hard
 3148 | [Maximum Difference Score in a Grid](https://leetcode.com/problems/maximum-difference-score-in-a-grid) | [JavaScript](/solution/3148.%20Maximum%20Difference%20Score%20in%20a%20Grid/README.md) | Medium
