@@ -36,9 +36,9 @@
 
 ## Solutions
 
-**Solution: `Line Sweep`**
-- Time complexity: <em>O(n<sup>2</sup>logn)</em>
-- Space complexity: <em>O(n)</em>
+**Solution: `Breadth-First Search`**
+- Time complexity: <em>O(n<sup>2</sup>k)</em>
+- Space complexity: <em>O(n<sup>2</sup>)</em>
 
 <p>&nbsp;</p>
 

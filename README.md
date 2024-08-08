@@ -152,6 +152,7 @@
 854 | [K-Similar Strings](https://leetcode.com/problems/k-similar-strings) | [JavaScript](/solution/854.%20K-Similar%20Strings/README.md) | Hard
 861 | [Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix) | [JavaScript](/solution/861.%20Score%20After%20Flipping%20Matrix/README.md) | Medium
 881 | [Boats to Save People](https://leetcode.com/problems/boats-to-save-people) | [JavaScript](/solution/881.%20Boats%20to%20Save%20People/README.md) | Medium
+885 | [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii) | [JavaScript](/solution/885.%20Spiral%20Matrix%20III/README.md) | Medium
 895 | [Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack) | [JavaScript](/solution/895.%20Maximum%20Frequency%20Stack/README.md) | Hard
 912 | [Sort an Array](https://leetcode.com/problems/sort-an-array) | [JavaScript](/solution/912.%20Sort%20an%20Array/README.md) | Medium
 945 | [Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique) | [JavaScript](/solution/945.%20Minimum%20Increment%20to%20Make%20Array%20Unique/README.md) | Medium
