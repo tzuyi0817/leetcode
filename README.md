@@ -148,6 +148,7 @@
 843 | [Guess the Word](https://leetcode.com/problems/guess-the-word) | [JavaScript](/solution/843.%20Guess%20the%20Word/README.md) | Hard
 846 | [Hand of Straights](https://leetcode.com/problems/hand-of-straights) | [JavaScript](/solution/846.%20Hand%20of%20Straights/README.md) | Medium
 847 | [Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes) | [JavaScript](/solution/847.%20Shortest%20Path%20Visiting%20All%20Nodes/README.md) | Hard
+850 | [Rectangle Area II](https://leetcode.com/problems/rectangle-area-ii) | [JavaScript](/solution/850.%20Rectangle%20Area%20II/README.md) | Hard
 861 | [Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix) | [JavaScript](/solution/861.%20Score%20After%20Flipping%20Matrix/README.md) | Medium
 881 | [Boats to Save People](https://leetcode.com/problems/boats-to-save-people) | [JavaScript](/solution/881.%20Boats%20to%20Save%20People/README.md) | Medium
 895 | [Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack) | [JavaScript](/solution/895.%20Maximum%20Frequency%20Stack/README.md) | Hard
