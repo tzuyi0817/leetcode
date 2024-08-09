@@ -31,7 +31,7 @@
 
 ## Solutions
 
-**Solution: `Monotonic Queue`**
+**Solution: `Prefix Sum + Monotonic Queue`**
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 

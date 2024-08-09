@@ -145,6 +145,7 @@
 829 | [Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum) | [JavaScript](/solution/829.%20Consecutive%20Numbers%20Sum/README.md) | Hard
 834 | [Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree) | [JavaScript](/solution/834.%20Sum%20of%20Distances%20in%20Tree/README.md) | Hard
 839 | [Similar String Groups](https://leetcode.com/problems/similar-string-groups) | [JavaScript](/solution/839.%20Similar%20String%20Groups/README.md) | Hard
+840 | [Magic Squares In Grid](https://leetcode.com/problems/magic-squares-in-grid) | [JavaScript](/solution/840.%20Magic%20Squares%20In%20Grid/README.md) | Medium
 843 | [Guess the Word](https://leetcode.com/problems/guess-the-word) | [JavaScript](/solution/843.%20Guess%20the%20Word/README.md) | Hard
 846 | [Hand of Straights](https://leetcode.com/problems/hand-of-straights) | [JavaScript](/solution/846.%20Hand%20of%20Straights/README.md) | Medium
 847 | [Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes) | [JavaScript](/solution/847.%20Shortest%20Path%20Visiting%20All%20Nodes/README.md) | Hard
