@@ -150,6 +150,7 @@
 847 | [Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes) | [JavaScript](/solution/847.%20Shortest%20Path%20Visiting%20All%20Nodes/README.md) | Hard
 850 | [Rectangle Area II](https://leetcode.com/problems/rectangle-area-ii) | [JavaScript](/solution/850.%20Rectangle%20Area%20II/README.md) | Hard
 854 | [K-Similar Strings](https://leetcode.com/problems/k-similar-strings) | [JavaScript](/solution/854.%20K-Similar%20Strings/README.md) | Hard
+857 | [Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers) | [JavaScript](/solution/857.%20Minimum%20Cost%20to%20Hire%20K%20Workers/README.md) | Hard
 861 | [Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix) | [JavaScript](/solution/861.%20Score%20After%20Flipping%20Matrix/README.md) | Medium
 881 | [Boats to Save People](https://leetcode.com/problems/boats-to-save-people) | [JavaScript](/solution/881.%20Boats%20to%20Save%20People/README.md) | Medium
 885 | [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii) | [JavaScript](/solution/885.%20Spiral%20Matrix%20III/README.md) | Medium
