@@ -13,6 +13,7 @@
 30 | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words) | [JavaScript](/solution/30.%20Substring%20with%20Concatenation%20of%20All%20Words/README.md) | Hard
 32 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses) | [JavaScript](/solution/32.%20Longest%20Valid%20Parentheses/README.md) | Hard
 37 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver) | [JavaScript](/solution/37.%20Sudoku%20Solver/README.md) | Hard
+40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii) | [JavaScript](/solution/40.%20Combination%20Sum%20II/README.md) | Medium
 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive) | [JavaScript](/solution/41.%20First%20Missing%20Positive/README.md) | Hard
 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [JavaScript](/solution/42.%20Trapping%20Rain%20Water/README.md) | Hard
 44 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching) | [JavaScript](/solution/44.%20Wildcard%20Matching/README.md) | Hard
