@@ -156,6 +156,7 @@
 861 | [Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix) | [JavaScript](/solution/861.%20Score%20After%20Flipping%20Matrix/README.md) | Medium
 862 | [Shortest Subarray with Sum at Least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k) | [JavaScript](/solution/862.%20Shortest%20Subarray%20with%20Sum%20at%20Least%20K/README.md) | Hard
 864 | [Shortest Path to Get All Keys](https://leetcode.com/problems/shortest-path-to-get-all-keys) | [JavaScript](/solution/864.%20Shortest%20Path%20to%20Get%20All%20Keys/README.md) | Hard
+871 | [Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops) | [JavaScript](/solution/871.%20Minimum%20Number%20of%20Refueling%20Stops/README.md) | Hard
 881 | [Boats to Save People](https://leetcode.com/problems/boats-to-save-people) | [JavaScript](/solution/881.%20Boats%20to%20Save%20People/README.md) | Medium
 885 | [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii) | [JavaScript](/solution/885.%20Spiral%20Matrix%20III/README.md) | Medium
 895 | [Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack) | [JavaScript](/solution/895.%20Maximum%20Frequency%20Stack/README.md) | Hard
