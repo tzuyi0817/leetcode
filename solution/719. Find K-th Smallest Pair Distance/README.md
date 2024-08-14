@@ -45,7 +45,7 @@ Then the 1<sup>st</sup> smallest distance pair is (1,1), and its distance is 0.
 
 ## Solutions
 
-**Solution: `Binary Search`**
+**Solution: `Binary Search + Two Pointers`**
 - Time complexity: <em>O(nlog(max(nums)-min(nums)))</em>
 - Space complexity: <em>O(1)</em>
 
@@ -60,33 +60,34 @@ Then the 1<sup>st</sup> smallest distance pair is (1,1), and its distance is 0.
  * @return {number}
  */
 var smallestDistancePair = function(nums, k) {
-    const n = nums.length;
-
     nums.sort((a, b) => a - b);
 
+    const n = nums.length;
     let left = 0;
     let right = nums[n - 1] - nums[0];
 
-    const getSmallestCount = (target) => {
+    const getKth = (distance) => {
         let result = 0;
+        let left = 0;
         let right = 1;
 
-        for (let index = 0; index < n; index++) {
-            const num = nums[index];
+        while (right < n) {
+            const num = nums[right];
 
-            while (right < n && nums[right] - num <= target) {
-                right += 1;
+            while (left < right && num - nums[left] > distance) {
+                left += 1;
             }
-            result += right - index - 1;
+            result += right - left;
+            right += 1;
         }
         return result;
     };
 
     while (left < right) {
         const mid = Math.floor((left + right) / 2);
-        const count = getSmallestCount(mid);
+        const kth = getKth(mid);
 
-        count >= k ? right = mid : left = mid + 1;
+        kth >= k ? right = mid : left = mid + 1;
     }
     return left;
 };
