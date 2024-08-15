@@ -154,6 +154,7 @@
 850 | [Rectangle Area II](https://leetcode.com/problems/rectangle-area-ii) | [JavaScript](/solution/850.%20Rectangle%20Area%20II/README.md) | Hard
 854 | [K-Similar Strings](https://leetcode.com/problems/k-similar-strings) | [JavaScript](/solution/854.%20K-Similar%20Strings/README.md) | Hard
 857 | [Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers) | [JavaScript](/solution/857.%20Minimum%20Cost%20to%20Hire%20K%20Workers/README.md) | Hard
+860 | [Lemonade Change](https://leetcode.com/problems/lemonade-change) | [JavaScript](/solution/860.%20Lemonade%20Change/README.md) | Easy
 861 | [Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix) | [JavaScript](/solution/861.%20Score%20After%20Flipping%20Matrix/README.md) | Medium
 862 | [Shortest Subarray with Sum at Least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k) | [JavaScript](/solution/862.%20Shortest%20Subarray%20with%20Sum%20at%20Least%20K/README.md) | Hard
 864 | [Shortest Path to Get All Keys](https://leetcode.com/problems/shortest-path-to-get-all-keys) | [JavaScript](/solution/864.%20Shortest%20Path%20to%20Get%20All%20Keys/README.md) | Hard
