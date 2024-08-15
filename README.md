@@ -161,6 +161,7 @@
 878 | [Nth Magical Number](https://leetcode.com/problems/nth-magical-number) | [JavaScript](/solution/878.%20Nth%20Magical%20Number/README.md) | Hard
 879 | [Profitable Schemes](https://leetcode.com/problems/profitable-schemes) | [JavaScript](/solution/879.%20Profitable%20Schemes/README.md) | Hard
 881 | [Boats to Save People](https://leetcode.com/problems/boats-to-save-people) | [JavaScript](/solution/881.%20Boats%20to%20Save%20People/README.md) | Medium
+882 | [Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph) | [JavaScript](/solution/882.%20Reachable%20Nodes%20In%20Subdivided%20Graph/README.md) | Hard
 885 | [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii) | [JavaScript](/solution/885.%20Spiral%20Matrix%20III/README.md) | Medium
 895 | [Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack) | [JavaScript](/solution/895.%20Maximum%20Frequency%20Stack/README.md) | Hard
 912 | [Sort an Array](https://leetcode.com/problems/sort-an-array) | [JavaScript](/solution/912.%20Sort%20an%20Array/README.md) | Medium
