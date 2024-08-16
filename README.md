@@ -165,6 +165,7 @@
 882 | [Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph) | [JavaScript](/solution/882.%20Reachable%20Nodes%20In%20Subdivided%20Graph/README.md) | Hard
 885 | [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii) | [JavaScript](/solution/885.%20Spiral%20Matrix%20III/README.md) | Medium
 887 | [Super Egg Drop](https://leetcode.com/problems/super-egg-drop) | [JavaScript](/solution/887.%20Super%20Egg%20Drop/README.md) | Hard
+891 | [Sum of Subsequence Widths](https://leetcode.com/problems/sum-of-subsequence-widths) | [JavaScript](/solution/891.%20Sum%20of%20Subsequence%20Widths/README.md) | Hard
 895 | [Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack) | [JavaScript](/solution/895.%20Maximum%20Frequency%20Stack/README.md) | Hard
 912 | [Sort an Array](https://leetcode.com/problems/sort-an-array) | [JavaScript](/solution/912.%20Sort%20an%20Array/README.md) | Medium
 945 | [Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique) | [JavaScript](/solution/945.%20Minimum%20Increment%20to%20Make%20Array%20Unique/README.md) | Medium
