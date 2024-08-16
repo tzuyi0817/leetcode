@@ -98,6 +98,7 @@
 591 | [Tag Validator](https://leetcode.com/problems/tag-validator) | [JavaScript](/solution/591.%20Tag%20Validator/README.md) | Hard
 600 | [Non-negative Integers without Consecutive Ones](https://leetcode.com/problems/non-negative-integers-without-consecutive-ones) | [JavaScript](/solution/600.%20Non-negative%20Integers%20without%20Consecutive%20Ones/README.md) | Hard
 623 | [Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree) | [JavaScript](/solution/623.%20Add%20One%20Row%20to%20Tree/README.md) | Medium
+624 | [Maximum Distance in Arrays](https://leetcode.com/problems/maximum-distance-in-arrays) | [JavaScript](/solution/624.%20Maximum%20Distance%20in%20Arrays/README.md) | Medium
 629 | [K Inverse Pairs Array](https://leetcode.com/problems/k-inverse-pairs-array) | [JavaScript](/solution/629.%20K%20Inverse%20Pairs%20Array/README.md) | Hard
 630 | [Course Schedule III](https://leetcode.com/problems/course-schedule-iii) | [JavaScript](/solution/630.%20Course%20Schedule%20III/README.md) | Hard
 632 | [Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists) | [JavaScript](/solution/632.%20Smallest%20Range%20Covering%20Elements%20from%20K%20Lists/README.md) | Hard
