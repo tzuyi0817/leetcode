@@ -105,6 +105,7 @@
 633 | [Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers) | [JavaScript](/solution/633.%20Sum%20of%20Square%20Numbers/README.md) | Medium
 639 | [Decode Ways II](https://leetcode.com/problems/decode-ways-ii) | [JavaScript](/solution/639.%20Decode%20Ways%20II/README.md) | Hard
 648 | [Replace Words](https://leetcode.com/problems/replace-words) | [JavaScript](/solution/648.%20Replace%20Words/README.md) | Medium
+650 | [2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard) | [JavaScript](/solution/650.%202%20Keys%20Keyboard/README.md) | Medium
 664 | [Strange Printer](https://leetcode.com/problems/strange-printer) | [JavaScript](/solution/664.%20Strange%20Printer/README.md) | Hard
 668 | [Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table) | [JavaScript](/solution/668.%20Kth%20Smallest%20Number%20in%20Multiplication%20Table/README.md) | Hard
 675 | [Cut Off Trees for Golf Event](https://leetcode.com/problems/cut-off-trees-for-golf-event) | [JavaScript](/solution/675.%20Cut%20Off%20Trees%20for%20Golf%20Event/README.md) | Hard
