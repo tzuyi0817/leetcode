@@ -50,9 +50,9 @@ In total, this is 29523 integers that can be written using the digits array.
 
 ## Solutions
 
-**Solution: `Simulation`**
-- Time complexity: <em>O(n<sup>2</sup>)</em>
-- Space complexity: <em>O(n)</em>
+**Solution: `Math`**
+- Time complexity: <em>O(logn)</em>
+- Space complexity: <em>O(1)</em>
 
 <p>&nbsp;</p>
 

@@ -179,10 +179,10 @@
 1002 | [Find Common Characters](https://leetcode.com/problems/find-common-characters) | [JavaScript](/solution/1002.%20Find%20Common%20Characters/README.md) | Easy
 1038 | [Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree) | [JavaScript](/solution/1038.%20Binary%20Search%20Tree%20to%20Greater%20Sum%20Tree/README.md) | Medium
 1052 | [Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner) | [JavaScript](/solution/1052.%20Grumpy%20Bookstore%20Owner/README.md) | Medium
-1052 | [Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner) | [JavaScript](/solution/1052.%20Grumpy%20Bookstore%20Owner/README.md) | Medium
 1105 | [Filling Bookcase Shelves](https://leetcode.com/problems/filling-bookcase-shelves) | [JavaScript](/solution/1105.%20Filling%20Bookcase%20Shelves/README.md) | Medium
 1122 | [Relative Sort Array](https://leetcode.com/problems/relative-sort-array) | [JavaScript](/solution/1122.%20Relative%20Sort%20Array/README.md) | Easy
 1137 | [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number) | [JavaScript](/solution/1137.%20N-th%20Tribonacci%20Number/README.md) | Easy
+1140 | [Stone Game II](https://leetcode.com/problems/stone-game-ii) | [JavaScript](/solution/1140.%20Stone%20Game%20II/README.md) | Medium
 1190 | [Reverse Substrings Between Each Pair of Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses) | [JavaScript](/solution/1190.%20Reverse%20Substrings%20Between%20Each%20Pair%20of%20Parentheses/README.md) | Medium
 1208 | [Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget) | [JavaScript](/solution/1208.%20Get%20Equal%20Substrings%20Within%20Budget/README.md) | Medium
 1219 | [Path with Maximum Gold](https://leetcode.com/problems/path-with-maximum-gold) | [JavaScript](/solution/1219.%20Path%20with%20Maximum%20Gold/README.md) | Medium
