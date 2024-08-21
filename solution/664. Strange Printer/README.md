@@ -54,23 +54,24 @@
  */
 var strangePrinter = function(s) {
     const n = s.length;
-    const dp = Array(n).fill('').map(_ => Array(n).fill(0));
+    const memo = Array(n).fill('').map(_ => Array(n).fill(0));
 
-    const turnPointer = (left, right) => {
+    const turnPrinter = (left, right) => {
         if (left > right) return 0;
-        if (dp[left][right]) return dp[left][right];
-    
-        let result = turnPointer(left + 1, right) + 1;
+        if (memo[left][right]) return memo[left][right];
+
+        let result = turnPrinter(left + 1, right) + 1;
 
         for (let index = left + 1; index <= right; index++) {
-            if (s[index] !== s[left]) continue;
-            const turnTimes = turnPointer(left + 1, index - 1) + turnPointer(index, right);
+            if (s[left] !== s[index]) continue;
 
+            const turnTimes = turnPrinter(left, index - 1) + turnPrinter(index + 1, right);
+            
             result = Math.min(turnTimes, result);
         }
-        return dp[left][right] = result;
+        return memo[left][right] = result;
     };
 
-    return turnPointer(0, n - 1);
+    return turnPrinter(0, n - 1);
 };
 ```
