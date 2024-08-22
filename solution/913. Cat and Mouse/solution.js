@@ -62,7 +62,7 @@ var catMouseGame = function(graph) {
 
                 if (isMouseWin || isCatWin || --outDegree[prevMouse][prevCat][prevRound] === 0) {
                     states[prevMouse][prevCat][prevRound] = state;
-                    nextQueue.push({ mouse: prevMouse, cat: prevCat, round: prevRound, state })
+                    nextQueue.push({ mouse: prevMouse, cat: prevCat, round: prevRound, state });
                 }
             }
         }

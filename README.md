@@ -175,6 +175,7 @@
 906 | [Super Palindromes](https://leetcode.com/problems/super-palindromes) | [JavaScript](/solution/906.%20Super%20Palindromes/README.md) | Hard
 912 | [Sort an Array](https://leetcode.com/problems/sort-an-array) | [JavaScript](/solution/912.%20Sort%20an%20Array/README.md) | Medium
 913 | [Cat and Mouse](https://leetcode.com/problems/cat-and-mouse) | [JavaScript](/solution/913.%20Cat%20and%20Mouse/README.md) | Hard
+920 | [Number of Music Playlists](https://leetcode.com/problems/number-of-music-playlists) | [JavaScript](/solution/920.%20Number%20of%20Music%20Playlists/README.md) | Hard
 945 | [Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique) | [JavaScript](/solution/945.%20Minimum%20Increment%20to%20Make%20Array%20Unique/README.md) | Medium
 950 | [Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order) | [JavaScript](/solution/950.%20Reveal%20Cards%20In%20Increasing%20Order/README.md) | Medium
 974 | [Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k) | [JavaScript](/solution/974.%20Subarray%20Sums%20Divisible%20by%20K/README.md) | Medium
