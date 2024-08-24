@@ -3,43 +3,43 @@
  * @return {string}
  */
 var nearestPalindromic = function(n) {
-    const size = n.length;
-    const maxInteger = 10 ** size + 1;
-    const minInteger = 10 ** (size - 1) - 1;
-    const palindromicSet = new Set([`${minInteger}`]);
-    const prefix = n.slice(0, Math.floor((size + 1) / 2));
-    const isOdd = size % 2;
+    const { length } = n;
+    const maxPalindrome = 10 ** length + 1;
+    const minPalindrome = 10 ** (length - 1) - 1;
+    const palindromes = [`${minPalindrome}`];
+    const prefix = n.slice(0, Math.ceil(length / 2));
+    const isOdd = length % 2;
 
-    const getPalindromic = (closestPrefix) => {
-        const str = `${closestPrefix}`;
-        const n = str.length;
+    const createPalindrome = (value) => {
+        value = `${value}`;
+        const n = value.length;
         const start = isOdd ? n - 2 : n - 1;
-        let result = str;
+        let result = value;
 
         for (let index = start; index >= 0; index--) {
-            result += str[index];
+            result += value[index];
         }
         return result;
     };
 
     for (let diff = -1; diff <= 1; diff++) {
-        const closestPrefix = +prefix + diff;
-        const palindromic = getPalindromic(closestPrefix);
+        const value = +prefix + diff;
+        const palindrome = createPalindrome(value);
 
-        palindromicSet.add(palindromic);
+        palindromes.push(palindrome);
     }
-    let result = '';
+    palindromes.push(`${maxPalindrome}`);
+
+    let result = maxPalindrome;
     let minDiff = Number.MAX_SAFE_INTEGER;
 
-    palindromicSet.add(`${maxInteger}`); // ensure smaller one
-    palindromicSet.delete(`${n}`);
-    
-    for (const palindromic of palindromicSet) {
-        const diff = Math.abs(n - palindromic);
+    for (const palindrome of palindromes) {
+        if (palindrome === n) continue;
+        const diff = Math.abs(palindrome - n);
 
-        if (diff >= minDiff) continue;
-        result = palindromic;
+        if (minDiff <= diff) continue;
         minDiff = diff;
+        result = palindrome;
     }
     return result;
 };
