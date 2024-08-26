@@ -96,6 +96,7 @@
 552 | [Student Attendance Record II](https://leetcode.com/problems/student-attendance-record-ii) | [JavaScript](/solution/552.%20Student%20Attendance%20Record%20II/README.md) | Hard
 564 | [Find the Closest Palindrome](https://leetcode.com/problems/find-the-closest-palindrome) | [JavaScript](/solution/564.%20Find%20the%20Closest%20Palindrome/README.md) | Hard
 587 | [Erect the Fence](https://leetcode.com/problems/erect-the-fence) | [JavaScript](/solution/587.%20Erect%20the%20Fence/README.md) | Hard
+590 | [N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal) | [JavaScript](/solution/590.%20N-ary%20Tree%20Postorder%20Traversal/README.md) | Easy
 591 | [Tag Validator](https://leetcode.com/problems/tag-validator) | [JavaScript](/solution/591.%20Tag%20Validator/README.md) | Hard
 592 | [Fraction Addition and Subtraction](https://leetcode.com/problems/fraction-addition-and-subtraction) | [JavaScript](/solution/592.%20Fraction%20Addition%20and%20Subtraction/README.md) | Hard
 600 | [Non-negative Integers without Consecutive Ones](https://leetcode.com/problems/non-negative-integers-without-consecutive-ones) | [JavaScript](/solution/600.%20Non-negative%20Integers%20without%20Consecutive%20Ones/README.md) | Hard
