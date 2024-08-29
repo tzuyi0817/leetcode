@@ -183,6 +183,7 @@
 927 | [Three Equal Parts](https://leetcode.com/problems/three-equal-parts) | [JavaScript](/solution/927.%20Three%20Equal%20Parts/README.md) | Hard
 928 | [Minimize Malware Spread II](https://leetcode.com/problems/minimize-malware-spread-ii) | [JavaScript](/solution/928.%20Minimize%20Malware%20Spread%20II/README.md) | Hard
 936 | [Stamping The Sequence](https://leetcode.com/problems/stamping-the-sequence) | [JavaScript](/solution/936.%20Stamping%20The%20Sequence/README.md) | Hard
+940 | [Distinct Subsequences II](https://leetcode.com/problems/distinct-subsequences-ii) | [JavaScript](/solution/940.%20Distinct%20Subsequences%20II/README.md) | Hard
 945 | [Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique) | [JavaScript](/solution/945.%20Minimum%20Increment%20to%20Make%20Array%20Unique/README.md) | Medium
 950 | [Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order) | [JavaScript](/solution/950.%20Reveal%20Cards%20In%20Increasing%20Order/README.md) | Medium
 974 | [Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k) | [JavaScript](/solution/974.%20Subarray%20Sums%20Divisible%20by%20K/README.md) | Medium
