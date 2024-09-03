@@ -418,6 +418,7 @@
 1936 | [Maximum Number of Points with Cost](https://leetcode.com/problems/maximum-number-of-points-with-cost) | [JavaScript](/solution/1937.%20Maximum%20Number%20of%20Points%20with%20Cost/README.md) | Medium
 1942 | [The Number of the Smallest Unoccupied Chair](https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair) | [JavaScript](/solution/1942.%20The%20Number%20of%20the%20Smallest%20Unoccupied%20Chair/README.md) | Medium
 1943 | [Describe the Painting](https://leetcode.com/problems/describe-the-painting) | [JavaScript](/solution/1943.%20Describe%20the%20Painting/README.md) | Medium
+1945 | [Sum of Digits of String After Convert](https://leetcode.com/problems/sum-of-digits-of-string-after-convert) | [JavaScript](/solution/1945.%20Sum%20of%20Digits%20of%20String%20After%20Convert/README.md) | Easy
 1946 | [Largest Number After Mutating Substring](https://leetcode.com/problems/largest-number-after-mutating-substring) | [JavaScript](/solution/1946.%20Largest%20Number%20After%20Mutating%20Substring/README.md) | Medium
 1947 | [Maximum Compatibility Score Sum](https://leetcode.com/problems/maximum-compatibility-score-sum) | [JavaScript](/solution/1947.%20Maximum%20Compatibility%20Score%20Sum/README.md) | Medium
 1953 | [Maximum Number of Weeks for Which You Can Work](https://leetcode.com/problems/maximum-number-of-weeks-for-which-you-can-work) | [JavaScript](/solution/1953.%20Maximum%20Number%20of%20Weeks%20for%20Which%20You%20Can%20Work/README.md) | Medium
