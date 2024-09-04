@@ -164,6 +164,7 @@
 862 | [Shortest Subarray with Sum at Least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k) | [JavaScript](/solution/862.%20Shortest%20Subarray%20with%20Sum%20at%20Least%20K/README.md) | Hard
 864 | [Shortest Path to Get All Keys](https://leetcode.com/problems/shortest-path-to-get-all-keys) | [JavaScript](/solution/864.%20Shortest%20Path%20to%20Get%20All%20Keys/README.md) | Hard
 871 | [Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops) | [JavaScript](/solution/871.%20Minimum%20Number%20of%20Refueling%20Stops/README.md) | Hard
+874 | [Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation) | [JavaScript](/solution/874.%20Walking%20Robot%20Simulation/README.md) | Medium
 878 | [Nth Magical Number](https://leetcode.com/problems/nth-magical-number) | [JavaScript](/solution/878.%20Nth%20Magical%20Number/README.md) | Hard
 879 | [Profitable Schemes](https://leetcode.com/problems/profitable-schemes) | [JavaScript](/solution/879.%20Profitable%20Schemes/README.md) | Hard
 881 | [Boats to Save People](https://leetcode.com/problems/boats-to-save-people) | [JavaScript](/solution/881.%20Boats%20to%20Save%20People/README.md) | Medium
