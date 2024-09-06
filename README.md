@@ -515,3 +515,4 @@
 3016 | [Minimum Number of Pushes to Type Word II](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii) | [JavaScript](/solution/3016.%20Minimum%20Number%20of%20Pushes%20to%20Type%20Word%20II/README.md) | Medium
 3123 | [Find Edges in Shortest Paths](https://leetcode.com/problems/find-edges-in-shortest-paths) | [JavaScript](/solution/3123.%20Find%20Edges%20in%20Shortest%20Paths/README.md) | Hard
 3148 | [Maximum Difference Score in a Grid](https://leetcode.com/problems/maximum-difference-score-in-a-grid) | [JavaScript](/solution/3148.%20Maximum%20Difference%20Score%20in%20a%20Grid/README.md) | Medium
+3217 | [Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array) | [JavaScript](/solution/3217.%20Delete%20Nodes%20From%20Linked%20List%20Present%20in%20Array/README.md) | Medium
