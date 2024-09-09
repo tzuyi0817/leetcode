@@ -504,6 +504,7 @@
 2191 | [Sort the Jumbled Numbers](https://leetcode.com/problems/sort-the-jumbled-numbers) | [JavaScript](/solution/2191.%20Sort%20the%20Jumbled%20Numbers/README.md) | Medium
 2196 | [Create Binary Tree From Descriptions](https://leetcode.com/problems/create-binary-tree-from-descriptions) | [JavaScript](/solution/2196.%20Create%20Binary%20Tree%20From%20Descriptions/README.md) | Medium
 2285 | [Maximum Total Importance of Roads](https://leetcode.com/problems/maximum-total-importance-of-roads) | [JavaScript](/solution/2285.%20Maximum%20Total%20Importance%20of%20Roads/README.md) | Medium
+2326 | [Spiral Matrix IV](https://leetcode.com/problems/spiral-matrix-iv) | [JavaScript](/solution/2326.%20Spiral%20Matrix%20IV/README.md) | Medium
 2331 | [Evaluate Boolean Binary Tree](https://leetcode.com/problems/evaluate-boolean-binary-tree) | [JavaScript](/solution/2331.%20Evaluate%20Boolean%20Binary%20Tree/README.md) | Easy
 2370 | [Longest Ideal Subsequence](https://leetcode.com/problems/longest-ideal-subsequence) | [JavaScript](/solution/2370.%20Longest%20Ideal%20Subsequence/README.md) | Medium
 2418 | [Sort the People](https://leetcode.com/problems/sort-the-people) | [JavaScript](/solution/2418.%20Sort%20the%20People/README.md) | Easy
