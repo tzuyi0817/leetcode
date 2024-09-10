@@ -512,6 +512,7 @@
 2582 | [Pass the Pillow](https://leetcode.com/problems/pass-the-pillow) | [JavaScript](/solution/2582.%20Pass%20the%20Pillow/README.md) | Easy
 2597 | [The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets) | [JavaScript](/solution/2597.%20The%20Number%20of%20Beautiful%20Subsets/README.md) | Medium
 2678 | [Number of Senior Citizens](https://leetcode.com/problems/number-of-senior-citizens) | [JavaScript](/solution/2678.%20Number%20of%20Senior%20Citizens/README.md) | Easy
+2807 | [Insert Greatest Common Divisors in Linked List](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list) | [JavaScript](/solution/2807.%20Insert%20Greatest%20Common%20Divisors%20in%20Linked%20List/README.md) | Medium
 2812 | [Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid) | [JavaScript](/solution/2812.%20Find%20the%20Safest%20Path%20in%20a%20Grid/README.md) | Medium
 2997 | [Minimum Number of Operations to Make Array XOR Equal to K](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k) | [JavaScript](/solution/2997.%20Minimum%20Number%20of%20Operations%20to%20Make%20Array%20XOR%20Equal%20to%20K/README.md) | Medium
 3016 | [Minimum Number of Pushes to Type Word II](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii) | [JavaScript](/solution/3016.%20Minimum%20Number%20of%20Pushes%20to%20Type%20Word%20II/README.md) | Medium
