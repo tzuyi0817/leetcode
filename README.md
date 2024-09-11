@@ -503,6 +503,7 @@
 2181 | [Merge Nodes in Between Zeros](https://leetcode.com/problems/merge-nodes-in-between-zeros) | [JavaScript](/solution/2181.%20Merge%20Nodes%20in%20Between%20Zeros/README.md) | Medium
 2191 | [Sort the Jumbled Numbers](https://leetcode.com/problems/sort-the-jumbled-numbers) | [JavaScript](/solution/2191.%20Sort%20the%20Jumbled%20Numbers/README.md) | Medium
 2196 | [Create Binary Tree From Descriptions](https://leetcode.com/problems/create-binary-tree-from-descriptions) | [JavaScript](/solution/2196.%20Create%20Binary%20Tree%20From%20Descriptions/README.md) | Medium
+2220 | [Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number) | [JavaScript](/solution/2220.%20Minimum%20Bit%20Flips%20to%20Convert%20Number/README.md) | Easy
 2285 | [Maximum Total Importance of Roads](https://leetcode.com/problems/maximum-total-importance-of-roads) | [JavaScript](/solution/2285.%20Maximum%20Total%20Importance%20of%20Roads/README.md) | Medium
 2326 | [Spiral Matrix IV](https://leetcode.com/problems/spiral-matrix-iv) | [JavaScript](/solution/2326.%20Spiral%20Matrix%20IV/README.md) | Medium
 2331 | [Evaluate Boolean Binary Tree](https://leetcode.com/problems/evaluate-boolean-binary-tree) | [JavaScript](/solution/2331.%20Evaluate%20Boolean%20Binary%20Tree/README.md) | Easy
