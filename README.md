@@ -190,6 +190,7 @@
 947 | [Most Stones Removed with Same Row or Column](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column) | [JavaScript](/solution/947.%20Most%20Stones%20Removed%20with%20Same%20Row%20or%20Column/README.md) | Medium
 950 | [Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order) | [JavaScript](/solution/950.%20Reveal%20Cards%20In%20Increasing%20Order/README.md) | Medium
 952 | [Largest Component Size by Common Factor](https://leetcode.com/problems/largest-component-size-by-common-factor) | [JavaScript](/solution/952.%20Largest%20Component%20Size%20by%20Common%20Factor/README.md) | Hard
+956 | [Tallest Billboard](https://leetcode.com/problems/tallest-billboard) | [JavaScript](/solution/956.%20Tallest%20Billboard/README.md) | Hard
 974 | [Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k) | [JavaScript](/solution/974.%20Subarray%20Sums%20Divisible%20by%20K/README.md) | Medium
 995 | [Minimum Number of K Consecutive Bit Flips](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips) | [JavaScript](/solution/995.%20Minimum%20Number%20of%20K%20Consecutive%20Bit%20Flips/README.md) | Hard
 1002 | [Find Common Characters](https://leetcode.com/problems/find-common-characters) | [JavaScript](/solution/1002.%20Find%20Common%20Characters/README.md) | Easy
