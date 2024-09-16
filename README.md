@@ -92,6 +92,7 @@
 514 | [Freedom Trail](https://leetcode.com/problems/freedom-trail) | [JavaScript](/solution/514.%20Freedom%20Trail/README.md) | Hard
 517 | [Super Washing Machines](https://leetcode.com/problems/super-washing-machines) | [JavaScript](/solution/517.%20Super%20Washing%20Machines/README.md) | Hard
 523 | [Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum) | [JavaScript](/solution/523.%20Continuous%20Subarray%20Sum/README.md) | Medium
+539 | [Minimum Time Difference](https://leetcode.com/problems/minimum-time-difference) | [JavaScript](/solution/539.%20Minimum%20Time%20Difference/README.md) | Medium
 546 | [Remove Boxes](https://leetcode.com/problems/remove-boxes) | [JavaScript](/solution/546.%20Remove%20Boxes/README.md) | Hard
 552 | [Student Attendance Record II](https://leetcode.com/problems/student-attendance-record-ii) | [JavaScript](/solution/552.%20Student%20Attendance%20Record%20II/README.md) | Hard
 564 | [Find the Closest Palindrome](https://leetcode.com/problems/find-the-closest-palindrome) | [JavaScript](/solution/564.%20Find%20the%20Closest%20Palindrome/README.md) | Hard
