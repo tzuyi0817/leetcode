@@ -39,6 +39,7 @@
 149 | [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line) | [JavaScript](/solution/149.%20Max%20Points%20on%20a%20Line/README.md) | Hard
 154 | [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii) | [JavaScript](/solution/154.%20Find%20Minimum%20in%20Rotated%20Sorted%20Array%20II/README.md) | Hard
 174 | [Dungeon Game](https://leetcode.com/problems/dungeon-game) | [JavaScript](/solution/174.%20Dungeon%20Game/README.md) | Hard
+179 | [Largest Number](https://leetcode.com/problems/largest-number) | [JavaScript](/solution/179.%20Largest%20Number/README.md) | Medium
 188 | [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv) | [JavaScript](/solution/188.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20IV/README.md) | Hard
 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | [JavaScript](/solution/200.%20Number%20of%20Islands/README.md) | Medium
 212 | [Word Search II](https://leetcode.com/problems/word-search-ii) | [JavaScript](/solution/212.%20Word%20Search%20II/README.md) | Hard
