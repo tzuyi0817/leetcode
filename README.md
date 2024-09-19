@@ -195,6 +195,7 @@
 952 | [Largest Component Size by Common Factor](https://leetcode.com/problems/largest-component-size-by-common-factor) | [JavaScript](/solution/952.%20Largest%20Component%20Size%20by%20Common%20Factor/README.md) | Hard
 956 | [Tallest Billboard](https://leetcode.com/problems/tallest-billboard) | [JavaScript](/solution/956.%20Tallest%20Billboard/README.md) | Hard
 960 | [Delete Columns to Make Sorted III](https://leetcode.com/problems/delete-columns-to-make-sorted-iii) | [JavaScript](/solution/960.%20Delete%20Columns%20to%20Make%20Sorted%20III/README.md) | Hard
+964 | [Least Operators to Express Number](https://leetcode.com/problems/least-operators-to-express-number) | [JavaScript](/solution/964.%20Least%20Operators%20to%20Express%20Number/README.md) | Hard
 974 | [Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k) | [JavaScript](/solution/974.%20Subarray%20Sums%20Divisible%20by%20K/README.md) | Medium
 995 | [Minimum Number of K Consecutive Bit Flips](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips) | [JavaScript](/solution/995.%20Minimum%20Number%20of%20K%20Consecutive%20Bit%20Flips/README.md) | Hard
 1002 | [Find Common Characters](https://leetcode.com/problems/find-common-characters) | [JavaScript](/solution/1002.%20Find%20Common%20Characters/README.md) | Easy

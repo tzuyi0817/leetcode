@@ -39,5 +39,5 @@ var diffWaysToCompute = function(expression) {
         return result;
     };
 
-    return computeExpression(expression)
+    return computeExpression(expression);
 };
