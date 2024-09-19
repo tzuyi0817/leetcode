@@ -48,6 +48,7 @@
 224 | [Basic Calculator](https://leetcode.com/problems/basic-calculator) | [JavaScript](/solution/224.%20Basic%20Calculator/README.md) | Hard
 233 | [Number of Digit One](https://leetcode.com/problems/number-of-digit-one) | [JavaScript](/solution/233.%20Number%20of%20Digit%20One/README.md) | Hard
 239 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | [JavaScript](/solution/239.%20Sliding%20Window%20Maximum/README.md) | Hard
+241 | [Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses) | [JavaScript](/solution/241.%20Different%20Ways%20to%20Add%20Parentheses/README.md) | Medium
 260 | [Single Number III](https://leetcode.com/problems/single-number-iii) | [JavaScript](/solution/260.%20Single%20Number%20III/README.md) | Medium
 273 | [Integer to English Words](https://leetcode.com/problems/integer-to-english-words) | [JavaScript](/solution/273.%20Integer%20to%20English%20Words/README.md) | Hard
 282 | [Expression Add Operators](https://leetcode.com/problems/expression-add-operators) | [JavaScript](/solution/282.%20Expression%20Add%20Operators/README.md) | Hard
