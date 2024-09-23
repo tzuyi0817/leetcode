@@ -1,23 +1,24 @@
 ---
 layout: home
 
+titleTemplate: Solutions in JavaScript
+
 hero:
   name: 'LeetCode Solutions'
   text: 'Solutions to LeetCode in JavaScript.'
   tagline: The purpose is to provide good readability and consistent style to the code.
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Solutions
+      link: /solutions/4. Median of Two Sorted Arrays/README
     - theme: alt
-      text: API Examples
-      link: /api-examples
-
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      text: GitHub
+      link: https://github.com/tzuyi0817/leetcode
 ---
+
+<style>
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #ffa116 30%, #FFD700);
+}
+</style>
