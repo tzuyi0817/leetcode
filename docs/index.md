@@ -1,11 +1,10 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
-  name: "LeetCode Solutions"
-  text: "Solutions to LeetCode in JavaScript. This repository aims to provide code with good readability and consistent style."
-  tagline: My great project tagline
+  name: 'LeetCode Solutions'
+  text: 'Solutions to LeetCode in JavaScript.'
+  tagline: The purpose is to provide good readability and consistent style to the code.
   actions:
     - theme: brand
       text: Markdown Examples
@@ -22,4 +21,3 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
