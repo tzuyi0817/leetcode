@@ -8,6 +8,7 @@ export default defineConfig({
   title: 'LeetCode Solutions',
   description:
     'Solutions to LeetCode in JavaScript. The purpose is to provide good readability and consistent style to the code.',
+  base: '/leetcode/',
   cleanUrls: true,
 
   themeConfig: {
