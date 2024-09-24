@@ -10,7 +10,7 @@ hero:
   actions:
     - theme: brand
       text: Solutions
-      link: /solutions/4. Median of Two Sorted Arrays/README
+      link: /solutions/4. Median of Two Sorted Arrays
     - theme: alt
       text: GitHub
       link: https://github.com/tzuyi0817/leetcode

@@ -10,7 +10,7 @@ export function generateSidebar(): DefaultTheme.Sidebar {
 
     return {
       serialNum,
-      link: `/solutions/${file}/README`,
+      link: `/solutions/${file}`,
       text: file,
     };
   });

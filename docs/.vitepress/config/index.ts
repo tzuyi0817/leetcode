@@ -25,16 +25,4 @@ export default defineConfig({
       copyright: `Copyright © 2024-present Tzuyi`,
     },
   },
-
-  vite: {
-    resolve: {
-      alias: {
-        '/solutions': solutionsPath,
-      },
-    },
-  },
-
-  rewrites: {
-    '/solutions/:file/README': '/:file/index.md',
-  },
 });
