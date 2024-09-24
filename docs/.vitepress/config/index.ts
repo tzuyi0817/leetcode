@@ -11,14 +11,15 @@ export default defineConfig({
   cleanUrls: true,
 
   themeConfig: {
-    nav: [
-      // { text: 'Home', link: '/' },
-      // { text: 'Examples', link: '/markdown-examples' },
-    ],
+    nav: [{ text: 'Home', link: '/' }],
 
     sidebar: generateSidebar(),
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/tzuyi0817/leetcode' }],
+
+    search: {
+      provider: 'local',
+    },
 
     footer: {
       message: 'Released under the MIT license',

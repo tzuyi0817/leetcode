@@ -48,6 +48,7 @@ Your position goes from 0 --&gt; 1 --&gt; 3 --&gt; 7 --&gt; 7 --&gt; 6.
 <ul>
 	<li><code>1 &lt;= target &lt;= 10<sup>4</sup></code></li>
 </ul>
+</div>
 
 <p>&nbsp;</p>
 

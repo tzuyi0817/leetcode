@@ -37,6 +37,7 @@
 	<li><code>from<sub>i</sub></code> and <code>to<sub>i</sub></code> consist of uppercase English letters.</li>
 	<li><code>from<sub>i</sub> != to<sub>i</sub></code></li>
 </ul>
+</div>
 
 <p>&nbsp;</p>
 
