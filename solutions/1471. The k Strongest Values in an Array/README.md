@@ -55,6 +55,7 @@ Any permutation of [11,8,6,6,7] is <strong>accepted</strong>.
 ## Solutions
 
 **Solution: `Two Pointers`**
+
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -68,24 +69,24 @@ Any permutation of [11,8,6,6,7] is <strong>accepted</strong>.
  * @param {number} k
  * @return {number[]}
  */
-var getStrongest = function(arr, k) {
-    arr.sort((a, b) => a - b);
+const getStrongest = function (arr, k) {
+  arr.sort((a, b) => a - b);
 
-    const size = arr.length;
-    const median = arr[Math.floor((size - 1) / 2)];
-    const result = [];
-    let left = 0;
-    let right = size - 1;
+  const size = arr.length;
+  const median = arr[Math.floor((size - 1) / 2)];
+  const result = [];
+  let left = 0;
+  let right = size - 1;
 
-    while (left <= right && result.length < k) {
-        if (median - arr[left] > arr[right] - median) {
-            result.push(arr[left]);
-            left += 1;
-        } else {
-            result.push(arr[right]);
-            right -= 1;
-        }
+  while (left <= right && result.length < k) {
+    if (median - arr[left] > arr[right] - median) {
+      result.push(arr[left]);
+      left += 1;
+    } else {
+      result.push(arr[right]);
+      right -= 1;
     }
-    return result;
+  }
+  return result;
 };
 ```

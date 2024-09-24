@@ -51,6 +51,7 @@ In total, this is 29523 integers that can be written using the digits array.
 ## Solutions
 
 **Solution: `Math`**
+
 - Time complexity: <em>O(logn)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -64,25 +65,25 @@ In total, this is 29523 integers that can be written using the digits array.
  * @param {number} n
  * @return {number}
  */
-var atMostNGivenDigitSet = function(digits, n) {
-    let result = 0;
+const atMostNGivenDigitSet = function (digits, n) {
+  let result = 0;
 
-    n = `${n}`;
+  n = `${n}`;
 
-    for (let index = 1; index < n.length; index++) {
-        result += digits.length ** index;
+  for (let index = 1; index < n.length; index++) {
+    result += digits.length ** index;
+  }
+
+  for (let index = 0; index < n.length; index++) {
+    const current = n[index];
+
+    for (const digit of digits) {
+      if (digit >= current) continue;
+
+      result += digits.length ** (n.length - index - 1);
     }
-
-    for (let index = 0; index < n.length; index++) {
-        const current = n[index];
-
-        for (const digit of digits) {
-            if (digit >= current) continue;
-
-            result += digits.length ** (n.length - index - 1);
-        }
-        if (!digits.includes(current)) return result;
-    }
-    return result + 1;
+    if (!digits.includes(current)) return result;
+  }
+  return result + 1;
 };
 ```

@@ -38,6 +38,7 @@
 ## Solutions
 
 **Solution: `Greedy`**
+
 - Time complexity: <em>O(1)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -50,10 +51,10 @@
  * @param {number[][]} edges
  * @return {number}
  */
-var findCenter = function(edges) {
-    const [[a, b], [c, d]] = edges;
+const findCenter = function (edges) {
+  const [[a, b], [c, d]] = edges;
 
-    if (a === c || a === d) return a;
-    return b;
+  if (a === c || a === d) return a;
+  return b;
 };
 ```

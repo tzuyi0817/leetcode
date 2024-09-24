@@ -48,6 +48,7 @@ x cannot be greater since there are only 2 numbers in nums.
 ## Solutions
 
 **Solution: `Binary Search`**
+
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -60,16 +61,16 @@ x cannot be greater since there are only 2 numbers in nums.
  * @param {number[]} nums
  * @return {number}
  */
-var specialArray = function(nums) {
+const specialArray = function (nums) {
   const n = nums.length;
-  const findGreaterCount = (x) => {
+  const findGreaterCount = x => {
     let left = 0;
     let right = n - 1;
 
     while (left <= right) {
-        const mid = Math.floor((left + right) / 2);
+      const mid = Math.floor((left + right) / 2);
 
-        nums[mid] >= x ? left = mid + 1 : right = mid - 1;
+      nums[mid] >= x ? (left = mid + 1) : (right = mid - 1);
     }
     return left;
   };
@@ -79,6 +80,6 @@ var specialArray = function(nums) {
   for (let x = 1; x <= n; x++) {
     if (x === findGreaterCount(x)) return x;
   }
-  return -1; 
+  return -1;
 };
 ```

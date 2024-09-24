@@ -41,6 +41,7 @@
 ## Solutions
 
 **Solution: `Bit Manipulation`**
+
 - Time complexity: <em>O(1)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -53,10 +54,10 @@
  * @param {number} num
  * @return {number}
  */
-var findComplement = function(num) {
-    const binary = num.toString(2);
-    const bitMask = (1 << binary.length) - 1;
+const findComplement = function (num) {
+  const binary = num.toString(2);
+  const bitMask = (1 << binary.length) - 1;
 
-    return num ^ bitMask;
+  return num ^ bitMask;
 };
 ```

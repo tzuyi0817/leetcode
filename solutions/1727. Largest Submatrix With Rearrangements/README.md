@@ -45,7 +45,8 @@ The largest submatrix of 1s, in bold, has an area of 3.
 ## Solutions
 
 **Solution: `Sorting`**
-- Time complexity: <em>O(m*nlogn)</em>
+
+- Time complexity: <em>O(m\*nlogn)</em>
 - Space complexity: <em>O(mn)</em>
 
 <p>&nbsp;</p>
@@ -57,26 +58,26 @@ The largest submatrix of 1s, in bold, has an area of 3.
  * @param {number[][]} matrix
  * @return {number}
  */
-var largestSubmatrix = function(matrix) {
-    const m = matrix.length;
-    const n = matrix[0].length;
-    const dp = matrix.map(row => row.map(value => value));
-    let result = 0;
+const largestSubmatrix = function (matrix) {
+  const m = matrix.length;
+  const n = matrix[0].length;
+  const dp = matrix.map(row => row.map(value => value));
+  let result = 0;
 
-    for (let row = 1; row < m; row++) {
-        for (let col = 0; col < n; col++) {
-            if (!dp[row][col]) continue;
-            dp[row][col] += dp[row - 1][col];
-        }
+  for (let row = 1; row < m; row++) {
+    for (let col = 0; col < n; col++) {
+      if (!dp[row][col]) continue;
+      dp[row][col] += dp[row - 1][col];
     }
-    for (let row = 0; row < m; row++) {
-        dp[row].sort((a, b) => b - a);
+  }
+  for (let row = 0; row < m; row++) {
+    dp[row].sort((a, b) => b - a);
 
-        for (let col = 0; col < n; col++) {
-            if (!dp[row][col]) break;
-            result = Math.max(dp[row][col] * (col + 1), result);
-        }
+    for (let col = 0; col < n; col++) {
+      if (!dp[row][col]) break;
+      result = Math.max(dp[row][col] * (col + 1), result);
     }
-    return result;
+  }
+  return result;
 };
 ```

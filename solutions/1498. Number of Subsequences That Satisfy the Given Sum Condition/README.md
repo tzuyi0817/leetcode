@@ -49,6 +49,7 @@ Number of valid subsequences (63 - 2 = 61).
 ## Solutions
 
 **Solution: `Two Pointers`**
+
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -62,28 +63,26 @@ Number of valid subsequences (63 - 2 = 61).
  * @param {number} target
  * @return {number}
  */
-var numSubseq = function(nums, target) {
-    const MODULO = 10 ** 9 + 7;
-    const subseqCount = [];
-    let left = result = 0;
-    let right = nums.length - 1;
+const numSubseq = function (nums, target) {
+  const MODULO = 10 ** 9 + 7;
+  const subseqCount = [];
+  let left = (result = 0);
+  let right = nums.length - 1;
 
-    nums.sort((a, b) => a - b);
-    nums.forEach((_, index) => {
-        subseqCount[index] = index === 0
-            ? 1
-            : subseqCount[index - 1] * 2 % MODULO;
-    });
+  nums.sort((a, b) => a - b);
+  nums.forEach((_, index) => {
+    subseqCount[index] = index === 0 ? 1 : (subseqCount[index - 1] * 2) % MODULO;
+  });
 
-    while (left <= right) {
-        const sum = nums[left] + nums[right];
+  while (left <= right) {
+    const sum = nums[left] + nums[right];
 
-        if (sum > target) right -= 1;
-        else {
-            result = (result + subseqCount[right - left]) % MODULO;
-            left += 1;
-        }
+    if (sum > target) right -= 1;
+    else {
+      result = (result + subseqCount[right - left]) % MODULO;
+      left += 1;
     }
-    return result;
+  }
+  return result;
 };
 ```

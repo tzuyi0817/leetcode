@@ -14,6 +14,7 @@
 <strong>Output: </strong>1
 <strong>Explanation</strong>: Remove the single 4, only 5 is left.
 </pre>
+
 <strong class="example">Example 2:</strong>
 
 <pre><strong>Input: </strong>arr = [4,3,1,1,3,3,2], k = 3
@@ -34,6 +35,7 @@
 ## Solutions
 
 **Solution: `Greedy`**
+
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -47,21 +49,21 @@
  * @param {number} k
  * @return {number}
  */
-var findLeastNumOfUniqueInts = function(arr, k) {
-    const countMap = arr.reduce((map, num) => {
-        const count = map.get(num) ?? 0;
+const findLeastNumOfUniqueInts = function (arr, k) {
+  const countMap = arr.reduce((map, num) => {
+    const count = map.get(num) ?? 0;
 
-        return map.set(num, count + 1);
-    }, new Map());
-    const counts = [...countMap.values()];
-    const size = counts.length;
+    return map.set(num, count + 1);
+  }, new Map());
+  const counts = [...countMap.values()];
+  const size = counts.length;
 
-    counts.sort((a, b) => a - b);
+  counts.sort((a, b) => a - b);
 
-    for (let index = 0; index < size; index++) {
-        k -= counts[index];
-        if (k === 0) return size - index - 1;
-        if (k < 0) return size - index;
-    }
+  for (let index = 0; index < size; index++) {
+    k -= counts[index];
+    if (k === 0) return size - index - 1;
+    if (k < 0) return size - index;
+  }
 };
 ```

@@ -56,6 +56,7 @@ The last moment when an ant was on the plank is t = 4 seconds. After that, it fa
 ## Solutions
 
 **Solution: `Brainteaser`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -70,10 +71,10 @@ The last moment when an ant was on the plank is t = 4 seconds. After that, it fa
  * @param {number[]} right
  * @return {number}
  */
-var getLastMoment = function(n, left, right) {
-    const maxLeft = Math.max(...left);
-    const minRight = Math.min(...right);
+const getLastMoment = function (n, left, right) {
+  const maxLeft = Math.max(...left);
+  const minRight = Math.min(...right);
 
-    return Math.max(maxLeft, n - minRight);
+  return Math.max(maxLeft, n - minRight);
 };
 ```

@@ -49,6 +49,7 @@ Type 2: (3,0,1).  nums2[3]<sup>2</sup> = nums1[0] * nums1[1].
 ## Solutions
 
 **Solution: `Hash Table`**
+
 - Time complexity: <em>O(n<sup>2</sup>)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -62,27 +63,27 @@ Type 2: (3,0,1).  nums2[3]<sup>2</sup> = nums1[0] * nums1[1].
  * @param {number[]} nums2
  * @return {number}
  */
-var numTriplets = function(nums1, nums2) {
-    const triplets = (numsA, numsB) => {
-        const squareMap = numsA.reduce((map, num) => {
-            const square = num ** 2;
-            const count = map.get(square) ?? 0;
+const numTriplets = function (nums1, nums2) {
+  const triplets = (numsA, numsB) => {
+    const squareMap = numsA.reduce((map, num) => {
+      const square = num ** 2;
+      const count = map.get(square) ?? 0;
 
-            return map.set(square, count + 1);
-        }, new Map());
-        let result = 0;
+      return map.set(square, count + 1);
+    }, new Map());
+    let result = 0;
 
-        for (let a = 0; a < numsB.length; a++) {
-            for (let b = a - 1; b >= 0; b--) {
-                const product = numsB[a] * numsB[b];
+    for (let a = 0; a < numsB.length; a++) {
+      for (let b = a - 1; b >= 0; b--) {
+        const product = numsB[a] * numsB[b];
 
-                if (!squareMap.has(product)) continue;
-                result += squareMap.get(product);
-            }
-        }
-        return result;
-    };
+        if (!squareMap.has(product)) continue;
+        result += squareMap.get(product);
+      }
+    }
+    return result;
+  };
 
-    return triplets(nums1, nums2) + triplets(nums2, nums1);
+  return triplets(nums1, nums2) + triplets(nums2, nums1);
 };
 ```

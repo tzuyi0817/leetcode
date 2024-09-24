@@ -48,6 +48,7 @@ After removing, new nodes become leaf nodes with value (target = 2) (Picture in 
 ## Solutions
 
 **Solution: `Depth-First Search`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -69,18 +70,18 @@ After removing, new nodes become leaf nodes with value (target = 2) (Picture in 
  * @param {number} target
  * @return {TreeNode}
  */
-var removeLeafNodes = function(root, target) {
-    const removeNode = (node) => {
-        if (!node) return null;
-        const { val, right, left } = node;
+const removeLeafNodes = function (root, target) {
+  const removeNode = node => {
+    if (!node) return null;
+    const { val, right, left } = node;
 
-        node.left = removeNode(left);
-        node.right = removeNode(right);
+    node.left = removeNode(left);
+    node.right = removeNode(right);
 
-        if (!node.left && !node.right && val === target) return null;
-        return node;
-    };
+    if (!node.left && !node.right && val === target) return null;
+    return node;
+  };
 
-    return removeNode(root);
+  return removeNode(root);
 };
 ```

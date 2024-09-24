@@ -61,8 +61,9 @@ Only one ring is given. Thus, no rods have all three colors.
 ## Solutions
 
 **Solution: `Hash Table`**
+
 - Time complexity: <em>O(n)</em>
-- Space complexity: <em>O(10*3)</em>
+- Space complexity: <em>O(10\*3)</em>
 
 <p>&nbsp;</p>
 
@@ -73,21 +74,21 @@ Only one ring is given. Thus, no rods have all three colors.
  * @param {string} rings
  * @return {number}
  */
-var countPoints = function(rings) {
-    const rodMap = new Map();
-    let result = 0;
+const countPoints = function (rings) {
+  const rodMap = new Map();
+  let result = 0;
 
-    for (let index = 0; index < rings.length - 1; index += 2) {
-        const ring = rings[index];
-        const rod = rings[index + 1];
-        const cacheRod = rodMap.get(rod);
+  for (let index = 0; index < rings.length - 1; index += 2) {
+    const ring = rings[index];
+    const rod = rings[index + 1];
+    const cacheRod = rodMap.get(rod);
 
-        cacheRod ? cacheRod.add(ring) : rodMap.set(rod, new Set([ring]));
-    }
-    for (const rod of rodMap.values()) {
-        if (rod.size < 3) continue;
-        result += 1;
-    }
-    return result;
+    cacheRod ? cacheRod.add(ring) : rodMap.set(rod, new Set([ring]));
+  }
+  for (const rod of rodMap.values()) {
+    if (rod.size < 3) continue;
+    result += 1;
+  }
+  return result;
 };
 ```

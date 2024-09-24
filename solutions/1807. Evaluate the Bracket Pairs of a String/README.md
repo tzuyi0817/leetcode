@@ -69,6 +69,7 @@ Notice that the "a"s not in a bracket pair are not evaluated.
 ## Solutions
 
 **Solution: `Hash Map`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -82,23 +83,23 @@ Notice that the "a"s not in a bracket pair are not evaluated.
  * @param {string[][]} knowledge
  * @return {string}
  */
-var evaluate = function(s, knowledge) {
-    const knowledgeMap = knowledge.reduce((map, [key, value]) => {
-        return map[key] = value, map;
-    }, {});
-    let result = key = '';
-    let isStart = false;
+const evaluate = function (s, knowledge) {
+  const knowledgeMap = knowledge.reduce((map, [key, value]) => {
+    return (map[key] = value), map;
+  }, {});
+  let result = (key = '');
+  let isStart = false;
 
-    for (const char of s) {
-        if (char === '(') isStart = true;
-        else if (char === ')') {
-            result += knowledgeMap[key] ?? '?';
-            isStart = false;
-            key = '';
-        } else {
-            isStart ? key += char : result += char;
-        }
+  for (const char of s) {
+    if (char === '(') isStart = true;
+    else if (char === ')') {
+      result += knowledgeMap[key] ?? '?';
+      isStart = false;
+      key = '';
+    } else {
+      isStart ? (key += char) : (result += char);
     }
-    return result;
+  }
+  return result;
 };
 ```

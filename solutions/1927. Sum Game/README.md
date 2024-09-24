@@ -64,6 +64,7 @@ Bob wins because 9 + 3 + 2 + 9 = 5 + 9 + 2 + 7.
 ## Solutions
 
 **Solution: `Greedy`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -76,21 +77,21 @@ Bob wins because 9 + 3 + 2 + 9 = 5 + 9 + 2 + 7.
  * @param {string} num
  * @return {boolean}
  */
-var sumGame = function(num) {
-    const size = num.length;
-    const halfSize = size / 2;
-    let different = 0;
+const sumGame = function (num) {
+  const size = num.length;
+  const halfSize = size / 2;
+  let different = 0;
 
-    for (let index = 0; index < halfSize; index++) {
-        const value = num[index];
+  for (let index = 0; index < halfSize; index++) {
+    const value = num[index];
 
-        different += value === '?' ? 4.5 : +value;
-    }
-    for (let index = halfSize; index < size; index++) {
-        const value = num[index];
+    different += value === '?' ? 4.5 : +value;
+  }
+  for (let index = halfSize; index < size; index++) {
+    const value = num[index];
 
-        different -= value === '?' ? 4.5 : +value;
-    }
-    return different !== 0;
+    different -= value === '?' ? 4.5 : +value;
+  }
+  return different !== 0;
 };
 ```

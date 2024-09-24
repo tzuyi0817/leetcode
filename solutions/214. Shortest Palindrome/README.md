@@ -28,6 +28,7 @@
 ## Solutions
 
 **Solution: `String Matching`**
+
 - Time complexity: <em>O(n<sup>2</sup>)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -40,17 +41,17 @@
  * @param {string} s
  * @return {string}
  */
-var shortestPalindrome = function(s) {
-    const n = s.length;
-    const reverseS = s.split('').reverse().join('');
+const shortestPalindrome = function (s) {
+  const n = s.length;
+  const reverseS = s.split('').reverse().join('');
 
-    for (let index = 0; index < n; index++) {
-        const sliceReverseS = reverseS.slice(index);
-        const sliceS = s.slice(0, n - index);
+  for (let index = 0; index < n; index++) {
+    const sliceReverseS = reverseS.slice(index);
+    const sliceS = s.slice(0, n - index);
 
-        if (sliceReverseS !== sliceS) continue;
-        return `${reverseS.slice(0, index)}${s}`;
-    }
-    return s;
+    if (sliceReverseS !== sliceS) continue;
+    return `${reverseS.slice(0, index)}${s}`;
+  }
+  return s;
 };
 ```

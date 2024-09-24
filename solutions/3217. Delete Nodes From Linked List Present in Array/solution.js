@@ -10,21 +10,21 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
-var modifiedList = function(nums, head) {
-    const maxNum = Math.max(...nums);
-    const exists = Array(maxNum + 1).fill(false);
-    const root = new ListNode(null, head);
-    let current = root;
+const modifiedList = function (nums, head) {
+  const maxNum = Math.max(...nums);
+  const exists = Array(maxNum + 1).fill(false);
+  const root = new ListNode(null, head);
+  let current = root;
 
-    for (const num of nums) {
-        exists[num] = true;
-    }
+  for (const num of nums) {
+    exists[num] = true;
+  }
 
-    while (current?.next) {
-        while (exists[current.next?.val]) {
-            current.next = current.next.next;
-        }
-        current = current.next;
+  while (current?.next) {
+    while (exists[current.next?.val]) {
+      current.next = current.next.next;
     }
-    return root.next;
+    current = current.next;
+  }
+  return root.next;
 };

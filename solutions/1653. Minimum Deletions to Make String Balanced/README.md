@@ -39,6 +39,7 @@ Delete the characters at 0-indexed positions 3 and 6 ("aab<u>a</u>bb<u>a</u>b" -
 ## Solutions
 
 **Solution: `Dynamic Programming`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -51,14 +52,12 @@ Delete the characters at 0-indexed positions 3 and 6 ("aab<u>a</u>bb<u>a</u>b" -
  * @param {string} s
  * @return {number}
  */
-var minimumDeletions = function(s) {
-    let a = b = 0;
+const minimumDeletions = function (s) {
+  let a = (b = 0);
 
-    for (const char of s) {
-        char === 'a'
-            ? a = Math.min(b, a + 1)
-            : b += 1;
-    }
-    return Math.min(a, b);
+  for (const char of s) {
+    char === 'a' ? (a = Math.min(b, a + 1)) : (b += 1);
+  }
+  return Math.min(a, b);
 };
 ```

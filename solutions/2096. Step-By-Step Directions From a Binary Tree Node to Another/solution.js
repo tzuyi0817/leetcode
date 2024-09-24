@@ -12,23 +12,23 @@
  * @param {number} destValue
  * @return {string}
  */
-var getDirections = function(root, startValue, destValue) {
-    const getStepPath = (node, target, path = '') => {
-        if (!node) return '';
-        if (node.val === target) return path;
+const getDirections = function (root, startValue, destValue) {
+  const getStepPath = (node, target, path = '') => {
+    if (!node) return '';
+    if (node.val === target) return path;
 
-        const { left, right } = node;
-        const leftPath = getStepPath(left, target, `${path}L`);
+    const { left, right } = node;
+    const leftPath = getStepPath(left, target, `${path}L`);
 
-        if (leftPath) return leftPath;
-        return getStepPath(right, target, `${path}R`);
-    };
+    if (leftPath) return leftPath;
+    return getStepPath(right, target, `${path}R`);
+  };
 
-    const startPath = getStepPath(root, startValue);
-    const endPath = getStepPath(root, destValue);
-    let start = 0;
+  const startPath = getStepPath(root, startValue);
+  const endPath = getStepPath(root, destValue);
+  let start = 0;
 
-    while (startPath[start] === endPath[start]) start += 1;
+  while (startPath[start] === endPath[start]) start += 1;
 
-    return 'U'.repeat(startPath.length - start) + endPath.slice(start);
+  return 'U'.repeat(startPath.length - start) + endPath.slice(start);
 };

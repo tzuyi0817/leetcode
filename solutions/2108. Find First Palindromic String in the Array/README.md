@@ -44,7 +44,8 @@ Note that "racecar" is also palindromic, but it is not the first.
 ## Solutions
 
 **Solution: `Two Pointers`**
-- Time complexity: <em>O(n*word.length)</em>
+
+- Time complexity: <em>O(n\*word.length)</em>
 - Space complexity: <em>O(1)</em>
 
 <p>&nbsp;</p>
@@ -56,22 +57,22 @@ Note that "racecar" is also palindromic, but it is not the first.
  * @param {string[]} words
  * @return {string}
  */
-var firstPalindrome = function(words) {
-    const isPalindrome = (word) => {
-        let left = 0;
-        let right = word.length - 1;
+const firstPalindrome = function (words) {
+  const isPalindrome = word => {
+    let left = 0;
+    let right = word.length - 1;
 
-        while (left < right) {
-            if (word[left] !== word[right]) return false;
-            left += 1;
-            right -= 1;
-        }
-        return true;
-    };
-
-    for (const word of words) {
-        if (isPalindrome(word)) return word;
+    while (left < right) {
+      if (word[left] !== word[right]) return false;
+      left += 1;
+      right -= 1;
     }
-    return '';
+    return true;
+  };
+
+  for (const word of words) {
+    if (isPalindrome(word)) return word;
+  }
+  return '';
 };
 ```

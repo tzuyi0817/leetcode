@@ -67,6 +67,7 @@ Steps needed = 1 + 1 + 2 + 2 + 3 + 3 + 4 + 4 + 5 + 5 + 6 + 6 + 7 = 49.
 ## Solutions
 
 **Solution: `Simulation`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -80,21 +81,21 @@ Steps needed = 1 + 1 + 2 + 2 + 3 + 3 + 4 + 4 + 5 + 5 + 6 + 6 + 7 = 49.
  * @param {number} capacity
  * @return {number}
  */
-var wateringPlants = function(plants, capacity) {
-    let result = 0;
-    let watering = capacity;
+const wateringPlants = function (plants, capacity) {
+  let result = 0;
+  let watering = capacity;
 
-    for (let index = 0; index < plants.length; index++) {
-        const plant = plants[index];
+  for (let index = 0; index < plants.length; index++) {
+    const plant = plants[index];
 
-        result += 1;
-        if (watering >= plant) {
-            watering -= plant;
-            continue;
-        }
-        result += index * 2;
-        watering = capacity - plant;
+    result += 1;
+    if (watering >= plant) {
+      watering -= plant;
+      continue;
     }
-    return result;
+    result += index * 2;
+    watering = capacity - plant;
+  }
+  return result;
 };
 ```

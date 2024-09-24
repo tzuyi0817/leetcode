@@ -45,6 +45,7 @@ We need to wait until time 16 so that (0, 0) and (4, 4) are connected.
 ## Solutions
 
 **Solution: `Binary Search + Depth-First Search`**
+
 - Time complexity: <em>O(n<sup>2</sup>logn<sup>2</sup>)</em>
 - Space complexity: <em>O(n<sup>2</sup>)</em>
 
@@ -57,36 +58,36 @@ We need to wait until time 16 so that (0, 0) and (4, 4) are connected.
  * @param {number[][]} grid
  * @return {number}
  */
-var swimInWater = function(grid) {
-    const n = grid.length;
-    let visited = [];
+const swimInWater = function (grid) {
+  const n = grid.length;
+  let visited = [];
 
-    const isReach = (row, col, elevation) => {
-        const key = row * n + col;
+  const isReach = (row, col, elevation) => {
+    const key = row * n + col;
 
-        if (row < 0 || col < 0 || row >= n || col >= n) return false;
-        if (visited[key] || grid[row][col] > elevation) return false;
-        if (row === n - 1 && col === n - 1) return true;
+    if (row < 0 || col < 0 || row >= n || col >= n) return false;
+    if (visited[key] || grid[row][col] > elevation) return false;
+    if (row === n - 1 && col === n - 1) return true;
 
-        visited[key] = true;
+    visited[key] = true;
 
-        const up = isReach(row - 1, col, elevation);
-        const down = isReach(row + 1, col, elevation);
-        const left = isReach(row, col - 1, elevation);
-        const right = isReach(row, col + 1, elevation);
+    const up = isReach(row - 1, col, elevation);
+    const down = isReach(row + 1, col, elevation);
+    const left = isReach(row, col - 1, elevation);
+    const right = isReach(row, col + 1, elevation);
 
-        return up || down || left || right;
-    };
+    return up || down || left || right;
+  };
 
-    let left = 0;
-    let right = n * n;
+  let left = 0;
+  let right = n * n;
 
-    while (left < right) {
-        const mid = Math.floor((left + right) / 2);
+  while (left < right) {
+    const mid = Math.floor((left + right) / 2);
 
-        isReach(0, 0, mid) ? right = mid : left = mid + 1;
-        visited = [];
-    }
-    return left;
+    isReach(0, 0, mid) ? (right = mid) : (left = mid + 1);
+    visited = [];
+  }
+  return left;
 };
 ```

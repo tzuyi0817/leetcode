@@ -5,25 +5,31 @@
  * @param {number[]} profit
  * @return {number}
  */
-var profitableSchemes = function(n, minProfit, group, profit) {
-    const MODULO = 10 ** 9 + 7;
-    const groups = group.length;
-    const dp = Array(groups + 1).fill('').map(_ => Array(n + 1).fill('').map(_ => Array(minProfit + 1).fill(-1)));
+const profitableSchemes = function (n, minProfit, group, profit) {
+  const MODULO = 10 ** 9 + 7;
+  const groups = group.length;
+  const dp = Array(groups + 1)
+    .fill('')
+    .map(_ =>
+      Array(n + 1)
+        .fill('')
+        .map(_ => Array(minProfit + 1).fill(-1)),
+    );
 
-    const commitCrimes = (index, currentProfit, members) => {
-        if (index >= groups) return currentProfit >= minProfit ? 1 : 0;
-        if (dp[index][members][currentProfit] !== -1) return dp[index][members][currentProfit];
+  const commitCrimes = (index, currentProfit, members) => {
+    if (index >= groups) return currentProfit >= minProfit ? 1 : 0;
+    if (dp[index][members][currentProfit] !== -1) return dp[index][members][currentProfit];
 
-        let result = commitCrimes(index + 1, currentProfit, members);
-        
-        if (members >= group[index]) {
-            const newProfit = Math.min(minProfit, currentProfit + profit[index]);
+    let result = commitCrimes(index + 1, currentProfit, members);
 
-            result += commitCrimes(index + 1, newProfit, members - group[index]);
-            result %= MODULO;
-        }
-        return dp[index][members][currentProfit] = result;
-    };
+    if (members >= group[index]) {
+      const newProfit = Math.min(minProfit, currentProfit + profit[index]);
 
-    return commitCrimes(0, 0, n);
+      result += commitCrimes(index + 1, newProfit, members - group[index]);
+      result %= MODULO;
+    }
+    return (dp[index][members][currentProfit] = result);
+  };
+
+  return commitCrimes(0, 0, n);
 };

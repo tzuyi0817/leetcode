@@ -48,6 +48,7 @@ It can be shown that appending any 4 characters to the end of s will never make 
 ## Solutions
 
 **Solution: `Two Pointers`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -61,13 +62,13 @@ It can be shown that appending any 4 characters to the end of s will never make 
  * @param {string} t
  * @return {number}
  */
-var appendCharacters = function(s, t) {
-    let index = 0;
+const appendCharacters = function (s, t) {
+  let index = 0;
 
-    for (const char of s) {
-        if (char !== t[index]) continue;
-        index += 1;
-    }
-    return t.length - index;
+  for (const char of s) {
+    if (char !== t[index]) continue;
+    index += 1;
+  }
+  return t.length - index;
 };
 ```

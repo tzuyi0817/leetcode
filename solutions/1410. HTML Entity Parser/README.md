@@ -47,6 +47,7 @@
 ## Solutions
 
 **Solution: `String.replace`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -59,18 +60,18 @@
  * @param {string} text
  * @return {string}
  */
-var entityParser = function(text) {
-    const parseMap = {
-        '&quot;': '"',
-        '&apos;': "'",
-        '&amp;': '&',
-        '&gt;': '>',
-        '&lt;': '<',
-        '&frasl;': '/',
-    };
+const entityParser = function (text) {
+  const parseMap = {
+    '&quot;': '"',
+    '&apos;': "'",
+    '&amp;': '&',
+    '&gt;': '>',
+    '&lt;': '<',
+    '&frasl;': '/',
+  };
 
-    return text.replace(/&quot;|&apos;|&amp;|&gt;|&lt;|&frasl;/g, (match) => {
-        return parseMap[match];
-    });
+  return text.replace(/&quot;|&apos;|&amp;|&gt;|&lt;|&frasl;/g, match => {
+    return parseMap[match];
+  });
 };
 ```

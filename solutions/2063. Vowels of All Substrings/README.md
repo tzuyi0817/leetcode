@@ -53,6 +53,7 @@ Hence, the total sum of vowels = 1 + 1 + 1 + 0 + 0 + 0 = 3.
 ## Solutions
 
 **Solution: `Dynamic Programming`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -65,16 +66,16 @@ Hence, the total sum of vowels = 1 + 1 + 1 + 0 + 0 + 0 = 3.
  * @param {string} word
  * @return {number}
  */
-var countVowels = function(word) {
-    const vowels = ['a', 'e', 'i', 'o', 'u'];
-    let dp = result = 0;
+const countVowels = function (word) {
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  let dp = (result = 0);
 
-    for (let index = 0; index < word.length; index++) {
-        if (vowels.includes(word[index])) {
-            dp += index + 1; 
-        }
-        result += dp;
+  for (let index = 0; index < word.length; index++) {
+    if (vowels.includes(word[index])) {
+      dp += index + 1;
     }
-    return result;
+    result += dp;
+  }
+  return result;
 };
 ```

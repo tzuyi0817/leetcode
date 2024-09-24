@@ -66,6 +66,7 @@ For example, all the following are valid numbers: <code>"2", "0089", "-0.1", "+3
 ## Solutions
 
 **Solution: `String Checking`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -78,28 +79,28 @@ For example, all the following are valid numbers: <code>"2", "0089", "-0.1", "+3
  * @param {string} s
  * @return {boolean}
  */
-var isNumber = function(s) {
-    let seenNumber = seenDot = seenE = false;
+const isNumber = function (s) {
+  let seenNumber = (seenDot = seenE = false);
 
-    for (let index = 0; index < s.length; index++) {
-        const char = s[index];
+  for (let index = 0; index < s.length; index++) {
+    const char = s[index];
 
-        if (Number.isInteger(+char)) {
-            seenNumber = true;
-        } else if (char === '.') {
-            if (seenDot || seenE) return false;
-            seenDot = true;
-        } else if (/[eE]/.test(char)) {
-            if (seenE || !seenNumber) return false;
-            seenE = true;
-            seenNumber = false;
-        } else if (/[+-]/.test(char)) {
-            if (index === 0) continue;
-            if (s[index - 1].toLowerCase() !== 'e') return false;
-        } else {
-            return false;
-        }
+    if (Number.isInteger(+char)) {
+      seenNumber = true;
+    } else if (char === '.') {
+      if (seenDot || seenE) return false;
+      seenDot = true;
+    } else if (/e/i.test(char)) {
+      if (seenE || !seenNumber) return false;
+      seenE = true;
+      seenNumber = false;
+    } else if (/[+-]/.test(char)) {
+      if (index === 0) continue;
+      if (s[index - 1].toLowerCase() !== 'e') return false;
+    } else {
+      return false;
     }
-    return seenNumber;
+  }
+  return seenNumber;
 };
 ```

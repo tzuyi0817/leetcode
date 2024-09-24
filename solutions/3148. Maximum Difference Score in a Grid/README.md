@@ -51,6 +51,7 @@ The total score is <code>2 + 7 = 9</code>.</p>
 ## Solutions
 
 **Solution: `Dynamic Programming`**
+
 - Time complexity: <em>O(mn)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -63,31 +64,31 @@ The total score is <code>2 + 7 = 9</code>.</p>
  * @param {number[][]} grid
  * @return {number}
  */
-var maxScore = function(grid) {
-    const m = grid.length;
-    const n = grid[0].length;
-    let dp = [];
-    let result = Number.MIN_SAFE_INTEGER;
+const maxScore = function (grid) {
+  const m = grid.length;
+  const n = grid[0].length;
+  let dp = [];
+  let result = Number.MIN_SAFE_INTEGER;
 
-    for (let row = 0; row < m; row++) {
-        const current = [];
+  for (let row = 0; row < m; row++) {
+    const current = [];
 
-        for (let col = 0; col < n; col++) {
-            const value = grid[row][col];
-            let min = value;
+    for (let col = 0; col < n; col++) {
+      const value = grid[row][col];
+      let min = value;
 
-            if (row > 0) {
-                result = Math.max(result, value - dp[col]);
-                min = Math.min(min, dp[col]);
-            }
-            if (col > 0) {
-                result = Math.max(result, value - current[col - 1]);
-                min = Math.min(min, current[col - 1]);
-            }
-            current.push(min);
-        }
-        dp = current;
+      if (row > 0) {
+        result = Math.max(result, value - dp[col]);
+        min = Math.min(min, dp[col]);
+      }
+      if (col > 0) {
+        result = Math.max(result, value - current[col - 1]);
+        min = Math.min(min, current[col - 1]);
+      }
+      current.push(min);
     }
-    return result;
+    dp = current;
+  }
+  return result;
 };
 ```

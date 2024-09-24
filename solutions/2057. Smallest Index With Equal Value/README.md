@@ -51,6 +51,7 @@ i=3: 3 mod 10 = 3 != nums[3].
 ## Solutions
 
 **Solution: `Array`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -63,7 +64,7 @@ i=3: 3 mod 10 = 3 != nums[3].
  * @param {number[]} nums
  * @return {number}
  */
-var smallestEqual = function(nums) {
-    return nums.findIndex((num, index) => index % 10 === num);
+const smallestEqual = function (nums) {
+  return nums.findIndex((num, index) => index % 10 === num);
 };
 ```

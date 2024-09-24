@@ -50,6 +50,7 @@ It can be shown that if we place only one food bucket, one of the hamsters will 
 ## Solutions
 
 **Solution: `Greedy`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -62,22 +63,22 @@ It can be shown that if we place only one food bucket, one of the hamsters will 
  * @param {string} hamsters
  * @return {number}
  */
-var minimumBuckets = function(hamsters) {
-    const isCanFeed = (value) => value === '.' || value === 'F';
-    let result = 0;
+const minimumBuckets = function (hamsters) {
+  const isCanFeed = value => value === '.' || value === 'F';
+  let result = 0;
 
-    hamsters = hamsters.split('');
+  hamsters = hamsters.split('');
 
-    for (let index = 0; index < hamsters.length; index++) {
-        if (hamsters[index] !== 'H') continue;
-        const previous = hamsters[index - 1];
-        const next = hamsters[index + 1];
+  for (let index = 0; index < hamsters.length; index++) {
+    if (hamsters[index] !== 'H') continue;
+    const previous = hamsters[index - 1];
+    const next = hamsters[index + 1];
 
-        if (!isCanFeed(previous) && !isCanFeed(next)) return -1;
-        if (previous === 'F') continue;
-        if (next === '.') hamsters[index + 1] = 'F';
-        result += 1;
-    }
-    return result;
+    if (!isCanFeed(previous) && !isCanFeed(next)) return -1;
+    if (previous === 'F') continue;
+    if (next === '.') hamsters[index + 1] = 'F';
+    result += 1;
+  }
+  return result;
 };
 ```

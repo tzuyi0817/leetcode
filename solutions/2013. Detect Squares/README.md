@@ -34,12 +34,13 @@ detectSquares.add([3, 10]);
 detectSquares.add([11, 2]);
 detectSquares.add([3, 2]);
 detectSquares.count([11, 10]); // return 1. You can choose:
-                               //   - The first, second, and third points
-detectSquares.count([14, 8]);  // return 0. The query point cannot form a square with any points in the data structure.
-detectSquares.add([11, 2]);    // Adding duplicate points is allowed.
+// - The first, second, and third points
+detectSquares.count([14, 8]); // return 0. The query point cannot form a square with any points in the data structure.
+detectSquares.add([11, 2]); // Adding duplicate points is allowed.
 detectSquares.count([11, 10]); // return 2. You can choose:
-                               //   - The first, second, and third points
-                               //   - The first, third, and fourth points
+// - The first, second, and third points
+// - The first, third, and fourth points
+
 </pre>
 
 <p>&nbsp;</p>
@@ -57,6 +58,7 @@ detectSquares.count([11, 10]); // return 2. You can choose:
 ## Solutions
 
 **Solution: `Hash Table`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -65,46 +67,45 @@ detectSquares.count([11, 10]); // return 2. You can choose:
 ### **JavaScript**
 
 ```js
-
-var DetectSquares = function() {
-    this.coordinateMap = new Map();
+const DetectSquares = function () {
+  this.coordinateMap = new Map();
 };
 
-/** 
+/**
  * @param {number[]} point
  * @return {void}
  */
-DetectSquares.prototype.add = function(point) {
-    const [x, y] = point;
-    const key = `${x},${y}`;
-    const coordinate = this.coordinateMap.get(key) ?? { point, count: 0 };
+DetectSquares.prototype.add = function (point) {
+  const [x, y] = point;
+  const key = `${x},${y}`;
+  const coordinate = this.coordinateMap.get(key) ?? { point, count: 0 };
 
-    coordinate.count += 1;
-    this.coordinateMap.set(key, coordinate);
+  coordinate.count += 1;
+  this.coordinateMap.set(key, coordinate);
 };
 
-/** 
+/**
  * @param {number[]} point
  * @return {number}
  */
-DetectSquares.prototype.count = function(point) {
-    const [px, py] = point;
-    let result = 0;
+DetectSquares.prototype.count = function (point) {
+  const [px, py] = point;
+  let result = 0;
 
-    for (const { point: coordinate, count } of this.coordinateMap.values()) {
-        const [x, y] = coordinate;
+  for (const { point: coordinate, count } of this.coordinateMap.values()) {
+    const [x, y] = coordinate;
 
-        if (px === x || py === y) continue;
-        if (Math.abs(px - x) !== Math.abs(py - y)) continue;
-        const a = this.coordinateMap.get(`${px},${y}`)?.count ?? 0;
-        const b = this.coordinateMap.get(`${x},${py}`)?.count ?? 0;
+    if (px === x || py === y) continue;
+    if (Math.abs(px - x) !== Math.abs(py - y)) continue;
+    const a = this.coordinateMap.get(`${px},${y}`)?.count ?? 0;
+    const b = this.coordinateMap.get(`${x},${py}`)?.count ?? 0;
 
-        result += a * b * count;
-    }
-    return result;
+    result += a * b * count;
+  }
+  return result;
 };
 
-/** 
+/**
  * Your DetectSquares object will be instantiated and called as such:
  * var obj = new DetectSquares()
  * obj.add(point)

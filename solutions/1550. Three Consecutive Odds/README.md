@@ -32,6 +32,7 @@
 ## Solutions
 
 **Solution: `Brute Force`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -44,13 +45,13 @@
  * @param {number[]} arr
  * @return {boolean}
  */
-var threeConsecutiveOdds = function(arr) {
-    let odds = 0;
+const threeConsecutiveOdds = function (arr) {
+  let odds = 0;
 
-    for (const num of arr) {
-        odds = num % 2 ? odds + 1 : 0;
-        if (odds === 3) return true;
-    }
-    return false;
+  for (const num of arr) {
+    odds = num % 2 ? odds + 1 : 0;
+    if (odds === 3) return true;
+  }
+  return false;
 };
 ```

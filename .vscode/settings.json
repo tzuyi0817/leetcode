@@ -23,5 +23,5 @@
   },
   "files.associations": {},
   "typescript.tsdk": "node_modules/typescript/lib",
-  "cSpell.words": ["dotenv", "pinia", "persistedstate", "unplugin", "Sonarjs", "typecheck"]
+  "cSpell.words": ["vitepress", "unplugin", "Sonarjs", "typecheck"]
 }

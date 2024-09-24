@@ -55,6 +55,7 @@ Student number 1 does not have enough chalk, so they will have to replace it.
 ## Solutions
 
 **Solution: `Simulation`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -68,18 +69,18 @@ Student number 1 does not have enough chalk, so they will have to replace it.
  * @param {number} k
  * @return {number}
  */
-var chalkReplacer = function(chalk, k) {
-    const roundOfChalk = chalk.reduce((total, count) => total + count);
-    let remainChalk = k % roundOfChalk;
+const chalkReplacer = function (chalk, k) {
+  const roundOfChalk = chalk.reduce((total, count) => total + count);
+  let remainChalk = k % roundOfChalk;
 
-    if (remainChalk === 0) return 0;
+  if (remainChalk === 0) return 0;
 
-    for (let index = 0; index < chalk.length; index++) {
-        remainChalk -= chalk[index];
+  for (let index = 0; index < chalk.length; index++) {
+    remainChalk -= chalk[index];
 
-        if (remainChalk >= 0) continue;
-        return index;
-    }
-    return 0;
+    if (remainChalk >= 0) continue;
+    return index;
+  }
+  return 0;
 };
 ```

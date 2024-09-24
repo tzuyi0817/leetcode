@@ -55,6 +55,7 @@ Thus, the sorted array is [338,38,991].
 ## Solutions
 
 **Solution: `Hash Map`**
+
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -68,18 +69,18 @@ Thus, the sorted array is [338,38,991].
  * @param {number[]} nums
  * @return {number[]}
  */
-var sortJumbled = function(mapping, nums) {
-    const mappingNums = nums.map((num, index) => {
-        let mappingNum = '';
+const sortJumbled = function (mapping, nums) {
+  const mappingNums = nums.map((num, index) => {
+    let mappingNum = '';
 
-        for (const char of `${num}`) {
-            mappingNum += mapping[char];
-        }
-        return { mappingNum: +mappingNum, index };
-    });
+    for (const char of `${num}`) {
+      mappingNum += mapping[char];
+    }
+    return { mappingNum: +mappingNum, index };
+  });
 
-    mappingNums.sort((a, b) => a.mappingNum - b.mappingNum);
+  mappingNums.sort((a, b) => a.mappingNum - b.mappingNum);
 
-    return mappingNums.map(({ index }) => nums[index]);
+  return mappingNums.map(({ index }) => nums[index]);
 };
 ```

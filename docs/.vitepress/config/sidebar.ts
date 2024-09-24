@@ -24,5 +24,3 @@ export function generateSidebar(): DefaultTheme.Sidebar {
     },
   ];
 }
-
-// export const sidebar = generateSidebar();

@@ -54,6 +54,7 @@ Thus, the minimum number of swaps required is 0.
 ## Solutions
 
 **Solution: `Sliding Window`**
+
 - Time complexity: <em>O(2n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -66,19 +67,19 @@ Thus, the minimum number of swaps required is 0.
  * @param {number[]} nums
  * @return {number}
  */
-var minSwaps = function(nums) {
-    const n = nums.length;
-    const totalOnes = nums.reduce((sum, num) => sum + num);
-    let ones = 0;
-    let maxOnes = 0;
+const minSwaps = function (nums) {
+  const n = nums.length;
+  const totalOnes = nums.reduce((sum, num) => sum + num);
+  let ones = 0;
+  let maxOnes = 0;
 
-    for (let index = 0; index < n * 2; index++) {
-        if (nums[index % n]) ones += 1;
-        if (index >= totalOnes && nums[(index - totalOnes) % n]) {
-            ones -= 1;
-        }
-        maxOnes = Math.max(ones, maxOnes);
+  for (let index = 0; index < n * 2; index++) {
+    if (nums[index % n]) ones += 1;
+    if (index >= totalOnes && nums[(index - totalOnes) % n]) {
+      ones -= 1;
     }
-    return totalOnes - maxOnes;
+    maxOnes = Math.max(ones, maxOnes);
+  }
+  return totalOnes - maxOnes;
 };
 ```

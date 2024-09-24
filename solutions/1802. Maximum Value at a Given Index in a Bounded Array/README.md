@@ -45,6 +45,7 @@ There are no arrays that satisfy all the conditions and have nums[2] == 3, so 2 
 ## Solutions
 
 **Solution: `simulation`**
+
 - Time complexity: <em>O(logn)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -59,21 +60,21 @@ There are no arrays that satisfy all the conditions and have nums[2] == 3, so 2 
  * @param {number} maxSum
  * @return {number}
  */
-var maxValue = function(n, index, maxSum) {
-    let left = right = index;
-    let result = 1;
+const maxValue = function (n, index, maxSum) {
+  let left = (right = index);
+  let result = 1;
 
-    maxSum -= n;
+  maxSum -= n;
 
-    while (left > 0 || right < n - 1) {
-        const gap = right - left + 1;
+  while (left > 0 || right < n - 1) {
+    const gap = right - left + 1;
 
-        if (maxSum < gap) break;
-        maxSum -= gap;
-        result += 1;
-        left = Math.max(0, left - 1);
-        right = Math.min(n - 1, right + 1);
-    }
-    return result + Math.floor(maxSum / n);
+    if (maxSum < gap) break;
+    maxSum -= gap;
+    result += 1;
+    left = Math.max(0, left - 1);
+    right = Math.min(n - 1, right + 1);
+  }
+  return result + Math.floor(maxSum / n);
 };
 ```

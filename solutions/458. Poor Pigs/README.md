@@ -56,6 +56,7 @@ At time 30, one of the two pigs must die, and the poisonous bucket is the one it
 ## Solutions
 
 **Solution: `Math`**
+
 - Time complexity: <em>O(1)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -70,22 +71,22 @@ At time 30, one of the two pigs must die, and the poisonous bucket is the one it
  * @param {number} minutesToTest
  * @return {number}
  */
-var poorPigs = function(buckets, minutesToDie, minutesToTest) {
-    const times = Math.floor(minutesToTest / minutesToDie);
-    let pigs = 0;
-    let total = 1;
+const poorPigs = function (buckets, minutesToDie, minutesToTest) {
+  const times = Math.floor(minutesToTest / minutesToDie);
+  let pigs = 0;
+  let total = 1;
 
-    /**
-     * 1 pig and 1 times -> 2 ** 1
-     * 1 pig and 2 times -> 3 ** 1
-     * 2 pigs and 1 times -> 2 ** 2
-     * 2 pigs and 2 times -> 3 ** 2
-     * 2 pigs and 3 times -> 4 ** 2
-     */
-    while (total < buckets) {
-        total *= (times + 1);
-        pigs += 1;
-    }
-    return pigs;
+  /**
+   * 1 pig and 1 times -> 2 ** 1
+   * 1 pig and 2 times -> 3 ** 1
+   * 2 pigs and 1 times -> 2 ** 2
+   * 2 pigs and 2 times -> 3 ** 2
+   * 2 pigs and 3 times -> 4 ** 2
+   */
+  while (total < buckets) {
+    total *= times + 1;
+    pigs += 1;
+  }
+  return pigs;
 };
 ```

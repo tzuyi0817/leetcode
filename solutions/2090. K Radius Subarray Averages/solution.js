@@ -3,19 +3,19 @@
  * @param {number} k
  * @return {number[]}
  */
-var getAverages = function(nums, k) {
-    const size = nums.length;
-    const count = k * 2 + 1;
-    const result = Array(size).fill(-1);
-    let currentSum = left = 0;
+const getAverages = function (nums, k) {
+  const size = nums.length;
+  const count = k * 2 + 1;
+  const result = Array(size).fill(-1);
+  let currentSum = (left = 0);
 
-    for (let index = 0; index < nums.length; index++) {
-        currentSum += nums[index];
+  for (let index = 0; index < nums.length; index++) {
+    currentSum += nums[index];
 
-        if (index < count - 1) continue;
-        result[index - k] = Math.floor(currentSum / count);
-        currentSum -= nums[left];
-        left += 1;
-    }
-    return result;
+    if (index < count - 1) continue;
+    result[index - k] = Math.floor(currentSum / count);
+    currentSum -= nums[left];
+    left += 1;
+  }
+  return result;
 };

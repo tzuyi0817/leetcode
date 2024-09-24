@@ -50,6 +50,7 @@ The perimeter is 2 * 4 = 8.
 ## Solutions
 
 **Solution: `Math + Binary Search`**
+
 - Time complexity: <em>O(log10<sup>15</sup>)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -62,16 +63,16 @@ The perimeter is 2 * 4 = 8.
  * @param {number} neededApples
  * @return {number}
  */
-var minimumPerimeter = function(neededApples) {
-    let left = 1;
-    let right = 10 ** 15;
+const minimumPerimeter = function (neededApples) {
+  let left = 1;
+  let right = 10 ** 15;
 
-    while (left < right) {
-        const mid = Math.floor((left + right) / 2);
-        const apples = 2 * mid * (mid + 1) * (2 * mid + 1);
+  while (left < right) {
+    const mid = Math.floor((left + right) / 2);
+    const apples = 2 * mid * (mid + 1) * (2 * mid + 1);
 
-        apples >= neededApples ? right = mid : left = mid + 1;
-    }
-    return left * 8;
+    apples >= neededApples ? (right = mid) : (left = mid + 1);
+  }
+  return left * 8;
 };
 ```

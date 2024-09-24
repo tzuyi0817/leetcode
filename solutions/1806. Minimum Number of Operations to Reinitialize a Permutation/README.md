@@ -55,6 +55,7 @@ So it takes only 2 operations.
 ## Solutions
 
 **Solution: `simulation`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -67,17 +68,15 @@ So it takes only 2 operations.
  * @param {number} n
  * @return {number}
  */
-var reinitializePermutation = function(n) {
-    const BASE_INDEX = 1;
-    let result = 1;
-    let index = n / 2 + (BASE_INDEX - 1) / 2;
+const reinitializePermutation = function (n) {
+  const BASE_INDEX = 1;
+  let result = 1;
+  let index = n / 2 + (BASE_INDEX - 1) / 2;
 
-    while (index !== BASE_INDEX) {
-        index = index % 2
-            ? n / 2 + (index - 1) / 2
-            : index / 2;
-        result += 1;
-    }
-    return result;
+  while (index !== BASE_INDEX) {
+    index = index % 2 ? n / 2 + (index - 1) / 2 : index / 2;
+    result += 1;
+  }
+  return result;
 };
 ```

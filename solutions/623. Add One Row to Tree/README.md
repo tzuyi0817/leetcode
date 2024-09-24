@@ -45,6 +45,7 @@
 ## Solutions
 
 **Solution: `Breadth-First Search`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -67,28 +68,28 @@
  * @param {number} depth
  * @return {TreeNode}
  */
-var addOneRow = function(root, val, depth) {
-    if (depth === 1) return new TreeNode(val, root);
-    let queue = [root];
-    let currentDeep = 1;
+const addOneRow = function (root, val, depth) {
+  if (depth === 1) return new TreeNode(val, root);
+  let queue = [root];
+  let currentDeep = 1;
 
-    while (currentDeep < depth) {
-        const nextQueue = [];
+  while (currentDeep < depth) {
+    const nextQueue = [];
 
-        currentDeep += 1;
-        for (const node of queue) {
-            const { left, right } = node;
+    currentDeep += 1;
+    for (const node of queue) {
+      const { left, right } = node;
 
-            if (currentDeep === depth) {
-                node.left = new TreeNode(val, left);
-                node.right = new TreeNode(val, null, right);
-                continue;
-            }
-            left && nextQueue.push(left);
-            right && nextQueue.push(right);
-        }
-        queue = nextQueue;
+      if (currentDeep === depth) {
+        node.left = new TreeNode(val, left);
+        node.right = new TreeNode(val, null, right);
+        continue;
+      }
+      left && nextQueue.push(left);
+      right && nextQueue.push(right);
     }
-    return root;
+    queue = nextQueue;
+  }
+  return root;
 };
 ```

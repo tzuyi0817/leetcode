@@ -70,6 +70,7 @@ Total: 3 + 4 + 10 + 0 = 17. You cannot make a dessert with a total cost of 18.
 ## Solutions
 
 **Solution: `Backtracking`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -84,25 +85,25 @@ Total: 3 + 4 + 10 + 0 = 17. You cannot make a dessert with a total cost of 18.
  * @param {number} target
  * @return {number}
  */
-var closestCost = function(baseCosts, toppingCosts, target) {
-    let result = Number.MAX_SAFE_INTEGER;
-    const toppingSize = toppingCosts.length;
-    const addTopping = (cost, index) => {
-        if (Math.abs(target - cost) < Math.abs(target - result)) result = cost;
-        if (Math.abs(target - cost) === Math.abs(target - result) && cost < result) {
-            result = cost;
-        }
-        if (index >= toppingSize) return;
-        const toppingCost = toppingCosts[index];
-
-        addTopping(cost, index + 1);
-        addTopping(cost + toppingCost, index + 1);
-        addTopping(cost + toppingCost * 2, index + 1);
-    };
-
-    for (const cost of baseCosts) {
-        addTopping(cost, 0);
+const closestCost = function (baseCosts, toppingCosts, target) {
+  let result = Number.MAX_SAFE_INTEGER;
+  const toppingSize = toppingCosts.length;
+  const addTopping = (cost, index) => {
+    if (Math.abs(target - cost) < Math.abs(target - result)) result = cost;
+    if (Math.abs(target - cost) === Math.abs(target - result) && cost < result) {
+      result = cost;
     }
-    return result;
+    if (index >= toppingSize) return;
+    const toppingCost = toppingCosts[index];
+
+    addTopping(cost, index + 1);
+    addTopping(cost + toppingCost, index + 1);
+    addTopping(cost + toppingCost * 2, index + 1);
+  };
+
+  for (const cost of baseCosts) {
+    addTopping(cost, 0);
+  }
+  return result;
 };
 ```

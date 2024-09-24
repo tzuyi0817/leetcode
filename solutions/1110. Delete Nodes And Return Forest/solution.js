@@ -11,26 +11,26 @@
  * @param {number[]} to_delete
  * @return {TreeNode[]}
  */
-var delNodes = function(root, to_delete) {
-    const result = [];
+const delNodes = function (root, to_delete) {
+  const result = [];
 
-    const dfsTreeNode = (node) => {
-        if (!node) return null;
-        const { left, right, val } = node;
+  const dfsTreeNode = node => {
+    if (!node) return null;
+    const { left, right, val } = node;
 
-        node.left = dfsTreeNode(left);
-        node.right = dfsTreeNode(right);
+    node.left = dfsTreeNode(left);
+    node.right = dfsTreeNode(right);
 
-        if (to_delete.includes(val)) {
-            node.left && result.push(left);
-            node.right && result.push(right);
-            return null;
-        }
-        return node;
-    };
+    if (to_delete.includes(val)) {
+      node.left && result.push(left);
+      node.right && result.push(right);
+      return null;
+    }
+    return node;
+  };
 
-    if (!to_delete.includes(root.val)) result.push(root);
+  if (!to_delete.includes(root.val)) result.push(root);
 
-    dfsTreeNode(root);
-    return result;
+  dfsTreeNode(root);
+  return result;
 };

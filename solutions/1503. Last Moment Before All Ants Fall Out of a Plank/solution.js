@@ -4,9 +4,9 @@
  * @param {number[]} right
  * @return {number}
  */
-var getLastMoment = function(n, left, right) {
-    const maxLeft = Math.max(...left);
-    const minRight = Math.min(...right);
+const getLastMoment = function (n, left, right) {
+  const maxLeft = Math.max(...left);
+  const minRight = Math.min(...right);
 
-    return Math.max(maxLeft, n - minRight);
+  return Math.max(maxLeft, n - minRight);
 };

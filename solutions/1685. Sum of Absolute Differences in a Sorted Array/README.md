@@ -39,6 +39,7 @@ result[2] = |5-2| + |5-3| + |5-5| = 3 + 2 + 0 = 5.
 ## Solutions
 
 **Solution: `Prefix Sum`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -51,21 +52,21 @@ result[2] = |5-2| + |5-3| + |5-5| = 3 + 2 + 0 = 5.
  * @param {number[]} nums
  * @return {number[]}
  */
-var getSumAbsoluteDifferences = function(nums) {
-    const prefixSum = [nums[0]];
-    const size = nums.length;
+const getSumAbsoluteDifferences = function (nums) {
+  const prefixSum = [nums[0]];
+  const size = nums.length;
 
-    for (let index = 1; index < size; index++) {
-        prefixSum[index] = prefixSum[index - 1] + nums[index];
-    }
-    const sum = prefixSum.at(-1);
-    
-    return nums.map((num, index) => {
-        const currentSum = prefixSum[index];
-        const left = num * (index + 1) - currentSum;
-        const right = sum - currentSum - num * (size - index - 1);
+  for (let index = 1; index < size; index++) {
+    prefixSum[index] = prefixSum[index - 1] + nums[index];
+  }
+  const sum = prefixSum.at(-1);
 
-        return left + right;
-    });
+  return nums.map((num, index) => {
+    const currentSum = prefixSum[index];
+    const left = num * (index + 1) - currentSum;
+    const right = sum - currentSum - num * (size - index - 1);
+
+    return left + right;
+  });
 };
 ```

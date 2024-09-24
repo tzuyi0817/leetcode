@@ -58,6 +58,7 @@ Step 1) 2 is even, divide by 2 and obtain 1.&nbsp;
 ## Solutions
 
 **Solution: `Bit Manipulation`**
+
 - Time complexity: <em>O(n - 1)</em>
 - Space complexity: <em>O(1)</em>
 - carry = 0 and current = 0, number is even, have to divide it by 2, step + 1
@@ -74,19 +75,19 @@ Step 1) 2 is even, divide by 2 and obtain 1.&nbsp;
  * @param {string} s
  * @return {number}
  */
-var numSteps = function(s) {
-    let step = carry = 0;
+const numSteps = function (s) {
+  let step = (carry = 0);
 
-    for (let index = s.length - 1; index > 0; index--) {
-        const value = s[index];
+  for (let index = s.length - 1; index > 0; index--) {
+    const value = s[index];
 
-        if (value === '0') {
-            step += carry ? 2 : 1;
-            continue;
-        }
-        step += carry ? 1 : 2;
-        carry = 1;
+    if (value === '0') {
+      step += carry ? 2 : 1;
+      continue;
     }
-    return step + carry;
+    step += carry ? 1 : 2;
+    carry = 1;
+  }
+  return step + carry;
 };
 ```

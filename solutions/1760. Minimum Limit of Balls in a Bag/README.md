@@ -55,6 +55,7 @@ The bag with the most number of balls has 2 balls, so your penalty is 2, and you
 ## Solutions
 
 **Solution: `Binary Search`**
+
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -68,18 +69,18 @@ The bag with the most number of balls has 2 balls, so your penalty is 2, and you
  * @param {number} maxOperations
  * @return {number}
  */
-var minimumSize = function(nums, maxOperations) {
-    let left = 1;
-    let right = 10 ** 9;
+const minimumSize = function (nums, maxOperations) {
+  let left = 1;
+  let right = 10 ** 9;
 
-    while (left < right) {
-        const mid = Math.floor((left + right) / 2);
-        const operation = nums.reduce((sum, num) => {
-            return sum + Math.floor((num - 1) / mid);
-        }, 0);
+  while (left < right) {
+    const mid = Math.floor((left + right) / 2);
+    const operation = nums.reduce((sum, num) => {
+      return sum + Math.floor((num - 1) / mid);
+    }, 0);
 
-        operation > maxOperations ? left = mid + 1 : right = mid;
-    }
-    return left;
+    operation > maxOperations ? (left = mid + 1) : (right = mid);
+  }
+  return left;
 };
 ```

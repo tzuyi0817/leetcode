@@ -43,8 +43,9 @@
 ## Solutions
 
 **Solution: `Recursion + Memoization`**
+
 - Time complexity: <em>O(2<sup>n</sup>)</em>
-- Space complexity: <em>O(n*2<sup>n</sup>)</em>
+- Space complexity: <em>O(n\*2<sup>n</sup>)</em>
 
 <p>&nbsp;</p>
 
@@ -55,43 +56,43 @@
  * @param {string} expression
  * @return {number[]}
  */
-var diffWaysToCompute = function(expression) {
-    const memo = new Map();
+const diffWaysToCompute = function (expression) {
+  const memo = new Map();
 
-    const calculate = (a, b, mathSymbol) => {
-        if (mathSymbol === '*') return a * b;
-        if (mathSymbol === '-') return a - b;
-        return a + b;
-    };
+  const calculate = (a, b, mathSymbol) => {
+    if (mathSymbol === '*') return a * b;
+    if (mathSymbol === '-') return a - b;
+    return a + b;
+  };
 
-    const computeExpression = (current) => {
-        if (memo.has(current)) return memo.get(current);
-        const n = current.length;
-        const values = [];
+  const computeExpression = current => {
+    if (memo.has(current)) return memo.get(current);
+    const n = current.length;
+    const values = [];
 
-        for (let index = 0; index < n; index++) {
-            const str = current[index];
+    for (let index = 0; index < n; index++) {
+      const str = current[index];
 
-            if (/[0-9]/.test(str)) continue;
-            const leftHalf = current.slice(0, index);
-            const rightHalf = current.slice(index + 1);
-            const values1 = computeExpression(leftHalf);
-            const values2 = computeExpression(rightHalf);
+      if (/\d/.test(str)) continue;
+      const leftHalf = current.slice(0, index);
+      const rightHalf = current.slice(index + 1);
+      const values1 = computeExpression(leftHalf);
+      const values2 = computeExpression(rightHalf);
 
-            for (const value1 of values1) {
-                for (const value2 of values2) {
-                    const value = calculate(value1, value2, str);
+      for (const value1 of values1) {
+        for (const value2 of values2) {
+          const value = calculate(value1, value2, str);
 
-                    values.push(value);
-                }
-            }
+          values.push(value);
         }
-        const result = values.length ? values : [+current];
+      }
+    }
+    const result = values.length ? values : [+current];
 
-        memo.set(current, result);
-        return result;
-    };
+    memo.set(current, result);
+    return result;
+  };
 
-    return computeExpression(expression);
+  return computeExpression(expression);
 };
 ```

@@ -55,6 +55,7 @@
 ## Solutions
 
 **Solution: `Dijkstra's Algorithm`**
+
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -71,31 +72,33 @@
  * @param {number} end_node
  * @return {number}
  */
-var maxProbability = function(n, edges, succProb, start_node, end_node) {
-    const graph = Array(n).fill('').map(_ => []);
-    const probs = Array(n).fill(0);
-    const queue = new MaxPriorityQueue({ priority: ({ prob }) => prob });
+const maxProbability = function (n, edges, succProb, start_node, end_node) {
+  const graph = Array(n)
+    .fill('')
+    .map(_ => []);
+  const probs = Array(n).fill(0);
+  const queue = new MaxPriorityQueue({ priority: ({ prob }) => prob });
 
-    for (let index = 0; index < edges.length; index++) {
-        const [a, b] = edges[index];
-        
-        graph[a].push({ node: b, prob: succProb[index] });
-        graph[b].push({ node: a, prob: succProb[index] });
+  for (let index = 0; index < edges.length; index++) {
+    const [a, b] = edges[index];
+
+    graph[a].push({ node: b, prob: succProb[index] });
+    graph[b].push({ node: a, prob: succProb[index] });
+  }
+  probs[start_node] = 1;
+  queue.enqueue({ node: start_node, prob: 1 });
+
+  while (queue.size()) {
+    const { node, prob } = queue.dequeue().element;
+
+    for (const arrive of graph[node]) {
+      const nextProb = arrive.prob * prob;
+
+      if (nextProb <= probs[arrive.node]) continue;
+      probs[arrive.node] = nextProb;
+      queue.enqueue({ node: arrive.node, prob: nextProb });
     }
-    probs[start_node] = 1;
-    queue.enqueue({ node: start_node, prob: 1 });
-
-    while (queue.size()) {
-        const { node, prob } = queue.dequeue().element;
-
-        for (const arrive of graph[node]) {
-            const nextProb = arrive.prob * prob;
-
-            if (nextProb <= probs[arrive.node]) continue;
-            probs[arrive.node] = nextProb;
-            queue.enqueue({ node: arrive.node, prob: nextProb });
-        }
-    }
-    return probs[end_node];
+  }
+  return probs[end_node];
 };
 ```

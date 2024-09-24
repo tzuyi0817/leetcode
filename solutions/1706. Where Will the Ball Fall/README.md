@@ -59,6 +59,7 @@ Ball b4 is dropped at column 4 and will get stuck on the box between column 2 an
 ## Solutions
 
 **Solution: `Simulation`**
+
 - Time complexity: <em>O(mn)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -71,23 +72,23 @@ Ball b4 is dropped at column 4 and will get stuck on the box between column 2 an
  * @param {number[][]} grid
  * @return {number[]}
  */
-var findBall = function(grid) {
-    const m = grid.length;
-    const n = grid[0].length;
-    
-    return grid[0].map((_, index) => {
-        let row = 0;
-        let col = index;
+const findBall = function (grid) {
+  const m = grid.length;
+  const n = grid[0].length;
 
-        while (row < m) {
-            const value = grid[row][col];
-            const nextCol = col + value;
+  return grid[0].map((_, index) => {
+    let row = 0;
+    let col = index;
 
-            if (nextCol < 0 || nextCol > n || grid[row][nextCol] !== value) return -1;
-            row += 1;
-            col = nextCol;
-        }
-        return col;
-    });
+    while (row < m) {
+      const value = grid[row][col];
+      const nextCol = col + value;
+
+      if (nextCol < 0 || nextCol > n || grid[row][nextCol] !== value) return -1;
+      row += 1;
+      col = nextCol;
+    }
+    return col;
+  });
 };
 ```

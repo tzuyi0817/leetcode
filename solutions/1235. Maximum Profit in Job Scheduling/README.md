@@ -52,6 +52,7 @@ Profit obtained 150 = 20 + 70 + 60.
 ## Solutions
 
 **Solution: `Dynamic Programming + Binary Search`**
+
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -66,31 +67,31 @@ Profit obtained 150 = 20 + 70 + 60.
  * @param {number[]} profit
  * @return {number}
  */
-var jobScheduling = function(startTime, endTime, profit) {
-    const size = startTime.length;
-    const dp = Array(size + 1).fill(0);
-    const jobs = startTime.map((start, index) => {
-        return { start, end: endTime[index], profit: profit[index] };
-    });
+const jobScheduling = function (startTime, endTime, profit) {
+  const size = startTime.length;
+  const dp = Array(size + 1).fill(0);
+  const jobs = startTime.map((start, index) => {
+    return { start, end: endTime[index], profit: profit[index] };
+  });
 
-    jobs.sort((a, b) => a.end - b.end);
-    const findMaxProfit = (target, right) => {
-        let left = 0;
+  jobs.sort((a, b) => a.end - b.end);
+  const findMaxProfit = (target, right) => {
+    let left = 0;
 
-        while (left < right) {
-            const mid = Math.floor((left + right) / 2);
+    while (left < right) {
+      const mid = Math.floor((left + right) / 2);
 
-            jobs[mid].end > target ? right = mid : left = mid + 1;
-        }
-        return dp[left];
-    };
-
-    for (let index = 0; index < size; index++) {
-        const { start, profit } = jobs[index];
-        const current = findMaxProfit(start, index) + profit;
-
-        dp[index + 1] = Math.max(current, dp[index]);
+      jobs[mid].end > target ? (right = mid) : (left = mid + 1);
     }
-    return dp.at(-1);
+    return dp[left];
+  };
+
+  for (let index = 0; index < size; index++) {
+    const { start, profit } = jobs[index];
+    const current = findMaxProfit(start, index) + profit;
+
+    dp[index + 1] = Math.max(current, dp[index]);
+  }
+  return dp.at(-1);
 };
 ```

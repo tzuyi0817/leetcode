@@ -33,6 +33,7 @@
 ## Solutions
 
 **Solution: `Greedy`**
+
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -45,9 +46,9 @@
  * @param {number[]} nums
  * @return {string}
  */
-var largestNumber = function(nums) {
-    nums.sort((a, b) => `${b}${a}` - `${a}${b}`);
+const largestNumber = function (nums) {
+  nums.sort((a, b) => `${b}${a}` - `${a}${b}`);
 
-    return nums[0] ? nums.join('') : '0';
+  return nums[0] ? nums.join('') : '0';
 };
 ```

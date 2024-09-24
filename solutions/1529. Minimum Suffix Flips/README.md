@@ -53,6 +53,7 @@ We need at least 3 flip operations to form target.
 ## Solutions
 
 **Solution: `Greedy`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -65,14 +66,14 @@ We need at least 3 flip operations to form target.
  * @param {string} target
  * @return {number}
  */
-var minFlips = function(target) {
-    let result = current = 0;
+const minFlips = function (target) {
+  let result = (current = 0);
 
-    for (const value of target) {
-        if (+value === current) continue;
-        current ^= 1;
-        result += 1;
-    }
-    return result;
+  for (const value of target) {
+    if (+value === current) continue;
+    current ^= 1;
+    result += 1;
+  }
+  return result;
 };
 ```

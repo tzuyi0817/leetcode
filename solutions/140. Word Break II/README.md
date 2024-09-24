@@ -44,6 +44,7 @@
 ## Solutions
 
 **Solution: `Backtracking`**
+
 - Time complexity: <em>O(2<sup>n</sup>)</em>
 - Space complexity: <em>O(2<sup>n</sup>)</em>
 
@@ -57,28 +58,28 @@
  * @param {string[]} wordDict
  * @return {string[]}
  */
-var wordBreak = function(s, wordDict) {
-    const n = s.length;
-    const wordDictSet = new Set(wordDict);
-    const subStrMap = new Map();
-    const result = [];
-    const breakWord = (start, current) => {
-        if (start === n) {
-            result.push(current.trimEnd());
-            return;
-        }
-        for (let index = start; index < n; index++) {
-            const key = `${start},${index + 1}`;
-            const memoSubStr = subStrMap.get(key);
-            const subStr = memoSubStr ?? s.slice(start, index + 1);
+const wordBreak = function (s, wordDict) {
+  const n = s.length;
+  const wordDictSet = new Set(wordDict);
+  const subStrMap = new Map();
+  const result = [];
+  const breakWord = (start, current) => {
+    if (start === n) {
+      result.push(current.trimEnd());
+      return;
+    }
+    for (let index = start; index < n; index++) {
+      const key = `${start},${index + 1}`;
+      const memoSubStr = subStrMap.get(key);
+      const subStr = memoSubStr ?? s.slice(start, index + 1);
 
-            if (!memoSubStr) subStrMap.set(key, subStr);
-            if (!wordDictSet.has(subStr)) continue;
-            breakWord(index + 1, `${current}${subStr} `);
-        }
-    };
+      if (!memoSubStr) subStrMap.set(key, subStr);
+      if (!wordDictSet.has(subStr)) continue;
+      breakWord(index + 1, `${current}${subStr} `);
+    }
+  };
 
-    breakWord(0, '');
-    return result;
+  breakWord(0, '');
+  return result;
 };
 ```

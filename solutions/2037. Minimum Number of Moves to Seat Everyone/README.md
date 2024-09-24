@@ -66,6 +66,7 @@ In total, 1 + 3 + 0 + 0 = 4 moves were used.
 ## Solutions
 
 **Solution: `Greedy`**
+
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -79,12 +80,12 @@ In total, 1 + 3 + 0 + 0 = 4 moves were used.
  * @param {number[]} students
  * @return {number}
  */
-var minMovesToSeat = function(seats, students) {
-    seats.sort((a, b) => a - b);
-    students.sort((a, b) => a - b);
+const minMovesToSeat = function (seats, students) {
+  seats.sort((a, b) => a - b);
+  students.sort((a, b) => a - b);
 
-    return seats.reduce((result, seat, index) => {
-        return result + Math.abs(seat - students[index]);
-    }, 0);
+  return seats.reduce((result, seat, index) => {
+    return result + Math.abs(seat - students[index]);
+  }, 0);
 };
 ```

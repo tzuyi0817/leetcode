@@ -54,6 +54,7 @@ Then, use the second operation on the third and sixth elements to make s = "10<u
 ## Solutions
 
 **Solution: `Sliding Window`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -66,25 +67,25 @@ Then, use the second operation on the third and sixth elements to make s = "10<u
  * @param {string} s
  * @return {number}
  */
-var minFlips = function(s) {
-    const size = s.length;
-    let startZero = startOne = 0;
-    let result = 0;
+const minFlips = function (s) {
+  const size = s.length;
+  let startZero = (startOne = 0);
+  let result = 0;
 
-    for (let index = 0; index < size; index++) {
-        const value = s[index];
+  for (let index = 0; index < size; index++) {
+    const value = s[index];
 
-        value === `${index % 2}` ? startOne += 1 : startZero += 1;
-    }
-    result = Math.min(startZero, startOne);
+    value === `${index % 2}` ? (startOne += 1) : (startZero += 1);
+  }
+  result = Math.min(startZero, startOne);
 
-    for (let index = 0; index < size; index++) {
-        const value = s[index];
+  for (let index = 0; index < size; index++) {
+    const value = s[index];
 
-        value === `${(size + index) % 2}` ? startOne += 1 : startZero += 1;
-        value === `${index % 2}` ? startOne -= 1 : startZero -= 1;
-        result = Math.min(result, startZero, startOne);
-    }
-    return result;
+    value === `${(size + index) % 2}` ? (startOne += 1) : (startZero += 1);
+    value === `${index % 2}` ? (startOne -= 1) : (startZero -= 1);
+    result = Math.min(result, startZero, startOne);
+  }
+  return result;
 };
 ```

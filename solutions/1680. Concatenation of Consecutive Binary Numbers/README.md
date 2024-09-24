@@ -42,6 +42,7 @@ After modulo 10<sup>9</sup> + 7, the result is 505379714.
 ## Solutions
 
 **Solution: `Bit Manipulation`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -54,14 +55,14 @@ After modulo 10<sup>9</sup> + 7, the result is 505379714.
  * @param {number} n
  * @return {number}
  */
-var concatenatedBinary = function(n) {
-    const MODULO = 10 ** 9 + 7;
-    let result = 0;
+const concatenatedBinary = function (n) {
+  const MODULO = 10 ** 9 + 7;
+  let result = 0;
 
-    for (let value = 1; value <= n; value++) {
-        result *= 1 << value.toString(2).length;
-        result = (result + value) % MODULO;
-    }
-    return result;
+  for (let value = 1; value <= n; value++) {
+    result *= 1 << value.toString(2).length;
+    result = (result + value) % MODULO;
+  }
+  return result;
 };
 ```

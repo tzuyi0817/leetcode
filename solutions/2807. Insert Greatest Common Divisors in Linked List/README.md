@@ -44,6 +44,7 @@ There are no pairs of adjacent nodes, so we return the initial linked list.
 ## Solutions
 
 **Solution: `Simulation`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -63,19 +64,19 @@ There are no pairs of adjacent nodes, so we return the initial linked list.
  * @param {ListNode} head
  * @return {ListNode}
  */
-var insertGreatestCommonDivisors = function(head) {
-    let current = head;
-    let previousVal = head.val;
+const insertGreatestCommonDivisors = function (head) {
+  let current = head;
+  let previousVal = head.val;
 
-    const gcd = (a, b) => b ? gcd(b, a % b) : a;
+  const gcd = (a, b) => (b ? gcd(b, a % b) : a);
 
-    while (current.next) {
-        const { next } = current;
+  while (current.next) {
+    const { next } = current;
 
-        current.next = new ListNode(gcd(previousVal, next.val), next);
-        previousVal = next.val;
-        current = next;
-    }
-    return head;
+    current.next = new ListNode(gcd(previousVal, next.val), next);
+    previousVal = next.val;
+    current = next;
+  }
+  return head;
 };
 ```

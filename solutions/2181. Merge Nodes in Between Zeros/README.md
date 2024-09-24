@@ -46,6 +46,7 @@ The above figure represents the given linked list. The modified list contains
 ## Solutions
 
 **Solution: `Simulation`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -65,24 +66,24 @@ The above figure represents the given linked list. The modified list contains
  * @param {ListNode} head
  * @return {ListNode}
  */
-var mergeNodes = function(head) {
-    const root = new ListNode(0, head);
-    let node = root;
-    let current = head;
-    let sum = 0;
+const mergeNodes = function (head) {
+  const root = new ListNode(0, head);
+  let node = root;
+  let current = head;
+  let sum = 0;
 
-    while (current) {
-        if (current.val) {
-            sum += current.val;
-        } else if (sum) {
-            node.next.val = sum;
-            node = node.next;
-            sum = 0;
-        }
-        current = current.next;
+  while (current) {
+    if (current.val) {
+      sum += current.val;
+    } else if (sum) {
+      node.next.val = sum;
+      node = node.next;
+      sum = 0;
     }
-    node.next = null;
+    current = current.next;
+  }
+  node.next = null;
 
-    return root.next;
+  return root.next;
 };
 ```

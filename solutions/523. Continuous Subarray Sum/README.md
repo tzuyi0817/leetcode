@@ -56,6 +56,7 @@
 ## Solutions
 
 **Solution: `Hash Map`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -69,23 +70,23 @@
  * @param {number} k
  * @return {boolean}
  */
-var checkSubarraySum = function(nums, k) {
-    const n = nums.length;
+const checkSubarraySum = function (nums, k) {
+  const n = nums.length;
 
-    if (n < 2) return false;
-    const remainderMap = new Map([[0, -1]]);
-    let sum = 0;
+  if (n < 2) return false;
+  const remainderMap = new Map([[0, -1]]);
+  let sum = 0;
 
-    for (let index = 0; index < n; index++) {
-        sum += nums[index];
-        const remainder = sum % k;
+  for (let index = 0; index < n; index++) {
+    sum += nums[index];
+    const remainder = sum % k;
 
-        if (remainderMap.has(remainder)) {
-            if (index - remainderMap.get(remainder) > 1) return true;
-            continue;
-        }
-        remainderMap.set(remainder, index);
+    if (remainderMap.has(remainder)) {
+      if (index - remainderMap.get(remainder) > 1) return true;
+      continue;
     }
-    return false;
+    remainderMap.set(remainder, index);
+  }
+  return false;
 };
 ```

@@ -59,7 +59,8 @@ The maximum number of products given to any store is max(100000) = 100000.
 ## Solutions
 
 **Solution: `Binary Search`**
-- Time complexity: <em>O(nlog*Max(quantities))</em>
+
+- Time complexity: <em>O(nlog\*Max(quantities))</em>
 - Space complexity: <em>O(1)</em>
 
 <p>&nbsp;</p>
@@ -72,25 +73,25 @@ The maximum number of products given to any store is max(100000) = 100000.
  * @param {number[]} quantities
  * @return {number}
  */
-var minimizedMaximum = function(n, quantities) {
-    let left = 1;
-    let right = Math.max(...quantities);
+const minimizedMaximum = function (n, quantities) {
+  let left = 1;
+  let right = Math.max(...quantities);
 
-    function isMoreQuantity(quantity) {
-        let stores = 0;
+  function isMoreQuantity(quantity) {
+    let stores = 0;
 
-        for (const value of quantities) {
-            stores += Math.ceil(value / quantity);
-            if (stores > n) return true;
-        }
-        return false;
+    for (const value of quantities) {
+      stores += Math.ceil(value / quantity);
+      if (stores > n) return true;
     }
+    return false;
+  }
 
-    while (left < right) {
-        const middle = Math.floor((left + right) / 2);
+  while (left < right) {
+    const middle = Math.floor((left + right) / 2);
 
-        isMoreQuantity(middle) ? left = middle + 1 : right = middle;
-    }
-    return left;
+    isMoreQuantity(middle) ? (left = middle + 1) : (right = middle);
+  }
+  return left;
 };
 ```

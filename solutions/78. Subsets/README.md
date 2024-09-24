@@ -34,8 +34,9 @@
 ## Solutions
 
 **Solution: `Backtracking`**
+
 - Time complexity: <em>O(2<sup>n</sup>)</em>
-- Space complexity: <em>O(n*2<sup>n</sup>)</em>
+- Space complexity: <em>O(n\*2<sup>n</sup>)</em>
 
 <p>&nbsp;</p>
 
@@ -46,20 +47,20 @@
  * @param {number[]} nums
  * @return {number[][]}
  */
-var subsets = function(nums) {
-    const result = [[]];
-    const backtrackingSubset = (start, current) => {
-        for (let index = start; index < nums.length; index++) {
-            const num = nums[index];
+const subsets = function (nums) {
+  const result = [[]];
+  const backtrackingSubset = (start, current) => {
+    for (let index = start; index < nums.length; index++) {
+      const num = nums[index];
 
-            current.push(num);
-            result.push([...current]);
-            backtrackingSubset(index + 1, current);
-            current.pop();
-        }
-    };
+      current.push(num);
+      result.push([...current]);
+      backtrackingSubset(index + 1, current);
+      current.pop();
+    }
+  };
 
-    backtrackingSubset(0, []);
-    return result;
+  backtrackingSubset(0, []);
+  return result;
 };
 ```

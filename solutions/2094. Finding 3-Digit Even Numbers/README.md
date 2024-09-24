@@ -54,6 +54,7 @@ In this example, the digit 8 is used twice each time in 288, 828, and 882.
 ## Solutions
 
 **Solution: `Hash Table`**
+
 - Time complexity: <em>O(900/2)</em>
 - Space complexity: <em>O(10)</em>
 
@@ -66,26 +67,26 @@ In this example, the digit 8 is used twice each time in 288, 828, and 882.
  * @param {number[]} digits
  * @return {number[]}
  */
-var findEvenNumbers = function(digits) {
-    const countMap = digits.reduce((map, integer) => {
-        const count = map.get(integer) ?? 0;
+const findEvenNumbers = function (digits) {
+  const countMap = digits.reduce((map, integer) => {
+    const count = map.get(integer) ?? 0;
 
-        return map.set(integer, count + 1);
-    }, new Map()); 
-    const result = [];
+    return map.set(integer, count + 1);
+  }, new Map());
+  const result = [];
 
-    for (let integer = 100; integer <= 998; integer += 2) {
-        const [a, b, c] = `${integer}`.split('');
-        const countA = countMap.get(+a);
-        const countB = countMap.get(+b);
-        const countC = countMap.get(+c);
+  for (let integer = 100; integer <= 998; integer += 2) {
+    const [a, b, c] = `${integer}`.split('');
+    const countA = countMap.get(+a);
+    const countB = countMap.get(+b);
+    const countC = countMap.get(+c);
 
-        if (!countA || !countB || !countC) continue;
-        if (a === b && b === c && countA < 3) continue;
-        if ((a === b || a === c) && countA < 2) continue;
-        if (b === c && countB < 2) continue;
-        result.push(integer);
-    }
-    return result;
+    if (!countA || !countB || !countC) continue;
+    if (a === b && b === c && countA < 3) continue;
+    if ((a === b || a === c) && countA < 2) continue;
+    if (b === c && countB < 2) continue;
+    result.push(integer);
+  }
+  return result;
 };
 ```

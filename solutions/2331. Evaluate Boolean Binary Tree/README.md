@@ -56,6 +56,7 @@ The root node evaluates to True, so we return true.</pre>
 ## Solutions
 
 **Solution: `Depth-First Search`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -76,24 +77,24 @@ The root node evaluates to True, so we return true.</pre>
  * @param {TreeNode} root
  * @return {boolean}
  */
-var evaluateTree = function(root) {
-    const evaluateMap = {
-        0: false,
-        1: true,
-        2: (a, b) => a || b,
-        3: (a, b) => a && b,
-    };
-    const evaluateNode = (node) => {
-        const { val } = node;
-        const evaluate = evaluateMap[val];
+const evaluateTree = function (root) {
+  const evaluateMap = {
+    0: false,
+    1: true,
+    2: (a, b) => a || b,
+    3: (a, b) => a && b,
+  };
+  const evaluateNode = node => {
+    const { val } = node;
+    const evaluate = evaluateMap[val];
 
-        if (val < 2) return evaluate;
-        const left = evaluateNode(node.left);
-        const right = evaluateNode(node.right);
+    if (val < 2) return evaluate;
+    const left = evaluateNode(node.left);
+    const right = evaluateNode(node.right);
 
-        return evaluate(left, right);
-    };
+    return evaluate(left, right);
+  };
 
-    return evaluateNode(root);
+  return evaluateNode(root);
 };
 ```

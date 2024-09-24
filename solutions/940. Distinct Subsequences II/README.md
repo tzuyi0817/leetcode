@@ -40,7 +40,8 @@ A <strong>subsequence</strong> of a string is a new string that is formed from t
 ## Solutions
 
 **Solution: `Dynamic Programming`**
-- Time complexity: <em>O(n * 26)</em>
+
+- Time complexity: <em>O(n \* 26)</em>
 - Space complexity: <em>O(26)</em>
 
 <p>&nbsp;</p>
@@ -52,17 +53,17 @@ A <strong>subsequence</strong> of a string is a new string that is formed from t
  * @param {string} s
  * @return {number}
  */
-var distinctSubseqII = function(s) {
-    const MODULO = 10 ** 9 + 7;
-    const BASE_CODE = 'a'.charCodeAt(0);
-    const dp = Array(26).fill(0);
-    const accumulate = (nums) => nums.reduce((sum, num) => sum + num);
+const distinctSubseqII = function (s) {
+  const MODULO = 10 ** 9 + 7;
+  const BASE_CODE = 'a'.charCodeAt(0);
+  const dp = Array(26).fill(0);
+  const accumulate = nums => nums.reduce((sum, num) => sum + num);
 
-    for (const letter of s) {
-        const code = letter.charCodeAt(0) - BASE_CODE;
+  for (const letter of s) {
+    const code = letter.charCodeAt(0) - BASE_CODE;
 
-        dp[code] = (accumulate(dp) + 1) % MODULO;
-    }
-    return accumulate(dp) % MODULO;
+    dp[code] = (accumulate(dp) + 1) % MODULO;
+  }
+  return accumulate(dp) % MODULO;
 };
 ```

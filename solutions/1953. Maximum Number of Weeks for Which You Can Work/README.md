@@ -62,6 +62,7 @@ Thus, one milestone in project 0 will remain unfinished.
 ## Solutions
 
 **Solution: `Greedy`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -74,10 +75,10 @@ Thus, one milestone in project 0 will remain unfinished.
  * @param {number[]} milestones
  * @return {number}
  */
-var numberOfWeeks = function(milestones) {
-    const maxMilestone = Math.max(...milestones);
-    const sumMilestone = milestones.reduce((sum, milestone) => sum + milestone);
+const numberOfWeeks = function (milestones) {
+  const maxMilestone = Math.max(...milestones);
+  const sumMilestone = milestones.reduce((sum, milestone) => sum + milestone);
 
-    return Math.min(sumMilestone, (sumMilestone - maxMilestone) * 2 + 1);
+  return Math.min(sumMilestone, (sumMilestone - maxMilestone) * 2 + 1);
 };
 ```

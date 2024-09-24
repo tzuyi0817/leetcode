@@ -54,6 +54,7 @@ The second robot will collect 0 + 1 + 3 + 3 + 0 = 7 points.
 ## Solutions
 
 **Solution: `Prefix Sum`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -66,19 +67,19 @@ The second robot will collect 0 + 1 + 3 + 3 + 0 = 7 points.
  * @param {number[][]} grid
  * @return {number}
  */
-var gridGame = function(grid) {
-    const n = grid[0].length;
-    let prefixTopSum = grid[0].reduce((sum, point) => sum + point);
-    let prefixBottomSum = 0;
-    let result = Number.MAX_SAFE_INTEGER;
+const gridGame = function (grid) {
+  const n = grid[0].length;
+  let prefixTopSum = grid[0].reduce((sum, point) => sum + point);
+  let prefixBottomSum = 0;
+  let result = Number.MAX_SAFE_INTEGER;
 
-    for (let col = 0; col < n; col++) {
-        prefixTopSum -= grid[0][col];
-        const maxCollectPoint = Math.max(prefixTopSum, prefixBottomSum);
+  for (let col = 0; col < n; col++) {
+    prefixTopSum -= grid[0][col];
+    const maxCollectPoint = Math.max(prefixTopSum, prefixBottomSum);
 
-        result = Math.min(result, maxCollectPoint);
-        prefixBottomSum += grid[1][col];
-    }
-    return result;
+    result = Math.min(result, maxCollectPoint);
+    prefixBottomSum += grid[1][col];
+  }
+  return result;
 };
 ```

@@ -48,6 +48,7 @@
 ## Solutions
 
 **Solution: `Greedy`**
+
 - Time complexity: <em>O(nlogn+mlogm)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -62,28 +63,28 @@
  * @param {number[]} worker
  * @return {number}
  */
-var maxProfitAssignment = function(difficulty, profit, worker) {
-    const n = difficulty.length;
-    const difficultyMap = difficulty.reduce((map, difficult, index) => {
-        const income = map.get(difficult) ?? 0;
+const maxProfitAssignment = function (difficulty, profit, worker) {
+  const n = difficulty.length;
+  const difficultyMap = difficulty.reduce((map, difficult, index) => {
+    const income = map.get(difficult) ?? 0;
 
-        return map.set(difficult, Math.max(income, profit[index]));
-    }, new Map());
+    return map.set(difficult, Math.max(income, profit[index]));
+  }, new Map());
 
-    worker.sort((a, b) => a - b);
-    difficulty.sort((a, b) => a - b);
+  worker.sort((a, b) => a - b);
+  difficulty.sort((a, b) => a - b);
 
-    let index = maxIncome = result = 0;
+  let index = (maxIncome = result = 0);
 
-    for (const ability of worker) {
-        while (index < n && ability >= difficulty[index]) {
-            const income = difficultyMap.get(difficulty[index]);
+  for (const ability of worker) {
+    while (index < n && ability >= difficulty[index]) {
+      const income = difficultyMap.get(difficulty[index]);
 
-            maxIncome = Math.max(income, maxIncome);
-            index += 1;
-        }
-        result += maxIncome;
+      maxIncome = Math.max(income, maxIncome);
+      index += 1;
     }
-    return result;
+    result += maxIncome;
+  }
+  return result;
 };
 ```

@@ -53,7 +53,8 @@ Note that strs[0] &gt; strs[1] - the array strs is not necessarily in lexicograp
 ## Solutions
 
 **Solution: `Dynamic Programming`**
-- Time complexity: <em>O(str.length<sup>2</sup>*n)</em>
+
+- Time complexity: <em>O(str.length<sup>2</sup>\*n)</em>
 - Space complexity: <em>O(str.length)</em>
 
 <p>&nbsp;</p>
@@ -65,23 +66,23 @@ Note that strs[0] &gt; strs[1] - the array strs is not necessarily in lexicograp
  * @param {string[]} strs
  * @return {number}
  */
-var minDeletionSize = function(strs) {
-    const m = strs[0].length;
-    const dp = Array(m).fill(1);
+const minDeletionSize = function (strs) {
+  const m = strs[0].length;
+  const dp = Array(m).fill(1);
 
-    const isSorted = (a, b) => {
-        for (const word of strs) {
-            if (word[b] > word[a]) return false;
-        }
-        return true;
-    };
-
-    for (let a = 1; a < m; a++) {
-        for (let b = 0; b < a; b++) {
-            if (!isSorted(a, b)) continue;
-            dp[a] = Math.max(dp[b] + 1, dp[a]);
-        }
+  const isSorted = (a, b) => {
+    for (const word of strs) {
+      if (word[b] > word[a]) return false;
     }
-    return m - Math.max(...dp);
+    return true;
+  };
+
+  for (let a = 1; a < m; a++) {
+    for (let b = 0; b < a; b++) {
+      if (!isSorted(a, b)) continue;
+      dp[a] = Math.max(dp[b] + 1, dp[a]);
+    }
+  }
+  return m - Math.max(...dp);
 };
 ```

@@ -51,6 +51,7 @@ Total of operations: 2 + 1 = 3.
 ## Solutions
 
 **Solution: `Simulation`**
+
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -63,23 +64,23 @@ Total of operations: 2 + 1 = 3.
  * @param {number[]} nums
  * @return {number}
  */
-var minOperations = function(nums) {
-    let maxDouble = result = 0;
+const minOperations = function (nums) {
+  let maxDouble = (result = 0);
 
-    for (let num of nums) {
-        let double = 0;
+  for (let num of nums) {
+    let double = 0;
 
-        while (num) {
-            if (num % 2) {
-                num -= 1;
-                result += 1;
-            } else {
-                num /= 2;
-                double += 1; 
-            }
-        }
-        maxDouble = Math.max(maxDouble, double);
+    while (num) {
+      if (num % 2) {
+        num -= 1;
+        result += 1;
+      } else {
+        num /= 2;
+        double += 1;
+      }
     }
-    return result + maxDouble;
+    maxDouble = Math.max(maxDouble, double);
+  }
+  return result + maxDouble;
 };
 ```

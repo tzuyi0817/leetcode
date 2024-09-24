@@ -53,6 +53,7 @@ After move 5: [[1,2,3],[4,5,0]]
 ## Solutions
 
 **Solution: `Breadth-First Search`**
+
 - Time complexity: <em>O((mn)!)</em>
 - Space complexity: <em>O((mn)!)</em>
 
@@ -65,58 +66,63 @@ After move 5: [[1,2,3],[4,5,0]]
  * @param {number[][]} board
  * @return {number}
  */
-var slidingPuzzle = function(board) {
-    const m = board.length;
-    const n = board[0].length;
+const slidingPuzzle = function (board) {
+  const m = board.length;
+  const n = board[0].length;
 
-    const isSolved = (board) => {
-        return board.join('') === '123450';
-    };
+  const isSolved = board => {
+    return board.join('') === '123450';
+  };
 
-    if (isSolved(board.flat())) return 0;
+  if (isSolved(board.flat())) return 0;
 
-    const visited = new Set();
-    const direction = [[0, 1], [0, -1], [1, 0], [-1, 0]];
-    let queue = [board.flat()];
-    let result = 0;
+  const visited = new Set();
+  const direction = [
+    [0, 1],
+    [0, -1],
+    [1, 0],
+    [-1, 0],
+  ];
+  let queue = [board.flat()];
+  let result = 0;
 
-    const findEmptySquare = (board) => {
-        const index = board.indexOf(0);
+  const findEmptySquare = board => {
+    const index = board.indexOf(0);
 
-        return { row: Math.floor(index / n), col: index % n }
-    };
+    return { row: Math.floor(index / n), col: index % n };
+  };
 
-    const moveSquare = (board, square, moveRow, moveCol) => {
-        if (moveRow < 0 || moveCol < 0 || moveRow >= m || moveCol >= n) return null;
-        const cloneBoard = [...board];
-        const index = square.row * n + square.col;
-        const moveIndex = moveRow * n + moveCol;
+  const moveSquare = (board, square, moveRow, moveCol) => {
+    if (moveRow < 0 || moveCol < 0 || moveRow >= m || moveCol >= n) return null;
+    const cloneBoard = [...board];
+    const index = square.row * n + square.col;
+    const moveIndex = moveRow * n + moveCol;
 
-        [cloneBoard[index], cloneBoard[moveIndex]] = [cloneBoard[moveIndex], cloneBoard[index]];
-        if (visited.has(cloneBoard.join(''))) return null;
-        return cloneBoard;
-    };
+    [cloneBoard[index], cloneBoard[moveIndex]] = [cloneBoard[moveIndex], cloneBoard[index]];
+    if (visited.has(cloneBoard.join(''))) return null;
+    return cloneBoard;
+  };
 
-    while (queue.length) {
-        const nextQueue = [];
+  while (queue.length) {
+    const nextQueue = [];
 
-        for (const current of queue) {
-            visited.add(current.join(''));
+    for (const current of queue) {
+      visited.add(current.join(''));
 
-            const emptySquare = findEmptySquare(current);
-            const { row, col } = emptySquare;
+      const emptySquare = findEmptySquare(current);
+      const { row, col } = emptySquare;
 
-            for (const move of direction) {
-                const nextBoard = moveSquare(current, emptySquare, row + move[0], col + move[1]);
+      for (const move of direction) {
+        const nextBoard = moveSquare(current, emptySquare, row + move[0], col + move[1]);
 
-                if (!nextBoard) continue;
-                if (isSolved(nextBoard)) return result + 1;
-                nextQueue.push(nextBoard);
-            }
-        }
-        queue = nextQueue;
-        result += 1;
+        if (!nextBoard) continue;
+        if (isSolved(nextBoard)) return result + 1;
+        nextQueue.push(nextBoard);
+      }
     }
-    return -1;
+    queue = nextQueue;
+    result += 1;
+  }
+  return -1;
 };
 ```

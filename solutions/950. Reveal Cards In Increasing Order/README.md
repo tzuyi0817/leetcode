@@ -57,6 +57,7 @@ Since all the cards revealed are in increasing order, the answer is correct.
 ## Solutions
 
 **Solution: `Simulation`**
+
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -69,18 +70,18 @@ Since all the cards revealed are in increasing order, the answer is correct.
  * @param {number[]} deck
  * @return {number[]}
  */
-var deckRevealedIncreasing = function(deck) {
-    const size = deck.length;
-    const result = Array(size);
-    const queue = deck.map((_, index) => index);
+const deckRevealedIncreasing = function (deck) {
+  const size = deck.length;
+  const result = Array(size);
+  const queue = deck.map((_, index) => index);
 
-    deck.sort((a, b) => a - b);
-    for (const card of deck) {
-        const index = queue.shift();
+  deck.sort((a, b) => a - b);
+  for (const card of deck) {
+    const index = queue.shift();
 
-        result[index] = card;
-        queue.push(queue.shift());
-    }
-    return result;
+    result[index] = card;
+    queue.push(queue.shift());
+  }
+  return result;
 };
 ```

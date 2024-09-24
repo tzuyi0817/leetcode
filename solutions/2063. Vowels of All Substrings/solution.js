@@ -2,15 +2,15 @@
  * @param {string} word
  * @return {number}
  */
-var countVowels = function(word) {
-    const vowels = ['a', 'e', 'i', 'o', 'u'];
-    let dp = result = 0;
+const countVowels = function (word) {
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  let dp = (result = 0);
 
-    for (let index = 0; index < word.length; index++) {
-        if (vowels.includes(word[index])) {
-            dp += index + 1; 
-        }
-        result += dp;
+  for (let index = 0; index < word.length; index++) {
+    if (vowels.includes(word[index])) {
+      dp += index + 1;
     }
-    return result;
+    result += dp;
+  }
+  return result;
 };

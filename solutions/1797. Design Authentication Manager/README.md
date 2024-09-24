@@ -33,6 +33,7 @@ authenticationManager.generate("bbb", 7); // Generates a new token with tokenId 
 authenticationManager.<code>renew</code>("aaa", 8); // The token with tokenId "aaa" expired at time 7, and 8 &gt;= 7, so at time 8 the <code>renew</code> request is ignored, and nothing happens.
 authenticationManager.<code>renew</code>("bbb", 10); // The token with tokenId "bbb" is unexpired at time 10, so the <code>renew</code> request is fulfilled and now the token will expire at time 15.
 authenticationManager.<code>countUnexpiredTokens</code>(15); // The token with tokenId "bbb" expires at time 15, and the token with tokenId "aaa" expired at time 7, so currently no token is unexpired, so return 0.
+
 </pre>
 
 <p>&nbsp;</p>
@@ -54,6 +55,7 @@ authenticationManager.<code>countUnexpiredTokens</code>(15); // The token with t
 ## Solutions
 
 **Solution: `Hash Map`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -65,49 +67,47 @@ authenticationManager.<code>countUnexpiredTokens</code>(15); // The token with t
 /**
  * @param {number} timeToLive
  */
-var AuthenticationManager = function(timeToLive) {
-    this.timeToLive = timeToLive;
-    this.authMap = new Map();
+const AuthenticationManager = function (timeToLive) {
+  this.timeToLive = timeToLive;
+  this.authMap = new Map();
 };
 
-/** 
- * @param {string} tokenId 
+/**
+ * @param {string} tokenId
  * @param {number} currentTime
  * @return {void}
  */
-AuthenticationManager.prototype.generate = function(tokenId, currentTime) {
-    this.authMap.set(tokenId, currentTime + this.timeToLive);
+AuthenticationManager.prototype.generate = function (tokenId, currentTime) {
+  this.authMap.set(tokenId, currentTime + this.timeToLive);
 };
 
-/** 
- * @param {string} tokenId 
+/**
+ * @param {string} tokenId
  * @param {number} currentTime
  * @return {void}
  */
-AuthenticationManager.prototype.renew = function(tokenId, currentTime) {
-    if (!this.authMap.has(tokenId)) return;
-    const expiredTime = this.authMap.get(tokenId);
+AuthenticationManager.prototype.renew = function (tokenId, currentTime) {
+  if (!this.authMap.has(tokenId)) return;
+  const expiredTime = this.authMap.get(tokenId);
 
-    expiredTime <= currentTime
-        ? this.authMap.delete(tokenId)
-        : this.authMap.set(tokenId, currentTime + this.timeToLive);
+  expiredTime <= currentTime ? this.authMap.delete(tokenId) : this.authMap.set(tokenId, currentTime + this.timeToLive);
 };
 
-/** 
+/**
  * @param {number} currentTime
  * @return {number}
  */
-AuthenticationManager.prototype.countUnexpiredTokens = function(currentTime) {
-    let count = 0;
+AuthenticationManager.prototype.countUnexpiredTokens = function (currentTime) {
+  let count = 0;
 
-    this.authMap.forEach(expiredTime => {
-        if (expiredTime > currentTime) count += 1;
-    });
+  this.authMap.forEach(expiredTime => {
+    if (expiredTime > currentTime) count += 1;
+  });
 
-    return count;
+  return count;
 };
 
-/** 
+/**
  * Your AuthenticationManager object will be instantiated and called as such:
  * var obj = new AuthenticationManager(timeToLive)
  * obj.generate(tokenId,currentTime)

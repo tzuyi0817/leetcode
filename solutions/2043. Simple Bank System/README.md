@@ -58,6 +58,7 @@ bank.withdraw(10, 50);   // return false, it is invalid because account 10 does 
 ## Solutions
 
 **Solution: `Hash Table`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -69,53 +70,53 @@ bank.withdraw(10, 50);   // return false, it is invalid because account 10 does 
 /**
  * @param {number[]} balance
  */
-var Bank = function(balance) {
-    this.balance = balance;
+const Bank = function (balance) {
+  this.balance = balance;
 };
 
 Bank.prototype.isValidAccount = function (account, money = 0) {
-    if (this.balance[account - 1] === undefined) return false;
-    if (this.balance[account - 1] < money) return false;
-    return true;
-}
+  if (this.balance[account - 1] === undefined) return false;
+  if (this.balance[account - 1] < money) return false;
+  return true;
+};
 
-/** 
- * @param {number} account1 
- * @param {number} account2 
+/**
+ * @param {number} account1
+ * @param {number} account2
  * @param {number} money
  * @return {boolean}
  */
-Bank.prototype.transfer = function(account1, account2, money) {
-    if (!this.isValidAccount(account2)) return false;
-    
-    return this.withdraw(account1, money) && this.deposit(account2, money);
+Bank.prototype.transfer = function (account1, account2, money) {
+  if (!this.isValidAccount(account2)) return false;
+
+  return this.withdraw(account1, money) && this.deposit(account2, money);
 };
 
-/** 
- * @param {number} account 
+/**
+ * @param {number} account
  * @param {number} money
  * @return {boolean}
  */
-Bank.prototype.deposit = function(account, money) {
-    if (!this.isValidAccount(account)) return false;
+Bank.prototype.deposit = function (account, money) {
+  if (!this.isValidAccount(account)) return false;
 
-    this.balance[account - 1] += money;
-    return true;
+  this.balance[account - 1] += money;
+  return true;
 };
 
-/** 
- * @param {number} account 
+/**
+ * @param {number} account
  * @param {number} money
  * @return {boolean}
  */
-Bank.prototype.withdraw = function(account, money) {
-    if (!this.isValidAccount(account, money)) return false;
+Bank.prototype.withdraw = function (account, money) {
+  if (!this.isValidAccount(account, money)) return false;
 
-    this.balance[account - 1] -= money;
-    return true;
+  this.balance[account - 1] -= money;
+  return true;
 };
 
-/** 
+/**
  * Your Bank object will be instantiated and called as such:
  * var obj = new Bank(balance)
  * var param_1 = obj.transfer(account1,account2,money)

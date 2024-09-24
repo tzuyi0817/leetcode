@@ -47,6 +47,7 @@ Explanation:</strong> Increment the first element three times and the second ele
 ## Solutions
 
 **Solution: `Sliding Window`**
+
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -60,21 +61,21 @@ Explanation:</strong> Increment the first element three times and the second ele
  * @param {number} k
  * @return {number}
  */
-var maxFrequency = function(nums, k) {
-    let sum = left = result = 0;
+const maxFrequency = function (nums, k) {
+  let sum = (left = result = 0);
 
-    nums.sort((a, b) => a - b);
+  nums.sort((a, b) => a - b);
 
-    for (let index = 0; index < nums.length; index++) {
-        const num = nums[index];
+  for (let index = 0; index < nums.length; index++) {
+    const num = nums[index];
 
-        sum += num;
-        while (sum + k < num * (index - left + 1)) {
-            sum -= nums[left];
-            left += 1;
-        }
-        result = Math.max(index - left + 1, result);
+    sum += num;
+    while (sum + k < num * (index - left + 1)) {
+      sum -= nums[left];
+      left += 1;
     }
-    return result;
+    result = Math.max(index - left + 1, result);
+  }
+  return result;
 };
 ```

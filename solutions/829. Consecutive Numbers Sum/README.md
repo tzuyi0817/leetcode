@@ -39,6 +39,7 @@
 ## Solutions
 
 **Solution: `Math`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -51,16 +52,16 @@
  * @param {number} n
  * @return {number}
  */
-var consecutiveNumbersSum = function(n) {
-    let result = 0;
-    let triangleNum = 0; // count * (count - 1) / 2
+const consecutiveNumbersSum = function (n) {
+  let result = 0;
+  let triangleNum = 0; // count * (count - 1) / 2
 
-    for (let count = 1; triangleNum + count <= n; count++) {
-        if ((n - triangleNum) % count === 0) {
-            result += 1;
-        }
-        triangleNum += count;
+  for (let count = 1; triangleNum + count <= n; count++) {
+    if ((n - triangleNum) % count === 0) {
+      result += 1;
     }
-    return result;
+    triangleNum += count;
+  }
+  return result;
 };
 ```

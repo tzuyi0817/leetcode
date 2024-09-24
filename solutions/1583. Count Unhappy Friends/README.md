@@ -69,6 +69,7 @@ Friends 0 and 2 are happy.
 ## Solutions
 
 **Solution: `Simulation`**
+
 - Time complexity: <em>O(n<sup>2</sup>)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -83,25 +84,25 @@ Friends 0 and 2 are happy.
  * @param {number[][]} pairs
  * @return {number}
  */
-var unhappyFriends = function(n, preferences, pairs) {
-    const pairPreferenceMap = pairs.reduce((map, [x, y]) => {
-        map.set(x, preferences[x].indexOf(y));
-        return map.set(y, preferences[y].indexOf(x));
-    }, new Map());
-    let result = 0;
+const unhappyFriends = function (n, preferences, pairs) {
+  const pairPreferenceMap = pairs.reduce((map, [x, y]) => {
+    map.set(x, preferences[x].indexOf(y));
+    return map.set(y, preferences[y].indexOf(x));
+  }, new Map());
+  let result = 0;
 
-    for (let friend = 0; friend < n; friend++) {
-        const pairPreference = pairPreferenceMap.get(friend);
+  for (let friend = 0; friend < n; friend++) {
+    const pairPreference = pairPreferenceMap.get(friend);
 
-        for (let index = 0; index < pairPreference; index++) {
-            const partner = preferences[friend][index];
+    for (let index = 0; index < pairPreference; index++) {
+      const partner = preferences[friend][index];
 
-            if (preferences[partner].indexOf(friend) < pairPreferenceMap.get(partner)) {
-                result += 1;
-                break;
-            }
-        }
+      if (preferences[partner].indexOf(friend) < pairPreferenceMap.get(partner)) {
+        result += 1;
+        break;
+      }
     }
-    return result;
+  }
+  return result;
 };
 ```

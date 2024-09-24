@@ -53,6 +53,7 @@
 ## Solutions
 
 **Solution: `Hash Table`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -65,23 +66,23 @@
  * @param {string[]} names
  * @return {string[]}
  */
-var getFolderNames = function(names) {
-    const folderMap = new Map();
+const getFolderNames = function (names) {
+  const folderMap = new Map();
 
-    return names.map(name => {
-        if (folderMap.has(name)) {
-            let count = folderMap.get(name);
+  return names.map(name => {
+    if (folderMap.has(name)) {
+      let count = folderMap.get(name);
 
-            while (folderMap.has(`${name}(${count})`)) count += 1;
-            const uniqueName = `${name}(${count})`;
+      while (folderMap.has(`${name}(${count})`)) count += 1;
+      const uniqueName = `${name}(${count})`;
 
-            folderMap.set(name, count + 1);
-            folderMap.set(uniqueName, 1);
-            return uniqueName;
-        } else {
-            folderMap.set(name, 1);
-            return name;
-        }
-    });
+      folderMap.set(name, count + 1);
+      folderMap.set(uniqueName, 1);
+      return uniqueName;
+    } else {
+      folderMap.set(name, 1);
+      return name;
+    }
+  });
 };
 ```

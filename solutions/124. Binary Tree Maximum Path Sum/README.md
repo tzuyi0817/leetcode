@@ -37,6 +37,7 @@
 ## Solutions
 
 **Solution: `Depth-First Search`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -57,21 +58,21 @@
  * @param {TreeNode} root
  * @return {number}
  */
-var maxPathSum = function(root) {
-    let result = Number.MIN_SAFE_INTEGER;
-    const sumPath = (node = root) => {
-        if (!node) return 0;
-        const { val, left, right } = node;
-        const leftSum = val + sumPath(left);
-        const rightSum = val + sumPath(right);
-        const maxPathSum = Math.max(leftSum, rightSum, val);
-        const sum = leftSum + rightSum - val;
+const maxPathSum = function (root) {
+  let result = Number.MIN_SAFE_INTEGER;
+  const sumPath = (node = root) => {
+    if (!node) return 0;
+    const { val, left, right } = node;
+    const leftSum = val + sumPath(left);
+    const rightSum = val + sumPath(right);
+    const maxPathSum = Math.max(leftSum, rightSum, val);
+    const sum = leftSum + rightSum - val;
 
-        result = Math.max(sum, result, maxPathSum);
-        return maxPathSum;
-    };
+    result = Math.max(sum, result, maxPathSum);
+    return maxPathSum;
+  };
 
-    sumPath();
-    return result;
+  sumPath();
+  return result;
 };
 ```

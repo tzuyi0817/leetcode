@@ -53,8 +53,9 @@ For the table 12: James, Ratesh and Amadeus order "Fried Chicken".
 ## Solutions
 
 **Solution: `Hash Table`**
-- Time complexity: <em>O(n+tableNumber*foodItem)</em>
-- Space complexity: <em>O(ableNumber*foodItem)</em>
+
+- Time complexity: <em>O(n+tableNumber\*foodItem)</em>
+- Space complexity: <em>O(ableNumber\*foodItem)</em>
 
 <p>&nbsp;</p>
 
@@ -65,25 +66,28 @@ For the table 12: James, Ratesh and Amadeus order "Fried Chicken".
  * @param {string[][]} orders
  * @return {string[][]}
  */
-var displayTable = function(orders) {
-    const foods = new Set();
-    const orderMap = orders.reduce((map, [customer, table, food]) => {
-        const order = map.get(table) ?? {};
+const displayTable = function (orders) {
+  const foods = new Set();
+  const orderMap = orders.reduce((map, [customer, table, food]) => {
+    const order = map.get(table) ?? {};
 
-        order[food] = (order[food] ?? 0) + 1;
-        foods.add(food);
-        return map.set(table, order);
-    }, new Map());
-    const alphabeticalFoods = [...foods].sort();
-    const title = ['Table', ...alphabeticalFoods];
-    const tables = [...orderMap.keys()].sort((a, b) => a - b);
-    
-    return tables.reduce((result, table) => {
-        const order = orderMap.get(table);
-        const counts = alphabeticalFoods.map(food => `${order[food] ?? 0}`);
-        
-        result.push([table, ...counts]);
-        return result;
-    }, [title]);
+    order[food] = (order[food] ?? 0) + 1;
+    foods.add(food);
+    return map.set(table, order);
+  }, new Map());
+  const alphabeticalFoods = [...foods].sort();
+  const title = ['Table', ...alphabeticalFoods];
+  const tables = [...orderMap.keys()].sort((a, b) => a - b);
+
+  return tables.reduce(
+    (result, table) => {
+      const order = orderMap.get(table);
+      const counts = alphabeticalFoods.map(food => `${order[food] ?? 0}`);
+
+      result.push([table, ...counts]);
+      return result;
+    },
+    [title],
+  );
 };
 ```

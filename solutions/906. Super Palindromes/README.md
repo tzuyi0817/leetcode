@@ -38,7 +38,8 @@ Note that 676 is not a superpalindrome: 26 * 26 = 676, but 26 is not a palindrom
 ## Solutions
 
 **Solution: `Enumeration`**
-- Time complexity: <em>O(10<sup>right.length/2</sup> * right.length)</em>
+
+- Time complexity: <em>O(10<sup>right.length/2</sup> \* right.length)</em>
 - Space complexity: <em>O(right.length/2)</em>
 
 <p>&nbsp;</p>
@@ -51,41 +52,41 @@ Note that 676 is not a superpalindrome: 26 * 26 = 676, but 26 is not a palindrom
  * @param {string} right
  * @return {number}
  */
-var superpalindromesInRange = function(left, right) {
-    const MAX_LENGTH = Math.ceil(right.length / 2);
-    let result = 0;
+const superpalindromesInRange = function (left, right) {
+  const MAX_LENGTH = Math.ceil(right.length / 2);
+  let result = 0;
 
-    const isPalindrome = (num) => {
-        let left = 0;
-        let right = num.length - 1;
+  const isPalindrome = num => {
+    let left = 0;
+    let right = num.length - 1;
 
-        while (left < right) {
-            if (num[left] !== num[right]) return false;
-            left += 1;
-            right -= 1;
-        }
-        return true;
-    };
+    while (left < right) {
+      if (num[left] !== num[right]) return false;
+      left += 1;
+      right -= 1;
+    }
+    return true;
+  };
 
-    const createPalindrome = (current) => {
-        if (current.length > MAX_LENGTH) return;
-        if (current && current[0] !== '0') {
-            const num = BigInt(current) ** 2n;
+  const createPalindrome = current => {
+    if (current.length > MAX_LENGTH) return;
+    if (current && current[0] !== '0') {
+      const num = BigInt(current) ** 2n;
 
-            if (num > BigInt(right)) return;
-            if (num >= BigInt(left) && isPalindrome(`${num}`)) result += 1;
-        }
-
-        for (let num = 0; num <= 9; num++) {
-            createPalindrome(`${num}${current}${num}`);
-        }
-    };
-
-    createPalindrome('');
+      if (num > BigInt(right)) return;
+      if (num >= BigInt(left) && isPalindrome(`${num}`)) result += 1;
+    }
 
     for (let num = 0; num <= 9; num++) {
-        createPalindrome(`${num}`);
+      createPalindrome(`${num}${current}${num}`);
     }
-    return result;
+  };
+
+  createPalindrome('');
+
+  for (let num = 0; num <= 9; num++) {
+    createPalindrome(`${num}`);
+  }
+  return result;
 };
 ```

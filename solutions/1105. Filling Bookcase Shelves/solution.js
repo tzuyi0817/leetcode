@@ -3,23 +3,23 @@
  * @param {number} shelfWidth
  * @return {number}
  */
-var minHeightShelves = function(books, shelfWidth) {
-    const n = books.length;
-    const dp = Array(n).fill(Number.MAX_SAFE_INTEGER);
+const minHeightShelves = function (books, shelfWidth) {
+  const n = books.length;
+  const dp = Array(n).fill(Number.MAX_SAFE_INTEGER);
 
-    dp[-1] = 0;
+  dp[-1] = 0;
 
-    for (let index = 0; index < n; index++) {
-        let currentThickness = currentHeight = 0;
+  for (let index = 0; index < n; index++) {
+    let currentThickness = (currentHeight = 0);
 
-        for (let book = index; book >= 0; book--) {
-            const [thickness, height] = books[book];
+    for (let book = index; book >= 0; book--) {
+      const [thickness, height] = books[book];
 
-            currentThickness += thickness;
-            if (currentThickness > shelfWidth) break;
-            currentHeight = Math.max(height, currentHeight);
-            dp[index] = Math.min(dp[book - 1] + currentHeight, dp[index]);
-        }
+      currentThickness += thickness;
+      if (currentThickness > shelfWidth) break;
+      currentHeight = Math.max(height, currentHeight);
+      dp[index] = Math.min(dp[book - 1] + currentHeight, dp[index]);
     }
-    return dp[n - 1];
+  }
+  return dp[n - 1];
 };

@@ -66,6 +66,7 @@ The profit was never positive, so return -1.
 ## Solutions
 
 **Solution: `Simulation`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -80,28 +81,26 @@ The profit was never positive, so return -1.
  * @param {number} runningCost
  * @return {number}
  */
-var minOperationsMaxProfit = function(customers, boardingCost, runningCost) {
-    const result = { rotate: -1, profit: 0 };
-    let wait = profit = rotate = 0;
+const minOperationsMaxProfit = function (customers, boardingCost, runningCost) {
+  const result = { rotate: -1, profit: 0 };
+  let wait = (profit = rotate = 0);
 
-    for (const customer of customers) {
-        wait += customer;
-        runningWheel();
-    }
-    while (wait > 0) runningWheel();
+  for (const customer of customers) {
+    wait += customer;
+    runningWheel();
+  }
+  while (wait > 0) runningWheel();
 
-    return result.rotate;
+  return result.rotate;
 
-    function runningWheel() {
-        rotate += 1;
-        profit += wait >= 4
-            ? 4 * boardingCost - runningCost
-            : wait * boardingCost - runningCost;
+  function runningWheel() {
+    rotate += 1;
+    profit += wait >= 4 ? 4 * boardingCost - runningCost : wait * boardingCost - runningCost;
 
-        wait = Math.max(wait - 4, 0);
-        if (profit < 0 || result.profit >= profit) return;
-        result.rotate = rotate;
-        result.profit = profit;
-    }
+    wait = Math.max(wait - 4, 0);
+    if (profit < 0 || result.profit >= profit) return;
+    result.rotate = rotate;
+    result.profit = profit;
+  }
 };
 ```

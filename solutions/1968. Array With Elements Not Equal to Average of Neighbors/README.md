@@ -43,6 +43,7 @@ When i=3, nums[i] = 2, and the average of its neighbors is (6+0) / 2 = 3.
 ## Solutions
 
 **Solution: `Sort`**
+
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -55,12 +56,12 @@ When i=3, nums[i] = 2, and the average of its neighbors is (6+0) / 2 = 3.
  * @param {number[]} nums
  * @return {number[]}
  */
-var rearrangeArray = function(nums) {
-    nums.sort((a, b) => a - b);
+const rearrangeArray = function (nums) {
+  nums.sort((a, b) => a - b);
 
-    for (let index = 1; index < nums.length; index += 2) {
-        [nums[index], nums[index - 1]] = [nums[index - 1], nums[index]];
-    }
-    return nums;
+  for (let index = 1; index < nums.length; index += 2) {
+    [nums[index], nums[index - 1]] = [nums[index - 1], nums[index]];
+  }
+  return nums;
 };
 ```

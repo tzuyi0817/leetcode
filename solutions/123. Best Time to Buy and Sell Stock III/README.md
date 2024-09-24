@@ -45,6 +45,7 @@ Note that you cannot buy on day 1, buy on day 2 and sell them later, as you are 
 ## Solutions
 
 **Solution: `Dynamic Programming`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -57,16 +58,16 @@ Note that you cannot buy on day 1, buy on day 2 and sell them later, as you are 
  * @param {number[]} prices
  * @return {number}
  */
-var maxProfit = function(prices) {
-    const first = { sell: 0, buy: Number.MIN_SAFE_INTEGER };
-    const second = { sell: 0, buy: Number.MIN_SAFE_INTEGER };
+const maxProfit = function (prices) {
+  const first = { sell: 0, buy: Number.MIN_SAFE_INTEGER };
+  const second = { sell: 0, buy: Number.MIN_SAFE_INTEGER };
 
-    for (const price of prices) {
-        second.sell = Math.max(second.sell, second.buy + price);
-        second.buy = Math.max(second.buy, first.sell - price);
-        first.sell = Math.max(first.sell, first.buy + price);
-        first.buy = Math.max(first.buy, -price);
-    }
-    return second.sell;
+  for (const price of prices) {
+    second.sell = Math.max(second.sell, second.buy + price);
+    second.buy = Math.max(second.buy, first.sell - price);
+    first.sell = Math.max(first.sell, first.buy + price);
+    first.buy = Math.max(first.buy, -price);
+  }
+  return second.sell;
 };
 ```

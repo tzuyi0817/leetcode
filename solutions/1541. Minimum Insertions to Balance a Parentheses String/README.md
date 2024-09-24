@@ -55,6 +55,7 @@
 ## Solutions
 
 **Solution: `Greedy`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -67,22 +68,19 @@
  * @param {string} s
  * @return {number}
  */
-var minInsertions = function(s) {
-    let left = result = 0;
+const minInsertions = function (s) {
+  let left = (result = 0);
 
-    for (let index = 0; index < s.length; index++) {
-        if (s[index] === '(') left += 1;
-        else if (s[index + 1] === ')') {
-            left ? left -= 1 : result += 1;
-            index += 1;
-        } else {
-            if (left) {
-                left -= 1;
-                result += 1;
-            } 
-            else result += 2;
-        }
-    }
-    return result + left * 2;
+  for (let index = 0; index < s.length; index++) {
+    if (s[index] === '(') left += 1;
+    else if (s[index + 1] === ')') {
+      left ? (left -= 1) : (result += 1);
+      index += 1;
+    } else if (left) {
+      left -= 1;
+      result += 1;
+    } else result += 2;
+  }
+  return result + left * 2;
 };
 ```

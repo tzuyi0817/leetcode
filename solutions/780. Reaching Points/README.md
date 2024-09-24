@@ -43,6 +43,7 @@ One series of moves that transforms the starting point to the target is:
 ## Solutions
 
 **Solution: `Math`**
+
 - Time complexity: <em>O(logMax(tx,ty))</em>
 - Space complexity: <em>O(1)</em>
 
@@ -58,13 +59,13 @@ One series of moves that transforms the starting point to the target is:
  * @param {number} ty
  * @return {boolean}
  */
-var reachingPoints = function(sx, sy, tx, ty) {
-    while (tx >= sx && ty >= sy) {
-        tx > ty ? tx %= ty : ty %= tx;
+const reachingPoints = function (sx, sy, tx, ty) {
+  while (tx >= sx && ty >= sy) {
+    tx > ty ? (tx %= ty) : (ty %= tx);
 
-        if (sx === tx) return (ty - sy) % sx === 0;
-        if (sy === ty) return (tx - sx) % sy === 0;
-    }
-    return sx === tx && sy === ty;
+    if (sx === tx) return (ty - sy) % sx === 0;
+    if (sy === ty) return (tx - sx) % sy === 0;
+  }
+  return sx === tx && sy === ty;
 };
 ```

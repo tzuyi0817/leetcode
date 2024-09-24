@@ -54,6 +54,7 @@ They are strictly increasing from left to right: 1 &lt; 3 &lt; 4 &lt; 6 &lt; 12.
 ## Solutions
 
 **Solution: `String`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -66,12 +67,12 @@ They are strictly increasing from left to right: 1 &lt; 3 &lt; 4 &lt; 6 &lt; 12.
  * @param {string} s
  * @return {boolean}
  */
-var areNumbersAscending = function(s) {
-    const numbers = s.replace(/[a-z]/g, '').split(' ').filter(Boolean);
+const areNumbersAscending = function (s) {
+  const numbers = s.replace(/[a-z]/g, '').split(' ').filter(Boolean);
 
-    for (let index = 1; index < numbers.length; index++) {
-        if (+numbers[index] <= +numbers[index - 1]) return false;
-    }
-    return true;
+  for (let index = 1; index < numbers.length; index++) {
+    if (+numbers[index] <= +numbers[index - 1]) return false;
+  }
+  return true;
 };
 ```

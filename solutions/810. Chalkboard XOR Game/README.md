@@ -47,6 +47,7 @@ If Alice erases 2 first, now nums become [1, 1]. The bitwise XOR of all the elem
 ## Solutions
 
 **Solution: `Brainteaser`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -59,12 +60,12 @@ If Alice erases 2 first, now nums become [1, 1]. The bitwise XOR of all the elem
  * @param {number[]} nums
  * @return {boolean}
  */
-var xorGame = function(nums) {
-    const n = nums.length;
-    const xor = nums.reduce((result, num) => result ^ num);
+const xorGame = function (nums) {
+  const n = nums.length;
+  const xor = nums.reduce((result, num) => result ^ num);
 
-    if (!xor) return true;
+  if (!xor) return true;
 
-    return n % 2 === 0;
+  return n % 2 === 0;
 };
 ```

@@ -15,10 +15,3 @@ hero:
       text: GitHub
       link: https://github.com/tzuyi0817/leetcode
 ---
-
-<style>
-:root {
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #ffa116 30%, #FFD700);
-}
-</style>

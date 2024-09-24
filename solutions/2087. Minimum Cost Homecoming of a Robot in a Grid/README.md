@@ -53,6 +53,7 @@ The total cost is 3 + 2 + 6 + 7 = 18</pre>
 ## Solutions
 
 **Solution: `Greedy`**
+
 - Time complexity: <em>O(m+n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -68,17 +69,17 @@ The total cost is 3 + 2 + 6 + 7 = 18</pre>
  * @param {number[]} colCosts
  * @return {number}
  */
-var minCost = function(startPos, homePos, rowCosts, colCosts) {
-    const [homeRow, homeCol] = homePos;
-    let [row, col] = startPos;
-    let result = 0;
+const minCost = function (startPos, homePos, rowCosts, colCosts) {
+  const [homeRow, homeCol] = homePos;
+  let [row, col] = startPos;
+  let result = 0;
 
-    while (row !== homeRow) {
-        result += row > homeRow ? rowCosts[--row] : rowCosts[++row];
-    }
-    while (col !== homeCol) {
-        result += col > homeCol ? colCosts[--col] : colCosts[++col];
-    }
-    return result;
+  while (row !== homeRow) {
+    result += row > homeRow ? rowCosts[--row] : rowCosts[++row];
+  }
+  while (col !== homeCol) {
+    result += col > homeCol ? colCosts[--col] : colCosts[++col];
+  }
+  return result;
 };
 ```

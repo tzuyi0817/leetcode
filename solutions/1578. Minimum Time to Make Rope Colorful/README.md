@@ -48,6 +48,7 @@ There are no longer two consecutive balloons of the same color. Total time = 1 +
 ## Solutions
 
 **Solution: `Dynamic Programming`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -61,22 +62,22 @@ There are no longer two consecutive balloons of the same color. Total time = 1 +
  * @param {number[]} neededTime
  * @return {number}
  */
-var minCost = function(colors, neededTime) {
-    let currentColor = '';
-    let result = currentMaxTime = 0;
+const minCost = function (colors, neededTime) {
+  let currentColor = '';
+  let result = (currentMaxTime = 0);
 
-    for (let index = 0; index < colors.length; index++) {
-        const color = colors[index];
-        const time = neededTime[index];
+  for (let index = 0; index < colors.length; index++) {
+    const color = colors[index];
+    const time = neededTime[index];
 
-        if (currentColor === color) {
-            result += Math.min(time, currentMaxTime);
-            currentMaxTime = Math.max(time, currentMaxTime);
-        } else {
-            currentColor = color;
-            currentMaxTime = time;
-        }
+    if (currentColor === color) {
+      result += Math.min(time, currentMaxTime);
+      currentMaxTime = Math.max(time, currentMaxTime);
+    } else {
+      currentColor = color;
+      currentMaxTime = time;
     }
-    return result;
+  }
+  return result;
 };
 ```

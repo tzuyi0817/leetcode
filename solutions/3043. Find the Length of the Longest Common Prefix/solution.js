@@ -3,7 +3,7 @@
  * @param {number[]} arr2
  * @return {number}
  */
-var longestCommonPrefix = function (arr1, arr2) {
+const longestCommonPrefix = function (arr1, arr2) {
   const trie = new Map();
 
   for (const num of arr1) {

@@ -47,6 +47,7 @@ The person at&nbsp;position 0 has successfully bought 5 tickets and it took 4 + 
 ## Solutions
 
 **Solution: `Simulation`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -60,13 +61,13 @@ The person at&nbsp;position 0 has successfully bought 5 tickets and it took 4 + 
  * @param {number} k
  * @return {number}
  */
-var timeRequiredToBuy = function(tickets, k) {
-    const target = tickets[k];
+const timeRequiredToBuy = function (tickets, k) {
+  const target = tickets[k];
 
-    return tickets.reduce((result, time, index) => {
-        const maxTime = index > k ? target - 1 : target;
+  return tickets.reduce((result, time, index) => {
+    const maxTime = index > k ? target - 1 : target;
 
-        return result + Math.min(maxTime, time);
-    }, 0);
+    return result + Math.min(maxTime, time);
+  }, 0);
 };
 ```

@@ -40,6 +40,7 @@
 ## Solutions
 
 **Solution: `Union Find`**
+
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -52,37 +53,37 @@
  * @param {number[][]} edges
  * @return {number[]}
  */
-var findRedundantDirectedConnection = function(edges) {
-    const graph = new Map();
-    const n = edges.length;
-    let firstEntrance = secondEntrance = null;
+const findRedundantDirectedConnection = function (edges) {
+  const graph = new Map();
+  const n = edges.length;
+  let firstEntrance = (secondEntrance = null);
 
-    for (const edge of edges) {
-        const [parent, child] = edge;
+  for (const edge of edges) {
+    const [parent, child] = edge;
 
-        if (graph.has(child)) {
-            firstEntrance = [graph.get(child), child];
-            secondEntrance = [parent, child];
-            edge[1] = 0;
-            continue;
-        }
-        graph.set(child, parent);
+    if (graph.has(child)) {
+      firstEntrance = [graph.get(child), child];
+      secondEntrance = [parent, child];
+      edge[1] = 0;
+      continue;
     }
-    
-    const unionFind = (node) => {
-        if (!graph.has(node)) return node;
-        return unionFind(graph.get(node));
-    };
+    graph.set(child, parent);
+  }
 
-    graph.clear();
+  const unionFind = node => {
+    if (!graph.has(node)) return node;
+    return unionFind(graph.get(node));
+  };
 
-    for (const [parent, child] of edges) {
-        const from = unionFind(parent);
-        const to = unionFind(child);
+  graph.clear();
 
-        if (from === to) return firstEntrance ?? [parent, child];
-        graph.set(to, from);
-    }
-    return secondEntrance;
+  for (const [parent, child] of edges) {
+    const from = unionFind(parent);
+    const to = unionFind(child);
+
+    if (from === to) return firstEntrance ?? [parent, child];
+    graph.set(to, from);
+  }
+  return secondEntrance;
 };
 ```

@@ -35,6 +35,7 @@
 ## Solutions
 
 **Solution: `Greedy + Depth-First Search`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(h)</em>
 
@@ -55,26 +56,26 @@
  * @param {TreeNode} root
  * @return {number}
  */
-var minCameraCover = function(root) {
-    const LEAF = 0;
-    const CAMERA = 1;
-    const PARENT = 2;
-    let result = 0;
+const minCameraCover = function (root) {
+  const LEAF = 0;
+  const CAMERA = 1;
+  const PARENT = 2;
+  let result = 0;
 
-    const setupCamera = (node) => {
-        if (!node) return PARENT;
-        const left = setupCamera(node.left);
-        const right = setupCamera(node.right);
+  const setupCamera = node => {
+    if (!node) return PARENT;
+    const left = setupCamera(node.left);
+    const right = setupCamera(node.right);
 
-        if (left === LEAF || right === LEAF) {
-            result += 1;
-            return CAMERA;
-        }
-        return left === CAMERA || right === CAMERA ? PARENT : LEAF;
-    };
+    if (left === LEAF || right === LEAF) {
+      result += 1;
+      return CAMERA;
+    }
+    return left === CAMERA || right === CAMERA ? PARENT : LEAF;
+  };
 
-    const node = setupCamera(root);
+  const node = setupCamera(root);
 
-    return result + (node === LEAF ? 1 : 0);
+  return result + (node === LEAF ? 1 : 0);
 };
 ```

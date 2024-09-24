@@ -12,20 +12,20 @@
  * @param {ListNode} list2
  * @return {ListNode}
  */
-var mergeInBetween = function(list1, a, b, list2) {
-    let currentNode = list1;
-    let current = 0;
-    let leftNode = rightNode = null;
+const mergeInBetween = function (list1, a, b, list2) {
+  let currentNode = list1;
+  let current = 0;
+  let leftNode = (rightNode = null);
 
-    while (current <= b) {
-        if (current === a - 1) leftNode = currentNode;
-        currentNode = currentNode.next;
-        current += 1;
-    }
-    rightNode = currentNode;
-    leftNode.next = list2;
-    
-    while (leftNode.next) leftNode = leftNode.next;
-    leftNode.next = rightNode;
-    return list1;
+  while (current <= b) {
+    if (current === a - 1) leftNode = currentNode;
+    currentNode = currentNode.next;
+    current += 1;
+  }
+  rightNode = currentNode;
+  leftNode.next = list2;
+
+  while (leftNode.next) leftNode = leftNode.next;
+  leftNode.next = rightNode;
+  return list1;
 };

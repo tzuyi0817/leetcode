@@ -1,0 +1,14 @@
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #ffa116 30%, #ffd700);
+}
+
+.elfjS > pre,
+._1l1MA > pre,
+.xFUwe > pre {
+  border-radius: 8px;
+  background-color: var(--vp-code-block-bg);
+  padding: 20px 24px;
+  font-size: 14px;
+  white-space: pre-wrap;
+}

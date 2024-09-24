@@ -52,6 +52,7 @@ So the average waiting time = (2 + 6 + 4 + 1) / 4 = 3.25.
 ## Solutions
 
 **Solution: `Simulation`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -64,13 +65,13 @@ So the average waiting time = (2 + 6 + 4 + 1) / 4 = 3.25.
  * @param {number[][]} customers
  * @return {number}
  */
-var averageWaitingTime = function(customers) {
-    let wait = prepare = 0;
-    
-    for (const [arrival, time] of customers) {
-        prepare = Math.max(arrival, prepare) + time;
-        wait += prepare - arrival;
-    }
-    return wait / customers.length;
+const averageWaitingTime = function (customers) {
+  let wait = (prepare = 0);
+
+  for (const [arrival, time] of customers) {
+    prepare = Math.max(arrival, prepare) + time;
+    wait += prepare - arrival;
+  }
+  return wait / customers.length;
 };
 ```

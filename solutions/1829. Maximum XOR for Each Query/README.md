@@ -57,6 +57,7 @@
 ## Solutions
 
 **Solution: `Prefix Sum`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -70,13 +71,15 @@
  * @param {number} maximumBit
  * @return {number[]}
  */
-var getMaximumXor = function(nums, maximumBit) {
-    const max = (1 << maximumBit) - 1;
-    let current = 0;
+const getMaximumXor = function (nums, maximumBit) {
+  const max = (1 << maximumBit) - 1;
+  let current = 0;
 
-    return nums.map(num => {
-        current ^= num;
-        return max ^ current;
-    }).reverse();
+  return nums
+    .map(num => {
+      current ^= num;
+      return max ^ current;
+    })
+    .reverse();
 };
 ```

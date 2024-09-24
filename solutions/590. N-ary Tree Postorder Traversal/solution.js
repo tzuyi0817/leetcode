@@ -10,19 +10,19 @@
  * @param {_Node|null} root
  * @return {number[]}
  */
-var postorder = function(root) {
-    const result = [];
+const postorder = function (root) {
+  const result = [];
 
-    const dfsTree = (node) => {
-        if (!node) return;
-        const { val, children } = node;
+  const dfsTree = node => {
+    if (!node) return;
+    const { val, children } = node;
 
-        for (const child of children) {
-            dfsTree(child);
-        }
-        result.push(val);
-    };
+    for (const child of children) {
+      dfsTree(child);
+    }
+    result.push(val);
+  };
 
-    dfsTree(root);
-    return result;
+  dfsTree(root);
+  return result;
 };

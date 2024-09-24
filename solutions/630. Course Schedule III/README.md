@@ -47,6 +47,7 @@ The 4<sup>th</sup> course cannot be taken now, since you will finish it on the 3
 ## Solutions
 
 **Solution: `Greedy`**
+
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -59,30 +60,30 @@ The 4<sup>th</sup> course cannot be taken now, since you will finish it on the 3
  * @param {number[][]} courses
  * @return {number}
  */
-var scheduleCourse = function(courses) {
-    courses = courses.filter(([duration, lastDay]) => lastDay >= duration);
+const scheduleCourse = function (courses) {
+  courses = courses.filter(([duration, lastDay]) => lastDay >= duration);
 
-    if (!courses.length) return 0;
+  if (!courses.length) return 0;
 
-    courses.sort((a, b) => a[1] - b[1] || a[0] - b[0]);
+  courses.sort((a, b) => a[1] - b[1] || a[0] - b[0]);
 
-    const queue = new MaxPriorityQueue();
-    let current = 0;
+  const queue = new MaxPriorityQueue();
+  let current = 0;
 
-    for (const [duration, lastDay] of courses) {
-        const finishedDay = current + duration;
+  for (const [duration, lastDay] of courses) {
+    const finishedDay = current + duration;
 
-        if (finishedDay <= lastDay) {
-            current += duration;
-            queue.enqueue(duration);
-            continue;
-        }
-        if (queue.isEmpty() || queue.front().element <= duration) continue;
-        const removeCourseDuration = queue.dequeue().element;
-
-        current += duration - removeCourseDuration;
-        queue.enqueue(duration);
+    if (finishedDay <= lastDay) {
+      current += duration;
+      queue.enqueue(duration);
+      continue;
     }
-    return queue.size();
+    if (queue.isEmpty() || queue.front().element <= duration) continue;
+    const removeCourseDuration = queue.dequeue().element;
+
+    current += duration - removeCourseDuration;
+    queue.enqueue(duration);
+  }
+  return queue.size();
 };
 ```

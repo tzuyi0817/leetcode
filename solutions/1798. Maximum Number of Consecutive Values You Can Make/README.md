@@ -53,6 +53,7 @@ You can make 8 consecutive integer values starting from 0.</pre>
 ## Solutions
 
 **Solution: `Greedy`**
+
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -65,15 +66,15 @@ You can make 8 consecutive integer values starting from 0.</pre>
  * @param {number[]} coins
  * @return {number}
  */
-var getMaximumConsecutive = function(coins) {
-    let result = 1;
+const getMaximumConsecutive = function (coins) {
+  let result = 1;
 
-    coins.sort((a, b) => a - b);
+  coins.sort((a, b) => a - b);
 
-    for (const coin of coins) {
-        if (coin > result) return result;
-        result += coin;
-    }
-    return result;
+  for (const coin of coins) {
+    if (coin > result) return result;
+    result += coin;
+  }
+  return result;
 };
 ```

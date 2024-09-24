@@ -59,6 +59,7 @@ The resulting string is "[[][]]".
 ## Solutions
 
 **Solution: `Greedy`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -71,17 +72,17 @@ The resulting string is "[[][]]".
  * @param {string} s
  * @return {number}
  */
-var minSwaps = function(s) {
-    let leftBracket = 0;
+const minSwaps = function (s) {
+  let leftBracket = 0;
 
-    for (const bracket of s) {
-        if (bracket === '[') {
-            leftBracket += 1;
-            continue;
-        }
-        if (!leftBracket) continue;
-        leftBracket -= 1;
+  for (const bracket of s) {
+    if (bracket === '[') {
+      leftBracket += 1;
+      continue;
     }
-    return Math.ceil(leftBracket / 2);
+    if (!leftBracket) continue;
+    leftBracket -= 1;
+  }
+  return Math.ceil(leftBracket / 2);
 };
 ```

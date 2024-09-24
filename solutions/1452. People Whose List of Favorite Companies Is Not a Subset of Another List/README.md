@@ -47,6 +47,7 @@ Other lists of favorite companies are not a subset of another list, therefore, t
 ## Solutions
 
 **Solution: `Hash Table`**
+
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -59,22 +60,24 @@ Other lists of favorite companies are not a subset of another list, therefore, t
  * @param {string[][]} favoriteCompanies
  * @return {number[]}
  */
-var peopleIndexes = function(favoriteCompanies) {
-    const companiesSet = [];
-    const sortFavorites = favoriteCompanies
-        .map((favorites, index) => ({ favorites, index }))
-        .sort((a, b) => b.favorites.length - a.favorites.length);
+const peopleIndexes = function (favoriteCompanies) {
+  const companiesSet = [];
+  const sortFavorites = favoriteCompanies
+    .map((favorites, index) => ({ favorites, index }))
+    .sort((a, b) => b.favorites.length - a.favorites.length);
 
-    return sortFavorites.reduce((result, { favorites, index }) => {
-        const isSubset = companiesSet.some(companies => {
-            return favorites.every(favorite => companies.has(favorite));
-        });
-        
-        if (!isSubset) {
-            companiesSet.push(new Set(favorites));
-            result.push(index);
-        }
-        return result;
-    }, []).sort((a, b) => a - b);
+  return sortFavorites
+    .reduce((result, { favorites, index }) => {
+      const isSubset = companiesSet.some(companies => {
+        return favorites.every(favorite => companies.has(favorite));
+      });
+
+      if (!isSubset) {
+        companiesSet.push(new Set(favorites));
+        result.push(index);
+      }
+      return result;
+    }, [])
+    .sort((a, b) => a - b);
 };
 ```

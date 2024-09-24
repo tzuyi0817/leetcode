@@ -56,6 +56,7 @@ After performing 3 moves, the difference between the minimum and maximum is 7 - 
 ## Solutions
 
 **Solution: `Binary Search`**
+
 - Time complexity: <em>O(nlog(sum(nums)))</em>
 - Space complexity: <em>O(n)</em>
 
@@ -68,20 +69,20 @@ After performing 3 moves, the difference between the minimum and maximum is 7 - 
  * @param {number[]} nums
  * @return {number}
  */
-var minDifference = function(nums) {
-    const n = nums.length;
+const minDifference = function (nums) {
+  const n = nums.length;
 
-    if (n <= 4) return 0;
-    let result = Number.MAX_SAFE_INTEGER;
+  if (n <= 4) return 0;
+  let result = Number.MAX_SAFE_INTEGER;
 
-    nums.sort((a, b) => a - b);
+  nums.sort((a, b) => a - b);
 
-    for (let index = 0; index < 4; index++) {
-        const small = nums[index];
-        const large = nums[n - 4 + index];
+  for (let index = 0; index < 4; index++) {
+    const small = nums[index];
+    const large = nums[n - 4 + index];
 
-        result = Math.min(large - small, result);
-    }
-    return result;
+    result = Math.min(large - small, result);
+  }
+  return result;
 };
 ```

@@ -58,6 +58,7 @@ Note that the last node is not considered a local maxima because it does not hav
 ## Solutions
 
 **Solution: `Linked List`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -77,32 +78,32 @@ Note that the last node is not considered a local maxima because it does not hav
  * @param {ListNode} head
  * @return {number[]}
  */
-var nodesBetweenCriticalPoints = function(head) {
-    let firstCriticalPoint = previousCriticalPoint = -1;
-    let previousValue = null;
-    let index = 0;
-    let minDistance = Number.MAX_SAFE_INTEGER;
+const nodesBetweenCriticalPoints = function (head) {
+  let firstCriticalPoint = (previousCriticalPoint = -1);
+  let previousValue = null;
+  let index = 0;
+  let minDistance = Number.MAX_SAFE_INTEGER;
 
-    while (head.next) {
-        const { val, next } = head;
+  while (head.next) {
+    const { val, next } = head;
 
-        if (previousValue) {
-            const isMaxima = val > previousValue && val > next.val;
-            const isMinima = val < previousValue && val < next.val;
+    if (previousValue) {
+      const isMaxima = val > previousValue && val > next.val;
+      const isMinima = val < previousValue && val < next.val;
 
-            if (isMaxima || isMinima) {
-                firstCriticalPoint === -1 
-                    ? firstCriticalPoint = index
-                    : minDistance = Math.min(minDistance, index - previousCriticalPoint);
+      if (isMaxima || isMinima) {
+        firstCriticalPoint === -1
+          ? (firstCriticalPoint = index)
+          : (minDistance = Math.min(minDistance, index - previousCriticalPoint));
 
-                previousCriticalPoint = index;
-            }
-        }
-        previousValue = val;
-        head = next;
-        index += 1;
+        previousCriticalPoint = index;
+      }
     }
-    if (minDistance === Number.MAX_SAFE_INTEGER) return [-1, -1];
-    return [minDistance, previousCriticalPoint - firstCriticalPoint];
+    previousValue = val;
+    head = next;
+    index += 1;
+  }
+  if (minDistance === Number.MAX_SAFE_INTEGER) return [-1, -1];
+  return [minDistance, previousCriticalPoint - firstCriticalPoint];
 };
 ```

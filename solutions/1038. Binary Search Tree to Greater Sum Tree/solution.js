@@ -10,19 +10,19 @@
  * @param {TreeNode} root
  * @return {TreeNode}
  */
-var bstToGst = function(root) {
-    let sum = 0;
+const bstToGst = function (root) {
+  let sum = 0;
 
-    const sumBst = (node) => {
-        if (!node) return;
-        const { val, left, right } = node;
+  const sumBst = node => {
+    if (!node) return;
+    const { val, left, right } = node;
 
-        sumBst(right);
-        sum += val;
-        node.val = sum;
-        sumBst(left);
-    };
+    sumBst(right);
+    sum += val;
+    node.val = sum;
+    sumBst(left);
+  };
 
-    sumBst(root);
-    return root;
+  sumBst(root);
+  return root;
 };

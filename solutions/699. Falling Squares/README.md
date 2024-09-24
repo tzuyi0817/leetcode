@@ -50,6 +50,7 @@ Note that square 2 only brushes the right side of square 1, which does not count
 ## Solutions
 
 **Solution: `Burst Force`**
+
 - Time complexity: <em>O(n<sup>2</sup>)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -62,30 +63,30 @@ Note that square 2 only brushes the right side of square 1, which does not count
  * @param {number[][]} positions
  * @return {number[]}
  */
-var fallingSquares = function(positions) {
-    const intervals = [];
-    const result = [];
-    let currentMaxHeight = 0;
+const fallingSquares = function (positions) {
+  const intervals = [];
+  const result = [];
+  let currentMaxHeight = 0;
 
-    const getHeight = (interval) => {
-        let prevHeight = 0;
+  const getHeight = interval => {
+    let prevHeight = 0;
 
-        for (const { left, right, height } of intervals) {
-            if (interval.left >= right) continue;
-            if (interval.right <= left) continue;
-            prevHeight = Math.max(height, prevHeight);
-        }
-        interval.height += prevHeight;
-        return interval.height;
-    };
-
-    for (const [left, sideLength] of positions) {
-        const interval = { left, right: left + sideLength, height: sideLength };
-
-        currentMaxHeight = Math.max(getHeight(interval), currentMaxHeight);
-        intervals.push(interval);
-        result.push(currentMaxHeight);
+    for (const { left, right, height } of intervals) {
+      if (interval.left >= right) continue;
+      if (interval.right <= left) continue;
+      prevHeight = Math.max(height, prevHeight);
     }
-    return result;
+    interval.height += prevHeight;
+    return interval.height;
+  };
+
+  for (const [left, sideLength] of positions) {
+    const interval = { left, right: left + sideLength, height: sideLength };
+
+    currentMaxHeight = Math.max(getHeight(interval), currentMaxHeight);
+    intervals.push(interval);
+    result.push(currentMaxHeight);
+  }
+  return result;
 };
 ```

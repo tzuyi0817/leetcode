@@ -37,6 +37,7 @@ In the second operation choose x = 2 and y = 0 again, thus arr = [3, 3, 3].
 ## Solutions
 
 **Solution: `Math`**
+
 - Time complexity: <em>O(1)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -49,11 +50,9 @@ In the second operation choose x = 2 and y = 0 again, thus arr = [3, 3, 3].
  * @param {number} n
  * @return {number}
  */
-var minOperations = function(n) {
-    const operations = Math.floor(n / 2);
+const minOperations = function (n) {
+  const operations = Math.floor(n / 2);
 
-    return n % 2
-        ? (operations + 1) * operations
-        : operations ** 2;
+  return n % 2 ? (operations + 1) * operations : operations ** 2;
 };
 ```

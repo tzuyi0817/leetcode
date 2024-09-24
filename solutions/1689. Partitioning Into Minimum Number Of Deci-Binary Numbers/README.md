@@ -41,6 +41,7 @@
 ## Solutions
 
 **Solution: `Greedy`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -53,7 +54,7 @@
  * @param {string} n
  * @return {number}
  */
-var minPartitions = function(n) {
-    return Math.max(...n.split(''));
+const minPartitions = function (n) {
+  return Math.max(...n.split(''));
 };
 ```

@@ -48,6 +48,7 @@ The XOR values for queries are:
 ## Solutions
 
 **Solution: `Prefix Sum`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -61,18 +62,18 @@ The XOR values for queries are:
  * @param {number[][]} queries
  * @return {number[]}
  */
-var xorQueries = function(arr, queries) {
-    const n = arr.length;
-    const prefixXor = Array(n).fill(0);
+const xorQueries = function (arr, queries) {
+  const n = arr.length;
+  const prefixXor = Array(n).fill(0);
 
-    prefixXor[-1] = 0;
+  prefixXor[-1] = 0;
 
-    for (let index = 0; index < n; index++) {
-        prefixXor[index] = arr[index] ^ prefixXor[index - 1];
-    }
-    
-    return queries.map(([left, right]) => {
-        return prefixXor[right] ^ prefixXor[left - 1];
-    });
+  for (let index = 0; index < n; index++) {
+    prefixXor[index] = arr[index] ^ prefixXor[index - 1];
+  }
+
+  return queries.map(([left, right]) => {
+    return prefixXor[right] ^ prefixXor[left - 1];
+  });
 };
 ```

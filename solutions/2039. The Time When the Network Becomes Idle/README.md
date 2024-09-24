@@ -30,22 +30,25 @@ At (the beginning of) second 0,
 - Data server 2 sends its message (denoted 2A) to the master server.
 
 At second 1,
+
 - Message 1A arrives at the master server. Master server processes message 1A instantly and sends a reply 1A back.
 - Server 1 has not received any reply. 1 second (1 &lt; patience[1] = 2) elapsed since this server has sent the message, therefore it does not resend the message.
 - Server 2 has not received any reply. 1 second (1 == patience[2] = 1) elapsed since this server has sent the message, therefore it resends the message (denoted 2B).
 
 At second 2,
+
 - The reply 1A arrives at server 1. No more resending will occur from server 1.
 - Message 2A arrives at the master server. Master server processes message 2A instantly and sends a reply 2A back.
 - Server 2 resends the message (denoted 2C).
-...
-At second 4,
+  ...
+  At second 4,
 - The reply 2A arrives at server 2. No more resending will occur from server 2.
-...
-At second 7, reply 2D arrives at server 2.
+  ...
+  At second 7, reply 2D arrives at server 2.
 
 Starting from the beginning of the second 8, there are no messages passing between servers or arriving at servers.
 This is the time when the network becomes idle.
+
 </pre>
 
 <p><strong class="example">Example 2:</strong></p>
@@ -78,6 +81,7 @@ From the beginning of the second 3, the network becomes idle.
 ## Solutions
 
 **Solution: `Breadth-First Search`**
+
 - Time complexity: <em>O(n∗edges.length)</em>
 - Space complexity: <em>O(n∗edges.length)</em>
 
@@ -91,45 +95,45 @@ From the beginning of the second 3, the network becomes idle.
  * @param {number[]} patience
  * @return {number}
  */
-var networkBecomesIdle = function(edges, patience) {
-    const n = patience.length;
-    const graph = edges.reduce((map, [a, b]) => {
-        const serversA = map.get(a) ?? [];
-        const serversB = map.get(b) ?? [];
+const networkBecomesIdle = function (edges, patience) {
+  const n = patience.length;
+  const graph = edges.reduce((map, [a, b]) => {
+    const serversA = map.get(a) ?? [];
+    const serversB = map.get(b) ?? [];
 
-        serversA.push(b);
-        serversB.push(a);
-        map.set(a, serversA);
-        return map.set(b, serversB);
-    }, new Map());
-    const distances = Array(n).fill(Number.MAX_SAFE_INTEGER);
-    let queue = [0];
-    let result = 0;
+    serversA.push(b);
+    serversB.push(a);
+    map.set(a, serversA);
+    return map.set(b, serversB);
+  }, new Map());
+  const distances = Array(n).fill(Number.MAX_SAFE_INTEGER);
+  let queue = [0];
+  let result = 0;
 
-    distances[0] = 0;
+  distances[0] = 0;
 
-    while (queue.length) {
-        const size = queue.length;
-        const tempQueue = [];
+  while (queue.length) {
+    const size = queue.length;
+    const tempQueue = [];
 
-        for (let index = 0; index < size; index++) {
-            const fromServer = queue.pop();
+    for (let index = 0; index < size; index++) {
+      const fromServer = queue.pop();
 
-            for (const toServer of graph.get(fromServer)) {
-                if (distances[toServer] !== Number.MAX_SAFE_INTEGER) continue;
-                distances[toServer] = distances[fromServer] + 1;
-                tempQueue.push(toServer);
-            }
-        }
-        queue = tempQueue;
+      for (const toServer of graph.get(fromServer)) {
+        if (distances[toServer] !== Number.MAX_SAFE_INTEGER) continue;
+        distances[toServer] = distances[fromServer] + 1;
+        tempQueue.push(toServer);
+      }
     }
-    for (let server = 1; server < n; server++) {
-        const distance = distances[server];
-        const resendCount = Math.floor((2 * distance - 1) / patience[server]);
-        const lastSendSecond = resendCount * patience[server];
+    queue = tempQueue;
+  }
+  for (let server = 1; server < n; server++) {
+    const distance = distances[server];
+    const resendCount = Math.floor((2 * distance - 1) / patience[server]);
+    const lastSendSecond = resendCount * patience[server];
 
-        result = Math.max(lastSendSecond + distance * 2, result);
-    }
-    return result + 1;
+    result = Math.max(lastSendSecond + distance * 2, result);
+  }
+  return result + 1;
 };
 ```

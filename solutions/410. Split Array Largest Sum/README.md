@@ -40,6 +40,7 @@ The best way is to split it into [1,2,3] and [4,5], where the largest sum among 
 ## Solutions
 
 **Solution: `Binary Search`**
+
 - Time complexity: <em>O(nlogSum)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -53,29 +54,29 @@ The best way is to split it into [1,2,3] and [4,5], where the largest sum among 
  * @param {number} k
  * @return {number}
  */
-var splitArray = function(nums, k) {
-    let left = Math.max(...nums);
-    let right = nums.reduce((sum, num) => sum + num);
+const splitArray = function (nums, k) {
+  let left = Math.max(...nums);
+  let right = nums.reduce((sum, num) => sum + num);
 
-    const isValidSplit = (averageAssign) => {
-        let current = 0;
-        let count = 1;
+  const isValidSplit = averageAssign => {
+    let current = 0;
+    let count = 1;
 
-        for (const num of nums) {
-            current += num;
-            if (current <= averageAssign) continue;
-            count += 1;
-            if (count > k) return false;
-            current = num;
-        }
-        return true;
-    };
-
-    while (left < right) {
-        const mid = Math.floor((left + right) / 2);
-
-        isValidSplit(mid) ? right = mid : left = mid + 1;
+    for (const num of nums) {
+      current += num;
+      if (current <= averageAssign) continue;
+      count += 1;
+      if (count > k) return false;
+      current = num;
     }
-    return left;
+    return true;
+  };
+
+  while (left < right) {
+    const mid = Math.floor((left + right) / 2);
+
+    isValidSplit(mid) ? (right = mid) : (left = mid + 1);
+  }
+  return left;
 };
 ```

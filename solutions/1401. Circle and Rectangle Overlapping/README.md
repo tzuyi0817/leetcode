@@ -42,6 +42,7 @@
 ## Solutions
 
 **Solution: `Math`**
+
 - Time complexity: <em>O(1)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -60,12 +61,12 @@
  * @param {number} y2
  * @return {boolean}
  */
-var checkOverlap = function(radius, xCenter, yCenter, x1, y1, x2, y2) {
-    const xEdge = Math.max(x1, Math.min(x2, xCenter));
-    const yEdge = Math.max(y1, Math.min(y2, yCenter));
-    const xDistance = xCenter - xEdge;
-    const yDistance = yCenter - yEdge;
+const checkOverlap = function (radius, xCenter, yCenter, x1, y1, x2, y2) {
+  const xEdge = Math.max(x1, Math.min(x2, xCenter));
+  const yEdge = Math.max(y1, Math.min(y2, yCenter));
+  const xDistance = xCenter - xEdge;
+  const yDistance = yCenter - yEdge;
 
-    return xDistance ** 2 + yDistance ** 2 <= radius ** 2;
+  return xDistance ** 2 + yDistance ** 2 <= radius ** 2;
 };
 ```

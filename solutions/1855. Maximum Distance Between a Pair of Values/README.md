@@ -50,6 +50,7 @@ The maximum distance is 2 with pair (2,4).
 ## Solutions
 
 **Solution: `Two Pointers`**
+
 - Time complexity: <em>O(n+m)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -63,18 +64,18 @@ The maximum distance is 2 with pair (2,4).
  * @param {number[]} nums2
  * @return {number}
  */
-var maxDistance = function(nums1, nums2) {
-    const MAX_SIZE = nums2.length;
-    let result = end = 0;
+const maxDistance = function (nums1, nums2) {
+  const MAX_SIZE = nums2.length;
+  let result = (end = 0);
 
-    for (let start = 0; start < nums1.length; start++) {
-        const num1 = nums1[start];
+  for (let start = 0; start < nums1.length; start++) {
+    const num1 = nums1[start];
 
-        while (end < MAX_SIZE && num1 <= nums2[end]) {
-            result = Math.max(end - start, result);
-            end += 1; 
-        }
+    while (end < MAX_SIZE && num1 <= nums2[end]) {
+      result = Math.max(end - start, result);
+      end += 1;
     }
-    return result;
+  }
+  return result;
 };
 ```

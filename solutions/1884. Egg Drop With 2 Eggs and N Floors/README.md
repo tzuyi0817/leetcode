@@ -45,6 +45,7 @@ Regardless of the outcome, it takes at most 14 drops to determine f.
 ## Solutions
 
 **Solution: `Binary Search`**
+
 - Time complexity: <em>O(logn)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -57,18 +58,18 @@ Regardless of the outcome, it takes at most 14 drops to determine f.
  * @param {number} n
  * @return {number}
  */
-var twoEggDrop = function(n) {
-    const calculateMoves = (drop) => Math.ceil((drop + 1) * drop  / 2);
-    let left = 1;
-    let right = n;
+const twoEggDrop = function (n) {
+  const calculateMoves = drop => Math.ceil(((drop + 1) * drop) / 2);
+  let left = 1;
+  let right = n;
 
-    while (left < right) {
-        const mid = Math.floor((left + right) / 2);
-        const moves = calculateMoves(mid);
+  while (left < right) {
+    const mid = Math.floor((left + right) / 2);
+    const moves = calculateMoves(mid);
 
-        if (moves === n) return mid;
-        calculateMoves(mid) > n ? right = mid : left = mid + 1;
-    }
-    return right;
+    if (moves === n) return mid;
+    calculateMoves(mid) > n ? (right = mid) : (left = mid + 1);
+  }
+  return right;
 };
 ```

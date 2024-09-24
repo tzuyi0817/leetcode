@@ -57,6 +57,7 @@
 ## Solutions
 
 **Solution: `Recursion(Josephus's Problem)`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -70,12 +71,12 @@
  * @param {number} k
  * @return {number}
  */
-var findTheWinner = function(n, k) {
-    let winner = 0;
+const findTheWinner = function (n, k) {
+  let winner = 0;
 
-    for (let num = 2; num <= n; num++) {
-        winner = (winner + k) % num;       
-    }
-    return winner + 1;
+  for (let num = 2; num <= n; num++) {
+    winner = (winner + k) % num;
+  }
+  return winner + 1;
 };
 ```

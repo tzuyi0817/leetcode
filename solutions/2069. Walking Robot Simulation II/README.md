@@ -33,16 +33,16 @@
 
 <strong>Explanation</strong>
 Robot robot = new Robot(6, 3); // Initialize the grid and the robot at (0, 0) facing East.
-robot.step(2);  // It moves two steps East to (2, 0), and faces East.
-robot.step(2);  // It moves two steps East to (4, 0), and faces East.
+robot.step(2); // It moves two steps East to (2, 0), and faces East.
+robot.step(2); // It moves two steps East to (4, 0), and faces East.
 robot.getPos(); // return [4, 0]
 robot.getDir(); // return "East"
-robot.step(2);  // It moves one step East to (5, 0), and faces East.
-                // Moving the next step East would be out of bounds, so it turns and faces North.
-                // Then, it moves one step North to (5, 1), and faces North.
-robot.step(1);  // It moves one step North to (5, 2), and faces <strong>North</strong> (not West).
-robot.step(4);  // Moving the next step North would be out of bounds, so it turns and faces West.
-                // Then, it moves four steps West to (1, 2), and faces West.
+robot.step(2); // It moves one step East to (5, 0), and faces East.
+// Moving the next step East would be out of bounds, so it turns and faces North.
+// Then, it moves one step North to (5, 1), and faces North.
+robot.step(1); // It moves one step North to (5, 2), and faces <strong>North</strong> (not West).
+robot.step(4); // Moving the next step North would be out of bounds, so it turns and faces West.
+// Then, it moves four steps West to (1, 2), and faces West.
 robot.getPos(); // return [1, 2]
 robot.getDir(); // return "West"
 
@@ -63,6 +63,7 @@ robot.getDir(); // return "West"
 ## Solutions
 
 **Solution: `Simulation`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -75,82 +76,82 @@ robot.getDir(); // return "West"
  * @param {number} width
  * @param {number} height
  */
-var Robot = function(width, height) {
-    this.bound = { x: width - 1, y: height - 1 };
-    this.roundStep = (width - 1) * 2 + (height - 1) * 2;
-    this.pos = { x: 0, y: 0 };
-    this.dir = 'East';
-    this.turnMap = {
-        North: 'West', 
-        East: 'North', 
-        South: 'East', 
-        West: 'South',
-    };
-    this.overtakeMap = {
-        North: ({ boundY }) => this.pos.y = boundY, 
-        East: ({ boundX }) => this.pos.x = boundX, 
-        South: () => this.pos.y = 0, 
-        West: () => this.pos.x = 0, 
-    };
+const Robot = function (width, height) {
+  this.bound = { x: width - 1, y: height - 1 };
+  this.roundStep = (width - 1) * 2 + (height - 1) * 2;
+  this.pos = { x: 0, y: 0 };
+  this.dir = 'East';
+  this.turnMap = {
+    North: 'West',
+    East: 'North',
+    South: 'East',
+    West: 'South',
+  };
+  this.overtakeMap = {
+    North: ({ boundY }) => (this.pos.y = boundY),
+    East: ({ boundX }) => (this.pos.x = boundX),
+    South: () => (this.pos.y = 0),
+    West: () => (this.pos.x = 0),
+  };
 };
 
-Robot.prototype.walk = function(step) {
-    const moveMap = {
-        North: { x: 0, y: 1 }, 
-        East: { x: 1, y: 0 }, 
-        South: { x: 0, y: -1 }, 
-        West: { x: -1, y: 0 }, 
-    }
-    const move = moveMap[this.dir];
-    let { x, y } = this.pos;
+Robot.prototype.walk = function (step) {
+  const moveMap = {
+    North: { x: 0, y: 1 },
+    East: { x: 1, y: 0 },
+    South: { x: 0, y: -1 },
+    West: { x: -1, y: 0 },
+  };
+  const move = moveMap[this.dir];
+  let { x, y } = this.pos;
 
-    x += move.x * step;
-    y += move.y * step;
-    this.pos = { x, y };
+  x += move.x * step;
+  y += move.y * step;
+  this.pos = { x, y };
 };
 
-/** 
+/**
  * @param {number} num
  * @return {void}
  */
-Robot.prototype.step = function(num) {
-    const { x: boundX, y: boundY } = this.bound;
-    let step = num % this.roundStep;
+Robot.prototype.step = function (num) {
+  const { x: boundX, y: boundY } = this.bound;
+  let step = num % this.roundStep;
 
+  this.walk(step);
+  if (this.pos.x === 0 && this.pos.y === 0) {
+    this.dir = 'South';
+  }
+  while (this.pos.x > boundX || this.pos.x < 0 || this.pos.y > boundY || this.pos.y < 0) {
+    const calculateRemainMap = {
+      North: ({ y }) => y - boundY,
+      East: ({ x }) => x - boundX,
+      South: ({ y }) => Math.abs(y),
+      West: ({ x }) => Math.abs(x),
+    };
+
+    step = calculateRemainMap[this.dir](this.pos);
+    this.overtakeMap[this.dir]({ boundX, boundY });
+    this.dir = this.turnMap[this.dir];
     this.walk(step);
-    if (this.pos.x === 0 && this.pos.y === 0) {
-      this.dir = 'South';  
-    }
-    while (this.pos.x > boundX || this.pos.x < 0 || this.pos.y > boundY || this.pos.y < 0) {
-        const calculateRemainMap = {
-            North: ({ y }) => y - boundY, 
-            East: ({ x }) => x - boundX, 
-            South: ({ y }) => Math.abs(y), 
-            West: ({ x }) =>  Math.abs(x), 
-        };
-
-        step = calculateRemainMap[this.dir](this.pos);
-        this.overtakeMap[this.dir]({ boundX, boundY });
-        this.dir = this.turnMap[this.dir];
-        this.walk(step);
-    }
+  }
 };
 
 /**
  * @return {number[]}
  */
-Robot.prototype.getPos = function() {
-    return [this.pos.x, this.pos.y];
+Robot.prototype.getPos = function () {
+  return [this.pos.x, this.pos.y];
 };
 
 /**
  * @return {string}
  */
-Robot.prototype.getDir = function() {
-    return this.dir;
+Robot.prototype.getDir = function () {
+  return this.dir;
 };
 
-/** 
+/**
  * Your Robot object will be instantiated and called as such:
  * var obj = new Robot(width, height)
  * obj.step(num)

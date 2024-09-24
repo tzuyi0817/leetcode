@@ -58,6 +58,7 @@ Course 0 is not a prerequisite of course 1, but the opposite is true.
 ## Solutions
 
 **Solution: `Depth-First Search`**
+
 - Time complexity: <em>O(n^2)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -72,33 +73,35 @@ Course 0 is not a prerequisite of course 1, but the opposite is true.
  * @param {number[][]} queries
  * @return {boolean[]}
  */
-var checkIfPrerequisite = function(numCourses, prerequisites, queries) {
-    const courses = Array(numCourses).fill('').map(_ => new Set());
-    const prerequisiteMap = new Map();
+const checkIfPrerequisite = function (numCourses, prerequisites, queries) {
+  const courses = Array(numCourses)
+    .fill('')
+    .map(_ => new Set());
+  const prerequisiteMap = new Map();
 
-    prerequisites.forEach(([pre, current]) => {
-        courses[current].add(pre);
+  prerequisites.forEach(([pre, current]) => {
+    courses[current].add(pre);
+  });
+
+  const checkPrerequisite = course => {
+    if (prerequisiteMap.has(course)) return prerequisiteMap.get(course);
+    const prerequisite = prerequisiteMap.get(course) ?? new Set();
+
+    courses[course].forEach(pre => {
+      prerequisite.add(pre);
+      checkPrerequisite(pre).forEach(grand => {
+        prerequisite.add(grand);
+      });
     });
+    prerequisiteMap.set(course, prerequisite);
+    return prerequisite;
+  };
 
-    const checkPrerequisite = (course) => {
-        if (prerequisiteMap.has(course)) return prerequisiteMap.get(course);
-        const prerequisite =  prerequisiteMap.get(course) ?? new Set();
-
-        courses[course].forEach(pre => {
-            prerequisite.add(pre);
-            checkPrerequisite(pre).forEach(grand => {
-                prerequisite.add(grand);
-            });
-        });
-        prerequisiteMap.set(course, prerequisite);
-        return prerequisite;
-    };
-
-    for (let course = 0; course < numCourses; course++) {
-        checkPrerequisite(course);
-    }
-    return queries.map(([pre, current]) => {
-        return prerequisiteMap.get(current).has(pre);
-    });
+  for (let course = 0; course < numCourses; course++) {
+    checkPrerequisite(course);
+  }
+  return queries.map(([pre, current]) => {
+    return prerequisiteMap.get(current).has(pre);
+  });
 };
 ```

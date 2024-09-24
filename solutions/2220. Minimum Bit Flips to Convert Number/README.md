@@ -45,6 +45,7 @@ It can be shown we cannot convert 3 to 4 in less than 3 steps. Hence, we return 
 ## Solutions
 
 **Solution: `Bit Manipulation`**
+
 - Time complexity: <em>O(log(Max(start,goal)))</em>
 - Space complexity: <em>O(1)</em>
 
@@ -58,14 +59,14 @@ It can be shown we cannot convert 3 to 4 in less than 3 steps. Hence, we return 
  * @param {number} goal
  * @return {number}
  */
-var minBitFlips = function(start, goal) {
-    const xor = (start ^ goal).toString(2);
-    let result = 0;
+const minBitFlips = function (start, goal) {
+  const xor = (start ^ goal).toString(2);
+  let result = 0;
 
-    for (let index = 0; index < xor.length; index++) {
-        if (xor[index] === '0') continue;
-        result += 1;
-    }
-    return result;
+  for (let index = 0; index < xor.length; index++) {
+    if (xor[index] === '0') continue;
+    result += 1;
+  }
+  return result;
 };
 ```

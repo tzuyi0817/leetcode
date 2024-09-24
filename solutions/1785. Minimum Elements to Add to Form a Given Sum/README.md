@@ -38,6 +38,7 @@
 ## Solutions
 
 **Solution: `Greedy`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -52,9 +53,9 @@
  * @param {number} goal
  * @return {number}
  */
-var minElements = function(nums, limit, goal) {
-    const sum = nums.reduce((result, num) => result + num);
+const minElements = function (nums, limit, goal) {
+  const sum = nums.reduce((result, num) => result + num);
 
-    return Math.ceil(Math.abs(goal - sum) / limit);
+  return Math.ceil(Math.abs(goal - sum) / limit);
 };
 ```

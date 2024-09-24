@@ -2,22 +2,20 @@
  * @param {number[]} nums
  * @return {number}
  */
-var longestSubarray = function(nums) {
-    let left = currentSize = result = 0;
-    let isDelete = false;
+const longestSubarray = function (nums) {
+  let left = (currentSize = result = 0);
+  let isDelete = false;
 
-    for (let index = 0; index < nums.length; index++) {
-        const value = nums[index];
-        
-        if (value) currentSize += 1;
-        else {
-            isDelete
-                ? currentSize = index - left - 1
-                : isDelete = true;
+  for (let index = 0; index < nums.length; index++) {
+    const value = nums[index];
 
-            left = index;
-        }
-        result = Math.max(result, currentSize);
+    if (value) currentSize += 1;
+    else {
+      isDelete ? (currentSize = index - left - 1) : (isDelete = true);
+
+      left = index;
     }
-    return isDelete ? result : result - 1;
+    result = Math.max(result, currentSize);
+  }
+  return isDelete ? result : result - 1;
 };

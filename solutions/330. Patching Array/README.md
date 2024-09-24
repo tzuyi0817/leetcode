@@ -47,6 +47,7 @@ Explanation: The two patches can be [2, 4].
 ## Solutions
 
 **Solution: `Greedy`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>
 
@@ -60,18 +61,18 @@ Explanation: The two patches can be [2, 4].
  * @param {number} n
  * @return {number}
  */
-var minPatches = function(nums, n) {
-    let result = index = currentRange = 0;
+const minPatches = function (nums, n) {
+  let result = (index = currentRange = 0);
 
-    while (currentRange < n) {
-        if (index < nums.length && currentRange + 1 >= nums[index]) {
-            currentRange += nums[index];
-            index += 1;
-            continue;
-        }
-        currentRange += currentRange + 1;
-        result += 1;
+  while (currentRange < n) {
+    if (index < nums.length && currentRange + 1 >= nums[index]) {
+      currentRange += nums[index];
+      index += 1;
+      continue;
     }
-    return result;
+    currentRange += currentRange + 1;
+    result += 1;
+  }
+  return result;
 };
 ```

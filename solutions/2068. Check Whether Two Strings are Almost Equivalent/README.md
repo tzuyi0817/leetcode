@@ -56,6 +56,7 @@ The difference is 4, which is more than the allowed 3.
 ## Solutions
 
 **Solution: `Hash Map`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -69,16 +70,16 @@ The difference is 4, which is more than the allowed 3.
  * @param {string} word2
  * @return {boolean}
  */
-var checkAlmostEquivalent = function(word1, word2) {
-    const wordMap = {};
+const checkAlmostEquivalent = function (word1, word2) {
+  const wordMap = {};
 
-    for (let index = 0; index < word1.length; index++) {
-        wordMap[word1[index]] = (wordMap[word1[index]] ?? 0) + 1;
-        wordMap[word2[index]] = (wordMap[word2[index]] ?? 0) - 1;
-    }
-    for (const count of Object.values(wordMap)) {
-        if (Math.abs(count) > 3) return false;
-    }
-    return true;
+  for (let index = 0; index < word1.length; index++) {
+    wordMap[word1[index]] = (wordMap[word1[index]] ?? 0) + 1;
+    wordMap[word2[index]] = (wordMap[word2[index]] ?? 0) - 1;
+  }
+  for (const count of Object.values(wordMap)) {
+    if (Math.abs(count) > 3) return false;
+  }
+  return true;
 };
 ```

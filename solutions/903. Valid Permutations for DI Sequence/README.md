@@ -52,6 +52,7 @@
 ## Solutions
 
 **Solution: `Dynamic Programming`**
+
 - Time complexity: <em>O(n<sup>2</sup>)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -64,39 +65,39 @@
  * @param {string} s
  * @return {number}
  */
-var numPermsDISequence = function(s) {
-    const MODULO = 10 ** 9 + 7;
-    const n = s.length;
-    let dp = Array(n + 1).fill(1);
+const numPermsDISequence = function (s) {
+  const MODULO = 10 ** 9 + 7;
+  const n = s.length;
+  let dp = Array(n + 1).fill(1);
 
-    const calculateDecPerms = (remain) => {
-        const nexDp = Array(n + 1).fill(0);
-        let prefixSum = 0;
+  const calculateDecPerms = remain => {
+    const nexDp = Array(n + 1).fill(0);
+    let prefixSum = 0;
 
-        for (let index = remain - 1; index >= 0; index--) {
-            prefixSum = (prefixSum + dp[index + 1]) % MODULO;
-            nexDp[index] = prefixSum;
-        }
-        return nexDp;
-    };
-
-    const calculateIncPerms = (remain) => {
-        const nexDp = Array(n + 1).fill(0);
-        let prefixSum = 0;
-
-        for (let index = 0; index < remain; index++) {
-            prefixSum = (prefixSum + dp[index]) % MODULO;
-            nexDp[index] = prefixSum;
-        }
-        return nexDp;
-    };
-
-    for (let index = 0; index < n; index++) {
-        const isDec = s[index] === 'D';
-        const remain = n - index;
-
-        dp = isDec ? calculateDecPerms(remain) : calculateIncPerms(remain);
+    for (let index = remain - 1; index >= 0; index--) {
+      prefixSum = (prefixSum + dp[index + 1]) % MODULO;
+      nexDp[index] = prefixSum;
     }
-    return dp[0];
+    return nexDp;
+  };
+
+  const calculateIncPerms = remain => {
+    const nexDp = Array(n + 1).fill(0);
+    let prefixSum = 0;
+
+    for (let index = 0; index < remain; index++) {
+      prefixSum = (prefixSum + dp[index]) % MODULO;
+      nexDp[index] = prefixSum;
+    }
+    return nexDp;
+  };
+
+  for (let index = 0; index < n; index++) {
+    const isDec = s[index] === 'D';
+    const remain = n - index;
+
+    dp = isDec ? calculateDecPerms(remain) : calculateIncPerms(remain);
+  }
+  return dp[0];
 };
 ```

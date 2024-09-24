@@ -39,7 +39,8 @@
 ## Solutions
 
 **Solution: `Union Find`**
-- Time complexity: <em>O(n<sup>2</sup>*strs[i].length)</em>
+
+- Time complexity: <em>O(n<sup>2</sup>\*strs[i].length)</em>
 - Space complexity: <em>O(n)</em>
 
 <p>&nbsp;</p>
@@ -51,39 +52,41 @@
  * @param {string[]} strs
  * @return {number}
  */
-var numSimilarGroups = function(strs) {
-    const n = strs.length;
-    const groups = Array(n).fill('').map((_, index) => index);
+const numSimilarGroups = function (strs) {
+  const n = strs.length;
+  const groups = Array(n)
+    .fill('')
+    .map((_, index) => index);
 
-    const isSimilar = (a, b) => {
-        let diff = 0;
+  const isSimilar = (a, b) => {
+    let diff = 0;
 
-        for (let index = 0; index < a.length; index++) {
-            if (a[index] === b[index]) continue;
-            diff += 1;
-            if (diff > 2) return false;
-        }
-        return true;
-    };
-
-    const unionFind = (x) => {
-        return groups[x] === x ? x : unionFind(groups[x]);
-    };
-
-    for (let a = 0; a < n - 1; a++) {
-        for (let b = a + 1; b < n; b++) {
-            if (!isSimilar(strs[a], strs[b])) continue;
-            const groupA = unionFind(a);
-            const groupB = unionFind(b);
-
-            groups[groupB] = groupA;
-        }
+    for (let index = 0; index < a.length; index++) {
+      if (a[index] === b[index]) continue;
+      diff += 1;
+      if (diff > 2) return false;
     }
-    let result = 0;
+    return true;
+  };
 
-    for (let index = 0; index < n; index++) {
-        if (groups[index] === index) result += 1;
+  const unionFind = x => {
+    return groups[x] === x ? x : unionFind(groups[x]);
+  };
+
+  for (let a = 0; a < n - 1; a++) {
+    for (let b = a + 1; b < n; b++) {
+      if (!isSimilar(strs[a], strs[b])) continue;
+      const groupA = unionFind(a);
+      const groupB = unionFind(b);
+
+      groups[groupB] = groupA;
     }
-    return result;
+  }
+  let result = 0;
+
+  for (let index = 0; index < n; index++) {
+    if (groups[index] === index) result += 1;
+  }
+  return result;
 };
 ```

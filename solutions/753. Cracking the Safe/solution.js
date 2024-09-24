@@ -3,28 +3,28 @@
  * @param {number} k
  * @return {string}
  */
-var crackSafe = function(n, k) {
-    const visited = new Set();
-    const totalPassword = k ** n;
-    let result = '0'.repeat(n);
+const crackSafe = function (n, k) {
+  const visited = new Set();
+  const totalPassword = k ** n;
+  let result = '0'.repeat(n);
 
-    visited.add(result);
+  visited.add(result);
 
-    const crackPassword = (prefix) => {
-        if (visited.size === totalPassword) return;
+  const crackPassword = prefix => {
+    if (visited.size === totalPassword) return;
 
-        for (let integer = k - 1; integer >= 0; integer--) {
-            const password = `${prefix}${integer}`;
+    for (let integer = k - 1; integer >= 0; integer--) {
+      const password = `${prefix}${integer}`;
 
-            if (visited.has(password)) continue;
-            result += integer;
-            visited.add(password)
-            crackPassword(password.slice(1));
-            break;
-        }
-    };
+      if (visited.has(password)) continue;
+      result += integer;
+      visited.add(password);
+      crackPassword(password.slice(1));
+      break;
+    }
+  };
 
-    crackPassword(result.slice(1));
+  crackPassword(result.slice(1));
 
-    return result;
+  return result;
 };

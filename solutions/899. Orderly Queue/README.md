@@ -39,6 +39,7 @@ In the second move, we move the 3<sup>rd</sup> character 'c' to the end, obtaini
 ## Solutions
 
 **Solution: `Simulation`**
+
 - Time complexity: <em>O(n<sup>2</sup>)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -52,20 +53,23 @@ In the second move, we move the 3<sup>rd</sup> character 'c' to the end, obtaini
  * @param {number} k
  * @return {string}
  */
-var orderlyQueue = function(s, k) {
-    if (k > 1) {
-        return s.split('').sort((a, b) => a.localeCompare(b)).join('');
-    }
+const orderlyQueue = function (s, k) {
+  if (k > 1) {
+    return s
+      .split('')
+      .sort((a, b) => a.localeCompare(b))
+      .join('');
+  }
 
-    let result = s;
-    let current = s;
+  let result = s;
+  let current = s;
 
-    for (const letter of s) {
-        current = `${current.slice(1)}${letter}`;
+  for (const letter of s) {
+    current = `${current.slice(1)}${letter}`;
 
-        if (current >= result) continue;
-        result = current;
-    }
-    return result;
+    if (current >= result) continue;
+    result = current;
+  }
+  return result;
 };
 ```

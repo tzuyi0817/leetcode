@@ -44,6 +44,7 @@ The third child gets 1 candy because it satisfies the above two conditions.
 ## Solutions
 
 **Solution: `Greedy`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -56,19 +57,19 @@ The third child gets 1 candy because it satisfies the above two conditions.
  * @param {number[]} ratings
  * @return {number}
  */
-var candy = function(ratings) {
-    const n = ratings.length;
-    const candies = Array(n).fill(1);
+const candy = function (ratings) {
+  const n = ratings.length;
+  const candies = Array(n).fill(1);
 
-    for (let index = 0; index < n - 1; index++) {
-        if (ratings[index + 1] <= ratings[index]) continue;
-        candies[index + 1] = candies[index] + 1;
-    }
-    for (let index = n - 1; index > 0; index--) {
-        if (ratings[index - 1] <= ratings[index]) continue;
-        if (candies[index - 1] > candies[index]) continue;
-        candies[index - 1] = candies[index] + 1;
-    }
-    return candies.reduce((result, count) => result + count);
-}
+  for (let index = 0; index < n - 1; index++) {
+    if (ratings[index + 1] <= ratings[index]) continue;
+    candies[index + 1] = candies[index] + 1;
+  }
+  for (let index = n - 1; index > 0; index--) {
+    if (ratings[index - 1] <= ratings[index]) continue;
+    if (candies[index - 1] > candies[index]) continue;
+    candies[index - 1] = candies[index] + 1;
+  }
+  return candies.reduce((result, count) => result + count);
+};
 ```

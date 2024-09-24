@@ -3,7 +3,7 @@
  * @param {string} t
  * @return {boolean}
  */
-var isRationalEqual = function (s, t) {
+const isRationalEqual = function (s, t) {
   const transformRational = str => {
     const EFFECTIVE_ACCURACY = 17;
     const n = str.length;

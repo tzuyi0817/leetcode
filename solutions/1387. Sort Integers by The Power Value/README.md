@@ -39,7 +39,6 @@ The interval sorted by power is [8, 10, 11, 7, 9].
 The fourth number in the sorted array is 7.
 </pre>
 
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
@@ -53,6 +52,7 @@ The fourth number in the sorted array is 7.
 ## Solutions
 
 **Solution: `Dynamic Programming`**
+
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -67,25 +67,25 @@ The fourth number in the sorted array is 7.
  * @param {number} k
  * @return {number}
  */
-var getKth = function(lo, hi, k) {
-    const powersMap = new Map([[1, 0]]);
-    const powers = [];
-    const getPower = (value) => {
-        if (powersMap.has(value)) return powersMap.get(value);
-        const isOdd = value % 2;
-        const nextValue = isOdd ? 3 * value + 1 : value / 2;
-        const power = getPower(nextValue) + 1;
+const getKth = function (lo, hi, k) {
+  const powersMap = new Map([[1, 0]]);
+  const powers = [];
+  const getPower = value => {
+    if (powersMap.has(value)) return powersMap.get(value);
+    const isOdd = value % 2;
+    const nextValue = isOdd ? 3 * value + 1 : value / 2;
+    const power = getPower(nextValue) + 1;
 
-        powersMap.set(value, power);
-        return power;
-    };
+    powersMap.set(value, power);
+    return power;
+  };
 
-    for (let value = lo; value <= hi; value++) {
-        const power = getPower(value);
+  for (let value = lo; value <= hi; value++) {
+    const power = getPower(value);
 
-        powers.push({ value, power });
-    }
-    powers.sort((a, b) => a.power - b.power);
-    return powers[k - 1].value;
+    powers.push({ value, power });
+  }
+  powers.sort((a, b) => a.power - b.power);
+  return powers[k - 1].value;
 };
 ```

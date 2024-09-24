@@ -47,6 +47,7 @@ We have now a = 9 and b = 1 and max difference = 8
 ## Solutions
 
 **Solution: `Greedy`**
+
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
@@ -59,32 +60,32 @@ We have now a = 9 and b = 1 and max difference = 8
  * @param {number} num
  * @return {number}
  */
-var maxDiff = function(num) {
-    const numStringify = `${num}`;
-    let max = min = numStringify;
+const maxDiff = function (num) {
+  const numStringify = `${num}`;
+  let max = (min = numStringify);
 
-    for (let index = 0; index < numStringify; index++) {
-        const value = numStringify[index];
+  for (let index = 0; index < numStringify; index++) {
+    const value = numStringify[index];
 
-        if (value !== '9') {
-            max = max.replaceAll(value, '9');
-            break;
-        }
+    if (value !== '9') {
+      max = max.replaceAll(value, '9');
+      break;
     }
-    for (let index = 0; index < numStringify; index++) {
-        const value = numStringify[index];
+  }
+  for (let index = 0; index < numStringify; index++) {
+    const value = numStringify[index];
 
-        if (index === 0) {
-            if (value !== '1') {
-              min = min.replaceAll(value, '1');
-              break;
-            }
-            continue;
-        }
-        if (value === '0' || value === numStringify[0]) continue;
-        min = min.replaceAll(value, '0');
+    if (index === 0) {
+      if (value !== '1') {
+        min = min.replaceAll(value, '1');
         break;
+      }
+      continue;
     }
-    return max - min;
+    if (value === '0' || value === numStringify[0]) continue;
+    min = min.replaceAll(value, '0');
+    break;
+  }
+  return max - min;
 };
 ```
