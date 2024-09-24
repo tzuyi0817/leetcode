@@ -199,6 +199,7 @@
 960 | [Delete Columns to Make Sorted III](https://leetcode.com/problems/delete-columns-to-make-sorted-iii) | [JavaScript](/solutions/960.%20Delete%20Columns%20to%20Make%20Sorted%20III/README.md) | Hard
 964 | [Least Operators to Express Number](https://leetcode.com/problems/least-operators-to-express-number) | [JavaScript](/solutions/964.%20Least%20Operators%20to%20Express%20Number/README.md) | Hard
 968 | [Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras) | [JavaScript](/solutions/968.%20Binary%20Tree%20Cameras/README.md) | Hard
+972 | [Equal Rational Numbers](https://leetcode.com/problems/equal-rational-numbers) | [JavaScript](/solutions/972.%20Equal%20Rational%20Numbers/README.md) | Hard
 974 | [Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k) | [JavaScript](/solutions/974.%20Subarray%20Sums%20Divisible%20by%20K/README.md) | Medium
 995 | [Minimum Number of K Consecutive Bit Flips](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips) | [JavaScript](/solutions/995.%20Minimum%20Number%20of%20K%20Consecutive%20Bit%20Flips/README.md) | Hard
 1002 | [Find Common Characters](https://leetcode.com/problems/find-common-characters) | [JavaScript](/solutions/1002.%20Find%20Common%20Characters/README.md) | Easy
