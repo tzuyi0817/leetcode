@@ -59,7 +59,8 @@
  * @return {number}
  */
 const numberOfWeakCharacters = function (properties) {
-  let maxDefense = (result = 0);
+  let maxDefense = 0;
+  let result = 0;
 
   properties.sort((a, b) => b[0] - a[0] || a[1] - b[1]);
 
