@@ -3,6 +3,11 @@ name: Deploy VitePress site to Pages
 on:
   push:
     branches: [main]
+    paths:
+      - 'docs/**'
+      - 'solutions/**'
+      - 'pnpm-lock.yaml'
+      - 'package.json'
 
   workflow_dispatch:
 
@@ -22,7 +27,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         # with:
-        #   fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
+        #   fetch-depth: 0 # Enable lastUpdated
 
       - name: Setup Environment
         uses: tzuyi0817/coding-standards/.github/actions/setup-environment@main

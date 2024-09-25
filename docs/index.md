@@ -14,4 +14,7 @@ hero:
     - theme: alt
       text: GitHub
       link: https://github.com/tzuyi0817/leetcode
+  image:
+    src: /logo.png
+    alt: Logo
 ---
