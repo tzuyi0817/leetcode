@@ -6,4 +6,11 @@ export default [
   componentHookPlugin.configs.prettier,
   ...componentHookPlugin.configs.sonarjs,
   componentHookPlugin.configs.security,
+
+  {
+    files: ['solutions/**'],
+    rules: {
+      'no-unused-vars': 'off',
+    },
+  },
 ];
