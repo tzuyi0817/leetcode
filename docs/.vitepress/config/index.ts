@@ -19,6 +19,10 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/png', href: `${base}logo.png` }],
   ],
 
+  // sitemap: {
+  //   hostname: 'https://tzuyi0817.github.io/leetcode/',
+  // },
+
   themeConfig: {
     logo: { src: '/logo.png', width: 24, height: 24 },
     nav: [{ text: 'Home', link: '/' }],
@@ -27,6 +31,15 @@ export default defineConfig({
 
     search: {
       provider: 'local',
+      options: {
+        // detailedView: true,
+
+        _render(src, env, md) {
+          const html = md.render(src, env);
+
+          return html.replace(/<a[^>]*>(.*?)<\/a>/, '$1');
+        },
+      },
     },
 
     footer: {
