@@ -2,7 +2,7 @@
  * @param {number[]} arr
  * @return {number}
  */
-var oddEvenJumps = function (arr) {
+const oddEvenJumps = function (arr) {
   const n = arr.length;
   const ascIndices = [...arr.keys()].sort((a, b) => arr[a] - arr[b]);
   const descIndices = [...arr.keys()].sort((a, b) => arr[b] - arr[a]);

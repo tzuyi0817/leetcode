@@ -1,4 +1,4 @@
-var MyCalendar = function () {
+const MyCalendar = function () {
   this.calendar = [];
 };
 

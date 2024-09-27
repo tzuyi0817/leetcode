@@ -53,7 +53,7 @@ myCalendar.book(20, 30); // return True, The event can be booked, as the first e
 ### **JavaScript**
 
 ```js
-var MyCalendar = function () {
+const MyCalendar = function () {
   this.calendar = [];
 };
 
