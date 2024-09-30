@@ -33,7 +33,7 @@ jobs:
         uses: tzuyi0817/coding-standards/.github/actions/setup-environment@main
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: Build with VitePress
         run: pnpm run generate-md && NODE_OPTIONS="--max-old-space-size=4096" pnpm run docs:build
