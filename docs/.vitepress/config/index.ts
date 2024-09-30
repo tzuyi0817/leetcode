@@ -1,6 +1,7 @@
 import { resolve } from 'node:path';
 import { defineConfig } from 'vitepress';
 import { generateSidebar } from './sidebar';
+import { search } from './search';
 
 const base = '/leetcode/';
 export const solutionsPath = resolve(__dirname, '..', '..', '..', 'solutions');
@@ -28,19 +29,7 @@ export default defineConfig({
     nav: [{ text: 'Home', link: '/' }],
     sidebar: generateSidebar(),
     socialLinks: [{ icon: 'github', link: 'https://github.com/tzuyi0817/leetcode' }],
-
-    search: {
-      provider: 'local',
-      options: {
-        // detailedView: true,
-
-        _render(src, env, md) {
-          const html = md.render(src, env);
-
-          return html.replace(/<a[^>]*>(.*?)<\/a>/, '$1');
-        },
-      },
-    },
+    search,
 
     footer: {
       message: 'Released under the MIT license',
