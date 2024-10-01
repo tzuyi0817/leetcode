@@ -3,7 +3,6 @@
  * @return {number}
  */
 const largestComponentSize = function (nums) {
-  const n = nums.length;
   const maxNum = Math.max(...nums);
   const groups = Array(maxNum + 1)
     .fill('')

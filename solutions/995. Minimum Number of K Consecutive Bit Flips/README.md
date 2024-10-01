@@ -65,7 +65,8 @@ Flip nums[5],nums[6],nums[7]: nums becomes [1,1,1,1,1,1,1,1]
  */
 const minKBitFlips = function (nums, k) {
   const n = nums.length;
-  let result = (currentFlips = 0);
+  let result = 0;
+  let currentFlips = 0;
 
   for (let index = 0; index < n; index++) {
     const value = nums[index];

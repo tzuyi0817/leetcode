@@ -5,7 +5,8 @@
  */
 const minKBitFlips = function (nums, k) {
   const n = nums.length;
-  let result = (currentFlips = 0);
+  let result = 0;
+  let currentFlips = 0;
 
   for (let index = 0; index < n; index++) {
     const value = nums[index];

@@ -11,7 +11,8 @@ const sortArray = function (nums) {
 
   const mergeSort = (nums1, nums2) => {
     const result = [];
-    let a = (b = 0);
+    let a = 0;
+    let b = 0;
 
     while (a < nums1.length && b < nums2.length) {
       const num = nums1[a] < nums2[b] ? nums1[a++] : nums2[b++];

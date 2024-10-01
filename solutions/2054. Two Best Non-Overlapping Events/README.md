@@ -66,7 +66,9 @@ const maxTwoEvents = function (events) {
     return map.set(end, value);
   }, new Map());
   const endEvents = [...endEventMap.keys()];
-  let previousValue = (result = currentEnd = 0);
+  let previousValue = 0;
+  let result = 0;
+  let currentEnd = 0;
 
   events.sort((a, b) => a[0] - b[0]);
   endEvents.sort((a, b) => a - b);

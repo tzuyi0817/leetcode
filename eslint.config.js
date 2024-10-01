@@ -11,6 +11,9 @@ export default [
     files: ['solutions/**'],
     rules: {
       'no-unused-vars': 'off',
+
+      'sonarjs/no-nested-assignment': 'off',
+      'security/detect-object-injection': 'off',
     },
   },
 ];

@@ -5,7 +5,8 @@
  */
 const subarraysDivByK = function (nums, k) {
   const remainderMap = new Map([[0, 1]]);
-  let current = (result = 0);
+  let current = 0;
+  let result = 0;
 
   for (const num of nums) {
     current = (current + (num % k) + k) % k;

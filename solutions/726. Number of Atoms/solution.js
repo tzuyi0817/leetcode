@@ -5,7 +5,8 @@
 const countOfAtoms = function (formula) {
   const n = formula.length;
   const stack = [new Map()];
-  let currentAtom = (currentCount = '');
+  let currentAtom = '';
+  let currentCount = '';
 
   const combineAtom = (atom, count) => {
     if (!atom) return;
