@@ -8,8 +8,7 @@ export const solutionsPath = resolve(__dirname, '..', '..', '..', 'solutions');
 
 export default defineConfig({
   title: 'LeetCode Solutions',
-  description:
-    'Solutions to LeetCode in JavaScript. The purpose is to provide good readability and consistent style to the code.',
+  description: 'Solutions to LeetCode in JavaScript.',
 
   base,
   cleanUrls: true,
@@ -18,15 +17,31 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}logo.svg` }],
     ['link', { rel: 'icon', type: 'image/png', href: `${base}logo.png` }],
+    ['meta', { property: 'og:title', content: 'LeetCode Solutions' }],
+    ['meta', { property: 'og:description', content: 'Solutions to LeetCode in JavaScript.' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, viewport-fit=cover' }],
   ],
 
-  // sitemap: {
-  //   hostname: 'https://tzuyi0817.github.io/leetcode/',
-  // },
+  sitemap: {
+    hostname: 'https://tzuyi0817.github.io/leetcode/',
+  },
+
+  markdown: {
+    theme: {
+      light: 'light-plus',
+      dark: 'dark-plus',
+    },
+  },
 
   themeConfig: {
     logo: { src: '/logo.png', width: 24, height: 24 },
-    nav: [{ text: 'Home', link: '/' }],
+
+    nav: [
+      { text: 'Home', link: '/' },
+      { text: 'Solutions', link: '/solutions/4. Median of Two Sorted Arrays', activeMatch: '^/solutions/' },
+    ],
+
     sidebar: generateSidebar(),
     socialLinks: [{ icon: 'github', link: 'https://github.com/tzuyi0817/leetcode' }],
     search,

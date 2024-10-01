@@ -9,7 +9,7 @@ hero:
   tagline: The purpose is to provide good readability and consistent style to the code.
   actions:
     - theme: brand
-      text: Solutions
+      text: Get Started
       link: /solutions/4. Median of Two Sorted Arrays
     - theme: alt
       text: GitHub

@@ -26,8 +26,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        # with:
-        #   fetch-depth: 0 # Enable lastUpdated
+        with:
+          fetch-depth: 0 # Enable lastUpdated
 
       - name: Setup Environment
         uses: tzuyi0817/coding-standards/.github/actions/setup-environment@main
