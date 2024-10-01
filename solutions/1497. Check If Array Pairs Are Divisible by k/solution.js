@@ -4,20 +4,22 @@
  * @return {boolean}
  */
 const canArrange = function (arr, k) {
-  const remainMap = arr.reduce((map, integer) => {
-    const remain = ((integer % k) + k) % k;
-    const count = map.get(remain) ?? 0;
+  const remainderMap = new Map();
 
-    return map.set(remain, count + 1);
-  }, new Map());
+  for (const num of arr) {
+    const remainder = ((num % k) + k) % k;
+    const count = remainderMap.get(remainder) ?? 0;
 
-  for (const [remain, count] of remainMap) {
-    if (!remain) {
-      if (count % 2) return false;
-      continue;
-    }
-    if (remainMap.get(remain) === remainMap.get(k - remain)) continue;
-    return false;
+    remainderMap.set(remainder, count + 1);
+  }
+
+  if (remainderMap.get(0) % 2) return false;
+
+  for (let num = 1; num <= k / 2; num++) {
+    const count = remainderMap.get(num);
+    const pair = k - num;
+
+    if (count !== remainderMap.get(pair)) return false;
   }
   return true;
 };
