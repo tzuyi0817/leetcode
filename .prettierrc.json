@@ -1,7 +1,7 @@
 {
   "singleQuote": true,
   "semi": true,
-  "endOfLine": "auto",
+  "endOfLine": "lf",
   "printWidth": 120,
   "proseWrap": "preserve",
   "arrowParens": "avoid",
