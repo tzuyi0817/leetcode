@@ -2,7 +2,7 @@
  * @param {number[]} arr
  * @return {number[]}
  */
-var arrayRankTransform = function (arr) {
+const arrayRankTransform = function (arr) {
   const n = arr.length;
   const sortedArr = arr.map((num, index) => ({ num, index })).sort((a, b) => a.num - b.num);
   const result = Array(n);

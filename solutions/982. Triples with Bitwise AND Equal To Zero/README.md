@@ -66,7 +66,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var countTriplets = function (nums) {
+const countTriplets = function (nums) {
   const maxNum = Math.max(...nums);
   const counts = Array(maxNum + 1).fill(0);
   let result = 0;

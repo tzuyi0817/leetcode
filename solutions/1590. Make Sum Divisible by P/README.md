@@ -63,21 +63,25 @@ const minSubarray = function (nums, p) {
   const sum = nums.reduce((result, num) => result + num);
   const remainder = sum % p;
 
-  if (remainder === 0) return 0;
-  const prefixSumMap = new Map([[0, -1]]);
-  const size = nums.length;
-  let currentSum = 0;
-  let result = size;
+  if (!remainder) return 0;
+  const n = nums.length;
+  const remainderMap = new Map();
+  let currentRemainder = 0;
+  let result = n;
 
-  for (let index = 0; index < size; index++) {
-    currentSum = (currentSum + nums[index]) % p;
-    prefixSumMap.set(currentSum, index);
+  remainderMap.set(0, -1);
 
-    const currentRemainder = (currentSum - remainder + p) % p;
+  for (let index = 0; index < n; index++) {
+    const num = nums[index];
 
-    if (!prefixSumMap.has(currentRemainder)) continue;
-    result = Math.min(result, index - prefixSumMap.get(currentRemainder));
+    currentRemainder = (currentRemainder + num) % p;
+    const target = (currentRemainder - remainder + p) % p;
+
+    if (remainderMap.has(target)) {
+      result = Math.min(index - remainderMap.get(target), result);
+    }
+    remainderMap.set(currentRemainder, index);
   }
-  return result === size ? -1 : result;
+  return result === n ? -1 : result;
 };
 ```
