@@ -12,8 +12,10 @@ export default [
     rules: {
       'no-unused-vars': 'off',
 
-      'sonarjs/no-nested-assignment': 'off',
       'security/detect-object-injection': 'off',
+
+      'sonarjs/no-nested-assignment': 'off',
+      'sonarjs/cognitive-complexity': 'off',
     },
   },
 ];
