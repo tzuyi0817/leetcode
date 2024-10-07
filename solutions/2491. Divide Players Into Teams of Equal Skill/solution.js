@@ -2,7 +2,7 @@
  * @param {number[]} skill
  * @return {number}
  */
-var dividePlayers = function (skill) {
+const dividePlayers = function (skill) {
   const n = skill.length;
   const totalSkill = skill.reduce((result, value) => result + value);
   const teamSkill = totalSkill / (n / 2);

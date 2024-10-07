@@ -55,7 +55,7 @@
  * @param {number} k
  * @return {number}
  */
-var subarraysWithKDistinct = function (nums, k) {
+const subarraysWithKDistinct = function (nums, k) {
   const n = nums.length;
 
   const subarraysWithMostDistinct = m => {
