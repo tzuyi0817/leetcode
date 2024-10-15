@@ -63,7 +63,7 @@ The final score is 10 + 4 + 3 = 17.
  * @param {number} k
  * @return {number}
  */
-var maxKelements = function (nums, k) {
+const maxKelements = function (nums, k) {
   const queue = new MaxPriorityQueue({ compare: (a, b) => b - a });
   let result = 0;
 
