@@ -70,7 +70,7 @@ The 1<sup>st</sup>&nbsp;query asks if the lamp at grid[1][0] is illuminated or n
  * @param {number[][]} queries
  * @return {number[]}
  */
-var gridIllumination = function (n, lamps, queries) {
+const gridIllumination = function (n, lamps, queries) {
   const lampsSet = new Set();
   const rowMemo = new Map();
   const colMemo = new Map();

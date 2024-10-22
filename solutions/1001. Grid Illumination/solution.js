@@ -4,7 +4,7 @@
  * @param {number[][]} queries
  * @return {number[]}
  */
-var gridIllumination = function (n, lamps, queries) {
+const gridIllumination = function (n, lamps, queries) {
   const lampsSet = new Set();
   const rowMemo = new Map();
   const colMemo = new Map();
