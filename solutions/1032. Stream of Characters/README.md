@@ -59,7 +59,7 @@ streamChecker.query("l"); // return True, because 'kl' is in the wordlist
 - Time complexity:
   - constructor: <em>O(words.length\*words[i].length)</em>
   - query: <em>O(query call times)</em>
-- Space complexity: <em>O(n)</em>
+- Space complexity:
   - constructor: <em>O(words.length\*words[i].length)</em>
   - query: <em>O(query call times)</em>
 
