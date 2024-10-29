@@ -48,7 +48,7 @@
  */
 const shortestSubarray = function (nums, k) {
   const n = nums.length;
-  const prefixSum = Array(n).fill(0);
+  const prefixSum = new Array(n).fill(0);
   const monotonicQueue = [-1];
   let result = n + 1;
 

@@ -6,8 +6,7 @@ const LockingTree = function (parent) {
   this.lockMap = new Map();
   this.relativeMap = new Map();
 
-  for (let node = 0; node < parent.length; node++) {
-    const ancestor = parent[node];
+  for (const [node, ancestor] of parent.entries()) {
     const descendants = this.relativeMap.get(ancestor) ?? [];
 
     descendants.push(node);

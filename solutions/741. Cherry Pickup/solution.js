@@ -4,13 +4,7 @@
  */
 const cherryPickup = function (grid) {
   const n = grid.length;
-  const dp = Array(n)
-    .fill('')
-    .map(_ =>
-      Array(n)
-        .fill('')
-        .map(_ => Array(n).fill(-1)),
-    );
+  const dp = new Array(n).fill('').map(_ => new Array(n).fill('').map(_ => new Array(n).fill(-1)));
 
   const cherryPick = (row1, col1, row2) => {
     const col2 = row1 + col1 - row2;

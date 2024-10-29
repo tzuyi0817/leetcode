@@ -5,7 +5,7 @@
  */
 const minStoneSum = function (piles, k) {
   const CORNER_PILE = 10 ** 4;
-  const pileCounts = Array(CORNER_PILE + 1).fill(0);
+  const pileCounts = Array.from({ length: CORNER_PILE + 1 }).fill(0);
   let result = 0;
 
   for (const pile of piles) pileCounts[pile] += 1;

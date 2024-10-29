@@ -15,7 +15,7 @@ const missingRolls = function (rolls, mean, n) {
 
   if (average > MAX_ROLL || average <= 0) return [];
   if (eachMax === 0 && remain) return [];
-  const result = Array(n).fill(average);
+  const result = new Array(n).fill(average);
   let index = 0;
 
   while (remain) {

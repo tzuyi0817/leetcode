@@ -11,8 +11,8 @@ const countRestrictedPaths = function (n, edges) {
     return map;
   }, {});
   const queue = [n];
-  const distances = Array(n + 1).fill(Number.MAX_SAFE_INTEGER);
-  const status = Array(n + 1).fill('not visited');
+  const distances = new Array(n + 1).fill(Number.MAX_SAFE_INTEGER);
+  const status = new Array(n + 1).fill('not visited');
   const countMap = new Map([[n, 1]]);
   const restrictedPaths = node => {
     if (countMap.has(node)) return countMap.get(node);

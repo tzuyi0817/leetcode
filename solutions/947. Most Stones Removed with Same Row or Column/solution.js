@@ -4,9 +4,7 @@
  */
 const removeStones = function (stones) {
   const n = stones.length;
-  const stoneGroup = Array(n)
-    .fill('')
-    .map((_, index) => index);
+  const stoneGroup = new Array(n).fill('').map((_, index) => index);
 
   const unionFind = x => {
     return stoneGroup[x] === x ? x : unionFind(stoneGroup[x]);

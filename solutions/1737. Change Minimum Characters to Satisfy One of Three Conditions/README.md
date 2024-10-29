@@ -65,8 +65,8 @@ const minCharacters = function (a, b) {
   const CODE_BASE = 'a'.charCodeAt(0);
   const m = a.length;
   const n = b.length;
-  const countA = Array(26).fill(0);
-  const countB = Array(26).fill(0);
+  const countA = Array.from({length: 26}).fill(0);
+  const countB = Array.from({length: 26}).fill(0);
   let result = m + n;
 
   for (const char of a) countA[char.charCodeAt(0) - CODE_BASE] += 1;

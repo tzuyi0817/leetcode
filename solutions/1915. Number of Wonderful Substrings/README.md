@@ -79,7 +79,7 @@ const wonderfulSubstrings = function (word) {
   const BASE_CHAR_CODE = 'a'.charCodeAt(0);
   const CHARS = 'abcdefghij'.length;
   const BIT = 2 ** CHARS;
-  const counts = Array(BIT).fill(0);
+  const counts = Array.from({length: BIT}).fill(0);
   let result = (current = 0);
 
   counts[0] = 1;

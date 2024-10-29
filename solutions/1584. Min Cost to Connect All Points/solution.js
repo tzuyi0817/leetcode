@@ -4,9 +4,7 @@
  */
 const minCostConnectPoints = function (points) {
   const size = points.length;
-  const graph = Array(size)
-    .fill('')
-    .map((_, index) => index);
+  const graph = new Array(size).fill('').map((_, index) => index);
   const costs = [];
 
   for (let a = 0; a < size - 1; a++) {

@@ -4,7 +4,7 @@
  * @return {number}
  */
 const minMoves = function (nums, limit) {
-  const moves = Array(2 + limit * 2).fill(0);
+  const moves = Array.from({ length: 2 + limit * 2 }).fill(0);
   const size = nums.length;
   let current = 0;
   let result = size;

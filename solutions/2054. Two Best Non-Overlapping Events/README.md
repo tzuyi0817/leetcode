@@ -73,8 +73,7 @@ const maxTwoEvents = function (events) {
   events.sort((a, b) => a[0] - b[0]);
   endEvents.sort((a, b) => a - b);
 
-  for (let index = 0; index < events.length; index++) {
-    const [start, end, value] = events[index];
+  for (const [start, end, value] of events) {
 
     while (endEvents[currentEnd] < start) {
       const endValue = endEventMap.get(endEvents[currentEnd]);

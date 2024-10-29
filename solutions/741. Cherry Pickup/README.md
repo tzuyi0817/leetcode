@@ -69,12 +69,12 @@ The total number of cherries picked up is 5, and this is the maximum possible.
  */
 const cherryPickup = function (grid) {
   const n = grid.length;
-  const dp = Array(n)
+  const dp = new Array(n)
     .fill('')
     .map(_ =>
-      Array(n)
+      new Array(n)
         .fill('')
-        .map(_ => Array(n).fill(-1)),
+        .map(_ => new Array(n).fill(-1)),
     );
 
   const cherryPick = (row1, col1, row2) => {

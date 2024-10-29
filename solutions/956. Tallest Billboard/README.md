@@ -60,7 +60,7 @@
  */
 const tallestBillboard = function (rods) {
   const sumRods = rods.reduce((result, rod) => result + rod);
-  const dp = Array(sumRods + 1).fill(-1);
+  const dp = new Array(sumRods + 1).fill(-1);
 
   dp[0] = 0;
 

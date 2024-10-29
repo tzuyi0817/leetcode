@@ -70,7 +70,7 @@ Total sum: 11 + 8 = 19, which is the best that you can do.
 const maxSumRangeQuery = function (nums, requests) {
   const MODULO = 10 ** 9 + 7;
   const size = nums.length;
-  const prefixRequest = Array(size).fill(0);
+  const prefixRequest = new Array(size).fill(0);
 
   requests.forEach(([start, end]) => {
     prefixRequest[start] += 1;

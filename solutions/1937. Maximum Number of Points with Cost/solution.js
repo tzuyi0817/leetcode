@@ -4,11 +4,11 @@
  */
 const maxPoints = function (points) {
   const n = points[0].length;
-  const dp = Array(n).fill(0);
+  const dp = new Array(n).fill(0);
 
   for (const row of points) {
-    const startLeft = Array(n);
-    const startRight = Array(n);
+    const startLeft = new Array(n);
+    const startRight = new Array(n);
     let score = 0;
 
     for (let col = 0; col < n; col++) {

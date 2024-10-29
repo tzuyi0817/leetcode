@@ -74,7 +74,7 @@ Course 0 is not a prerequisite of course 1, but the opposite is true.
  * @return {boolean[]}
  */
 const checkIfPrerequisite = function (numCourses, prerequisites, queries) {
-  const courses = Array(numCourses)
+  const courses = new Array(numCourses)
     .fill('')
     .map(_ => new Set());
   const prerequisiteMap = new Map();

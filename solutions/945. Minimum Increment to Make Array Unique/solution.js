@@ -4,7 +4,7 @@
  */
 const minIncrementForUnique = function (nums) {
   const max = Math.max(...nums);
-  const counts = Array(max + 1).fill(0);
+  const counts = new Array(max + 1).fill(0);
   let result = 0;
   let next = 0;
 

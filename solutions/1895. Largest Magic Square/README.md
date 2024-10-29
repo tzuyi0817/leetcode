@@ -56,12 +56,12 @@ Every row sum, column sum, and diagonal sum of this magic square is equal to 12.
 const largestMagicSquare = function (grid) {
   const m = grid.length;
   const n = grid[0].length;
-  const rowSums = Array(m)
+  const rowSums = new Array(m)
     .fill('')
-    .map(_ => Array(n + 1).fill(0));
-  const colSums = Array(n)
+    .map(_ => new Array(n + 1).fill(0));
+  const colSums = new Array(n)
     .fill('')
-    .map(_ => Array(m + 1).fill(0));
+    .map(_ => new Array(m + 1).fill(0));
   const boundary = Math.min(m, n);
   const isValid = (sum, row, col, boundary) => {
     for (let length = 0; length < boundary; length++) {

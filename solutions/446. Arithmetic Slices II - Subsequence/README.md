@@ -70,7 +70,7 @@
  */
 const numberOfArithmeticSlices = function (nums) {
   const n = nums.length;
-  const dp = Array(n)
+  const dp = new Array(n)
     .fill('')
     .map(_ => new Map());
   let result = 0;

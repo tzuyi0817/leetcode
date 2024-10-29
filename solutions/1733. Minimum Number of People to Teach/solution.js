@@ -6,9 +6,7 @@
  */
 const minimumTeachings = function (n, languages, friendships) {
   const size = languages.length;
-  const communicate = Array(size)
-    .fill('')
-    .map(_ => Array(n).fill(false));
+  const communicate = new Array(size).fill('').map(_ => new Array(n).fill(false));
   const users = new Set();
   let result = Number.MAX_SAFE_INTEGER;
 

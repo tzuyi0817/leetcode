@@ -8,8 +8,7 @@ const MyCalendarThree = function () {
  * @return {number}
  */
 MyCalendarThree.prototype.book = function (startTime, endTime) {
-  this.timeline.push({ time: startTime, event: 1 });
-  this.timeline.push({ time: endTime, event: -1 });
+  this.timeline.push({ time: startTime, event: 1 }, { time: endTime, event: -1 });
   this.timeline.sort((a, b) => a.time - b.time || a.event - b.event);
 
   let current = (maxEvents = 0);

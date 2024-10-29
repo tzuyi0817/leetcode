@@ -5,11 +5,9 @@
  */
 const countPaths = function (n, roads) {
   const MODULO = 10 ** 9 + 7;
-  const graph = Array(n)
-    .fill('')
-    .map(_ => []);
-  const times = Array(n).fill(Number.MAX_SAFE_INTEGER);
-  const ways = Array(n).fill(0);
+  const graph = new Array(n).fill('').map(_ => []);
+  const times = new Array(n).fill(Number.MAX_SAFE_INTEGER);
+  const ways = new Array(n).fill(0);
   const queue = new MinPriorityQueue({ priority: ({ time }) => time });
 
   for (const [a, b, time] of roads) {

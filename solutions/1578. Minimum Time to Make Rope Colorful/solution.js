@@ -7,8 +7,7 @@ const minCost = function (colors, neededTime) {
   let currentColor = '';
   let result = (currentMaxTime = 0);
 
-  for (let index = 0; index < colors.length; index++) {
-    const color = colors[index];
+  for (const [index, color] of colors.entries()) {
     const time = neededTime[index];
 
     if (currentColor === color) {

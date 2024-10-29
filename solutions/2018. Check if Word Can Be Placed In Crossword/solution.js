@@ -8,10 +8,10 @@ const placeWordInCrossword = function (board, word) {
   const n = board[0].length;
   const isCorner = cell => cell === '#' || cell === undefined;
   const isCanPlaced = (row, col, moveX, moveY) => {
-    for (let index = 0; index < word.length; index++) {
+    for (const element of word) {
       const letter = board[row]?.[col];
 
-      if (letter !== word[index] && letter !== ' ') return false;
+      if (letter !== element && letter !== ' ') return false;
       row += moveY;
       col += moveX;
     }

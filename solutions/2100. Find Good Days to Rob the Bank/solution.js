@@ -5,8 +5,8 @@
  */
 const goodDaysToRobBank = function (security, time) {
   const size = security.length;
-  const beforeTimes = Array(size).fill(0);
-  const afterTimes = Array(size).fill(0);
+  const beforeTimes = new Array(size).fill(0);
+  const afterTimes = new Array(size).fill(0);
   const result = [];
 
   for (let index = 1; index < size; index++) {

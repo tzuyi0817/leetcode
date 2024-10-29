@@ -5,9 +5,7 @@
  */
 const minSpaceWastedKResizing = function (nums, k) {
   const size = nums.length;
-  const dp = Array(size)
-    .fill('')
-    .map(_ => Array(k + 1).fill(Number.MAX_SAFE_INTEGER));
+  const dp = new Array(size).fill('').map(_ => new Array(k + 1).fill(Number.MAX_SAFE_INTEGER));
   let sum = 0;
   let max = 0;
 

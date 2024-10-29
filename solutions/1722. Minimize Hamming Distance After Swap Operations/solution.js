@@ -6,9 +6,7 @@
  */
 const minimumHammingDistance = function (source, target, allowedSwaps) {
   const size = source.length;
-  const union = Array(size)
-    .fill('')
-    .map((_, index) => index);
+  const union = new Array(size).fill('').map((_, index) => index);
   const swapMap = new Map();
   const find = node => (union[node] === node ? node : find(union[node]));
   let result = 0;

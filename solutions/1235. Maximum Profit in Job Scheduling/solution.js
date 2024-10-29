@@ -6,7 +6,7 @@
  */
 const jobScheduling = function (startTime, endTime, profit) {
   const size = startTime.length;
-  const dp = Array(size + 1).fill(0);
+  const dp = new Array(size + 1).fill(0);
   const jobs = startTime.map((start, index) => {
     return { start, end: endTime[index], profit: profit[index] };
   });

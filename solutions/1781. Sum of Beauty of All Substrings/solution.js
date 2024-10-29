@@ -5,7 +5,7 @@
 const beautySum = function (s) {
   const CODE_BASE = 'a'.charCodeAt(0);
   const size = s.length;
-  const frequencies = Array(26).fill(0);
+  const frequencies = Array.from({ length: 26 }).fill(0);
   let result = 0;
 
   for (let a = 0; a < size - 1; a++) {

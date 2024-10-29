@@ -4,7 +4,7 @@
  */
 const sumOfBeauties = function (nums) {
   const size = nums.length;
-  const rightMinValues = Array(size).fill(0);
+  const rightMinValues = new Array(size).fill(0);
   let maxValue = nums[0];
   let result = 0;
 

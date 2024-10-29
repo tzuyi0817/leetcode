@@ -59,7 +59,7 @@ const subarraysWithKDistinct = function (nums, k) {
   const n = nums.length;
 
   const subarraysWithMostDistinct = m => {
-    const counts = Array(n + 1).fill(0);
+    const counts = new Array(n + 1).fill(0);
     let left = 0;
     let result = 0;
 

@@ -44,8 +44,8 @@ const findLadders = function (beginWord, endWord, wordList) {
   const isValid = (a, b) => {
     let diff = 0;
 
-    for (let index = 0; index < a.length; index++) {
-      if (a[index] !== b[index]) diff += 1;
+    for (const [index, element] of a.entries()) {
+      if (element !== b[index]) diff += 1;
       if (diff > 1) return false;
     }
     return diff === 1;

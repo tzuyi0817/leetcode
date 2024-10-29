@@ -5,7 +5,7 @@
  */
 const minDifference = function (nums, queries) {
   const MAX_NUM = 100;
-  const numIndices = Array(MAX_NUM + 1);
+  const numIndices = Array.from({ length: MAX_NUM + 1 });
   const isWithinRange = (left, right, target) => {
     const indices = numIndices[target];
     if (!indices) return false;

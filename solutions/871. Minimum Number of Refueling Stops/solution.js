@@ -6,7 +6,7 @@
  */
 const minRefuelStops = function (target, startFuel, stations) {
   const n = stations.length;
-  const dp = Array(n + 1).fill(startFuel);
+  const dp = new Array(n + 1).fill(startFuel);
 
   for (let index = 0; index < n; index++) {
     const [position, fuel] = stations[index];
@@ -18,8 +18,8 @@ const minRefuelStops = function (target, startFuel, stations) {
     }
   }
 
-  for (let index = 0; index < dp.length; index++) {
-    if (dp[index] >= target) return index;
+  for (const [index, element] of dp.entries()) {
+    if (element >= target) return index;
   }
   return -1;
 };

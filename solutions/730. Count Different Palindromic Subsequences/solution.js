@@ -7,12 +7,10 @@ const countPalindromicSubsequences = function (s) {
   const BASE_CODE = 'a'.charCodeAt(0);
   const CHARS_COUNT = 4;
   const n = s.length;
-  const chars = Array(CHARS_COUNT)
+  const chars = Array.from({ length: CHARS_COUNT })
     .fill('')
     .map(_ => []);
-  const memo = Array(n)
-    .fill('')
-    .map(_ => Array(n).fill(0));
+  const memo = new Array(n).fill('').map(_ => new Array(n).fill(0));
 
   for (let index = 0; index < n; index++) {
     const code = s[index].charCodeAt(0) - BASE_CODE;

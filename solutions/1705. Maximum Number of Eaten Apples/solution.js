@@ -4,7 +4,7 @@
  * @return {number}
  */
 const eatenApples = function (apples, days) {
-  const applesTime = Array(4 * 10 ** 4 + 1).fill(0);
+  const applesTime = Array.from({ length: 4 * 10 ** 4 + 1 }).fill(0);
   let result = 0;
   let currentTime = Number.MAX_SAFE_INTEGER;
   let last = apples.length;

@@ -4,15 +4,13 @@
  */
 const numSimilarGroups = function (strs) {
   const n = strs.length;
-  const groups = Array(n)
-    .fill('')
-    .map((_, index) => index);
+  const groups = new Array(n).fill('').map((_, index) => index);
 
   const isSimilar = (a, b) => {
     let diff = 0;
 
-    for (let index = 0; index < a.length; index++) {
-      if (a[index] === b[index]) continue;
+    for (const [index, element] of a.entries()) {
+      if (element === b[index]) continue;
       diff += 1;
       if (diff > 2) return false;
     }

@@ -3,7 +3,7 @@
  * @return {number}
  */
 const minSteps = function (n) {
-  const dp = Array(n + 1).fill(0);
+  const dp = new Array(n + 1).fill(0);
 
   for (let index = 2; index <= n; index++) {
     let operations = index;

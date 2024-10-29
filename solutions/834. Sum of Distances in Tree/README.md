@@ -64,7 +64,7 @@ Hence, answer[0] = 8, and so on.
  * @return {number[]}
  */
 const sumOfDistancesInTree = function (n, edges) {
-  const graph = Array(n)
+  const graph = new Array(n)
     .fill('')
     .map(_ => []);
 
@@ -72,8 +72,8 @@ const sumOfDistancesInTree = function (n, edges) {
     graph[a].push(b);
     graph[b].push(a);
   }
-  const counts = Array(n).fill(1);
-  const result = Array(n).fill(0);
+  const counts = new Array(n).fill(1);
+  const result = new Array(n).fill(0);
   const root = 0;
 
   const dfsGraph = (node, parent) => {

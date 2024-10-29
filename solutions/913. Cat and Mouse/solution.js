@@ -16,20 +16,8 @@ const catMouseGame = function (graph) {
   const n = graph.length;
   const defaultState = { [MOUSE_ROUND]: DRAW, [CAT_ROUND]: DRAW };
   const defaultDegree = { [MOUSE_ROUND]: 0, [CAT_ROUND]: 0 };
-  const states = Array(n)
-    .fill('')
-    .map(_ =>
-      Array(n)
-        .fill('')
-        .map(_ => ({ ...defaultState })),
-    );
-  const outDegree = Array(n)
-    .fill('')
-    .map(_ =>
-      Array(n)
-        .fill('')
-        .map(_ => ({ ...defaultDegree })),
-    );
+  const states = new Array(n).fill('').map(_ => new Array(n).fill('').map(_ => ({ ...defaultState })));
+  const outDegree = new Array(n).fill('').map(_ => new Array(n).fill('').map(_ => ({ ...defaultDegree })));
   let queue = [];
 
   for (let mouse = 0; mouse < n; mouse++) {
@@ -45,10 +33,12 @@ const catMouseGame = function (graph) {
     states[cat][cat][MOUSE_ROUND] = CAT_WIN;
     states[cat][cat][CAT_ROUND] = CAT_WIN;
 
-    queue.push({ mouse: 0, cat, round: MOUSE_ROUND, state: MOUSE_WIN });
-    queue.push({ mouse: 0, cat, round: CAT_ROUND, state: MOUSE_WIN });
-    queue.push({ mouse: cat, cat, round: MOUSE_ROUND, state: CAT_WIN });
-    queue.push({ mouse: cat, cat, round: CAT_ROUND, state: CAT_WIN });
+    queue.push(
+      { mouse: 0, cat, round: MOUSE_ROUND, state: MOUSE_WIN },
+      { mouse: 0, cat, round: CAT_ROUND, state: MOUSE_WIN },
+      { mouse: cat, cat, round: MOUSE_ROUND, state: CAT_WIN },
+      { mouse: cat, cat, round: CAT_ROUND, state: CAT_WIN },
+    );
   }
 
   while (queue.length) {

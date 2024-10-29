@@ -56,7 +56,7 @@ A <strong>subsequence</strong> of a string is a new string that is formed from t
 const distinctSubseqII = function (s) {
   const MODULO = 10 ** 9 + 7;
   const BASE_CODE = 'a'.charCodeAt(0);
-  const dp = Array(26).fill(0);
+  const dp = Array.from({length: 26}).fill(0);
   const accumulate = nums => nums.reduce((sum, num) => sum + num);
 
   for (const letter of s) {

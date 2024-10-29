@@ -14,7 +14,7 @@ const networkBecomesIdle = function (edges, patience) {
     map.set(a, serversA);
     return map.set(b, serversB);
   }, new Map());
-  const distances = Array(n).fill(Number.MAX_SAFE_INTEGER);
+  const distances = new Array(n).fill(Number.MAX_SAFE_INTEGER);
   let queue = [0];
   let result = 0;
 

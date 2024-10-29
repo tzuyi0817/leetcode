@@ -59,7 +59,7 @@
  */
 const findSmallestSetOfVertices = function (n, edges) {
   const vertices = new Set(
-    Array(n)
+    new Array(n)
       .fill('')
       .map((_, index) => index),
   );

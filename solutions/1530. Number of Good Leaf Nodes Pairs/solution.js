@@ -15,7 +15,7 @@ const countPairs = function (root, distance) {
   let result = 0;
 
   const getDistances = node => {
-    const distances = Array(distance + 1).fill(0);
+    const distances = new Array(distance + 1).fill(0);
 
     if (!node) return distances;
     if (!node.left && !node.right) {

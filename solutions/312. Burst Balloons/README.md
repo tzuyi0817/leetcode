@@ -54,9 +54,9 @@ coins =  3*1*5    +   3*5*8   +  1*3*8  + 1*8*1 = 167</pre>
 const maxCoins = function (nums) {
   const n = nums.length;
   const coins = [1, ...nums, 1];
-  const dp = Array(n + 2)
+  const dp = new Array(n + 2)
     .fill('')
-    .map(_ => Array(n + 2).fill(0));
+    .map(_ => new Array(n + 2).fill(0));
 
   for (let left = n; left >= 1; left--) {
     for (let right = left; right <= n; right++) {

@@ -8,7 +8,7 @@ const canReach = function (s, minJump, maxJump) {
   const size = s.length;
 
   if (s[size - 1] !== '0') return false;
-  const dp = Array(size).fill(0);
+  const dp = new Array(size).fill(0);
   let count = 0;
 
   dp[minJump] += 1;

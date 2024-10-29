@@ -5,11 +5,9 @@
  * @return {number}
  */
 const reachableNodes = function (edges, maxMoves, n) {
-  const graph = Array(n)
-    .fill('')
-    .map(_ => []);
+  const graph = new Array(n).fill('').map(_ => []);
   const queue = new MinPriorityQueue({ priority: ({ moves }) => moves });
-  const movedes = Array(n).fill(-1);
+  const movedes = new Array(n).fill(-1);
   let result = 0;
 
   for (const [a, b, cnt] of edges) {

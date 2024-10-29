@@ -61,7 +61,7 @@ Note that "acfgbd" is not ideal because 'c' and 'f' have a difference of 3 in al
  */
 const longestIdealString = function (s, k) {
   const BASE_CHAR_CODE = 'a'.charCodeAt(0);
-  const dp = Array(26).fill(0);
+  const dp = Array.from({length: 26}).fill(0);
   const maxSubSize = code => {
     const start = Math.max(0, code - k);
     const end = Math.min(25, code + k);

@@ -4,13 +4,7 @@
  */
 const removeBoxes = function (boxes) {
   const n = boxes.length;
-  const dp = Array(n)
-    .fill('')
-    .map(_ =>
-      Array(n)
-        .fill('')
-        .map(_ => Array(n).fill(0)),
-    );
+  const dp = new Array(n).fill('').map(_ => new Array(n).fill('').map(_ => new Array(n).fill(0)));
 
   const calculatePoints = (left, right, count) => {
     if (left > right) return 0;

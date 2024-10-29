@@ -4,7 +4,7 @@
  */
 const minDeletionSize = function (strs) {
   const m = strs[0].length;
-  const dp = Array(m).fill(1);
+  const dp = new Array(m).fill(1);
 
   const isSorted = (a, b) => {
     for (const word of strs) {

@@ -47,10 +47,10 @@ It can be shown that it is the maximum number of moves that can be made.</pre>
 
 ## Solutions
 
-**Solution: `Brute force`**
+**Solution: `Dynamic Programming`**
 
-- Time complexity: <em>O(n)</em>
-- Space complexity: <em>O(1)</em>
+- Time complexity: <em>O(mn)</em>
+- Space complexity: <em>O(m)</em>
 
 <p>&nbsp;</p>
 
@@ -64,10 +64,10 @@ It can be shown that it is the maximum number of moves that can be made.</pre>
 const maxMoves = function (grid) {
   const m = grid.length;
   const n = grid[0].length;
-  let dp = Array(m + 1).fill(0);
+  let dp = new Array(m + 1).fill(0);
 
   for (let col = n - 2; col >= 0; col--) {
-    const nextDp = Array(m + 1).fill(0);
+    const nextDp = new Array(m + 1).fill(0);
 
     for (let row = 0; row < m; row++) {
       const value = grid[row][col];

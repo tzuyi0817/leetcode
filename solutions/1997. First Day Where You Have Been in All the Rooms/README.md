@@ -76,7 +76,7 @@ Day 6 is the first day where you have been in all the rooms.
 const firstDayBeenInAllRooms = function (nextVisit) {
   const MODULO = 10 ** 9 + 7;
   const size = nextVisit.length;
-  const visitDay = Array(size).fill(0);
+  const visitDay = new Array(size).fill(0);
 
   for (let index = 1; index < size; index++) {
     const previousRoom = index - 1;

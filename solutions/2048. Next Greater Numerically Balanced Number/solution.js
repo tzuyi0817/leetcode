@@ -6,7 +6,7 @@ const nextBeautifulNumber = function (n) {
   while (!isBalancedNumber(++n));
 
   function isBalancedNumber(num) {
-    const counts = Array(10).fill(0);
+    const counts = Array.from({ length: 10 }).fill(0);
 
     while (num) {
       const mantissa = num % 10;

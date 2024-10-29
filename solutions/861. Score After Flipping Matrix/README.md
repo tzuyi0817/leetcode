@@ -76,7 +76,7 @@ const matrixScore = function (grid) {
     }
   }
   return grid.reduce((result, row) => {
-    return result + parseInt(row.join(''), 2);
+    return result + Number.parseInt(row.join(''), 2);
   }, 0);
 };
 ```

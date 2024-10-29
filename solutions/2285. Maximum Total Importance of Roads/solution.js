@@ -4,7 +4,7 @@
  * @return {number}
  */
 const maximumImportance = function (n, roads) {
-  const connectRoads = Array(n).fill(0);
+  const connectRoads = new Array(n).fill(0);
 
   for (const [a, b] of roads) {
     connectRoads[a] += 1;

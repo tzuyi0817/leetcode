@@ -85,8 +85,7 @@ const stoneGameVI = function (aliceValues, bobValues) {
 
   values.sort((a, b) => b.alice + b.bob - a.alice - a.bob);
 
-  for (let index = 0; index < values.length; index++) {
-    const value = values[index];
+  for (const [index, value] of values.entries()) {
 
     index % 2 ? (bob += value.bob) : (alice += value.alice);
   }

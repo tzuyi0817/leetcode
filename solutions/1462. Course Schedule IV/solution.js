@@ -5,9 +5,7 @@
  * @return {boolean[]}
  */
 const checkIfPrerequisite = function (numCourses, prerequisites, queries) {
-  const courses = Array(numCourses)
-    .fill('')
-    .map(_ => new Set());
+  const courses = new Array(numCourses).fill('').map(_ => new Set());
   const prerequisiteMap = new Map();
 
   prerequisites.forEach(([pre, current]) => {

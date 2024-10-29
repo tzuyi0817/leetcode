@@ -60,7 +60,7 @@
 const calculateMinimumHP = function (dungeon) {
   const m = dungeon.length;
   const n = dungeon[0].length;
-  const dp = Array(n + 1).fill(Number.MAX_SAFE_INTEGER);
+  const dp = new Array(n + 1).fill(Number.MAX_SAFE_INTEGER);
 
   dp[n - 1] = 1;
 

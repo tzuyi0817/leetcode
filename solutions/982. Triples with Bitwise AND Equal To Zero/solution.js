@@ -4,7 +4,7 @@
  */
 const countTriplets = function (nums) {
   const maxNum = Math.max(...nums);
-  const counts = Array(maxNum + 1).fill(0);
+  const counts = new Array(maxNum + 1).fill(0);
   let result = 0;
 
   for (const a of nums) {

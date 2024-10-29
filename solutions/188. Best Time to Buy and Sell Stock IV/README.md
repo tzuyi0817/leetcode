@@ -67,8 +67,8 @@ const maxProfit = function (k, prices) {
     }
     return result;
   }
-  const hold = Array(k + 1).fill(Number.MIN_SAFE_INTEGER);
-  const sell = Array(k + 1).fill(0);
+  const hold = new Array(k + 1).fill(Number.MIN_SAFE_INTEGER);
+  const sell = new Array(k + 1).fill(0);
 
   for (const price of prices) {
     for (let times = 1; times <= k; times++) {

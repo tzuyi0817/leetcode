@@ -55,7 +55,7 @@ Notice that there is a unique path between every pair of points.
  */
 const minCostConnectPoints = function (points) {
   const size = points.length;
-  const graph = Array(size)
+  const graph = new Array(size)
     .fill('')
     .map((_, index) => index);
   const costs = [];

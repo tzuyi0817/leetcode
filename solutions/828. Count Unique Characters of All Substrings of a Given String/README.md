@@ -65,8 +65,8 @@ Sum of lengths of all substring is 1 + 1 + 1 + 2 + 2 + 3 = 10
 const uniqueLetterString = function (s) {
   const BASE_CODE = 'A'.charCodeAt(0);
   const n = s.length;
-  const lastCount = Array(26).fill(0);
-  const lastSeen = Array(26).fill(-1);
+  const lastCount = Array.from({length: 26}).fill(0);
+  const lastSeen = Array.from({length: 26}).fill(-1);
   let dp = 0;
   let result = 0;
 

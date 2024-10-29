@@ -82,12 +82,8 @@ const containsCycle = function (grid) {
       const moveRow = row + move;
       const moveCol = col + move;
 
-      if (moveRow !== preRow) {
-        if (isCycle(moveRow, col, row, col, value)) return true;
-      }
-      if (moveCol !== preCol) {
-        if (isCycle(row, moveCol, row, col, value)) return true;
-      }
+      if (moveRow !== preRow && isCycle(moveRow, col, row, col, value)) return true;
+      if (moveCol !== preCol && isCycle(row, moveCol, row, col, value)) return true;
     }
     return false;
   };

@@ -8,7 +8,7 @@ const oddEvenJumps = function (arr) {
   const descIndices = [...arr.keys()].sort((a, b) => arr[b] - arr[a]);
 
   const generateNextJumpIndices = indices => {
-    const result = Array(n).fill(-1);
+    const result = new Array(n).fill(-1);
     const stack = [];
 
     for (const index of indices) {
@@ -24,8 +24,8 @@ const oddEvenJumps = function (arr) {
 
   const oddNextJump = generateNextJumpIndices(ascIndices);
   const evenNextJump = generateNextJumpIndices(descIndices);
-  const oddJump = Array(n).fill(false);
-  const evenJump = Array(n).fill(false);
+  const oddJump = new Array(n).fill(false);
+  const evenJump = new Array(n).fill(false);
 
   oddJump[n - 1] = true;
   evenJump[n - 1] = true;

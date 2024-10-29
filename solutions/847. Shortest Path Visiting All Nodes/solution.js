@@ -5,9 +5,7 @@
 const shortestPathLength = function (graph) {
   const n = graph.length;
   const fullAccess = (1 << n) - 1;
-  const seen = Array(n)
-    .fill('')
-    .map(_ => Array(1 << n).fill(false));
+  const seen = new Array(n).fill('').map(_ => Array.from({ length: 1 << n }).fill(false));
   let queue = [];
   let result = 0;
 

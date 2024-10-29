@@ -21,8 +21,7 @@ const serialize = function (root) {
 
     for (const node of queue) {
       if (node) {
-        nextQueue.push(node.left);
-        nextQueue.push(node.right);
+        nextQueue.push(node.left, node.right);
         result += `${node.val} `;
         continue;
       }

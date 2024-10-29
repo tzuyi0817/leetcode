@@ -6,9 +6,7 @@
 const kthLargestValue = function (matrix, k) {
   const m = matrix.length;
   const n = matrix[0].length;
-  const dp = Array(m + 1)
-    .fill('')
-    .map(_ => Array(n + 1).fill(0));
+  const dp = new Array(m + 1).fill('').map(_ => new Array(n + 1).fill(0));
   const result = [];
 
   for (let row = 1; row <= m; row++) {

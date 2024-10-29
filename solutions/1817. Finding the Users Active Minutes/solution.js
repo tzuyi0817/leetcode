@@ -7,7 +7,7 @@ const findingUsersActiveMinutes = function (logs, k) {
   const activeMap = logs.reduce((map, [id, time]) => {
     return (map[id] = (map[id] ?? new Set()).add(time)), map;
   }, {});
-  const result = Array(k).fill(0);
+  const result = new Array(k).fill(0);
   const actives = Object.values(activeMap);
 
   for (const active of actives) {

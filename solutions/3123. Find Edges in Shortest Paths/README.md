@@ -75,18 +75,17 @@
  * @return {boolean[]}
  */
 const findAnswer = function (n, edges) {
-  const graph = Array(n)
+  const graph = new Array(n)
     .fill('')
     .map(_ => []);
-  const weighteds = Array(n).fill(Number.MAX_SAFE_INTEGER);
+  const weighteds = new Array(n).fill(Number.MAX_SAFE_INTEGER);
   const queue = new MinPriorityQueue({ priority: ({ weighted }) => weighted });
-  const result = Array(edges.length).fill(false);
+  const result = Array.from({length: edges.length}).fill(false);
 
   weighteds[0] = 0;
   queue.enqueue({ node: 0, weighted: 0 });
 
-  for (let index = 0; index < edges.length; index++) {
-    const [a, b, weighted] = edges[index];
+  for (const [index, [a, b, weighted]] of edges.entries()) {
 
     graph[a].push({ node: b, weighted, index });
     graph[b].push({ node: a, weighted, index });

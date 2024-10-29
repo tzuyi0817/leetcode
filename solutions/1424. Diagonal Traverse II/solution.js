@@ -5,9 +5,8 @@
 const findDiagonalOrder = function (nums) {
   const diagonalOrder = [];
 
-  for (let row = 0; row < nums.length; row++) {
-    for (let col = 0; col < nums[row].length; col++) {
-      const value = nums[row][col];
+  for (const [row, num] of nums.entries()) {
+    for (const [col, value] of num.entries()) {
       const order = row + col;
       const diagonal = diagonalOrder[order];
 

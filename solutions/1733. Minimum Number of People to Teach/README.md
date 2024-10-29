@@ -67,9 +67,9 @@ Note that friendships are not transitive, meaning if <code>x</code> is a friend 
  */
 const minimumTeachings = function (n, languages, friendships) {
   const size = languages.length;
-  const communicate = Array(size)
+  const communicate = new Array(size)
     .fill('')
-    .map(_ => Array(n).fill(false));
+    .map(_ => new Array(n).fill(false));
   const users = new Set();
   let result = Number.MAX_SAFE_INTEGER;
 

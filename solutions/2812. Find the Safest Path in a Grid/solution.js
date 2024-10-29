@@ -4,12 +4,8 @@
  */
 const maximumSafenessFactor = function (grid) {
   const n = grid.length;
-  const distances = Array(n)
-    .fill('')
-    .map(_ => Array(n).fill(Number.MAX_SAFE_INTEGER));
-  const safeness = Array(n)
-    .fill('')
-    .map(_ => Array(n).fill(0));
+  const distances = new Array(n).fill('').map(_ => new Array(n).fill(Number.MAX_SAFE_INTEGER));
+  const safeness = new Array(n).fill('').map(_ => new Array(n).fill(0));
   const moves = [
     [0, 1],
     [0, -1],

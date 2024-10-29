@@ -5,8 +5,8 @@
 const findIntegers = function (n) {
   const bits = n.toString(2);
   const size = bits.length;
-  const zeros = Array(size).fill(0);
-  const ones = Array(size).fill(0);
+  const zeros = new Array(size).fill(0);
+  const ones = new Array(size).fill(0);
 
   zeros[0] = ones[0] = 1;
 

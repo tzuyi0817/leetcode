@@ -110,7 +110,7 @@ const hitBricks = function (grid, hits) {
   for (let col = 0; col < n; col++) {
     checkGrid(0, col);
   }
-  const result = Array(hits.length).fill(0);
+  const result = Array.from({length: hits.length}).fill(0);
 
   for (let index = hits.length - 1; index >= 0; index--) {
     const [row, col] = hits[index];

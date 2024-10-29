@@ -10,11 +10,11 @@ const countPalindromicSubsequence = function (s) {
     const char = String.fromCharCode(BASE_CHAR_CODE + code);
     const start = s.indexOf(char);
 
-    if (start < 0) continue;
+    if (start === -1) continue;
     const end = s.lastIndexOf(char);
 
     if (start >= end) continue;
-    const isVisited = Array(26).fill(false);
+    const isVisited = Array.from({ length: 26 }).fill(false);
     let count = 0;
 
     for (let index = start + 1; index < end; index++) {

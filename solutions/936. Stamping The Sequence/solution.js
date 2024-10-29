@@ -7,14 +7,14 @@ const movesToStamp = function (stamp, target) {
   const n = target.length;
   const result = [];
   const current = target.split('');
-  const visited = Array(n).fill(false);
+  const visited = new Array(n).fill(false);
   let masks = 0;
 
   const isCanReplace = start => {
-    for (let index = 0; index < stamp.length; index++) {
+    for (const [index, element] of stamp.entries()) {
       const value = current[index + start];
 
-      if (value === stamp[index] || value === '?') continue;
+      if (value === element || value === '?') continue;
       return false;
     }
     return true;

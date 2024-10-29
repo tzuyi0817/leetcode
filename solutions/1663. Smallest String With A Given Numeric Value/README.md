@@ -54,7 +54,7 @@
  */
 const getSmallestString = function (n, k) {
   const CODE_BASE = 'a'.charCodeAt(0);
-  const result = Array(n).fill('a');
+  const result = new Array(n).fill('a');
 
   k -= n;
 

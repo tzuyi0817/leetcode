@@ -4,9 +4,7 @@
  */
 const numberOfArithmeticSlices = function (nums) {
   const n = nums.length;
-  const dp = Array(n)
-    .fill('')
-    .map(_ => new Map());
+  const dp = new Array(n).fill('').map(_ => new Map());
   let result = 0;
 
   const getCount = (map, diff) => map.get(diff) ?? 0;

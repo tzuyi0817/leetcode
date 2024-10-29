@@ -6,8 +6,8 @@ const countSmaller = function (nums) {
   const n = nums.length;
   const max = Math.max(...nums);
   const min = Math.min(...nums);
-  const BIT = Array(max - min + 2).fill(0);
-  const result = Array(n);
+  const BIT = new Array(max - min + 2).fill(0);
+  const result = new Array(n);
   const updateBIT = num => {
     while (num < BIT.length) {
       BIT[num] += 1;

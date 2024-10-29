@@ -13,9 +13,7 @@ const splitArraySameAverage = function (nums) {
         => sum * count1 % n === 0
     **/
 
-  const sums = Array(n)
-    .fill('')
-    .map(_ => new Set());
+  const sums = new Array(n).fill('').map(_ => new Set());
 
   sums[0].add(0);
 

@@ -62,12 +62,12 @@
  */
 const numMusicPlaylists = function (n, goal, k) {
   const MODULO = 10 ** 9 + 7;
-  let dp = Array(n + 1).fill(0);
+  let dp = new Array(n + 1).fill(0);
 
   dp[0] = 1;
 
   for (let index = 1; index <= goal; index++) {
-    const nextDp = Array(n + 1).fill(0);
+    const nextDp = new Array(n + 1).fill(0);
 
     for (let song = 1; song <= n; song++) {
       const newSongs = (dp[song - 1] * (n - (song - 1))) % MODULO;

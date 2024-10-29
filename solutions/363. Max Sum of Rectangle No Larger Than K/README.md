@@ -60,7 +60,7 @@ const maxSumSubmatrix = function (matrix, k) {
   let result = Number.MIN_SAFE_INTEGER;
 
   for (let upperRow = 0; upperRow < m; upperRow++) {
-    const prefixCol = Array(n).fill(0);
+    const prefixCol = new Array(n).fill(0);
 
     for (let row = upperRow; row < m; row++) {
       let sum = 0;

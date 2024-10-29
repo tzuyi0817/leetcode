@@ -15,14 +15,11 @@ const palindromePairs = function (words) {
   };
   const result = [];
 
-  for (let index = 0; index < words.length; index++) {
-    const word = words[index];
-
+  for (const [index, word] of words.entries()) {
     wordMap.set(word, index);
     wordSizeSet.add(word.length);
   }
-  for (let index = 0; index < words.length; index++) {
-    const word = words[index];
+  for (const [index, word] of words.entries()) {
     const size = word.length;
     const reverseWord = word.split('').reverse().join('');
     const reverseWordIndex = wordMap.get(reverseWord);

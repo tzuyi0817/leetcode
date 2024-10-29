@@ -74,10 +74,10 @@ const platesBetweenCandles = function (s, queries) {
     return prefixCandles[left] === target ? left : -1;
   };
 
-  for (let index = 0; index < s.length; index++) {
+  for (const [index, element] of s.entries()) {
     const previous = prefixCandles[index - 1] ?? 0;
 
-    prefixCandles[index] = s[index] === PLATE ? previous : previous + 1;
+    prefixCandles[index] = element === PLATE ? previous : previous + 1;
   }
   return queries.map(([left, right]) => {
     const leftCandle = s[left] === PLATE ? findCandle(left, right, prefixCandles[left] + 1) : left;

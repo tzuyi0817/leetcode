@@ -5,9 +5,7 @@
 const maxCoins = function (nums) {
   const n = nums.length;
   const coins = [1, ...nums, 1];
-  const dp = Array(n + 2)
-    .fill('')
-    .map(_ => Array(n + 2).fill(0));
+  const dp = new Array(n + 2).fill('').map(_ => new Array(n + 2).fill(0));
 
   for (let left = n; left >= 1; left--) {
     for (let right = left; right <= n; right++) {

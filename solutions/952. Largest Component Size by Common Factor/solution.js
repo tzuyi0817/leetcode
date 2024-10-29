@@ -4,9 +4,7 @@
  */
 const largestComponentSize = function (nums) {
   const maxNum = Math.max(...nums);
-  const groups = Array(maxNum + 1)
-    .fill('')
-    .map((_, index) => index);
+  const groups = new Array(maxNum + 1).fill('').map((_, index) => index);
 
   const unionFind = value => {
     return groups[value] === value ? value : unionFind(groups[value]);

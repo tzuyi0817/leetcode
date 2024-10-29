@@ -53,9 +53,9 @@ const shortestSuperstring = function (words) {
   const n = words.length;
   const costs = setupCosts(words, n);
   const dp = initializeDP(words, n);
-  const parent = Array(1 << n)
+  const parent = Array.from({length: 1 << n})
     .fill('')
-    .map(_ => Array(n).fill(-1));
+    .map(_ => new Array(n).fill(-1));
 
   setupCosts(words, n);
   fillDPandParent(dp, parent, costs, n);
@@ -80,9 +80,9 @@ const shortestSuperstring = function (words) {
 };
 
 function setupCosts(words, n) {
-  const costs = Array(n)
+  const costs = new Array(n)
     .fill('')
-    .map(_ => Array(n).fill(0));
+    .map(_ => new Array(n).fill(0));
 
   const getCost = (a, b) => {
     const minLength = Math.min(a.length, b.length);
@@ -105,9 +105,9 @@ function setupCosts(words, n) {
 }
 
 function initializeDP(words, n) {
-  const dp = Array(1 << n)
+  const dp = Array.from({length: 1 << n})
     .fill('')
-    .map(() => Array(n).fill(Number.MAX_SAFE_INTEGER));
+    .map(() => new Array(n).fill(Number.MAX_SAFE_INTEGER));
 
   for (let i = 0; i < n; i++) {
     dp[1 << i][i] = words[i].length;

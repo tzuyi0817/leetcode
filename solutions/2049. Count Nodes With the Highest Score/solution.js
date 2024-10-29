@@ -14,9 +14,7 @@ class Node {
 
 const countHighestScoreNodes = function (parents) {
   const n = parents.length;
-  const nodes = Array(n)
-    .fill('')
-    .map((_, index) => new Node(index));
+  const nodes = new Array(n).fill('').map((_, index) => new Node(index));
   const scoreMap = {};
   let maxScore = 0;
 

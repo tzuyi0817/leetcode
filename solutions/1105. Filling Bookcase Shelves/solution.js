@@ -5,7 +5,7 @@
  */
 const minHeightShelves = function (books, shelfWidth) {
   const n = books.length;
-  const dp = Array(n).fill(Number.MAX_SAFE_INTEGER);
+  const dp = new Array(n).fill(Number.MAX_SAFE_INTEGER);
 
   dp[-1] = 0;
 

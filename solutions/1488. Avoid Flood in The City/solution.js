@@ -19,9 +19,7 @@ const avoidFlood = function (rains) {
     return start;
   };
 
-  for (let index = 0; index < rains.length; index++) {
-    const lake = rains[index];
-
+  for (const [index, lake] of rains.entries()) {
     if (!lake) {
       dryDays.push(index);
       result[index] = 1;

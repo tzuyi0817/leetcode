@@ -4,9 +4,7 @@
  */
 const strangePrinter = function (s) {
   const n = s.length;
-  const memo = Array(n)
-    .fill('')
-    .map(_ => Array(n).fill(0));
+  const memo = new Array(n).fill('').map(_ => new Array(n).fill(0));
 
   const turnPrinter = (left, right) => {
     if (left > right) return 0;

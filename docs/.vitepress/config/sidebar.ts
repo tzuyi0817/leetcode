@@ -1,4 +1,4 @@
-import fs from 'fs';
+import fs from 'node:fs';
 import type { DefaultTheme } from 'vitepress';
 import { solutionsPath } from './index';
 

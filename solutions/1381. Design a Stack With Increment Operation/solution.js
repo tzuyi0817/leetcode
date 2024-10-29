@@ -3,7 +3,7 @@
  */
 const CustomStack = function (maxSize) {
   this.stack = [];
-  this.increments = Array(maxSize).fill(0);
+  this.increments = new Array(maxSize).fill(0);
   this.maxSize = maxSize;
 };
 

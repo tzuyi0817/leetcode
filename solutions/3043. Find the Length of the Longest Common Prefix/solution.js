@@ -22,9 +22,7 @@ const longestCommonPrefix = function (arr1, arr2) {
     const str = `${num}`;
     let node = trie;
 
-    for (let index = 0; index < str.length; index++) {
-      const char = str[index];
-
+    for (const [index, char] of str.entries()) {
       if (!node.has(char)) break;
       node = node.get(char);
       result = Math.max(index + 1, result);

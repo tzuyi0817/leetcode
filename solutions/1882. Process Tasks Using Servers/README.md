@@ -93,6 +93,6 @@ const assignTasks = function (servers, tasks) {
 
     processQueue.enqueue({ ...idle, completeSeconds });
     return idle.index;
-  }, []);
+  });
 };
 ```

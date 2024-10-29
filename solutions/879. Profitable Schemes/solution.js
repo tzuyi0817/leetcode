@@ -8,13 +8,9 @@
 const profitableSchemes = function (n, minProfit, group, profit) {
   const MODULO = 10 ** 9 + 7;
   const groups = group.length;
-  const dp = Array(groups + 1)
+  const dp = new Array(groups + 1)
     .fill('')
-    .map(_ =>
-      Array(n + 1)
-        .fill('')
-        .map(_ => Array(minProfit + 1).fill(-1)),
-    );
+    .map(_ => new Array(n + 1).fill('').map(_ => new Array(minProfit + 1).fill(-1)));
 
   const commitCrimes = (index, currentProfit, members) => {
     if (index >= groups) return currentProfit >= minProfit ? 1 : 0;

@@ -63,9 +63,9 @@ Hence, we need at minimum 2 moves to determine with certainty what the value of 
  * @return {number}
  */
 const superEggDrop = function (k, n) {
-  const dp = Array(k + 1)
+  const dp = new Array(k + 1)
     .fill('')
-    .map(_ => Array(n + 1).fill(0));
+    .map(_ => new Array(n + 1).fill(0));
 
   let moves = 0;
 

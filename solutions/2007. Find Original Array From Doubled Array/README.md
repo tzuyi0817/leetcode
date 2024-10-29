@@ -74,14 +74,14 @@ const findOriginalArray = function (changed) {
     if (!count) continue;
     if (value === 0) {
       if (count % 2) return [];
-      result.push(...Array(count / 2).fill(0));
+      result.push(...Array.from({length: count / 2}).fill(0));
       continue;
     }
     if (changedMap.has(value * 2)) {
       const doubledCount = changedMap.get(value * 2);
 
       if (count > doubledCount) return [];
-      result.push(...Array(count).fill(value));
+      result.push(...new Array(count).fill(value));
       changedMap.set(value * 2, doubledCount - count);
       continue;
     }

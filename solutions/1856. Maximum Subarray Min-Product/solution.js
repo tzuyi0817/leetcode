@@ -6,7 +6,7 @@ const maxSumMinProduct = function (nums) {
   const MODULO = BigInt(10 ** 9 + 7);
   const size = nums.length;
   const stack = [];
-  const prefixSum = Array(size + 1).fill(0);
+  const prefixSum = new Array(size + 1).fill(0);
   let result = 0;
 
   nums.forEach((num, index) => (prefixSum[index + 1] = prefixSum[index] + num));

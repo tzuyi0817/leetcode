@@ -68,10 +68,10 @@
 const numPermsDISequence = function (s) {
   const MODULO = 10 ** 9 + 7;
   const n = s.length;
-  let dp = Array(n + 1).fill(1);
+  let dp = new Array(n + 1).fill(1);
 
   const calculateDecPerms = remain => {
-    const nexDp = Array(n + 1).fill(0);
+    const nexDp = new Array(n + 1).fill(0);
     let prefixSum = 0;
 
     for (let index = remain - 1; index >= 0; index--) {
@@ -82,7 +82,7 @@ const numPermsDISequence = function (s) {
   };
 
   const calculateIncPerms = remain => {
-    const nexDp = Array(n + 1).fill(0);
+    const nexDp = new Array(n + 1).fill(0);
     let prefixSum = 0;
 
     for (let index = 0; index < remain; index++) {

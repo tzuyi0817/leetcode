@@ -12,7 +12,7 @@
  */
 const modifiedList = function (nums, head) {
   const maxNum = Math.max(...nums);
-  const exists = Array(maxNum + 1).fill(false);
+  const exists = new Array(maxNum + 1).fill(false);
   const root = new ListNode(null, head);
   let current = root;
 

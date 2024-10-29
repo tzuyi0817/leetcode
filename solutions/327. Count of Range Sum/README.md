@@ -53,14 +53,14 @@
  */
 const countRangeSum = function (nums, lower, upper) {
   const n = nums.length;
-  const prefixSum = Array(n + 1).fill(0);
+  const prefixSum = new Array(n + 1).fill(0);
 
   for (let index = 0; index < n; index++) {
     prefixSum[index + 1] = prefixSum[index] + nums[index];
   }
 
   const sortedPrefixSum = Array.from(new Set(prefixSum)).sort((a, b) => a - b);
-  const bit = Array(sortedPrefixSum.length + 2).fill(0);
+  const bit = Array.from({length: sortedPrefixSum.length + 2}).fill(0);
 
   const getIndex = value => {
     let left = 0;

@@ -5,7 +5,7 @@
  */
 const maximalNetworkRank = function (n, roads) {
   const connected = new Set();
-  const ranks = Array(n).fill(0);
+  const ranks = new Array(n).fill(0);
   let result = 0;
 
   for (const [a, b] of roads) {

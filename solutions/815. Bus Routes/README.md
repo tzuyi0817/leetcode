@@ -80,8 +80,8 @@ const numBusesToDestination = function (routes, source, target) {
   while (queue.length) {
     const nextQueue = [];
 
-    for (let index = 0; index < queue.length; index++) {
-      const buses = stopsMap.get(queue[index]) ?? [];
+    for (const element of queue) {
+      const buses = stopsMap.get(element) ?? [];
 
       for (const bus of buses) {
         if (visitedBus.has(bus)) continue;

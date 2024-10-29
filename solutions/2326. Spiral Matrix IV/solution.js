@@ -12,9 +12,7 @@
  * @return {number[][]}
  */
 const spiralMatrix = function (m, n, head) {
-  const result = Array(m)
-    .fill('')
-    .map(_ => Array(n).fill(-1));
+  const result = new Array(m).fill('').map(_ => new Array(n).fill(-1));
   const move = { row: 0, col: 1 };
   let current = head;
   let row = 0;

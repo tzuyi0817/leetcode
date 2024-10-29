@@ -5,7 +5,7 @@
  */
 const minExtraChar = function (s, dictionary) {
   const n = s.length;
-  const dp = Array(n).fill(n);
+  const dp = new Array(n).fill(n);
 
   dp[-1] = 0;
 

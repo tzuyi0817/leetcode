@@ -91,8 +91,8 @@ const findSecretWord = function (words, master) {
   const getMatchesCount = (word1, word2) => {
     let matches = 0;
 
-    for (let index = 0; index < word1.length; index++) {
-      if (word1[index] === word2[index]) matches += 1;
+    for (const [index, element] of word1.entries()) {
+      if (element === word2[index]) matches += 1;
     }
     return matches;
   };

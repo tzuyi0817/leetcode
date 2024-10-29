@@ -9,8 +9,8 @@ const chalkReplacer = function (chalk, k) {
 
   if (remainChalk === 0) return 0;
 
-  for (let index = 0; index < chalk.length; index++) {
-    remainChalk -= chalk[index];
+  for (const [index, element] of chalk.entries()) {
+    remainChalk -= element;
 
     if (remainChalk >= 0) continue;
     return index;

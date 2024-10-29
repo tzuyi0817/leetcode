@@ -5,8 +5,8 @@
  */
 const findLatestStep = function (arr, m) {
   const size = arr.length;
-  const sizes = Array(size + 2).fill(0);
-  const counts = Array(size + 2).fill(0);
+  const sizes = new Array(size + 2).fill(0);
+  const counts = new Array(size + 2).fill(0);
 
   return arr.reduce((result, position, index) => {
     const left = sizes[position - 1];

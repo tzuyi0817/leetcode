@@ -5,9 +5,7 @@
  * @return {number}
  */
 const findTheCity = function (n, edges, distanceThreshold) {
-  const distances = Array(n)
-    .fill('')
-    .map(_ => Array(n).fill(Number.MAX_SAFE_INTEGER));
+  const distances = new Array(n).fill('').map(_ => new Array(n).fill(Number.MAX_SAFE_INTEGER));
 
   for (const [from, to, weight] of edges) {
     distances[from][from] = 0;

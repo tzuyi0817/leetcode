@@ -63,9 +63,9 @@ Total number of rectangles = 8 + 5 + 2 + 4 + 2 + 2 + 1 = 24.
 const numSubmat = function (mat) {
   const m = mat.length;
   const n = mat[0].length;
-  const dp = Array(m + 1)
+  const dp = new Array(m + 1)
     .fill('')
-    .map(_ => Array(n + 1).fill(0));
+    .map(_ => new Array(n + 1).fill(0));
   let result = 0;
 
   for (let row = 1; row <= m; row++) {

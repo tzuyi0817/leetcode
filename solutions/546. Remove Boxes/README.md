@@ -62,12 +62,12 @@
  */
 const removeBoxes = function (boxes) {
   const n = boxes.length;
-  const dp = Array(n)
+  const dp = new Array(n)
     .fill('')
     .map(_ =>
-      Array(n)
+      new Array(n)
         .fill('')
-        .map(_ => Array(n).fill(0)),
+        .map(_ => new Array(n).fill(0)),
     );
 
   const calculatePoints = (left, right, count) => {

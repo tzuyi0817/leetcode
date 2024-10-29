@@ -5,9 +5,7 @@
 const numSubmat = function (mat) {
   const m = mat.length;
   const n = mat[0].length;
-  const dp = Array(m + 1)
-    .fill('')
-    .map(_ => Array(n + 1).fill(0));
+  const dp = new Array(m + 1).fill('').map(_ => new Array(n + 1).fill(0));
   let result = 0;
 
   for (let row = 1; row <= m; row++) {

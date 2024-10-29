@@ -7,15 +7,11 @@
  * @return {number}
  */
 const maxProbability = function (n, edges, succProb, start_node, end_node) {
-  const graph = Array(n)
-    .fill('')
-    .map(_ => []);
-  const probs = Array(n).fill(0);
+  const graph = new Array(n).fill('').map(_ => []);
+  const probs = new Array(n).fill(0);
   const queue = new MaxPriorityQueue({ priority: ({ prob }) => prob });
 
-  for (let index = 0; index < edges.length; index++) {
-    const [a, b] = edges[index];
-
+  for (const [index, [a, b]] of edges.entries()) {
     graph[a].push({ node: b, prob: succProb[index] });
     graph[b].push({ node: a, prob: succProb[index] });
   }

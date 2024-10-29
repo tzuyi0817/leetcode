@@ -4,16 +4,14 @@
  * @return {number[]}
  */
 const sumOfDistancesInTree = function (n, edges) {
-  const graph = Array(n)
-    .fill('')
-    .map(_ => []);
+  const graph = new Array(n).fill('').map(_ => []);
 
   for (const [a, b] of edges) {
     graph[a].push(b);
     graph[b].push(a);
   }
-  const counts = Array(n).fill(1);
-  const result = Array(n).fill(0);
+  const counts = new Array(n).fill(1);
+  const result = new Array(n).fill(0);
   const root = 0;
 
   const dfsGraph = (node, parent) => {

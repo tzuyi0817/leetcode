@@ -10,8 +10,7 @@ const getHappyString = function (n, k) {
       k -= 1;
       return k ? '' : current;
     }
-    for (let index = 0; index < LETTERS.length; index++) {
-      const char = LETTERS[index];
+    for (const char of LETTERS) {
       if (current.at(-1) === char) continue;
       const value = backtracking(current + char);
 

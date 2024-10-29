@@ -60,7 +60,7 @@
  */
 const largestComponentSize = function (nums) {
   const maxNum = Math.max(...nums);
-  const groups = Array(maxNum + 1)
+  const groups = new Array(maxNum + 1)
     .fill('')
     .map((_, index) => index);
 

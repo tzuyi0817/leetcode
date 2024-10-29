@@ -3,9 +3,9 @@
  * @return {number}
  */
 const totalNQueens = function (n) {
-  const cols = Array(n).fill(false);
-  const diagonals = Array(n * 2).fill(false);
-  const inverseDiagonals = Array(n * 2).fill(false);
+  const cols = new Array(n).fill(false);
+  const diagonals = Array.from({ length: n * 2 }).fill(false);
+  const inverseDiagonals = Array.from({ length: n * 2 }).fill(false);
   const placementQueen = row => {
     if (row === n) return 1;
     let result = 0;

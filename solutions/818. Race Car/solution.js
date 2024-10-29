@@ -30,7 +30,7 @@ var racecar = function (target) {
  * @return {number}
  */
 var racecar = function (target) {
-  const dp = Array(target + 1).fill(-1);
+  const dp = new Array(target + 1).fill(-1);
 
   const raceTo = distance => {
     if (dp[distance] > -1) return dp[distance];

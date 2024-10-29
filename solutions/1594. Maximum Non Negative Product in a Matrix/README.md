@@ -65,12 +65,12 @@ const maxProductPath = function (grid) {
   const MODULO = 10 ** 9 + 7;
   const m = grid.length;
   const n = grid[0].length;
-  const dpMax = Array(m)
+  const dpMax = new Array(m)
     .fill('')
-    .map(_ => Array(n).fill(0));
-  const dpMin = Array(m)
+    .map(_ => new Array(n).fill(0));
+  const dpMin = new Array(m)
     .fill('')
-    .map(_ => Array(n).fill(0));
+    .map(_ => new Array(n).fill(0));
 
   for (let row = 0; row < m; row++) {
     for (let col = 0; col < n; col++) {

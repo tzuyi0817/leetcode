@@ -4,10 +4,8 @@
  * @return {string}
  */
 const getPermutation = function (n, k) {
-  const nums = Array(n)
-    .fill('')
-    .map((_, index) => index + 1);
-  const factorial = Array(n + 1).fill(1);
+  const nums = new Array(n).fill('').map((_, index) => index + 1);
+  const factorial = new Array(n + 1).fill(1);
   let result = '';
 
   for (let num = 1; num <= n; num++) {

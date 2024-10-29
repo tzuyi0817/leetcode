@@ -56,8 +56,8 @@
  */
 const minOperations = function (boxes) {
   const size = boxes.length;
-  const left = Array(size).fill(0);
-  const right = Array(size).fill(0);
+  const left = new Array(size).fill(0);
+  const right = new Array(size).fill(0);
   const result = [];
   let count = 0;
 

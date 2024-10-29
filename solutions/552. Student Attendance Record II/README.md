@@ -69,9 +69,9 @@ Only "AA" is not eligible because there are 2 absences (there need to be fewer t
  */
 const checkRecord = function (n) {
   const MODULO = 10 ** 9 + 7;
-  const present = Array(n + 1).fill(0);
-  const late = Array(n + 1).fill(0);
-  const absent = Array(n + 1).fill(0);
+  const present = new Array(n + 1).fill(0);
+  const late = new Array(n + 1).fill(0);
+  const absent = new Array(n + 1).fill(0);
 
   present[1] = late[1] = absent[1] = 1;
 

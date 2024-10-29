@@ -68,7 +68,7 @@ The compatibility score sum is 3 + 2 + 3 = 8.
  */
 const maxCompatibilitySum = function (students, mentors) {
   const size = students.length;
-  const assigned = Array(size);
+  const assigned = new Array(size);
   let result = 0;
 
   function backtracking(student, score) {

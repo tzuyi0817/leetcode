@@ -74,8 +74,8 @@ const maximumRemovals = function (s, p, removable) {
   const isSubsequence = (target, sub) => {
     let subIndex = 0;
 
-    for (let index = 0; index < target.length; index++) {
-      if (target[index] === sub[subIndex]) subIndex += 1;
+    for (const element of target) {
+      if (element === sub[subIndex]) subIndex += 1;
     }
     return subIndex === sub.length;
   };

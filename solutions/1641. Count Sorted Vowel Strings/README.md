@@ -56,7 +56,7 @@ Note that "ea" is not a valid string since 'e' comes after 'a' in the alphabet.
  * @return {number}
  */
 const countVowelStrings = function (n) {
-  const dp = Array(5).fill(1);
+  const dp = Array.from({length: 5}).fill(1);
 
   for (let count = 2; count <= n; count++) {
     let sum = 0;

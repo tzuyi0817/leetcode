@@ -89,7 +89,7 @@ const minSessions = function (tasks, sessionTime) {
   };
 
   for (let workSession = 1; workSession <= size; workSession++) {
-    const sessions = Array(workSession).fill(0);
+    const sessions = new Array(workSession).fill(0);
 
     if (isCompleteTasks(sessions)) return workSession;
   }

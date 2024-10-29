@@ -6,8 +6,8 @@
 const canEat = function (candiesCount, queries) {
   const prfixCandiesCount = [0];
 
-  for (let index = 0; index < candiesCount.length; index++) {
-    prfixCandiesCount.push(prfixCandiesCount[index] + candiesCount[index]);
+  for (const [index, element] of candiesCount.entries()) {
+    prfixCandiesCount.push(prfixCandiesCount[index] + element);
   }
 
   return queries.map(([type, day, cap]) => {

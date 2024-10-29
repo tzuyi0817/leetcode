@@ -4,10 +4,8 @@
  */
 const stoneGameII = function (piles) {
   const n = piles.length;
-  const memo = Array(n)
-    .fill('')
-    .map(_ => Array(n).fill(0));
-  const suffixSum = Array(n + 1).fill(0);
+  const memo = new Array(n).fill('').map(_ => new Array(n).fill(0));
+  const suffixSum = new Array(n + 1).fill(0);
 
   for (let index = n - 1; index >= 0; index--) {
     suffixSum[index] = suffixSum[index + 1] + piles[index];

@@ -94,7 +94,7 @@ const bestCoordinate = function (towers, radius) {
       let quality = 0;
 
       for (const [x, y, q] of towers) {
-        const distance = Math.sqrt((a - x) ** 2 + (b - y) ** 2);
+        const distance = Math.hypot((a - x), (b - y));
 
         if (distance > radius) continue;
         quality += Math.floor(q / (1 + distance));

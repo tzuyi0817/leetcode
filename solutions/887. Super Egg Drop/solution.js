@@ -4,9 +4,7 @@
  * @return {number}
  */
 const superEggDrop = function (k, n) {
-  const dp = Array(k + 1)
-    .fill('')
-    .map(_ => Array(n + 1).fill(0));
+  const dp = new Array(k + 1).fill('').map(_ => new Array(n + 1).fill(0));
 
   let moves = 0;
 

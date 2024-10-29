@@ -3,9 +3,7 @@
  * @return {string[][]}
  */
 const solveNQueens = function (n) {
-  const chessBoard = Array(n)
-    .fill('')
-    .map(() => Array(n).fill('.'));
+  const chessBoard = new Array(n).fill('').map(() => new Array(n).fill('.'));
   const result = [];
   const isValid = current => {
     for (let row = current.row - 1; row >= 0; row--) {

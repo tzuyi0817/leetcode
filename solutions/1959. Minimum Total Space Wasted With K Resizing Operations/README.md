@@ -69,9 +69,9 @@ The total wasted space is (10 - 10) + (20 - 20) + (20 - 15) + (30 - 30) + (30 - 
  */
 const minSpaceWastedKResizing = function (nums, k) {
   const size = nums.length;
-  const dp = Array(size)
+  const dp = new Array(size)
     .fill('')
-    .map(_ => Array(k + 1).fill(Number.MAX_SAFE_INTEGER));
+    .map(_ => new Array(k + 1).fill(Number.MAX_SAFE_INTEGER));
   let sum = 0;
   let max = 0;
 

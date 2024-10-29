@@ -41,7 +41,7 @@
 const findMinDifference = function (timePoints) {
   const MAX_MINUTE = 24 * 60;
   const n = timePoints.length;
-  const times = Array(MAX_MINUTE + 1).fill(false);
+  const times = Array.from({length: MAX_MINUTE + 1}).fill(false);
   let result = MAX_MINUTE;
   let minTime = MAX_MINUTE;
 

@@ -5,10 +5,10 @@
 const maxMoves = function (grid) {
   const m = grid.length;
   const n = grid[0].length;
-  let dp = Array(m + 1).fill(0);
+  let dp = new Array(m + 1).fill(0);
 
   for (let col = n - 2; col >= 0; col--) {
-    const nextDp = Array(m + 1).fill(0);
+    const nextDp = new Array(m + 1).fill(0);
 
     for (let row = 0; row < m; row++) {
       const value = grid[row][col];

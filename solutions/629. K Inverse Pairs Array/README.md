@@ -51,12 +51,12 @@
  */
 const kInversePairs = function (n, k) {
   const MODULO = 10 ** 9 + 7;
-  let dp = Array(k + 1).fill(0);
+  let dp = new Array(k + 1).fill(0);
 
   dp[0] = 1;
 
   for (let integer = 1; integer <= n; integer++) {
-    const current = Array(k + 1).fill(0);
+    const current = new Array(k + 1).fill(0);
 
     current[0] = 1;
 

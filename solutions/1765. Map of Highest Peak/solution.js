@@ -5,9 +5,7 @@
 const highestPeak = function (isWater) {
   const m = isWater.length;
   const n = isWater[0].length;
-  const result = Array(m)
-    .fill('')
-    .map(_ => Array(n).fill(-1));
+  const result = new Array(m).fill('').map(_ => new Array(n).fill(-1));
   const direction = [
     [0, 1],
     [0, -1],

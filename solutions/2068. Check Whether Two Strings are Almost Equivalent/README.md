@@ -73,8 +73,8 @@ The difference is 4, which is more than the allowed 3.
 const checkAlmostEquivalent = function (word1, word2) {
   const wordMap = {};
 
-  for (let index = 0; index < word1.length; index++) {
-    wordMap[word1[index]] = (wordMap[word1[index]] ?? 0) + 1;
+  for (const [index, element] of word1.entries()) {
+    wordMap[element] = (wordMap[element] ?? 0) + 1;
     wordMap[word2[index]] = (wordMap[word2[index]] ?? 0) - 1;
   }
   for (const count of Object.values(wordMap)) {

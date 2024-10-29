@@ -77,8 +77,7 @@ const findMinHeightTrees = function (n, edges) {
   while (n > 2) {
     const nextQueue = [];
 
-    for (let index = 0; index < queue.length; index++) {
-      const node = queue[index];
+    for (const node of queue) {
       const toNodes = graph.get(node);
 
       for (const toNode of toNodes) {

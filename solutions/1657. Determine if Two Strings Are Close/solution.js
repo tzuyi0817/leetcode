@@ -6,8 +6,8 @@
 const closeStrings = function (word1, word2) {
   if (word1.length !== word2.length) return false;
   const CODE_BASE = 'a'.charCodeAt(0);
-  const word1Count = Array(26).fill(0);
-  const word2Count = Array(26).fill(0);
+  const word1Count = Array.from({ length: 26 }).fill(0);
+  const word2Count = Array.from({ length: 26 }).fill(0);
 
   for (let index = 0; index < word1.length; index++) {
     const charCode1 = word1.charCodeAt(index);

@@ -25,7 +25,7 @@ const hasValidPath = function (grid) {
     if (visited.has(`${row}_${col}`)) return false;
     const street = streetMap[grid[row][col]];
     const startStreet = street.indexOf(connect);
-    const isConnect = startStreet > -1;
+    const isConnect = startStreet !== -1;
     if (!isConnect) return false;
     if (row === m - 1 && col === n - 1) return true;
 

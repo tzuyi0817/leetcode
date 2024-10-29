@@ -70,7 +70,7 @@ const entityParser = function (text) {
     '&frasl;': '/',
   };
 
-  return text.replace(/&quot;|&apos;|&amp;|&gt;|&lt;|&frasl;/g, match => {
+  return text.replaceAll(/&quot;|&apos;|&amp;|&gt;|&lt;|&frasl;/g, match => {
     return parseMap[match];
   });
 };

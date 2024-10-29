@@ -59,8 +59,7 @@ const longestSubarray = function (nums) {
   let left = (currentSize = result = 0);
   let isDelete = false;
 
-  for (let index = 0; index < nums.length; index++) {
-    const value = nums[index];
+  for (const [index, value] of nums.entries()) {
 
     if (value) currentSize += 1;
     else {

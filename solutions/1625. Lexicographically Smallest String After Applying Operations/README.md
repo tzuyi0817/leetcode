@@ -102,8 +102,8 @@ const findLexSmallestString = function (s, a, b) {
   function addString(str) {
     let result = '';
 
-    for (let index = 0; index < str.length; index++) {
-      const char = +str[index];
+    for (const [index, element] of str.entries()) {
+      const char = +element;
 
       result += index % 2 ? (char + a) % 10 : char;
     }

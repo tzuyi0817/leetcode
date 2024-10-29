@@ -8,15 +8,13 @@ const mergeStones = function (stones, k) {
 
   if ((n - 1) % (k - 1)) return -1;
 
-  const prefixSum = Array(n + 1).fill(0);
+  const prefixSum = new Array(n + 1).fill(0);
 
   for (let index = 0; index < n; index++) {
     prefixSum[index + 1] = prefixSum[index] + stones[index];
   }
 
-  const dp = Array(n)
-    .fill('')
-    .map(_ => Array(n).fill(Number.MAX_SAFE_INTEGER));
+  const dp = new Array(n).fill('').map(_ => new Array(n).fill(Number.MAX_SAFE_INTEGER));
 
   for (let index = 0; index < n; index++) {
     dp[index][index] = 0;

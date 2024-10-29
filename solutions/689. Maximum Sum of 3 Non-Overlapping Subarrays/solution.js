@@ -5,9 +5,9 @@
  */
 const maxSumOfThreeSubarrays = function (nums, k) {
   const n = nums.length;
-  const prefixSum = Array(n).fill(0);
-  const leftDp = Array(n).fill(0);
-  const rightDp = Array(n).fill(n - k);
+  const prefixSum = new Array(n).fill(0);
+  const leftDp = new Array(n).fill(0);
+  const rightDp = new Array(n).fill(n - k);
 
   prefixSum[-1] = 0;
 

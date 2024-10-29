@@ -56,8 +56,7 @@ wordFilter.f("a", "e"); // return 0, because the word at index 0 has prefix = "a
 const WordFilter = function (words) {
   this.trie = new Map();
 
-  for (let index = 0; index < words.length; index++) {
-    const word = words[index];
+  for (const [index, word] of words.entries()) {
     let prefix = '';
 
     for (let left = 0; left < word.length; left++) {

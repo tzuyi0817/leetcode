@@ -69,7 +69,7 @@ The Hamming distance of source and target is 2 as they differ in 2 positions: in
  */
 const minimumHammingDistance = function (source, target, allowedSwaps) {
   const size = source.length;
-  const union = Array(size)
+  const union = new Array(size)
     .fill('')
     .map((_, index) => index);
   const swapMap = new Map();

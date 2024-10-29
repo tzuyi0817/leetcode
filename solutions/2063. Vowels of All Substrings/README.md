@@ -70,8 +70,8 @@ const countVowels = function (word) {
   const vowels = ['a', 'e', 'i', 'o', 'u'];
   let dp = (result = 0);
 
-  for (let index = 0; index < word.length; index++) {
-    if (vowels.includes(word[index])) {
+  for (const [index, element] of word.entries()) {
+    if (vowels.includes(element)) {
       dp += index + 1;
     }
     result += dp;

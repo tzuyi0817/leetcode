@@ -60,9 +60,9 @@ const longestIncreasingPath = function (matrix) {
   const MIN_VALUE = Number.MIN_SAFE_INTEGER;
   const m = matrix.length;
   const n = matrix[0].length;
-  const dp = Array(m)
+  const dp = new Array(m)
     .fill('')
-    .map(_ => Array(n).fill(MIN_VALUE));
+    .map(_ => new Array(n).fill(MIN_VALUE));
   const dfsPath = (row, col, previous = MIN_VALUE, step = 0) => {
     if (row < 0 || col < 0 || row >= m || col >= n) return step;
     const value = matrix[row][col];

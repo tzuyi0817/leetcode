@@ -7,8 +7,7 @@ const rectangleArea = function (rectangles) {
   const events = [];
 
   for (const [x1, y1, x2, y2] of rectangles) {
-    events.push({ x: x1, y1, y2, type: 'start' });
-    events.push({ x: x2, y1, y2, type: 'end' });
+    events.push({ x: x1, y1, y2, type: 'start' }, { x: x2, y1, y2, type: 'end' });
   }
   events.sort((a, b) => a.x - b.x);
 

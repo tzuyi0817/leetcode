@@ -4,9 +4,7 @@
  */
 const canCross = function (stones) {
   const n = stones.length;
-  const dp = Array(n)
-    .fill('')
-    .map(_ => new Set());
+  const dp = new Array(n).fill('').map(_ => new Set());
   const stoneMap = stones.reduce((map, stone, index) => {
     return map.set(stone, index);
   }, new Map());

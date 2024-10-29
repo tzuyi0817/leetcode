@@ -72,7 +72,7 @@ Since all the cards revealed are in increasing order, the answer is correct.
  */
 const deckRevealedIncreasing = function (deck) {
   const size = deck.length;
-  const result = Array(size);
+  const result = new Array(size);
   const queue = deck.map((_, index) => index);
 
   deck.sort((a, b) => a - b);

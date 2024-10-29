@@ -64,7 +64,7 @@ The XOR values for queries are:
  */
 const xorQueries = function (arr, queries) {
   const n = arr.length;
-  const prefixXor = Array(n).fill(0);
+  const prefixXor = new Array(n).fill(0);
 
   prefixXor[-1] = 0;
 

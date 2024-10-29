@@ -61,7 +61,7 @@ All sub-arrays have even sum and the answer is 0.
 const numOfSubarrays = function (arr) {
   const MODULO = 10 ** 9 + 7;
   const size = arr.length;
-  const dp = Array(size + 1)
+  const dp = new Array(size + 1)
     .fill('')
     .map(_ => ({ odd: 0, even: 0 }));
   let result = 0;

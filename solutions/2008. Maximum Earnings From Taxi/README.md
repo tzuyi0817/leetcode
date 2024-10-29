@@ -62,7 +62,7 @@ We earn 9 + 5 + 6 = 20 dollars in total.</pre>
  * @return {number}
  */
 const maxTaxiEarnings = function (n, rides) {
-  const dp = Array(n + 1).fill(0);
+  const dp = new Array(n + 1).fill(0);
   const earningsMap = rides.reduce((map, [start, end, tip]) => {
     const endEarnings = map.get(end) ?? [];
     const earnings = end - start + tip;

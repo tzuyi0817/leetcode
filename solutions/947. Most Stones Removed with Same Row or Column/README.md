@@ -70,7 +70,7 @@ Stones [0,0] and [1,1] cannot be removed since they do not share a row/column wi
  */
 const removeStones = function (stones) {
   const n = stones.length;
-  const stoneGroup = Array(n)
+  const stoneGroup = new Array(n)
     .fill('')
     .map((_, index) => index);
 

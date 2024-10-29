@@ -18,7 +18,7 @@ const largestIsland = function (grid) {
 
     return 1 + top + down + left + right;
   };
-  const islands = Array(n ** 2 + 2).fill(0);
+  const islands = Array.from({ length: n ** 2 + 2 }).fill(0);
   let groupId = 2;
 
   for (let row = 0; row < n; row++) {

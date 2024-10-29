@@ -60,7 +60,7 @@
  */
 const reversePairs = function (nums) {
   const n = nums.length;
-  const bit = Array(n + 2).fill(0);
+  const bit = new Array(n + 2).fill(0);
   const sortedNums = [...nums].sort((a, b) => a - b);
   let result = 0;
 

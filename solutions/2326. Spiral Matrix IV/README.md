@@ -65,9 +65,9 @@ The last space in the matrix is set to -1.</pre>
  * @return {number[][]}
  */
 const spiralMatrix = function (m, n, head) {
-  const result = Array(m)
+  const result = new Array(m)
     .fill('')
-    .map(_ => Array(n).fill(-1));
+    .map(_ => new Array(n).fill(-1));
   const move = { row: 0, col: 1 };
   let current = head;
   let row = 0;

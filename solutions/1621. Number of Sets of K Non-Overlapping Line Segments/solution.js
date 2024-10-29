@@ -6,9 +6,7 @@
 const numberOfSets = function (n, k) {
   const MODULO = 10 ** 9 + 7;
   const combinatorics = (n, k) => {
-    const dp = Array(n + 1)
-      .fill('')
-      .map(_ => Array(k + 1).fill(1));
+    const dp = new Array(n + 1).fill('').map(_ => new Array(k + 1).fill(1));
 
     for (let index = 1; index <= n; index++) {
       for (let point = 1; point < index && point <= k; point++) {

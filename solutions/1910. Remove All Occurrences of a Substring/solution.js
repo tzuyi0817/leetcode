@@ -18,8 +18,8 @@ const removeOccurrences = function (s, part) {
   };
   let current = 0;
 
-  for (let index = 0; index < s.length; index++) {
-    result[current++] = s[index];
+  for (const element of s) {
+    result[current++] = element;
 
     if (!isMatch(current)) continue;
     current -= size;

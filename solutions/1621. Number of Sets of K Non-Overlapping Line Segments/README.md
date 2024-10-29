@@ -60,9 +60,9 @@ The image above shows the 5 different ways {(0,2),(2,3)}, {(0,1),(1,3)}, {(0,1),
 const numberOfSets = function (n, k) {
   const MODULO = 10 ** 9 + 7;
   const combinatorics = (n, k) => {
-    const dp = Array(n + 1)
+    const dp = new Array(n + 1)
       .fill('')
-      .map(_ => Array(k + 1).fill(1));
+      .map(_ => new Array(k + 1).fill(1));
 
     for (let index = 1; index <= n; index++) {
       for (let point = 1; point < index && point <= k; point++) {

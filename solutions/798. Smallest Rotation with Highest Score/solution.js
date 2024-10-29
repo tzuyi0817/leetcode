@@ -4,7 +4,7 @@
  */
 const bestRotation = function (nums) {
   const n = nums.length;
-  const change = Array(n).fill(0);
+  const change = new Array(n).fill(0);
   let result = 0;
 
   for (let index = 0; index < n; index++) {

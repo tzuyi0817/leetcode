@@ -85,9 +85,9 @@
 const rotateTheBox = function (box) {
   const m = box.length;
   const n = box[0].length;
-  const result = Array(n)
+  const result = new Array(n)
     .fill('')
-    .map(_ => Array(m).fill('.'));
+    .map(_ => new Array(m).fill('.'));
 
   for (let row = 0; row < m; row++) {
     let fallRow = n - 1;

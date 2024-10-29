@@ -51,7 +51,7 @@ T_4 = 1 + 1 + 2 = 4
  * @return {number}
  */
 const tribonacci = function (n) {
-  const dp = Array(n + 1);
+  const dp = new Array(n + 1);
   const fibonacci = n => {
     if (n === 0) return 0;
     if (n <= 2) return 1;

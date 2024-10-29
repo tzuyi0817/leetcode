@@ -98,9 +98,9 @@ const cutOffTree = function (forest) {
   let result = 0;
 
   const getMoveStep = (start, destination) => {
-    const visited = Array(m)
+    const visited = new Array(m)
       .fill('')
-      .map(_ => Array(n).fill(false));
+      .map(_ => new Array(n).fill(false));
     let queue = [start];
     let steps = 0;
 

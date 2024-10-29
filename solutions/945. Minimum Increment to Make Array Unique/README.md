@@ -53,7 +53,7 @@ It can be shown with 5 or less moves that it is impossible for the array to have
  */
 const minIncrementForUnique = function (nums) {
   const max = Math.max(...nums);
-  const counts = Array(max + 1).fill(0);
+  const counts = new Array(max + 1).fill(0);
   let result = 0;
   let next = 0;
 

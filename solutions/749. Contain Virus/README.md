@@ -97,9 +97,9 @@ const containVirus = function (isInfected) {
 
   while (true) {
     const regions = [];
-    const visited = Array(m)
+    const visited = new Array(m)
       .fill('')
-      .map(_ => Array(n).fill(false));
+      .map(_ => new Array(n).fill(false));
 
     for (let row = 0; row < m; row++) {
       for (let col = 0; col < n; col++) {
