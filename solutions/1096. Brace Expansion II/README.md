@@ -16,7 +16,7 @@
 	<li>When we take a comma-delimited list of two or more expressions, we take the union of possibilities.
 	<ul>
 		<li><code>R("{a,b,c}") = {"a","b","c"}</code></li>
-		<li><code>R("{{a,b},{b,c}}") = {"a","b","c"}</code> (notice the final set only contains each word at most once)</li>
+		<li><code>R("&#123;&#123;a,b&#125;,&#123;b,c&#125;&#125;") = {"a","b","c"}</code> (notice the final set only contains each word at most once)</li>
 	</ul>
 	</li>
 	<li>When we concatenate two expressions, we take the set of possible concatenations between two words where the first word comes from the first expression and the second word comes from the second expression.
@@ -40,13 +40,13 @@
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
-<pre><strong>Input:</strong> expression = "{a,b}{c,{d,e}}"
+<pre><strong>Input:</strong> expression = "&#123;a,b&#125;&#123;c,&#123;d,e&#125;&#125;"
 <strong>Output:</strong> ["ac","ad","ae","bc","bd","be"]
 </pre>
 
 <p><strong class="example">Example 2:</strong></p>
 
-<pre><strong>Input:</strong> expression = "{{a,z},a{b,c},{ab,z}}"
+<pre><strong>Input:</strong> expression = "&#123;&#123;a,z&#125;,a&#123;b,c&#125;,&#123;ab,z&#125;&#125;"
 <strong>Output:</strong> ["a","ab","ac","z"]
 <strong>Explanation:</strong> Each distinct word is written only once in the final answer.
 </pre>
