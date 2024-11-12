@@ -63,7 +63,7 @@ After the second operation, nums is sorted in strictly increasing order, so the 
  * @param {number[]} nums
  * @return {boolean}
  */
-var primeSubOperation = function (nums) {
+const primeSubOperation = function (nums) {
   const n = nums.length;
   const memo = new Map();
 

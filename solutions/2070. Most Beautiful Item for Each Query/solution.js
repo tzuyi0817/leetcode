@@ -4,34 +4,42 @@
  * @return {number[]}
  */
 const maximumBeauty = function (items, queries) {
-  const priceMap = items.reduce((map, [price, beauty]) => {
-    if (map[price] >= beauty) return map;
-    map[price] = beauty;
-    return map;
-  }, {});
-  const prices = Object.keys(priceMap);
+  const itemsMap = new Map();
 
-  function findPrice(target) {
+  for (const [price, beauty] of items) {
+    const itemBeauty = itemsMap.get(price) ?? 0;
+
+    itemsMap.set(price, Math.max(beauty, itemBeauty));
+  }
+  const n = itemsMap.size;
+  const filteredItems = [];
+
+  for (const [price, beauty] of itemsMap) {
+    filteredItems.push({ price, beauty });
+  }
+  filteredItems.sort((a, b) => a.price - b.price);
+
+  for (let index = 1; index < n; index++) {
+    const { beauty } = filteredItems[index];
+    const maxBeauty = filteredItems[index - 1].beauty;
+
+    filteredItems[index].beauty = Math.max(beauty, maxBeauty);
+  }
+
+  const findMaximumBeauty = price => {
     let left = 0;
-    let right = prices.length - 1;
+    let right = n - 1;
 
     while (left < right) {
-      const middle = Math.floor((left + right) / 2);
+      const mid = Math.floor((left + right) / 2);
+      const item = filteredItems[mid];
 
-      prices[middle] > target ? (right = middle) : (left = middle + 1);
+      item.price >= price ? (right = mid) : (left = mid + 1);
     }
-    return prices[left] > target ? left - 1 : left;
-  }
+    const index = filteredItems[left].price > price ? left - 1 : left;
 
-  for (let index = 1; index < prices.length; index++) {
-    const price = prices[index];
+    return filteredItems[index]?.beauty ?? 0;
+  };
 
-    priceMap[price] = Math.max(priceMap[price], priceMap[prices[index - 1]]);
-  }
-  return queries.map(price => {
-    if (priceMap[price]) return priceMap[price];
-    const lessPrice = prices[findPrice(price)];
-
-    return lessPrice ? priceMap[lessPrice] : 0;
-  });
+  return queries.map(price => findMaximumBeauty(price));
 };

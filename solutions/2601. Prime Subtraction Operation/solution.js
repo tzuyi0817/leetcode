@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {boolean}
  */
-var primeSubOperation = function (nums) {
+const primeSubOperation = function (nums) {
   const n = nums.length;
   const memo = new Map();
 
