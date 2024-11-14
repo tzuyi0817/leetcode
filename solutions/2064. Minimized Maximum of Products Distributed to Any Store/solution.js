@@ -7,20 +7,21 @@ const minimizedMaximum = function (n, quantities) {
   let left = 1;
   let right = Math.max(...quantities);
 
-  function isMoreQuantity(quantity) {
-    let stores = 0;
+  const isDistributed = perQuantity => {
+    let stores = n;
 
-    for (const value of quantities) {
-      stores += Math.ceil(value / quantity);
-      if (stores > n) return true;
+    for (const quantity of quantities) {
+      stores -= Math.ceil(quantity / perQuantity);
+
+      if (stores < 0) return false;
     }
-    return false;
-  }
+    return true;
+  };
 
   while (left < right) {
-    const middle = Math.floor((left + right) / 2);
+    const mid = Math.floor((left + right) / 2);
 
-    isMoreQuantity(middle) ? (left = middle + 1) : (right = middle);
+    isDistributed(mid) ? (right = mid) : (left = mid + 1);
   }
   return left;
 };
