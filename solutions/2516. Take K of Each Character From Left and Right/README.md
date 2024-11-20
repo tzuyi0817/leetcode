@@ -54,7 +54,7 @@ It can be proven that 8 is the minimum number of minutes needed.
  * @param {number} k
  * @return {number}
  */
-var takeCharacters = function (s, k) {
+const takeCharacters = function (s, k) {
   if (k === 0) return 0;
   const n = s.length;
   const countMap = { a: 0, b: 0, c: 0 };
