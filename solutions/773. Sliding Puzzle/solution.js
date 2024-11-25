@@ -3,61 +3,48 @@
  * @return {number}
  */
 const slidingPuzzle = function (board) {
-  const m = board.length;
-  const n = board[0].length;
+  const flexBoard = board.flat().join('');
+  const isSolved = board => board === '123450';
 
-  const isSolved = board => {
-    return board.join('') === '123450';
+  if (isSolved(flexBoard)) return 0;
+  const visited = new Set([flexBoard]);
+  const nextMoveMap = {
+    0: [1, 3],
+    1: [0, 2, 4],
+    2: [1, 5],
+    3: [0, 4],
+    4: [1, 3, 5],
+    5: [2, 4],
   };
-
-  if (isSolved(board.flat())) return 0;
-
-  const visited = new Set();
-  const direction = [
-    [0, 1],
-    [0, -1],
-    [1, 0],
-    [-1, 0],
-  ];
-  let queue = [board.flat()];
+  let queue = [{ index: flexBoard.indexOf('0'), current: flexBoard }];
   let result = 0;
 
-  const findEmptySquare = board => {
-    const index = board.indexOf(0);
+  const swapTile = (from, to, current) => {
+    const nextBoard = current.split('');
 
-    return { row: Math.floor(index / n), col: index % n };
-  };
+    [nextBoard[from], nextBoard[to]] = [nextBoard[to], nextBoard[from]];
+    const next = nextBoard.join('');
 
-  const moveSquare = (board, square, moveRow, moveCol) => {
-    if (moveRow < 0 || moveCol < 0 || moveRow >= m || moveCol >= n) return null;
-    const cloneBoard = [...board];
-    const index = square.row * n + square.col;
-    const moveIndex = moveRow * n + moveCol;
-
-    [cloneBoard[index], cloneBoard[moveIndex]] = [cloneBoard[moveIndex], cloneBoard[index]];
-    if (visited.has(cloneBoard.join(''))) return null;
-    return cloneBoard;
+    if (visited.has(next)) return null;
+    return next;
   };
 
   while (queue.length) {
     const nextQueue = [];
 
-    for (const current of queue) {
-      visited.add(current.join(''));
+    result += 1;
 
-      const emptySquare = findEmptySquare(current);
-      const { row, col } = emptySquare;
-
-      for (const move of direction) {
-        const nextBoard = moveSquare(current, emptySquare, row + move[0], col + move[1]);
+    for (const { index, current } of queue) {
+      for (const nextIndex of nextMoveMap[index]) {
+        const nextBoard = swapTile(index, nextIndex, current);
 
         if (!nextBoard) continue;
-        if (isSolved(nextBoard)) return result + 1;
-        nextQueue.push(nextBoard);
+        if (isSolved(nextBoard)) return result;
+        visited.add(nextBoard);
+        nextQueue.push({ index: nextIndex, current: nextBoard });
       }
     }
     queue = nextQueue;
-    result += 1;
   }
   return -1;
 };
