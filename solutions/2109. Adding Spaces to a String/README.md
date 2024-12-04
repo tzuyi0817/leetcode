@@ -68,7 +68,7 @@ We are also able to place spaces before the first character of the string.
  * @param {number[]} spaces
  * @return {string}
  */
-var addSpaces = function (s, spaces) {
+const addSpaces = function (s, spaces) {
   const n = s.length;
   const result = [];
   let spacesIndex = 0;

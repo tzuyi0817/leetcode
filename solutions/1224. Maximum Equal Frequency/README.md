@@ -47,7 +47,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var maxEqualFreq = function (nums) {
+const maxEqualFreq = function (nums) {
   const n = nums.length;
   const freqMap = new Map();
   const countMap = new Map();
