@@ -56,10 +56,10 @@ The nodes at level 3 were 1, 1, 1, 1, 2, 2, 2, 2, and are 2, 2, 2, 2, 1, 1, 1, 1
 
 ## Solutions
 
-**Solution: `Dynamic Programming`**
+**Solution: `Breadth-First Search`**
 
 - Time complexity: <em>O(n)</em>
-- Space complexity: <em>O(26)</em>
+- Space complexity: <em>O(n)</em>
 
 <p>&nbsp;</p>
 
