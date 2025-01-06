@@ -55,26 +55,23 @@
  * @return {number[]}
  */
 const minOperations = function (boxes) {
-  const size = boxes.length;
-  const left = new Array(size).fill(0);
-  const right = new Array(size).fill(0);
-  const result = [];
-  let count = 0;
+  const n = boxes.length;
+  const result = Array.from({ length: n }, () => 0);
+  let balls = 0;
+  let preCount = 0;
 
-  count = +boxes[0];
-  for (let index = 1; index < size; index++) {
-    left[index] = count + left[index - 1];
-    count += +boxes[index];
+  for (let index = 0; index < n; index++) {
+    preCount += balls;
+    result[index] += preCount;
+    balls += Number(boxes[index]);
   }
+  preCount = 0;
+  balls = 0;
 
-  count = +boxes[size - 1];
-  for (let index = size - 2; index >= 0; index--) {
-    right[index] = count + right[index + 1];
-    count += +boxes[index];
-  }
-
-  for (let index = 0; index < size; index++) {
-    result[index] = left[index] + right[index];
+  for (let index = n - 1; index >= 0; index--) {
+    preCount += balls;
+    result[index] += preCount;
+    balls += Number(boxes[index]);
   }
   return result;
 };
