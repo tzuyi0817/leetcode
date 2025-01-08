@@ -1,0 +1,103 @@
+# [1340. Jump Game V](https://leetcode.com/problems/jump-game-v)
+
+## Description
+
+<div class="elfjS" data-track-load="description_content"><p>Given an array of&nbsp;integers <code>arr</code> and an integer <code>d</code>. In one step you can jump from index <code>i</code> to index:</p>
+
+<ul>
+	<li><code>i + x</code> where:&nbsp;<code>i + x &lt; arr.length</code> and <code> 0 &lt;&nbsp;x &lt;= d</code>.</li>
+	<li><code>i - x</code> where:&nbsp;<code>i - x &gt;= 0</code> and <code> 0 &lt;&nbsp;x &lt;= d</code>.</li>
+</ul>
+
+<p>In addition, you can only jump from index <code>i</code> to index <code>j</code>&nbsp;if <code>arr[i] &gt; arr[j]</code> and <code>arr[i] &gt; arr[k]</code> for all indices <code>k</code> between <code>i</code> and <code>j</code> (More formally <code>min(i,&nbsp;j) &lt; k &lt; max(i, j)</code>).</p>
+
+<p>You can choose any index of the array and start jumping. Return <em>the maximum number of indices</em>&nbsp;you can visit.</p>
+
+<p>Notice that you can not jump outside of the array at any time.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/01/23/meta-chart.jpeg" style="width: 633px; height: 419px;">
+<pre><strong>Input:</strong> arr = [6,4,14,6,8,13,9,7,10,6,12], d = 2
+<strong>Output:</strong> 4
+<strong>Explanation:</strong> You can start at index 10. You can jump 10 --&gt; 8 --&gt; 6 --&gt; 7 as shown.
+Note that if you start at index 6 you can only jump to index 7. You cannot jump to index 5 because 13 &gt; 9. You cannot jump to index 4 because index 5 is between index 4 and 6 and 13 &gt; 9.
+Similarly You cannot jump from index 3 to index 2 or index 1.
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre><strong>Input:</strong> arr = [3,3,3,3,3], d = 3
+<strong>Output:</strong> 1
+<strong>Explanation:</strong> You can start at any index. You always cannot jump to any index.
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre><strong>Input:</strong> arr = [7,6,5,4,3,2,1], d = 1
+<strong>Output:</strong> 7
+<strong>Explanation:</strong> Start at index 0. You can visit all the indicies. 
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= arr.length &lt;= 1000</code></li>
+	<li><code>1 &lt;= arr[i] &lt;= 10<sup>5</sup></code></li>
+	<li><code>1 &lt;= d &lt;= arr.length</code></li>
+</ul>
+</div>
+
+<p>&nbsp;</p>
+
+## Solutions
+
+**Solution: `Dynamic Programming`**
+
+- Time complexity: <em>O(nd)</em>
+- Space complexity: <em>O(n)</em>
+
+<p>&nbsp;</p>
+
+### **JavaScript**
+
+```js
+/**
+ * @param {number[]} arr
+ * @param {number} d
+ * @return {number}
+ */
+const maxJumps = function (arr, d) {
+  const n = arr.length;
+  const memo = Array.from({ length: n }, () => 0);
+  let result = 0;
+
+  const jumpToTarget = node => {
+    if (memo[node]) return memo[node];
+    const height = arr[node];
+    let result = 0;
+
+    for (let index = node + 1; index <= Math.min(node + d, n - 1); index++) {
+      if (height <= arr[index]) break;
+
+      result = Math.max(result, jumpToTarget(index));
+    }
+
+    for (let index = node - 1; index >= Math.max(0, node - d); index--) {
+      if (height <= arr[index]) break;
+
+      result = Math.max(result, jumpToTarget(index));
+    }
+    result += 1;
+    memo[node] = result;
+
+    return result;
+  };
+
+  for (let index = 0; index < n; index++) {
+    result = Math.max(jumpToTarget(index), result);
+  }
+  return result;
+};
+```
