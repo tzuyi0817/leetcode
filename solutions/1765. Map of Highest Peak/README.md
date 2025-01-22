@@ -72,16 +72,14 @@ Any height assignment that has a maximum height of 2 while still meeting the rul
  * @param {number[][]} isWater
  * @return {number[][]}
  */
-const highestPeak = function (isWater) {
+var highestPeak = function (isWater) {
   const m = isWater.length;
   const n = isWater[0].length;
-  const result = new Array(m)
-    .fill('')
-    .map(_ => new Array(n).fill(-1));
-  const direction = [
+  const result = Array.from({ length: m }, () => Array(n).fill(0));
+  const directions = [
     [0, 1],
-    [0, -1],
     [1, 0],
+    [0, -1],
     [-1, 0],
   ];
   let queue = [];
@@ -89,23 +87,24 @@ const highestPeak = function (isWater) {
   for (let row = 0; row < m; row++) {
     for (let col = 0; col < n; col++) {
       if (!isWater[row][col]) continue;
-      result[row][col] = 0;
-      queue.push({ row, col });
+
+      queue.push({ row, col, height: 0 });
     }
   }
 
   while (queue.length) {
     const nextQueue = [];
 
-    for (const { row, col } of queue) {
-      for (const [x, y] of direction) {
-        const nextRow = row + x;
-        const nextCol = col + y;
+    for (const { row, col, height } of queue) {
+      for (const [moveRow, moveCol] of directions) {
+        const nextRow = row + moveRow;
+        const nextCol = col + moveCol;
 
-        if (nextRow < 0 || nextRow >= m || nextCol < 0 || nextCol >= n) continue;
-        if (result[nextRow][nextCol] !== -1) continue;
-        nextQueue.push({ row: nextRow, col: nextCol });
-        result[nextRow][nextCol] = result[row][col] + 1;
+        if (nextRow >= m || nextCol >= n || nextRow < 0 || nextCol < 0) continue;
+        if (result[nextRow][nextCol] || isWater[nextRow][nextCol]) continue;
+
+        nextQueue.push({ row: nextRow, col: nextCol, height: height + 1 });
+        result[nextRow][nextCol] = height + 1;
       }
     }
     queue = nextQueue;
