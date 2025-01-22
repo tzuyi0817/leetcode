@@ -2,10 +2,10 @@
  * @param {number[][]} isWater
  * @return {number[][]}
  */
-var highestPeak = function (isWater) {
+const highestPeak = function (isWater) {
   const m = isWater.length;
   const n = isWater[0].length;
-  const result = Array.from({ length: m }, () => Array(n).fill(0));
+  const result = Array.from({ length: m }, () => new Array(n).fill(0));
   const directions = [
     [0, 1],
     [1, 0],
