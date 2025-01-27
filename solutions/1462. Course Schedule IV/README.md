@@ -59,8 +59,8 @@ Course 0 is not a prerequisite of course 1, but the opposite is true.
 
 **Solution: `Depth-First Search`**
 
-- Time complexity: <em>O(n^2)</em>
-- Space complexity: <em>O(n)</em>
+- Time complexity: <em>O(n<sup>2</sup>)</em>
+- Space complexity: <em>O(n<sup>2</sup>)</em>
 
 <p>&nbsp;</p>
 
@@ -74,34 +74,31 @@ Course 0 is not a prerequisite of course 1, but the opposite is true.
  * @return {boolean[]}
  */
 const checkIfPrerequisite = function (numCourses, prerequisites, queries) {
-  const courses = new Array(numCourses)
-    .fill('')
-    .map(_ => new Set());
-  const prerequisiteMap = new Map();
-
-  prerequisites.forEach(([pre, current]) => {
-    courses[current].add(pre);
+  const courses = Array.from({ length: numCourses }, () => []);
+  const memo = Array.from({ length: numCourses }, () => {
+    return new Array(numCourses).fill(null);
   });
 
-  const checkPrerequisite = course => {
-    if (prerequisiteMap.has(course)) return prerequisiteMap.get(course);
-    const prerequisite = prerequisiteMap.get(course) ?? new Set();
+  for (const [a, b] of prerequisites) {
+    courses[b].push(a);
+  }
 
-    courses[course].forEach(pre => {
-      prerequisite.add(pre);
-      checkPrerequisite(pre).forEach(grand => {
-        prerequisite.add(grand);
-      });
-    });
-    prerequisiteMap.set(course, prerequisite);
-    return prerequisite;
+  const isPrerequisite = (preCourse, course) => {
+    if (preCourse === course) return true;
+    if (memo[course][preCourse] !== null) {
+      return memo[course][preCourse];
+    }
+
+    for (const pre of courses[course]) {
+      if (isPrerequisite(preCourse, pre)) {
+        memo[course][preCourse] = true;
+        return true;
+      }
+    }
+    memo[course][preCourse] = false;
+    return false;
   };
 
-  for (let course = 0; course < numCourses; course++) {
-    checkPrerequisite(course);
-  }
-  return queries.map(([pre, current]) => {
-    return prerequisiteMap.get(current).has(pre);
-  });
+  return queries.map(([a, b]) => isPrerequisite(a, b));
 };
 ```
