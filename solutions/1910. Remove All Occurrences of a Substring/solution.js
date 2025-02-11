@@ -4,25 +4,22 @@
  * @return {string}
  */
 const removeOccurrences = function (s, part) {
-  const size = part.length;
-  const result = [];
-  const isMatch = end => {
-    if (end < size) return false;
-    let current = 0;
+  const m = part.length;
+  const stack = [];
+  let index = 0;
 
-    for (let index = end - size; index < end; index++) {
-      if (result[index] !== part[current]) return false;
-      current += 1;
+  for (const letter of s) {
+    stack[index] = letter;
+    index += 1;
+
+    if (index < m) continue;
+    if (stack[index - m] !== part[0]) continue;
+    if (letter !== part[m - 1]) continue;
+
+    if (stack.slice(index - m, index).join('') === part) {
+      index -= m;
     }
-    return true;
-  };
-  let current = 0;
-
-  for (const element of s) {
-    result[current++] = element;
-
-    if (!isMatch(current)) continue;
-    current -= size;
   }
-  return result.slice(0, current).join('');
+
+  return stack.slice(0, index).join('');
 };
