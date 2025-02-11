@@ -19,5 +19,11 @@ export default [
 
       'unicorn/no-new-array': 'off',
     },
+    languageOptions: {
+      globals: {
+        MaxPriorityQueue: 'readonly',
+        MinPriorityQueue: 'readonly',
+      },
+    },
   },
 ];
