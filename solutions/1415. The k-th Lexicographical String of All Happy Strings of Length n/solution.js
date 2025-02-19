@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {string}
  */
-var getHappyString = function (n, k) {
+const getHappyString = function (n, k) {
   const perCounts = Math.pow(2, n - 1);
   const totalCounts = 3 * perCounts;
 
