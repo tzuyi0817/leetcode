@@ -4,21 +4,14 @@
  */
 const numOfSubarrays = function (arr) {
   const MODULO = 10 ** 9 + 7;
-  const size = arr.length;
-  const dp = new Array(size + 1).fill('').map(_ => ({ odd: 0, even: 0 }));
-  let result = 0;
+  let odd = 0;
+  let even = 0;
+  let currentSum = 0;
 
-  for (let index = 1; index <= size; index++) {
-    const value = arr[index - 1];
-
-    if (value % 2) {
-      dp[index].odd = dp[index - 1].even + 1;
-      dp[index].even = dp[index - 1].odd;
-    } else {
-      dp[index].odd = dp[index - 1].odd;
-      dp[index].even = dp[index - 1].even + 1;
-    }
-    result += dp[index].odd;
+  for (const num of arr) {
+    currentSum += num;
+    currentSum % 2 ? (odd += 1) : (even += 1);
   }
-  return result % MODULO;
+
+  return (odd * even + odd) % MODULO;
 };
