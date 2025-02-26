@@ -3,12 +3,15 @@
  * @return {number}
  */
 const maxAbsoluteSum = function (nums) {
-  let sum = (max = min = 0);
+  let maxSum = Number.MIN_SAFE_INTEGER;
+  let minSum = Number.MAX_SAFE_INTEGER;
+  let result = 0;
 
   for (const num of nums) {
-    sum += num;
-    max = Math.max(sum, max);
-    min = Math.min(sum, min);
+    maxSum = Math.max(maxSum + num, num);
+    minSum = Math.min(minSum + num, num);
+    result = Math.max(result, maxSum, Math.abs(minSum));
   }
-  return max - min;
+
+  return result;
 };
