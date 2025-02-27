@@ -66,7 +66,7 @@ Cost of paint the first and last house (10 + 1) = 11.
 **Solution: `Dynamic Programming`**
 
 - Time complexity: <em>O(m\*target\*n<sup>2</sup>)</em>
-- Space complexity: <em>O(n)</em>
+- Space complexity: <em>O(m\*target\*n)</em>
 
 <p>&nbsp;</p>
 
@@ -83,9 +83,7 @@ Cost of paint the first and last house (10 + 1) = 11.
  */
 const minCost = function (houses, cost, m, n, target) {
   const dp = Array.from({ length: m }, () => {
-    return new Array(target + 1)
-      .fill('')
-      .map(_ => new Array(n + 1).fill(null));
+    return new Array(target + 1).fill('').map(_ => new Array(n + 1).fill(null));
   });
 
   const paintHouse = (index, neighborhoods, neighborColor) => {
