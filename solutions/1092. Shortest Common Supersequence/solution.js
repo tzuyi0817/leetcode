@@ -6,39 +6,44 @@
 const shortestCommonSupersequence = function (str1, str2) {
   const m = str1.length;
   const n = str2.length;
-  const lcs = () => {
-    let dp = new Array(n + 1).fill('');
-    for (const letter of str1) {
-      const nextDp = new Array(n + 1).fill('');
-      for (let index = 0; index < n; index++) {
-        const previousSub = dp[index + 1];
-        const currentSub = nextDp[index];
-        nextDp[index + 1] =
-          letter === str2[index]
-            ? dp[index] + letter
-            : previousSub.length > currentSub.length
-              ? previousSub
-              : currentSub;
+  let lcs = Array.from({ length: n + 1 }, () => '');
+
+  for (const letter of str1) {
+    const nextLcs = new Array(n + 1).fill('');
+
+    for (let index = 1; index <= n; index++) {
+      const prevSub = lcs[index];
+      const currentSub = nextLcs[index - 1];
+
+      if (letter === str2[index - 1]) {
+        nextLcs[index] = lcs[index - 1] + letter;
+      } else {
+        nextLcs[index] = prevSub.length > currentSub.length ? prevSub : currentSub;
       }
-      dp = nextDp;
     }
-    return dp[n];
-  };
+
+    lcs = nextLcs;
+  }
+
   let a = 0;
   let b = 0;
-  let result = '';
-  for (const letter of lcs()) {
+  let commonSubseq = '';
+
+  for (const letter of lcs[n]) {
     while (a < m && str1[a] !== letter) {
-      result += str1[a];
+      commonSubseq += str1[a];
       a += 1;
     }
+
     while (b < n && str2[b] !== letter) {
-      result += str2[b];
+      commonSubseq += str2[b];
       b += 1;
     }
+
+    commonSubseq += letter;
     a += 1;
     b += 1;
-    result += letter;
   }
-  return `${result}${str1.slice(a)}${str2.slice(b)}`;
+
+  return `${commonSubseq}${str1.slice(a)}${str2.slice(b)}`;
 };
