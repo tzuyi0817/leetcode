@@ -18,11 +18,8 @@
 <img alt="" src="https://assets.leetcode.com/uploads/2019/08/28/1528_ex1.png" style="width: 396px; height: 262px;">
 <pre><strong>Input</strong>
 ["TreeAncestor", "getKthAncestor", "getKthAncestor", "getKthAncestor"]
-[[7, [-1, 0, 0, 1, 1, 2, 2]], [3, 1], [5, 2], [6, 3]]
-<strong>Output</strong>
-[null, 1, 0, -1]
-
-<strong>Explanation</strong>
+<p>[[7, [-1, 0, 0, 1, 1, 2, 2]], [3, 1], [5, 2], [6, 3]]</p><strong>Output</strong>
+<p>[null, 1, 0, -1]</p><strong>Explanation</strong>
 TreeAncestor treeAncestor = new TreeAncestor(7, [-1, 0, 0, 1, 1, 2, 2]);
 treeAncestor.getKthAncestor(3, 1); // returns 1 which is the parent of 3
 treeAncestor.getKthAncestor(5, 2); // returns 0 which is the grandparent of 5
