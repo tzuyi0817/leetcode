@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {boolean}
  */
-var checkPowersOfThree = function (n) {
+const checkPowersOfThree = function (n) {
   if (n <= 1) return true;
   const baseLog = Math.floor(Math.log(n) / Math.log(3));
   const power = Math.pow(3, baseLog);
