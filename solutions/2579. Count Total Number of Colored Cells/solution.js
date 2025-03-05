@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {number}
  */
-var coloredCells = function (n) {
+const coloredCells = function (n) {
   const lifting = 4;
   const base = 1;
 
