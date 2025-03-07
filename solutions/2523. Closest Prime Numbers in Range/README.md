@@ -50,10 +50,10 @@ Since 11 is smaller than 17, we return the first pair.
 
 ## Solutions
 
-**Solution: `Sliding Window`**
+**Solution: `Sieve of Eratosthenes`**
 
-- Time complexity: <em>O(n)</em>
-- Space complexity: <em>O(1)</em>
+- Time complexity: <em>O(nlog(logn))</em>
+- Space complexity: <em>O(n)</em>
 
 <p>&nbsp;</p>
 
