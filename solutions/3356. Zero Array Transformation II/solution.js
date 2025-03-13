@@ -1,50 +1,47 @@
 /**
- * @param {string} word
- * @param {number} k
+ * @param {number[]} nums
+ * @param {number[][]} queries
  * @return {number}
  */
-const countOfSubstrings = function (word, k) {
-  const n = word.length;
-  const vowels = ['a', 'e', 'i', 'o', 'u'];
+const minZeroArray = function (nums, queries) {
+  if (nums.every(num => !num)) return 0;
+  const n = nums.length;
+  let left = 1;
+  let right = queries.length;
+  let result = -1;
 
-  const isVowel = letter => vowels.includes(letter);
+  const transformToZeroArray = k => {
+    const decrements = new Array(n + 1).fill(0);
 
-  const atMost = consonants => {
-    const vowelMap = new Map();
-    let left = 0;
-    let consonantCount = 0;
-    let result = 0;
+    for (let index = 0; index < k; index++) {
+      const [l, r, val] = queries[index];
 
-    for (let index = 0; index < n; index++) {
-      const letter = word[index];
-
-      if (isVowel(letter)) {
-        const count = vowelMap.get(letter) ?? 0;
-
-        vowelMap.set(letter, count + 1);
-      } else {
-        consonantCount += 1;
-      }
-
-      while (vowelMap.size === vowels.length && consonantCount > consonants) {
-        const current = word[left];
-
-        if (isVowel(current)) {
-          const count = vowelMap.get(current);
-
-          count === 1 ? vowelMap.delete(current) : vowelMap.set(current, count - 1);
-        } else {
-          consonantCount -= 1;
-        }
-
-        left += 1;
-      }
-
-      result += index - left + 1;
+      decrements[l] += val;
+      decrements[r + 1] -= val;
     }
 
-    return result;
+    for (let index = 1; index <= n; index++) {
+      const num = nums[index - 1];
+
+      if (num > decrements[index - 1]) return false;
+
+      decrements[index] += decrements[index - 1];
+    }
+
+    return true;
   };
 
-  return atMost(k) - atMost(k - 1);
+  while (left <= right) {
+    const mid = Math.floor((left + right) / 2);
+    const isZeroArray = transformToZeroArray(mid);
+
+    if (isZeroArray) {
+      result = mid;
+      right = mid - 1;
+    } else {
+      left = mid + 1;
+    }
+  }
+
+  return result;
 };

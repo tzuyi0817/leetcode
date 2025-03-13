@@ -85,7 +85,7 @@
 
 **Solution: `Binary Search + Difference Array`**
 
-- Time complexity: <em>O(nlog(queries.length))</em>
+- Time complexity: <em>O(nlog(n+queries.length))</em>
 - Space complexity: <em>O(n)</em>
 
 <p>&nbsp;</p>
