@@ -23,5 +23,5 @@
   },
   "files.associations": {},
   "typescript.tsdk": "node_modules/typescript/lib",
-  "cSpell.words": ["vitepress", "unplugin", "Sonarjs", "typecheck", "bitmask", "deque", "nums"]
+  "cSpell.words": ["vitepress", "unplugin", "Sonarjs", "typecheck", "bitmask", "deque", "nums", "indegree"]
 }
