@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "type": "module",
-  "packageManager": "pnpm@10.5.2",
+  "packageManager": "pnpm@10.6.5",
   "description": "Solutions to LeetCode in JavaScript.",
   "scripts": {
     "docs:dev": "vitepress dev docs",
@@ -19,15 +19,15 @@
     "solution"
   ],
   "devDependencies": {
-    "@component-hook/eslint-plugin": "^1.0.1",
-    "@types/node": "^22.13.5",
-    "prettier": "^3.5.2",
+    "@component-hook/eslint-plugin": "^1.0.2",
+    "@types/node": "^22.13.11",
+    "prettier": "^3.5.3",
     "vitepress": "^1.6.3"
   },
   "optionalDependencies": {
-    "@commitlint/cli": "^19.7.1",
-    "@commitlint/config-conventional": "^19.7.1",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.4.3"
+    "lint-staged": "^15.5.0"
   }
 }
