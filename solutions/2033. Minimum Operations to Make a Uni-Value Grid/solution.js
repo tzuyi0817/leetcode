@@ -6,21 +6,15 @@
 const minOperations = function (grid, x) {
   const m = grid.length;
   const n = grid[0].length;
-  const values = [];
-  const remainder = grid[0][0] % x;
+  const values = grid.flat();
 
-  for (let row = 0; row < m; row++) {
-    for (let col = 0; col < n; col++) {
-      const value = grid[row][col];
+  if (values.some(value => (values[0] - value) % x)) return -1;
 
-      if (value % x !== remainder) return -1;
-      values.push(value);
-    }
-  }
   values.sort((a, b) => a - b);
-  const middle = values[Math.floor((m * n) / 2)];
+
+  const middleValue = values[Math.floor((m * n) / 2)];
 
   return values.reduce((result, value) => {
-    return result + Math.abs(value - middle) / x;
+    return result + Math.abs(middleValue - value) / x;
   }, 0);
 };
