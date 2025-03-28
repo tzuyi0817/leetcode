@@ -32,7 +32,7 @@ const stoneGameV = function (stoneValue) {
         const score1 = heap2 + getMaxScore(index + 1, right);
         const score2 = heap1 + getMaxScore(left, index);
 
-        result = Math.max(score1, score2);
+        result = Math.max(result, score1, score2);
       }
     }
 
