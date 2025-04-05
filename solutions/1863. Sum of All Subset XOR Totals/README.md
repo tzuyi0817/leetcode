@@ -63,10 +63,10 @@
 
 ## Solutions
 
-**Solution: `Depth-First Search`**
+**Solution: `Math`**
 
-- Time complexity: <em>O(2<sup>n</sup>)</em>
-- Space complexity: <em>O(2<sup>n</sup>)</em>
+- Time complexity: <em>O(n)</em>
+- Space complexity: <em>O(1)</em>
 
 <p>&nbsp;</p>
 
@@ -79,18 +79,9 @@
  */
 const subsetXORSum = function (nums) {
   const n = nums.length;
-  let result = 0;
+  const total = nums.reduce((result, num) => result | num);
 
-  const sumSubset = (start, current) => {
-    for (let index = start; index < n; index++) {
-      const next = current ^ nums[index];
-
-      result += next;
-      sumSubset(index + 1, next);
-    }
-  };
-
-  sumSubset(0, 0);
-  return result;
+  // Each "bit that has occurred" will be summed 2**(n-1) Second-rate.
+  return total * (1 << (n - 1));
 };
 ```
