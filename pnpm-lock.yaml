@@ -9,10 +9,10 @@ importers:
   .:
     devDependencies:
       '@component-hook/eslint-plugin':
-        specifier: ^1.0.2
-        version: 1.0.3(@typescript-eslint/parser@8.29.0(eslint@9.23.0(jiti@2.4.2))(typescript@5.8.2))(eslint@9.23.0(jiti@2.4.2))(prettier@3.5.3)(typescript@5.8.2)
+        specifier: ^1.0.4
+        version: 1.0.4(@typescript-eslint/parser@8.29.0(eslint@9.23.0(jiti@2.4.2))(typescript@5.8.2))(eslint@9.23.0(jiti@2.4.2))(prettier@3.5.3)(typescript@5.8.2)
       '@types/node':
-        specifier: ^22.13.11
+        specifier: ^22.14.0
         version: 22.14.0
       prettier:
         specifier: ^3.5.3
@@ -198,8 +198,8 @@ packages:
     resolution: {integrity: sha512-LRjP623jPyf3Poyfb0ohMj8I3ORyBDOwXAgxxVPbSD0unJuW2mJWeiRfaQinjtccMqC5Wy1HOMfa4btKjbNxbg==}
     engines: {node: '>=v18'}
 
-  '@component-hook/eslint-plugin@1.0.3':
-    resolution: {integrity: sha512-+JpR/Yo01p3krqGL44GqKcmwn8XDp56iUObF7CR5LrcwY5eoEiNQ5eLg5voklqFSF4d6liWx2BW+PkjBkkYv1w==}
+  '@component-hook/eslint-plugin@1.0.4':
+    resolution: {integrity: sha512-V5328NOy8Lj1E9QDytnI+nU//0GnYzWilu5N7KH21Lg5noKjlRQtGnvjddf/fTsIUhVEyVxPZDBCXUC9Pj1apA==}
     peerDependencies:
       eslint: ^9.15.0
 
@@ -2941,7 +2941,7 @@ snapshots:
       chalk: 5.4.1
     optional: true
 
-  '@component-hook/eslint-plugin@1.0.3(@typescript-eslint/parser@8.29.0(eslint@9.23.0(jiti@2.4.2))(typescript@5.8.2))(eslint@9.23.0(jiti@2.4.2))(prettier@3.5.3)(typescript@5.8.2)':
+  '@component-hook/eslint-plugin@1.0.4(@typescript-eslint/parser@8.29.0(eslint@9.23.0(jiti@2.4.2))(typescript@5.8.2))(eslint@9.23.0(jiti@2.4.2))(prettier@3.5.3)(typescript@5.8.2)':
     dependencies:
       '@eslint-community/eslint-plugin-eslint-comments': 4.4.1(eslint@9.23.0(jiti@2.4.2))
       '@eslint/compat': 1.2.8(eslint@9.23.0(jiti@2.4.2))
