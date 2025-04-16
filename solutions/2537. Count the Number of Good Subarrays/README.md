@@ -40,9 +40,9 @@
 
 ## Solutions
 
-**Solution: `Priority Queue`**
+**Solution: `Sliding Window`**
 
-- Time complexity: <em>O(klogn)</em>
+- Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
 <p>&nbsp;</p>
