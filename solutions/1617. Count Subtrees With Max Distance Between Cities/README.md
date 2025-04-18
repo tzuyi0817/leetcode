@@ -52,7 +52,7 @@ No subtree has two nodes where the max distance between them is 3.
 
 ## Solutions
 
-**Solution: `Dynamic Programming(Floyd-Warshall's algorithm + Bit Manipulation`**
+**Solution: `Dynamic Programming(Floyd-Warshall's algorithm) + Bit Manipulation`**
 
 - Time complexity: <em>O(n<sup>3</sup>+2<sup>n</sup>\*n<sup>2</sup> -> 2<sup>n</sup>\*n<sup>2</sup>)</em>
 - Space complexity: <em>O(n<sup>2</sup>)</em>
