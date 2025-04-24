@@ -68,7 +68,9 @@ Alice loses the game because the sum of the removed stones (15) is divisible by 
  * @return {boolean}
  */
 const stoneGameIX = function (stones) {
-  let num0 = (num1 = num2 = 0);
+  let num0 = 0;
+  let num1 = 0;
+  let num2 = 0;
 
   for (const stone of stones) {
     if (stone % 3 === 0) num0 += 1;

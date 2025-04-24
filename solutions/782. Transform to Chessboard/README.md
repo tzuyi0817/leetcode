@@ -74,7 +74,10 @@ const movesToChessboard = function (board) {
       if (topLeft ^ topRight ^ bottomLeft ^ bottomRight) return -1;
     }
   }
-  let colSum = (rowSum = colMisplace = rowMisplace = 0);
+  let colSum = 0;
+  let rowSum = 0;
+  let colMisplace = 0;
+  let rowMisplace = 0;
 
   for (let index = 0; index < n; index++) {
     colSum += board[index][0];

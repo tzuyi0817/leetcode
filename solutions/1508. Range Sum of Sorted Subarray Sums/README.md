@@ -64,7 +64,10 @@ const rangeSum = function (nums, n, left, right) {
   const minSum = Math.min(...nums);
   const maxSum = nums.reduce((sum, num) => sum + num);
   const getTargetSum = target => {
-    let count = (result = sum = current = 0);
+    let count = 0;
+    let result = 0;
+    let sum = 0;
+    let current = 0;
     let left = 0;
 
     for (let index = 0; index < n; index++) {

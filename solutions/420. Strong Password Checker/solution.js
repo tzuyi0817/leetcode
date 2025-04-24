@@ -4,8 +4,12 @@
  */
 const strongPasswordChecker = function (password) {
   const n = password.length;
-  let lowercase = (uppercase = digit = 1);
-  let replaces = (remainZero = remainOne = 0);
+  let lowercase = 1;
+  let uppercase = 1;
+  let digit = 1;
+  let replaces = 0;
+  let remainZero = 0;
+  let remainOne = 0;
 
   for (let index = 0; index < n; index++) {
     const char = password[index];

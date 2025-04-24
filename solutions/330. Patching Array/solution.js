@@ -4,7 +4,9 @@
  * @return {number}
  */
 const minPatches = function (nums, n) {
-  let result = (index = currentRange = 0);
+  let result = 0;
+  let index = 0;
+  let currentRange = 0;
 
   while (currentRange < n) {
     if (index < nums.length && currentRange + 1 >= nums[index]) {

@@ -1,6 +1,6 @@
 import fs from 'node:fs';
-import type { DefaultTheme } from 'vitepress';
 import { solutionsPath } from './index';
+import type { DefaultTheme } from 'vitepress';
 
 export function generateSidebar(): DefaultTheme.Sidebar {
   const files = fs.readdirSync(solutionsPath);

@@ -61,8 +61,10 @@
  */
 const minSumOfLengths = function (arr, target) {
   const minSumLength = [];
-  let left = (currentSum = 0);
-  let result = (minSize = Number.MAX_SAFE_INTEGER);
+  let left = 0;
+  let currentSum = 0;
+  let result = Number.MAX_SAFE_INTEGER;
+  let minSize = Number.MAX_SAFE_INTEGER;
 
   for (let index = 0; index < arr.length; index++) {
     currentSum += arr[index];

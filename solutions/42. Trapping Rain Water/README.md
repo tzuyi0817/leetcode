@@ -47,7 +47,9 @@
  * @return {number}
  */
 const trap = function (height) {
-  let left = (result = maxHeight = 0);
+  let left = 0;
+  let result = 0;
+  let maxHeight = 0;
   let right = height.length - 1;
 
   while (left < right) {

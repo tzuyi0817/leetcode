@@ -16,7 +16,9 @@ const getBiggestThree = function (grid) {
       second = value;
     } else if (third < value) third = value;
   };
-  let first = (second = third = 0);
+  let first = 0;
+  let second = 0;
+  let third = 0;
 
   for (let row = 0; row < m; row++) {
     for (let col = 0; col < n; col++) {

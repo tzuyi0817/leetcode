@@ -1,7 +1,7 @@
 import { resolve } from 'node:path';
 import { defineConfig } from 'vitepress';
-import { generateSidebar } from './sidebar';
 import { search } from './search';
+import { generateSidebar } from './sidebar';
 
 const base = '/leetcode/';
 export const solutionsPath = resolve(__dirname, '..', '..', '..', 'solutions');

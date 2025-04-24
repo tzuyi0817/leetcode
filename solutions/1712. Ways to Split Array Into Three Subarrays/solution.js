@@ -6,7 +6,9 @@ const waysToSplit = function (nums) {
   const MODULO = 10 ** 9 + 7;
   const prefixSum = [nums[0]];
   const size = nums.length;
-  let mid = (right = result = 0);
+  let mid = 0;
+  let right = 0;
+  let result = 0;
 
   for (let index = 1; index < size; index++) {
     prefixSum[index] = prefixSum[index - 1] + nums[index];

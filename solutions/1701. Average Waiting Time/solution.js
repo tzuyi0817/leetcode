@@ -3,7 +3,8 @@
  * @return {number}
  */
 const averageWaitingTime = function (customers) {
-  let wait = (prepare = 0);
+  let wait = 0;
+  let prepare = 0;
 
   for (const [arrival, time] of customers) {
     prepare = Math.max(arrival, prepare) + time;

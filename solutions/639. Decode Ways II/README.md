@@ -83,7 +83,9 @@ Hence, there are a total of (6 * 2) + (3 * 1) = 12 + 3 = 15 ways to decode "2*".
 const numDecodings = function (s) {
   const MODULO = 10 ** 9 + 7;
   let previous = 1;
-  let previous1 = (previous2 = current = 0);
+  let previous1 = 0;
+  let previous2 = 0;
+  let current = 0;
 
   for (const char of s) {
     if (char === '*') {

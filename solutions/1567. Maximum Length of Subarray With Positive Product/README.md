@@ -58,7 +58,9 @@ Notice that we cannot include 0 in the subarray since that'll make the product 0
  * @return {number}
  */
 const getMaxLen = function (nums) {
-  let result = (positive = negative = 0);
+  let result = 0;
+  let positive = 0;
+  let negative = 0;
 
   for (const num of nums) {
     if (num === 0) positive = negative = 0;

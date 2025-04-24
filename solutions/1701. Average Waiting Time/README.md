@@ -66,7 +66,8 @@ So the average waiting time = (2 + 6 + 4 + 1) / 4 = 3.25.
  * @return {number}
  */
 const averageWaitingTime = function (customers) {
-  let wait = (prepare = 0);
+  let wait = 0;
+  let prepare = 0;
 
   for (const [arrival, time] of customers) {
     prepare = Math.max(arrival, prepare) + time;

@@ -74,7 +74,9 @@ const maxProfitAssignment = function (difficulty, profit, worker) {
   worker.sort((a, b) => a - b);
   difficulty.sort((a, b) => a - b);
 
-  let index = (maxIncome = result = 0);
+  let index = 0;
+  let maxIncome = 0;
+  let result = 0;
 
   for (const ability of worker) {
     while (index < n && ability >= difficulty[index]) {
