@@ -53,7 +53,10 @@
 const maximumUniqueSubarray = function (nums) {
   const score = new Set();
   const size = nums.length;
-  let start = (end = result = sum = 0);
+  let start = 0;
+  let end = 0;
+  let result = 0;
+  let sum = 0;
 
   while (end < size) {
     if (score.has(nums[end])) {

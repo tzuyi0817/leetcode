@@ -64,7 +64,6 @@
  * @return {string[]}
  */
 const removeSubfolders = function (folder) {
-  const n = folder.length;
   const result = [];
 
   folder.sort();

@@ -28,7 +28,7 @@ const visiblePoints = function (points, angle, location) {
 
   angles.sort((a, b) => a - b);
 
-  for (index = 0; index < n; index++) {
+  for (let index = 0; index < n; index++) {
     angles.push(angles[index] + 360);
   }
 

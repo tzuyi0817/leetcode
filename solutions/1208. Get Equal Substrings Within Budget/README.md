@@ -63,7 +63,9 @@ That costs 3, so the maximum length is 3.
  * @return {number}
  */
 const equalSubstring = function (s, t, maxCost) {
-  let left = (cost = result = 0);
+  let left = 0;
+  let cost = 0;
+  let result = 0;
 
   for (let index = 0; index < s.length; index++) {
     const needCost = Math.abs(s.charCodeAt(index) - t.charCodeAt(index));

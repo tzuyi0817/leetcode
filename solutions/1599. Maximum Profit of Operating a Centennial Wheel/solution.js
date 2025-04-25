@@ -6,7 +6,9 @@
  */
 const minOperationsMaxProfit = function (customers, boardingCost, runningCost) {
   const result = { rotate: -1, profit: 0 };
-  let wait = (profit = rotate = 0);
+  let wait = 0;
+  let profit = 0;
+  let rotate = 0;
 
   for (const customer of customers) {
     wait += customer;

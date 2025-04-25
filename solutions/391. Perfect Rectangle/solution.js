@@ -4,8 +4,10 @@
  */
 const isRectangleCover = function (rectangles) {
   const pointSet = new Set();
-  let minX = (minY = Number.MAX_SAFE_INTEGER);
-  let maxX = (maxY = Number.MIN_SAFE_INTEGER);
+  let minX = Number.MAX_SAFE_INTEGER;
+  let minY = Number.MAX_SAFE_INTEGER;
+  let maxX = Number.MIN_SAFE_INTEGER;
+  let maxY = Number.MIN_SAFE_INTEGER;
   let area = 0;
 
   for (const [x1, y1, x2, y2] of rectangles) {

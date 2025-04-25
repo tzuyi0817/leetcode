@@ -7,8 +7,10 @@ var numTeams = function (rating) {
 
   for (let index = 1; index < rating.length - 1; index++) {
     const rate = rating[index];
-    let leftBigger = (leftSmaller = 0);
-    let rightBigger = (rightSmaller = 0);
+    let leftBigger = 0;
+    let leftSmaller = 0;
+    let rightBigger = 0;
+    let rightSmaller = 0;
 
     for (let left = 0; left < index; left++) {
       rate < rating[left] ? (leftBigger += 1) : (leftSmaller += 1);

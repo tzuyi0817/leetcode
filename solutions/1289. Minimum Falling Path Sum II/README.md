@@ -58,7 +58,8 @@ const minFallingPathSum = function (grid) {
   const dp = [...grid[0]];
 
   for (let row = 1; row < n; row++) {
-    let first = (second = Number.MAX_SAFE_INTEGER);
+    let first = Number.MAX_SAFE_INTEGER;
+    let second = Number.MAX_SAFE_INTEGER;
     let index = -1;
 
     for (let col = 0; col < n; col++) {
@@ -68,6 +69,7 @@ const minFallingPathSum = function (grid) {
         index = col;
       } else if (dp[col] < second) second = dp[col];
     }
+
     for (let col = 0; col < n; col++) {
       const value = grid[row][col];
 
