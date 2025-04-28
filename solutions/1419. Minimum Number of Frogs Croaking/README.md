@@ -63,7 +63,8 @@ const minNumberOfFrogs = function (croakOfFrogs) {
   const croakMap = new Map();
   const indexMap = { c: 0, r: 1, o: 2, a: 3, k: 4 };
   const croak = ['c', 'r', 'o', 'a', 'k'];
-  let result = (frog = 0);
+  let result = 0;
+  let frog = 0;
 
   for (const char of croakOfFrogs) {
     const count = croakMap.get(char) ?? 0;

@@ -6,7 +6,8 @@
 const minWindow = function (s, t) {
   const targetMap = new Map();
   let minSize = Number.MAX_SAFE_INTEGER;
-  let left = (current = 0);
+  let left = 0;
+  let current = 0;
   let minLeft = -1;
 
   for (const str of t) {

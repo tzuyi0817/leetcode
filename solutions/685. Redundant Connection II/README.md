@@ -55,8 +55,8 @@
  */
 const findRedundantDirectedConnection = function (edges) {
   const graph = new Map();
-  const n = edges.length;
-  let firstEntrance = (secondEntrance = null);
+  let firstEntrance = null;
+  let secondEntrance = null;
 
   for (const edge of edges) {
     const [parent, child] = edge;

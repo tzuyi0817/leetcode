@@ -66,8 +66,9 @@ Number of valid subsequences (63 - 2 = 61).
 const numSubseq = function (nums, target) {
   const MODULO = 10 ** 9 + 7;
   const subseqCount = [];
-  let left = (result = 0);
+  let left = 0;
   let right = nums.length - 1;
+  let result = 0;
 
   nums.sort((a, b) => a - b);
   nums.forEach((_, index) => {

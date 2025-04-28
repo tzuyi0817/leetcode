@@ -9,7 +9,8 @@ const minSwap = function (nums1, nums2) {
   let noSwap = 0;
 
   for (let index = 1; index < n; index++) {
-    let currentSwap = (currentNoSwap = n);
+    let currentSwap = n;
+    let currentNoSwap = n;
 
     if (nums1[index] > nums1[index - 1] && nums2[index] > nums2[index - 1]) {
       currentSwap = swap + 1;

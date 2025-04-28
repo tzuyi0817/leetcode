@@ -80,7 +80,9 @@ For example, all the following are valid numbers: <code>"2", "0089", "-0.1", "+3
  * @return {boolean}
  */
 const isNumber = function (s) {
-  let seenNumber = (seenDot = seenE = false);
+  let seenNumber = false;
+  let seenDot = false;
+  let seenE = false;
 
   for (let index = 0; index < s.length; index++) {
     const char = s[index];

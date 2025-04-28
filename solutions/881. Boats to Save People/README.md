@@ -57,8 +57,9 @@
  * @return {number}
  */
 const numRescueBoats = function (people, limit) {
-  let left = (result = 0);
+  let left = 0;
   let right = people.length - 1;
+  let result = 0;
 
   people.sort((a, b) => b - a);
 

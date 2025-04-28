@@ -60,7 +60,10 @@ The maximum number of customers that can be satisfied = 1 + 1 + 1 + 1 + 7 + 5 = 
  */
 const maxSatisfied = function (customers, grumpy, minutes) {
   const n = customers.length;
-  let left = (result = current = maxKeep = 0);
+  let left = 0;
+  let result = 0;
+  let current = 0;
+  let maxKeep = 0;
 
   for (let index = 0; index < n; index++) {
     const isGrumpy = grumpy[index];

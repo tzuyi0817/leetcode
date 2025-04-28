@@ -3,7 +3,8 @@
  * @return {number}
  */
 const intersectionSizeTwo = function (intervals) {
-  let last1 = (last2 = -1);
+  let last1 = -1;
+  let last2 = -1;
   let result = 0;
 
   intervals.sort((a, b) => a[1] - b[1] || b[0] - a[0]);

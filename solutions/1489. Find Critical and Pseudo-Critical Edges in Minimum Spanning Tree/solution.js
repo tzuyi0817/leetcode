@@ -72,7 +72,7 @@ const findCriticalAndPseudoCriticalEdges = function (n, edges) {
   const mstWeight = getMSTWeight();
 
   for (const edge of edges) {
-    const [a, b, weight, index] = edge;
+    const index = edge[3];
 
     if (getMSTWeight(index) > mstWeight) {
       criticalEdges.push(index);

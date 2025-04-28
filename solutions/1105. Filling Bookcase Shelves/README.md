@@ -68,7 +68,8 @@ const minHeightShelves = function (books, shelfWidth) {
   dp[-1] = 0;
 
   for (let index = 0; index < n; index++) {
-    let currentThickness = (currentHeight = 0);
+    let currentThickness = 0;
+    let currentHeight = 0;
 
     for (let book = index; book >= 0; book--) {
       const [thickness, height] = books[book];

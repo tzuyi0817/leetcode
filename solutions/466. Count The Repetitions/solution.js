@@ -8,7 +8,9 @@
 const getMaxRepetitions = function (s1, n1, s2, n2) {
   const n = s1.length;
   const m = s2.length;
-  let current = (repeatS1 = repeatS2 = 0);
+  let current = 0;
+  let repeatS1 = 0;
+  let repeatS2 = 0;
 
   while (repeatS1 < n1) {
     for (let index = 0; index < n; index++) {
