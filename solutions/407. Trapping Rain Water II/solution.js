@@ -13,7 +13,8 @@ const trapRainWater = function (heightMap) {
   ];
   const queue = new MinPriorityQueue({ priority: ({ height }) => height });
   const visited = new Set();
-  let maxHeight = (result = 0);
+  let maxHeight = 0;
+  let result = 0;
 
   for (let row = 0; row < m; row++) {
     for (let col = 0; col < n; col++) {

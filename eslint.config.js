@@ -23,6 +23,7 @@ export default [
       globals: {
         MaxPriorityQueue: 'readonly',
         MinPriorityQueue: 'readonly',
+        TreeNode: 'readonly',
       },
     },
   },

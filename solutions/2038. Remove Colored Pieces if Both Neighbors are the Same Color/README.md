@@ -85,7 +85,8 @@ Thus, Bob wins, so return false.
  */
 const winnerOfGame = function (colors) {
   if (colors.length < 3) return false;
-  let alice = (bob = 0);
+  let alice = 0;
+  let bob = 0;
 
   for (let index = 1; index < colors.length - 1; index++) {
     const piece = colors[index];

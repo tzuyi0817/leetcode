@@ -11,7 +11,8 @@ const smallestRange = function (nums) {
     }
     return result;
   }, []);
-  let left = (coverCount = 0);
+  let left = 0;
+  let coverCount = 0;
   let minRange = Number.MAX_SAFE_INTEGER;
 
   elements.sort((a, b) => a.num - b.num);

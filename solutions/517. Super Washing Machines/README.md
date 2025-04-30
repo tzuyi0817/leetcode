@@ -70,7 +70,8 @@ const findMinMoves = function (machines) {
 
   if (dresses % n) return -1;
   const average = dresses / n;
-  let current = (result = 0);
+  let current = 0;
+  let result = 0;
 
   for (const dress of machines) {
     const canMoveDresses = dress - average;

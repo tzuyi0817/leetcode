@@ -4,7 +4,9 @@
  * @return {number}
  */
 const maxFrequency = function (nums, k) {
-  let sum = (left = result = 0);
+  let sum = 0;
+  let left = 0;
+  let result = 0;
 
   nums.sort((a, b) => a - b);
 

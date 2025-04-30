@@ -74,8 +74,9 @@ Note that the frog can jump over obstacles only when making side jumps (as shown
  */
 const minSideJumps = function (obstacles) {
   const MAX_OBSTACLES = 5 * 10 ** 5;
-  let land1 = (land3 = 1);
+  let land1 = 1;
   let land2 = 0;
+  let land3 = 1;
 
   for (const obstacle of obstacles) {
     land1 = obstacle !== 1 ? land1 : MAX_OBSTACLES;

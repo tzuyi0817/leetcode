@@ -64,8 +64,9 @@ const containVirus = function (isInfected) {
 
       isInfected[row][col] = 'x';
     }
+
     for (const { uninfectedCells } of regions) {
-      for (cell of uninfectedCells) {
+      for (const cell of uninfectedCells) {
         const row = Math.floor(cell / n);
         const col = cell % n;
 

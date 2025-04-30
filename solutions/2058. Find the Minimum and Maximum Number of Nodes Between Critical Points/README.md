@@ -79,7 +79,8 @@ Note that the last node is not considered a local maxima because it does not hav
  * @return {number[]}
  */
 const nodesBetweenCriticalPoints = function (head) {
-  let firstCriticalPoint = (previousCriticalPoint = -1);
+  let firstCriticalPoint = -1;
+  let previousCriticalPoint = -1;
   let previousValue = null;
   let index = 0;
   let minDistance = Number.MAX_SAFE_INTEGER;

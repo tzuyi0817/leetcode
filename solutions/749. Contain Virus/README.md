@@ -97,9 +97,7 @@ const containVirus = function (isInfected) {
 
   while (true) {
     const regions = [];
-    const visited = new Array(m)
-      .fill('')
-      .map(_ => new Array(n).fill(false));
+    const visited = new Array(m).fill('').map(_ => new Array(n).fill(false));
 
     for (let row = 0; row < m; row++) {
       for (let col = 0; col < n; col++) {
@@ -131,8 +129,9 @@ const containVirus = function (isInfected) {
 
       isInfected[row][col] = 'x';
     }
+
     for (const { uninfectedCells } of regions) {
-      for (cell of uninfectedCells) {
+      for (const cell of uninfectedCells) {
         const row = Math.floor(cell / n);
         const col = cell % n;
 

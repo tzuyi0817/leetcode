@@ -10,7 +10,8 @@
  * @return {number[]}
  */
 const nodesBetweenCriticalPoints = function (head) {
-  let firstCriticalPoint = (previousCriticalPoint = -1);
+  let firstCriticalPoint = -1;
+  let previousCriticalPoint = -1;
   let previousValue = null;
   let index = 0;
   let minDistance = Number.MAX_SAFE_INTEGER;

@@ -55,7 +55,8 @@
 const longestValidParentheses = function (s) {
   const size = s.length;
   const stack = [];
-  let result = (current = 0);
+  let result = 0;
+  let current = 0;
 
   for (let index = 0; index < size; index++) {
     current += 1;

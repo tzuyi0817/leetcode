@@ -2,7 +2,7 @@
  * @param {number} target
  * @return {number}
  */
-var racecar = function (target) {
+const racecar1 = function (target) {
   let queue = [{ position: 0, speed: 1 }];
   let result = 0;
 
@@ -29,7 +29,7 @@ var racecar = function (target) {
  * @param {number} target
  * @return {number}
  */
-var racecar = function (target) {
+const racecar2 = function (target) {
   const dp = new Array(target + 1).fill(-1);
 
   const raceTo = distance => {

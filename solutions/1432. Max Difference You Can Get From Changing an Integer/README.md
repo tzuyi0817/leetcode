@@ -62,7 +62,8 @@ We have now a = 9 and b = 1 and max difference = 8
  */
 const maxDiff = function (num) {
   const numStringify = `${num}`;
-  let max = (min = numStringify);
+  let max = numStringify;
+  let min = numStringify;
 
   for (let index = 0; index < numStringify; index++) {
     const value = numStringify[index];
@@ -72,6 +73,7 @@ const maxDiff = function (num) {
       break;
     }
   }
+
   for (let index = 0; index < numStringify; index++) {
     const value = numStringify[index];
 
@@ -86,6 +88,7 @@ const maxDiff = function (num) {
     min = min.replaceAll(value, '0');
     break;
   }
+
   return max - min;
 };
 ```

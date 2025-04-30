@@ -22,6 +22,7 @@ const maxNumber = function (nums1, nums2, k) {
     }
     return result.slice(0, count);
   };
+
   const isGreater = (numsA, numsB, a = 0, b = 0) => {
     while (a < numsA.length && b < numsB.length) {
       if (numsA[a] > numsB[b]) return true;
@@ -31,9 +32,11 @@ const maxNumber = function (nums1, nums2, k) {
     }
     return a < numsA.length;
   };
+
   const mergeSlice = (numsA, numsB) => {
     const result = [];
-    let a = (b = 0);
+    let a = 0;
+    let b = 0;
 
     while (a < numsA.length || b < numsB.length) {
       isGreater(numsA, numsB, a, b) ? result.push(numsA[a++]) : result.push(numsB[b++]);
