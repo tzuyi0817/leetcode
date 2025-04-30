@@ -8,7 +8,6 @@ const createSortedArray = function (instructions) {
   const minNum = Math.min(...instructions);
   const maxNum = Math.max(...instructions);
   const tree = new BinaryIndexedTree(maxNum - minNum + 1);
-
   let result = 0n;
 
   for (let index = 0; index < n; index++) {
