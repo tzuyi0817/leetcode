@@ -69,7 +69,8 @@
  * @return {number}
  */
 const reductionOperations = function (nums) {
-  let level = (result = 0);
+  let level = 0;
+  let result = 0;
 
   nums.sort((a, b) => a - b);
 

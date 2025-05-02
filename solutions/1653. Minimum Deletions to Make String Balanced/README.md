@@ -53,7 +53,8 @@ Delete the characters at 0-indexed positions 3 and 6 ("aab<u>a</u>bb<u>a</u>b" -
  * @return {number}
  */
 const minimumDeletions = function (s) {
-  let a = (b = 0);
+  let a = 0;
+  let b = 0;
 
   for (const char of s) {
     char === 'a' ? (a = Math.min(b, a + 1)) : (b += 1);

@@ -4,7 +4,8 @@
  */
 const longestBeautifulSubstring = function (word) {
   const VOWELS_SIZE = 5;
-  let result = (left = 0);
+  let result = 0;
+  let left = 0;
   let vowels = 1;
 
   for (let index = 1; index < word.length; index++) {

@@ -68,7 +68,8 @@ Hence, the total sum of vowels = 1 + 1 + 1 + 0 + 0 + 0 = 3.
  */
 const countVowels = function (word) {
   const vowels = ['a', 'e', 'i', 'o', 'u'];
-  let dp = (result = 0);
+  let dp = 0;
+  let result = 0;
 
   for (const [index, element] of word.entries()) {
     if (vowels.includes(element)) {

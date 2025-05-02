@@ -65,6 +65,7 @@ const smallestRange = function (nums) {
   let left = 0;
   let coverCount = 0;
   let minRange = Number.MAX_SAFE_INTEGER;
+  let result = [];
 
   elements.sort((a, b) => a.num - b.num);
 

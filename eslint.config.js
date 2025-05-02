@@ -24,6 +24,7 @@ export default [
         MaxPriorityQueue: 'readonly',
         MinPriorityQueue: 'readonly',
         TreeNode: 'readonly',
+        ListNode: 'readonly',
       },
     },
   },

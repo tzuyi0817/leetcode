@@ -4,7 +4,8 @@
  */
 const minFlips = function (s) {
   const size = s.length;
-  let startZero = (startOne = 0);
+  let startZero = 0;
+  let startOne = 0;
   let result = 0;
 
   for (let index = 0; index < size; index++) {

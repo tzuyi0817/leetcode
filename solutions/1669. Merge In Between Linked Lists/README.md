@@ -66,7 +66,8 @@
 const mergeInBetween = function (list1, a, b, list2) {
   let currentNode = list1;
   let current = 0;
-  let leftNode = (rightNode = null);
+  let leftNode = null;
+  let rightNode = null;
 
   while (current <= b) {
     if (current === a - 1) leftNode = currentNode;

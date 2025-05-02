@@ -7,7 +7,8 @@ const getAverages = function (nums, k) {
   const size = nums.length;
   const count = k * 2 + 1;
   const result = new Array(size).fill(-1);
-  let currentSum = (left = 0);
+  let currentSum = 0;
+  let left = 0;
 
   for (let index = 0; index < nums.length; index++) {
     currentSum += nums[index];

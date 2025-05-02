@@ -70,6 +70,10 @@
 const getBiggestThree = function (grid) {
   const m = grid.length;
   const n = grid[0].length;
+  let first = 0;
+  let second = 0;
+  let third = 0;
+
   const updateValues = value => {
     if (first === value || second === value || third === value) return;
     if (first < value) {
@@ -81,9 +85,6 @@ const getBiggestThree = function (grid) {
       second = value;
     } else if (third < value) third = value;
   };
-  let first = 0;
-  let second = 0;
-  let third = 0;
 
   for (let row = 0; row < m; row++) {
     for (let col = 0; col < n; col++) {
@@ -93,7 +94,8 @@ const getBiggestThree = function (grid) {
       updateValues(value);
       if (boundary <= 0) continue;
       for (let length = 1; length <= boundary; length++) {
-        let sum = (offset = 0);
+        let sum = 0;
+        let offset = 0;
 
         for (let current = length; current >= 1; current--) {
           sum +=

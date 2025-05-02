@@ -11,7 +11,8 @@ const countVowelSubstrings = function (word) {
     ['o', -1],
     ['u', -1],
   ]);
-  let result = (left = 0);
+  let result = 0;
+  let left = 0;
 
   function startMinSubstrVowel() {
     let start = size;

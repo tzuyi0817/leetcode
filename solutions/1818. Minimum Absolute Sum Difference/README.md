@@ -90,7 +90,8 @@ const minAbsoluteSumDiff = function (nums1, nums2) {
     }
     return left;
   };
-  let result = (max = 0);
+  let result = 0;
+  let max = 0;
 
   for (let index = 0; index < size; index++) {
     const a = nums1[index];

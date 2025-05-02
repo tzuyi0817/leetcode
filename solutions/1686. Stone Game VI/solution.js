@@ -7,7 +7,8 @@ const stoneGameVI = function (aliceValues, bobValues) {
   const values = aliceValues.map((value, index) => {
     return { alice: value, bob: bobValues[index] };
   });
-  let alice = (bob = 0);
+  let alice = 0;
+  let bob = 0;
 
   values.sort((a, b) => b.alice + b.bob - a.alice - a.bob);
 
