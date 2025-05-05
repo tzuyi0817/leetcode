@@ -67,7 +67,8 @@ We need at least 3 flip operations to form target.
  * @return {number}
  */
 const minFlips = function (target) {
-  let result = (current = 0);
+  let result = 0;
+  let current = 0;
 
   for (const value of target) {
     if (+value === current) continue;

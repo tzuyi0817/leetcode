@@ -57,7 +57,9 @@
  */
 const numSub = function (s) {
   const MODULO = 10 ** 9 + 7;
-  let result = (current = subCount = 0);
+  let result = 0;
+  let current = 0;
+  let subCount = 0;
 
   for (let index = 0; index <= s.length; index++) {
     const char = s[index];

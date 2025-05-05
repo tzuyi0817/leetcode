@@ -65,7 +65,8 @@ Total of operations: 2 + 1 = 3.
  * @return {number}
  */
 const minOperations = function (nums) {
-  let maxDouble = (result = 0);
+  let maxDouble = 0;
+  let result = 0;
 
   for (let num of nums) {
     let double = 0;

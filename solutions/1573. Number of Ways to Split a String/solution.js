@@ -12,7 +12,9 @@ const numWays = function (s) {
   }
   if (count % 3) return 0;
   if (count === 0) return (((size - 1) * (size - 2)) / 2) % MODULO;
-  let current = (first = second = 0);
+  let current = 0;
+  let first = 0;
+  let second = 0;
 
   count /= 3;
 

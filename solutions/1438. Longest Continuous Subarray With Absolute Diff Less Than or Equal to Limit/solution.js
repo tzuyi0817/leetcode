@@ -6,7 +6,8 @@
 const longestSubarray = function (nums, limit) {
   const queue = [];
   const size = nums.length;
-  let max = (min = nums[0]);
+  let max = nums[0];
+  let min = nums[0];
 
   for (let index = 0; index < size; index++) {
     const value = nums[index];

@@ -10,7 +10,8 @@ const minDays = function (bloomDay, m, k) {
   if (m * k > n) return -1;
 
   const getBouquets = day => {
-    let result = (flowers = 0);
+    let result = 0;
+    let flowers = 0;
 
     for (const bloom of bloomDay) {
       if (bloom > day) {

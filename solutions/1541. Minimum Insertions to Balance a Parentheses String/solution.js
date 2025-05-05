@@ -3,7 +3,8 @@
  * @return {number}
  */
 const minInsertions = function (s) {
-  let left = (result = 0);
+  let left = 0;
+  let result = 0;
 
   for (let index = 0; index < s.length; index++) {
     if (s[index] === '(') left += 1;

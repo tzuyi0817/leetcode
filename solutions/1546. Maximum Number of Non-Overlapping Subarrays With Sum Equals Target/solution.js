@@ -5,7 +5,8 @@
  */
 const maxNonOverlapping = function (nums, target) {
   const prefixSum = new Set([0]);
-  let result = (current = 0);
+  let result = 0;
+  let current = 0;
 
   for (const num of nums) {
     current += num;

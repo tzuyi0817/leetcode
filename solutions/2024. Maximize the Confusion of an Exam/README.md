@@ -71,7 +71,8 @@ In both cases, there are five consecutive 'T's.
  */
 const maxConsecutiveAnswers = function (answerKey, k) {
   const maxConsecutive = key => {
-    let left = (result = 0);
+    let left = 0;
+    let result = 0;
     let remain = k;
 
     for (let index = 0; index < answerKey.length; index++) {

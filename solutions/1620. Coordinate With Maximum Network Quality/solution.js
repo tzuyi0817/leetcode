@@ -4,8 +4,11 @@
  * @return {number[]}
  */
 const bestCoordinate = function (towers, radius) {
-  let minX = (minY = 50);
-  let maxX = (maxY = maxQ = 0);
+  let minX = 50;
+  let minY = 50;
+  let maxX = 0;
+  let maxY = 0;
+  let maxQ = 0;
   let result = [0, 0];
 
   towers.forEach(([x, y]) => {

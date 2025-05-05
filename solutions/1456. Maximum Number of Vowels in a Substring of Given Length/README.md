@@ -60,10 +60,11 @@
 const maxVowels = function (s, k) {
   const vowels = new Set(['a', 'e', 'i', 'o', 'u']);
   let left = 0;
-  let result = (current = s
+  let current = s
     .slice(0, k)
     .split('')
-    .filter(char => vowels.has(char)).length);
+    .filter(char => vowels.has(char)).length;
+  let result = current;
 
   for (let index = k; index < s.length; index++) {
     vowels.has(s[index]) && (current += 1);
