@@ -16,6 +16,7 @@ export default [
 
       'sonarjs/no-nested-assignment': 'off',
       'sonarjs/cognitive-complexity': 'off',
+      'sonarjs/pseudo-random': 'off',
 
       'unicorn/no-new-array': 'off',
     },

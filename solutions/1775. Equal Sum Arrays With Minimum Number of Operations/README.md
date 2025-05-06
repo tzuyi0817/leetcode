@@ -72,8 +72,9 @@ const minOperations = function (nums1, nums2) {
   const sum1 = nums1.reduce((sum, num) => sum + num);
   const sum2 = nums2.reduce((sum, num) => sum + num);
   const operations = (a, b) => {
-    let left = (result = 0);
+    let left = 0;
     let right = b.nums.length - 1;
+    let result = 0;
 
     while (a.sum < b.sum) {
       right < 0 || (left < a.nums.length && 6 - a.nums[left] > b.nums[right] - 1)

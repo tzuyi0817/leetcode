@@ -11,9 +11,11 @@
  * @return {ListNode}
  */
 const swapNodes = function (head, k) {
-  let current = (rightNode = head);
+  let current = head;
+  let rightNode = head;
   let leftNode = null;
-  let size = (index = 0);
+  let size = 0;
+  let index = 0;
 
   while (current) {
     size += 1;

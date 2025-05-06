@@ -24,14 +24,16 @@ const numMagicSquaresInside = function (grid) {
     for (const num of nums) {
       if (num > 9 || num < 1) return false;
     }
-    if (upperLeft + upper + upperRight !== 15) return false;
-    if (lowerLeft + lower + lowerRight !== 15) return false;
-    if (upperLeft + left + lowerLeft !== 15) return false;
-    if (upper + current + lower !== 15) return false;
-    if (upperRight + right + lowerRight !== 15) return false;
-    if (upperLeft + current + lowerRight !== 15) return false;
-    if (upperRight + current + lowerLeft !== 15) return false;
-    return true;
+
+    return (
+      upperLeft + upper + upperRight === 15 &&
+      lowerLeft + lower + lowerRight === 15 &&
+      upperLeft + left + lowerLeft === 15 &&
+      upper + current + lower === 15 &&
+      upperRight + right + lowerRight === 15 &&
+      upperLeft + current + lowerRight === 15 &&
+      upperRight + current + lowerLeft === 15
+    );
   };
 
   for (let row = 1; row < n - 1; row++) {

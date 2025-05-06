@@ -61,18 +61,20 @@ const sortColors = function (nums) {
   while (nums[right] === 2) right -= 1;
 
   if (left >= right) return;
+  let index = left;
 
-  for (let index = left; index <= right; index++) {
+  while (index <= right) {
     const num = nums[index];
 
     if (num === 0) {
       [nums[left], nums[index]] = [nums[index], nums[left]];
       left += 1;
-    }
-    if (num === 2) {
+      index += 1;
+    } else if (num === 2) {
       [nums[index], nums[right]] = [nums[right], nums[index]];
       right -= 1;
-      index -= 1;
+    } else {
+      index += 1;
     }
   }
 };

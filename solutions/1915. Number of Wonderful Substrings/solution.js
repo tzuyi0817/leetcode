@@ -7,7 +7,8 @@ const wonderfulSubstrings = function (word) {
   const CHARS = 'abcdefghij'.length;
   const BIT = 2 ** CHARS;
   const counts = Array.from({ length: BIT }).fill(0);
-  let result = (current = 0);
+  let result = 0;
+  let current = 0;
 
   counts[0] = 1;
 

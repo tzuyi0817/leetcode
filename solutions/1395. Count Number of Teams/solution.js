@@ -2,7 +2,7 @@
  * @param {number[]} rating
  * @return {number}
  */
-var numTeams = function (rating) {
+const numTeams = function (rating) {
   let result = 0;
 
   for (let index = 1; index < rating.length - 1; index++) {
@@ -27,7 +27,7 @@ var numTeams = function (rating) {
  * @param {number[]} rating
  * @return {number}
  */
-var numTeams = function (rating) {
+const numTeams1 = function (rating) {
   const n = rating.length;
   const sortedRating = [...rating].sort((a, b) => a - b);
   const bit = new Array(n + 2).fill(0);

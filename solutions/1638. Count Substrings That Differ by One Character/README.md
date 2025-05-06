@@ -70,7 +70,8 @@ const countSubstrings = function (s, t) {
   let result = 0;
 
   const checkSubstring = (a, b) => {
-    let current = (previous = 0);
+    let current = 0;
+    let previous = 0;
 
     while (a < m && b < n) {
       current += 1;

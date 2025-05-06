@@ -61,7 +61,8 @@ There are no arrays that satisfy all the conditions and have nums[2] == 3, so 2 
  * @return {number}
  */
 const maxValue = function (n, index, maxSum) {
-  let left = (right = index);
+  let left = index;
+  let right = index;
   let result = 1;
 
   maxSum -= n;

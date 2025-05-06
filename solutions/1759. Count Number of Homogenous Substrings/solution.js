@@ -4,7 +4,8 @@
  */
 const countHomogenous = function (s) {
   const MODULO = 10 ** 9 + 7;
-  let result = (count = 0);
+  let result = 0;
+  let count = 0;
 
   for (let index = 0; index <= s.length; index++) {
     if (!index || s[index] === s[index - 1]) {

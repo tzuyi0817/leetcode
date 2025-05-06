@@ -84,10 +84,12 @@ const getNumberOfBacklogOrders = function (orders) {
   };
   let result = 0;
 
-  for (let [price, amount, orderType] of orders) {
+  for (const order of orders) {
+    const [price, originAmount, orderType] = order;
     const isBuy = orderType === 0;
     const currentQueue = isBuy ? buyQueue : sellQueue;
     const checkQueue = isBuy ? sellQueue : buyQueue;
+    let amount = originAmount;
 
     while (!checkQueue.isEmpty() && amount > 0 && comparePrice({ isBuy, price, checkQueue })) {
       const order = checkQueue.dequeue().element;

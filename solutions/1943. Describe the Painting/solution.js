@@ -10,7 +10,8 @@ const splitPainting = function (segments) {
     return map;
   }, {});
   const paints = Object.keys(paintMap).sort((a, b) => a - b);
-  let currentMix = (left = 0);
+  let currentMix = 0;
+  let left = 0;
 
   return paints.reduce((result, right) => {
     currentMix > 0 && result.push([+left, +right, currentMix]);

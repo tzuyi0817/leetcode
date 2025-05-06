@@ -60,7 +60,8 @@
  */
 const maxMatrixSum = function (matrix) {
   const n = matrix.length;
-  let result = (negative = 0);
+  let result = 0;
+  let negative = 0;
   let min = Number.MAX_SAFE_INTEGER;
 
   for (let row = 0; row < n; row++) {

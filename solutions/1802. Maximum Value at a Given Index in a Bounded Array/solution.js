@@ -5,7 +5,8 @@
  * @return {number}
  */
 const maxValue = function (n, index, maxSum) {
-  let left = (right = index);
+  let left = index;
+  let right = index;
   let result = 1;
 
   maxSum -= n;

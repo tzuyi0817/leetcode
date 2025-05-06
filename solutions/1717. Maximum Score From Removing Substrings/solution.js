@@ -7,7 +7,9 @@
 const maximumGain = function (s, x, y) {
   const getScore = (type, pointX, pointY) => {
     const [firstChar, secondChar] = type;
-    let result = (firstCount = secondCount = 0);
+    let result = 0;
+    let firstCount = 0;
+    let secondCount = 0;
 
     for (const char of s) {
       if (char === firstChar) firstCount += 1;
