@@ -60,7 +60,6 @@ It can be shown that every subsequence of length 4 is not a square streak.
  * @return {number}
  */
 const longestSquareStreak = function (nums) {
-  const n = nums.length;
   const memo = new Map();
   let result = 0;
 

@@ -78,17 +78,20 @@ const mergeKLists = function (lists) {
   let maxVal = 0;
   let minVal = Number.MAX_SAFE_INTEGER;
 
-  for (let node of lists) {
-    while (node) {
-      const { val, next } = node;
+  for (const node of lists) {
+    let current = node;
+
+    while (current) {
+      const { val, next } = current;
       const count = hashMap.get(val) ?? 0;
 
       hashMap.set(val, count + 1);
-      node = next;
+      current = next;
       maxVal = Math.max(val, maxVal);
       minVal = Math.min(val, minVal);
     }
   }
+
   for (let val = minVal; val <= maxVal; val++) {
     if (!hashMap.has(val)) continue;
     let count = hashMap.get(val);

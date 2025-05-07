@@ -11,11 +11,12 @@ const longestPalindrome = function (s) {
 
     builtMap.set(char, count + 1);
   }
-  for (let count of builtMap.values()) {
-    const isOdd = count % 2;
 
-    if (isOdd) count -= 1;
-    result += count;
+  for (const count of builtMap.values()) {
+    const palindromeCount = count % 2 ? count - 1 : count;
+
+    result += palindromeCount;
   }
+
   return result < s.length ? result + 1 : result;
 };

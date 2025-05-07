@@ -5,18 +5,25 @@
  */
 const canChoose = function (groups, nums) {
   let current = 0;
+  let index = 0;
 
-  for (let index = 0; index < nums.length; index++) {
+  while (index < nums.length) {
     const group = groups[current];
     const size = group.length;
+    const start = index;
     const isMatch = group.every((num, position) => {
-      return num === nums[index + position];
+      return num === nums[start + position];
     });
 
-    if (!isMatch) continue;
-    current += 1;
-    index += size - 1;
+    if (isMatch) {
+      current += 1;
+      index += size;
+    } else {
+      index += 1;
+    }
+
     if (current >= groups.length) return true;
   }
+
   return false;
 };

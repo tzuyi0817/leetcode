@@ -28,14 +28,15 @@ const maxProduct = function (s) {
     sub2.pop();
     findMaxProduct(index + 1);
   }
-  function isPalindromic(sub) {
-    if (!sub.length) return false;
-    let left = 0;
-    let right = sub.length - 1;
-
-    while (left < right) {
-      if (sub[left++] !== sub[right--]) return false;
-    }
-    return true;
-  }
 };
+
+function isPalindromic(sub) {
+  if (!sub.length) return false;
+  let left = 0;
+  let right = sub.length - 1;
+
+  while (left < right) {
+    if (sub[left++] !== sub[right--]) return false;
+  }
+  return true;
+}

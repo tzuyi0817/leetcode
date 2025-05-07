@@ -22,12 +22,13 @@ const maxCompatibilitySum = function (students, mentors) {
       assigned[index] = false;
     }
   }
-  function calculateScore(studentAnswers, mentorAnswers) {
-    return studentAnswers.reduce((sum, answer, index) => {
-      return sum + (answer === mentorAnswers[index] ? 1 : 0);
-    }, 0);
-  }
 
   backtracking(0, 0);
   return result;
 };
+
+function calculateScore(studentAnswers, mentorAnswers) {
+  return studentAnswers.reduce((sum, answer, index) => {
+    return sum + (answer === mentorAnswers[index] ? 1 : 0);
+  }, 0);
+}

@@ -76,7 +76,9 @@ const findChampion = function (n, edges) {
   const indegree = Array.from({ length: n }, () => 0);
   let result = -1;
 
-  for (const [a, b] of edges) {
+  for (const edge of edges) {
+    const b = edge[1];
+
     indegree[b] += 1;
   }
 

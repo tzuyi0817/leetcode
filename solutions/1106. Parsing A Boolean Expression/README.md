@@ -83,8 +83,9 @@ const parseBoolExpr = function (expression) {
   const parseExpression = (start, end) => {
     const operator = expression[start];
     let result = -1;
+    let index = start + 1;
 
-    for (let index = start + 1; index <= end; index++) {
+    while (index <= end) {
       const current = expression[index];
 
       if (/[!&|]/.test(current)) {
@@ -104,6 +105,8 @@ const parseBoolExpr = function (expression) {
       } else if (current === 'f') {
         result = express(result, false, operator);
       }
+
+      index += 1;
     }
     return operator === '!' ? !result : result;
   };

@@ -19,18 +19,21 @@ const reverseParentheses = function (s) {
     }
   }
 
+  let index = 0;
   let move = 1;
   let result = '';
 
-  for (let index = 0; index < n; index += move) {
+  while (index < n) {
     const char = s[index];
 
     if (char === '(' || char === ')') {
       index = pairMap.get(index);
       move = -move;
-      continue;
+    } else {
+      result += char;
     }
-    result += char;
+
+    index += move;
   }
   return result;
 };

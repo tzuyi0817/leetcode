@@ -11,8 +11,9 @@ const interchangeableRectangles = function (rectangles) {
   }, new Map());
   let result = 0;
 
-  for (const [_, count] of interchangeMap) {
+  for (const count of interchangeMap.values()) {
     result += (count * (count - 1)) / 2;
   }
+
   return result;
 };

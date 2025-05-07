@@ -3,7 +3,6 @@
  * @return {number}
  */
 const longestSquareStreak = function (nums) {
-  const n = nums.length;
   const memo = new Map();
   let result = 0;
 

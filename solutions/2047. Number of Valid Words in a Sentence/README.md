@@ -71,7 +71,7 @@
  */
 const countValidWords = function (sentence) {
   const words = sentence.split(' ');
-  const regex = /^[a-z]+(-[a-z]+)?[!.,]?$/;
+  const regex = /^[a-z]+(?:-[a-z]+)?[!.,]?$/;
   const regexMarks = /^[!.,]$/;
 
   return words.reduce((result, word) => {

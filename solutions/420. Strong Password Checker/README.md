@@ -66,8 +66,9 @@ const strongPasswordChecker = function (password) {
   let replaces = 0;
   let remainZero = 0;
   let remainOne = 0;
+  let index = 0;
 
-  for (let index = 0; index < n; index++) {
+  while (index < n) {
     const char = password[index];
     let repeat = 1;
 
@@ -75,10 +76,10 @@ const strongPasswordChecker = function (password) {
     else if (/[a-z]/.test(char)) lowercase = 0;
     else if (/[A-Z]/.test(char)) uppercase = 0;
 
-    while (index < n && password[index] === password[index + repeat]) {
+    while (index + repeat < n && password[index] === password[index + repeat]) {
       repeat += 1;
     }
-    index += repeat - 1;
+    index += repeat;
     if (repeat < 3) continue;
     const remain = repeat % 3;
 

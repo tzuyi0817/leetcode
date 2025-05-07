@@ -55,7 +55,6 @@
  */
 const numTilePossibilities = function (tiles) {
   const BASE_CODE = 'A'.charCodeAt(0);
-  const n = tiles.length;
   const letters = Array.from({ length: 26 }, () => 0);
 
   for (const letter of tiles) {

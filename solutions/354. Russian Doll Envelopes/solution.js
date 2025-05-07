@@ -7,7 +7,8 @@ const maxEnvelopes = function (envelopes) {
 
   envelopes.sort((a, b) => a[0] - b[0] || b[1] - a[1]);
 
-  for (const [width, height] of envelopes) {
+  for (const envelope of envelopes) {
+    const height = envelope[1];
     let left = 0;
     let right = dp.length;
 

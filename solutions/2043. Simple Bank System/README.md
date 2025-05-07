@@ -75,9 +75,7 @@ const Bank = function (balance) {
 };
 
 Bank.prototype.isValidAccount = function (account, money = 0) {
-  if (this.balance[account - 1] === undefined) return false;
-  if (this.balance[account - 1] < money) return false;
-  return true;
+  return this.balance[account - 1] !== undefined && this.balance[account - 1] >= money;
 };
 
 /**

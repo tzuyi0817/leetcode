@@ -17,11 +17,14 @@ export default [
       'sonarjs/no-nested-assignment': 'off',
       'sonarjs/cognitive-complexity': 'off',
       'sonarjs/pseudo-random': 'off',
+      'sonarjs/no-redundant-assignments': 'off',
+      'sonarjs/bitwise-operators': 'off',
 
       'unicorn/no-new-array': 'off',
     },
     languageOptions: {
       globals: {
+        PriorityQueue: 'readonly',
         MaxPriorityQueue: 'readonly',
         MinPriorityQueue: 'readonly',
         TreeNode: 'readonly',

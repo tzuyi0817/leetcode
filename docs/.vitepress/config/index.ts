@@ -42,7 +42,7 @@ export default defineConfig({
       { text: 'Solutions', link: '/solutions/4. Median of Two Sorted Arrays', activeMatch: '^/solutions/' },
     ],
 
-    sidebar: generateSidebar(),
+    sidebar: generateSidebar(solutionsPath),
     socialLinks: [{ icon: 'github', link: 'https://github.com/tzuyi0817/leetcode' }],
     search,
 

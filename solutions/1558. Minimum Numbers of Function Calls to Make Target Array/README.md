@@ -68,15 +68,16 @@ const minOperations = function (nums) {
   let maxDouble = 0;
   let result = 0;
 
-  for (let num of nums) {
+  for (const num of nums) {
     let double = 0;
+    let currentNum = num;
 
-    while (num) {
-      if (num % 2) {
-        num -= 1;
+    while (currentNum) {
+      if (currentNum % 2) {
+        currentNum -= 1;
         result += 1;
       } else {
-        num /= 2;
+        currentNum /= 2;
         double += 1;
       }
     }

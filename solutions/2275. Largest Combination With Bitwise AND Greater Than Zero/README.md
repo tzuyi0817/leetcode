@@ -63,12 +63,13 @@ The size of the combination is 2, so we return 2.
 const largestCombination = function (candidates) {
   const bits = Array.from({ length: 32 }, () => 0);
 
-  for (let candidate of candidates) {
+  for (const candidate of candidates) {
     let index = 0;
+    let current = candidate;
 
-    while (candidate) {
-      bits[index] += candidate & 1;
-      candidate >>= 1;
+    while (current) {
+      bits[index] += current & 1;
+      current >>= 1;
       index += 1;
     }
   }

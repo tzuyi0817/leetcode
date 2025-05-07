@@ -33,7 +33,9 @@ const countOfAtoms = function (formula) {
     return { multiple, index };
   };
 
-  for (let index = 0; index < n; index++) {
+  let index = 0;
+
+  while (index < n) {
     const char = formula[index];
 
     if (char === '(') {
@@ -60,6 +62,8 @@ const countOfAtoms = function (formula) {
       currentCount = '';
     } else if (/[a-z]/.test(char)) currentAtom += char;
     else if (/\d/.test(char)) currentCount += char;
+
+    index += 1;
   }
   combineAtom(currentAtom, currentCount);
 

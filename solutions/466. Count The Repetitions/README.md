@@ -50,7 +50,6 @@
 ### **JavaScript**
 
 ```js
-// TODO: Optimize using dynamic programming
 /**
  * @param {string} s1
  * @param {number} n1

@@ -71,7 +71,7 @@ const clearDigits = function (s) {
   const stack = [];
 
   for (const str of s) {
-    if (isNaN(str)) {
+    if (Number.isNaN(Number(str))) {
       stack.push(str);
     } else {
       stack.pop();

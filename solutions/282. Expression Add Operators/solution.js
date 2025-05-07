@@ -29,8 +29,11 @@ const addOperators = function (num, target) {
 
   for (let index = 0; index < n; index++) {
     current += num[index];
-    if (current.length > 1 && current[0] === '0') return result;
+
+    if (current.length > 1 && current[0] === '0') break;
+
     backtrackingExpression(index + 1, current, +current, +current);
   }
+
   return result;
 };

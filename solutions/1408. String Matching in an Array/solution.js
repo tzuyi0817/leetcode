@@ -3,7 +3,6 @@
  * @return {string[]}
  */
 const stringMatching = function (words) {
-  const n = words.length;
   const memo = [];
   const result = new Set();
 
