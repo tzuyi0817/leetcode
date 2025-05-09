@@ -63,7 +63,7 @@ The incompatibility is (2-1) + (3-2) + (8-6) + (3-1) = 6.
  * @param {number} k
  * @return {number}
  */
-var minimumIncompatibility = function (nums, k) {
+const minimumIncompatibility = function (nums, k) {
   const n = nums.length;
   const totalMask = 1 << n;
   const subsetSize = n / k;
