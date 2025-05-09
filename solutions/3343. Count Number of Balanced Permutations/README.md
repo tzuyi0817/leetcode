@@ -83,7 +83,7 @@
  * @param {string} num
  * @return {number}
  */
-var countBalancedPermutations = function (num) {
+const countBalancedPermutations = function (num) {
   const MODULO = BigInt(10 ** 9 + 7);
   const n = num.length;
   const digits = Array.from({ length: 10 }, () => 0);
@@ -96,7 +96,7 @@ var countBalancedPermutations = function (num) {
 
   if (total % 2) return 0;
   const halfSize = Math.floor(n / 2);
-  const comb = Array.from({ length: n + 1 }, () => Array(n + 1).fill(1n));
+  const comb = Array.from({ length: n + 1 }, () => new Array(n + 1).fill(1n));
   const memo = new Map();
 
   for (let a = 2; a <= n; a++) {
