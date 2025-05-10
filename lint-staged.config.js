@@ -1,3 +1,3 @@
 export default {
-  '*.{ts,js,vue}': () => 'pnpm lint',
+  '*.{ts,js,md}': () => 'pnpm lint',
 };
