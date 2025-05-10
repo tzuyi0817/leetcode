@@ -12,7 +12,7 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0(@typescript-eslint/parser@8.32.0(eslint@9.26.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.26.0(jiti@2.4.2))(prettier@3.5.3)(typescript@5.8.3)
       '@types/node':
-        specifier: ^22.14.1
+        specifier: ^22.15.17
         version: 22.15.17
       prettier:
         specifier: ^3.5.3
@@ -22,16 +22,16 @@ importers:
         version: 1.6.3(@algolia/client-search@5.24.0)(@types/node@22.15.17)(postcss@8.5.3)(search-insights@2.17.3)(typescript@5.8.3)
     optionalDependencies:
       '@commitlint/cli':
-        specifier: ^19.8.0
+        specifier: ^19.8.1
         version: 19.8.1(@types/node@22.15.17)(typescript@5.8.3)
       '@commitlint/config-conventional':
-        specifier: ^19.8.0
+        specifier: ^19.8.1
         version: 19.8.1
       husky:
         specifier: ^9.1.7
         version: 9.1.7
       lint-staged:
-        specifier: ^15.5.1
+        specifier: ^15.5.2
         version: 15.5.2
 
 packages:
