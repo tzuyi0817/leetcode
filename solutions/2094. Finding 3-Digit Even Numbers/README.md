@@ -53,10 +53,10 @@ In this example, the digit 8 is used twice each time in 288, 828, and 882.
 
 ## Solutions
 
-**Solution: `Hash Table`**
+**Solution: `Hash Map`**
 
-- Time complexity: <em>O(900/2)</em>
-- Space complexity: <em>O(10)</em>
+- Time complexity: <em>O(10<sup>3</sup> -> 1)</em>
+- Space complexity: <em>O(10 -> 1)</em>
 
 <p>&nbsp;</p>
 
@@ -68,25 +68,32 @@ In this example, the digit 8 is used twice each time in 288, 828, and 882.
  * @return {number[]}
  */
 const findEvenNumbers = function (digits) {
-  const countMap = digits.reduce((map, integer) => {
-    const count = map.get(integer) ?? 0;
-
-    return map.set(integer, count + 1);
-  }, new Map());
+  const counts = Array.from({ length: 10 }, () => 0);
   const result = [];
 
-  for (let integer = 100; integer <= 998; integer += 2) {
-    const [a, b, c] = `${integer}`.split('');
-    const countA = countMap.get(+a);
-    const countB = countMap.get(+b);
-    const countC = countMap.get(+c);
-
-    if (!countA || !countB || !countC) continue;
-    if (a === b && b === c && countA < 3) continue;
-    if ((a === b || a === c) && countA < 2) continue;
-    if (b === c && countB < 2) continue;
-    result.push(integer);
+  for (const digit of digits) {
+    counts[digit] += 1;
   }
+
+  const findEvenNumber = (index, current) => {
+    if (index > 2) {
+      result.push(Number(current));
+      return;
+    }
+    const start = index ? 0 : 1;
+    const interval = index === 2 ? 2 : 1;
+
+    for (let digit = start; digit < 10; digit += interval) {
+      if (!counts[digit]) continue;
+
+      counts[digit] -= 1;
+      findEvenNumber(index + 1, current + digit);
+      counts[digit] += 1;
+    }
+  };
+
+  findEvenNumber(0, '');
+
   return result;
 };
 ```
