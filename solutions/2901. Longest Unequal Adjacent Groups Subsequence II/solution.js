@@ -10,10 +10,11 @@ const getWordsInLongestSubsequence = function (words, groups) {
 
   const isValidHammingDistance = (a, b) => {
     if (a.length !== b.length) return false;
+    const length = a.length;
     let distance = 0;
 
-    for (const [index, element] of a.entries()) {
-      if (element !== b[index]) distance += 1;
+    for (let index = 0; index < length; index++) {
+      if (a[index] !== b[index]) distance += 1;
       if (distance > 1) return false;
     }
 
