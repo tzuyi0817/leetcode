@@ -59,17 +59,21 @@ The third child gets 1 candy because it satisfies the above two conditions.
  */
 const candy = function (ratings) {
   const n = ratings.length;
-  const candies = new Array(n).fill(1);
+  const allocates = Array.from({ length: n }, () => 1);
 
-  for (let index = 0; index < n - 1; index++) {
-    if (ratings[index + 1] <= ratings[index]) continue;
-    candies[index + 1] = candies[index] + 1;
+  for (let index = 1; index < n; index++) {
+    if (ratings[index] > ratings[index - 1]) {
+      allocates[index] = allocates[index - 1] + 1;
+    }
   }
-  for (let index = n - 1; index > 0; index--) {
-    if (ratings[index - 1] <= ratings[index]) continue;
-    if (candies[index - 1] > candies[index]) continue;
-    candies[index - 1] = candies[index] + 1;
+
+  for (let index = n - 2; index >= 0; index--) {
+    if (ratings[index] <= ratings[index + 1]) continue;
+    if (allocates[index] > allocates[index + 1]) continue;
+
+    allocates[index] = allocates[index + 1] + 1;
   }
-  return candies.reduce((result, count) => result + count);
+
+  return allocates.reduce((result, allocate) => result + allocate);
 };
 ```
