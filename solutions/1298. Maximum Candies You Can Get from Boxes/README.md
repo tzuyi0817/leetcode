@@ -60,7 +60,7 @@ The total number of candies will be 6.
 
 **Solution: `Breadth-First Search`**
 
-- Time complexity: <em>O(n<sup>2</sup>)</em>
+- Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
 
 <p>&nbsp;</p>
@@ -77,37 +77,34 @@ The total number of candies will be 6.
  * @return {number}
  */
 const maxCandies = function (status, candies, keys, containedBoxes, initialBoxes) {
-  const OPEN = 1;
-  const keySet = new Set();
-  let result = 0;
+  const n = status.length;
+  const haveKey = Array.from({ length: n }, () => false);
   let queue = initialBoxes;
-
-  const setKey = box => {
-    for (const key of keys[box]) {
-      keySet.add(key);
-    }
-  };
+  let result = 0;
 
   while (queue.length) {
     const nextQueue = [];
     let isOpenNewBox = false;
 
-    for (const index of queue) {
-      if (status[index] === OPEN || keySet.has(index)) {
-        result += candies[index];
-        if (keySet.has(index)) {
-          keySet.delete(index);
-        }
-        setKey(index);
-        nextQueue.push(...containedBoxes[index]);
+    for (const box of queue) {
+      if (status[box] || haveKey[box]) {
+        result += candies[box];
+        nextQueue.push(...containedBoxes[box]);
         isOpenNewBox = true;
-      } else if (!nextQueue.includes(index)) {
-        nextQueue.push(index);
+
+        for (const key of keys[box]) {
+          haveKey[key] = true;
+        }
+      } else {
+        nextQueue.push(box);
       }
     }
-    if (!isOpenNewBox) break;
+
+    if (!isOpenNewBox) return result;
+
     queue = nextQueue;
   }
+
   return result;
 };
 ```
