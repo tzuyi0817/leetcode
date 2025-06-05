@@ -64,7 +64,7 @@ So only the second letter 'o' in baseStr is changed to 'd', the answer is "hdld"
 **Solution: `Union Find`**
 
 - Time complexity: <em>O(m+n)</em>
-- Space complexity: <em>O(26m -> m)</em>
+- Space complexity: <em>O(26+m -> m)</em>
 
 <p>&nbsp;</p>
 
