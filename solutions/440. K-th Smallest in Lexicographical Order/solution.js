@@ -6,29 +6,33 @@
 const findKthNumber = function (n, k) {
   let current = 1;
 
-  const getGap = (left, right) => {
+  const getGap = num => {
+    let start = num;
+    let end = num + 1;
     let gap = 0;
 
-    while (left <= n) {
-      gap += Math.min(n + 1, right) - left;
-      left *= 10;
-      right *= 10;
+    while (start <= n) {
+      gap += Math.min(n + 1, end) - start;
+      start *= 10;
+      end *= 10;
     }
+
     return gap;
   };
 
   k -= 1;
 
   while (k) {
-    const gap = getGap(current, current + 1);
+    const gap = getGap(current);
 
     if (gap <= k) {
-      k -= gap;
       current += 1;
-      continue;
+      k -= gap;
+    } else {
+      current *= 10;
+      k -= 1;
     }
-    current *= 10;
-    k -= 1;
   }
+
   return current;
 };
