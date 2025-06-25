@@ -5,7 +5,7 @@
  */
 const evaluate = function (s, knowledge) {
   const knowledgeMap = knowledge.reduce((map, [key, value]) => {
-    return (map[key] = value), map;
+    return ((map[key] = value), map);
   }, {});
   let result = '';
   let key = '';
