@@ -16,31 +16,30 @@ const maxValue = function (events, k) {
 
     while (left <= right) {
       const mid = Math.floor((left + right) / 2);
-      const start = events[mid][0];
+      const startDay = events[mid][0];
 
-      start > target ? (right = mid - 1) : (left = mid + 1);
+      startDay <= target ? (left = mid + 1) : (right = mid - 1);
     }
 
     return left;
   };
 
   for (let index = 0; index < n; index++) {
-    const end = events[index][1];
-    const nextEvent = findNextEvent(end);
+    const endDay = events[index][1];
 
-    nextEventMap.set(index, nextEvent);
+    nextEventMap.set(index, findNextEvent(endDay));
   }
 
-  const attendEvent = (index, quota) => {
-    if (index >= n || quota === 0) return 0;
-    if (dp[index][quota] !== -1) return dp[index][quota];
-    const skipEventValue = attendEvent(index + 1, quota);
+  const attendEvent = (index, remain) => {
+    if (index >= n || !remain) return 0;
+    if (dp[index][remain] !== -1) return dp[index][remain];
+    const skip = attendEvent(index + 1, remain);
     const value = events[index][2];
     const nextEvent = nextEventMap.get(index);
-    const nextEventValue = value + attendEvent(nextEvent, quota - 1);
-    const result = Math.max(skipEventValue, nextEventValue);
+    const attend = value + attendEvent(nextEvent, remain - 1);
+    const result = Math.max(skip, attend);
 
-    dp[index][quota] = result;
+    dp[index][remain] = result;
 
     return result;
   };
