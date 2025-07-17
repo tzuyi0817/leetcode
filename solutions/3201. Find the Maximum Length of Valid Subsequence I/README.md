@@ -82,11 +82,11 @@ const maximumLength = function (nums) {
   let result = 0;
 
   for (const num of nums) {
-    const remainder = num % 2;
+    const mod = num % 2;
 
-    dp[remainder][0] = dp[0][remainder] + 1;
-    dp[remainder][1] = dp[1][remainder] + 1;
-    result = Math.max(result, dp[remainder][0], dp[remainder][1]);
+    dp[mod][0] = dp[0][mod] + 1;
+    dp[mod][1] = dp[1][mod] + 1;
+    result = Math.max(result, dp[mod][0], dp[mod][1]);
   }
 
   return result;
