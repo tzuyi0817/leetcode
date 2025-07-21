@@ -4,18 +4,22 @@
  */
 const makeFancyString = function (s) {
   const n = s.length;
-  let repeat = 0;
-  let previous = '';
-  let result = '';
+  const result = [];
+  let consecutive = 1;
 
   for (let index = 0; index < n; index++) {
-    const letter = s[index];
+    const char = s[index];
 
-    repeat = letter === previous ? repeat + 1 : 1;
-    previous = letter;
-    if (repeat >= 3) continue;
+    if (char === s[index - 1]) {
+      if (consecutive === 2) continue;
 
-    result += letter;
+      consecutive += 1;
+    } else {
+      consecutive = 1;
+    }
+
+    result.push(char);
   }
-  return result;
+
+  return result.join('');
 };
