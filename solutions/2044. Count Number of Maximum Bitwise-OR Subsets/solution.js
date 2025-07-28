@@ -3,18 +3,21 @@
  * @return {number}
  */
 const countMaxOrSubsets = function (nums) {
-  const size = nums.length;
-  const maxBitwise = nums.reduce((result, value) => result | value, 0);
+  const n = nums.length;
+  const target = nums.reduce((result, num) => result | num);
   let result = 0;
 
-  function findMaxBitSubset(index = 0, current = 0) {
-    if (index >= size) {
-      if (current === maxBitwise) result += 1;
+  const findTargetSubset = (index, xor) => {
+    if (index >= n) {
+      result += xor === target ? 1 : 0;
       return;
     }
-    findMaxBitSubset(index + 1, current);
-    findMaxBitSubset(index + 1, current | nums[index]);
-  }
-  findMaxBitSubset();
+
+    findTargetSubset(index + 1, xor);
+    findTargetSubset(index + 1, xor | nums[index]);
+  };
+
+  findTargetSubset(0, 0);
+
   return result;
 };
