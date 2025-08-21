@@ -46,10 +46,10 @@ Total number of rectangles = 8 + 5 + 2 + 4 + 2 + 2 + 1 = 24.
 
 ## Solutions
 
-**Solution: `Dynamic Programming`**
+**Solution: `Dynamic Programming + Stack`**
 
-- Time complexity: <em>O(m<sup>2</sup>n)</em>
-- Space complexity: <em>O(mn)</em>
+- Time complexity: <em>O(mn)</em>
+- Space complexity: <em>O(n)</em>
 
 <p>&nbsp;</p>
 
@@ -63,31 +63,40 @@ Total number of rectangles = 8 + 5 + 2 + 4 + 2 + 2 + 1 = 24.
 const numSubmat = function (mat) {
   const m = mat.length;
   const n = mat[0].length;
-  const dp = new Array(m + 1)
-    .fill('')
-    .map(_ => new Array(n + 1).fill(0));
+  const cols = Array.from({ length: n }, () => 0);
   let result = 0;
 
-  for (let row = 1; row <= m; row++) {
-    for (let col = 1; col <= n; col++) {
-      const value = mat[row - 1][col - 1];
+  const countSubmat = () => {
+    const submat = new Array(n).fill(0);
+    const stack = [];
 
-      dp[row][col] = value ? dp[row][col - 1] + value : 0;
-    }
-  }
-
-  for (let row = 1; row <= m; row++) {
-    for (let col = 1; col <= n; col++) {
-      if (!dp[row][col]) continue;
-      let minW = dp[row][col];
-
-      for (let k = row; k >= 0; k--) {
-        if (!dp[k][col]) break;
-        minW = Math.min(minW, dp[k][col]);
-        result += minW;
+    for (let col = 0; col < n; col++) {
+      while (stack.length && cols[stack.at(-1)] >= cols[col]) {
+        stack.pop();
       }
+
+      if (stack.length) {
+        const prev = stack.at(-1);
+
+        submat[col] = submat[prev] + cols[col] * (col - prev);
+      } else {
+        submat[col] = cols[col] * (col + 1);
+      }
+
+      stack.push(col);
     }
+
+    return submat.reduce((result, count) => result + count);
+  };
+
+  for (let row = 0; row < m; row++) {
+    for (let col = 0; col < n; col++) {
+      cols[col] = mat[row][col] ? cols[col] + 1 : 0;
+    }
+
+    result += countSubmat();
   }
+
   return result;
 };
 ```
