@@ -55,28 +55,34 @@
  * @return {number}
  */
 const maxAverageRatio = function (classes, extraStudents) {
-  const queue = new MaxPriorityQueue({ priority: x => x.ratio });
-  const enqueue = (pass, total) => {
-    const beforeRatio = pass / total;
-    const afterRatio = (pass + 1) / (total + 1);
-
-    queue.enqueue({ pass, total, ratio: afterRatio - beforeRatio });
-  };
+  const n = classes.length;
+  const maxHeap = new MaxPriorityQueue(({ additionRatio }) => additionRatio);
   let totalRatio = 0;
+
+  const enqueue = (pass, total) => {
+    const ratio = pass / total;
+    const assignRatio = (pass + 1) / (total + 1);
+
+    maxHeap.enqueue({ pass, total, additionRatio: assignRatio - ratio });
+  };
 
   for (const [pass, total] of classes) {
     enqueue(pass, total);
   }
-  while (extraStudents--) {
-    const { pass, total } = queue.dequeue().element;
+
+  while (extraStudents) {
+    const { pass, total } = maxHeap.dequeue();
 
     enqueue(pass + 1, total + 1);
+    extraStudents -= 1;
   }
-  while (!queue.isEmpty()) {
-    const { pass, total } = queue.dequeue().element;
+
+  while (maxHeap.size()) {
+    const { pass, total } = maxHeap.dequeue();
 
     totalRatio += pass / total;
   }
-  return totalRatio / classes.length;
+
+  return totalRatio / n;
 };
 ```
