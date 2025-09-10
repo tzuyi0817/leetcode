@@ -66,34 +66,42 @@ Note that friendships are not transitive, meaning if <code>x</code> is a friend 
  * @return {number}
  */
 const minimumTeachings = function (n, languages, friendships) {
-  const size = languages.length;
-  const communicate = new Array(size)
-    .fill('')
-    .map(_ => new Array(n).fill(false));
+  const m = languages.length;
+  const languageKnows = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(false));
   const users = new Set();
-  let result = Number.MAX_SAFE_INTEGER;
+  let result = m;
 
-  for (let index = 0; index < size; index++) {
+  for (let index = 0; index < m; index++) {
+    const user = index + 1;
+
     for (const language of languages[index]) {
-      communicate[index][language - 1] = true;
+      languageKnows[user][language] = true;
     }
   }
-  for (const [a, b] of friendships) {
-    const isCommunicate = communicate[a - 1].some((isKnow, language) => {
-      return isKnow ? communicate[b - 1][language] : isKnow;
+
+  for (const [u, v] of friendships) {
+    const isCommunicable = languageKnows[u].some((isKnow, language) => {
+      return isKnow && languageKnows[v][language];
     });
 
-    if (isCommunicate) continue;
-    users.add(a - 1).add(b - 1);
+    if (isCommunicable) continue;
+
+    users.add(u);
+    users.add(v);
   }
-  for (let language = 0; language < n; language++) {
+
+  for (let language = 1; language <= n; language++) {
     let teach = 0;
 
     for (const user of users) {
-      !communicate[user][language] && teach++;
+      if (!languageKnows[user][language]) {
+        teach += 1;
+      }
     }
+
     result = Math.min(teach, result);
   }
+
   return result;
 };
 ```
