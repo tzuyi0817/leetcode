@@ -1,11 +1,11 @@
 class Node {
   constructor(key = null, value = null) {
-    this.frequency = 1;
     this.key = key;
     this.value = value;
     this.prev = null;
     this.next = null;
   }
+  frequency = 1;
 }
 
 class DoublyLinkedList {
