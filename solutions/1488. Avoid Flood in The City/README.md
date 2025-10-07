@@ -84,41 +84,49 @@ After that, it will rain over lakes [1,2]. It's easy to prove that no matter whi
  * @return {number[]}
  */
 const avoidFlood = function (rains) {
-  const fullLakeMap = new Map();
+  const n = rains.length;
+  const lakeMap = new Map();
+  const result = Array.from({ length: n }, () => -1);
   const dryDays = [];
-  const result = [];
-  const searchDryDay = day => {
-    if (dryDays.at(-1) < day) return -1;
-    let start = 0;
-    let end = dryDays.length - 1;
 
-    while (start < end) {
-      const mid = Math.floor((start + end) / 2);
+  const findFirstGreaterEqual = target => {
+    let left = 0;
+    let right = dryDays.length;
 
-      dryDays[mid] < day ? (start = mid + 1) : (end = mid);
+    while (left <= right) {
+      const mid = Math.floor((left + right) / 2);
+
+      dryDays[mid] >= target ? (right = mid - 1) : (left = mid + 1);
     }
-    return start;
+
+    return left;
   };
 
-  for (const [index, lake] of rains.entries()) {
+  for (let index = 0; index < n; index++) {
+    const lake = rains[index];
 
-    if (!lake) {
+    if (lake === 0) {
       dryDays.push(index);
       result[index] = 1;
       continue;
     }
-    if (fullLakeMap.has(lake)) {
-      if (!dryDays.length) return [];
-      const fullDay = fullLakeMap.get(lake);
-      const dryIndex = searchDryDay(fullDay);
-      if (dryIndex < 0) return [];
-      const [dryDay] = dryDays.splice(dryIndex, 1);
 
+    if (lakeMap.has(lake)) {
+      if (!dryDays.length) return [];
+
+      const day = lakeMap.get(lake);
+      const dryIndex = findFirstGreaterEqual(day);
+      const dryDay = dryDays[dryIndex];
+
+      if (dryDay < day || dryIndex >= dryDays.length) return [];
+
+      dryDays.splice(dryIndex, 1);
       result[dryDay] = lake;
     }
-    fullLakeMap.set(lake, index);
-    result[index] = -1;
+
+    lakeMap.set(lake, index);
   }
+
   return result;
 };
 ```
