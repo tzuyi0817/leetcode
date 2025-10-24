@@ -3,20 +3,30 @@
  * @return {number}
  */
 const nextBeautifulNumber = function (n) {
-  while (!isBalancedNumber(++n));
+  let current = n + 1;
 
-  return n;
-};
+  const isBalanced = num => {
+    const counts = new Array(10).fill(0);
 
-function isBalancedNumber(num) {
-  const counts = Array.from({ length: 10 }).fill(0);
+    while (num) {
+      const digit = num % 10;
 
-  while (num) {
-    const mantissa = num % 10;
+      if (!digit) return false;
 
-    if (!mantissa) return false;
-    counts[mantissa] += 1;
-    num = Math.floor(num / 10);
+      counts[digit] += 1;
+      num = Math.floor(num / 10);
+    }
+
+    for (let index = 1; index < 10; index++) {
+      if (counts[index] && counts[index] !== index) return false;
+    }
+
+    return true;
+  };
+
+  while (!isBalanced(current)) {
+    current += 1;
   }
-  return counts.every((count, index) => !count || count === index);
-}
+
+  return current;
+};
