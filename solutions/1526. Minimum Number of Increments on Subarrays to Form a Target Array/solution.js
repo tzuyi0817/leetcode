@@ -7,12 +7,10 @@ const minNumberOperations = function (target) {
   let result = target[0];
 
   for (let index = 1; index < n; index++) {
-    const current = target[index];
+    const num = target[index];
     const prev = target[index - 1];
 
-    if (prev >= current) continue;
-
-    result += current - prev;
+    result += Math.max(num - prev, 0);
   }
 
   return result;
