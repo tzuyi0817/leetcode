@@ -4,20 +4,20 @@
  * @return {number}
  */
 const minCost = function (colors, neededTime) {
-  let currentColor = '';
+  const n = colors.length;
   let result = 0;
-  let currentMaxTime = 0;
+  let maxNeededTime = neededTime[0];
 
-  for (const [index, color] of colors.entries()) {
+  for (let index = 1; index < n; index++) {
     const time = neededTime[index];
 
-    if (currentColor === color) {
-      result += Math.min(time, currentMaxTime);
-      currentMaxTime = Math.max(time, currentMaxTime);
+    if (colors[index] === colors[index - 1]) {
+      result += Math.min(time, maxNeededTime);
+      maxNeededTime = Math.max(time, maxNeededTime);
     } else {
-      currentColor = color;
-      currentMaxTime = time;
+      maxNeededTime = time;
     }
   }
+
   return result;
 };
