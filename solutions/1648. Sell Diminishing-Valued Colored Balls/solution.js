@@ -6,7 +6,7 @@
 const maxProfit = function (inventory, orders) {
   const MODULO = BigInt(10 ** 9 + 7);
   const size = inventory.length;
-  let result = BigInt(0);
+  let result = 0n;
   let index = 0;
 
   inventory.sort((a, b) => b - a);

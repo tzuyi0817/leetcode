@@ -8,7 +8,7 @@ const getOrder = function (tasks) {
     .map(([enqueueTime, processTime], index) => {
       return { enqueueTime, processTime, task: index };
     })
-    .sort((a, b) => a.enqueueTime - b.enqueueTime);
+    .toSorted((a, b) => a.enqueueTime - b.enqueueTime);
 
   const priorityQueue = new MinPriorityQueue({
     compare: (a, b) => {

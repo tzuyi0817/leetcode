@@ -11,18 +11,33 @@ const calculate = function (s) {
   while (index < s.length) {
     let current = s[index];
 
-    if (current === '(') {
-      signStack.push(signStack.at(-1) * sign);
-      sign = 1;
-    } else if (current === ')') signStack.pop();
-    else if (current === '+') sign = 1;
-    else if (current === '-') sign = -1;
-    else if (current !== ' ') {
-      while (/\d/.test(s[index + 1])) {
-        index += 1;
-        current += s[index];
+    switch (current) {
+      case '(': {
+        signStack.push(signStack.at(-1) * sign);
+        sign = 1;
+
+        break;
       }
-      result += sign * current * signStack.at(-1);
+      case ')': {
+        signStack.pop();
+        break;
+      }
+      case '+': {
+        sign = 1;
+        break;
+      }
+      case '-': {
+        sign = -1;
+        break;
+      }
+      default:
+        if (current !== ' ') {
+          while (/\d/.test(s[index + 1])) {
+            index += 1;
+            current += s[index];
+          }
+          result += sign * current * signStack.at(-1);
+        }
     }
 
     index += 1;

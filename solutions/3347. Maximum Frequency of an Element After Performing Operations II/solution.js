@@ -26,7 +26,7 @@ const maxFrequency = function (nums, k, numOperations) {
     candidates.add(endNum);
   }
 
-  const sortedCandidates = [...candidates].sort((a, b) => a - b);
+  const sortedCandidates = [...candidates].toSorted((a, b) => a - b);
 
   for (const num of sortedCandidates) {
     if (lineMap.has(num)) {

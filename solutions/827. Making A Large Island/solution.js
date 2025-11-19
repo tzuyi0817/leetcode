@@ -48,5 +48,5 @@ const largestIsland = function (grid) {
       result = Math.max(area, result);
     }
   }
-  return result ? result : n * n;
+  return result || n * n;
 };

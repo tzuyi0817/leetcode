@@ -9,5 +9,5 @@ const frequencySort = function (nums) {
     return map.set(num, count + 1);
   }, new Map());
 
-  return nums.sort((a, b) => frequencyMap.get(a) - frequencyMap.get(b) || b - a);
+  return nums.toSorted((a, b) => frequencyMap.get(a) - frequencyMap.get(b) || b - a);
 };

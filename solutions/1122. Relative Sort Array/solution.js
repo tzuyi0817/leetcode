@@ -9,7 +9,7 @@ const relativeSortArray = function (arr1, arr2) {
     return map.set(num, index);
   }, new Map());
 
-  return arr1.sort((a, b) => {
+  return arr1.toSorted((a, b) => {
     const relativeA = relativeMap.get(a) ?? n + a;
     const relativeB = relativeMap.get(b) ?? n + b;
 

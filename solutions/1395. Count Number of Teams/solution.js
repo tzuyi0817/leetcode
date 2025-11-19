@@ -29,7 +29,7 @@ const numTeams = function (rating) {
  */
 const numTeams1 = function (rating) {
   const n = rating.length;
-  const sortedRating = [...rating].sort((a, b) => a - b);
+  const sortedRating = rating.toSorted((a, b) => a - b);
   const bit = new Array(n + 2).fill(0);
 
   const getIndex = value => {

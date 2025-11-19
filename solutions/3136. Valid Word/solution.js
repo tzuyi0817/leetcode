@@ -7,7 +7,7 @@ const isValid = function (word) {
 
   if (n < 3) return false;
 
-  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  const vowels = new Set(['a', 'e', 'i', 'o', 'u']);
   let containVowel = false;
   let containConsonant = false;
 
@@ -17,7 +17,7 @@ const isValid = function (word) {
     if (!/[a-z0-9]/.test(lowerChar)) return false;
     if (/\d/.test(lowerChar)) continue;
 
-    if (vowels.includes(lowerChar)) {
+    if (vowels.has(lowerChar)) {
       containVowel = true;
     } else {
       containConsonant = true;

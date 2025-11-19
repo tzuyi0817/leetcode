@@ -80,13 +80,13 @@ const palindromePairs = function (words) {
   const result = [];
 
   for (const [index, word] of words.entries()) {
-
     wordMap.set(word, index);
     wordSizeSet.add(word.length);
   }
+
   for (const [index, word] of words.entries()) {
     const size = word.length;
-    const reverseWord = word.split('').reverse().join('');
+    const reverseWord = word.split('').toReversed().join('');
     const reverseWordIndex = wordMap.get(reverseWord);
 
     if (reverseWordIndex !== undefined && reverseWordIndex !== index) {

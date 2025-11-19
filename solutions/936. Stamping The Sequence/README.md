@@ -109,6 +109,6 @@ const movesToStamp = function (stamp, target) {
     }
     if (!isStamped) return [];
   }
-  return masks === n ? result.reverse() : [];
+  return masks === n ? result.toReversed() : [];
 };
 ```

@@ -1,8 +1,8 @@
 const Fancy = function () {
   this.mod = BigInt(10 ** 9 + 7);
   this.sequences = [];
-  this.mult = BigInt(1);
-  this.add = BigInt(0);
+  this.mult = 1n;
+  this.add = 0n;
 };
 
 /**
@@ -47,7 +47,7 @@ Fancy.prototype.getIndex = function (idx) {
 };
 
 function modInverse(value, mod) {
-  return powMod(value, mod - BigInt(2), mod);
+  return powMod(value, mod - 2n, mod);
 }
 
 function powMod(base, exp, mod) {

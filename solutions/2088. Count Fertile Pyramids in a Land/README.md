@@ -84,7 +84,7 @@ const countPyramids = function (grid) {
   const n = grid[0].length;
 
   const getPyramidCount = (inverse = false) => {
-    const land = inverse ? grid.reverse().map(row => row.reverse()) : grid;
+    const land = inverse ? grid.toReversed().map(row => row.toReversed()) : grid;
     const dp = land.map(row => [...row]);
     let result = 0;
 

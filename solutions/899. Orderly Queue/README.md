@@ -57,7 +57,7 @@ const orderlyQueue = function (s, k) {
   if (k > 1) {
     return s
       .split('')
-      .sort((a, b) => a.localeCompare(b))
+      .toSorted((a, b) => a.localeCompare(b))
       .join('');
   }
 

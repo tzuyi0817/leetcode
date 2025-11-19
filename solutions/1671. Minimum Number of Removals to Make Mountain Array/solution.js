@@ -32,7 +32,7 @@ const minimumMountainRemovals = function (nums) {
   };
 
   const leftLengthOfLIS = lengthOfLIS(nums);
-  const rightLengthOfLIS = lengthOfLIS([...nums].reverse()).reverse();
+  const rightLengthOfLIS = lengthOfLIS(nums.toReversed()).toReversed();
   let result = 0;
 
   for (let index = 0; index < n; index++) {

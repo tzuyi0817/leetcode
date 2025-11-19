@@ -21,6 +21,7 @@ export default [
       'sonarjs/bitwise-operators': 'off',
 
       'unicorn/no-new-array': 'off',
+      'unicorn/prefer-code-point': 'off',
     },
     languageOptions: {
       globals: {

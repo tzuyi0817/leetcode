@@ -68,7 +68,7 @@ const countOfAtoms = function (formula) {
   combineAtom(currentAtom, currentCount);
 
   const atomMap = stack[0];
-  const atoms = [...atomMap.keys()].sort((a, b) => a.localeCompare(b));
+  const atoms = [...atomMap.keys()].toSorted((a, b) => a.localeCompare(b));
   let result = '';
 
   for (const atom of atoms) {

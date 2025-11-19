@@ -9,8 +9,9 @@ const deleteDuplicateFolder = function (paths) {
 
   const serialize = node => {
     if (node.children.size === 0) return '';
+
     const folders = [];
-    const entries = [...node.children.entries()].sort();
+    const entries = [...node.children.entries()].toSorted();
 
     for (const [name, children] of entries) {
       const item = `${name}(${serialize(children)})`;

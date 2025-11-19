@@ -85,7 +85,7 @@ const minAbsDifference = function (nums, goal) {
   getSums(lNums, 0, 0, lSums);
   getSums(rNums, 0, 0, rSums);
   lSums = [...lSums];
-  rSums = [...rSums].sort((a, b) => a - b);
+  rSums = [...rSums].toSorted((a, b) => a - b);
 
   const findFirstGreaterEqual = (sums, target) => {
     let left = 0;

@@ -23,7 +23,7 @@ const catMouseGame = function (graph) {
   for (let mouse = 0; mouse < n; mouse++) {
     for (let cat = 0; cat < n; cat++) {
       outDegree[mouse][cat][MOUSE_ROUND] = graph[mouse].length;
-      outDegree[mouse][cat][CAT_ROUND] = graph[cat].filter(node => node).length;
+      outDegree[mouse][cat][CAT_ROUND] = graph[cat].filter(Boolean).length;
     }
   }
 

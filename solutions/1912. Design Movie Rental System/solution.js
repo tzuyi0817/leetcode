@@ -2,13 +2,13 @@
  * @param {number} n
  * @param {number[][]} entries
  */
-const MovieRentingSystem = function (_n, entries) {
+const MovieRentingSystem = function (n, entries) {
   this.maxNumSearchResults = 5;
 
-  const sorted = [...entries].sort(([shop1, _1, price1], [shop2, _2, price2]) => {
+  const sorted = entries.toSorted(([shop1, _1, price1], [shop2, _2, price2]) => {
     const priceDiff = price1 - price2;
 
-    return priceDiff ? priceDiff : shop1 - shop2;
+    return priceDiff || shop1 - shop2;
   });
 
   this.movies = sorted.reduce((movies, [shop, movie]) => {
@@ -86,7 +86,7 @@ MovieRentingSystem.prototype.drop = function (shop, movie) {
  */
 MovieRentingSystem.prototype.report = function () {
   return this.rented
-    .sort(([shop1, movie1], [shop2, movie2]) => {
+    .toSorted(([shop1, movie1], [shop2, movie2]) => {
       const priceDiff = this.shops[shop1][movie1].price - this.shops[shop2][movie2].price;
 
       if (!priceDiff) return shop1 === shop2 ? movie1 - movie2 : shop1 - shop2;

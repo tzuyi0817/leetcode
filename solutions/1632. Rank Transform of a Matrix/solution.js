@@ -19,7 +19,7 @@ const matrixRankTransform = function (matrix) {
     }
   }
 
-  const sortedValues = [...valueMap.keys()].sort((a, b) => a - b);
+  const sortedValues = [...valueMap.keys()].toSorted((a, b) => a - b);
   const ranks = Array.from({ length: m + n }, () => 0);
   const result = Array.from({ length: m }, () => new Array(n).fill(0));
 

@@ -12,7 +12,7 @@ if (!fs.existsSync(vitepressRouteRoot)) {
 for (const solution of solutions) {
   const solutionMd = `${solutionsPath}/${solution}/README.md`;
   const isExists = fs.existsSync(solutionMd);
-  const content = isExists ? fs.readFileSync(solutionMd, 'utf-8') : '';
+  const content = isExists ? fs.readFileSync(solutionMd, 'utf8') : '';
 
   fs.writeFileSync(`${vitepressRouteRoot}/${solution}.md`, content);
 }

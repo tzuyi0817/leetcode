@@ -66,7 +66,7 @@ We can sort [10,5,9,3,15] by performing the following operations:
  */
 const gcdSort = function (nums) {
   const maxNum = Math.max(...nums);
-  const sortedNums = [...nums].sort((a, b) => a - b);
+  const sortedNums = nums.toSorted((a, b) => a - b);
   const uf = new UnionFind(maxNum + 1);
   const minPrimeSieve = Array.from({ length: maxNum + 1 }, (_, index) => index);
 

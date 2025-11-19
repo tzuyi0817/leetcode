@@ -4,7 +4,7 @@
  */
 const arrayRankTransform = function (arr) {
   const n = arr.length;
-  const sortedArr = arr.map((num, index) => ({ num, index })).sort((a, b) => a.num - b.num);
+  const sortedArr = arr.map((num, index) => ({ num, index })).toSorted((a, b) => a.num - b.num);
   const result = new Array(n);
   let rank = 0;
   let previous = Number.MIN_SAFE_INTEGER;

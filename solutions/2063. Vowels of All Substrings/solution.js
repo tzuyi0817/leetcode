@@ -3,12 +3,12 @@
  * @return {number}
  */
 const countVowels = function (word) {
-  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  const vowels = new Set(['a', 'e', 'i', 'o', 'u']);
   let dp = 0;
   let result = 0;
 
   for (const [index, element] of word.entries()) {
-    if (vowels.includes(element)) {
+    if (vowels.has(element)) {
       dp += index + 1;
     }
     result += dp;

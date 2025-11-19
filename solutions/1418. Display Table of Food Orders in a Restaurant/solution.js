@@ -11,9 +11,9 @@ const displayTable = function (orders) {
     foods.add(food);
     return map.set(table, order);
   }, new Map());
-  const alphabeticalFoods = [...foods].sort();
+  const alphabeticalFoods = [...foods].toSorted();
   const title = ['Table', ...alphabeticalFoods];
-  const tables = [...orderMap.keys()].sort((a, b) => a - b);
+  const tables = [...orderMap.keys()].toSorted((a, b) => a - b);
 
   return tables.reduce(
     (result, table) => {

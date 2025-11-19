@@ -79,9 +79,9 @@ const minSideJumps = function (obstacles) {
   let land3 = 1;
 
   for (const obstacle of obstacles) {
-    land1 = obstacle !== 1 ? land1 : MAX_OBSTACLES;
-    land2 = obstacle !== 2 ? land2 : MAX_OBSTACLES;
-    land3 = obstacle !== 3 ? land3 : MAX_OBSTACLES;
+    land1 = obstacle === 1 ? MAX_OBSTACLES : land1;
+    land2 = obstacle === 2 ? MAX_OBSTACLES : land2;
+    land3 = obstacle === 3 ? MAX_OBSTACLES : land3;
 
     if (obstacle !== 1) {
       land1 = Math.min(land1, Math.min(land2, land3) + 1);

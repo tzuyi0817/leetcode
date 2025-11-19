@@ -85,14 +85,14 @@ const maxProduct = function (s) {
   };
 
   const maxLeft = manacher(s);
-  const reversed = s.split('').reverse().join('');
-  const maxRight = manacher(reversed).reverse();
-  let reuslt = 1;
+  const reversed = s.split('').toReversed().join('');
+  const maxRight = manacher(reversed).toReversed();
+  let result = 1;
 
   for (let index = 1; index < n; index++) {
-    reuslt = Math.max(reuslt, maxLeft[index - 1] * maxRight[index]);
+    result = Math.max(result, maxLeft[index - 1] * maxRight[index]);
   }
 
-  return reuslt;
+  return result;
 };
 ```

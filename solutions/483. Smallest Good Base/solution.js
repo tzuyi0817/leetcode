@@ -8,8 +8,8 @@ const smallestGoodBase = function (n) {
 
   for (let logarithm = maxLogarithm; logarithm >= 2; logarithm--) {
     const base = BigInt(Math.floor(Math.pow(n, 1 / logarithm)));
-    let current = BigInt(1);
-    let sum = BigInt(1);
+    let current = 1n;
+    let sum = 1n;
 
     for (let index = 0; index < logarithm; index++) {
       current *= base;

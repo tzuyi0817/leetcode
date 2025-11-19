@@ -1,6 +1,7 @@
 /** @type {import('prettier').RequiredOptions} */
 
 export default {
+  $schema: 'https://json.schemastore.org/prettierrc',
   singleQuote: true,
   semi: true,
   endOfLine: 'lf',

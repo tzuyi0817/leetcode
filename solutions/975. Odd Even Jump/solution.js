@@ -4,8 +4,8 @@
  */
 const oddEvenJumps = function (arr) {
   const n = arr.length;
-  const ascIndices = [...arr.keys()].sort((a, b) => arr[a] - arr[b]);
-  const descIndices = [...arr.keys()].sort((a, b) => arr[b] - arr[a]);
+  const ascIndices = arr.toSorted((a, b) => arr[a] - arr[b]);
+  const descIndices = arr.toSorted((a, b) => arr[b] - arr[a]);
 
   const generateNextJumpIndices = indices => {
     const result = new Array(n).fill(-1);

@@ -49,5 +49,5 @@ const validArrangement = function (pairs) {
 
   euler(firstNode);
 
-  return result.reverse();
+  return result.toReversed();
 };

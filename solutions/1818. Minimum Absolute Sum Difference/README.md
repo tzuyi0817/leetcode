@@ -76,7 +76,7 @@ This yields an absolute sum difference of <code>|10-9| + |10-3| + |4-5| + |4-1| 
  */
 const minAbsoluteSumDiff = function (nums1, nums2) {
   const MODULO = 10 ** 9 + 7;
-  const clone = [...nums1].sort((a, b) => a - b);
+  const clone = nums1.toSorted((a, b) => a - b);
   const size = nums1.length;
   const findNearPosition = target => {
     let left = 0;

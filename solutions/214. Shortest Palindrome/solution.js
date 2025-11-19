@@ -4,7 +4,7 @@
  */
 const shortestPalindrome = function (s) {
   const n = s.length;
-  const reverseS = s.split('').reverse().join('');
+  const reverseS = s.split('').toReversed().join('');
 
   for (let index = 0; index < n; index++) {
     const sliceReverseS = reverseS.slice(index);

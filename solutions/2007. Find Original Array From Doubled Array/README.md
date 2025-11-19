@@ -66,7 +66,7 @@ const findOriginalArray = function (changed) {
     return map.set(value, count + 1);
   }, new Map());
   const result = [];
-  const values = [...changedMap.keys()].sort((a, b) => a - b);
+  const values = [...changedMap.keys()].toSorted((a, b) => a - b);
 
   for (const value of values) {
     const count = changedMap.get(value);
@@ -74,7 +74,7 @@ const findOriginalArray = function (changed) {
     if (!count) continue;
     if (value === 0) {
       if (count % 2) return [];
-      result.push(...Array.from({length: count / 2}).fill(0));
+      result.push(...new Array(count / 2).fill(0));
       continue;
     }
     if (changedMap.has(value * 2)) {

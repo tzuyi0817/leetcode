@@ -25,5 +25,6 @@ const findItinerary = function (tickets) {
   };
 
   departsAirline('JFK');
-  return result.reverse();
+
+  return result.toReversed();
 };

@@ -11,7 +11,7 @@
  * @return {number[][]}
  */
 const verticalTraversal = function (root) {
-  const columMap = {};
+  const columnMap = {};
   let queue = [{ node: root, col: 0 }];
 
   while (queue.length) {
@@ -32,12 +32,12 @@ const verticalTraversal = function (root) {
     Object.entries(currentColumnMap).forEach(([col, values]) => {
       values.sort((a, b) => a - b);
 
-      if (!columMap[col]) columMap[col] = [];
-      columMap[col].push(...values);
+      if (!columnMap[col]) columnMap[col] = [];
+      columnMap[col].push(...values);
     });
     queue = nextQueue;
   }
-  const columns = Object.entries(columMap).sort((a, b) => a[0] - b[0]);
+  const columns = Object.entries(columnMap).toSorted((a, b) => a[0] - b[0]);
 
   return columns.map(column => column[1]);
 };

@@ -80,11 +80,11 @@ const countAndSay = function (n) {
     const char = origin[index];
     const prevChar = origin[index - 1];
 
-    if (char !== prevChar) {
+    if (char === prevChar) {
+      count += 1;
+    } else {
       result += `${count}${prevChar}`;
       count = 1;
-    } else {
-      count += 1;
     }
   }
 

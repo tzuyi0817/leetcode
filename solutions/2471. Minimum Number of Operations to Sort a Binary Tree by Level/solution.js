@@ -29,7 +29,7 @@ const minimumOperations = function (root) {
       }
     }
     const n = nextQueue.length;
-    const values = nextQueue.map(({ val }) => val).sort((a, b) => a - b);
+    const values = nextQueue.map(({ val }) => val).toSorted((a, b) => a - b);
 
     for (let index = 0; index < n; index++) {
       const node = nextQueue[index];

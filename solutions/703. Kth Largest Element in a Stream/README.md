@@ -62,7 +62,7 @@ kthLargest.add(4);   // return 8
  */
 const KthLargest = function (k, nums) {
   this.k = k;
-  this.nums = nums.sort((a, b) => a - b).slice(-k);
+  this.nums = nums.toSorted((a, b) => a - b).slice(-k);
 };
 
 /**

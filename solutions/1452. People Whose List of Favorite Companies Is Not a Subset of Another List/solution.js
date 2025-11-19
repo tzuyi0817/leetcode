@@ -6,7 +6,7 @@ const peopleIndexes = function (favoriteCompanies) {
   const companiesSet = [];
   const sortFavorites = favoriteCompanies
     .map((favorites, index) => ({ favorites, index }))
-    .sort((a, b) => b.favorites.length - a.favorites.length);
+    .toSorted((a, b) => b.favorites.length - a.favorites.length);
 
   return sortFavorites
     .reduce((result, { favorites, index }) => {
@@ -20,5 +20,5 @@ const peopleIndexes = function (favoriteCompanies) {
       }
       return result;
     }, [])
-    .sort((a, b) => a - b);
+    .toSorted((a, b) => a - b);
 };

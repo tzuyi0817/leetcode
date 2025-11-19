@@ -12,5 +12,5 @@ const getMaximumXor = function (nums, maximumBit) {
       current ^= num;
       return max ^ current;
     })
-    .reverse();
+    .toReversed();
 };

@@ -23,7 +23,7 @@ const countPairs = function (n, edges, queries) {
     counts[v] += 1;
   }
 
-  const sortedCounts = [...counts].sort((a, b) => a - b);
+  const sortedCounts = counts.toSorted((a, b) => a - b);
 
   return queries.map(query => {
     let left = 1;
