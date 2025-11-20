@@ -3,23 +3,23 @@
  * @return {number}
  */
 const intersectionSizeTwo = function (intervals) {
-  let last1 = -1;
-  let last2 = -1;
+  let currentStart = -1;
+  let currentEnd = -1;
   let result = 0;
 
   intervals.sort((a, b) => a[1] - b[1] || b[0] - a[0]);
 
   for (const [start, end] of intervals) {
-    if (start <= last1) continue;
-    if (start > last2) {
-      last1 = end - 1;
-      last2 = end;
+    if (start > currentEnd) {
+      currentStart = end - 1;
+      currentEnd = end;
       result += 2;
-      continue;
+    } else if (start > currentStart) {
+      currentStart = currentEnd;
+      currentEnd = end;
+      result += 1;
     }
-    last1 = last2;
-    last2 = end;
-    result += 1;
   }
+
   return result;
 };
