@@ -71,29 +71,37 @@
  * @return {number}
  */
 const countPalindromicSubsequence = function (s) {
-  const BASE_CHAR_CODE = 'a'.charCodeAt(0);
+  const n = s.length;
+  const BASE_CODE = 'a'.charCodeAt(0);
+  const starts = Array.from({ length: 26 }, () => n);
+  const ends = Array.from({ length: 26 }, () => -1);
   let result = 0;
 
+  for (let index = 0; index < n; index++) {
+    const code = s[index].charCodeAt(0) - BASE_CODE;
+
+    starts[code] = Math.min(starts[code], index);
+    ends[code] = Math.max(ends[code], index);
+  }
+
   for (let code = 0; code < 26; code++) {
-    const char = String.fromCharCode(BASE_CHAR_CODE + code);
-    const start = s.indexOf(char);
+    const start = starts[code];
+    const end = ends[code];
 
-    if (start === -1) continue;
-    const end = s.lastIndexOf(char);
+    if (start === n || end === -1 || start === end) continue;
 
-    if (start >= end) continue;
-    const isVisited = Array.from({length: 26}).fill(false);
-    let count = 0;
+    const visited = new Array(26).fill(false);
 
     for (let index = start + 1; index < end; index++) {
-      const charCode = s.charCodeAt(index) - BASE_CHAR_CODE;
+      const targetCode = s[index].charCodeAt(0) - BASE_CODE;
 
-      if (isVisited[charCode]) continue;
-      count += 1;
-      isVisited[charCode] = true;
+      if (visited[targetCode]) continue;
+
+      result += 1;
+      visited[targetCode] = true;
     }
-    result += count;
   }
+
   return result;
 };
 ```
