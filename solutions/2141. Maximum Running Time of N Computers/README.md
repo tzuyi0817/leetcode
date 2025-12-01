@@ -64,15 +64,17 @@ We can run the two computers simultaneously for at most 2 minutes, so we return 
  * @return {number}
  */
 const maxRunTime = function (n, batteries) {
-  let totalPower = batteries.reduce((sum, power) => sum + power);
+  let totalBattery = batteries.reduce((total, battery) => total + battery);
+  let index = 0;
 
-  batteries.sort((a, b) => a - b);
+  batteries.sort((a, b) => b - a);
 
-  while (batteries.at(-1) > totalPower / n) {
-    totalPower -= batteries.pop();
+  while (batteries[index] > totalBattery / n) {
+    totalBattery -= batteries[index];
+    index += 1;
     n -= 1;
   }
 
-  return Math.floor(totalPower / n);
+  return Math.floor(totalBattery / n);
 };
 ```
