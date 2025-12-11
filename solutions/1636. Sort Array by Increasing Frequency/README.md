@@ -39,7 +39,7 @@
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(n)</em>

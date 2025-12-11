@@ -50,7 +50,7 @@ The only distinct string is "b". Since there are fewer than 3 distinct strings, 
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>

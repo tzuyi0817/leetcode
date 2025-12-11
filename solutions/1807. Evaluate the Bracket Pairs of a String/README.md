@@ -68,7 +68,7 @@ Notice that the "a"s not in a bracket pair are not evaluated.
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
@@ -85,7 +85,7 @@ Notice that the "a"s not in a bracket pair are not evaluated.
  */
 const evaluate = function (s, knowledge) {
   const knowledgeMap = knowledge.reduce((map, [key, value]) => {
-    return (map[key] = value), map;
+    return ((map[key] = value), map);
   }, {});
   let result = '';
   let key = '';

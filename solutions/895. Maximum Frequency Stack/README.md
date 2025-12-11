@@ -53,7 +53,7 @@ freqStack.pop();   // return 4, as 4, 5 and 7 is the most frequent, but 4 is clo
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(1)</em>
 - Space complexity: <em>O(n)</em>

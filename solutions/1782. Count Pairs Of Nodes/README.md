@@ -51,7 +51,7 @@ The answers for each of the queries are as follows:
 
 ## Solutions
 
-**Solution: `Two Pointers + Hash Map`**
+**Solution: `Two Pointers + Hash Table`**
 
 - Time complexity: <em>O(nlogn+queries.length\*edges.length)</em>
 - Space complexity: <em>O(n+queries.length+edges.length)</em>

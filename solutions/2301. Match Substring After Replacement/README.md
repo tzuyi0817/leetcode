@@ -56,7 +56,7 @@ Now sub = "l33tb" is a substring of s, so we return true.
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(nm+mappings.length)</em>
 - Space complexity: <em>O(mappings.length)</em>

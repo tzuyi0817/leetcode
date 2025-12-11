@@ -49,7 +49,7 @@ There is no way to divide the players into teams such that the total skill of ea
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>

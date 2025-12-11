@@ -46,7 +46,7 @@ No two adjacent strings in words are anagrams of each other, so no operations ar
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(26n -> n)</em>
 - Space complexity: <em>O(26+n)</em>

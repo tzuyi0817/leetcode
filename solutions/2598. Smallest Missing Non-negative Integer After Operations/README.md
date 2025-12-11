@@ -74,7 +74,7 @@ The MEX of nums is 2. It can be shown that 2 is the maximum MEX we can achieve.
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(n+value)</em>
 - Space complexity: <em>O(value)</em>

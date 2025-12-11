@@ -52,7 +52,7 @@
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(n\*words[i].length<sup>2</sup>)</em>
 - Space complexity: <em>O(n\*words[i].length)</em>

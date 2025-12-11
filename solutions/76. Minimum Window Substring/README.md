@@ -47,7 +47,7 @@ Since the largest window of s only has one 'a', return empty string.
 
 ## Solutions
 
-**Solution: `Sliding Window + Hash Map`**
+**Solution: `Sliding Window + Hash Table`**
 
 - Time complexity: <em>O(m+n)</em>
 - Space complexity: <em>O(n)</em>

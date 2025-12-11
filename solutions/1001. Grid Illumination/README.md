@@ -54,7 +54,7 @@ The 1<sup>st</sup>&nbsp;query asks if the lamp at grid[1][0] is illuminated or n
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(lamps.length + queries.length)</em>
 - Space complexity: <em>O(lamps.length)</em>

@@ -50,7 +50,7 @@ Another solution is [-3,1,4,-2], which would also be accepted.
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(n\*2)</em>
 - Space complexity: <em>O(n\*2)</em>

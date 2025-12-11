@@ -69,7 +69,7 @@ encrypter.decrypt("eizfeiam"); // return 2.
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(n+mL)</em>
 - Space complexity: <em>O(n+mL)</em>

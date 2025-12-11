@@ -59,7 +59,7 @@
 
 ## Solutions
 
-**Solution: `Hash Map + Math`**
+**Solution: `Hash Table + Math`**
 
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>

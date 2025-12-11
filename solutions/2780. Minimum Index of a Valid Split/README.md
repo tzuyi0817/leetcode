@@ -59,7 +59,7 @@ It can be shown that index 4 is the minimum index of a valid split.</pre>
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>

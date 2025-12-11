@@ -67,7 +67,7 @@ The substring starting at 12 is <code>"thefoobar"</code>. It is the concatenatio
 
 ## Solutions
 
-**Solution: `Sliding Window + Hash Map`**
+**Solution: `Sliding Window + Hash Table`**
 
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>

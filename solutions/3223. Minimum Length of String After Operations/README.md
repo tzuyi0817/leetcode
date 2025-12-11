@@ -55,7 +55,7 @@ We cannot perform any operations, so we return the length of the original string
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(26 -> 1)</em>

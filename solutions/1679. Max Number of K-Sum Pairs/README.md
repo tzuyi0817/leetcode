@@ -40,7 +40,7 @@ There are no more pairs that sum up to 6, hence a total of 1 operation.</pre>
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>

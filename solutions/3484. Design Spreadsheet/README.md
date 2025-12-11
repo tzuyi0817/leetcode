@@ -52,7 +52,7 @@ spreadsheet.getValue("=A1+B2"); // returns 15 (0+15)</div>
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(1)</em>
 - Space complexity: <em>O(1)</em>

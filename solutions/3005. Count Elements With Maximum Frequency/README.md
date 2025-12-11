@@ -38,7 +38,7 @@ So the number of elements in the array with maximum frequency is 5.
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>

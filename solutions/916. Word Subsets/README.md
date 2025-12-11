@@ -42,7 +42,7 @@
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(m⋅l1)+O(n⋅l2)</em>
   - m: `words1.length`

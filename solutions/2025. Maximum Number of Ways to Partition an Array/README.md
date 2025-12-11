@@ -55,7 +55,7 @@ There are four ways to partition the array.
 
 ## Solutions
 
-**Solution: `Prefix Sum + Hash Map`**
+**Solution: `Prefix Sum + Hash Table`**
 
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>

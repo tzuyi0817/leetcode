@@ -32,7 +32,7 @@
 
 ## Solutions
 
-**Solution: `Math + Hash Map`**
+**Solution: `Math + Hash Table`**
 
 - Time complexity: <em>O(n<sup>2</sup>)</em>
 - Space complexity: <em>O(n)</em>

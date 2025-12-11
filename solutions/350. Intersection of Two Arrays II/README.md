@@ -40,7 +40,7 @@
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(m+n)</em>
 - Space complexity: <em>O(min(m,n))</em>

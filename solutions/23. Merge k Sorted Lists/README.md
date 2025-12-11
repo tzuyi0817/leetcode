@@ -50,7 +50,7 @@ merging them into one sorted list:
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(2n)</em>
 - Space complexity: <em>O(n)</em>

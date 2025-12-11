@@ -66,7 +66,7 @@
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(queries.length)</em>
 - Space complexity: <em>O(queries.length)</em>

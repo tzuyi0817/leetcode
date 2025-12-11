@@ -52,7 +52,7 @@
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(n\*Max(nums))</em>
 - Space complexity: <em>O(Max(nums))</em>

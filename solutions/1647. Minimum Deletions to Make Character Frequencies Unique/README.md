@@ -44,7 +44,7 @@ Note that we only care about characters that are still in the string at the end 
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(n)</em>

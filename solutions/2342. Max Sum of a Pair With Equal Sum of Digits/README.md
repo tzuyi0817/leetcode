@@ -37,7 +37,7 @@ So the maximum sum that we can obtain is 54.
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(10n -> n)</em>
 - Space complexity: <em>O(81 -> 1)</em>

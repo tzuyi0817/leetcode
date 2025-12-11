@@ -45,7 +45,7 @@ There is no way to divide nums into 4 / 2 = 2 pairs such that the pairs satisfy 
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>

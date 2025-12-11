@@ -38,7 +38,7 @@
 
 ## Solutions
 
-**Solution: `Binary Search + Hash Map`**
+**Solution: `Binary Search + Hash Table`**
 
 - Time complexity: <em>O(m+nlogn)</em>
 - Space complexity: <em>O(m+n)</em>

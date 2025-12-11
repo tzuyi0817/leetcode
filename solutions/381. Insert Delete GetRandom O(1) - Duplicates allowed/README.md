@@ -56,7 +56,7 @@ randomizedCollection.getRandom(); // getRandom should return 1 or 2, both equall
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(1)</em>
 - Space complexity: <em>O(n)</em>

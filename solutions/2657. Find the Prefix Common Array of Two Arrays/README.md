@@ -44,7 +44,7 @@ At i = 2: 1, 2, and 3 are common in A and B, so C[2] = 3.
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>

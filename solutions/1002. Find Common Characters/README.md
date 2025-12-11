@@ -26,7 +26,7 @@
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(n\*word.length)</em>
 - Space complexity: <em>O(1)</em>
@@ -43,10 +43,10 @@
 const commonChars = function (words) {
   const BASE_CHAR_CODE = 'a'.charCodeAt(0);
   const result = [];
-  const counts = Array.from({length: 26}).fill(Number.MAX_SAFE_INTEGER);
+  const counts = Array.from({ length: 26 }).fill(Number.MAX_SAFE_INTEGER);
 
   for (const word of words) {
-    const currentCounts = Array.from({length: 26}).fill(0);
+    const currentCounts = Array.from({ length: 26 }).fill(0);
 
     for (const char of word) {
       const index = char.charCodeAt(0) - BASE_CHAR_CODE;

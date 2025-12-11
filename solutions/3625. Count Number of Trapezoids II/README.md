@@ -56,7 +56,7 @@
 
 ## Solutions
 
-**Solution: `Hash Map + Math`**
+**Solution: `Hash Table + Math`**
 
 - Time complexity: <em>O(n<sup>2</sup>)</em>
 - Space complexity: <em>O(n<sup>2</sup>)</em>

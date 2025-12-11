@@ -53,7 +53,7 @@ In this example, the digit 8 is used twice each time in 288, 828, and 882.
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(10<sup>3</sup> -> 1)</em>
 - Space complexity: <em>O(10 -> 1)</em>

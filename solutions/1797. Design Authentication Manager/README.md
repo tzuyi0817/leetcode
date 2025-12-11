@@ -54,7 +54,7 @@ authenticationManager.<code>countUnexpiredTokens</code>(15); // The token with t
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>

@@ -55,7 +55,7 @@ The following are some examples of invalid selections:
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(26<sup>2</sup>\*n)</em>
 - Space complexity: <em>O(n)</em>

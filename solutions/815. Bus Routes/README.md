@@ -45,7 +45,7 @@
 
 ## Solutions
 
-**Solution: `Breadth-First Search + Hash Map`**
+**Solution: `Breadth-First Search + Hash Table`**
 
 - Time complexity: <em>O(m\*n)</em>
 - Space complexity: <em>O(m\*n+m)</em>

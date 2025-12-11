@@ -61,7 +61,7 @@ The <strong>frequency</strong> of a letter <code>x</code> is the number of times
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(1)</em>

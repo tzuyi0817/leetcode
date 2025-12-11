@@ -54,7 +54,7 @@ Thus, the sorted array is [338,38,991].
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(n)</em>

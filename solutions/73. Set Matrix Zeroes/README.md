@@ -43,7 +43,7 @@
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(mn)</em>
 - Space complexity: <em>O(1)</em>

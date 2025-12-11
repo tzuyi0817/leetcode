@@ -49,7 +49,7 @@ Hence, answer[1] = 1, answer[2] = 1, and the remaining values are 0.
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
@@ -66,7 +66,7 @@ Hence, answer[1] = 1, answer[2] = 1, and the remaining values are 0.
  */
 const findingUsersActiveMinutes = function (logs, k) {
   const activeMap = logs.reduce((map, [id, time]) => {
-    return (map[id] = (map[id] ?? new Set()).add(time)), map;
+    return ((map[id] = (map[id] ?? new Set()).add(time)), map);
   }, {});
   const result = new Array(k).fill(0);
   const actives = Object.values(activeMap);

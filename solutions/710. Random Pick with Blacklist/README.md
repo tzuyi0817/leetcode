@@ -50,7 +50,7 @@ solution.pick(); // return 4
 
 ## Solutions
 
-**Solution: `Hash Map`**
+**Solution: `Hash Table`**
 
 - Time complexity: <em>O(blacklist.length)</em>
 - Space complexity: <em>O(blacklist.length)</em>
