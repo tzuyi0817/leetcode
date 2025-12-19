@@ -66,7 +66,7 @@ Thus, people 0, 1, 2, 3, and 4 know the secret after all the meetings.
 
 **Solution: `Union Find`**
 
-- Time complexity: <em>O(mlogm+n)</em>
+- Time complexity: <em>O(mlogn+n)</em>
 - Space complexity: <em>O(n)</em>
 
 <p>&nbsp;</p>
@@ -83,10 +83,11 @@ Thus, people 0, 1, 2, 3, and 4 know the secret after all the meetings.
 const findAllPeople = function (n, meetings, firstPerson) {
   const uf = new UnionFind(n);
   const meetingMap = new Map();
-  const result = [];
+  const result = [0];
+
+  meetings.sort((a, b) => a[2] - b[2]);
 
   uf.union(0, firstPerson);
-  meetings.sort((a, b) => a[2] - b[2]);
 
   for (const [x, y, time] of meetings) {
     if (!meetingMap.has(time)) {
@@ -96,23 +97,23 @@ const findAllPeople = function (n, meetings, firstPerson) {
     meetingMap.get(time).push({ x, y });
   }
 
-  for (const paris of meetingMap.values()) {
-    const peoples = new Set();
+  for (const pairs of meetingMap.values()) {
+    const peopleSet = new Set();
 
-    for (const { x, y } of paris) {
+    for (const { x, y } of pairs) {
       uf.union(x, y);
-      peoples.add(x);
-      peoples.add(y);
+      peopleSet.add(x);
+      peopleSet.add(y);
     }
 
-    for (const people of peoples) {
+    for (const people of peopleSet) {
       if (uf.find(people) !== uf.find(0)) {
         uf.reset(people);
       }
     }
   }
 
-  for (let index = 0; index < n; index++) {
+  for (let index = 1; index < n; index++) {
     if (uf.find(index) === uf.find(0)) {
       result.push(index);
     }
@@ -140,6 +141,7 @@ class UnionFind {
     const groupY = this.find(y);
 
     if (groupX === groupY) return false;
+
     if (this.ranks[groupX] > this.ranks[groupY]) {
       this.groups[groupY] = groupX;
     } else if (this.ranks[groupX] < this.ranks[groupY]) {
