@@ -3,44 +3,51 @@
  * @return {number}
  */
 const numMagicSquaresInside = function (grid) {
-  const n = grid.length;
-  const m = grid[0].length;
+  const m = grid.length;
+  const n = grid[0].length;
   let result = 0;
 
-  const isMagicSquare = (row, col) => {
-    const upperLeft = grid[row - 1][col - 1];
-    const upper = grid[row - 1][col];
-    const upperRight = grid[row - 1][col + 1];
-    const left = grid[row][col - 1];
-    const current = grid[row][col];
-    const right = grid[row][col + 1];
-    const lowerLeft = grid[row + 1][col - 1];
-    const lower = grid[row + 1][col];
-    const lowerRight = grid[row + 1][col + 1];
-    const nums = new Set([upperLeft, upper, upperRight, left, current, right, lowerLeft, lower, lowerRight]);
+  const isMagicSquare = (centerRow, centerCol) => {
+    if (grid[centerRow][centerCol] !== 5) return false;
 
-    if (nums.size !== 9) return false;
+    const numSet = new Set();
 
-    for (const num of nums) {
-      if (num > 9 || num < 1) return false;
+    for (let a = -1; a <= 1; a++) {
+      let sum1 = 0;
+      let sum2 = 0;
+
+      for (let b = -1; b <= 1; b++) {
+        const num1 = grid[centerRow + a][centerCol + b];
+        const num2 = grid[centerRow + b][centerCol + a];
+
+        if (num1 < 1 || num1 > 9 || num2 < 1 || num2 > 9 || numSet.has(num1)) return false;
+
+        sum1 += num1;
+        sum2 += num2;
+        numSet.add(num1);
+      }
+
+      if (sum1 !== 15 || sum2 !== 15) return false;
     }
 
-    return (
-      upperLeft + upper + upperRight === 15 &&
-      lowerLeft + lower + lowerRight === 15 &&
-      upperLeft + left + lowerLeft === 15 &&
-      upper + current + lower === 15 &&
-      upperRight + right + lowerRight === 15 &&
-      upperLeft + current + lowerRight === 15 &&
-      upperRight + current + lowerLeft === 15
-    );
+    let diagonalSum1 = 0;
+    let diagonalSum2 = 0;
+
+    for (let index = -1; index <= 1; index++) {
+      diagonalSum1 += grid[centerRow + index][centerCol + index];
+      diagonalSum2 += grid[centerRow + index][centerCol - index];
+    }
+
+    return diagonalSum1 === 15 && diagonalSum2 === 15;
   };
 
-  for (let row = 1; row < n - 1; row++) {
-    for (let col = 1; col < m - 1; col++) {
-      if (grid[row][col] !== 5) continue;
-      if (isMagicSquare(row, col)) result += 1;
+  for (let row = 1; row < m - 1; row++) {
+    for (let col = 1; col < n - 1; col++) {
+      if (isMagicSquare(row, col)) {
+        result += 1;
+      }
     }
   }
+
   return result;
 };
