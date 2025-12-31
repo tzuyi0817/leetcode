@@ -8,49 +8,41 @@ const latestDayToCross = function (row, col, cells) {
   const n = cells.length;
   const directions = [
     [0, 1],
-    [1, 0],
     [0, -1],
+    [1, 0],
     [-1, 0],
   ];
-  let left = 0;
+  let left = 1;
   let right = n - 1;
   let result = 0;
 
-  const isCross = day => {
-    const matrix = new Array(row).fill('').map(_ => new Array(col).fill(0));
-    let queue = [];
+  const isPossibleToCross = day => {
+    const graph = new Array(row).fill('').map(() => new Array(col).fill(0));
 
     for (let index = 0; index < day; index++) {
-      const [x, y] = cells[index];
+      const [r, c] = cells[index];
 
-      matrix[x - 1][y - 1] = 1;
+      graph[r - 1][c - 1] = 1;
     }
 
-    for (let index = 0; index < col; index++) {
-      if (matrix[0][index]) continue;
+    const dfs = (r, c) => {
+      if (r < 0 || c < 0 || r >= row || c >= col || graph[r][c]) return false;
+      if (r === row - 1) return true;
 
-      matrix[0][index] = 1;
-      queue.push({ row: 0, col: index });
-    }
+      graph[r][c] = 1;
 
-    while (queue.length) {
-      const nextQueue = [];
+      for (const [moveRow, moveCol] of directions) {
+        const nextRow = r + moveRow;
+        const nextCol = c + moveCol;
 
-      for (const land of queue) {
-        for (const [moveRow, moveCol] of directions) {
-          const nextRow = land.row + moveRow;
-          const nextCol = land.col + moveCol;
-
-          if (nextRow < 0 || nextRow >= row || nextCol < 0 || nextCol >= col) continue;
-          if (matrix[nextRow][nextCol]) continue;
-          if (nextRow === row - 1) return true;
-
-          matrix[nextRow][nextCol] = 1;
-          nextQueue.push({ row: nextRow, col: nextCol });
-        }
+        if (dfs(nextRow, nextCol)) return true;
       }
 
-      queue = nextQueue;
+      return false;
+    };
+
+    for (let index = 0; index < col; index++) {
+      if (dfs(0, index)) return true;
     }
 
     return false;
@@ -59,9 +51,9 @@ const latestDayToCross = function (row, col, cells) {
   while (left <= right) {
     const mid = Math.floor((left + right) / 2);
 
-    if (isCross(mid)) {
-      result = mid;
+    if (isPossibleToCross(mid)) {
       left = mid + 1;
+      result = mid;
     } else {
       right = mid - 1;
     }
