@@ -61,22 +61,23 @@ Their dot product is -1.</pre>
 const maxDotProduct = function (nums1, nums2) {
   const m = nums1.length;
   const n = nums2.length;
-  const dp = Array.from({ length: m }, () => new Array(n).fill(Number.MIN_SAFE_INTEGER));
+  const dp = Array.from({ length: m }, () => new Array(n).fill(null));
 
-  const subProduct = (a, b) => {
-    if (a >= m || b >= n) return Number.MIN_SAFE_INTEGER;
-    if (dp[a][b] !== Number.MIN_SAFE_INTEGER) return dp[a][b];
-    const ignoreA = subProduct(a + 1, b);
-    const ignoreB = subProduct(a, b + 1);
-    const product = nums1[a] * nums2[b];
-    const totalProduct = product + subProduct(a + 1, b + 1);
-    const result = Math.max(ignoreA, ignoreB, product, totalProduct);
+  const maxSubProduct = (index1, index2) => {
+    if (index1 >= m || index2 >= n) return Number.MIN_SAFE_INTEGER;
+    if (dp[index1][index2] !== null) return dp[index1][index2];
 
-    dp[a][b] = result;
+    const product = nums1[index1] * nums2[index2];
+    const current = product + maxSubProduct(index1 + 1, index2 + 1);
+    const skip1 = maxSubProduct(index1 + 1, index2);
+    const skip2 = maxSubProduct(index1, index2 + 1);
+    const result = Math.max(product, current, skip1, skip2);
+
+    dp[index1][index2] = result;
 
     return result;
   };
 
-  return subProduct(0, 0);
+  return maxSubProduct(0, 0);
 };
 ```
