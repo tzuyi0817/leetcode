@@ -72,8 +72,8 @@
 
 **Solution: `Breadth-First Search`**
 
-- Time complexity: <em>O(（mn)<sup>3</sup>)</em>
-- Space complexity: <em>O(（mn)<sup>2</sup>)</em>
+- Time complexity: <em>O((mn)<sup>3</sup>)</em>
+- Space complexity: <em>O((mn)<sup>2</sup>)</em>
 
 <p>&nbsp;</p>
 
