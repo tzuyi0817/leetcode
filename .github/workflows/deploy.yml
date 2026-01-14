@@ -6,8 +6,8 @@ on:
     paths:
       - 'docs/**'
       - 'solutions/**'
-      - 'pnpm-lock.yaml'
-      - 'package.json'
+      - pnpm-lock.yaml
+      - package.json
 
   workflow_dispatch:
 

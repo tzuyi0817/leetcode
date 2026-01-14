@@ -1,10 +1,14 @@
 {
   "name": "leetcode",
-  "version": "0.0.0",
-  "license": "MIT",
   "type": "module",
+  "version": "0.0.0",
   "packageManager": "pnpm@10.28.0",
   "description": "Solutions to LeetCode in JavaScript.",
+  "license": "MIT",
+  "keywords": [
+    "leetcode",
+    "solution"
+  ],
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
@@ -14,20 +18,16 @@
     "prepare": "husky",
     "generate-md": "node scripts/generate-md.cjs"
   },
-  "keywords": [
-    "leetcode",
-    "solution"
-  ],
-  "devDependencies": {
-    "@component-hook/eslint-plugin": "^1.4.1",
-    "@types/node": "^24.10.8",
-    "prettier": "^3.7.4",
-    "vitepress": "^1.6.4"
-  },
   "optionalDependencies": {
     "@commitlint/cli": "^20.3.1",
     "@commitlint/config-conventional": "^20.3.1",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7"
+  },
+  "devDependencies": {
+    "@component-hook/eslint-plugin": "^1.4.1",
+    "@types/node": "^24.10.8",
+    "prettier": "^3.7.4",
+    "vitepress": "^1.6.4"
   }
 }
