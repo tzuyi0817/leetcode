@@ -63,7 +63,7 @@
 
 ## Solutions
 
-**Solution: `Scanning Line`**
+**Solution: `Line Sweep`**
 
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(2n -> n)</em>
