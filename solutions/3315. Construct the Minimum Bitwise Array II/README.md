@@ -1,4 +1,4 @@
-# [3314. Construct the Minimum Bitwise Array I](https://leetcode.com/problems/construct-the-minimum-bitwise-array-i)
+# [3315. Construct the Minimum Bitwise Array II](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii)
 
 ## Description
 
@@ -49,7 +49,7 @@
 
 <ul>
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
-	<li><code>2 &lt;= nums[i] &lt;= 1000</code></li>
+	<li><code>2 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
 	<li><code>nums[i]</code> is a prime number.</li>
 </ul>
 </div>
