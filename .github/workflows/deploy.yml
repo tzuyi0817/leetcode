@@ -1,4 +1,4 @@
-name: Deploy VitePress site to Pages
+name: Deploy vitepress site to github pages
 
 on:
   push:
@@ -24,21 +24,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v6
+      - name: setup environment
+        uses: tzuyi0817/workflows/setup-environment@v1
         with:
-          fetch-depth: 0 # Enable lastUpdated
+          fetch-depth: true # Enable lastUpdated
 
-      - name: Setup Environment
-        uses: tzuyi0817/coding-standards/.github/actions/setup-environment@main
-
-      - name: Setup Pages
+      - name: setup pages
         uses: actions/configure-pages@v5
 
-      - name: Build with VitePress
+      - name: build with vitepress
         run: pnpm run generate-md && NODE_OPTIONS=--max-old-space-size=8192 pnpm run docs:build
 
-      - name: Upload artifact
+      - name: upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: docs/.vitepress/dist
@@ -51,6 +48,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Deploy to GitHub Pages
+      - name: deploy to github pages
         id: deployment
         uses: actions/deploy-pages@v4
