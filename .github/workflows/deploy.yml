@@ -1,4 +1,4 @@
-name: Deploy vitepress site to github pages
+name: Deploy Vitepress Site to Github Pages
 
 on:
   push:
@@ -11,43 +11,15 @@ on:
 
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
-
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: setup environment
-        uses: tzuyi0817/workflows/setup-environment@v1
-        with:
-          fetch-depth: true # Enable lastUpdated
+    uses: tzuyi0817/workflows/.github/workflows/deploy-github-pages.yml@v1
+    with:
+      fetch-depth: true
+      build: pnpm run generate-md && NODE_OPTIONS=--max-old-space-size=8192 pnpm run docs:build
+      production-files: docs/.vitepress/dist
 
-      - name: setup pages
-        uses: actions/configure-pages@v5
-
-      - name: build with vitepress
-        run: pnpm run generate-md && NODE_OPTIONS=--max-old-space-size=8192 pnpm run docs:build
-
-      - name: upload artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: docs/.vitepress/dist
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: deploy to github pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
