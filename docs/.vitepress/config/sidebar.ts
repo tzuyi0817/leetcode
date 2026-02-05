@@ -9,7 +9,7 @@ export function generateSidebar(solutionsPath: string): DefaultTheme.Sidebar {
 
     return {
       serialNum,
-      link: `/solutions/${file}`,
+      link: `/solutions/${serialNum}`,
       text: file,
     };
   });
