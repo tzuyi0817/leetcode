@@ -8,7 +8,7 @@ export default [
   componentHookPlugin.configs.security,
 
   {
-    files: ['solutions/**'],
+    files: ['**/solutions/**'],
     rules: {
       'no-unused-vars': 'off',
 
@@ -32,5 +32,9 @@ export default [
         ListNode: 'readonly',
       },
     },
+  },
+
+  {
+    ignores: ['docs/solutions/**'],
   },
 ];
