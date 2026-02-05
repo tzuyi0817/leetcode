@@ -14,5 +14,16 @@
   "workbench.editor.splitInGroupLayout": "vertical",
   "terminal.integrated.shellIntegration.enabled": true,
 
-  "cSpell.words": ["vitepress", "unplugin", "Sonarjs", "typecheck", "bitmask", "deque", "nums", "indegree", "trionic"]
+  "cSpell.words": [
+    "vitepress",
+    "unplugin",
+    "Sonarjs",
+    "typecheck",
+    "bitmask",
+    "deque",
+    "nums",
+    "indegree",
+    "trionic",
+    "tzuyi"
+  ]
 }

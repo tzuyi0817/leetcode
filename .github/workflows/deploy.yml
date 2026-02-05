@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  deploy-docs:
     uses: tzuyi0817/workflows/.github/workflows/deploy-github-pages.yml@v1
     with:
       fetch-depth: true
