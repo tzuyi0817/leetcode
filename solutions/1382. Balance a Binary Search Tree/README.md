@@ -57,28 +57,36 @@
  */
 const balanceBST = function (root) {
   const values = [];
-  const getBSTValue = node => {
+
+  const dfs = node => {
     if (!node) return;
+
     const { val, left, right } = node;
 
     values.push(val);
-    getBSTValue(left);
-    getBSTValue(right);
+    dfs(left);
+    dfs(right);
   };
 
-  getBSTValue(root);
+  dfs(root);
+
+  const n = values.length;
+
   values.sort((a, b) => a - b);
 
-  const createBST = (start, end) => {
-    if (start > end) return null;
-    const mid = Math.floor((start + end) / 2);
-    const node = new TreeNode(values[mid]);
+  const generateBalanceTree = (left, right) => {
+    if (left > right) return null;
 
-    node.left = createBST(start, mid - 1);
-    node.right = createBST(mid + 1, end);
+    const mid = Math.floor((left + right) / 2);
+    const val = values[mid];
+    const node = new TreeNode(val);
+
+    node.left = generateBalanceTree(left, mid - 1);
+    node.right = generateBalanceTree(mid + 1, right);
+
     return node;
   };
 
-  return createBST(0, values.length - 1);
+  return generateBalanceTree(0, n - 1);
 };
 ```
