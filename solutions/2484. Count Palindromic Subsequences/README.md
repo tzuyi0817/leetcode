@@ -50,7 +50,7 @@ Two of them (both equal to "10301") are palindromic.
 
 **Solution: `Dynamic Programming`**
 
-- Time complexity: <em>O(9*9*5\*n -> n)</em>
+- Time complexity: <em>O(10\*10\*5\*n -> n)</em>
 - Space complexity: <em>O(1)</em>
 
 <p>&nbsp;</p>
