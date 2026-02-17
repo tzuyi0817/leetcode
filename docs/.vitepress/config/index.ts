@@ -4,6 +4,7 @@ import { search } from './search';
 import { generateSidebar } from './sidebar';
 
 const base = '/leetcode/';
+
 export const solutionsPath = resolve(__dirname, '..', '..', '..', 'solutions');
 
 export default defineConfig({

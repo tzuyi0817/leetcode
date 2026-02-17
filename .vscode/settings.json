@@ -25,6 +25,7 @@
     "indegree",
     "trionic",
     "tzuyi",
-    "subseq"
+    "subseq",
+    "popcount"
   ]
 }
