@@ -26,6 +26,7 @@
     "trionic",
     "tzuyi",
     "subseq",
-    "popcount"
+    "popcount",
+    "leetcode"
   ]
 }
