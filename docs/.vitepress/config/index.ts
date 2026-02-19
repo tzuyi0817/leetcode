@@ -27,7 +27,7 @@ export default defineConfig({
   ],
 
   sitemap: {
-    hostname: 'https://tzuyi0817.github.io/leetcode/',
+    hostname: 'https://tzuyi0817.github.io',
   },
 
   markdown: {
