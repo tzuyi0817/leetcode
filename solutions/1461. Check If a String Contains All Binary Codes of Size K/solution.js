@@ -4,14 +4,22 @@
  * @return {boolean}
  */
 const hasAllCodes = function (s, k) {
-  const targetCount = 2 ** k;
-  const codeSet = new Set();
+  const n = s.length;
+  const codes = new Set();
+  const MAX_CODE = 1 << k;
+  let current = 0;
 
-  for (let index = k; index <= s.length; index++) {
-    const code = s.slice(index - k, index);
+  for (let index = 0; index < n; index++) {
+    current <<= 1;
+    current |= Number(s[index]);
 
-    codeSet.add(code);
-    if (codeSet.size === targetCount) return true;
+    if (index < k - 1) continue;
+
+    current &= MAX_CODE - 1;
+    codes.add(current);
+
+    if (codes.size === MAX_CODE) return true;
   }
+
   return false;
 };
