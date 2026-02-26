@@ -76,19 +76,25 @@ Step 1) 2 is even, divide by 2 and obtain 1.&nbsp;
  * @return {number}
  */
 const numSteps = function (s) {
-  let step = 0;
+  const n = s.length;
   let carry = 0;
+  let steps = 0;
 
-  for (let index = s.length - 1; index > 0; index--) {
-    const value = s[index];
+  for (let index = n - 1; index > 0; index--) {
+    const num = Number(s[index]);
+    const current = num + carry;
 
-    if (value === '0') {
-      step += carry ? 2 : 1;
-      continue;
+    if (current === 0) {
+      steps += 1;
+    } else if (current === 1) {
+      steps += 2;
+      carry = 1;
+    } else {
+      steps += 1;
+      carry = 1;
     }
-    step += carry ? 1 : 2;
-    carry = 1;
   }
-  return step + carry;
+
+  return steps + carry;
 };
 ```
