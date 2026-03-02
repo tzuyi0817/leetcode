@@ -2,7 +2,7 @@
   "name": "leetcode",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@10.30.2",
+  "packageManager": "pnpm@10.30.3",
   "description": "Solutions to LeetCode in JavaScript.",
   "license": "MIT",
   "keywords": [
@@ -22,11 +22,11 @@
     "@commitlint/cli": "^20.4.2",
     "@commitlint/config-conventional": "^20.4.2",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.7"
+    "lint-staged": "^16.3.1"
   },
   "devDependencies": {
     "@component-hook/eslint-plugin": "^1.4.4",
-    "@types/node": "^24.10.14",
+    "@types/node": "^24.11.0",
     "eslint": "^9.39.3",
     "prettier": "^3.8.1",
     "vitepress": "^1.6.4"
