@@ -68,14 +68,17 @@ The 11<sup>th</sup> bit is "1".
  * @return {character}
  */
 const findKthBit = function (n, k) {
-  if (n === 1) return '0';
-  const size = 2 ** n - 1;
-  const mid = (size + 1) / 2;
+  if (k === 1) return '0';
 
-  if (mid === k) return '1';
-  if (mid < k) {
-    return findKthBit(n - 1, size - k + 1) === '0' ? '1' : '0';
+  const len = (1 << n) - 1;
+  const middle = (len + 1) / 2;
+
+  if (k === middle) return '1';
+
+  if (k > middle) {
+    return findKthBit(n - 1, len - k + 1) === '0' ? '1' : '0';
   }
+
   return findKthBit(n - 1, k);
 };
 ```
