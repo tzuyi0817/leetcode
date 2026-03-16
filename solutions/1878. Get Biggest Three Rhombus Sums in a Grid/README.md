@@ -53,7 +53,7 @@
 
 ## Solutions
 
-**Solution: `Brute Force`**
+**Solution: `Simulation`**
 
 - Time complexity: <em>O(mn∗boundary<sup>2</sup>)</em>
 - Space complexity: <em>O(1)</em>
@@ -70,46 +70,60 @@
 const getBiggestThree = function (grid) {
   const m = grid.length;
   const n = grid[0].length;
-  let first = 0;
-  let second = 0;
-  let third = 0;
+  const maxLen = Math.floor(Math.max(m, n) / 2);
+  let sum1 = 0;
+  let sum2 = 0;
+  let sum3 = 0;
 
-  const updateValues = value => {
-    if (first === value || second === value || third === value) return;
-    if (first < value) {
-      third = second;
-      second = first;
-      first = value;
-    } else if (second < value) {
-      third = second;
-      second = value;
-    } else if (third < value) third = value;
+  const getRhombusSum = (row, col, len) => {
+    if (!len) return grid[row][col];
+
+    if (row - len < 0 || row + len >= m || col - len < 0 || col + len >= n) return 0;
+
+    const top = grid[row - len][col];
+    const left = grid[row][col - len];
+    const right = grid[row][col + len];
+    const bottom = grid[row + len][col];
+
+    let sum = top + left + right + bottom;
+
+    for (let index = 1; index < len; index++) {
+      const spreadL1 = grid[row - len + index][col - index];
+      const spreadL2 = grid[row + len - index][col - index];
+      const spreadR1 = grid[row - len + index][col + index];
+      const spreadR2 = grid[row + len - index][col + index];
+
+      sum += spreadL1 + spreadL2 + spreadR1 + spreadR2;
+    }
+
+    return sum;
   };
 
-  for (let row = 0; row < m; row++) {
-    for (let col = 0; col < n; col++) {
-      const value = grid[row][col];
-      const boundary = Math.min(m - row - 1, n - col - 1, row, col);
+  for (let index = 0; index <= maxLen; index++) {
+    for (let row = 0; row < m; row++) {
+      for (let col = 0; col < n; col++) {
+        const sum = getRhombusSum(row, col, index);
 
-      updateValues(value);
-      if (boundary <= 0) continue;
-      for (let length = 1; length <= boundary; length++) {
-        let sum = 0;
-        let offset = 0;
+        if (sum === sum1 || sum === sum2 || sum === sum3) continue;
 
-        for (let current = length; current >= 1; current--) {
-          sum +=
-            grid[row - current][col + offset] +
-            grid[row + offset][col + current] +
-            grid[row + current][col - offset] +
-            grid[row - offset][col - current];
-
-          offset += 1;
+        if (sum > sum1) {
+          sum3 = sum2;
+          sum2 = sum1;
+          sum1 = sum;
+        } else if (sum > sum2) {
+          sum3 = sum2;
+          sum2 = sum;
+        } else if (sum > sum3) {
+          sum3 = sum;
         }
-        updateValues(sum);
       }
     }
   }
-  return [first, second, third].filter(Boolean);
+
+  if (sum3) return [sum1, sum2, sum3];
+
+  if (sum2) return [sum1, sum2];
+
+  return [sum1];
 };
 ```
