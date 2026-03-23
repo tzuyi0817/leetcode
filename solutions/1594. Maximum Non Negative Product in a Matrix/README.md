@@ -50,7 +50,7 @@
 **Solution: `Dynamic Programming`**
 
 - Time complexity: <em>O(mn)</em>
-- Space complexity: <em>O(mn)</em>
+- Space complexity: <em>O(n)</em>
 
 <p>&nbsp;</p>
 
@@ -65,40 +65,39 @@ const maxProductPath = function (grid) {
   const MODULO = 10 ** 9 + 7;
   const m = grid.length;
   const n = grid[0].length;
-  const dpMax = new Array(m)
-    .fill('')
-    .map(_ => new Array(n).fill(0));
-  const dpMin = new Array(m)
-    .fill('')
-    .map(_ => new Array(n).fill(0));
+  let prevMax = Array.from({ length: n + 1 }, () => 1);
+  let prevMin = Array.from({ length: n + 1 }, () => 1);
 
   for (let row = 0; row < m; row++) {
+    const currentMax = new Array(n + 1).fill(1);
+    const currentMin = new Array(n + 1).fill(1);
+
     for (let col = 0; col < n; col++) {
       const value = grid[row][col];
-      const maxUpValue = dpMax[row - 1]?.[col] * value;
-      const maxLeftValue = dpMax[row][col - 1] * value;
-      const minUpValue = dpMin[row - 1]?.[col] * value;
-      const minLeftValue = dpMin[row][col - 1] * value;
+      const upMax = prevMax[col + 1] * value;
+      const upMin = prevMin[col + 1] * value;
+      const leftMax = currentMax[col] * value;
+      const leftMin = currentMin[col] * value;
+      const candidates = [];
 
       if (row === 0 && col === 0) {
-        dpMax[row][col] = dpMin[row][col] = grid[0][0];
+        candidates.push(value);
       } else if (row === 0) {
-        dpMax[row][col] = Math.max(maxLeftValue, minLeftValue);
-        dpMin[row][col] = Math.min(maxLeftValue, minLeftValue);
+        candidates.push(leftMax, leftMin);
       } else if (col === 0) {
-        dpMax[row][col] = Math.max(maxUpValue, minUpValue);
-        dpMin[row][col] = Math.min(maxUpValue, minUpValue);
+        candidates.push(upMax, upMin);
       } else {
-        const maxUp = Math.max(maxUpValue, minUpValue);
-        const maxLeft = Math.max(maxLeftValue, minLeftValue);
-        const minUp = Math.min(maxUpValue, minUpValue);
-        const minLeft = Math.min(maxLeftValue, minLeftValue);
-
-        dpMax[row][col] = Math.max(maxUp, maxLeft);
-        dpMin[row][col] = Math.min(minUp, minLeft);
+        candidates.push(upMax, upMin, leftMax, leftMin);
       }
+
+      currentMax[col + 1] = Math.max(...candidates);
+      currentMin[col + 1] = Math.min(...candidates);
     }
+
+    prevMax = currentMax;
+    prevMin = currentMin;
   }
-  return dpMax[m - 1][n - 1] < 0 ? -1 : dpMax[m - 1][n - 1] % MODULO;
+
+  return Math.max(prevMax[n], -1) % MODULO;
 };
 ```
