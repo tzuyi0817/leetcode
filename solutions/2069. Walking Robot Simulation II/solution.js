@@ -3,37 +3,25 @@
  * @param {number} height
  */
 const Robot = function (width, height) {
-  this.bound = { x: width - 1, y: height - 1 };
-  this.roundStep = (width - 1) * 2 + (height - 1) * 2;
-  this.pos = { x: 0, y: 0 };
-  this.dir = 'East';
-  this.turnMap = {
-    North: 'West',
-    East: 'North',
-    South: 'East',
-    West: 'South',
-  };
-  this.overtakeMap = {
-    North: ({ boundY }) => (this.pos.y = boundY),
-    East: ({ boundX }) => (this.pos.x = boundX),
-    South: () => (this.pos.y = 0),
-    West: () => (this.pos.x = 0),
-  };
-};
+  this.n = (width - 1) * 2 + (height - 1) * 2;
+  this.pos = [];
+  this.index = 0;
 
-Robot.prototype.walk = function (step) {
-  const moveMap = {
-    North: { x: 0, y: 1 },
-    East: { x: 1, y: 0 },
-    South: { x: 0, y: -1 },
-    West: { x: -1, y: 0 },
-  };
-  const move = moveMap[this.dir];
-  let { x, y } = this.pos;
+  for (let x = 0; x < width; x++) {
+    this.pos.push({ x, y: 0, dir: 'East' });
+  }
 
-  x += move.x * step;
-  y += move.y * step;
-  this.pos = { x, y };
+  for (let y = 1; y < height; y++) {
+    this.pos.push({ x: width - 1, y, dir: 'North' });
+  }
+
+  for (let x = width - 2; x >= 0; x--) {
+    this.pos.push({ x, y: height - 1, dir: 'West' });
+  }
+
+  for (let y = height - 2; y > 0; y--) {
+    this.pos.push({ x: 0, y, dir: 'South' });
+  }
 };
 
 /**
@@ -41,40 +29,24 @@ Robot.prototype.walk = function (step) {
  * @return {void}
  */
 Robot.prototype.step = function (num) {
-  const { x: boundX, y: boundY } = this.bound;
-  let step = num % this.roundStep;
-
-  this.walk(step);
-  if (this.pos.x === 0 && this.pos.y === 0) {
-    this.dir = 'South';
-  }
-  while (this.pos.x > boundX || this.pos.x < 0 || this.pos.y > boundY || this.pos.y < 0) {
-    const calculateRemainMap = {
-      North: ({ y }) => y - boundY,
-      East: ({ x }) => x - boundX,
-      South: ({ y }) => Math.abs(y),
-      West: ({ x }) => Math.abs(x),
-    };
-
-    step = calculateRemainMap[this.dir](this.pos);
-    this.overtakeMap[this.dir]({ boundX, boundY });
-    this.dir = this.turnMap[this.dir];
-    this.walk(step);
-  }
+  this.index = (this.index + num) % this.n;
+  this.pos[0].dir = 'South';
 };
 
 /**
  * @return {number[]}
  */
 Robot.prototype.getPos = function () {
-  return [this.pos.x, this.pos.y];
+  const current = this.pos[this.index];
+
+  return [current.x, current.y];
 };
 
 /**
  * @return {string}
  */
 Robot.prototype.getDir = function () {
-  return this.dir;
+  return this.pos[this.index].dir;
 };
 
 /**
