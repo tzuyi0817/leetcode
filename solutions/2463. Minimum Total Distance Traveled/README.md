@@ -80,34 +80,37 @@ The total distance is |2 - 1| + |(-2) - (-1)| = 2. It can be shown that we canno
  * @return {number}
  */
 const minimumTotalDistance = function (robot, factory) {
-  const n = robot.length;
-  const m = factory.length;
-  const memo = new Array(n)
-    .fill('')
-    .map(_ =>
-      new Array(m)
-        .fill('')
-        .map(_ => new Array(n).fill(-1)),
-    );
+  const m = robot.length;
+  const n = factory.length;
+  const dp = Array.from({ length: m }, () => {
+    return new Array(n)
+      .fill('')
+      .map(() => new Array(m).fill(-1));
+  });
 
   robot.sort((a, b) => a - b);
   factory.sort((a, b) => a[0] - b[0]);
 
-  const repairRobot = (i, j, repaired) => {
-    if (i === n) return 0;
-    if (j === m) return Number.MAX_SAFE_INTEGER;
-    if (memo[i][j][repaired] !== -1) return memo[i][j][repaired];
+  const minimumDistance = (bot, fact, fixed) => {
+    if (bot === m) return 0;
+    if (fact === n) return Number.MAX_SAFE_INTEGER;
 
-    const skipFactory = repairRobot(i, j + 1, 0);
-    const [position, limit] = factory[j];
-    const repairs =
-      limit > repaired ? Math.abs(robot[i] - position) + repairRobot(i + 1, j, repaired + 1) : Number.MAX_SAFE_INTEGER;
+    if (dp[bot][fact][fixed] !== -1) {
+      return dp[bot][fact][fixed];
+    }
 
-    memo[i][j][repaired] = Math.min(skipFactory, repairs);
+    const [position, limit] = factory[fact];
+    const skipFactory = minimumDistance(bot, fact + 1, 0);
+    const distance = Math.abs(position - robot[bot]);
+    const repairBot = limit > fixed ? distance + minimumDistance(bot + 1, fact, fixed + 1) : Number.MAX_SAFE_INTEGER;
 
-    return memo[i][j][repaired];
+    const result = Math.min(skipFactory, repairBot);
+
+    dp[bot][fact][fixed] = result;
+
+    return result;
   };
 
-  return repairRobot(0, 0, 0);
+  return minimumDistance(0, 0, 0);
 };
 ```
