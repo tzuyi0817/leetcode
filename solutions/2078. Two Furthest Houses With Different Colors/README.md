@@ -66,15 +66,18 @@ House 0 has color 0, and house 1 has color 1. The distance between them is abs(0
  * @return {number}
  */
 const maxDistance = function (colors) {
-  let result = 0;
+  const n = colors.length;
+  let left = 0;
+  let right = n - 1;
 
-  for (let index = colors.length - 1; index > 0; index--) {
-    if (index <= result) return result;
-    let different = 0;
-
-    while (colors[index] === colors[different]) different += 1;
-    result = Math.max(result, index - different);
+  while (colors[left] === colors[n - 1]) {
+    left += 1;
   }
-  return result;
+
+  while (colors[right] === colors[0]) {
+    right -= 1;
+  }
+
+  return Math.max(n - left - 1, right);
 };
 ```
