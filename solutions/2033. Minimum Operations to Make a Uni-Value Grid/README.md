@@ -66,18 +66,21 @@ A total of 4 operations were used.
  * @return {number}
  */
 const minOperations = function (grid, x) {
-  const m = grid.length;
-  const n = grid[0].length;
   const values = grid.flat();
 
-  if (values.some(value => (values[0] - value) % x)) return -1;
+  if (values.some(value => (value - values[0]) % x)) return -1;
+
+  const middle = Math.floor(values.length / 2);
+  let result = 0;
 
   values.sort((a, b) => a - b);
 
-  const middleValue = values[Math.floor((m * n) / 2)];
+  for (const value of values) {
+    const diff = Math.abs(value - values[middle]);
 
-  return values.reduce((result, value) => {
-    return result + Math.abs(middleValue - value) / x;
-  }, 0);
+    result += diff / x;
+  }
+
+  return result;
 };
 ```
