@@ -81,21 +81,23 @@ Starting with 27 energy, we finish the tasks in the following order:
  * @return {number}
  */
 const minimumEffort = function (tasks) {
-  let current = 0;
+  let currentEnergy = 0;
   let result = 0;
 
   tasks.sort((a, b) => {
-    const diffA = a[1] - a[0];
-    const diffB = b[1] - b[0];
+    const [actualA, minimumA] = a;
+    const [actualB, minimumB] = b;
+    const diffA = minimumA - actualA;
+    const diffB = minimumB - actualB;
 
     return diffB - diffA;
   });
 
   for (const [actual, minimum] of tasks) {
-    const energy = Math.max(current, minimum);
+    const diff = Math.max(minimum - currentEnergy, 0);
 
-    result += energy - current;
-    current = energy - actual;
+    result += diff;
+    currentEnergy += diff - actual;
   }
 
   return result;
