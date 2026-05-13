@@ -50,7 +50,7 @@ Therefore, nums[i] + nums[n-1-i] = 4 for every i, so nums is complementary.
 
 ## Solutions
 
-**Solution: `Prefix Sum`**
+**Solution: `Difference Array`**
 
 - Time complexity: <em>O(n+limit)</em>
 - Space complexity: <em>O(limit)</em>
@@ -66,25 +66,30 @@ Therefore, nums[i] + nums[n-1-i] = 4 for every i, so nums is complementary.
  * @return {number}
  */
 const minMoves = function (nums, limit) {
-  const moves = Array.from({length: 2 + limit * 2}).fill(0);
-  const size = nums.length;
-  let current = 0;
-  let result = size;
+  const n = nums.length;
+  const difference = Array.from({ length: limit * 2 + 2 }, () => 0);
+  let currentMoves = 0;
+  let result = n;
 
-  for (let index = 0; index < size / 2; index++) {
-    const a = Math.min(nums[index], nums[size - 1 - index]);
-    const b = Math.max(nums[index], nums[size - 1 - index]);
+  for (let index = 0; index < n / 2; index++) {
+    const a = nums[index];
+    const b = nums[n - index - 1];
+    const minNum = Math.min(a, b);
+    const maxNum = Math.max(a, b);
+    const sum = a + b;
 
-    moves[2] += 2;
-    moves[a + 1] -= 1;
-    moves[a + b] -= 1;
-    moves[a + b + 1] += 1;
-    moves[b + limit + 1] += 1;
+    difference[2] += 2;
+    difference[minNum + 1] -= 1;
+    difference[sum] -= 1;
+    difference[sum + 1] += 1;
+    difference[maxNum + limit + 1] += 1;
   }
-  for (let index = 2; index <= limit * 2; index++) {
-    current += moves[index];
-    result = Math.min(current, result);
+
+  for (let num = 2; num < limit * 2 + 2; num++) {
+    currentMoves += difference[num];
+    result = Math.min(currentMoves, result);
   }
+
   return result;
 };
 ```
