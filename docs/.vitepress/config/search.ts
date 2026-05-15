@@ -10,6 +10,7 @@ export const search: DefaultTheme.Config['search'] = {
       const h1MatchArray = html.match(/<h1[^>]*>(.*?)<\/h1>/);
 
       if (!h1MatchArray || !h1MatchArray.length) return '';
+
       const [h1] = h1MatchArray;
       const titleMatchArray = h1.match(/<h1\b[^>]*><a\b[^>]*>([^<]+)<\/a>/);
       const title = titleMatchArray?.[1] ?? '';

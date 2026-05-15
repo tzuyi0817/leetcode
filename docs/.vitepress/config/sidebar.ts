@@ -1,7 +1,8 @@
 import { readdirSync } from 'node:fs';
+import { solutionsPath } from './helper';
 import type { DefaultTheme } from 'vitepress';
 
-export function generateSidebar(solutionsPath: string): DefaultTheme.Sidebar {
+export function generateSidebar(): DefaultTheme.Sidebar {
   const files = readdirSync(solutionsPath);
 
   const aliasFiles = files.map(file => {

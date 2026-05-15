@@ -1,11 +1,10 @@
-import { resolve } from 'node:path';
 import { defineConfig } from 'vitepress';
 import { search } from './search';
 import { generateSidebar } from './sidebar';
+import { sitemap } from './sitemap';
+import { transformPageData } from './transform-page-data';
 
 const base = '/leetcode/';
-
-export const solutionsPath = resolve(__dirname, '..', '..', '..', 'solutions');
 
 export default defineConfig({
   title: 'LeetCode Solutions',
@@ -26,9 +25,8 @@ export default defineConfig({
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, viewport-fit=cover' }],
   ],
 
-  sitemap: {
-    hostname: 'https://tzuyi0817.github.io/leetcode/',
-  },
+  sitemap,
+  transformPageData,
 
   markdown: {
     theme: {
@@ -39,13 +37,16 @@ export default defineConfig({
 
   themeConfig: {
     logo: { src: '/logo.png', width: 24, height: 24 },
+    lastUpdated: {
+      formatOptions: { dateStyle: 'long', timeStyle: 'medium' },
+    },
 
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Solutions', link: '/solutions/4', activeMatch: '^/solutions/' },
     ],
 
-    sidebar: generateSidebar(solutionsPath),
+    sidebar: generateSidebar(),
     socialLinks: [{ icon: 'github', link: 'https://github.com/tzuyi0817/leetcode' }],
     search,
 

@@ -8,6 +8,15 @@ export default [
   componentHookPlugin.configs.security,
 
   {
+    files: ['**/docs/.vitepress/config/**'],
+    rules: {
+      'security/detect-non-literal-fs-filename': 'off',
+
+      'sonarjs/no-os-command-from-path': 'off',
+    },
+  },
+
+  {
     files: ['**/solutions/**'],
     rules: {
       'no-unused-vars': 'off',
