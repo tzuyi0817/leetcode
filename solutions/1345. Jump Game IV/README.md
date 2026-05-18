@@ -67,52 +67,50 @@
  */
 const minJumps = function (arr) {
   const n = arr.length;
-
-  if (n === 1) return 0;
-  const arrMap = new Map();
+  const jumpMap = new Map();
+  let queue = [0];
+  let result = 0;
 
   for (let index = 0; index < n; index++) {
     const value = arr[index];
 
-    if (!arrMap.has(value)) {
-      arrMap.set(value, []);
+    if (!jumpMap.has(value)) {
+      jumpMap.set(value, new Set());
     }
-    const indices = arrMap.get(value);
 
-    indices.push(index);
+    jumpMap.get(value).add(index);
   }
-
-  let queue = [0];
-  let result = 0;
-
-  const isValidIndex = index => index > -1 && index < n && arrMap.has(arr[index]);
 
   while (queue.length) {
     const nextQueue = [];
 
-    result += 1;
+    for (const pos of queue) {
+      if (pos === n - 1) return result;
 
-    for (const index of queue) {
-      const value = arr[index];
-      const forwardIndex = index + 1;
-      const backIndex = index - 1;
+      const value = arr[pos];
+      const jumpBack = pos - 1;
+      const jumpForward = pos + 1;
+      const candidates = jumpMap.get(value) ?? [];
 
-      if (forwardIndex === n - 1 || backIndex === n - 1) return result;
-      if (isValidIndex(forwardIndex)) {
-        nextQueue.push(forwardIndex);
-      }
-      if (isValidIndex(backIndex)) {
-        nextQueue.push(backIndex);
+      if (jumpBack >= 0 && jumpMap.has(arr[jumpBack])) {
+        nextQueue.push(jumpBack);
       }
 
-      for (const nextIndex of arrMap.get(value) ?? []) {
-        if (nextIndex === n - 1) return result;
-        nextQueue.push(nextIndex);
+      if (jumpForward < n && jumpMap.has(arr[jumpForward])) {
+        nextQueue.push(jumpForward);
       }
-      arrMap.delete(value);
+
+      jumpMap.delete(value);
+
+      for (const nextPos of candidates) {
+        nextQueue.push(nextPos);
+      }
     }
+
     queue = nextQueue;
+    result += 1;
   }
+
   return -1;
 };
 ```
