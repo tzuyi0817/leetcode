@@ -61,22 +61,22 @@ At i = 2: 1, 2, and 3 are common in A and B, so C[2] = 3.
  */
 const findThePrefixCommonArray = function (A, B) {
   const n = A.length;
-  const counts = Array.from({ length: n + 1 }, () => 0);
+  const numSet = new Set();
   const result = [];
-  let prefixCommon = 0;
 
   for (let index = 0; index < n; index++) {
-    const a = A[index];
-    const b = B[index];
+    const numA = A[index];
+    const numB = B[index];
 
-    counts[a] += 1;
-    if (counts[a] === 2) prefixCommon += 1;
+    numSet.add(numA);
+    numSet.add(numB);
 
-    counts[b] += 1;
-    if (counts[b] === 2) prefixCommon += 1;
+    const total = (index + 1) * 2;
+    const commonCount = total - numSet.size;
 
-    result.push(prefixCommon);
+    result.push(commonCount);
   }
+
   return result;
 };
 ```
