@@ -5,28 +5,42 @@
  */
 const longestCommonPrefix = function (arr1, arr2) {
   const trie = new Map();
-
-  for (const num of arr1) {
-    let node = trie;
-
-    for (const char of `${num}`) {
-      if (!node.has(char)) {
-        node.set(char, new Map());
-      }
-      node = node.get(char);
-    }
-  }
   let result = 0;
 
-  for (const num of arr2) {
-    const str = `${num}`;
-    let node = trie;
+  for (const num of arr1) {
+    let current = trie;
 
-    for (const [index, char] of str.entries()) {
-      if (!node.has(char)) break;
-      node = node.get(char);
-      result = Math.max(index + 1, result);
+    for (const char of `${num}`) {
+      if (!current.has(char)) {
+        current.set(char, new Map());
+      }
+
+      current = current.get(char);
     }
   }
+
+  const getCommonPrefixLen = target => {
+    const n = target.length;
+    let current = trie;
+
+    for (let index = 0; index < n; index++) {
+      const char = target[index];
+
+      if (!current.has(char)) {
+        return index;
+      }
+
+      current = current.get(char);
+    }
+
+    return n;
+  };
+
+  for (const num of arr2) {
+    const len = getCommonPrefixLen(`${num}`);
+
+    result = Math.max(len, result);
+  }
+
   return result;
 };
