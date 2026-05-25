@@ -42,7 +42,7 @@ In the second step, move from index 3 to index 5.
 
 ## Solutions
 
-**Solution: `Dynamic Programming`**
+**Solution: `Dynamic Programming + Prefix Sum`**
 
 - Time complexity: <em>O(n)</em>
 - Space complexity: <em>O(n)</em>
@@ -59,23 +59,25 @@ In the second step, move from index 3 to index 5.
  * @return {boolean}
  */
 const canReach = function (s, minJump, maxJump) {
-  const size = s.length;
+  const n = s.length;
 
-  if (s[size - 1] !== '0') return false;
-  const dp = new Array(size).fill(0);
-  let count = 0;
+  if (s[n - 1] === '1') return false;
+
+  const dp = Array.from({ length: n }, () => 0);
+  let validJump = 0;
 
   dp[minJump] += 1;
   dp[maxJump + 1] -= 1;
 
-  for (let index = 1; index < size; index++) {
-    const value = s[index];
+  for (let index = 1; index < n; index++) {
+    validJump += dp[index];
 
-    count += dp[index];
-    if (count <= 0 || value === '1') continue;
-    if (index + minJump < size) dp[index + minJump] += 1;
-    if (index + maxJump + 1 < size) dp[index + maxJump + 1] -= 1;
+    if (!validJump || s[index] === '1') continue;
+
+    dp[index + minJump] += 1;
+    dp[index + maxJump + 1] -= 1;
   }
-  return count > 0;
+
+  return validJump > 0;
 };
 ```
