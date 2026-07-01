@@ -61,9 +61,9 @@ It can be shown that there are no other paths with a higher safeness factor.
 
 ## Solutions
 
-**Solution: `Breadth-First Search`**
+**Solution: `Breadth-First Search + Priority Queue`**
 
-- Time complexity: <em>O(n<sup>2</sup>)</em>
+- Time complexity: <em>O(n<sup>2</sup>logn)</em>
 - Space complexity: <em>O(n<sup>2</sup>)</em>
 
 <p>&nbsp;</p>
@@ -77,67 +77,79 @@ It can be shown that there are no other paths with a higher safeness factor.
  */
 const maximumSafenessFactor = function (grid) {
   const n = grid.length;
-  const distances = new Array(n)
-    .fill('')
-    .map(_ => new Array(n).fill(Number.MAX_SAFE_INTEGER));
-  const safeness = new Array(n)
-    .fill('')
-    .map(_ => new Array(n).fill(0));
-  const moves = [
+
+  if (grid[0][0] || grid[n - 1][n - 1]) return 0;
+
+  const safeness = Array.from({ length: n }, () => new Array(n).fill(-1));
+  const directions = [
     [0, 1],
     [0, -1],
     [1, 0],
     [-1, 0],
   ];
-  const isOutOfBounds = (row, col) => row >= n || col >= n || row < 0 || col < 0;
   let queue = [];
+
+  const isOutOfBounds = (row, col) => row < 0 || col < 0 || row >= n || col >= n;
 
   for (let row = 0; row < n; row++) {
     for (let col = 0; col < n; col++) {
-      if (!grid[row][col]) continue;
-      distances[row][col] = 0;
-      queue.push({ row, col });
-    }
-  }
-  while (queue.length) {
-    const nextQueue = [];
-
-    for (const { row, col } of queue) {
-      const distance = distances[row][col];
-
-      for (const [moveRow, moveCol] of moves) {
-        const nextRow = row + moveRow;
-        const nextCol = col + moveCol;
-
-        if (isOutOfBounds(nextRow, nextCol)) continue;
-        if (distances[nextRow][nextCol] !== Number.MAX_SAFE_INTEGER) continue;
-        distances[nextRow][nextCol] = distance + 1;
-        nextQueue.push({ row: nextRow, col: nextCol });
+      if (grid[row][col]) {
+        safeness[row][col] = 0;
+        queue.push({ row, col });
       }
     }
-    queue = nextQueue;
   }
-  safeness[0][0] = distances[0][0];
-  queue.push({ row: 0, col: 0 });
 
   while (queue.length) {
     const nextQueue = [];
 
     for (const { row, col } of queue) {
-      for (const [moveRow, moveCol] of moves) {
+      const factor = safeness[row][col];
+
+      for (const [moveRow, moveCol] of directions) {
         const nextRow = row + moveRow;
         const nextCol = col + moveCol;
 
         if (isOutOfBounds(nextRow, nextCol)) continue;
-        const distance = Math.min(distances[nextRow][nextCol], safeness[row][col]);
 
-        if (distance <= safeness[nextRow][nextCol]) continue;
-        safeness[nextRow][nextCol] = distance;
+        if (safeness[nextRow][nextCol] !== -1) continue;
+
+        safeness[nextRow][nextCol] = factor + 1;
         nextQueue.push({ row: nextRow, col: nextCol });
       }
     }
+
     queue = nextQueue;
   }
-  return safeness[n - 1][n - 1];
+
+  const maxHeap = new MaxHeap(({ safeness }) => safeness);
+  const visited = Array.from({ length: n }, () => new Array(n).fill(false));
+
+  maxHeap.push({ row: 0, col: 0, safeness: safeness[0][0] });
+
+  while (maxHeap.size()) {
+    const { row, col, safeness: currentSafeness } = maxHeap.pop();
+
+    if (visited[row][col]) continue;
+
+    visited[row][col] = true;
+
+    if (row === n - 1 && col === n - 1) {
+      return currentSafeness;
+    }
+
+    for (const [moveRow, moveCol] of directions) {
+      const nextRow = row + moveRow;
+      const nextCol = col + moveCol;
+
+      if (isOutOfBounds(nextRow, nextCol)) continue;
+
+      const nextSafeness = Math.min(currentSafeness, safeness[nextRow][nextCol]);
+
+      maxHeap.push({ row: nextRow, col: nextCol, safeness: nextSafeness });
+    }
+  }
+
+  return 0;
 };
 ```
