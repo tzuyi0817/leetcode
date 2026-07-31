@@ -74,7 +74,7 @@ It can be shown that no other mapping can provide a lower cost.
 **Solution: `Greedy`**
 
 - Time complexity: <em>O(Max(n, 26log26))</em>
-- Space complexity: <em>O(26)</em>
+- Space complexity: <em>O(26 -> 1)</em>
 
 <p>&nbsp;</p>
 
@@ -87,8 +87,8 @@ It can be shown that no other mapping can provide a lower cost.
  */
 const minimumPushes = function (word) {
   const BASE_CODE = 'a'.charCodeAt(0);
-  const KEYS = 8;
-  const counts = Array.from({length: 26}).fill(0);
+  const KEYPADS = 8;
+  const counts = Array.from({ length: 26 }, () => 0);
   let result = 0;
 
   for (const letter of word) {
@@ -96,11 +96,16 @@ const minimumPushes = function (word) {
 
     counts[code] += 1;
   }
+
   counts.sort((a, b) => b - a);
 
-  for (const [index, count] of counts.entries()) {
-    result += count * (Math.floor(index / KEYS) + 1);
+  for (let index = 0; index < 26; index++) {
+    const count = counts[index];
+    const times = Math.floor(index / KEYPADS) + 1;
+
+    result += times * count;
   }
+
   return result;
 };
 ```
