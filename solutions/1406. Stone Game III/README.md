@@ -70,28 +70,38 @@ const stoneGameIII = function (stoneValue) {
   const n = stoneValue.length;
   const dp = Array.from({ length: n }, () => null);
 
-  const choosePiles = start => {
-    if (start >= n) return 0;
-    if (dp[start] !== null) return dp[start];
+  const getGameScore = index => {
+    if (index >= n) return 0;
 
-    let score = 0;
-    let result = Number.MIN_SAFE_INTEGER;
+    if (dp[index] !== null) return dp[index];
 
-    for (let index = start; index < Math.min(start + 3, n); index++) {
-      score += stoneValue[index];
+    const current = stoneValue[index];
 
-      result = Math.max(score - choosePiles(index + 1), result);
+    let result = current - getGameScore(index + 1);
+
+    if (index + 2 <= n) {
+      const score = current + stoneValue[index + 1];
+      const pickTwo = score - getGameScore(index + 2);
+
+      result = Math.max(pickTwo, result);
     }
-    dp[start] = result;
+
+    if (index + 3 <= n) {
+      const score = current + stoneValue[index + 1] + stoneValue[index + 2];
+      const pickThree = score - getGameScore(index + 3);
+
+      result = Math.max(pickThree, result);
+    }
+
+    dp[index] = result;
 
     return result;
   };
 
-  const aliceAdvantage = choosePiles(0);
+  const score = getGameScore(0);
 
-  if (aliceAdvantage > 0) return 'Alice';
-  if (aliceAdvantage < 0) return 'Bob';
+  if (score === 0) return 'Tie';
 
-  return 'Tie';
+  return score > 0 ? 'Alice' : 'Bob';
 };
 ```
