@@ -5,123 +5,116 @@
  * @return {number[]}
  */
 const longestRepeating = function (s, queryCharacters, queryIndices) {
-  const n = queryCharacters.length;
   const tree = new SegmentTree(s);
-  const result = [];
 
-  for (let index = 0; index < n; index++) {
-    tree.update(queryCharacters[index], queryIndices[index]);
-    result.push(tree.getLongestRepeating());
-  }
+  return queryIndices.map((queryIndex, index) => {
+    const char = queryCharacters[index];
 
-  return result;
+    tree.update(char, queryIndex);
+
+    return tree.getLongestRepeating();
+  });
 };
 
 class TreeNode {
-  constructor(l, r, maxChar, prefixChar, suffixChar, maxLength, prefixLength, suffixLength, left = null, right = null) {
+  constructor({ l, r, prefixChar, suffixChar, prefixLen, suffixLen, maxLen, leftNode = null, rightNode = null }) {
     this.l = l;
     this.r = r;
-    this.maxChar = maxChar;
     this.prefixChar = prefixChar;
     this.suffixChar = suffixChar;
-    this.maxLength = maxLength;
-    this.prefixLength = prefixLength;
-    this.suffixLength = suffixLength;
-    this.left = left;
-    this.right = right;
+    this.prefixLen = prefixLen;
+    this.suffixLen = suffixLen;
+    this.maxLen = maxLen;
+    this.leftNode = leftNode;
+    this.rightNode = rightNode;
   }
 }
 
 class SegmentTree {
   constructor(s) {
-    this.root = this.build(s, 0, s.length - 1);
+    this.root = this.#build(s, 0, s.length - 1);
   }
 
-  build(s, l, r) {
+  #build(s, l, r) {
     if (l === r) {
-      return new TreeNode(l, r, s[l], s[l], s[l], 1, 1, 1);
+      return new TreeNode({
+        l,
+        r,
+        prefixChar: s[l],
+        suffixChar: s[l],
+        prefixLen: 1,
+        suffixLen: 1,
+        maxLen: 1,
+      });
     }
 
     const mid = Math.floor((l + r) / 2);
-    const left = this.build(s, l, mid);
-    const right = this.build(s, mid + 1, r);
+    const leftNode = this.#build(s, l, mid);
+    const rightNode = this.#build(s, mid + 1, r);
 
-    return this.merge(left, right);
+    return this.#merge(leftNode, rightNode);
   }
 
-  merge(left, right) {
-    let maxLength = 0;
-    let maxChar = '';
+  #merge(left, right) {
     const prefixChar = left.prefixChar;
-    let prefixLength = left.prefixLength;
     const suffixChar = right.suffixChar;
-    let suffixLength = right.suffixLength;
+    let prefixLen = left.prefixLen;
+    let suffixLen = right.suffixLen;
+    let maxLen = Math.max(left.maxLen, right.maxLen);
 
-    if (left.maxLength > right.maxLength) {
-      maxLength = left.maxLength;
-      maxChar = left.maxChar;
-    } else {
-      maxLength = right.maxLength;
-      maxChar = right.maxChar;
+    if (left.suffixChar === right.prefixChar) {
+      const len = left.suffixLen + right.prefixLen;
+
+      maxLen = Math.max(maxLen, len);
     }
 
-    if (left.suffixChar === right.prefixChar && left.suffixLength + right.prefixLength > maxLength) {
-      maxLength = left.suffixLength + right.prefixLength;
-      maxChar = left.maxChar;
+    if (prefixChar === right.prefixChar && left.l + prefixLen === right.l) {
+      prefixLen += right.prefixLen;
     }
 
-    if (prefixChar === right.prefixChar && left.l + prefixLength === right.l) {
-      prefixLength += right.prefixLength;
+    if (suffixChar === left.suffixChar && right.r - suffixLen === left.r) {
+      suffixLen += left.suffixLen;
     }
 
-    if (suffixChar === left.suffixChar && right.r - suffixLength === left.r) {
-      suffixLength += left.suffixLength;
-    }
-
-    return new TreeNode(
-      left.l,
-      right.r,
-      maxChar,
+    return new TreeNode({
+      l: left.l,
+      r: right.r,
       prefixChar,
       suffixChar,
-      maxLength,
-      prefixLength,
-      suffixLength,
-      left,
-      right,
-    );
+      prefixLen,
+      suffixLen,
+      maxLen,
+      leftNode: left,
+      rightNode: right,
+    });
   }
 
   update(char, index) {
-    this.root = this._update(this.root, char, index);
+    this.root = this.#update(char, index, this.root);
   }
 
-  _update(root, char, index) {
-    if (root.l === index && root.r === index) {
-      root.maxChar = char;
-      root.prefixChar = char;
-      root.suffixChar = char;
-      root.maxLength = 1;
-      root.prefixLength = 1;
-      root.suffixLength = 1;
+  #update(char, index, node) {
+    if (node.l === index && node.r === index) {
+      node.prefixChar = char;
+      node.suffixChar = char;
 
-      return root;
+      return node;
     }
 
-    const mid = Math.floor((root.l + root.r) / 2);
+    const mid = Math.floor((node.l + node.r) / 2);
 
     if (index <= mid) {
-      const left = this._update(root.left, char, index);
+      const left = this.#update(char, index, node.leftNode);
 
-      return this.merge(left, root.right);
+      return this.#merge(left, node.rightNode);
     } else {
-      const right = this._update(root.right, char, index);
+      const right = this.#update(char, index, node.rightNode);
 
-      return this.merge(root.left, right);
+      return this.#merge(node.leftNode, right);
     }
   }
 
   getLongestRepeating() {
-    return this.root.maxLength;
+    return this.root.maxLen;
   }
 }
