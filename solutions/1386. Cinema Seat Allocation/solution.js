@@ -4,23 +4,39 @@
  * @return {number}
  */
 const maxNumberOfFamilies = function (n, reservedSeats) {
-  const reservedMap = reservedSeats.reduce((map, [row, labelled]) => {
-    const labelleds = map.get(row) ?? new Set();
-
-    labelleds.add(labelled);
-
-    return map.set(row, labelleds);
-  }, new Map());
-  const getSeats = (labelleds, check) => {
-    return check.some(labelled => labelleds.has(labelled)) ? 0 : 1;
-  };
+  const m = reservedSeats.length;
   let result = 0;
 
-  reservedMap.forEach(labelleds => {
-    const seats = getSeats(labelleds, [2, 3, 4, 5]) + getSeats(labelleds, [6, 7, 8, 9]);
+  const getSeats = (current, prev) => {
+    if (prev === 2) prev += 1;
 
-    result += seats || getSeats(labelleds, [4, 5, 6, 7]);
-  });
+    if (current === 9) current -= 1;
 
-  return result + (n - reservedMap.size) * 2;
+    const seats = Math.floor((current - prev - 1) / 4);
+
+    return Math.max(0, seats);
+  };
+
+  reservedSeats.sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+  reservedSeats.unshift([1, 0]);
+  reservedSeats.push([n, 10]);
+
+  for (let index = 1; index < m + 2; index++) {
+    const [prevRow, prevSeat] = reservedSeats[index - 1];
+    const [row, seat] = reservedSeats[index];
+
+    if (prevRow === row) {
+      const seats = getSeats(seat, prevSeat);
+
+      result += seats;
+    } else {
+      const prevSeats = getSeats(10, prevSeat);
+      const currentSeats = getSeats(seat, 1);
+      const gapSeats = (row - prevRow - 1) * 2;
+
+      result += prevSeats + gapSeats + currentSeats;
+    }
+  }
+
+  return result;
 };
