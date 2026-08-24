@@ -80,27 +80,29 @@ The difference between their scores is (-22) - 0 = -22.
  */
 const stoneGameVIII = function (stones) {
   const n = stones.length;
-  const prefixScores = Array.from({ length: n }, () => 0);
-  const dp = Array.from({ length: n }, () => Number.MIN_SAFE_INTEGER);
+  const prefixSum = Array.from({ length: n + 1 }, () => 0);
+  const dp = Array.from({ length: n }, () => null);
 
-  prefixScores[0] = stones[0];
+  for (let index = 1; index <= n; index++) {
+    const value = stones[index - 1];
 
-  for (let index = 1; index < n; index++) {
-    prefixScores[index] += stones[index] + prefixScores[index - 1];
+    prefixSum[index] = prefixSum[index - 1] + value;
   }
 
-  const chooseStones = index => {
-    if (index === n - 1) return prefixScores[index];
-    if (dp[index] !== Number.MIN_SAFE_INTEGER) return dp[index];
-    const skipScores = chooseStones(index + 1);
-    const pickScores = prefixScores[index] - chooseStones(index + 1);
-    const result = Math.max(skipScores, pickScores);
+  const getScoreDiff = index => {
+    if (index === n - 1) return prefixSum[n];
+
+    if (dp[index] !== null) return dp[index];
+
+    const score = prefixSum[index + 1];
+    const diff = getScoreDiff(index + 1);
+    const result = Math.max(score - diff, diff);
 
     dp[index] = result;
 
     return result;
   };
 
-  return chooseStones(1);
+  return getScoreDiff(1);
 };
 ```
