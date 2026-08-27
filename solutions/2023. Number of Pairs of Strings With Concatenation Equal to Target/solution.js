@@ -16,7 +16,7 @@ const numOfPairs = function (nums, target) {
     const pairDigit = target.slice(digit.length);
 
     if (!countMap.has(pairDigit)) continue;
-    result += digit === pairDigit ? count * (count - 1) : count * countMap.get(pairDigit);
+    result += count * (digit === pairDigit ? count - 1 : countMap.get(pairDigit));
   }
   return result;
 };

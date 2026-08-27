@@ -13,7 +13,7 @@ const countRangeSum = function (nums, lower, upper) {
   }
 
   const sortedPrefixSum = [...new Set(prefixSum)].toSorted((a, b) => a - b);
-  const bit = Array.from({ length: sortedPrefixSum.length + 2 }).fill(0);
+  const bit = Array.from({ length: sortedPrefixSum.length + 2 }, () => 0);
 
   const getIndex = value => {
     let left = 0;

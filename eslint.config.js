@@ -17,11 +17,20 @@ export default [
   },
 
   {
+    files: ['**/scripts/**'],
+    rules: {
+      'security/detect-non-literal-fs-filename': 'off',
+    },
+  },
+
+  {
     files: ['**/solutions/**'],
     rules: {
       'no-unused-vars': 'off',
 
       'security/detect-object-injection': 'off',
+      'security/detect-possible-timing-attacks': 'off',
+      'security/detect-unsafe-regex': 'off',
 
       'sonarjs/no-nested-assignment': 'off',
       'sonarjs/cognitive-complexity': 'off',
@@ -31,6 +40,7 @@ export default [
 
       'unicorn/no-new-array': 'off',
       'unicorn/prefer-code-point': 'off',
+      'unicorn/filename-case': 'off',
     },
     languageOptions: {
       globals: {

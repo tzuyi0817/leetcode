@@ -24,7 +24,7 @@ Spreadsheet.prototype.resetCell = function (cell) {
  * @return {number}
  */
 Spreadsheet.prototype.getValue = function (formula) {
-  const [a, b] = formula.slice(1).split('+');
+  const [a, b] = formula.slice(1).split('+', 2);
   const numA = Number(a);
   const numB = Number(b);
   const x = Number.isNaN(numA) ? (this.cellMap.get(a) ?? 0) : numA;

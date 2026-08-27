@@ -12,7 +12,7 @@ export const solutionsPath = resolve(__dirname, '..', '..', '..', 'solutions');
 const serialToDir = new Map<string, string>();
 
 for (const dir of readdirSync(solutionsPath)) {
-  const [serial] = dir.split('.');
+  const [serial] = dir.split('.', 1);
 
   serialToDir.set(serial, dir);
 }

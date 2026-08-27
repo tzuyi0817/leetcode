@@ -13,7 +13,7 @@ const maxResult = function (nums, k) {
 
     while (queue.length && queue.at(-1) < previous) queue.pop();
     queue.push(previous);
-    if (index - k - 1 >= 0 && queue[0] === dp[index - k - 1]) queue.shift();
+    if (index >= k + 1 && queue[0] === dp[index - k - 1]) queue.shift();
     dp[index] += queue[0];
   }
   return dp[size - 1];

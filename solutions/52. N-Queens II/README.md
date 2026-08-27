@@ -48,8 +48,8 @@
  */
 const totalNQueens = function (n) {
   const cols = new Array(n).fill(false);
-  const diagonals = Array.from({length: n * 2}).fill(false);
-  const inverseDiagonals = Array.from({length: n * 2}).fill(false);
+  const diagonals = Array.from({ length: n * 2 }, () => false);
+  const inverseDiagonals = Array.from({ length: n * 2 }, () => false);
   const placementQueen = row => {
     if (row === n) return 1;
     let result = 0;

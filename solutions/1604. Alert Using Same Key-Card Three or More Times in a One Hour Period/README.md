@@ -62,7 +62,7 @@
 const alertNames = function (keyName, keyTime) {
   const useKeyCardMap = keyName.reduce((map, name, index) => {
     const times = map.get(name) ?? [];
-    const [hour, minute] = keyTime[index].split(':');
+    const [hour, minute] = keyTime[index].split(':', 2);
 
     times.push(hour * 60 + +minute);
 

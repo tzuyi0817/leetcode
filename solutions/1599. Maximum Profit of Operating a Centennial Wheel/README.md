@@ -97,7 +97,7 @@ const minOperationsMaxProfit = function (customers, boardingCost, runningCost) {
 
   function runningWheel() {
     rotate += 1;
-    profit += wait >= 4 ? 4 * boardingCost - runningCost : wait * boardingCost - runningCost;
+    profit += Math.min(wait, 4) * boardingCost - runningCost;
 
     wait = Math.max(wait - 4, 0);
     if (profit < 0 || result.profit >= profit) return;

@@ -73,7 +73,7 @@ const maxEqualRowsAfterFlips = function (matrix) {
       const value = matrix[row][col];
       const flipValue = isFlip ? value ^ 1 : value;
 
-      current += `${flipValue}`;
+      current += String(flipValue);
     }
     const sameRowCount = rowMap.get(current) ?? 0;
 

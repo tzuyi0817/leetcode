@@ -78,9 +78,10 @@ const trapRainWater = function (heightMap) {
     for (const [moveRow, moveCol] of directions) {
       const row = cell.row + moveRow;
       const col = cell.col + moveCol;
-      const key = `${row},${col}`;
 
       if (row < 0 || col < 0 || row >= m || col >= n) continue;
+      const key = `${row},${col}`;
+
       if (visited.has(key)) continue;
       const height = heightMap[row][col];
 

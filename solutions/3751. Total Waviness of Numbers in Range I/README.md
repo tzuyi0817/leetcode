@@ -100,7 +100,7 @@ const totalWaviness = function (num1, num2) {
   let result = 0;
 
   const getWaviness = num => {
-    const target = `${num}`;
+    const target = String(num);
     const n = target.length;
     let waviness = 0;
 

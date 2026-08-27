@@ -12,13 +12,14 @@ const minCostToEqualizeArray = function (nums, cost1, cost2) {
   const maxNum = Math.max(...nums);
   const bigCost1 = BigInt(cost1);
   const bigCost2 = BigInt(cost2);
-  let result = -1n;
 
   if (cost1 * 2 <= cost2 || n < 3) {
     const diff = BigInt(maxNum * n) - sum;
 
     return Number((diff * bigCost1) % MODULO);
   }
+
+  let result = -1n;
 
   for (let target = maxNum; target <= maxNum * 2; target++) {
     const maxGap = BigInt(target - minNum);

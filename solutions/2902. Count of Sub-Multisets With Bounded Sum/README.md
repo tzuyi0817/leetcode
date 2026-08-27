@@ -85,7 +85,7 @@ const countSubMultisets = function (nums, l, r) {
   numMap.delete(0);
   dp[0] = 1n;
 
-  const sortedNums = [...numMap.entries()].toSorted((a, b) => a[0] - b[0]);
+  const sortedNums = [...numMap].toSorted((a, b) => a[0] - b[0]);
   let result = 0n;
 
   for (const [num, count] of sortedNums) {

@@ -15,7 +15,7 @@ const smallestGoodBase = function (n) {
       current *= base;
       sum += current;
     }
-    if (sum === num) return `${base}`;
+    if (sum === num) return String(base);
   }
-  return `${num - 1n}`;
+  return String(num - 1n);
 };

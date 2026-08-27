@@ -74,10 +74,8 @@ const minimumMoves = function (grid) {
 
     result += 1;
 
-    for (const {
-      isHorizontal,
-      snake: [row, col],
-    } of queue) {
+    for (const { isHorizontal, snake } of queue) {
+      const [row, col] = snake;
       const head = [row, col];
       const tail = isHorizontal ? [row, col - 1] : [row - 1, col];
       const rightSnake = moveRight(head, tail, isHorizontal);

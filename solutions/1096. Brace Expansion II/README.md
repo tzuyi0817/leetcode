@@ -134,6 +134,6 @@ const braceExpansionII = function (expression) {
     return [...result];
   };
 
-  return braceWord(0, n - 1).toSorted();
+  return braceWord(0, n - 1).toSorted((a, b) => a.localeCompare(b));
 };
 ```

@@ -5,7 +5,7 @@
  */
 const numberOfRounds = function (loginTime, logoutTime) {
   const calculateMinutes = time => {
-    const [hours, minutes] = time.split(':');
+    const [hours, minutes] = time.split(':', 2);
 
     return hours * 60 + +minutes;
   };
@@ -18,5 +18,5 @@ const numberOfRounds = function (loginTime, logoutTime) {
   const startRound = Math.ceil(loginMinutes / ROUND_MINUTES);
   const endRound = Math.floor(logoutMinutes / ROUND_MINUTES);
 
-  return endRound >= startRound ? endRound - startRound : endRound + MAX_ROUND - startRound;
+  return (endRound >= startRound ? endRound : endRound + MAX_ROUND) - startRound;
 };

@@ -98,7 +98,7 @@ const areSimilar = function (mat, k) {
 
     for (let col = 0; col < n; col++) {
       const value = mat[row][col];
-      const shiftCol = isOddRow ? (col + k) % n : (col - (k % n) + n) % n;
+      const shiftCol = (isOddRow ? col + k : col - (k % n) + n) % n;
 
       if (value !== mat[row][shiftCol]) return false;
     }

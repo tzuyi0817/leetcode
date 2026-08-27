@@ -24,7 +24,7 @@ const secondMinimum = function (n, edges, time, change) {
 
     for (const { node, elapsed } of queue) {
       const rounds = Math.floor(elapsed / change);
-      const nextElapsed = rounds % 2 ? (rounds + 1) * change + time : elapsed + time;
+      const nextElapsed = (rounds % 2 ? (rounds + 1) * change : elapsed) + time;
 
       for (const neighbor of graph[node]) {
         const [firstElapsed, secondElapsed] = minElapsed[neighbor];

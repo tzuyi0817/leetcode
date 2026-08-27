@@ -4,8 +4,8 @@
  * @return {boolean}
  */
 const checkIfCanBreak = function (s1, s2) {
-  const permutationS1 = s1.split('').toSorted();
-  const permutationS2 = s2.split('').toSorted();
+  const permutationS1 = s1.split('').toSorted((a, b) => a.localeCompare(b));
+  const permutationS2 = s2.split('').toSorted((a, b) => a.localeCompare(b));
 
   const isCanBreak = (s1, s2) => {
     for (const [index, element] of s1.entries()) {

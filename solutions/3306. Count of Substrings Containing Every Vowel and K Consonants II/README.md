@@ -80,9 +80,9 @@
  */
 const countOfSubstrings = function (word, k) {
   const n = word.length;
-  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  const vowels = new Set(['a', 'e', 'i', 'o', 'u']);
 
-  const isVowel = letter => vowels.includes(letter);
+  const isVowel = letter => vowels.has(letter);
 
   const atMost = consonants => {
     const vowelMap = new Map();
@@ -101,7 +101,7 @@ const countOfSubstrings = function (word, k) {
         consonantCount += 1;
       }
 
-      while (vowelMap.size === vowels.length && consonantCount > consonants) {
+      while (vowelMap.size === vowels.size && consonantCount > consonants) {
         const current = word[left];
 
         if (isVowel(current)) {

@@ -94,9 +94,9 @@ const minCost = function (maxTime, edges, passingFees) {
 
     for (const neighbor of graph[city]) {
       const totalTime = time + neighbor.time;
-      const totalCost = cost + passingFees[neighbor.city];
 
       if (totalTime > maxTime || totalTime >= dp[neighbor.city]) continue;
+      const totalCost = cost + passingFees[neighbor.city];
 
       dp[neighbor.city] = totalTime;
       minHeap.enqueue({ city: neighbor.city, time: totalTime, cost: totalCost });

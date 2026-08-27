@@ -11,10 +11,10 @@ const minCost = function (startPos, homePos, rowCosts, colCosts) {
   let result = 0;
 
   while (row !== homeRow) {
-    result += row > homeRow ? rowCosts[--row] : rowCosts[++row];
+    result += rowCosts[row > homeRow ? --row : ++row];
   }
   while (col !== homeCol) {
-    result += col > homeCol ? colCosts[--col] : colCosts[++col];
+    result += colCosts[col > homeCol ? --col : ++col];
   }
   return result;
 };

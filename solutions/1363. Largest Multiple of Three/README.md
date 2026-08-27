@@ -72,7 +72,7 @@ const largestMultipleOfThree = function (digits) {
   let result = '';
 
   for (let digit = 9; digit >= 0; digit--) {
-    result += `${digit}`.repeat(counts[digit]);
+    result += String(digit).repeat(counts[digit]);
   }
 
   return result[0] === '0' ? '0' : result;

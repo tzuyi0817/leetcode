@@ -111,7 +111,7 @@ const kMirror = function (k, n) {
   const getValidNumber = () => {
     mirrorNumber = nextMirrorNumber();
     const num = Number.parseInt(mirrorNumber.join(''), k);
-    const splitNum = `${num}`.split('');
+    const splitNum = String(num).split('');
     let left = 0;
     let right = splitNum.length - 1;
 

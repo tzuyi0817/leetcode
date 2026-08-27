@@ -14,7 +14,7 @@ const getLucky = function (s, k) {
   }
 
   for (let index = 0; index < k; index++) {
-    const str = `${result}`;
+    const str = String(result);
     let current = 0;
 
     for (const num of str) {

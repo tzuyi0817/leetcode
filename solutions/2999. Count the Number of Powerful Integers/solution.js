@@ -6,9 +6,9 @@
  * @return {number}
  */
 const numberOfPowerfulInt = function (start, finish, limit, s) {
-  const a = `${start}`;
-  const b = `${finish}`;
-  const aWithLeadingZeros = '0'.repeat(b.length - a.length) + a;
+  const a = String(start);
+  const b = String(finish);
+  const aWithLeadingZeros = a.padStart(b.length, '0');
   const mem = Array.from({ length: b.length }, () => {
     return new Array(2).fill('').map(() => new Array(2).fill(-1));
   });

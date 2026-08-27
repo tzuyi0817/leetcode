@@ -83,9 +83,7 @@ const maxPathScore = function (grid, k) {
   const m = grid.length;
   const n = grid[0].length;
   const dp = Array.from({ length: m }, () => {
-    return new Array(n)
-      .fill('')
-      .map(() => new Array(k + 1).fill(null));
+    return new Array(n).fill('').map(() => new Array(k + 1).fill(null));
   });
 
   const getMaxScore = (row, col, cost) => {
@@ -95,11 +93,12 @@ const maxPathScore = function (grid, k) {
 
     const score = grid[row][col];
     const nextCost = cost + (score ? 1 : 0);
-    let result = -1;
 
     if (row === m - 1 && col === n - 1) {
       return nextCost > k ? -1 : score;
     }
+
+    let result = -1;
 
     if (nextCost <= k) {
       const moveRightScore = getMaxScore(row, col + 1, nextCost);

@@ -67,9 +67,7 @@ const ways = function (pizza, k) {
   const n = pizza[0].length;
   const prefixSum = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
   const dp = Array.from({ length: m }, () => {
-    return new Array(n)
-      .fill('')
-      .map(_ => new Array(k).fill(-1));
+    return new Array(n).fill('').map(_ => new Array(k).fill(-1));
   });
 
   for (let row = m - 1; row >= 0; row--) {
@@ -91,13 +89,13 @@ const ways = function (pizza, k) {
     let result = 0;
 
     for (let row = startRow + 1; row < m; row++) {
-      if (prefixSum[startRow][startCol] - prefixSum[row][startCol] > 0) {
+      if (prefixSum[startRow][startCol] > prefixSum[row][startCol]) {
         result = (result + cutPizza(row, startCol, cuts + 1)) % MODULO;
       }
     }
 
     for (let col = startCol + 1; col < n; col++) {
-      if (prefixSum[startRow][startCol] - prefixSum[startRow][col] > 0) {
+      if (prefixSum[startRow][startCol] > prefixSum[startRow][col]) {
         result = (result + cutPizza(startRow, col, cuts + 1)) % MODULO;
       }
     }

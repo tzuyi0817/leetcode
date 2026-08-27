@@ -21,7 +21,7 @@ const readBinaryWatch = function (turnedOn) {
   for (let h = 0; h < HOUR; h++) {
     for (let m = 0; m < MINUTE; m++) {
       if (popcount(h) + popcount(m) === turnedOn) {
-        const minute = `${m}`.padStart(2, '0');
+        const minute = String(m).padStart(2, '0');
         const time = `${h}:${minute}`;
 
         result.push(time);

@@ -26,7 +26,7 @@ const hitBricks = function (grid, hits) {
   for (let col = 0; col < n; col++) {
     checkGrid(0, col);
   }
-  const result = Array.from({ length: hits.length }).fill(0);
+  const result = Array.from({ length: hits.length }, () => 0);
 
   for (let index = hits.length - 1; index >= 0; index--) {
     const [row, col] = hits[index];
@@ -34,9 +34,9 @@ const hitBricks = function (grid, hits) {
     grid[row][col] += 1;
 
     if (grid[row][col] !== 1) continue;
-    const top = row - 1 >= 0 && bricks.has((row - 1) * n + col);
+    const top = row >= 1 && bricks.has((row - 1) * n + col);
     const bottom = row + 1 < m && bricks.has((row + 1) * n + col);
-    const left = col - 1 >= 0 && bricks.has(row * n + col - 1);
+    const left = col >= 1 && bricks.has(row * n + col - 1);
     const right = col + 1 < n && bricks.has(row * n + col + 1);
 
     if (!top && !bottom && !left && !right && row) continue;

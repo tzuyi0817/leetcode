@@ -23,7 +23,7 @@ const countKSubsequencesWithMaxBeauty = function (s, k) {
     countMap.set(count, numChars + 1);
   }
 
-  const sortedFreqPairs = [...countMap.entries()].toSorted((a, b) => b[0] - a[0]);
+  const sortedFreqPairs = [...countMap].toSorted((a, b) => b[0] - a[0]);
   let result = 1n;
 
   for (const [freq, numChars] of sortedFreqPairs) {

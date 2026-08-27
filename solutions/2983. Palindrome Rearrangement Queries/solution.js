@@ -23,7 +23,7 @@ const canMakePalindromeQueries = function (s, queries) {
   }
 
   function check(a, b, c, d) {
-    if (diff[a] > 0 || diff[m] - diff[Math.max(b, d) + 1] > 0) {
+    if (diff[a] > 0 || diff[m] > diff[Math.max(b, d) + 1]) {
       return false;
     }
 
@@ -34,7 +34,7 @@ const canMakePalindromeQueries = function (s, queries) {
     }
 
     if (b < c) {
-      if (diff[c] - diff[b + 1] > 0) return false;
+      if (diff[c] > diff[b + 1]) return false;
 
       const cnt1_ab = count(pre1, a, b);
       const cnt2_ab = count(pre2, a, b);
@@ -48,7 +48,7 @@ const canMakePalindromeQueries = function (s, queries) {
       const cnt1 = sub(count(pre1, a, b), count(pre2, a, c - 1));
       const cnt2 = sub(count(pre2, c, d), count(pre1, b + 1, d));
 
-      return cnt1.every((val, i) => val >= 0 && cnt2[i] >= 0 && val === cnt2[i]);
+      return cnt1.every((val, i) => val >= 0 && val === cnt2[i]);
     }
 
     return false;

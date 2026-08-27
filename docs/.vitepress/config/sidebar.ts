@@ -6,7 +6,7 @@ export function generateSidebar(): DefaultTheme.Sidebar {
   const files = readdirSync(solutionsPath);
 
   const aliasFiles = files.map(file => {
-    const [serialNum] = file.split('.');
+    const [serialNum] = file.split('.', 1);
 
     return {
       serialNum,

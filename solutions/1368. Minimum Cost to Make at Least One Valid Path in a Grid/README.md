@@ -93,9 +93,9 @@ const minCost = function (grid) {
 
   while (queue.size()) {
     const { row, col, cost } = queue.dequeue().element;
-    const cell = grid[row][col];
 
     if (row === m - 1 && col === n - 1) return cost;
+    const cell = grid[row][col];
 
     for (const [moveCol, moveRow, sign] of directions) {
       const nextCol = col + moveCol;

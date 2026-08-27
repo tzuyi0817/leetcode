@@ -10,7 +10,7 @@ const findXSum = function (nums, k, x) {
   const result = [];
 
   const getXSum = () => {
-    const counts = [...countMap.entries()];
+    const counts = [...countMap];
 
     if (counts.length <= x) {
       return counts.reduce((sum, [num, count]) => sum + num * count, 0);

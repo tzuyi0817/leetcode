@@ -35,7 +35,7 @@ const smallestRange = function (nums) {
         result = [leftElement.num, element.num];
       }
       coverMap.set(leftElement.index, leftCount - 1);
-      if (leftCount - 1 === 0) coverCount -= 1;
+      if (leftCount === 1) coverCount -= 1;
       left += 1;
     }
   }

@@ -25,9 +25,9 @@ const minFlips = function (mat) {
   const flipMatrix = (row, col, bitmask) => {
     bitmask ^= getBitmask(row, col);
 
-    if (row - 1 >= 0) bitmask ^= getBitmask(row - 1, col);
+    if (row >= 1) bitmask ^= getBitmask(row - 1, col);
     if (row + 1 < m) bitmask ^= getBitmask(row + 1, col);
-    if (col - 1 >= 0) bitmask ^= getBitmask(row, col - 1);
+    if (col >= 1) bitmask ^= getBitmask(row, col - 1);
     if (col + 1 < n) bitmask ^= getBitmask(row, col + 1);
 
     return bitmask;

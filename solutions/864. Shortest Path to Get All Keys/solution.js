@@ -45,9 +45,9 @@ const shortestPathAllKeys = function (grid) {
 
         if (nextRow < 0 || nextCol < 0 || nextRow >= m || nextCol >= n) continue;
         const value = grid[nextRow][nextCol];
-        let nextKeys = keys;
 
         if (value === '#') continue;
+        let nextKeys = keys;
 
         if (isLock(value)) {
           const bitmask = 1 << bitmaskMap[value.toLowerCase()];

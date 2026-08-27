@@ -11,15 +11,15 @@ const minFlips = function (s) {
   for (let index = 0; index < size; index++) {
     const value = s[index];
 
-    value === `${index % 2}` ? (startOne += 1) : (startZero += 1);
+    value === String(index % 2) ? (startOne += 1) : (startZero += 1);
   }
   result = Math.min(startZero, startOne);
 
   for (let index = 0; index < size; index++) {
     const value = s[index];
 
-    value === `${(size + index) % 2}` ? (startOne += 1) : (startZero += 1);
-    value === `${index % 2}` ? (startOne -= 1) : (startZero -= 1);
+    value === String((size + index) % 2) ? (startOne += 1) : (startZero += 1);
+    value === String(index % 2) ? (startOne -= 1) : (startZero -= 1);
     result = Math.min(result, startZero, startOne);
   }
   return result;

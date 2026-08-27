@@ -25,7 +25,7 @@ const superpalindromesInRange = function (left, right) {
       const num = BigInt(current) ** 2n;
 
       if (num > BigInt(right)) return;
-      if (num >= BigInt(left) && isPalindrome(`${num}`)) result += 1;
+      if (num >= BigInt(left) && isPalindrome(String(num))) result += 1;
     }
 
     for (let num = 0; num <= 9; num++) {
@@ -36,7 +36,7 @@ const superpalindromesInRange = function (left, right) {
   createPalindrome('');
 
   for (let num = 0; num <= 9; num++) {
-    createPalindrome(`${num}`);
+    createPalindrome(String(num));
   }
   return result;
 };

@@ -10,7 +10,7 @@ fs.mkdirSync(vitepressRouteRoot, { recursive: true });
 
 for (const solution of solutions) {
   const solutionMd = `${solutionsPath}/${solution}/README.md`;
-  const [serialNum] = solution.split('.');
+  const [serialNum] = solution.split('.', 1);
   const isExists = fs.existsSync(solutionMd);
   const content = isExists ? fs.readFileSync(solutionMd, 'utf8') : '';
 

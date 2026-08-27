@@ -59,12 +59,14 @@ MovieRentingSystem.prototype.search = function (movie) {
  * @return {void}
  */
 MovieRentingSystem.prototype.rent = function (shop, movie) {
-  if (this.shops[shop][movie].rented === undefined) {
-    const rentData = [shop, movie];
-
-    this.shops[shop][movie].rented = rentData;
-    this.rented.push(rentData);
+  if (this.shops[shop][movie].rented !== undefined) {
+    return;
   }
+
+  const rentData = [shop, movie];
+
+  this.shops[shop][movie].rented = rentData;
+  this.rented.push(rentData);
 };
 
 /**

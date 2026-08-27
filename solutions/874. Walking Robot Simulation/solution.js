@@ -17,7 +17,7 @@ const robotSim = function (commands, obstacles) {
   const turnFacing = command => {
     const { facing } = current;
 
-    current.facing = command === TURN_RIGHT ? (facing + 1) % 4 : (facing - 1 + 4) % 4;
+    current.facing = (command === TURN_RIGHT ? facing + 1 : facing - 1 + 4) % 4;
   };
 
   const current = { facing: 0, x: 0, y: 0 };

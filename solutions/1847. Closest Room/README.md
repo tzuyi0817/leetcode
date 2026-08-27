@@ -110,7 +110,7 @@ const closestRoom = function (rooms, queries) {
 
     if (leftDiff === rightDiff) return Math.min(sortedRooms[left], sortedRooms[right]);
 
-    return leftDiff > rightDiff ? sortedRooms[right] : sortedRooms[left];
+    return sortedRooms[leftDiff > rightDiff ? right : left];
   };
 
   rooms.sort((a, b) => b[1] - a[1]);

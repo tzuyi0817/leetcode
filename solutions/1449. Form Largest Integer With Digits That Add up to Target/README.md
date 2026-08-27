@@ -88,7 +88,7 @@ const largestNumber = function (cost, target) {
       const nextInteger = paintDigit(nextCost);
 
       if (nextInteger === '0') continue;
-      const digit = `${index + 1}`;
+      const digit = String(index + 1);
       const integer = `${digit}${nextInteger}`;
 
       if (integer.length < result.length) continue;

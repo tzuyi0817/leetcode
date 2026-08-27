@@ -13,7 +13,7 @@ const getBiggestThree = function (grid) {
   const getRhombusSum = (row, col, len) => {
     if (!len) return grid[row][col];
 
-    if (row - len < 0 || row + len >= m || col - len < 0 || col + len >= n) return 0;
+    if (row < len || row + len >= m || col < len || col + len >= n) return 0;
 
     const top = grid[row - len][col];
     const left = grid[row][col - len];

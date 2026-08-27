@@ -7,7 +7,7 @@ const getLengthOfOptimalCompression = function (s, k) {
   const n = s.length;
   const memo = new Map();
 
-  const getLength = count => 1 + (count > 1 ? `${count}`.length : 0);
+  const getLength = count => 1 + (count > 1 ? String(count).length : 0);
 
   const getMinCompressLength = (index, remove, prevStr, count) => {
     if (index >= n) return count <= k - remove ? 0 : getLength(count);

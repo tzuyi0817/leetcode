@@ -125,9 +125,10 @@ const minPushBox = function (grid) {
         for (const [moveRow, moveCol] of directions) {
           const nextRow = row + moveRow;
           const nextCol = col + moveCol;
-          const key = nextRow * n + nextCol;
 
           if (nextRow === target.row && nextCol === target.col) return true;
+          const key = nextRow * n + nextCol;
+
           if (isOutOfBounds(nextRow, nextCol) || memo[key]) continue;
           if (nextRow === box.row && nextCol === box.col) continue;
           if (grid[nextRow][nextCol] === OBSTACLE) continue;
@@ -158,8 +159,8 @@ const minPushBox = function (grid) {
         const boxCell = grid[nextRow][nextCol];
 
         if (boxCell === OBSTACLE) continue;
-        const pushRow = box.row + moveRow * -1;
-        const pushCol = box.col + moveCol * -1;
+        const pushRow = box.row + -moveRow;
+        const pushCol = box.col + -moveCol;
 
         if (isOutOfBounds(pushRow, pushCol)) continue;
         if (grid[pushRow][pushCol] === OBSTACLE) continue;

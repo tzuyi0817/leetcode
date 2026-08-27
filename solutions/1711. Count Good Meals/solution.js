@@ -4,9 +4,7 @@
  */
 const countPairs = function (deliciousness) {
   const MODULO = 10 ** 9 + 7;
-  const powers = Array.from({ length: 22 })
-    .fill('')
-    .map((_, index) => 2 ** index);
+  const powers = Array.from({ length: 22 }, (_, index) => 2 ** index);
   const countMap = new Map();
   let result = 0;
 

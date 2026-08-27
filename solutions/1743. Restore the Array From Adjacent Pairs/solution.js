@@ -11,7 +11,7 @@ const restoreArray = function (adjacentPairs) {
     return map.set(b, pairsB.add(a));
   }, new Map());
   const size = adjacentPairs.length + 1;
-  const startNum = [...pairsMap.keys()].find(num => pairsMap.get(num).size === 1);
+  const [startNum] = [...pairsMap].find(([, pairs]) => pairs.size === 1);
   const result = [startNum];
 
   for (let index = 1; index < size; index++) {

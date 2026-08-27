@@ -48,7 +48,7 @@
  * @return {number}
  */
 const maximumSwap = function (num) {
-  const nums = `${num}`.split('');
+  const nums = String(num).split('');
   const n = nums.length;
   let left = -1;
   let right = n - 1;

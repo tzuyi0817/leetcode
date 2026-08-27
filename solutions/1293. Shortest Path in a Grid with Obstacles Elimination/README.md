@@ -56,11 +56,11 @@ The shortest path with one obstacle elimination at position (3,2) is 6. Such pat
  * @return {number}
  */
 const shortestPath = function (grid, k) {
-  const OBSTACLE = 1;
   const m = grid.length;
   const n = grid[0].length;
 
   if (m * n === 1) return 0;
+  const OBSTACLE = 1;
   const visited = Array.from({ length: m }, () => new Array(n).fill(-1));
   const directions = [
     [0, 1],

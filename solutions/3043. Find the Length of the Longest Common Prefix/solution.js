@@ -10,7 +10,7 @@ const longestCommonPrefix = function (arr1, arr2) {
   for (const num of arr1) {
     let current = trie;
 
-    for (const char of `${num}`) {
+    for (const char of String(num)) {
       if (!current.has(char)) {
         current.set(char, new Map());
       }
@@ -37,7 +37,7 @@ const longestCommonPrefix = function (arr1, arr2) {
   };
 
   for (const num of arr2) {
-    const len = getCommonPrefixLen(`${num}`);
+    const len = getCommonPrefixLen(String(num));
 
     result = Math.max(len, result);
   }

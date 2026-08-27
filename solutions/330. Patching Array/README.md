@@ -72,7 +72,7 @@ const minPatches = function (nums, n) {
       index += 1;
       continue;
     }
-    currentRange += currentRange + 1;
+    currentRange = currentRange * 2 + 1;
     result += 1;
   }
   return result;

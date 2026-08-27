@@ -42,7 +42,7 @@ const findAllRecipes = function (recipes, ingredients, supplies) {
       for (const nextRecipe of graph.get(recipe)) {
         const indegree = indegreeMap.get(nextRecipe);
 
-        if (indegree - 1 === 0) {
+        if (indegree === 1) {
           nextQueue.push(nextRecipe);
         }
 

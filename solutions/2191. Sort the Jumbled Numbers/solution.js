@@ -7,7 +7,7 @@ const sortJumbled = function (mapping, nums) {
   const mappingNums = nums.map((num, index) => {
     let mappingNum = '';
 
-    for (const char of `${num}`) {
+    for (const char of String(num)) {
       mappingNum += mapping[char];
     }
     return { mappingNum: +mappingNum, index };

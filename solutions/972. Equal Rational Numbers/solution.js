@@ -14,7 +14,7 @@ const isRationalEqual = function (s, t) {
     const repeatingPart = isHasRepeating ? str.slice(repeatingStart + 1, -1) : '0';
     const repeatCount = isDecimal ? EFFECTIVE_ACCURACY : 0;
 
-    return Number.parseFloat(`${nonRepeatingPart}${repeatingPart.repeat(repeatCount)}`);
+    return Number(`${nonRepeatingPart}${repeatingPart.repeat(repeatCount)}`);
   };
 
   return transformRational(s) === transformRational(t);

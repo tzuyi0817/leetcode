@@ -8,10 +8,11 @@ const minAbsoluteSumDiff = function (nums1, nums2) {
   const clone = nums1.toSorted((a, b) => a - b);
   const size = nums1.length;
   const findNearPosition = target => {
-    let left = 0;
     let right = size - 1;
 
     if (clone[right] < target) return right + 1;
+    let left = 0;
+
     while (left < right) {
       const mid = Math.floor((left + right) / 2);
 

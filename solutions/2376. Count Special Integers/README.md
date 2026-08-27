@@ -55,7 +55,7 @@ Some of the integers that are not special are: 22, 114, and 131.</pre>
  * @return {number}
  */
 const countSpecialNumbers = function (n) {
-  const nums = `${n}`.split('').map(Number);
+  const nums = String(n).split('').map(Number);
   const m = nums.length;
   const dp = Array.from({ length: m }, () => {
     return new Array(1 << 10).fill(-1);

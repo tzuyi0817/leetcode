@@ -11,7 +11,7 @@ const deleteDuplicateFolder = function (paths) {
     if (node.children.size === 0) return '';
 
     const folders = [];
-    const entries = [...node.children.entries()].toSorted();
+    const entries = [...node.children].toSorted(([a], [b]) => a.localeCompare(b));
 
     for (const [name, children] of entries) {
       const item = `${name}(${serialize(children)})`;

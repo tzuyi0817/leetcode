@@ -7,9 +7,9 @@ const swimInWater = function (grid) {
   let visited = [];
 
   const isReach = (row, col, elevation) => {
+    if (row < 0 || col < 0 || row >= n || col >= n) return false;
     const key = row * n + col;
 
-    if (row < 0 || col < 0 || row >= n || col >= n) return false;
     if (visited[key] || grid[row][col] > elevation) return false;
     if (row === n - 1 && col === n - 1) return true;
 

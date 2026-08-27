@@ -15,7 +15,7 @@ const maxProduct = function (s) {
       const mirrorIndex = center - (index - center);
       let extend = index > r ? 1 : Math.min(maxExtends[mirrorIndex], r - index + 1);
 
-      while (index - extend >= 0 && index + extend < n && str[index - extend] === str[index + extend]) {
+      while (index >= extend && index + extend < n && str[index - extend] === str[index + extend]) {
         leftToRight[index + extend] = 2 * extend + 1;
         extend += 1;
       }

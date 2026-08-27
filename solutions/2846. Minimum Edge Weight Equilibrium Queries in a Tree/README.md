@@ -102,7 +102,7 @@ const minOperationsQueries = function (n, edges, queries) {
     }
   };
 
-  count[0] = Array.from({ length: maxWeight + 1 }).fill(0);
+  count[0] = Array.from({ length: maxWeight + 1 }, () => 0);
 
   dfs(0, -1);
 

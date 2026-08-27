@@ -9,7 +9,7 @@ const countPalindromes = function (s) {
 
   for (let a = 0; a < 10; a++) {
     for (let b = 0; b < 10; b++) {
-      const palindromic = [`${a}`, `${b}`, '#', `${b}`, `${a}`];
+      const palindromic = [String(a), String(b), '#', String(b), String(a)];
       const dp = new Array(SUBSEQ_SIZE + 1).fill(0);
 
       dp[SUBSEQ_SIZE] = 1;

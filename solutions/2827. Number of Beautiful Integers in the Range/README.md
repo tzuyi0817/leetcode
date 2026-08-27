@@ -74,20 +74,16 @@ It can be shown that there is only 1 beautiful integer in the given range.
  * @return {number}
  */
 const numberOfBeautifulIntegers = function (low, high, k) {
-  const highStr = `${high}`;
+  const highStr = String(high);
   const n = highStr.length;
-  const lowStr = `${low}`.padStart(n, '0');
+  const lowStr = String(low).padStart(n, '0');
   const dp = Array.from({ length: n }, () => {
-    return new Array(k)
-      .fill('')
-      .map(() => {
-        return new Array(n * 2)
-          .fill('')
-          .map(() => [
-            [-1, -1],
-            [-1, -1],
-          ]);
-      });
+    return new Array(k).fill('').map(() => {
+      return new Array(n * 2).fill('').map(() => [
+        [-1, -1],
+        [-1, -1],
+      ]);
+    });
   });
 
   const getBeautifulCount = options => {

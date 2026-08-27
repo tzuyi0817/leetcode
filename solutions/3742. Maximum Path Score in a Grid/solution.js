@@ -17,11 +17,12 @@ const maxPathScore = function (grid, k) {
 
     const score = grid[row][col];
     const nextCost = cost + (score ? 1 : 0);
-    let result = -1;
 
     if (row === m - 1 && col === n - 1) {
       return nextCost > k ? -1 : score;
     }
+
+    let result = -1;
 
     if (nextCost <= k) {
       const moveRightScore = getMaxScore(row, col + 1, nextCost);

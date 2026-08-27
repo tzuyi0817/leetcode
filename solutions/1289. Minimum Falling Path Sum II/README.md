@@ -73,7 +73,7 @@ const minFallingPathSum = function (grid) {
     for (let col = 0; col < n; col++) {
       const value = grid[row][col];
 
-      dp[col] = index === col ? value + second : value + first;
+      dp[col] = value + (index === col ? second : first);
     }
   }
   return Math.min(...dp);

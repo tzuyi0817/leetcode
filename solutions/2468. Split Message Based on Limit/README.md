@@ -67,13 +67,13 @@ const splitMessage = function (message, limit) {
   let lenA = 1;
   let b = 1;
 
-  while (b * limit < b * (`${b}`.length + BASE_LEN) + lenA + n) {
-    const len = `${b}`.length * 2;
+  while (b * limit < b * (String(b).length + BASE_LEN) + lenA + n) {
+    const len = String(b).length * 2;
 
     if (len + BASE_LEN >= limit) return [];
 
     b += 1;
-    lenA += `${b}`.length;
+    lenA += String(b).length;
   }
 
   const result = [];

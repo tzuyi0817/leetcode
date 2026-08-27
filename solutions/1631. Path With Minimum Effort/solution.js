@@ -9,9 +9,10 @@ const minimumEffortPath = function (heights) {
   const isMiniEffort = (row, col, limit, preHeight) => {
     if (row >= m || col >= n || (row < 0) | (col < 0)) return false;
     const position = `${row}_${col}`;
-    const height = heights[row][col];
 
     if (visited.has(position)) return false;
+    const height = heights[row][col];
+
     if (Math.abs(height - preHeight) > limit) return false;
     if (row === m - 1 && col === n - 1) return true;
     visited.add(position);

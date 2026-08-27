@@ -68,7 +68,7 @@ In total, this is 29523 integers that can be written using the digits array.
 const atMostNGivenDigitSet = function (digits, n) {
   let result = 0;
 
-  n = `${n}`;
+  n = String(n);
 
   for (let index = 1; index < n.length; index++) {
     result += digits.length ** index;

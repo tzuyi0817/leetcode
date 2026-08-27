@@ -5,12 +5,12 @@
 const findMinDifference = function (timePoints) {
   const MAX_MINUTE = 24 * 60;
   const n = timePoints.length;
-  const times = Array.from({ length: MAX_MINUTE + 1 }).fill(false);
+  const times = Array.from({ length: MAX_MINUTE + 1 }, () => false);
   let result = MAX_MINUTE;
   let minTime = MAX_MINUTE;
 
   for (let index = 0; index < n; index++) {
-    const [hour, minute] = timePoints[index].split(':');
+    const [hour, minute] = timePoints[index].split(':', 2);
     const time = hour * 60 + +minute;
 
     if (times[time]) return 0;

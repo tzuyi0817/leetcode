@@ -59,7 +59,7 @@ const countNicePairs = function (nums) {
   const uniqueNums = [...new Set(nums)];
   const countMap = new Map();
   const reverseMap = uniqueNums.reduce((map, num) => {
-    map[num] = +`${num}`.split('').toReversed().join('');
+    map[num] = +String(num).split('').toReversed().join('');
 
     return map;
   }, {});

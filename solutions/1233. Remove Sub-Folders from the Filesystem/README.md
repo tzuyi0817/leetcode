@@ -66,7 +66,7 @@
 const removeSubfolders = function (folder) {
   const result = [];
 
-  folder.sort();
+  folder.sort((a, b) => a.localeCompare(b));
 
   for (const path of folder) {
     const previousPath = result.at(-1);

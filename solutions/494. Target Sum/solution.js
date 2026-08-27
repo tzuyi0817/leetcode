@@ -14,7 +14,7 @@ const findTargetSumWays = function (nums, target) {
     if (memo.has(key)) return memo.get(key);
     const num = nums[index];
     const plus = buildExpression(index + 1, sum + num);
-    const minus = buildExpression(index + 1, sum + num * -1);
+    const minus = buildExpression(index + 1, sum + -num);
     const result = plus + minus;
 
     memo.set(key, result);

@@ -80,7 +80,6 @@
  * @return {number[][]}
  */
 const modifiedGraphEdges = function (n, edges, source, destination, target) {
-  const kMax = 2000000000;
   const graph = Array.from({ length: n }, () => []);
 
   for (const [u, v, w] of edges) {
@@ -121,6 +120,7 @@ const modifiedGraphEdges = function (n, edges, source, destination, target) {
   let distToDestination = dijkstra(source, destination);
 
   if (distToDestination < target) return [];
+  const kMax = 2000000000;
 
   if (distToDestination === target) {
     for (const edge of edges) {

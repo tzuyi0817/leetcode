@@ -9,7 +9,6 @@ const maxSumTrionic = function (nums) {
 
   while (index < n) {
     let l = index + 1;
-    let sum = 0;
 
     while (l < n && nums[l - 1] < nums[l]) {
       l += 1;
@@ -22,7 +21,7 @@ const maxSumTrionic = function (nums) {
       continue;
     }
 
-    sum += nums[p] + nums[p - 1];
+    let sum = nums[p] + nums[p - 1];
 
     while (l < n && nums[l - 1] > nums[l]) {
       sum += nums[l];

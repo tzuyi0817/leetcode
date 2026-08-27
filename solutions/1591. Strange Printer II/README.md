@@ -123,7 +123,7 @@ const isPrintable = function (targetGrid) {
       for (const nextColor of graph.get(color)) {
         const indegree = indegreeMap.get(nextColor);
 
-        if (indegree - 1 === 0) {
+        if (indegree === 1) {
           nextQueue.push(nextColor);
         }
 

@@ -7,17 +7,17 @@ const solveSudoku = function (board) {
   const n = board[0].length;
   const isValid = (current, num) => {
     for (let row = 0; row < m; row++) {
-      if (board[row][current.col] === `${num}`) return false;
+      if (board[row][current.col] === String(num)) return false;
     }
     for (let col = 0; col < n; col++) {
-      if (board[current.row][col] === `${num}`) return false;
+      if (board[current.row][col] === String(num)) return false;
     }
     const startRow = current.row - (current.row % 3);
     const startCol = current.col - (current.col % 3);
 
     for (let row = startRow; row < startRow + 3; row++) {
       for (let col = startCol; col < startCol + 3; col++) {
-        if (board[row][col] === `${num}`) return false;
+        if (board[row][col] === String(num)) return false;
       }
     }
     return true;
@@ -29,7 +29,7 @@ const solveSudoku = function (board) {
 
     for (let num = 1; num <= 9; num++) {
       if (!isValid({ row, col }, num)) continue;
-      board[row][col] = `${num}`;
+      board[row][col] = String(num);
       if (solveSudokuCell(row, col + 1)) return true;
       board[row][col] = '.';
     }

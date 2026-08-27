@@ -106,9 +106,10 @@ const gridIllumination = function (n, lamps, queries) {
     for (const offset of adjacent) {
       const offsetRow = row + offset[0];
       const offsetCol = col + offset[1];
-      const key = `${offsetRow},${offsetCol}`;
 
       if (offsetRow < 0 || offsetRow >= n || offsetCol < 0 || offsetCol >= n) continue;
+      const key = `${offsetRow},${offsetCol}`;
+
       if (!lampsSet.has(key)) continue;
       const rowCount = rowMemo.get(offsetRow) - 1;
       const colCount = colMemo.get(offsetCol) - 1;

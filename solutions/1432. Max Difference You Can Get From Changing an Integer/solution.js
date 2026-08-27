@@ -3,7 +3,7 @@
  * @return {number}
  */
 const maxDiff = function (num) {
-  const numStringify = `${num}`;
+  const numStringify = String(num);
   let max = numStringify;
   let min = numStringify;
 

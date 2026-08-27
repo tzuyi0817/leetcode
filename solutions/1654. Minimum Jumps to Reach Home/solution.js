@@ -16,10 +16,11 @@ const minimumJumps = function (forbidden, a, b, x) {
 
     for (let index = 0; index < size; index++) {
       const { position, isBack } = queue.shift();
+
+      if (position === x) return result;
       const forward = position + a;
       const back = position - b;
 
-      if (position === x) return result;
       if (forward <= MAX_X && !visited.has(forward)) {
         visited.add(forward);
         queue.push({ position: forward, isBack: false });

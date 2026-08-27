@@ -50,7 +50,7 @@ const largestPalindrome = function (n) {
   const minimum = BigInt(10 ** (n - 1));
 
   for (let num = maximum; num >= minimum; num -= 1n) {
-    const str = `${num}`;
+    const str = String(num);
     let palindrome = str;
 
     for (let index = str.length - 1; index >= 0; index--) {

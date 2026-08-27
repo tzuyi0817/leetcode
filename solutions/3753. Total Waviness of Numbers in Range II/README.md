@@ -99,7 +99,7 @@ const totalWaviness = function (num1, num2) {
   const getWaviness = num => {
     if (num < 100) return 0;
 
-    const target = `${num}`;
+    const target = String(num);
     const n = target.length;
 
     const dp = Array.from({ length: n }, () => {

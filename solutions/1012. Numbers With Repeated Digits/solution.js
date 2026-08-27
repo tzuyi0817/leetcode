@@ -3,7 +3,9 @@
  * @return {number}
  */
 const numDupDigitsAtMostN = function (n) {
-  const nums = `${n + 1}`.split('').map(Number);
+  const nums = String(n + 1)
+    .split('')
+    .map(Number);
   let result = 0;
 
   const specialCount = (count, digits) => {

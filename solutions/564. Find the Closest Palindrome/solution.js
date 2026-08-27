@@ -6,14 +6,14 @@ const nearestPalindromic = function (n) {
   const { length } = n;
   const maxPalindrome = 10 ** length + 1;
   const minPalindrome = 10 ** (length - 1) - 1;
-  const palindromes = [`${minPalindrome}`];
+  const palindromes = [String(minPalindrome)];
   const prefix = n.slice(0, Math.ceil(length / 2));
   const isOdd = length % 2;
 
   const createPalindrome = value => {
-    value = `${value}`;
+    value = String(value);
     const n = value.length;
-    const start = isOdd ? n - 2 : n - 1;
+    const start = n - (isOdd ? 2 : 1);
     let result = value;
 
     for (let index = start; index >= 0; index--) {
@@ -28,7 +28,7 @@ const nearestPalindromic = function (n) {
 
     palindromes.push(palindrome);
   }
-  palindromes.push(`${maxPalindrome}`);
+  palindromes.push(String(maxPalindrome));
 
   let result = maxPalindrome;
   let minDiff = Number.MAX_SAFE_INTEGER;

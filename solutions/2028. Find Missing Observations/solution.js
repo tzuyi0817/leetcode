@@ -10,10 +10,11 @@ const missingRolls = function (rolls, mean, n) {
   const total = size * mean;
   const missingObservations = total - rolls.reduce((sum, value) => sum + value);
   const average = Math.floor(missingObservations / n);
+
+  if (average > MAX_ROLL || average <= 0) return [];
   const eachMax = MAX_ROLL - average;
   let remain = missingObservations - average * n;
 
-  if (average > MAX_ROLL || average <= 0) return [];
   if (eachMax === 0 && remain) return [];
   const result = new Array(n).fill(average);
   let index = 0;
