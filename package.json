@@ -2,7 +2,7 @@
   "name": "leetcode",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@11.24.0",
+  "packageManager": "pnpm@12.3.4",
   "description": "Solutions to LeetCode in JavaScript.",
   "license": "MIT",
   "keywords": [
