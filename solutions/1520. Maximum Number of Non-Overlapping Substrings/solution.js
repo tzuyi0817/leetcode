@@ -5,50 +5,48 @@
 const maxNumOfSubstrings = function (s) {
   const n = s.length;
   const BASE_CODE = 'a'.charCodeAt(0);
-  const leftIndices = Array.from({ length: 26 }, () => n);
-  const rightIndices = Array.from({ length: 26 }, () => -1);
+  const firstIndices = Array.from({ length: 26 }, () => n);
+  const lastIndices = Array.from({ length: 26 }, () => -1);
+  const stack = [];
 
   for (let index = 0; index < n; index++) {
     const code = s[index].charCodeAt(0) - BASE_CODE;
 
-    leftIndices[code] = Math.min(index, leftIndices[code]);
-    rightIndices[code] = Math.max(index, rightIndices[code]);
+    firstIndices[code] = Math.min(index, firstIndices[code]);
+    lastIndices[code] = Math.max(index, lastIndices[code]);
   }
 
-  const result = [];
-  let currentRight = -1;
+  const getEnd = (l, r) => {
+    let end = r;
 
-  const getRight = (start, end) => {
-    let right = end;
-
-    for (let index = start; index <= right; index++) {
+    for (let index = l; index <= end; index++) {
       const code = s[index].charCodeAt(0) - BASE_CODE;
+      const first = firstIndices[code];
 
-      if (leftIndices[code] < start) return -1;
+      if (first < l) return -1;
 
-      right = Math.max(rightIndices[code], right);
+      end = Math.max(lastIndices[code], end);
     }
 
-    return right;
+    return end;
   };
 
   for (let index = 0; index < n; index++) {
     const code = s[index].charCodeAt(0) - BASE_CODE;
+    const start = firstIndices[code];
 
-    if (leftIndices[code] !== index) continue;
-    const right = getRight(index, rightIndices[code]);
+    if (start !== index) continue;
 
-    if (right === -1) continue;
-    const subStr = s.slice(index, right + 1);
+    const end = getEnd(start, lastIndices[code]);
 
-    if (result.length && index < currentRight) {
-      result[result.length - 1] = subStr;
+    if (end === -1) continue;
+
+    if (stack.length && end < stack.at(-1).end) {
+      stack[stack.length - 1] = { start, end };
     } else {
-      result.push(subStr);
+      stack.push({ start, end });
     }
-
-    currentRight = right;
   }
 
-  return result;
+  return stack.map(({ start, end }) => s.slice(start, end + 1));
 };
