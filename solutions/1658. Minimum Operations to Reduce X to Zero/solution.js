@@ -4,24 +4,32 @@
  * @return {number}
  */
 const minOperations = function (nums, x) {
-  const sum = nums.reduce((result, num) => result + num);
-  const size = nums.length;
+  const n = nums.length;
+  const total = nums.reduce((result, num) => result + num);
 
-  if (sum === x) return size;
-  const prefixSumMap = new Map([[0, -1]]);
-  const target = sum - x;
-  let currentSum = 0;
-  let result = -1;
+  if (x > total) return -1;
 
-  for (let index = 0; index < size; index++) {
-    currentSum += nums[index];
-    prefixSumMap.set(currentSum, index);
+  if (x === total) return n;
 
-    if (prefixSumMap.has(currentSum - target)) {
-      const position = prefixSumMap.get(currentSum - target);
+  const target = total - x;
+  let sum = 0;
+  let left = 0;
+  let result = Number.MAX_SAFE_INTEGER;
 
-      result = Math.max(result, index - position);
+  for (let index = 0; index < n; index++) {
+    sum += nums[index];
+
+    while (left < index && sum > target) {
+      sum -= nums[left];
+      left += 1;
     }
+
+    if (sum !== target) continue;
+
+    const len = index - left + 1;
+
+    result = Math.min(n - len, result);
   }
-  return result > -1 ? size - result : -1;
+
+  return result === Number.MAX_SAFE_INTEGER ? -1 : result;
 };
