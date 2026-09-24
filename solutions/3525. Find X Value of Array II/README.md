@@ -68,13 +68,11 @@
 
 <ul>
 	<li>For query 0, <code>nums</code> becomes <code>[2, 2, 4, 8, 16, 32]</code>. The only possible operation is:
-
     <ul>
     	<li>Remove the suffix <code>[2, 4, 8, 16, 32]</code>.</li>
     </ul>
     </li>
     <li>For query 1, <code>nums</code> becomes <code>[2, 2, 4, 8, 16, 32]</code>. There is no possible way to perform the operation.</li>
-
 </ul>
 </div>
 
