@@ -29,7 +29,6 @@
 
 <ul>
 	<li>For <code>i = 0</code>:
-
     <ul>
     	<li>Node 1 is marked at <code>t = 1</code>, and Node 2 at <code>t = 2</code>.</li>
     </ul>
@@ -44,7 +43,6 @@
     	<li>Node 0 is marked at <code>t = 2</code>, and Node 1 at <code>t = 3</code>.</li>
     </ul>
     </li>
-
 </ul>
 </div>
 
@@ -61,7 +59,6 @@
 
 <ul>
 	<li>For <code>i = 0</code>:
-
     <ul>
     	<li>Node 1 is marked at <code>t = 1</code>.</li>
     </ul>
@@ -71,7 +68,6 @@
     	<li>Node 0 is marked at <code>t = 2</code>.</li>
     </ul>
     </li>
-
 </ul>
 </div>
 
