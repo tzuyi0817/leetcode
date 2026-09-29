@@ -71,35 +71,31 @@ Note that there may be other valid parentheses string paths.
 const hasValidPath = function (grid) {
   const m = grid.length;
   const n = grid[0].length;
-  const dp = Array.from({ length: m }, () => {
-    return new Array(n)
-      .fill('')
-      .map(() => new Array(m + n).fill(-1));
-  });
+  const dp = Array.from({ length: m * n }, () => new Array(m + n).fill(-1));
 
-  const findValidPath = (row, col, parentheses) => {
+  const isValidPath = (row, col, diff) => {
     if (row >= m || col >= n) return false;
-    if (dp[row][col][parentheses] !== -1) return dp[row][col][parentheses];
 
     const value = grid[row][col];
-    const diff = value === '(' ? 1 : -1;
-    const nextParentheses = parentheses + diff;
+    const nextDiff = diff + (value === '(' ? 1 : -1);
+    const remainCells = m - row + (n - col);
 
-    if (nextParentheses < 0) return false;
-    if (nextParentheses > m + n - row - col) return false;
-    if (row === m - 1 && col === n - 1) {
-      return nextParentheses === 0;
-    }
+    if (nextDiff < 0 || nextDiff > remainCells) return false;
 
-    const down = findValidPath(row + 1, col, nextParentheses);
-    const right = findValidPath(row, col + 1, nextParentheses);
-    const result = down || right;
+    const key = row * n + col;
 
-    dp[row][col][parentheses] = result;
+    if (dp[key][diff] !== -1) return dp[key][diff];
+
+    if (row === m - 1 && col === n - 1) return nextDiff === 0;
+
+    const right = isValidPath(row + 1, col, nextDiff);
+    const result = right || isValidPath(row, col + 1, nextDiff);
+
+    dp[key][diff] = result;
 
     return result;
   };
 
-  return findValidPath(0, 0, 0);
+  return isValidPath(0, 0, 0);
 };
 ```
