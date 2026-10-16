@@ -54,7 +54,7 @@ The sum of the squares of the distinct counts in all subarrays is equal to 1<sup
 
 ## Solutions
 
-**Solution: `Segment Tree`**
+**Solution: `Binary Indexed Tree`**
 
 - Time complexity: <em>O(nlogn)</em>
 - Space complexity: <em>O(n)</em>
@@ -71,79 +71,68 @@ The sum of the squares of the distinct counts in all subarrays is equal to 1<sup
 const sumCounts = function (nums) {
   const MODULO = BigInt(10 ** 9 + 7);
   const n = nums.length;
-  const lastSeenMap = new Map();
-  const tree = new LazySegmentTree(n);
+  const tree = new BIT(n);
+  const prevMap = new Map();
+  let current = 0n;
   let result = 0n;
 
   for (let index = 0; index < n; index++) {
     const num = nums[index];
-    const prev = lastSeenMap.get(num) ?? -1;
+    const prev = prevMap.get(num) ?? -1;
+    const start = prev + 1;
+    const count = BigInt(tree.queryRange(start, index));
 
-    tree.updateRange(prev + 1, index);
-    result += tree.getSquaredSum();
-    result %= MODULO;
-    lastSeenMap.set(num, index);
+    current = (current + count * 2n + BigInt(index - start + 1)) % MODULO;
+    result = (result + current) % MODULO;
+    tree.updateRange(start, index, 1);
+    prevMap.set(num, index);
   }
 
   return Number(result);
 };
 
-class LazySegmentTree {
+class BIT {
   constructor(n) {
-    this.mod = BigInt(10 ** 9 + 7);
-    this.n = n;
-    this.lazy = Array.from({ length: 4 * n }, () => 0n);
-    this.sums = Array.from({ length: 4 * n }, () => 0n);
-    this.squareSums = Array.from({ length: 4 * n }, () => 0n);
+    this.n = n + 2;
+    this.tree1 = Array.from({ length: this.n }, () => 0);
+    this.tree2 = Array.from({ length: this.n }, () => 0);
   }
 
-  updateRange(l, r) {
-    this.#updateRange(0, 0, this.n - 1, l, r);
+  update(index, delta) {
+    index += 1;
+
+    const origin = index;
+
+    while (index < this.n) {
+      this.tree1[index] += delta;
+      this.tree2[index] += origin * delta;
+      index += index & -index;
+    }
   }
 
-  #updateRange(index, start, end, l, r) {
-    this.#propagate(index, start, end);
+  updateRange(a, b, delta) {
+    this.update(a, delta);
+    this.update(b + 1, -delta);
+  }
 
-    if (start > r || end < l) return;
+  query(index) {
+    index += 1;
 
-    if (start >= l && end <= r) {
-      this.lazy[index] = 1n;
-      this.#propagate(index, start, end);
+    const origin = index + 1;
+    let result = 0;
 
-      return;
+    while (index) {
+      const sum = origin * this.tree1[index];
+
+      result += sum - this.tree2[index];
+      index -= index & -index;
     }
 
-    const mid = Math.floor((start + end) / 2);
-    const a = index * 2 + 1;
-    const b = index * 2 + 2;
-
-    this.#updateRange(a, start, mid, l, r);
-    this.#updateRange(b, mid + 1, end, l, r);
-    this.sums[index] = (this.sums[a] + this.sums[b]) % this.mod;
-    this.squareSums[index] = (this.squareSums[a] + this.squareSums[b]) % this.mod;
+    return result;
   }
 
-  #propagate(index, start, end) {
-    if (!this.lazy[index]) return;
-
-    const lazyVal = this.lazy[index];
-    const len = BigInt(end - start + 1);
-
-    this.squareSums[index] += 2n * this.sums[index] * lazyVal + len * lazyVal * lazyVal;
-    this.squareSums[index] %= this.mod;
-    this.sums[index] += len * lazyVal;
-    this.sums[index] %= this.mod;
-
-    if (start < end) {
-      this.lazy[index * 2 + 1] += lazyVal;
-      this.lazy[index * 2 + 2] += lazyVal;
-    }
-
-    this.lazy[index] = 0n;
-  }
-
-  getSquaredSum() {
-    return this.squareSums[0];
+  queryRange(a, b) {
+    return this.query(b) - this.query(a - 1);
   }
 }
 ```
