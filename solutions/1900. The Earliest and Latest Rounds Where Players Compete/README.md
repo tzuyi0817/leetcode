@@ -78,9 +78,7 @@ There is no way to make them compete in any other round.
  */
 const earliestAndLatest = function (n, firstPlayer, secondPlayer) {
   const dp = Array.from({ length: n + 1 }, () => {
-    return new Array(n + 1)
-      .fill('')
-      .map(_ => new Array(n + 1).fill(null));
+    return new Array(n + 1).fill('').map(_ => new Array(n + 1).fill(null));
   });
 
   const getRounds = (left, right, players) => {

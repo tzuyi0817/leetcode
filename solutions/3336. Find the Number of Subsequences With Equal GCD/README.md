@@ -98,9 +98,7 @@ const subsequencePairCount = function (nums) {
   const MODULO = 10 ** 9 + 7;
   const maxNum = Math.max(...nums);
   const dp = Array.from({ length: n }, () => {
-    return new Array(maxNum + 1)
-      .fill('')
-      .map(_ => new Array(maxNum + 1).fill(-1));
+    return new Array(maxNum + 1).fill('').map(_ => new Array(maxNum + 1).fill(-1));
   });
 
   const gcd = (a, b) => (b ? gcd(b, a % b) : a);

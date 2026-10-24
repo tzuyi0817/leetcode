@@ -65,9 +65,7 @@
 const isMatch = function (s, p) {
   const n = s.length;
   const m = p.length;
-  const dp = new Array(n + 1)
-    .fill('')
-    .map(_ => new Array(m + 1).fill(false));
+  const dp = new Array(n + 1).fill('').map(_ => new Array(m + 1).fill(false));
 
   dp[0][0] = true;
 

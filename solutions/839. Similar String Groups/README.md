@@ -54,9 +54,7 @@
  */
 const numSimilarGroups = function (strs) {
   const n = strs.length;
-  const groups = new Array(n)
-    .fill('')
-    .map((_, index) => index);
+  const groups = new Array(n).fill('').map((_, index) => index);
 
   const isSimilar = (a, b) => {
     let diff = 0;

@@ -5,7 +5,7 @@
 const largestSubmatrix = function (matrix) {
   const m = matrix.length;
   const n = matrix[0].length;
-  const prefixMatrix = [...matrix.map(row => [...row])];
+  const prefixMatrix = matrix.map(row => [...row]);
   let result = 0;
 
   for (let row = 1; row < m; row++) {

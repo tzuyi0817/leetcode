@@ -130,9 +130,7 @@ const maximumMinutes = function (grid) {
   const isPossibleEscape = stayMinutes => {
     if (stayMinutes >= spreadGrid[0][0]) return false;
 
-    const visited = new Array(m)
-      .fill('')
-      .map(() => new Array(n).fill(false));
+    const visited = new Array(m).fill('').map(() => new Array(n).fill(false));
     let queue = [{ row: 0, col: 0, minutes: stayMinutes }];
 
     visited[0][0] = true;

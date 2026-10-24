@@ -70,9 +70,7 @@ The city 0 has 1 neighboring city at a distanceThreshold = 2.
  * @return {number}
  */
 const findTheCity = function (n, edges, distanceThreshold) {
-  const distances = new Array(n)
-    .fill('')
-    .map(_ => new Array(n).fill(Number.MAX_SAFE_INTEGER));
+  const distances = new Array(n).fill('').map(_ => new Array(n).fill(Number.MAX_SAFE_INTEGER));
 
   for (const [from, to, weight] of edges) {
     distances[from][from] = 0;

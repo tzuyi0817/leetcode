@@ -74,9 +74,7 @@ const maxValue = function (nums, k) {
 
   const getPossibleORs = arr => {
     const dp = Array.from({ length: n }, () => {
-      return new Array(k + 1)
-        .fill('')
-        .map(() => new Array(maxXor + 1).fill(false));
+      return new Array(k + 1).fill('').map(() => new Array(maxXor + 1).fill(false));
     });
 
     dp[0][1][arr[0]] = true;

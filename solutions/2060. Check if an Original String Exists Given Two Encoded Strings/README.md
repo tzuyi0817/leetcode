@@ -95,9 +95,7 @@ const possiblyEquals = function (s1, s2) {
   const n1 = s1.length;
   const n2 = s2.length;
   const dp = Array.from({ length: n1 + 1 }, () => {
-    return new Array(n2 + 1)
-      .fill('')
-      .map(() => new Map());
+    return new Array(n2 + 1).fill('').map(() => new Map());
   });
 
   const isNumber = char => Number.isInteger(Number(char));
@@ -171,10 +169,10 @@ const possiblyEquals = function (s1, s2) {
         return true;
       }
     } else if (a < n1 && b < n2 && s1[a] === s2[b] && isPossiblyEncode(a + 1, b + 1, 0)) {
-        dp[a][b].set(padding, true);
+      dp[a][b].set(padding, true);
 
-        return true;
-      }
+      return true;
+    }
 
     dp[a][b].set(padding, false);
 

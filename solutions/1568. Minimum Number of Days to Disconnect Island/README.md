@@ -76,9 +76,7 @@ const minDays = function (grid) {
   };
 
   const isDisconnected = () => {
-    const visited = new Array(m)
-      .fill('')
-      .map(() => new Array(n).fill(false));
+    const visited = new Array(m).fill('').map(() => new Array(n).fill(false));
     let islands = 0;
 
     for (let row = 0; row < m; row++) {

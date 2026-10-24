@@ -69,9 +69,7 @@ The nodes that are reachable are highlighted in yellow.
  * @return {number}
  */
 const reachableNodes = function (edges, maxMoves, n) {
-  const graph = new Array(n)
-    .fill('')
-    .map(_ => []);
+  const graph = new Array(n).fill('').map(_ => []);
   const queue = new MinPriorityQueue({ priority: ({ moves }) => moves });
   const movedes = new Array(n).fill(-1);
   let result = 0;

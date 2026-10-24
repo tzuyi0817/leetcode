@@ -58,7 +58,7 @@ const getMinDistSum = function (positions) {
 
   const distSum = (a, b) => {
     return positions.reduce((sum, [x, y]) => {
-      return sum + Math.hypot((a - x), (b - y));
+      return sum + Math.hypot(a - x, b - y);
     }, 0);
   };
 

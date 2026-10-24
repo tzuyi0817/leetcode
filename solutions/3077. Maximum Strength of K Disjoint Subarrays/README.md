@@ -88,9 +88,7 @@ const maximumStrength = function (nums, k) {
   const SAFE_MIN = Number.MIN_SAFE_INTEGER;
   const n = nums.length;
   const dp = Array.from({ length: n }, () => {
-    return new Array(2)
-      .fill('')
-      .map(() => new Array(k + 1).fill(null));
+    return new Array(2).fill('').map(() => new Array(k + 1).fill(null));
   });
 
   const getMaxStrength = (index, kth, isStart) => {

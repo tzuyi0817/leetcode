@@ -70,9 +70,7 @@ const numOfArrays = function (n, m, k) {
   if (k === 0) return 0;
   const MODULO = 10 ** 9 + 7;
   const dp = Array.from({ length: n }, () => {
-    return new Array(m + 1)
-      .fill('')
-      .map(_ => new Array(k + 1).fill(-1));
+    return new Array(m + 1).fill('').map(_ => new Array(k + 1).fill(-1));
   });
 
   const findArrays = (index, maximum, searchCost) => {

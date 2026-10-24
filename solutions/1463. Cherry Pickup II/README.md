@@ -75,9 +75,7 @@ const cherryPickup = function (grid) {
   const m = grid.length;
   const n = grid[0].length;
   const dp = Array.from({ length: m }, () => {
-    return new Array(n)
-      .fill('')
-      .map(_ => new Array(n).fill(-1));
+    return new Array(n).fill('').map(_ => new Array(n).fill(-1));
   });
 
   const collectCherry = (row, col1, col2) => {

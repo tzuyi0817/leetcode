@@ -60,15 +60,11 @@ const countSteppingNumbers = function (low, high) {
   const leadingZeroLow = low.padStart(n, '0');
   const MODULO = 10 ** 9 + 7;
   const dp = Array.from({ length: n }, () => {
-    return new Array(10)
-      .fill('')
-      .map(() =>
-        new Array(2)
-          .fill('')
-          .map(() => {
-            return new Array(2).fill(-1);
-          }),
-      );
+    return new Array(10).fill('').map(() =>
+      new Array(2).fill('').map(() => {
+        return new Array(2).fill(-1);
+      }),
+    );
   });
 
   const getSteppingCount = (index, prev, tight1, tight2, leadingZero) => {

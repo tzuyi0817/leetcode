@@ -96,7 +96,6 @@ const maxIncreasingCells = function (mat) {
     const positions = valueMap.get(value);
 
     for (const [index, { row, col }] of positions.entries()) {
-
       currentMaxPaths[index] = Math.max(rows[row], cols[col]) + 1;
     }
 

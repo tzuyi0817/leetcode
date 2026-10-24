@@ -95,11 +95,9 @@ const numberOfSets = function (n, maxDistance, roads) {
   let result = 0;
 
   const isValidSet = mask => {
-    const dist = new Array(n)
-      .fill('')
-      .map(() => {
-        return new Array(n).fill(Number.MAX_SAFE_INTEGER);
-      });
+    const dist = new Array(n).fill('').map(() => {
+      return new Array(n).fill(Number.MAX_SAFE_INTEGER);
+    });
 
     for (const [u, v, w] of roads) {
       if (!((mask >> u) & 1) || !((mask >> v) & 1)) continue;

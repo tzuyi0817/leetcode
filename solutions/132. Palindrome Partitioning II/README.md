@@ -56,9 +56,7 @@
 const minCut = function (s) {
   const n = s.length;
   const cuts = new Array(n).fill(0);
-  const isPalindrome = new Array(n)
-    .fill('')
-    .map(_ => new Array(n).fill(false));
+  const isPalindrome = new Array(n).fill('').map(_ => new Array(n).fill(false));
 
   for (let a = 0; a < n; a++) {
     cuts[a] = a;

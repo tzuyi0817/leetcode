@@ -83,9 +83,7 @@ const minimumTotalDistance = function (robot, factory) {
   const m = robot.length;
   const n = factory.length;
   const dp = Array.from({ length: m }, () => {
-    return new Array(n)
-      .fill('')
-      .map(() => new Array(m).fill(-1));
+    return new Array(n).fill('').map(() => new Array(m).fill(-1));
   });
 
   robot.sort((a, b) => a - b);

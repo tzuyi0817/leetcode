@@ -81,9 +81,7 @@ const latestDayToCross = function (row, col, cells) {
   let result = 0;
 
   const isPossibleToCross = day => {
-    const graph = new Array(row)
-      .fill('')
-      .map(() => new Array(col).fill(0));
+    const graph = new Array(row).fill('').map(() => new Array(col).fill(0));
 
     for (let index = 0; index < day; index++) {
       const [r, c] = cells[index];

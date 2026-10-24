@@ -86,7 +86,6 @@ const wateringPlants = function (plants, capacity) {
   let watering = capacity;
 
   for (const [index, plant] of plants.entries()) {
-
     result += 1;
     if (watering >= plant) {
       watering -= plant;

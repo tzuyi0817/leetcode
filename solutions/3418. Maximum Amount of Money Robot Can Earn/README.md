@@ -90,9 +90,7 @@ const maximumAmount = function (coins) {
   const m = coins.length;
   const n = coins[0].length;
   const dp = Array.from({ length: m }, () => {
-    return new Array(n)
-      .fill('')
-      .map(() => new Array(3).fill(null));
+    return new Array(n).fill('').map(() => new Array(3).fill(null));
   });
 
   const earnMoney = (row, col, neutral) => {

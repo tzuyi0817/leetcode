@@ -78,9 +78,7 @@ const mergeStones = function (stones, k) {
     prefixSum[index + 1] = prefixSum[index] + stones[index];
   }
 
-  const dp = new Array(n)
-    .fill('')
-    .map(_ => new Array(n).fill(Number.MAX_SAFE_INTEGER));
+  const dp = new Array(n).fill('').map(_ => new Array(n).fill(Number.MAX_SAFE_INTEGER));
 
   for (let index = 0; index < n; index++) {
     dp[index][index] = 0;

@@ -76,7 +76,7 @@ const longestRepeating = function (s, queryCharacters, queryIndices) {
   });
 };
 
-class TreeNode {
+class SegmentTreeNode {
   constructor({ l, r, prefixChar, suffixChar, prefixLen, suffixLen, maxLen, leftNode = null, rightNode = null }) {
     this.l = l;
     this.r = r;
@@ -97,7 +97,7 @@ class SegmentTree {
 
   #build(s, l, r) {
     if (l === r) {
-      return new TreeNode({
+      return new SegmentTreeNode({
         l,
         r,
         prefixChar: s[l],
@@ -136,7 +136,7 @@ class SegmentTree {
       suffixLen += left.suffixLen;
     }
 
-    return new TreeNode({
+    return new SegmentTreeNode({
       l: left.l,
       r: right.r,
       prefixChar,

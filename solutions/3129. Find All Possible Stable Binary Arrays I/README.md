@@ -86,9 +86,7 @@
 const numberOfStableArrays = function (zero, one, limit) {
   const MODULO = 10 ** 9 + 7;
   const dp = Array.from({ length: zero + 1 }, () => {
-    return new Array(one + 1)
-      .fill('')
-      .map(() => new Array(2).fill(-1));
+    return new Array(one + 1).fill('').map(() => new Array(2).fill(-1));
   });
 
   const getStableCount = (zeros, ones, prev) => {

@@ -125,9 +125,7 @@ const lengthAfterTransformations = function (s, t, nums) {
 
   const matrixMult = (matrixA, matrixB) => {
     const n = matrixA.length;
-    const result = new Array(26)
-      .fill('')
-      .map(_ => new Array(26).fill(0n));
+    const result = new Array(26).fill('').map(_ => new Array(26).fill(0n));
 
     for (let a = 0; a < n; a++) {
       for (let b = 0; b < n; b++) {
@@ -145,9 +143,7 @@ const lengthAfterTransformations = function (s, t, nums) {
   const matrixPow = (matrix, power) => {
     if (!power) {
       const n = matrix.length;
-      const result = new Array(n)
-        .fill('')
-        .map(_ => new Array(n).fill(0n));
+      const result = new Array(n).fill('').map(_ => new Array(n).fill(0n));
 
       for (let index = 0; index < n; index++) {
         result[index][index] = 1n;

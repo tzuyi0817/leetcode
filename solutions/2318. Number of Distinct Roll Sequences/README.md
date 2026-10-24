@@ -71,9 +71,7 @@ const distinctSequences = function (n) {
     6: [1, 5],
   };
   const dp = Array.from({ length: n }, () => {
-    return new Array(7)
-      .fill('')
-      .map(() => new Array(7).fill(-1));
+    return new Array(7).fill('').map(() => new Array(7).fill(-1));
   });
 
   const rollDice = (index, prev1, prev2) => {

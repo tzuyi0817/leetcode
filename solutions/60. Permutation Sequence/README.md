@@ -57,9 +57,7 @@
  * @return {string}
  */
 const getPermutation = function (n, k) {
-  const nums = new Array(n)
-    .fill('')
-    .map((_, index) => index + 1);
+  const nums = new Array(n).fill('').map((_, index) => index + 1);
   const factorial = new Array(n + 1).fill(1);
   let result = '';
 

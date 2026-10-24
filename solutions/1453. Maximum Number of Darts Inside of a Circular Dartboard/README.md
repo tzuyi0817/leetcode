@@ -56,7 +56,7 @@
  */
 const numPoints = function (darts, r) {
   const getDistance = (x1, x2, y1, y2) => {
-    return Math.hypot((x1 - x2), (y1 - y2));
+    return Math.hypot(x1 - x2, y1 - y2);
   };
 
   const getCircularCenters = (x1, x2, y1, y2) => {

@@ -88,9 +88,7 @@ const maximumProfit = function (prices, k) {
   const NORMAL = 1;
   const SHORT_SELLING = 2;
   const dp = Array.from({ length: n }, () => {
-    return new Array(k + 1)
-      .fill('')
-      .map(() => new Array(3).fill(-1));
+    return new Array(k + 1).fill('').map(() => new Array(3).fill(-1));
   });
 
   const transactionStock = (index, times, state) => {

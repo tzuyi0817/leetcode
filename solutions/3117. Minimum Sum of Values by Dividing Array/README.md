@@ -101,9 +101,7 @@ const minimumValueSum = function (nums, andValues) {
   const log = 32 - Math.clz32(maxNum);
   const MAX_MASK = (1 << log) - 1;
   const dp = Array.from({ length: n }, () => {
-    return new Array(m)
-      .fill('')
-      .map(() => new Map());
+    return new Array(m).fill('').map(() => new Map());
   });
 
   const getMinSumValues = (i, j, mask) => {

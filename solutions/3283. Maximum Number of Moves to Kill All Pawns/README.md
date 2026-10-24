@@ -130,9 +130,7 @@ const maxMoves = function (kx, ky, positions) {
 
   const bfs = source => {
     const [sx, sy] = positions[source];
-    const seen = new Array(SIZE)
-      .fill('')
-      .map(() => new Array(SIZE).fill(false));
+    const seen = new Array(SIZE).fill('').map(() => new Array(SIZE).fill(false));
     let seenPositions = 0;
     let step = 0;
     let queue = [{ x: sx, y: sy }];
@@ -180,9 +178,7 @@ const maxMoves = function (kx, ky, positions) {
   const ALICE = 0;
   const totalMask = (1 << n) - 1;
   const dp = Array.from({ length: n + 1 }, () => {
-    return new Array(2)
-      .fill('')
-      .map(() => new Array(totalMask).fill(-1));
+    return new Array(2).fill('').map(() => new Array(totalMask).fill(-1));
   });
 
   const dfs = (source, mask, turn) => {

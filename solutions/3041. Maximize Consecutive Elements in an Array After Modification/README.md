@@ -67,27 +67,27 @@ const maxSelectedElements = function (nums) {
     const diff = num - prev;
 
     switch (diff) {
-    case 0: {
-      dp1 = dp0 + 1;
-    
-    break;
-    }
-    case 1: {
-      dp0 += 1;
-      dp1 += 1;
-    
-    break;
-    }
-    case 2: {
-      dp0 = dp1 + 1;
-      dp1 = 1;
-    
-    break;
-    }
-    default: {
-      dp0 = 1;
-      dp1 = 1;
-    }
+      case 0: {
+        dp1 = dp0 + 1;
+
+        break;
+      }
+      case 1: {
+        dp0 += 1;
+        dp1 += 1;
+
+        break;
+      }
+      case 2: {
+        dp0 = dp1 + 1;
+        dp1 = 1;
+
+        break;
+      }
+      default: {
+        dp0 = 1;
+        dp1 = 1;
+      }
     }
 
     result = Math.max(dp0, dp1, result);

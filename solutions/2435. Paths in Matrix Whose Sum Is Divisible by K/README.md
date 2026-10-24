@@ -67,9 +67,7 @@ const numberOfPaths = function (grid, k) {
   const m = grid.length;
   const n = grid[0].length;
   const dp = Array.from({ length: m }, () => {
-    return new Array(n)
-      .fill('')
-      .map(() => new Array(k + 1).fill(-1));
+    return new Array(n).fill('').map(() => new Array(k + 1).fill(-1));
   });
 
   const divisiblePaths = (row, col, current) => {

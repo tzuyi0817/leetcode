@@ -115,30 +115,30 @@ const processStr = function (s, k) {
     const char = s[index];
 
     switch (char) {
-    case REMOVE: {
-      len += 1;
-    
-    break;
-    }
-    case DUPLICATE: {
-      len = len / 2;
+      case REMOVE: {
+        len += 1;
 
-      if (k + 1 > len) {
-        k -= len;
+        break;
       }
-    
-    break;
-    }
-    case REVERSE: {
-      k = len - k - 1;
-    
-    break;
-    }
-    default: {
-      if (k + 1 === len) return char;
+      case DUPLICATE: {
+        len = len / 2;
 
-      len -= 1;
-    }
+        if (k + 1 > len) {
+          k -= len;
+        }
+
+        break;
+      }
+      case REVERSE: {
+        k = len - k - 1;
+
+        break;
+      }
+      default: {
+        if (k + 1 === len) return char;
+
+        len -= 1;
+      }
     }
   }
 

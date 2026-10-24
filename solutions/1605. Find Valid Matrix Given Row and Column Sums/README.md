@@ -64,9 +64,7 @@ Another possible matrix is: [[1,2],
 const restoreMatrix = function (rowSum, colSum) {
   const m = rowSum.length;
   const n = colSum.length;
-  const result = new Array(m)
-    .fill('')
-    .map(_ => new Array(n));
+  const result = new Array(m).fill('').map(_ => new Array(n));
 
   for (let row = 0; row < m; row++) {
     for (let col = 0; col < n; col++) {

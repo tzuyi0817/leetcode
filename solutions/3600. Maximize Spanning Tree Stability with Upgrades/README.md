@@ -164,9 +164,7 @@ const maxStability = function (n, edges, k) {
 
 class UnionFind {
   constructor(n) {
-    this.groups = new Array(n)
-      .fill('')
-      .map((_, index) => index);
+    this.groups = new Array(n).fill('').map((_, index) => index);
     this.ranks = new Array(n).fill(0);
   }
 

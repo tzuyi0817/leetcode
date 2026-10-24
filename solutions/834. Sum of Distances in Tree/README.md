@@ -64,9 +64,7 @@ Hence, answer[0] = 8, and so on.
  * @return {number[]}
  */
 const sumOfDistancesInTree = function (n, edges) {
-  const graph = new Array(n)
-    .fill('')
-    .map(_ => []);
+  const graph = new Array(n).fill('').map(_ => []);
 
   for (const [a, b] of edges) {
     graph[a].push(b);
