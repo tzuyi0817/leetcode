@@ -27,7 +27,7 @@
   "devDependencies": {
     "@component-hook/eslint-plugin": "^1.7.0",
     "@types/node": "^24.19.2",
-    "eslint": "^9.39.5",
+    "eslint": "^10.13.0",
     "prettier": "^3.9.10",
     "vitepress": "^1.6.4"
   }
