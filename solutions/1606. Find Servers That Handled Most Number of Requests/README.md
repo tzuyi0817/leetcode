@@ -80,51 +80,56 @@ Server 0 handled two requests, while servers 1 and 2 handled one request each. H
 const busiestServers = function (k, arrival, load) {
   const n = arrival.length;
   const servers = Array.from({ length: k }, () => 0);
-  const busyServers = new MinPriorityQueue(({ server, idleTime }) => idleTime || server);
-  let beforeModIdleServers = new MinPriorityQueue();
-  let afterModIdleServers = new MinPriorityQueue();
+  const minHeap = new MinHeap(({ server, idleTime }) => idleTime || server);
+  let prependIdleHeap = new MinHeap();
+  let appendIdleHeap = new MinHeap();
 
-  for (let server = 0; server < k; server++) {
-    beforeModIdleServers.enqueue(server);
+  for (let index = 0; index < k; index++) {
+    prependIdleHeap.push(index);
   }
 
   for (let index = 0; index < n; index++) {
     const time = arrival[index];
-    const idleTime = time + load[index];
-    const modServer = index % k;
+    const target = index % k;
 
-    if (!modServer) {
-      afterModIdleServers = beforeModIdleServers;
-      beforeModIdleServers = new MinPriorityQueue();
+    if (!target) {
+      appendIdleHeap = prependIdleHeap;
+      prependIdleHeap = new MinHeap();
     }
 
-    while (busyServers.size() && busyServers.front().idleTime <= time) {
-      const { server } = busyServers.dequeue();
+    while (minHeap.size() && minHeap.top().idleTime <= time) {
+      const { server } = minHeap.pop();
 
-      server < modServer ? beforeModIdleServers.enqueue(server) : afterModIdleServers.enqueue(server);
+      if (server < target) {
+        prependIdleHeap.push(server);
+      } else {
+        appendIdleHeap.push(server);
+      }
     }
 
-    while (afterModIdleServers.size() && afterModIdleServers.front() < modServer) {
-      const server = afterModIdleServers.dequeue();
+    while (appendIdleHeap.size() && appendIdleHeap.top() < target) {
+      const server = appendIdleHeap.pop();
 
-      beforeModIdleServers.enqueue(server);
+      prependIdleHeap.push(server);
     }
 
-    const server = afterModIdleServers.dequeue() ?? beforeModIdleServers.dequeue();
+    const server = appendIdleHeap.pop() ?? prependIdleHeap.pop();
 
     if (server === null) continue;
 
+    const idleTime = time + load[index];
+
+    minHeap.push({ server, idleTime });
     servers[server] += 1;
-    busyServers.enqueue({ server, idleTime });
   }
 
   const maxRequest = Math.max(...servers);
   const result = [];
 
-  for (let server = 0; server < k; server++) {
-    if (servers[server] < maxRequest) continue;
-
-    result.push(server);
+  for (let index = 0; index < k; index++) {
+    if (servers[index] === maxRequest) {
+      result.push(index);
+    }
   }
 
   return result;
