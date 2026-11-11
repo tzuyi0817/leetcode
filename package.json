@@ -18,10 +18,10 @@
     "format": "oxfmt"
   },
   "devDependencies": {
-    "@component-hook/oxlint-config": "^1.7.0",
+    "@component-hook/oxlint-config": "^1.8.1",
     "@types/node": "^24.19.2",
-    "oxfmt": "^0.74.0",
-    "oxlint": "^1.89.0",
+    "oxfmt": "^0.78.0",
+    "oxlint": "^1.93.0",
     "vitepress": "^1.6.4"
   },
   "optionalDependencies": {
@@ -30,5 +30,5 @@
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0"
   },
-  "packageManager": "pnpm@12.15.0"
+  "packageManager": "pnpm@12.18.0"
 }
