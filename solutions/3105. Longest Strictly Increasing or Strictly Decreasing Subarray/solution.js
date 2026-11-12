@@ -4,25 +4,27 @@
  */
 const longestMonotonicSubarray = function (nums) {
   const n = nums.length;
-  let state = '';
-  let length = 1;
+  let increase = 1;
+  let decrease = 1;
   let result = 1;
 
   for (let index = 1; index < n; index++) {
-    const prevNum = nums[index - 1];
     const num = nums[index];
+    const prev = nums[index - 1];
 
-    if (num === prevNum) {
-      length = 1;
-      state = '';
-    } else if (num > prevNum) {
-      length = state === 'increase' ? length + 1 : 2;
-      state = 'increase';
+    if (num > prev) {
+      increase += 1;
+      decrease = 1;
+    } else if (num < prev) {
+      increase = 1;
+      decrease += 1;
     } else {
-      length = state === 'decrease' ? length + 1 : 2;
-      state = 'decrease';
+      increase = 1;
+      decrease = 1;
     }
-    result = Math.max(length, result);
+
+    result = Math.max(increase, decrease, result);
   }
+
   return result;
 };
