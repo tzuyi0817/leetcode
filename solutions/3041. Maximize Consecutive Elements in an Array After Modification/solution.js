@@ -4,42 +4,29 @@
  */
 const maxSelectedElements = function (nums) {
   const n = nums.length;
-  let dp0 = 1;
-  let dp1 = 1;
+  let original = 1;
+  let increased = 1;
   let result = 1;
 
   nums.sort((a, b) => a - b);
 
   for (let index = 1; index < n; index++) {
-    const prev = nums[index - 1];
-    const num = nums[index];
-    const diff = num - prev;
+    const diff = nums[index] - nums[index - 1];
 
-    switch (diff) {
-      case 0: {
-        dp1 = dp0 + 1;
-
-        break;
-      }
-      case 1: {
-        dp0 += 1;
-        dp1 += 1;
-
-        break;
-      }
-      case 2: {
-        dp0 = dp1 + 1;
-        dp1 = 1;
-
-        break;
-      }
-      default: {
-        dp0 = 1;
-        dp1 = 1;
-      }
+    if (diff === 0) {
+      increased = original + 1;
+    } else if (diff === 1) {
+      original += 1;
+      increased += 1;
+    } else if (diff === 2) {
+      original = increased + 1;
+      increased = 1;
+    } else {
+      original = 1;
+      increased = 1;
     }
 
-    result = Math.max(dp0, dp1, result);
+    result = Math.max(original, increased, result);
   }
 
   return result;
