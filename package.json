@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@component-hook/oxlint-config": "^1.7.0",
-    "@types/node": "^24.19.2",
+    "@types/node": "^26.6.6",
     "oxfmt": "^0.74.0",
     "oxlint": "^1.89.0",
     "vitepress": "^1.6.4"
